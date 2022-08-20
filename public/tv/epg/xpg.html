@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Static Template</title>
+
+    <link
+      rel="stylesheet"
+      href="//unpkg.byted-static.com/xgplayer/3.0.0-alpha.100/dist/xgplayer.min.css"
+    />
+
+    <script src="//unpkg.byted-static.com/xgplayer/3.0.0-next.1/dist/index.min.js"></script>
+
+    <script src="//unpkg.com/xgplayer-hls@3.0.0-next.1/dist/index.min.js"></script>
+  </head>
+  <body>
+    <div id="mse">xxx</div>
+
+    <script>
+      new Player({
+        plugins: [window.HlsPlayer],
+        id: "mse",
+        ignores: ["time", "progress"],
+        playsinline: true,
+        isLive: true,
+        cssFullscreen: true,
+        useCssFullscreen: true,
+        url: "//pull-hls-l26.douyincdn.com/third/stream-110061964010455526.m3u8"
+      });
+    </script>
+  </body>
+</html>
