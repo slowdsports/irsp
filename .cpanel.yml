@@ -1,6 +1,6 @@
 ---
 deployment:
   tasks:
-    - export DEPLOYPATH=/home/n57whzfm2yvo/public_html/v3/
+    - export DEPLOYPATH=/home/n57whzfm2yvo/public_html/
     - /bin/cp -R public/ $DEPLOYPATH
     #- /bin/rsync -a --exclude 'conn.php' public/ $DEPLOYPATH
