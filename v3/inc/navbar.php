@@ -188,8 +188,17 @@
                     <!-- <a href="javascript:;" class="button">
                         <ion-icon name="settings-outline"></ion-icon>
                     </a> -->
-                    <a href="<?=$app."logout.php"?>" class="button">
-                        <ion-icon name="log-out-outline"></ion-icon>
+                    <?php
+                    if (!isset($_SESSION['id']) ||(trim ($_SESSION['id']) == '')){
+                        $linkType = $app . "login.php";
+                        $iconType = "log-in-outline";
+                    } else {
+                        $linkType = $app . "logout.php";
+                        $iconType = "log-out-outline";
+                    }
+                    ?>
+                    <a href="<?=$linkType?>" class="button">
+                        <ion-icon name="<?=$iconType?>"></ion-icon>
                     </a>
                 </div>
                 <!-- * sidebar buttons -->

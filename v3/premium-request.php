@@ -15,6 +15,7 @@ if(isset($_POST['contratar'])){
         $premiumRequested;
         $_SESSION['message'] = "Se ha notificado a los administradores tu alta";
         echo '<meta http-equiv = "refresh" content = "3; url = https://www.paypal.com/paypalme/slowd/5.50?servicePayment" />';
+        unset($_SESSION['message']);
     } else {
         echo "Error: " . $sql . "" . mysqli_error($conn);
     }

@@ -7,6 +7,11 @@ if (!isset($_SESSION['id']) ||(trim ($_SESSION['id']) == '')) {
 include('../inc/header.php'); include('../conn.php');
 $query=mysqli_query($conn,"select * from user where userid='".$_SESSION['id']."'");
 $row=mysqli_fetch_assoc($query);
+// Si el usuario es free
+if ($row['type'] == 2 && $row['fecha'] == null){
+    $_SESSION['userType'] = "free";
+    header ("location: ../premium-upgrade.php");
+}
 ?>
 
 
