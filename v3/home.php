@@ -43,8 +43,7 @@ if (isset($_SESSION['message']) ){
                 <div class="in">
                     <h3 class="subtitle">¡Bienvenido a iRaffle TV!</h3>
                     <div class="text">
-                        Actualmente estás viendo la versión BETA 3 de esta aplicación. <br>
-                        <a href="//iraffle.live/app/?oldVersion" class="btn btn-sm btn-primary">Versión anterior</a>
+                        Actualmente estás viendo la versión BETA 3 de esta aplicación.
                     </div>
                 </div>
             </div>
