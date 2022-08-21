@@ -1,4 +1,5 @@
 <?php
+$_SESSION['referer'] = "//" . $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URI'];
 // IGNORAMOS SESIÓN PARA SECCIONES NBA Y MLB
 if (isset($_GET['nba']) || isset($_GET['mlb'])){
     // No necesitamos ninguna comprobación

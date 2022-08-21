@@ -1,4 +1,5 @@
 <?php
+$_SESSION['referer'] = "//" . $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URI'];
 session_start();
 if (!isset($_SESSION['id']) ||(trim ($_SESSION['id']) == '')) {
     header("location: ../login.php");
