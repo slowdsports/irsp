@@ -58,13 +58,13 @@
     $local = str_replace('racing', 'R. Racing Club', $local);
     $local = str_replace('realoviedo', 'Real Oviedo', $local);
     $local = str_replace('sporting', 'Real Sporting', $local);
-    $local = str_replace('zaragoza', 'Real Zaragoza', $local);
+    $local = str_replace('realzaragoza', 'Real Zaragoza', $local);
     $local = str_replace('eibar', 'SD Eibar', $local);
     $local = str_replace('huesca', 'SD Huesca', $local);
     $local = str_replace('ponferradina', 'SD Ponferradina', $local);
     $local = str_replace('ibiza', 'UD Ibiza', $local);
-    $local = str_replace('las palmas', 'UD Las Palmas', $local);
-    $local = str_replace('villarreal b', 'Villarreal B', $local);
+    $local = str_replace('laspalmas', 'UD Las Palmas', $local);
+    $local = str_replace('villarrealb', 'Villarreal B', $local);
 
     $visita = str_replace('albacete', 'Albacete BP', $visita);
     $visita = str_replace('burgos', 'Burgos CF', $visita);
@@ -81,11 +81,11 @@
     $visita = str_replace('racing', 'R. Racing Club', $visita);
     $visita = str_replace('realoviedo', 'Real Oviedo', $visita);
     $visita = str_replace('sporting', 'Real Sporting', $visita);
-    $visita = str_replace('zaragoza', 'Real Zaragoza', $visita);
+    $visita = str_replace('realzaragoza', 'Real Zaragoza', $visita);
     $visita = str_replace('eibar', 'SD Eibar', $visita);
     $visita = str_replace('huesca', 'SD Huesca', $visita);
     $visita = str_replace('ponferradina', 'SD Ponferradina', $visita);
     $visita = str_replace('ibiza', 'UD Ibiza', $visita);
-    $visita = str_replace('las palmas', 'UD Las Palmas', $visita);
-    $visita = str_replace('villarreal b', 'Villarreal B', $visita);
+    $visita = str_replace('laspalmas', 'UD Las Palmas', $visita);
+    $visita = str_replace('villarrealb', 'Villarreal B', $visita);
 ?>
