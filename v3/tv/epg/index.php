@@ -1,10 +1,6 @@
 <?php
 session_start();
 $_SESSION['referer'] = "//" . $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URI'];
-if (!isset($_SESSION['id']) ||(trim ($_SESSION['id']) == '')) {
-    //header("location: ../../login.php");
-    // No validamos sesión
-} else
 include('../../inc/header.php'); include('../../conn.php'); include('../../inc/scraper.php');
 $query=mysqli_query($conn,"select * from user where userid='".$_SESSION['id']."'");
 $row=mysqli_fetch_assoc($query);
