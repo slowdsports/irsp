@@ -6,7 +6,6 @@
         //unset($_SESSION['message']);
     }
 	include('conn.php');
-    include ('inc/functions.php');
     // Validación GEO
     // include('inc/geo.php');
     // if (!in_array($geoCountry_data, $countries)){

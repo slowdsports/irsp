@@ -5,7 +5,6 @@ if (isset($_SESSION['id'])) {
     $_SESSION['message'] = "¡Ya has iniciado sesión previamente!";
 }
 include('conn.php');
-include('inc/functions.php');
 // Validación GEO
 include('inc/geo.php');
 if (!in_array($geoCountry_data, $countries)){
@@ -66,7 +65,7 @@ if (isset($_POST['signup'])){
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <meta name="theme-color" content="#000000">
-    <title>PROmedia v4</title>
+    <title>iRaffle TV 3</title>
     <meta name="description" content="Accede a tu cuenta para disfrutar el contenido.">
     <meta name="keywords" content="bootstrap 4, mobile template, cordova, phonegap, mobile, html" />
     <link rel="icon" type="image/png" href="assets/img/favicon.ico" sizes="32x32">
