@@ -18,20 +18,8 @@ $query=mysqli_query($conn,"select * from channels
     $row=mysqli_fetch_assoc($query);
     $channel = $row['channelUrl'];
     $typeChannel = $row['typeId'];
-    //$channel = base64_encode($channel);
-    echo '<script>
-    var source = "'.$channel.'"
-    </script>';
+    $channel = base64_encode($channel);
 ?>
-<!-- Clappr --
-<script src="//cdn.jsdelivr.net/npm/clappr@latest/dist/clappr.min.js"></script>
-<script src="//cdn.jsdelivr.net/npm/level-selector@latest/dist/level-selector.min.js"></script>
-<script src="//cdn.jsdelivr.net/npm/clappr-chromecast-plugin@latest/dist/clappr-chromecast-plugin.min.js"></script>
-<script src="//cdn.jsdelivr.net/npm/clappr-pip@latest/dist/clappr-pip.min.js"></script>
-<script src="//cdn.jsdelivr.net/npm/dash-shaka-playback@latest/dist/dash-shaka-playback.min.js"></script>
-<script src="//cdn.jsdelivr.net/npm/clappr-playback-rate-plugin@latest/dist/clappr-playback-rate-plugin.min.js"></script>
-<!-- JW Core -->
-<script src="https://jwpsrv.com/library/FfMxTl3oEeSEiiIACxmInQ.js"></script>
 
 <!-- App Capsule -->
 <div id="appCapsule">
@@ -49,19 +37,50 @@ if (isset($_SESSION['message']) ){
     unset($_SESSION['message']);
 }
 ?>
+<hr>
 
-<!-- <div class="header-large-title">
-    <h1 class="title"><?=ucfirst($row['fullname'])?>,</h1>
-    <h4 class="subtitle">¿Qué quieres ver hoy?</h4>
-</div> -->
+<div class="header-large-title">
+    <h1 class="title"><?=ucfirst($row['channelName'])?></h1>
+    <br>
+</div>
 
 <div class="container">
-    <div id="jwp">Cargando Reproductor...</div>
-    <script src="jwp.js"></script>
+    <?php
+    // Validaciones de Canales
+    include('valid.php');
+    ?>
+    <center>
+        <hr>
+        <div class="tab-content" id="myTabContent">
+            <div class="tab-pane fade show active" id="jw" role="tabpanel" aria-labelledby="jw-tab">
+                <!-- M3U8 -->
+                <script src="https://jwpsrv.com/library/FfMxTl3oEeSEiiIACxmInQ.js"></script>
+                <div id="jwp">Cargando Reproductor...</div>
+                <script src="jwp.js"></script>
+                </div>
+            <div class="tab-pane fade" id="hls" role="tabpanel" aria-labelledby="hls-tab">
+                <!-- Video TAG -->
+                <video style="margin-top: 40px" id="vidarea" class="video-js vjs-default-skin" width="90%" height="55%" controls ></video>
+            </div>
+        </div>
+        <!-- iFrame -->
+        <iframe src="<?php echo $iframeSrc?>" width="100%" height="300px" frameborder="0" sandbox="allow-same-origin allow-scripts" allowfullscreen  id="iframe-element"></iframe>
+        <!-- PC Player -->
+        <a id="player_img" href="<?php echo $pcSrc."&m3u8"; ?>">
+            <img class="img-fluid" src="../player_img.png" alt="">
+        </a>
+        <!-- Source -->
+        <script>
+            var url = atob(source);
+            var vid = document.getElementById("vidarea");
+            vid.src = url;
+        </script>
+    </center>
 </div>
 
 <!-- Evento en directo -->
-<?= include('../../inc/sliders/gatotv.php'); ?>
+<hr>
+<?php include('../../inc/sliders/gatotv.php'); ?>
 <div class="container">
     <a href="javascript:void(0)">
         <div class="item">

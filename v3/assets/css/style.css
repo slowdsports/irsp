@@ -35,6 +35,9 @@ body {
 .liga-card img{
   width: 35%!important;
 }
+.nav-tabs{
+  border-bottom: 0px!important;
+}
 
 a {
   transition: 0.2s all;

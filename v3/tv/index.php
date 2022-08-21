@@ -32,16 +32,29 @@ if (isset($_SESSION['message']) ){
 </div>
 
 <!-- Alerta -->
+<br>
 <div class="container">
     <div class="alert alert-info text-center" role="alert">
         <ion-icon name="information-circle-outline"></ion-icon> Esta sección está actualmente en mantenimiento
     </div>
 </div>
+<br>
 <!-- *Alerta -->
+
+<!-- Search Form -->
+<div class="container">
+    <form class="search-form">
+        <div class="form-group searchbox">
+            <input id="channelSearch" onkeyup="myFunction()" type="text" class="form-control" placeholder="Buscar..." />
+            <i class="input-icon"> <ion-icon name="search-outline" role="img" class="md hydrated" aria-label="search outline"></ion-icon> </i>
+        </div>
+    </form>
+</div>
+<!-- * Search Form -->
 
 <!-- Categorías -->
     <div class="section mt-2">
-        <div class="row">
+        <div id="channelsList" class="row">
             <?php
             $channels = mysqli_query($conn, "select * from channels
             INNER JOIN categories ON channels.category = categories.categoryId

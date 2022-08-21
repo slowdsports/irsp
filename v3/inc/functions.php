@@ -1,6 +1,6 @@
 <?php
 // SET SITE URL
-$app = "//{$_SERVER['SERVER_NAME']}/app2/";
+$app = "//{$_SERVER['SERVER_NAME']}/app2/irsp/v3/";
 // ADMIN DASH
 $base = "//".$_SERVER['SERVER_NAME']."/app2/admin/";
 // GET REFER

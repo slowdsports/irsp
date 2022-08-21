@@ -44,21 +44,26 @@ if (isset($_SESSION['message']) ){
             <div class="col-12 mycard">
                 <a data-toggle="collapse" href="#juego<?=$result['id']?>" role="button" aria-expanded="false" aria-controls="juego<?=$result['id']?>">
                     <div class="card product-card">
-                        <div class="card-body">
-                            <center>
-                                <img width="48px" src="<?=$app?>assets/img/ligas/<?=$result['ligaImg']?>.png" alt="" class="float-left">
-                                <img width="48px" src="https://cdn.worldvectorlogo.com/logos/movistar-plus-2.svg" alt="" class="float-right">
-                                <div class="row">
-                                    <div class="col-6">
-                                        <img src="<?=$result['logoL']?>" alt="">
-                                        <h4><?=ucfirst($result['local'])?></h4>
-                                    </div>
-                                    <div class="col-6">
-                                        <img src="<?=$result['logoV']?>" alt="">
-                                        <h4><?=ucfirst($result['visita'])?></h4>
-                                    </div>
+                        <div class="main-event">
+                            <div class="league">
+                                <img src="<?=$app?>assets/img/ligas/<?=$result['ligaImg']?>.png" alt="League" />
+                            </div>
+                            <div class="match">
+                                <div class="team">
+                                    <img src="<?=$result['logoL']?>" alt="" />
+                                    <h4><?=ucfirst($result['local'])?></h4>
                                 </div>
-                            </center>
+                                <div class="vs">
+                                    <h6>vs</h6>
+                                </div>
+                                <div class="team">
+                                    <img src="<?=$result['logoV']?>" alt="" />
+                                    <h4><?=ucfirst($result['visita'])?></h4>
+                                </div>
+                            </div>
+                            <div class="channel">
+                                <img src="http://iraffle.live/v3/assets/img/ligas/uel.png" alt="" />
+                            </div>
                         </div>
                     </div>
                 </a>

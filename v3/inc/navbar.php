@@ -203,6 +203,8 @@
     <script src="<?=$app?>assets/js/plugins/jquery-circle-progress/circle-progress.min.js"></script>
     <!-- Base Js File -->
     <script src="<?=$app?>assets/js/base.js"></script>
+    <!-- Channel Filter -->
+    <script src="<?=$app?>assets/js/filter.js"></script>
     <!-- Plyr -->
     <script src="https://cdn.rawgit.com/video-dev/hls.js/18bb552/dist/hls.min.js"></script>
     <script src='https://cdn.polyfill.io/v2/polyfill.min.js?features=es6,Array.prototype.includes,CustomEvent,Object.entries,Object.values,URL'></script>

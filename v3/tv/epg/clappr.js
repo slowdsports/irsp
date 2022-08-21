@@ -1,8 +1,8 @@
 window.onload = function () {
-    var player = new Clappr.Player({
+    var clappr = new Clappr.Player({
         //source: atob(source),
         source: "http://audiotvserver.net:1935/livemedia/cholusat/playlist.m3u8",
-        parentId: "#player",
+        parentId: "#clappr",
         mimeType: "audio/mpeg",
         watermark: "https://eduveel1.github.io/baleada/img/iRTVW_PLAYER.png",
         position: "top-left",
