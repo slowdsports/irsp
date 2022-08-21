@@ -2,9 +2,9 @@
     <div class="modal-dialog" role="document">
         <div style="background: #0c1624;" class="modal-content">
             <div style="background: #0c1624; border-bottom-color: #0c1624;" class="modal-header">
-                <button type="button" class="close text-light" data-dismiss="modal" aria-label="Close">
+                <a href="index.php" type="button" class="close text-light" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">×</span>
-                </button>
+                </a>
             </div>
             <div class="modal-body">
                 <div class="login-form">
@@ -45,6 +45,16 @@
                                         <option id="1" value="1">WhatsApp</option>
                                         <option id="2" value="2">Email</option>
                                     </select>
+                                </div>
+                            </div>
+
+                            <div class="form-group basic">
+                                <div class="input-wrapper">
+                                    <label class="form-label" for="comentario">Comentario</label>
+                                    <input type="text" class="form-control" id="comentario" name="comentario" id="comentario" placeholder="Déjanos un mensaje adicional (opcional)" value="<?=$row['comentario']?>" />
+                                    <i class="clear-input">
+                                        <ion-icon name="close-circle" role="img" class="md hydrated" aria-label="close circle"></ion-icon>
+                                    </i>
                                 </div>
                             </div>
 

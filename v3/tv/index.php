@@ -11,7 +11,7 @@ $row=mysqli_fetch_assoc($query);
 
 
 <!-- App Capsule -->
-<div id="appCapsule">
+<div id="appCapsule" class="extra-header-active">
 
 <?php
 if (isset($_SESSION['message']) ){
@@ -44,12 +44,14 @@ if (isset($_SESSION['message']) ){
 
 <!-- Search Form -->
 <div class="container">
-    <form class="search-form">
-        <div class="form-group searchbox">
-            <input id="channelSearch" onkeyup="myFunction()" type="text" class="form-control" placeholder="Buscar..." />
-            <i class="input-icon"> <ion-icon name="search-outline" role="img" class="md hydrated" aria-label="search outline"></ion-icon> </i>
-        </div>
-    </form>
+    <div class="extraHeader">
+        <form class="search-form">
+            <div class="form-group searchbox">
+                <input id="channelSearch" onkeyup="myFunction()" type="text" class="form-control" placeholder="Buscar..." />
+                <i class="input-icon"> <ion-icon name="search-outline" role="img" class="md hydrated" aria-label="search outline"></ion-icon> </i>
+            </div>
+        </form>
+    </div>
 </div>
 <!-- * Search Form -->
 

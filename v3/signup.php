@@ -35,7 +35,7 @@ if (isset($_POST['signup'])){
         }
 
     if (!$error) {
-        if(mysqli_query($conn, "INSERT INTO user (fullname, username, email, password, fecha, type) VALUES('$fullname', '$username', '$email','$password',null,0)")) {
+        if(mysqli_query($conn, "INSERT INTO user (fullname, username, email, password, fecha, type) VALUES('$fullname', '$username', '$email','$password',null,2)")) {
             //header("location: login.php");
             $_SESSION['registro'] = "Te has registrado correctamente";
             $_SESSION['message'] = "Te has registrado correctamente";

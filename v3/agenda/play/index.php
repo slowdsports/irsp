@@ -18,6 +18,12 @@ $usuario = $row['username'];
 $password = $row['password'];
 $channel = $_GET['c'];
 
+// Si el usuario es free
+if ($row['type'] == 2 && $row['fecha'] == null){
+    $_SESSION['userType'] = "free";
+    header ("location: ../../premium-upgrade.php");
+}
+
 // Channels
 include('channels.php');
 $source = base64_encode($channel);
