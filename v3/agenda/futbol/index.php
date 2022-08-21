@@ -24,7 +24,7 @@ if (isset($_SESSION['message']) ){
 ?>
 
 <div class="header-large-title">
-    <h1 class="title"><?=ucfirst($row['fullname'])?>,</h1>
+    <h1 class="title"><?=ucfirst($row['fullname'])?></h1>
     <h4 class="subtitle">¿Qué quieres ver hoy?</h4>
 </div>
 

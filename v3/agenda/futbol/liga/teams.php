@@ -20,6 +20,7 @@
     $local = str_replace('sevilla', 'Sevilla FC', $local);
     $local = str_replace('almera', 'UD Almería', $local);
     $local = str_replace('valencia', 'Valencia CF', $local);
+    $local = str_replace('villarrealb', 'Villarreal B', $local);
     $local = str_replace('villarreal', 'Villarreal CF', $local);
 
     $visita = str_replace('athletic', 'Athletic Club', $visita);
@@ -41,6 +42,7 @@
     $visita = str_replace('sevilla', 'Sevilla FC', $visita);
     $visita = str_replace('almera', 'UD Almería', $visita);
     $visita = str_replace('valencia', 'Valencia CF', $visita);
+    $visita = str_replace('villarrealb', 'Villarreal B', $visita);
     $visita = str_replace('villarreal', 'Villarreal CF', $visita);
     // LaLiga Smartbank
     $local = str_replace('albacete', 'Albacete BP', $local);
@@ -64,7 +66,6 @@
     $local = str_replace('ponferradina', 'SD Ponferradina', $local);
     $local = str_replace('ibiza', 'UD Ibiza', $local);
     $local = str_replace('laspalmas', 'UD Las Palmas', $local);
-    $local = str_replace('villarrealb', 'Villarreal B', $local);
 
     $visita = str_replace('albacete', 'Albacete BP', $visita);
     $visita = str_replace('burgos', 'Burgos CF', $visita);
@@ -87,5 +88,36 @@
     $visita = str_replace('ponferradina', 'SD Ponferradina', $visita);
     $visita = str_replace('ibiza', 'UD Ibiza', $visita);
     $visita = str_replace('laspalmas', 'UD Las Palmas', $visita);
-    $visita = str_replace('villarrealb', 'Villarreal B', $visita);
+    //Premier
+    $local = str_replace("bournemouth", "AFC Bournemouth", $local);
+    $local = str_replace("astonvilla", "Aston Villa", $local);
+    $local = str_replace("crystalpalace", "Crystal Palace", $local);
+    $local = str_replace("leedsutd", "Leeds United", $local);
+    $local = str_replace("laicestercity", "Leicester City", $local);
+    $local = str_replace("manchestercity", "Manchester City", $local);
+    $local = str_replace("manchester city", "Manchester City", $local);
+    $local = str_replace("manchester utd.", "Manchester United", $local);
+    $local = str_replace("manchesterutd.", "Manchester United", $local);
+    $local = str_replace("newcastle", "Newcastle United", $local);
+    $local = str_replace("nottingham forest", "Nothingham Forest", $local);
+    $local = str_replace("nottinghamforest", "Nothingham Forest", $local);
+    $local = str_replace("tottenham", "Tottenham Hotspur", $local);
+    $local = str_replace("westham", "West Ham United", $local);
+    $local = str_replace("wolves", "Wolverhampton", $local);
+
+    $visita = str_replace("bournemouth", "AFC Bournemouth", $visita);
+    $visita = str_replace("astonvilla", "Aston Villa", $visita);
+    $visita = str_replace("crystal palace", "Crystal Palace", $visita);
+    $visita = str_replace("crystalpalace", "Crystal Palace", $visita);
+    $visita = str_replace("leedsutd", "Leeds United", $visita);
+    $visita = str_replace("laicestercity", "Leicester City", $visita);
+    $visita = str_replace("manchestercity", "Manchester City", $visita);
+    $visita = str_replace("manchester city", "Manchester City", $visita);
+    $visita = str_replace("manchester utd.", "Manchester United", $visita);
+    $visita = str_replace("newcastle", "Newcastle United", $visita);
+    $visita = str_replace("nottingham forest", "Nothingham Forest", $visita);
+    $visita = str_replace("nottinghamforest", "Nothingham Forest", $visita);
+    $visita = str_replace("tottenham", "Tottenham Hotspur", $visita);
+    $visita = str_replace("westham", "West Ham United", $visita);
+    $visita = str_replace("wolves", "Wolverhampton", $visita);
 ?>

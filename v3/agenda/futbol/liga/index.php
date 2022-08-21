@@ -24,7 +24,7 @@ if (isset($_SESSION['message']) ){
 ?>
 
 <div class="header-large-title">
-    <h1 class="title"><?=ucfirst($row['fullname'])?>,</h1>
+    <h1 class="title"><?=ucfirst($row['fullname'])?></h1>
     <h4 class="subtitle">¡Disfruta de tu evento!</h4>
 </div>
 
@@ -52,14 +52,14 @@ if (isset($_SESSION['message']) ){
                             </div>
                             <div class="match">
                                 <div class="team">
-                                    <img width="48px" src="<?=$result['logoL']?>" alt="" />
+                                    <img src="<?=$app?>assets/img/equipos/<?=strtolower($result['ligaImg'])?>/<?=str_replace(' ', '', $result['local']); ?>.png" alt="" />
                                     <h4><?=ucfirst($local)?></h4>
                                 </div>
                                 <div class="vs">
                                     <h6>vs</h6>
                                 </div>
                                 <div class="team">
-                                    <img width="48px" src="<?=$result['logoV']?>" alt="" />
+                                    <img src="<?=$app?>assets/img/equipos/<?=strtolower($result['ligaImg'])?>/<?=str_replace(' ', '', $result['visita']); ?>.png" alt="" />
                                     <h4><?=ucfirst($visita)?></h4>
                                 </div>
                             </div>
