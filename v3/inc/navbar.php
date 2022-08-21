@@ -1,13 +1,13 @@
 <!-- app footer -->
+<br>
 <!-- <div class="appFooter">
-            <img src="assets/img/logo.svg" alt="icon" class="footer-logo mb-2">
-            <div class="footer-title">
-                PROmedia no almacena ningún tipo de material en sus servidores.
-            </div>
+    <img src="<?=$app?>assets/img/logo-white.png" alt="icon" class="footer-logo mb-2">
+        <div class="footer-title">
+            Copyright &copy; 2022 ⚽ iRaffle TV
         </div>
-
-    </div> -->
-    <!-- * App Capsule -->
+    </div>
+</div> -->
+<!-- * App Capsule -->
 
 
     <!-- App Bottom Menu -->
