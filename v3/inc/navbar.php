@@ -98,7 +98,8 @@
                                     $icon = "time";
                                 }
                                 if ($daysleft < 360){
-                                    $vigencia = "No tienes una suscripción activa";
+                                    $icon = "star-outline";
+                                    $vigencia = "Contáctanos para convertirte en premium";
                                 }
                                 ?>
                                 <ion-icon name="<?=$icon?>"></ion-icon>
