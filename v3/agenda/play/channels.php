@@ -46,10 +46,14 @@ switch ($channel){
     $server.$usuario."/".$password."/"."27".".m3u8"; break;
     case 'daznf1' : $channel=
     $server.$usuario."/".$password."/"."28".".m3u8"; break;
-    case 'mlcampsd' : $channel = 
+    case 'mlcampsd' : $channel =
     $server.$usuario."/".$password."/"."32".".m3u8"; break;
-    case 'barsd' : $channel = 
+    case 'barsd' : $channel =
     $server.$usuario."/".$password."/"."33".".m3u8"; break;
+    case 'daznlaliga' : $channel =
+    $server.$usuario."/".$password."/"."36".".m3u8"; break;
+    case 'daznlaliga2' : $channel =
+    $server.$usuario."/".$password."/"."37".".m3u8"; break;
 
     //BACKUP
     // ESPN SUR: https://edge3.prepro.cvattv.com.ar/live/vod/ESPN2HD/SA_Live_WebVTT_FTA/ESPN2HD.m3u8;
