@@ -74,6 +74,8 @@ if (isset($_SESSION['message']) ){
                             $canal = $result['canal'];
                             $canal2 = $result['canal2'];
                             $canal3 = $result['canal3'];
+                            include ('../../../app/admin/includes/channels.php');
+                            include ('../../../app/admin/agenda/logos.php');
                             // Canal 2
                             echo $canalop2;
                             // Canal 3
