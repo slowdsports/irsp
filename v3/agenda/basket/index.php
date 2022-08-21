@@ -34,11 +34,11 @@ if (isset($_SESSION['message']) ){
 
             <!-- Elemento -->
             <div class="col-6 col-sm-4 col-md-3 mycard <?=$ligaStatus?>">
-                <a href="liga?id=acb">
+                <a href="liga?id=13">
                     <div class="card product-card liga-card">
                         <div class="card-body">
                             <center>
-                            <img src="<?=$app?>assets/img/acb.png" class="image" alt="product image">
+                            <img src="<?=$app?>assets/img/ligas/acb.png" class="image" alt="product image">
                             <h2 class="title text-center">ACB</h2>
                             </center>
                         </div>
@@ -49,11 +49,11 @@ if (isset($_SESSION['message']) ){
 
             <!-- Elemento -->
             <div class="col-6 col-sm-4 col-md-3 mycard <?=$ligaStatus?>">
-                <a href="liga?id=euroliga">
+                <a href="liga?id=14">
                     <div class="card product-card liga-card">
                         <div class="card-body">
                             <center>
-                            <img src="<?=$app?>assets/img/euroliga.png" class="image" alt="product image">
+                            <img src="<?=$app?>assets/img/ligas/euroliga.png" class="image" alt="product image">
                             <h2 class="title text-center">Euroliga</h2>
                             </center>
                         </div>
@@ -68,7 +68,7 @@ if (isset($_SESSION['message']) ){
                     <div class="card product-card liga-card">
                         <div class="card-body">
                             <center>
-                            <img src="<?=$app?>assets/img/nba.png" class="image" alt="product image">
+                            <img src="<?=$app?>assets/img/ligas/nba.png" class="image" alt="product image">
                             <h2 class="title text-center">NBA</h2>
                             </center>
                         </div>
