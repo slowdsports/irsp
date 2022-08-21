@@ -52,14 +52,14 @@ if (isset($_SESSION['message']) ){
                             </div>
                             <div class="match">
                                 <div class="team">
-                                    <img src="<?=$result['logoL']?>" alt="" />
+                                    <img width="48px" src="<?=$result['logoL']?>" alt="" />
                                     <h4><?=ucfirst($local)?></h4>
                                 </div>
                                 <div class="vs">
                                     <h6>vs</h6>
                                 </div>
                                 <div class="team">
-                                    <img src="<?=$result['logoV']?>" alt="" />
+                                    <img width="48px" src="<?=$result['logoV']?>" alt="" />
                                     <h4><?=ucfirst($visita)?></h4>
                                 </div>
                             </div>
