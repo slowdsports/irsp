@@ -35,7 +35,7 @@ if (isset($_SESSION['message']) ){
             $ligas = mysqli_query($conn, "select * from ligas ");
             while($result=mysqli_fetch_array($ligas)){
                 // Cantidad de Juegos
-                $index = $i++;
+                $index = $result['ligaId'];
                 $queryQty=mysqli_query($conn,"select * from agenda where liga = $index");
                 $totalGames=mysqli_num_rows($queryQty);
                 if ($totalGames == 0){
