@@ -1,8 +1,8 @@
 <?php
 // SET SITE URL
-$app = "//{$_SERVER['SERVER_NAME']}/app2/irsp/v3/";
+$app = "//{$_SERVER['SERVER_NAME']}/v3/";
 // ADMIN DASH
-$base = "//".$_SERVER['SERVER_NAME']."/app2/admin/";
+$base = "//".$_SERVER['SERVER_NAME']."/app/admin/";
 // GET REFER
 // $refer = $_GET['refer'];
 $refer = $_SERVER['HTTP_REFERER'];
