@@ -37,6 +37,10 @@ if (isset($_SESSION['message']) ){
             INNER JOIN ligas ON agenda.liga = ligas.ligaId
             where liga = '$getLiga' and status=1");
             while($result=mysqli_fetch_array($ligas)){
+                // Teams
+                $local = $result['local'];
+                $visita = $result['visita'];
+                include('teams.php');
             ?>
             <!-- Elemento -->
             <div class="col-12 mycard">
@@ -49,14 +53,14 @@ if (isset($_SESSION['message']) ){
                             <div class="match">
                                 <div class="team">
                                     <img src="<?=$result['logoL']?>" alt="" />
-                                    <h4><?=ucfirst($result['local'])?></h4>
+                                    <h4><?=ucfirst($local)?></h4>
                                 </div>
                                 <div class="vs">
                                     <h6>vs</h6>
                                 </div>
                                 <div class="team">
                                     <img src="<?=$result['logoV']?>" alt="" />
-                                    <h4><?=ucfirst($result['visita'])?></h4>
+                                    <h4><?=ucfirst($visita)?></h4>
                                 </div>
                             </div>
                             <div class="channel">
@@ -74,8 +78,7 @@ if (isset($_SESSION['message']) ){
                             $canal = $result['canal'];
                             $canal2 = $result['canal2'];
                             $canal3 = $result['canal3'];
-                            include ('../../../app/admin/includes/channels.php');
-                            include ('../../../app/admin/agenda/logos.php');
+                            include ('channels.php');
                             // Canal 2
                             echo $canalop2;
                             // Canal 3
