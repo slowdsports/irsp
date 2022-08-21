@@ -70,7 +70,8 @@ if(isset($_POST['contratar'])){
             // Guardamos en BD
             $msg=mysqli_query($conn,"update user set userid='$userid', fullname='$fullname', username='$username', email='$email', password='$password', fecha='$fecha', type='$type' where userid='$userid'");
             if($msg) {
-                $_SESSION['message'] = "¡Se ha actualizado el usuario!";
+                $_SESSION['message'] = "¡Tus datos han sido actualizados!";
+                echo '<meta http-equiv = "refresh" content = "2; url = #success" />';
             }
 
         }

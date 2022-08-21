@@ -42,10 +42,19 @@
                 <span class="badge badge-danger"><?=$totalChannels?></span>
             </div>
         </a>
-        <a href="<?=$app?>account.php" class="item">
+        <?php
+        $query=mysqli_query($conn,"select * from user where userid='".$_SESSION['id']."'");
+        $row=mysqli_fetch_assoc($query);
+        if($row['email'] == null){
+            $account = '<span class="badge badge-danger">1</span>';
+            $accountQuery = "?updateEmail";
+        }
+        ?>
+        <a href="<?=$app?>account.php<?=$accountQuery?>" class="item">
             <div class="col">
                 <ion-icon name="people-outline" role="img" class="md hydrated" aria-label="people outline"></ion-icon>
                 <strong>Perfil</strong>
+                <?=$account?>
             </div>
         </a>
         <a href="javascript:;" class="item" data-toggle="modal" data-target="#sidebarPanel">
