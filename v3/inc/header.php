@@ -38,16 +38,14 @@ if (detectPC()){
     <link rel="stylesheet" href="<?=$app?>assets/css/inc/flags.css">
     <link rel="stylesheet" href="<?=$app?>assets/css/inc/font-awesome.css">
     <link rel="stylesheet" href="<?=$app?>assets/css/inc/font-awesome-animation.css">
-<script>
-    (function(h,o,t,j,a,r){
-        h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
-        h._hjSettings={hjid:3053188,hjsv:6};
-        a=o.getElementsByTagName('head')[0];
-        r=o.createElement('script');r.async=1;
-        r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
-        a.appendChild(r);
-    })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
-</script>
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-Z7958KV9CY"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-Z7958KV9CY');
+    </script>
 
 <script src="https://cdn.onesignal.com/sdks/OneSignalSDK.js" async=""></script>
 <script>
