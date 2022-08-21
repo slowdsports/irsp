@@ -80,9 +80,9 @@ if (detectPC()){
             iRaffle TV
         </div>
         <div class="right">
-            <a href="#" class="headerButton toggle-searchbox">
+            <!-- <a href="#" class="headerButton toggle-searchbox">
                 <ion-icon name="search-outline" role="img" class="md hydrated" aria-label="search outline"></ion-icon>
-            </a>
+            </a> -->
         </div>
     </div>
     <!-- * App Header -->
