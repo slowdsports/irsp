@@ -1,5 +1,4 @@
 <?php
-$_SESSION['referer'] = "//" . $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URI'];
 include('functions.php'); include('conn.php'); ?>
 <!doctype html>
 <html lang="en">
