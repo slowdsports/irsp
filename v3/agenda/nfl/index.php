@@ -64,7 +64,7 @@ if (isset($_SESSION['nbaError'])){
         <div class="row">
             <?php
             // get DOM from URL or file
-            $html = file_get_html('https://www.espn.com.mx/beisbol/mlb/calendario');
+            $html = file_get_html('https://www.espn.com.mx/futbol-americano/nfl/calendario');
             $fecha = $html -> find ('div.ResponsiveTable');
             $juegos = $html ->find ('tbody tr');
             foreach ($juegos as $juego):
@@ -95,18 +95,18 @@ if (isset($_SESSION['nbaError'])){
                     <div class="card product-card">
                         <div class="main-event">
                             <div class="league">
-                                <img src="<?=$app?>assets/img/ligas/mlb.png" alt="League" />
+                                <img src="<?=$app?>assets/img/ligas/nfl.png" alt="League" />
                             </div>
                             <div class="match">
                                 <div class="team">
-                                    <img width="60px" src="<?=$app?>assets/img/equipos/mlb/<?=$local?>.png" alt="<?=$local?>" />
+                                    <img width="60px" src="<?=$app?>assets/img/equipos/nba/<?=$local?>.png" alt="<?=$local?>" />
                                     <h4><?=ucfirst($local)?></h4>
                                 </div>
                                 <div class="vs">
                                     <h6>vs</h6>
                                 </div>
                                 <div class="team">
-                                    <img width="60px" src="<?=$app?>assets/img/equipos/mlb/<?=$visita?>.png" alt="<?=$visita?>" />
+                                    <img width="60px" src="<?=$app?>assets/img/equipos/nfl/<?=$visita?>.png" alt="<?=$visita?>" />
                                     <h4><?=ucfirst($visita)?></h4>
                                 </div>
                             </div>
@@ -122,7 +122,7 @@ if (isset($_SESSION['nbaError'])){
                             <li>
                                 <a class="justify-content-center" href="?g=<?=$local?>">
                                 <i class="flag us"></i>
-                                MLB TV - <?=ucfirst($local)?> | HD
+                                NFL TV - <?=ucfirst($local)?> | HD
                                 </a>
                             </li>
                         </ul>

@@ -1,7 +1,7 @@
 <?php
 session_start();
 $_SESSION['referer'] = "//" . $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URI'];
-include('../../inc/header.php'); include('../../conn.php'); include('../../inc/scraper.php');
+include('../../inc/header.php'); include('../../conn.php'); include('../../inc/scraper.php'); include('tildes.php');
 $query=mysqli_query($conn,"select * from user where userid='".$_SESSION['id']."'");
 $row=mysqli_fetch_assoc($query);
 
@@ -64,50 +64,43 @@ if (isset($_SESSION['nbaError'])){
         <div class="row">
             <?php
             // get DOM from URL or file
-            $html = file_get_html('https://www.espn.com.mx/beisbol/mlb/calendario');
+            $html = file_get_html('https://www.espn.com.mx/deporte-motor/f1/calendario');
             $fecha = $html -> find ('div.ResponsiveTable');
             $juegos = $html ->find ('tbody tr');
             foreach ($juegos as $juego):
-                $local = $juego ->find ('td div.local span a',1)-> plaintext;
-                $localFull = $juego ->find ('td div.local span a',0)-> href;
-                $localFull = substr($localFull, 33, 100);
-                $localLogo = $juego ->find ('td div.local span a img',0)-> src;
-                $visita = $juego ->find ('td div.matchTeams span a',1)-> plaintext;
-                $visitaFull = $juego ->find ('td div.matchTeams span a',0)-> href;
-                $visitaFull = substr($visitaFull, 33, 100);
-                $visitaLogo = $juego ->find ('td div.matchTeams span a img',0)-> src;
-                //Resultado $time = $juego ->find ('td a',4)-> plaintext;
-                $time = $juego ->find ('td',2)-> plaintext;
-                if (!$time){
-                    $time = $juego ->find ('td.date__col a.AnchorLink',0)-> plaintext;
-                    $finalizado = "";
+                $event = $juego ->find ('td.race__col a',0)-> plaintext;
+                $eventLogo = eliminar_tildes(strtolower($event));
+                $time = $juego ->find ('td.winnerLightsOut__col',0)-> plaintext;
+                $place = $juego ->find ('td.race__col div',0)-> plaintext;
+                $ended = $juego ->find ('td.tv__col a',0)-> plaintext;
+                if ($ended){
+                    $winner = '<i class="fas fa-trophy text-warning"></i> ';
+                } else {
+                    $winner = "";
                 }
-                if ($time == "LIVE"){
+                if ($time == "EN VIVO"){
                     $time = '<i class="fas fa-circle faa-flash animated"></i> En Vivo';
                     $finalizado = "";
+                } elseif ($time == "Cancelado"){
+                    $time = '<span class="badge badge-pill badge-danger">Cancelado</span>';
                 }
-                // Teams
-                include ('teams.php');
+                // Counters
+                $i; $i2;
+                // Locations & Custom Channels
+                include ('locations.php'); include ('channels.php');
             ?>
             <!-- Elemento -->
             <div class="col-12 mycard">
-                <a data-toggle="collapse" href="#juego-<?=$local?>-<?=$visita?>" role="button" aria-expanded="false" aria-controls="juego-<?=$local?>-<?=$visita?>">
+                <a data-toggle="collapse" href="#juego-<?=$i++?>" role="button" aria-expanded="false" aria-controls="juego-<?=$i++?>">
                     <div class="card product-card">
                         <div class="main-event">
                             <div class="league">
-                                <img src="<?=$app?>assets/img/ligas/mlb.png" alt="League" />
+                                <img src="<?=$app?>assets/img/ligas/f1.png" alt="League" />
                             </div>
                             <div class="match">
                                 <div class="team">
-                                    <img width="60px" src="<?=$app?>assets/img/equipos/mlb/<?=$local?>.png" alt="<?=$local?>" />
-                                    <h4><?=ucfirst($local)?></h4>
-                                </div>
-                                <div class="vs">
-                                    <h6>vs</h6>
-                                </div>
-                                <div class="team">
-                                    <img width="60px" src="<?=$app?>assets/img/equipos/mlb/<?=$visita?>.png" alt="<?=$visita?>" />
-                                    <h4><?=ucfirst($visita)?></h4>
+                                    <img class="<?=$eventLogo?>" width="60px" src="https://i.ibb.co/w0qg9JF/trans.png" alt="<?=$event?>" />
+                                    <h4><?=ucfirst($event)?></h4>
                                 </div>
                             </div>
                             <div class="channel">
@@ -116,15 +109,36 @@ if (isset($_SESSION['nbaError'])){
                         </div>
                     </div>
                 </a>
-                <div class="collapse" id="juego-<?=$local?>-<?=$visita?>">
+                <div class="collapse" id="juego-<?=$i2++?>">
                     <div class="card card-body">
                         <ul class="listview link-listview">
-                            <li>
-                                <a class="justify-content-center" href="?g=<?=$local?>">
-                                <i class="flag us"></i>
-                                MLB TV - <?=ucfirst($local)?> | HD
-                                </a>
-                            </li>
+                            <?php
+                            if (!isset($_SESSION['id']) ||(trim ($_SESSION['id']) == '')){
+                                echo '
+                                <li>
+                                    <a class="justify-content-center" href="go:daznf1">
+                                    <i class="flag es"></i>
+                                    DAZN F1 | HD (FREE)
+                                    </a>
+                                </li>
+                                ';
+                                echo $canal1Free;
+                                echo $canal2Free;
+                                echo $canal3Free;
+                            } else{
+                                echo '
+                                <li>
+                                    <a class="justify-content-center" href="../play/?c=daznf1">
+                                    <i class="flag es"></i>
+                                    DAZN F1 | HD (VIP)
+                                    </a>
+                                </li>
+                                ';
+                                echo $canal1VIP;
+                                echo $canal2VIP;
+                                echo $canal3VIP;
+                            }
+                            ?>
                         </ul>
                     </div>
                 </div>
