@@ -49,6 +49,7 @@ if ($typeChannel == 6){
     echo '
     <script>var source = "'. base64_encode("//channel-".$row['channelUrl']."-cdn.blim.com/manifest.mpd").'";</script>
     <script src="https://ssl.p.jwpcdn.com/player/v/8.24.6/jwplayer.js"></script>
+    <script src="bm-jwp.js"></script>
     <style>#jwp{display:block!important} #iframe-element{display:none!important;} #vidarea{display:none} #player_img{display:none}</style>
     <script>
     ';

@@ -67,11 +67,20 @@ if (isset($_SESSION['message']) ){
             $channels = mysqli_query($conn, "select * from channels
             INNER JOIN categories ON channels.category = categories.categoryId
                 INNER JOIN countries ON channels.country = countries.countryId
-                where type IN ('1','2','3','4','6') ORDER BY category DESC");
+                where type IN ('1','2','3','4','6', '7') ORDER BY category DESC");
             while($result=mysqli_fetch_array($channels)){
             ?>
             <!-- Elemento -->
-            <div class="col-6 col-sm-4 col-md-3 mycard">
+            <div style="<?php
+            $channelUrl = $result['channelUrl'];
+            $find = strpos($channelUrl, "arlocaltstvhls");
+            $find2 = strpos($channelUrl, "cvattv");
+            if ($find !== false){
+                echo "display: none";
+            } if ($find2 !== false){
+                echo "display: none";
+            };
+            ?>" class="col-6 col-sm-4 col-md-3 mycard">
                 <a href="epg?url=<?=$result['epg']?>&c=<?=$result['channelId']?>">
                     <div class="card product-card liga-card">
                         <div class="card-body">
