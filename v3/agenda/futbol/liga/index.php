@@ -52,14 +52,14 @@ if (isset($_SESSION['message']) ){
                             </div>
                             <div class="match">
                                 <div class="team">
-                                    <img src="<?=$app?>assets/img/equipos/<?=strtolower($result['ligaImg'])?>/<?=str_replace(' ', '', $result['local']); ?>.png" alt="" />
+                                    <img width="60px" src="<?=$app?>assets/img/equipos/<?=strtolower($result['ligaImg'])?>/<?=str_replace(' ', '', $result['local']); ?>.png" alt="" />
                                     <h4><?=ucfirst($local)?></h4>
                                 </div>
                                 <div class="vs">
                                     <h6>vs</h6>
                                 </div>
                                 <div class="team">
-                                    <img src="<?=$app?>assets/img/equipos/<?=strtolower($result['ligaImg'])?>/<?=str_replace(' ', '', $result['visita']); ?>.png" alt="" />
+                                    <img width="60px" src="<?=$app?>assets/img/equipos/<?=strtolower($result['ligaImg'])?>/<?=str_replace(' ', '', $result['visita']); ?>.png" alt="" />
                                     <h4><?=ucfirst($visita)?></h4>
                                 </div>
                             </div>
