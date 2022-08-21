@@ -61,19 +61,19 @@ if (isset($_SESSION['message']) ){
                                 </a>
                             </li>
                             <li>
-                                <a class="justify-content-center" href="../../../tv/epg/?c=100">
+                                <a class="justify-content-center" href="../../tv/epg/?c=100">
                                     <i class="flag es"></i>
                                     MEGA [GEO] | HD (FREE)
                                 </a>
                             </li>
                             <li>
-                                <a class="justify-content-center" href="../../../tv/epg/?c=262">
+                                <a class="justify-content-center" href="../../tv/epg/?c=262">
                                     <i class="flag es"></i>
                                     MEGA | HD (FREE)
                                 </a>
                             </li>
                             <li>
-                                <a class="justify-content-center" href="../../../tv/epg/?c=280">
+                                <a class="justify-content-center" href="../../tv/epg/?c=280">
                                     <i class="flag es"></i>
                                     MEGA [YouTube] | HD (FREE)
                                 </a>
