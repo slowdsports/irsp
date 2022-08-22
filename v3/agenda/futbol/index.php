@@ -143,6 +143,9 @@ if (isset($_SESSION['message']) ){
                 } elseif ($totalGames >= 1){
                     $ligaStatus = "show";
                 }
+                if ($index == 14){
+                    $ligaStatus = "hidden";
+                }
             ?>
             <!-- Elemento -->
             <div class="col-6 col-sm-4 col-md-3 mycard <?=$ligaStatus?>">
