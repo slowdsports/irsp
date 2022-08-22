@@ -10,6 +10,10 @@ $concat = $server.$usuario."/".$password."/".$channel.".m3u8";
 switch ($channel){
     case 'rmtv' : $channel=
     $server.$usuario."/".$password."/"."7".".m3u8"; break;
+    case 'smartbank' : $channel=
+    $server.$usuario."/".$password."/"."8".".m3u8"; break;
+    case 'smartbank1' : $channel=
+    $server.$usuario."/".$password."/"."9".".m3u8"; break;
     case 'mlaliga3' : $channel=
     $server.$usuario."/".$password."/"."11".".m3u8"; break;
     case 'mlaliga7' : $channel=

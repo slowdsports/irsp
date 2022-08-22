@@ -40,6 +40,8 @@ if (isset($_SESSION['message']) ){
                 // Teams
                 $local = $result['local'];
                 $visita = $result['visita'];
+                $time = $result['fecha'];
+                echo $time;
                 include('teams.php');
             ?>
             <!-- Elemento -->

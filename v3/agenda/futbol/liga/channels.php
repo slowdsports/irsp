@@ -221,7 +221,7 @@ if($canal === "DAZN (Regístrate)" || $canal === "DAZN | (Movistar 59)"){
     </li>';
 }
 
-if($canal === "Canal por confirmar" || $canal === "LaLiga SmartbankTV"){
+if($canal === "Canal por confirmar" || $canal === "Canal por confirmar"){
     $canalop2 = '
     <li>
         <a class="justify-content-center" href="javascript:void(0)">
@@ -239,6 +239,41 @@ if($canal === "Canal por confirmar" || $canal === "LaLiga SmartbankTV"){
     </li>';
 }
 
+if($canal === "LaLiga SmartbankTV" || $canal === "LaLiga SmartbankTV"){
+    $canalop2 = '
+    <li>
+        <a class="justify-content-center" href="../../play?c=smartbank">
+        <i class="flag es"></i>
+        LaLiga Smartbank | HD (VIP)
+        </a>
+    </li>';
+} elseif($canal2 === "LaLiga SmartbankTV" || $canal2 === "LaLiga SmartbankTV"){
+    $canal2 = '
+    <li>
+        <a class="justify-content-center" href="../../play?c=smartbank">
+        <i class="flag es"></i>
+        LaLiga Smartbank | HD (VIP)
+        </a>
+    </li>';
+}
+
+if($canal === "LaLiga SmartbankTV 1" || $canal === "LaLiga SmartbankTV 1"){
+    $canalop2 = '
+    <li>
+        <a class="justify-content-center" href="../../play?c=smartbank1">
+        <i class="flag es"></i>
+        LaLiga Smartbank 1 | HD (VIP)
+        </a>
+    </li>';
+} elseif($canal2 === "LaLiga SmartbankTV 1" || $canal2 === "LaLiga SmartbankTV 1"){
+    $canal2 = '
+    <li>
+        <a class="justify-content-center" href="../../play?c=smartbank1">
+        <i class="flag es"></i>
+        LaLiga Smartbank 1 | HD (VIP)
+        </a>
+    </li>';
+}
 
 if ($canalop2 == $canalop3){
 $canalop3 = "";
