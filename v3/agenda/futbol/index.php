@@ -96,12 +96,12 @@ if (isset($_SESSION['message']) ){
                             <div class="match">
                                 <div class="team">
                                     <img src="<?=$app?>assets/img/equipos/laliga/realmadrid.png" alt="" />
-                                    <h4>Casemiro</h4>
+                                    <h4>Despedida Casemiro</h4>
                                 </div>
                             </div>
-                            <div class="channel">
+                            <!-- <div class="channel">
                                 <img src="<?=$app?>assets/img/canales/realmadrid.png" alt="" />
-                            </div>
+                            </div> -->
                         </div>
                     </div>
                 </a>
