@@ -184,7 +184,7 @@ if (isset($_SESSION['message']) ){
         //::::::::::::                                       ::::::::::::
         //:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
         //                                   (AAAA, MM, DD, HH, MM, SS));
-        var countDownDate = new Date(Date.UTC(yyyy, mm, dd, 03, 30, 00));
+        var countDownDate = new Date(Date.UTC(yyyy, mm, dd, 03, 00, 00));
 
         // Update the count down every 1 second
         var x = setInterval(function () {
