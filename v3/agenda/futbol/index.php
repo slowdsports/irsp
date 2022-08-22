@@ -31,7 +31,7 @@ if (isset($_SESSION['message']) ){
 <!-- Categorías -->
     <div class="section mt-2">
         <div class="row">
-            <!-- Elemento -->
+            <!-- Elemento --
             <div class="col-12 mycard">
                 <a data-toggle="collapse" href="#chiringuito" role="button" aria-expanded="false" aria-controls="chiringuito">
                     <div class="card product-card">
@@ -41,7 +41,7 @@ if (isset($_SESSION['message']) ){
                             </div>
                             <div class="match">
                                 <div class="team">
-                                    <img width="60px" src="<?=$app?>assets/img/chiringuito.png" alt="" />
+                                    <img src="<?=$app?>assets/img/chiringuito.png" alt="" />
                                     <h4>Chiringuito de Jugones</h4>
                                 </div>
                             </div>
@@ -83,6 +83,54 @@ if (isset($_SESSION['message']) ){
                 </div>
             </div>
             <!-- End Elemento -->
+
+            <!-- Elemento -->
+            <div class="col-12 mycard">
+                <a data-toggle="collapse" href="#casemiro" role="button" aria-expanded="false" aria-controls="casemiro">
+                    <div class="card product-card">
+                        <div class="main-event">
+                            <div class="league">
+                                <img src="<?=$app?>assets/img/equipos/laliga/realmadrid.png" alt="Casemiro" />
+                                <p class="text-center caseTime">Time</p>
+                            </div>
+                            <div class="match">
+                                <div class="team">
+                                    <img src="<?=$app?>assets/img/equipos/laliga/realmadrid.png" alt="" />
+                                    <h4>Casemiro</h4>
+                                </div>
+                            </div>
+                            <div class="channel">
+                                <img src="<?=$app?>assets/img/canales/realmadrid.png" alt="" />
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <div class="collapse" id="casemiro">
+                    <div class="card card-body">
+                        <ul class="listview link-listview">
+                            <li>
+                                <a class="justify-content-center" href="../play/?c=rmtv">
+                                    <i class="flag es"></i>
+                                    Real Madrid TV | HD (VIP)
+                                </a>
+                            </li>
+                            <li>
+                                <a class="justify-content-center" href="../../tv/epg/?c=131">
+                                    <i class="flag es"></i>
+                                    Real Madrid TV | HD (FREE)
+                                </a>
+                            </li>
+                            <li>
+                                <a class="justify-content-center" href="../../tv/epg/?c=132">
+                                    <i class="flag uk"></i>
+                                    Real Madrid TV | HD (FREE)
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- End Elemento -->
             <?php
             $ligas = mysqli_query($conn, "select * from ligas ");
             while($result=mysqli_fetch_array($ligas)){
@@ -115,6 +163,65 @@ if (isset($_SESSION['message']) ){
         </div>
     </div>
 <!-- End Categorías -->
+<!-- Timer -->
+<script>
+    var yyyy = 2022; var mm = 07; var dd = 22;
+
+    var myTime = yyyy+mm+dd;
+    var textLive = "<p class='live-text'>En Vivo <ion-icon class='faa-flash animated' name='ellipse'></ion-icon></p>";
+    var textEnd = "Finalizó";
+
+
+    function caseTime() {
+        // Set the date we're counting down to
+        // Year, Month ( 0 for January ), Day, Hour, Minute, Second, , Milliseconds
+        //:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+        //::::::::::::                                       ::::::::::::
+        //::::::::::::              12:00 AM                  ::::::::::::
+        //::::::::::::                                       ::::::::::::
+        //:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+        //                                   (AAAA, MM, DD, HH, MM, SS));
+        var countDownDate = new Date(Date.UTC(yyyy, mm, dd, 03, 30, 00));
+
+        // Update the count down every 1 second
+        var x = setInterval(function () {
+
+        // Get todays date and time
+        var now = new Date().getTime();
+
+        // Find the distance between now an the count down date
+        // GMT/UTC Adjustment at the end of the function. 0 = GMT/UTC+0; 1 = GMT/UTC+1.
+        var distance = countDownDate - now - (3600000 * -6);
+
+        // Time calculations for days, hours, minutes and seconds
+        var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+        var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+        var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+        // Output the result in an element with id="demo"
+        for (const ele of document.getElementsByClassName("caseTime")){
+            ele.innerHTML = (hours + "<span>h</span> "
+            + minutes + "<span>m</span> " + seconds + "<span>s</span><br />")
+        }
+        // If the count down is over, write some text
+        if (distance < 0) {
+            for (const ele of document.getElementsByClassName("caseTime")) {
+                ele.innerHTML = textLive;
+            }
+            if (distance + 10800000 < 0) {
+                countDownDate = new Date(countDownDate.getTime() + 86400000)
+            } else if (distance + 7200000 < 0) {
+                for (const allEllements of document.getElementsByClassName("caseTime")) {
+                    allEllements.innerHTML = textEnd;
+                }
+            }
+        }
+    }, 1000);
+}
+caseTime()
+</script>
+<!-- *Timer -->
 <?php
 include('../../inc/navbar.php');
 ?>
