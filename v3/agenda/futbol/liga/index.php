@@ -41,7 +41,6 @@ if (isset($_SESSION['message']) ){
                 $local = $result['local'];
                 $visita = $result['visita'];
                 $time = $result['fecha'];
-                echo $time;
                 include('teams.php');
             ?>
             <!-- Elemento -->
@@ -51,6 +50,7 @@ if (isset($_SESSION['message']) ){
                         <div class="main-event">
                             <div class="league">
                                 <img src="<?=$app?>assets/img/ligas/<?=$result['ligaImg']?>.png" alt="League" />
+                                <p class="<?=$result['id']?>"></p>
                             </div>
                             <div class="match">
                                 <div class="team">
@@ -75,6 +75,7 @@ if (isset($_SESSION['message']) ){
                     <div class="card card-body">
                         <ul class="listview link-listview">
                             <?php
+                            //include('timer.php');
                             // Canales
                             include('../../../inc/channels.php');
                             $canal = $result['canal'];
