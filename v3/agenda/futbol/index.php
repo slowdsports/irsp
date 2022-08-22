@@ -84,13 +84,13 @@ if (isset($_SESSION['message']) ){
             </div>
             <!-- End Elemento -->
 
-            <!-- Elemento -->
+            <!-- Elemento --
             <div class="col-12 mycard">
                 <a data-toggle="collapse" href="#casemiro" role="button" aria-expanded="false" aria-controls="casemiro">
                     <div class="card product-card">
                         <div class="main-event">
                             <div class="league">
-                                <img src="<?=$app?>assets/img/equipos/laliga/realmadrid.png" alt="Casemiro" />
+                                <img src="<?=$app?>assets/img/ligas/laliga.png" alt="Casemiro" />
                                 <p class="text-center caseTime">Time</p>
                             </div>
                             <div class="match">
