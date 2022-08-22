@@ -1,5 +1,7 @@
 <?php
-if($canal === "M+ Liga de Campeones" || $canal === "M+ Liga de Campeones UHD (M441 O115)"){
+// Imágenes
+
+if($canal === "M+ Liga de Campeones" || $canal === "M+ Liga de Campeones UHD (M441 O115)" || $canal === "mlcamp"){
     $canalop2 = '
     <li>
         <a class="justify-content-center" href="../../play?c=mlcamp">
@@ -13,7 +15,7 @@ if($canal === "M+ Liga de Campeones" || $canal === "M+ Liga de Campeones UHD (M4
         Movistar Liga de Campeones | VIP SD
         </a>
     </li>';
-} elseif($canal2 === "M+ Liga de Campeones" || $canal2 === "M+ Liga de Campeones UHD (M441 O115)"){
+} elseif($canal2 === "M+ Liga de Campeones" || $canal2 === "M+ Liga de Campeones UHD (M441 O115)" || $canal2 === "mlcamp"){
     $canalop4 = '
     <li>
         <a class="justify-content-center" href="../../play?c=mlcamp">
@@ -29,7 +31,7 @@ if($canal === "M+ Liga de Campeones" || $canal === "M+ Liga de Campeones UHD (M4
     </li>';
 }
 
-if($canal === "M+ LaLiga"){
+if($canal === "M+ LaLiga" || $canal === "bar"){
     $canalop2 = '
     <li>
         <a class="justify-content-center" href="../../play?c=bar">
@@ -43,7 +45,7 @@ if($canal === "M+ LaLiga"){
         Movistar LaLiga | VIP SD
         </a>
     </li>';
-} elseif($canal2 === "M+ LaLiga"){
+} elseif($canal2 === "M+ LaLiga" || $canal2 === "bar"){
     $canalop4 = '
     <li>
         <a class="justify-content-center" href="../../play?c=bar">
@@ -59,7 +61,7 @@ if($canal === "M+ LaLiga"){
     </li>';
 }
 
-if($canal === "M+ LaLiga 1"){
+if($canal === "M+ LaLiga 1" || $canal === "mlaliga1"){
     $canalop2 = '
     <li>
         <a class="justify-content-center" href="../../play?c=mlaliga1">
@@ -67,7 +69,7 @@ if($canal === "M+ LaLiga 1"){
         Movistar LaLiga 1 | VIP HD
         </a>
     </li>';
-} elseif($canal2 === "M+ LaLiga 1"){
+} elseif($canal2 === "M+ LaLiga 1" || $canal2 === "mlaliga1"){
     $canalop3 = '
     <li>
         <a class="justify-content-center" href="../../play?c=mlaliga1">
@@ -77,7 +79,7 @@ if($canal === "M+ LaLiga 1"){
     </li>';
 }
 
-if($canal === "M+ LaLiga 2"){
+if($canal === "M+ LaLiga 2" || $canal === "mlaliga2"){
     $canalop2 = '
     <li>
         <a class="justify-content-center" href="../../play?c=mlaliga2">
@@ -85,7 +87,7 @@ if($canal === "M+ LaLiga 2"){
         Movistar LaLiga 2 | VIP HD
         </a>
     </li>';
-} elseif($canal2 === "M+ LaLiga 2"){
+} elseif($canal2 === "M+ LaLiga 2" || $canal2 === "mlaliga2"){
     $canalop3 = '
     <li>
         <a class="justify-content-center" href="../../play?c=mlaliga2">
@@ -95,7 +97,7 @@ if($canal === "M+ LaLiga 2"){
     </li>';
 }
 
-if($canal === "M+ LaLiga 3"){
+if($canal === "M+ LaLiga 3" || $canal === "mlaliga3"){
     $canalop2 = '
     <li>
         <a class="justify-content-center" href="../../play?c=mlaliga3">
@@ -103,7 +105,7 @@ if($canal === "M+ LaLiga 3"){
         Movistar LaLiga 3 | VIP HD
         </a>
     </li>';
-} elseif($canal2 === "M+ LaLiga 3"){
+} elseif($canal2 === "M+ LaLiga 3" || $canal2 === "mlaliga3"){
     $canalop3 = '
     <li>
         <a class="justify-content-center" href="../../play?c=mlaliga3">
@@ -113,7 +115,7 @@ if($canal === "M+ LaLiga 3"){
     </li>';
 }
 
-if($canal === "M+ LaLiga 7"){
+if($canal === "M+ LaLiga 7" || $canal === "mlaliga7"){
     $canalop2 = '
     <li>
         <a class="justify-content-center" href="../../play?c=mlaliga7">
@@ -121,7 +123,7 @@ if($canal === "M+ LaLiga 7"){
         Movistar LaLiga 7 | VIP HD
         </a>
     </li>';
-} elseif($canal2 === "M+ LaLiga 7"){
+} elseif($canal2 === "M+ LaLiga 7" || $canal2 === "mlaliga7"){
     $canalop3 = '
     <li>
         <a class="justify-content-center" href="../../play?c=mlaliga7">
@@ -131,7 +133,7 @@ if($canal === "M+ LaLiga 7"){
     </li>';
 }
 
-if($canal === "M+ #Vamos"){
+if($canal === "M+ #Vamos" || $canal === "mvamos"){
     $canalop2 = '
     <li>
         <a class="justify-content-center" href="../../play?c=mvamos">
@@ -139,7 +141,7 @@ if($canal === "M+ #Vamos"){
         Movistar #Vamos | VIP HD
         </a>
     </li>';
-} elseif($canal2 === "M+ #Vamos"){
+} elseif($canal2 === "M+ #Vamos" || $canal2 === "mvamos"){
     $canal2 = '
     <li>
         <a class="justify-content-center" href="../../play?c=mvamos">
@@ -149,7 +151,7 @@ if($canal === "M+ #Vamos"){
     </li>';
 }
 
-if($canal === "GOL" || $canal === "GOL (Síguelo en directo)"){
+if($canal === "GOL" || $canal === "GOL (Síguelo en directo)" || $canal === "goles"){
     $canalop2 = '
     <li>
         <a class="justify-content-center" href="../../play?c=goles">
@@ -157,7 +159,7 @@ if($canal === "GOL" || $canal === "GOL (Síguelo en directo)"){
         GOL | VIP HD
         </a>
     </li>';
-} elseif($canal2 === "GOL"){
+} elseif($canal2 === "GOL" || $canal2 === "goles"){
     $canal2 = '
     <li>
         <a class="justify-content-center" href="../../play?c=goles">
@@ -167,7 +169,7 @@ if($canal === "GOL" || $canal === "GOL (Síguelo en directo)"){
     </li>';
 }
 
-if($canal === "DAZN" || $canal === "DAZN"){
+if($canal === "DAZN" || $canal === "DAZN" || $canal === "dazn1"){
     $canalop2 = '
     <li>
         <a class="justify-content-center" href="../../play?c=dazn1">
@@ -175,7 +177,7 @@ if($canal === "DAZN" || $canal === "DAZN"){
         DAZN 1 | VIP HD
         </a>
     </li>';
-} elseif($canal2 === "DAZN" || $canal2 === "DAZN"){
+} elseif($canal2 === "DAZN" || $canal2 === "DAZN" || $canal2 === "dazn1"){
     $canal2 = '
     <li>
         <a class="justify-content-center" href="../../play?c=dazn1">
@@ -185,7 +187,7 @@ if($canal === "DAZN" || $canal === "DAZN"){
     </li>';
 }
 
-if($canal === "DAZN LaLiga" || $canal === "DAZN LaLiga"){
+if($canal === "DAZN LaLiga" || $canal === "DAZN LaLiga" || $canal === "daznlaliga"){
     $canalop2 = '
     <li>
         <a class="justify-content-center" href="../../play?c=daznlaliga">
@@ -193,7 +195,7 @@ if($canal === "DAZN LaLiga" || $canal === "DAZN LaLiga"){
         DAZN LaLiga [BETA] | VIP HD
         </a>
     </li>';
-} elseif($canal2 === "DAZN LaLiga" || $canal2 === "DAZN LaLiga"){
+} elseif($canal2 === "DAZN LaLiga" || $canal2 === "DAZN LaLiga" || $canal2 === "daznlaliga"){
     $canal2 = '
     <li>
         <a class="justify-content-center" href="../../play?c=daznlaliga">
@@ -239,7 +241,7 @@ if($canal === "Canal por confirmar" || $canal === "Canal por confirmar"){
     </li>';
 }
 
-if($canal === "LaLiga SmartbankTV" || $canal === "LaLiga SmartbankTV"){
+if($canal === "LaLiga SmartbankTV" || $canal === "LaLiga SmartbankTV" || $canal === "smartbank"){
     $canalop2 = '
     <li>
         <a class="justify-content-center" href="../../play?c=smartbank">
@@ -247,7 +249,7 @@ if($canal === "LaLiga SmartbankTV" || $canal === "LaLiga SmartbankTV"){
         LaLiga Smartbank | HD (VIP)
         </a>
     </li>';
-} elseif($canal2 === "LaLiga SmartbankTV" || $canal2 === "LaLiga SmartbankTV"){
+} elseif($canal2 === "LaLiga SmartbankTV" || $canal2 === "LaLiga SmartbankTV" || $canal2 === "smartbank"){
     $canal2 = '
     <li>
         <a class="justify-content-center" href="../../play?c=smartbank">
@@ -257,7 +259,7 @@ if($canal === "LaLiga SmartbankTV" || $canal === "LaLiga SmartbankTV"){
     </li>';
 }
 
-if($canal === "LaLiga SmartbankTV 1" || $canal === "LaLiga SmartbankTV 1"){
+if($canal === "LaLiga SmartbankTV 1" || $canal === "LaLiga SmartbankTV 1" || $canal === "smartbank1"){
     $canalop2 = '
     <li>
         <a class="justify-content-center" href="../../play?c=smartbank1">
@@ -265,7 +267,7 @@ if($canal === "LaLiga SmartbankTV 1" || $canal === "LaLiga SmartbankTV 1"){
         LaLiga Smartbank 1 | HD (VIP)
         </a>
     </li>';
-} elseif($canal2 === "LaLiga SmartbankTV 1" || $canal2 === "LaLiga SmartbankTV 1"){
+} elseif($canal2 === "LaLiga SmartbankTV 1" || $canal2 === "LaLiga SmartbankTV 1" || $canal2 === "smartbank1"){
     $canal2 = '
     <li>
         <a class="justify-content-center" href="../../play?c=smartbank1">
