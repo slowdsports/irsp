@@ -45,13 +45,13 @@ if (isset($_SESSION['message']) ){
     <?php
     // // Validaciones de Canales
     include('valid.php');
-    // Windows o Mobile
-    if ($useragent == "mobile"){
-        $isHls = "show active";
-        $isJw = "";
-    } else {
+    // Windows o Mobile Pluto
+    if ($typeChannel == 8 && $useragent !== "mobile"){
         $isJw = "show active";
         $isHls = "";
+    } else {
+        $isJw = "";
+        $isHls = "show active";
     }
     ?>
     <center>
