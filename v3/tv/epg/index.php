@@ -49,9 +49,11 @@ if (isset($_SESSION['message']) ){
     if ($typeChannel == 8 && $useragent !== "mobile"){
         $isJw = "show active";
         $isHls = "";
+        echo $useragent;
     } else {
         $isJw = "";
         $isHls = "show active";
+        echo $useragent;
     }
     ?>
     <center>
