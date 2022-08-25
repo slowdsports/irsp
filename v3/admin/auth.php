@@ -23,7 +23,7 @@ if (isset($_POST["login"])) {
         $_SESSION["id"] = $row["id"];
 
         // Validate Referrer
-        $app = "//".$_SERVER['SERVER_NAME']."/app2/irsp/v3/admin";
+        $app = "//".$_SERVER['SERVER_NAME']."/v3/admin";
         if ($refer == null){
             // Go index
             header ("location: $app");
