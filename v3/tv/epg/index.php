@@ -49,7 +49,7 @@ if (isset($_SESSION['message']) ){
     if ($useragent == "mobile"){
         $isHls = "show active";
         $isJw = "";
-    } elseif ($useragent == "pc"){
+    } else {
         $isJw = "show active";
         $isHls = "";
     }
