@@ -51,12 +51,12 @@ include ('includes/header.php'); include('backend/usuarios.php');
                     </thead>
                     <tbody>
                         <?php
-                        $usuarios=mysqli_query($conn,"select * from users");
+                        $usuarios=mysqli_query($conn,"select * from user");
                         $cnt=1;
                         while($usu=mysqli_fetch_array($usuarios))
                         {
                         // CALC SUBSCRIPTION
-                        $futuro = strtotime($usu['subscriptionExpDate']);
+                        $futuro = strtotime($usu['fecha']);
                         $presente = time();
                         $left = $futuro - $presente;
                         $daysleft = round((($left/24)/60)/60);
@@ -70,50 +70,46 @@ include ('includes/header.php'); include('backend/usuarios.php');
                         ?>
                         <tr>
                             <td><?=$cnt?></td>
-                            <td><?=$usu['name']?></td>
-                            <td><?=$usu['telegram']?></td>
-                            <td><?=$usu['subscriptionExpDate']?></td>
+                            <td><?=$usu['fullname']?></td>
+                            <td><?=$usu['username']?></td>
+                            <td><?=$usu['fecha']?></td>
                             <td>
                                 <label class="badge badge-<?=$userStatus?>">
                                     <?=$userText?></label>
                             </td>
                             <td>
-                            <button type="button" class="btn btn-sm btn-outline-primary btn-icon-text" data-toggle="modal" data-target="#modal<?=$usu['id'];?>">
+                            <button type="button" class="btn btn-sm btn-outline-primary btn-icon-text" data-toggle="modal" data-target="#modal<?=$usu['userid'];?>">
                             <i class="mdi mdi-tooltip-edit btn-icon-prepend"></i>Editar</button>
 
-                            <a href="?uid=<?=$usu['id']?>" type="button" class="btn btn-sm btn-outline-danger">
+                            <a href="?uid=<?=$usu['userid']?>" type="button" class="btn btn-sm btn-outline-danger">
                             <i class="mdi mdi-delete btn-icon-prepend"></i>Borrar</a>
                             </td>
                         </tr>
                         <!-- Modal -->
-                        <div class="modal fade" id="modal<?=$usu['id']?>" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal fade" id="modal<?=$usu['userid']?>" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                             <div class="modal-dialog modal-dialog-centered">
                                 <div class="modal-content">
                                     <div class="modal-header">
-                                        <h5 class="modal-title" id="exampleModalLabel">Editar <?=$usu['name']?></h5>
+                                        <h5 class="modal-title" id="exampleModalLabel">Editar <?=$usu['username']?></h5>
                                     </div>
                                     <div class="modal-body">
                                         <form method="post" class="forms-sample">
                                             <div class="form-group">
-                                            <input style="visibility: hidden" type="text" class="form-control text-light" id="id" name="id" value="<?=$usu['id']?>" />
-                                                <label for="name">Nombre</label>
-                                                <input type="text" class="form-control" id="name" name="name" value="<?=$usu['name']?>" />
+                                            <input style="visibility: hidden" type="text" class="form-control text-light" id="userid" name="userid" value="<?=$usu['userid']?>" />
+                                                <label for="fullname">Nombre</label>
+                                                <input type="text" class="form-control" id="fullname" name="fullname" value="<?=$usu['fullname']?>" />
                                             </div>
                                             <div class="form-group">
-                                                <label for="telegram">Usuario</label>
-                                                <input type="text" class="form-control text-light" id="telegram" name="telegram" value="<?=$usu['telegram']?>" />
-                                            </div>
-                                            <div class="form-group">
-                                                <label for="email">Correo</label>
-                                                <input type="email" class="form-control text-light" id="email" name="email" value="<?=$usu['email']?>" />
+                                                <label for="username">Usuario</label>
+                                                <input type="text" class="form-control text-light" id="username" name="username" value="<?=$usu['username']?>" />
                                             </div>
                                             <div class="form-group">
                                                 <label for="password">Contraseña</label>
-                                                <input type="password" class="form-control text-light" id="password" name="password" value="<?=$usu['password']?>" />
+                                                <input type="text" class="form-control text-light" id="password" name="password" value="<?=$usu['password']?>" />
                                             </div>
                                             <div class="form-group">
-                                                <label for="subscriptionExpDate">Fecha</label>
-                                                <input type="date" class="form-control text-light" id="subscriptionExpDate" name="subscriptionExpDate" value="<?=$usu['subscriptionExpDate']?>" />
+                                                <label for="fecha">Fecha</label>
+                                                <input type="date" class="form-control text-light" id="fecha" name="fecha" value="<?=$usu['fecha']?>" />
                                             </div>
                                             <button type="submit" id="guardar" name="guardar" class="btn btn-primary me-2">Guardar</button>
                                             <button class="btn btn-dark" data-dismiss="modal">Cancelar</button>
@@ -129,29 +125,25 @@ include ('includes/header.php'); include('backend/usuarios.php');
                             <div class="modal-dialog modal-dialog-centered">
                                 <div class="modal-content">
                                     <div class="modal-header">
-                                        <h5 class="modal-title" id="exampleModalLabel">Agregar Usuario </h5>
+                                        <h5 class="modal-title" id="exampleModalLabel">Editar <?=$usu['username']?></h5>
                                     </div>
                                     <div class="modal-body">
                                         <form method="post" class="forms-sample">
                                             <div class="form-group">
-                                                <label for="name">Nombre</label>
-                                                <input type="text" class="form-control text-light" id="name" name="name"/>
+                                                <label for="fullname">Nombre</label>
+                                                <input type="text" class="form-control text-light" id="fullname" name="fullname"/>
                                             </div>
                                             <div class="form-group">
-                                                <label for="telegram">Usuario</label>
-                                                <input type="text" class="form-control text-light" id="telegram" name="telegram" />
-                                            </div>
-                                            <div class="form-group">
-                                                <label for="email">Correo</label>
-                                                <input type="email" class="form-control text-light" id="email" name="email"/>
+                                                <label for="username">Usuario</label>
+                                                <input type="text" class="form-control text-light" id="username" name="username" />
                                             </div>
                                             <div class="form-group">
                                                 <label for="password">Contraseña</label>
                                                 <input type="password" class="form-control text-light" id="password" name="password" />
                                             </div>
                                             <div class="form-group">
-                                                <label for="subscriptionExpDate">Fecha</label>
-                                                <input type="date" class="form-control text-light" id="subscriptionExpDate" name="subscriptionExpDate" />
+                                                <label for="fecha">Fecha</label>
+                                                <input type="date" class="form-control text-light" id="fecha" name="fecha" />
                                             </div>
                                             <button type="submit" id="agregar" name="agregar" class="btn btn-primary me-2">Guardar</button>
                                             <button class="btn btn-dark" data-dismiss="modal">Cancelar</button>
