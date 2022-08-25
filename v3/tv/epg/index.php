@@ -49,11 +49,11 @@ if (isset($_SESSION['message']) ){
     if ($typeChannel == 8 && strpos($useragent, "Android")){
         $isJw = "";
         $isHls = "show active";
-        echo $useragent;
+        //echo $useragent;
     } else {
         $isJw = "show active";
         $isHls = "";
-        echo $useragent;
+        //echo $useragent;
     }
     ?>
     <center>
@@ -88,7 +88,7 @@ if (isset($_SESSION['message']) ){
 <!-- Evento en directo -->
 <hr>
 <?php include('../../inc/sliders/gatotv.php'); ?>
-<div class="container">
+<div class="container <?=$epgStatus?>">
     <a href="javascript:void(0)">
         <div class="item">
             <div class="card">
