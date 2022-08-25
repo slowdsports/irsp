@@ -1,6 +1,4 @@
 <?php
-// Imágenes
-
 if($canal === "M+ Liga de Campeones" || $canal === "M+ Liga de Campeones UHD (M441 O115)" || $canal === "mlcamp"){
     $canalop2 = '
     <li>
@@ -170,6 +168,7 @@ if($canal === "GOL" || $canal === "GOL (Síguelo en directo)" || $canal === "gol
 }
 
 if($canal === "DAZN" || $canal === "DAZN" || $canal === "dazn1"){
+    $canalImg = "dazn";
     $canalop2 = '
     <li>
         <a class="justify-content-center" href="../../play?c=dazn1">
@@ -178,6 +177,7 @@ if($canal === "DAZN" || $canal === "DAZN" || $canal === "dazn1"){
         </a>
     </li>';
 } elseif($canal2 === "DAZN" || $canal2 === "DAZN" || $canal2 === "dazn1"){
+    $canalImg = "dazn";
     $canal2 = '
     <li>
         <a class="justify-content-center" href="../../play?c=dazn1">

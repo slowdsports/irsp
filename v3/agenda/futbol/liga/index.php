@@ -66,7 +66,7 @@ if (isset($_SESSION['message']) ){
                                 </div>
                             </div>
                             <div class="channel">
-                                <img src="http://iraffle.live/v3/assets/img/ligas/uel.png" alt="" />
+                                <img src="<?=$app?>assets/img/canales/<?=$canalImg?>.png" alt="" />
                             </div>
                         </div>
                     </div>
