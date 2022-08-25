@@ -90,7 +90,7 @@ if (isset($_SESSION['message']) ){
                                 <img width="48px" src="https://i.ibb.co/w0qg9JF/trans.png" style="background-image: url('<?=$result['channelImg']?>');
                                 background-size: contain;
                                 background-repeat: no-repeat" class="image" alt="product image">
-                                <h2 class="title text-center"><?=$result['channelName']?></h2>
+                                <h2 class="title text-center"><?=strtoupper($result['channelName'])?></h2>
                                 </center>
                             </div>
                         </div>
