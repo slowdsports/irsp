@@ -1,13 +1,21 @@
 <?php
+// Windows o Mobile
+if ($useragent == "mobile"){
+    $isHls = "show active";
+    $isJw = "";
+} elseif ($useragent == "pc"){
+    $isJw = "show active";
+    $isHls = "";
+}
 // Para M3U
 if ($typeChannel == 1 || $typeChannel == 8){
     echo '
     <ul class="nav nav-tabs" id="myTab" role="tablist">
         <li class="nav-item" role="presentation">
-            <button class="btn btn-primary active" id="jw-tab" data-toggle="tab" data-target="#jw" type="button" role="tab" aria-controls="home" aria-selected="true">JW Player</button>
+            <button class="btn btn-primary '.$isJw.'" id="jw-tab" data-toggle="tab" data-target="#jw" type="button" role="tab" aria-controls="home" aria-selected="true">JW Player</button>
         </li>
         <li class="nav-item" role="presentation">
-            <button class="btn btn-primary" id="hls-tab" data-toggle="tab" data-target="#hls" type="button" role="tab" aria-controls="hls" aria-selected="false">Hls Player</button>
+            <button class="btn btn-primary '.$isHls.'" id="hls-tab" data-toggle="tab" data-target="#hls" type="button" role="tab" aria-controls="hls" aria-selected="false">Hls Player</button>
         </li>
     </ul>
     ';
