@@ -31,10 +31,11 @@ if (isset($_SESSION['message']) ){
     unset($_SESSION['message']);
 }
 ?>
-
-<div class="header-large-title">
-    <h1 class="title"><?=ucfirst($row['fullname'])?></h1>
-    <h4 class="subtitle">¿Qué quieres ver hoy?</h4>
+<div class="container">
+    <div class="header-large-title">
+        <h1 class="title"><?=ucfirst($row['fullname'])?></h1>
+        <h4 class="subtitle">¿Qué quieres ver hoy?</h4>
+    </div>
 </div>
 
 <!-- Alerta -->
@@ -48,8 +49,8 @@ if (isset($_SESSION['message']) ){
 <!-- *Alerta -->
 
 <!-- Search Form -->
-<div class="container">
-    <div class="extraHeader">
+<div class="extraHeader">
+    <div class="container">
         <form class="search-form">
             <div class="form-group searchbox">
                 <input id="channelSearch" onkeyup="myFunction()" type="text" class="form-control" placeholder="Buscar..." />
@@ -62,41 +63,43 @@ if (isset($_SESSION['message']) ){
 
 <!-- Categorías -->
     <div class="section mt-2">
-        <div id="channelsList" class="row">
-            <?php
-            $channels = mysqli_query($conn, "select * from channels
-            INNER JOIN categories ON channels.category = categories.categoryId
-                INNER JOIN countries ON channels.country = countries.countryId
-                where type IN ('1','2','3','4','6', '7', '8') ORDER BY category DESC");
-            while($result=mysqli_fetch_array($channels)){
-            ?>
-            <!-- Elemento -->
-            <div style="<?php
-            $channelUrl = $result['channelUrl'];
-            $find = strpos($channelUrl, "arlocaltstvhls");
-            $find2 = strpos($channelUrl, "cvattv");
-            if ($find !== false){
-                echo "display: none";
-            } if ($find2 !== false){
-                echo "display: none";
-            };
-            ?>" class="col-6 col-sm-4 col-md-3 mycard">
-                <a href="epg?url=<?=$result['epg']?>&c=<?=$result['channelId']?>">
-                    <div class="card product-card liga-card">
-                        <div class="card-body">
-                            <center>
-                            <img width="48px" src="https://i.ibb.co/w0qg9JF/trans.png" style="background-image: url('<?=$result['channelImg']?>');
-                            background-size: contain;
-                            background-repeat: no-repeat" class="image" alt="product image">
-                            <h2 class="title text-center"><?=$result['channelName']?></h2>
-                            </center>
+        <div class="container">
+            <div id="channelsList" class="row">
+                <?php
+                $channels = mysqli_query($conn, "select * from channels
+                INNER JOIN categories ON channels.category = categories.categoryId
+                    INNER JOIN countries ON channels.country = countries.countryId
+                    where type IN ('1','2','3','4','6', '7', '8') ORDER BY category DESC");
+                while($result=mysqli_fetch_array($channels)){
+                ?>
+                <!-- Elemento -->
+                <div style="<?php
+                $channelUrl = $result['channelUrl'];
+                $find = strpos($channelUrl, "arlocaltstvhls");
+                $find2 = strpos($channelUrl, "cvattv");
+                if ($find !== false){
+                    echo "display: none";
+                } if ($find2 !== false){
+                    echo "display: none";
+                };
+                ?>" class="col-6 col-sm-4 col-md-3 col-lg-2 col-xl-2 mycard">
+                    <a href="epg?url=<?=$result['epg']?>&c=<?=$result['channelId']?>">
+                        <div class="card product-card liga-card">
+                            <div class="card-body">
+                                <center>
+                                <img width="48px" src="https://i.ibb.co/w0qg9JF/trans.png" style="background-image: url('<?=$result['channelImg']?>');
+                                background-size: contain;
+                                background-repeat: no-repeat" class="image" alt="product image">
+                                <h2 class="title text-center"><?=$result['channelName']?></h2>
+                                </center>
+                            </div>
                         </div>
-                    </div>
-                </a>
-            </div>
-            <!-- End Elemento -->
-            <?}?>
+                    </a>
+                </div>
+                <!-- End Elemento -->
+                <?}?>
 
+            </div>
         </div>
     </div>
 <!-- End Categorías -->
