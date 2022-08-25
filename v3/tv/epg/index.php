@@ -45,6 +45,14 @@ if (isset($_SESSION['message']) ){
     <?php
     // // Validaciones de Canales
     include('valid.php');
+    // Windows o Mobile
+    if ($useragent == "mobile"){
+        $isHls = "show active";
+        $isJw = "";
+    } elseif ($useragent == "pc"){
+        $isJw = "show active";
+        $isHls = "";
+    }
     ?>
     <center>
         <hr>

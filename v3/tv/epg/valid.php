@@ -1,12 +1,4 @@
 <?php
-// Windows o Mobile
-if ($useragent == "mobile"){
-    $isHls = "show active";
-    $isJw = "";
-} elseif ($useragent == "pc"){
-    $isJw = "show active";
-    $isHls = "";
-}
 // Para M3U
 if ($typeChannel == 1 || $typeChannel == 8){
     echo '
