@@ -1,6 +1,6 @@
 <?php
 // EPG Oculto para Pluto
-if ($typeChannel == 8){
+if ($typeChannel == 2 || $typeChannel == 3 || $typeChannel == 8 | $_GET['url'] == "" ){
     $epgStatus = "hidden";
 }
 // Para M3U
