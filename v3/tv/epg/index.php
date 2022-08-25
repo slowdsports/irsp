@@ -1,7 +1,7 @@
 <?php
 session_start();
 $_SESSION['referer'] = "//" . $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URI'];
-include('../../inc/header.php'); include('../../conn.php'); include('../../inc/scraper.php');
+include('../../inc/header.php'); include('../../conn.php'); include('../../inc/scraper.php'); include('../../inc/sliders/gatotv.php');
 $query=mysqli_query($conn,"select * from user where userid='".$_SESSION['id']."'");
 $row=mysqli_fetch_assoc($query);
 
@@ -87,7 +87,6 @@ if (isset($_SESSION['message']) ){
 
 <!-- Evento en directo -->
 <hr>
-<?php include('../../inc/sliders/gatotv.php'); ?>
 <div class="container <?=$epgStatus?>">
     <a href="javascript:void(0)">
         <div class="item">
