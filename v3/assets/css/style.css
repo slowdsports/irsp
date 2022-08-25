@@ -6929,7 +6929,8 @@ body.dark-mode-active .appHeader .right .headerButton {
 }
 
 body.dark-mode-active .extraHeader {
-  background: #3F3F3F;
+  /*background: #3F3F3F;*/
+  background: transparent;
   border-bottom-color: #0792B5;
 }
 
