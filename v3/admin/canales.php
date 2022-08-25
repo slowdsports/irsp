@@ -25,6 +25,28 @@ include('backend/canales.php');
         <div class="table-responsive">
             <div class="page-header">
                 <h3 class="page-title"> Canales de Televisión </h3>
+                <!-- Select -->
+
+                <form method="get">
+                    <div class="input-group form-group">
+                        <select class="custom-select js-example-basic-single" id="inputGroupSelect04" name="type" id="type">
+                            <option selected>Selecciona Tipo</option>
+                            <?php
+                            $chnType = $_GET['type'];
+                            $typeDrop=mysqli_query($conn,"select * from channelType");
+                            $cnt=1;
+                            while($types=mysqli_fetch_array($typeDrop)){ ?>
+                            <option
+                            <?php if ($types['typeId'] == $chnType ){echo "selected";} ?>
+                            value="<?php echo $types['typeId'] ?>"><?php echo $types['typeName'] ?></option>
+                            <?php
+                            $cnt=$cnt+1; } ?>
+                        </select>
+                        <div class="input-group-append">
+                            <button type="submit" class="btn btn-outline-secondary" name="selectType" type="button">Seleccionar</button>
+                        </div>
+                    </div>
+                </form>
                 <nav aria-label="breadcrumb">
                     <ol class="breadcrumb">
                     <li class="breadcrumb-item"><a href="<?=$base?>">Dashboard</a></li>
@@ -56,7 +78,8 @@ include('backend/canales.php');
                     $channels=mysqli_query($conn,"select * from channels
                     INNER JOIN countries ON channels.country = countries.countryId
                     INNER JOIN categories ON channels.category = categories.categoryId
-                    INNER JOIN channeltype ON channels.type = channeltype.typeId");
+                    INNER JOIN channeltype ON channels.type = channeltype.typeId
+                    WHERE type = $chnType");
                     $cnt=1;
                     while($cha=mysqli_fetch_array($channels)){
                     ?>
