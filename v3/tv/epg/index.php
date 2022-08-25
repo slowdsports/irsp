@@ -45,25 +45,17 @@ if (isset($_SESSION['message']) ){
     <?php
     // // Validaciones de Canales
     include('valid.php');
-    // // Pluto o no Pluto
-    // if ($typeChannel == 1){
-    //     $isHls = "show active";
-    //     $isPluto = "";
-    // } elseif ($typeChannel == 8){
-    //     $isPluto = "show active";
-    //     $isHls = "";
-    // }
     ?>
     <center>
         <hr>
         <div class="tab-content" id="myTabContent">
-            <div class="tab-pane fade show active" id="jw" role="tabpanel" aria-labelledby="jw-tab">
+            <div class="tab-pane fade <?=$isJw?>" id="jw" role="tabpanel" aria-labelledby="jw-tab">
                 <!-- M3U8 -->
                 <script src="https://jwpsrv.com/library/FfMxTl3oEeSEiiIACxmInQ.js"></script>
                 <div id="jwp">Cargando Reproductor...</div>
                 <script src="jwp.js"></script>
                 </div>
-            <div class="tab-pane fade" id="hls" role="tabpanel" aria-labelledby="hls-tab">
+            <div class="tab-pane fade <?=$isHls?>" id="hls" role="tabpanel" aria-labelledby="hls-tab">
                 <!-- Video TAG -->
                 <video style="margin-top: 40px" id="vidarea" class="video-js vjs-default-skin" width="90%" height="55%" controls ></video>
             </div>
