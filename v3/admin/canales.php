@@ -33,7 +33,7 @@ include('backend/canales.php');
                             <option selected>Selecciona Tipo</option>
                             <?php
                             $chnType = $_GET['type'];
-                            $typeDrop=mysqli_query($conn,"select * from channelType");
+                            $typeDrop=mysqli_query($conn,"select * from channeltype");
                             $cnt=1;
                             while($types=mysqli_fetch_array($typeDrop)){ ?>
                             <option
