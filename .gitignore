@@ -5,3 +5,6 @@ v3/inc/functions.php
 v3/auth.php
 v3/conn.php
 v3/inc/functions.php
+v3/admin/includes/functions.php
+v3/admin/backend/bd.php
+v3/admin/auth.php
