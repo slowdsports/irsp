@@ -94,7 +94,7 @@
                     </div>
                     <div class="form-group boxed">
                         <div class="input-wrapper">
-                            <input id="username" name="username" type="text" class="form-control" placeholder="Usuario" value="<?php if (isset($_COOKIE["username"])){echo $_COOKIE["username"];}?>">
+                            <input required id="username" name="username" type="text" class="form-control" placeholder="Usuario" value="<?php if (isset($_COOKIE["username"])){echo $_COOKIE["username"];}?>">
                             <i class="clear-input">
                                 <ion-icon name="close-circle"></ion-icon>
                             </i>
@@ -103,7 +103,7 @@
 
                     <div class="form-group boxed">
                         <div class="input-wrapper">
-                            <input id="password" name="password" type="password" class="form-control" placeholder="Contraseña" value="<?php if (isset($_COOKIE["pass"])){echo $_COOKIE["pass"];}?>">
+                            <input required id="password" name="password" type="password" class="form-control" placeholder="Contraseña" value="<?php if (isset($_COOKIE["pass"])){echo $_COOKIE["pass"];}?>">
                             <i class="clear-input">
                                 <ion-icon name="close-circle"></ion-icon>
                             </i>
