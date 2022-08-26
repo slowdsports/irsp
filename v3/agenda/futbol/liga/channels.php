@@ -327,6 +327,186 @@ if($canal === "LaLiga SmartbankTV 1" || $canal === "LaLiga SmartbankTV 1" || $ca
     </li>';
 }
 
+if($canal === "directv1" || $canal === "directv1"){
+    $canalop2 = '
+    <li>
+        <a class="justify-content-center" href="https://irpc.ga/mg/?url=directv-sports-en-vivo&play">
+        <i class="flag ar"></i>
+        DirecTV Sports | HD
+        </a>
+    </li>';
+} elseif($canal2 === "directv1" || $canal2 === "directv1"){
+    $canal2 = '
+    <li>
+        <a class="justify-content-center" href="https://irpc.ga/mg/?url=directv-sports-en-vivo&play">
+        <i class="flag ar"></i>
+        DirecTV Sports | HD
+        </a>
+    </li>';
+}
+
+if($canal === "directv2" || $canal === "directv2"){
+    $canalop2 = '
+    <li>
+        <a class="justify-content-center" href="https://irpc.ga/mg/?url=directv-sports-2&play">
+        <i class="flag ar"></i>
+        DirecTV Sports 2 | HD
+        </a>
+    </li>';
+} elseif($canal2 === "directv2" || $canal2 === "directv2"){
+    $canal2 = '
+    <li>
+        <a class="justify-content-center" href="https://irpc.ga/mg/?url=directv-sports-2&play">
+        <i class="flag ar"></i>
+        DirecTV Sports 2 | HD
+        </a>
+    </li>';
+}
+
+if($canal === "espnsur" || $canal === "espnsur"){
+    $canalop2 = '
+    <li>
+        <a class="justify-content-center" href="https://irpc.ga/mg/?url=espn-en-vivo&play">
+        <i class="flag ar"></i>
+        ESPN Sur | HD
+        </a>
+    </li>';
+} elseif($canal2 === "espnsur" || $canal2 === "espnsur"){
+    $canal2 = '
+    <li>
+        <a class="justify-content-center" href="https://irpc.ga/mg/?url=espn-en-vivo&play">
+        <i class="flag ar"></i>
+        ESPN Sur | HD
+        </a>
+    </li>';
+}
+
+if($canal === "espn2sur" || $canal === "espn2sur"){
+    $canalop2 = '
+    <li>
+        <a class="justify-content-center" href="https://irpc.ga/mg/?url=espn-2-en-vivo&play">
+        <i class="flag ar"></i>
+        ESPN 2 Sur | HD
+        </a>
+    </li>';
+} elseif($canal2 === "espn2sur" || $canal2 === "espn2sur"){
+    $canal2 = '
+    <li>
+        <a class="justify-content-center" href="https://irpc.ga/mg/?url=espn-2-en-vivo&play">
+        <i class="flag ar"></i>
+        ESPN 2 Sur | HD
+        </a>
+    </li>';
+}
+
+if($canal === "espn3sur" || $canal === "espn3sur"){
+    $canalop2 = '
+    <li>
+        <a class="justify-content-center" href="https://irpc.ga/mg/?url=espn-3-en-vivo&play">
+        <i class="flag ar"></i>
+        ESPN 3 Sur | HD
+        </a>
+    </li>';
+} elseif($canal2 === "espn3sur" || $canal2 === "espn3sur"){
+    $canal2 = '
+    <li>
+        <a class="justify-content-center" href="https://irpc.ga/mg/?url=espn-3-en-vivo&play">
+        <i class="flag ar"></i>
+        ESPN 3 Sur | HD
+        </a>
+    </li>';
+}
+
+if($canal === "espn4sur" || $canal === "espn4sur"){
+    $canalop2 = '
+    <li>
+        <a class="justify-content-center" href="https://irpc.ga/mg/?url=espn-4-en-vivo&play">
+        <i class="flag ar"></i>
+        ESPN 4 Sur | HD
+        </a>
+    </li>';
+} elseif($canal2 === "espn4sur" || $canal2 === "espn4sur"){
+    $canal2 = '
+    <li>
+        <a class="justify-content-center" href="https://irpc.ga/mg/?url=espn-4-en-vivo&play">
+        <i class="flag ar"></i>
+        ESPN 4 Sur | HD
+        </a>
+    </li>';
+}
+
+if($canal === "espnextra" || $canal === "espnextra"){
+    $canalop2 = '
+    <li>
+        <a class="justify-content-center" href="https://irpc.ga/mg/?url=espn-extra-en-vivo&play">
+        <i class="flag ar"></i>
+        ESPN Extra | HD
+        </a>
+    </li>';
+} elseif($canal2 === "espnextra" || $canal2 === "espnextra"){
+    $canal2 = '
+    <li>
+        <a class="justify-content-center" href="https://irpc.ga/mg/?url=espn-extra-en-vivo&play">
+        <i class="flag ar"></i>
+        ESPN Extra | HD
+        </a>
+    </li>';
+}
+
+if($canal === "foxsportssur" || $canal === "foxsportssur"){
+    $canalop2 = '
+    <li>
+        <a class="justify-content-center" href="https://irpc.ga/mg/?url=fox-sports-en-vivo&play">
+        <i class="flag ar"></i>
+        FOX Sports | HD
+        </a>
+    </li>';
+} elseif($canal2 === "foxsportssur" || $canal2 === "foxsportssur"){
+    $canal2 = '
+    <li>
+        <a class="justify-content-center" href="https://irpc.ga/mg/?url=fox-sports-en-vivo&play">
+        <i class="flag ar"></i>
+        FOX Sports | HD
+        </a>
+    </li>';
+}
+
+if($canal === "foxsports2sur" || $canal === "foxsports2sur"){
+    $canalop2 = '
+    <li>
+        <a class="justify-content-center" href="https://irpc.ga/mg/?url=fox-sports-2-en-vivo&play">
+        <i class="flag ar"></i>
+        FOX Sports 2 | HD
+        </a>
+    </li>';
+} elseif($canal2 === "foxsports2sur" || $canal2 === "foxsports2sur"){
+    $canal2 = '
+    <li>
+        <a class="justify-content-center" href="https://irpc.ga/mg/?url=fox-sports-2-en-vivo&play">
+        <i class="flag ar"></i>
+        FOX Sports 2 | HD
+        </a>
+    </li>';
+}
+
+if($canal === "foxsports3sur" || $canal === "foxsports3sur"){
+    $canalop2 = '
+    <li>
+        <a class="justify-content-center" href="https://irpc.ga/mg/?url=fox-sports-3-en-vivo&play">
+        <i class="flag ar"></i>
+        FOX Sports 3 | HD
+        </a>
+    </li>';
+} elseif($canal2 === "foxsports3sur" || $canal2 === "foxsports3sur"){
+    $canal2 = '
+    <li>
+        <a class="justify-content-center" href="https://irpc.ga/mg/?url=fox-sports-3-en-vivo&play">
+        <i class="flag ar"></i>
+        FOX Sports 3 | HD
+        </a>
+    </li>';
+}
+
 if ($canalop2 == $canalop3){
 $canalop3 = "";
 }
