@@ -9,6 +9,7 @@
     $local = str_replace('barcelona', 'FC Barcelona', $local);
     $local = str_replace('getafe', 'Getafe CF', $local);
     $local = str_replace('girona', 'Girona FC', $local);
+    $local = str_replace('rayo', 'Rayo Vallecano', $local);
     $local = str_replace('rayovallecano', 'Rayo Vallecano', $local);
     $local = str_replace('celta', 'RC Celta', $local);
     $local = str_replace('espanyol', 'RCD Espanyol', $local);
@@ -31,6 +32,7 @@
     $visita = str_replace('barcelona', 'FC Barcelona', $visita);
     $visita = str_replace('getafe', 'Getafe CF', $visita);
     $visita = str_replace('girona', 'Girona FC', $visita);
+    $visita = str_replace('rayo', 'Rayo Vallecano', $visita);
     $visita = str_replace('rayovallecano', 'Rayo Vallecano', $visita);
     $visita = str_replace('celta', 'RC Celta', $visita);
     $visita = str_replace('espanyol', 'RCD Espanyol', $visita);
