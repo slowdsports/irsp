@@ -32,7 +32,7 @@ if($canal === "M+ Liga de Campeones" || $canal === "M+ Liga de Campeones UHD (M4
 if($canal === "M+ LaLiga" || $canal === "bar"){
     $canalop2 = '
     <li>
-        <a class="justify-content-center" href="https://irpc.ga/mg/?url=mlaliga?play">
+        <a class="justify-content-center" href="https://irpc.ga/mg/?url=mlaliga&play">
         <i class="flag es"></i>
         Movistar LaLiga | [PRUEBA]
         </a>
@@ -52,7 +52,7 @@ if($canal === "M+ LaLiga" || $canal === "bar"){
 } elseif($canal2 === "M+ LaLiga" || $canal2 === "bar"){
     $canalop4 = '
     <li>
-        <a class="justify-content-center" href="https://irpc.ga/mg/?url=mlaliga?play">
+        <a class="justify-content-center" href="https://irpc.ga/mg/?url=mlaliga&play">
         <i class="flag es"></i>
         Movistar LaLiga | [PRUEBA]
         </a>
@@ -203,7 +203,7 @@ if($canal === "DAZN" || $canal === "DAZN" || $canal === "dazn1"){
     $canalImg = "dazn";
     $canalop2 = '
     <li>
-        <a class="justify-content-center" href="https://irpc.ga/mg/?url=dazn-1?play">
+        <a class="justify-content-center" href="https://irpc.ga/mg/?url=dazn-1&play">
         <i class="flag es"></i>
         DAZN 1 | VIP HD
         </a>
@@ -212,7 +212,7 @@ if($canal === "DAZN" || $canal === "DAZN" || $canal === "dazn1"){
     $canalImg = "dazn";
     $canal2 = '
     <li>
-        <a class="justify-content-center" href="https://irpc.ga/mg/?url=dazn-1?play">
+        <a class="justify-content-center" href="https://irpc.ga/mg/?url=dazn-1&play">
         <i class="flag es"></i>
         DAZN 1 | VIP HD
         </a>
@@ -240,7 +240,7 @@ if($canal === "DAZN" || $canal === "DAZN" || $canal === "dazn1"){
 if($canal === "DAZN LaLiga" || $canal === "DAZN LaLiga" || $canal === "daznlaliga"){
     $canalop2 = '
     <li>
-        <a class="justify-content-center" href="https://irpc.ga/mg/?url=daznlaliga?play">
+        <a class="justify-content-center" href="https://irpc.ga/mg/?url=daznlaliga&play">
         <i class="flag es"></i>
         DAZN LaLiga [BETA] | VIP HD
         </a>
@@ -248,7 +248,7 @@ if($canal === "DAZN LaLiga" || $canal === "DAZN LaLiga" || $canal === "daznlalig
 } elseif($canal2 === "DAZN LaLiga" || $canal2 === "DAZN LaLiga" || $canal2 === "daznlaliga"){
     $canal2 = '
     <li>
-        <a class="justify-content-center" href="https://irpc.ga/mg/?url=daznlaliga?play">
+        <a class="justify-content-center" href="https://irpc.ga/mg/?url=daznlaliga&play">
         <i class="flag es"></i>
         DAZN LaLiga [BETA] | VIP HD
         </a>
