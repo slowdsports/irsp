@@ -32,7 +32,7 @@
         </a>
         <!-- Counter de los canales -->
         <?php
-        $channels=mysqli_query($conn,"select * from channels");
+        $channels=mysqli_query($conn,"select * from channels where type IN ('1','2','3','4','7','8','9')");
         $totalChannels=mysqli_num_rows($channels);
         ?>
         <a href="<?=$app?>tv" class="item">

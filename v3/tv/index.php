@@ -69,7 +69,7 @@ if (isset($_SESSION['message']) ){
                 $channels = mysqli_query($conn, "select * from channels
                 INNER JOIN categories ON channels.category = categories.categoryId
                     INNER JOIN countries ON channels.country = countries.countryId
-                    where type IN ('1','2','3','4','6', '7', '8' , '9') ORDER BY category DESC");
+                    where type IN ('1','2','3','4', '7', '8' , '9') ORDER BY category DESC");
                 while($result=mysqli_fetch_array($channels)){
                 ?>
                 <!-- Elemento -->
