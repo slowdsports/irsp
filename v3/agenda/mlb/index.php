@@ -61,77 +61,79 @@ if (isset($_SESSION['nbaError'])){
 
 <!-- Categorías -->
     <div class="section mt-2">
-        <div class="row">
-            <?php
-            // get DOM from URL or file
-            $html = file_get_html('https://www.espn.com.mx/beisbol/mlb/calendario');
-            $fecha = $html -> find ('div.ResponsiveTable');
-            $juegos = $html ->find ('tbody tr');
-            foreach ($juegos as $juego):
-                $local = $juego ->find ('td div.local span a',1)-> plaintext;
-                $localFull = $juego ->find ('td div.local span a',0)-> href;
-                $localFull = substr($localFull, 33, 100);
-                $localLogo = $juego ->find ('td div.local span a img',0)-> src;
-                $visita = $juego ->find ('td div.matchTeams span a',1)-> plaintext;
-                $visitaFull = $juego ->find ('td div.matchTeams span a',0)-> href;
-                $visitaFull = substr($visitaFull, 33, 100);
-                $visitaLogo = $juego ->find ('td div.matchTeams span a img',0)-> src;
-                //Resultado $time = $juego ->find ('td a',4)-> plaintext;
-                $time = $juego ->find ('td',2)-> plaintext;
-                if (!$time){
-                    $time = $juego ->find ('td.date__col a.AnchorLink',0)-> plaintext;
-                    $finalizado = "";
-                }
-                if ($time == "LIVE"){
-                    $time = '<i class="fas fa-circle faa-flash animated"></i> En Vivo';
-                    $finalizado = "";
-                }
-                // Teams
-                include ('teams.php');
-            ?>
-            <!-- Elemento -->
-            <div class="col-12 mycard">
-                <a data-toggle="collapse" href="#juego-<?=$local?>-<?=$visita?>" role="button" aria-expanded="false" aria-controls="juego-<?=$local?>-<?=$visita?>">
-                    <div class="card product-card">
-                        <div class="main-event">
-                            <div class="league">
-                                <img src="<?=$app?>assets/img/ligas/mlb.png" alt="League" />
-                            </div>
-                            <div class="match">
-                                <div class="team">
-                                    <img width="60px" src="<?=$app?>assets/img/equipos/mlb/<?=$local?>.png" alt="<?=$local?>" />
-                                    <h4><?=ucfirst($local)?></h4>
+        <div class="container">
+            <div class="row">
+                <?php
+                // get DOM from URL or file
+                $html = file_get_html('https://www.espn.com.mx/beisbol/mlb/calendario');
+                $fecha = $html -> find ('div.ResponsiveTable');
+                $juegos = $html ->find ('tbody tr');
+                foreach ($juegos as $juego):
+                    $local = $juego ->find ('td div.local span a',1)-> plaintext;
+                    $localFull = $juego ->find ('td div.local span a',0)-> href;
+                    $localFull = substr($localFull, 33, 100);
+                    $localLogo = $juego ->find ('td div.local span a img',0)-> src;
+                    $visita = $juego ->find ('td div.matchTeams span a',1)-> plaintext;
+                    $visitaFull = $juego ->find ('td div.matchTeams span a',0)-> href;
+                    $visitaFull = substr($visitaFull, 33, 100);
+                    $visitaLogo = $juego ->find ('td div.matchTeams span a img',0)-> src;
+                    //Resultado $time = $juego ->find ('td a',4)-> plaintext;
+                    $time = $juego ->find ('td',2)-> plaintext;
+                    if (!$time){
+                        $time = $juego ->find ('td.date__col a.AnchorLink',0)-> plaintext;
+                        $finalizado = "";
+                    }
+                    if ($time == "LIVE"){
+                        $time = '<i class="fas fa-circle faa-flash animated"></i> En Vivo';
+                        $finalizado = "";
+                    }
+                    // Teams
+                    include ('teams.php');
+                ?>
+                <!-- Elemento -->
+                <div class="col-12 mycard">
+                    <a data-toggle="collapse" href="#juego-<?=$local?>-<?=$visita?>" role="button" aria-expanded="false" aria-controls="juego-<?=$local?>-<?=$visita?>">
+                        <div class="card product-card">
+                            <div class="main-event">
+                                <div class="league">
+                                    <img src="<?=$app?>assets/img/ligas/mlb.png" alt="League" />
                                 </div>
-                                <div class="vs">
-                                    <h6>vs</h6>
+                                <div class="match">
+                                    <div class="team">
+                                        <img width="60px" src="<?=$app?>assets/img/equipos/mlb/<?=$local?>.png" alt="<?=$local?>" />
+                                        <h4><?=ucfirst($local)?></h4>
+                                    </div>
+                                    <div class="vs">
+                                        <h6>vs</h6>
+                                    </div>
+                                    <div class="team">
+                                        <img width="60px" src="<?=$app?>assets/img/equipos/mlb/<?=$visita?>.png" alt="<?=$visita?>" />
+                                        <h4><?=ucfirst($visita)?></h4>
+                                    </div>
                                 </div>
-                                <div class="team">
-                                    <img width="60px" src="<?=$app?>assets/img/equipos/mlb/<?=$visita?>.png" alt="<?=$visita?>" />
-                                    <h4><?=ucfirst($visita)?></h4>
+                                <div class="channel">
+                                    <img src="http://iraffle.live/v3/assets/img/ligas/uel.png" alt="Channel" />
                                 </div>
-                            </div>
-                            <div class="channel">
-                                <img src="http://iraffle.live/v3/assets/img/ligas/uel.png" alt="Channel" />
                             </div>
                         </div>
-                    </div>
-                </a>
-                <div class="collapse" id="juego-<?=$local?>-<?=$visita?>">
-                    <div class="card card-body">
-                        <ul class="listview link-listview">
-                            <li>
-                                <a class="justify-content-center" href="?g=<?=$local?>">
-                                <i class="flag us"></i>
-                                MLB TV - <?=ucfirst($local)?> | HD
-                                </a>
-                            </li>
-                        </ul>
+                    </a>
+                    <div class="collapse" id="juego-<?=$local?>-<?=$visita?>">
+                        <div class="card card-body">
+                            <ul class="listview link-listview">
+                                <li>
+                                    <a class="justify-content-center" href="?g=<?=$local?>">
+                                    <i class="flag us"></i>
+                                    MLB TV - <?=ucfirst($local)?> | HD
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <!-- End Elemento -->
-            <?php endforeach; ?>
+                <!-- End Elemento -->
+                <?php endforeach; ?>
 
+            </div>
         </div>
     </div>
 <!-- End Categorías -->

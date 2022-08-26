@@ -61,91 +61,93 @@ if (isset($_SESSION['nbaError'])){
 
 <!-- Categorías -->
     <div class="section mt-2">
-        <div class="row">
-            <?php
-            // get DOM from URL or file
-            $html = file_get_html('https://www.espn.com.mx/deporte-motor/f1/calendario');
-            $fecha = $html -> find ('div.ResponsiveTable');
-            $juegos = $html ->find ('tbody tr');
-            foreach ($juegos as $juego):
-                $event = $juego ->find ('td.race__col a',0)-> plaintext;
-                $eventLogo = eliminar_tildes(strtolower($event));
-                $time = $juego ->find ('td.winnerLightsOut__col',0)-> plaintext;
-                $place = $juego ->find ('td.race__col div',0)-> plaintext;
-                $ended = $juego ->find ('td.tv__col a',0)-> plaintext;
-                if ($ended){
-                    $winner = '<i class="fas fa-trophy text-warning"></i> ';
-                } else {
-                    $winner = "";
-                }
-                if ($time == "EN VIVO"){
-                    $time = '<i class="fas fa-circle faa-flash animated"></i> En Vivo';
-                    $finalizado = "";
-                } elseif ($time == "Cancelado"){
-                    $time = '<span class="badge badge-pill badge-danger">Cancelado</span>';
-                }
-                // Counters
-                $i; $i2;
-                // Locations & Custom Channels
-                include ('locations.php'); include ('channels.php');
-            ?>
-            <!-- Elemento -->
-            <div class="col-12 mycard">
-                <a data-toggle="collapse" href="#juego-<?=$i++?>" role="button" aria-expanded="false" aria-controls="juego-<?=$i++?>">
-                    <div class="card product-card">
-                        <div class="main-event">
-                            <div class="league">
-                                <img src="<?=$app?>assets/img/ligas/f1.png" alt="League" />
-                            </div>
-                            <div class="match">
-                                <div class="team">
-                                    <img class="<?=$eventLogo?>" width="60px" src="https://i.ibb.co/w0qg9JF/trans.png" alt="<?=$event?>" />
-                                    <h4><?=ucfirst($event)?></h4>
+        <div class="container">
+            <div class="row">
+                <?php
+                // get DOM from URL or file
+                $html = file_get_html('https://www.espn.com.mx/deporte-motor/f1/calendario');
+                $fecha = $html -> find ('div.ResponsiveTable');
+                $juegos = $html ->find ('tbody tr');
+                foreach ($juegos as $juego):
+                    $event = $juego ->find ('td.race__col a',0)-> plaintext;
+                    $eventLogo = eliminar_tildes(strtolower($event));
+                    $time = $juego ->find ('td.winnerLightsOut__col',0)-> plaintext;
+                    $place = $juego ->find ('td.race__col div',0)-> plaintext;
+                    $ended = $juego ->find ('td.tv__col a',0)-> plaintext;
+                    if ($ended){
+                        $winner = '<i class="fas fa-trophy text-warning"></i> ';
+                    } else {
+                        $winner = "";
+                    }
+                    if ($time == "EN VIVO"){
+                        $time = '<i class="fas fa-circle faa-flash animated"></i> En Vivo';
+                        $finalizado = "";
+                    } elseif ($time == "Cancelado"){
+                        $time = '<span class="badge badge-pill badge-danger">Cancelado</span>';
+                    }
+                    // Counters
+                    $i; $i2;
+                    // Locations & Custom Channels
+                    include ('locations.php'); include ('channels.php');
+                ?>
+                <!-- Elemento -->
+                <div class="col-12 mycard">
+                    <a data-toggle="collapse" href="#juego-<?=$i++?>" role="button" aria-expanded="false" aria-controls="juego-<?=$i++?>">
+                        <div class="card product-card">
+                            <div class="main-event">
+                                <div class="league">
+                                    <img src="<?=$app?>assets/img/ligas/f1.png" alt="League" />
+                                </div>
+                                <div class="match">
+                                    <div class="team">
+                                        <img class="<?=$eventLogo?>" width="60px" src="https://i.ibb.co/w0qg9JF/trans.png" alt="<?=$event?>" />
+                                        <h4><?=ucfirst($event)?></h4>
+                                    </div>
+                                </div>
+                                <div class="channel">
+                                    <img src="http://iraffle.live/v3/assets/img/ligas/uel.png" alt="Channel" />
                                 </div>
                             </div>
-                            <div class="channel">
-                                <img src="http://iraffle.live/v3/assets/img/ligas/uel.png" alt="Channel" />
-                            </div>
+                        </div>
+                    </a>
+                    <div class="collapse" id="juego-<?=$i2++?>">
+                        <div class="card card-body">
+                            <ul class="listview link-listview">
+                                <?php
+                                if (!isset($_SESSION['id']) ||(trim ($_SESSION['id']) == '')){
+                                    echo '
+                                    <li>
+                                        <a class="justify-content-center" href="go:daznf1">
+                                        <i class="flag es"></i>
+                                        DAZN F1 | HD (FREE)
+                                        </a>
+                                    </li>
+                                    ';
+                                    echo $canal1Free;
+                                    echo $canal2Free;
+                                    echo $canal3Free;
+                                } else{
+                                    echo '
+                                    <li>
+                                        <a class="justify-content-center" href="../play/?c=daznf1">
+                                        <i class="flag es"></i>
+                                        DAZN F1 | HD (VIP)
+                                        </a>
+                                    </li>
+                                    ';
+                                    echo $canal1VIP;
+                                    echo $canal2VIP;
+                                    echo $canal3VIP;
+                                }
+                                ?>
+                            </ul>
                         </div>
                     </div>
-                </a>
-                <div class="collapse" id="juego-<?=$i2++?>">
-                    <div class="card card-body">
-                        <ul class="listview link-listview">
-                            <?php
-                            if (!isset($_SESSION['id']) ||(trim ($_SESSION['id']) == '')){
-                                echo '
-                                <li>
-                                    <a class="justify-content-center" href="go:daznf1">
-                                    <i class="flag es"></i>
-                                    DAZN F1 | HD (FREE)
-                                    </a>
-                                </li>
-                                ';
-                                echo $canal1Free;
-                                echo $canal2Free;
-                                echo $canal3Free;
-                            } else{
-                                echo '
-                                <li>
-                                    <a class="justify-content-center" href="../play/?c=daznf1">
-                                    <i class="flag es"></i>
-                                    DAZN F1 | HD (VIP)
-                                    </a>
-                                </li>
-                                ';
-                                echo $canal1VIP;
-                                echo $canal2VIP;
-                                echo $canal3VIP;
-                            }
-                            ?>
-                        </ul>
-                    </div>
                 </div>
-            </div>
-            <!-- End Elemento -->
-            <?php endforeach; ?>
+                <!-- End Elemento -->
+                <?php endforeach; ?>
 
+            </div>
         </div>
     </div>
 <!-- End Categorías -->
