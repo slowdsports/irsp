@@ -55,7 +55,6 @@ if ($typeChannel == 6){
     <script src="https://ssl.p.jwpcdn.com/player/v/8.24.6/jwplayer.js"></script>
     <script src="bm-jwp.js"></script>
     <style>#jwp{display:block!important} #iframe-element{display:none!important;} #vidarea{display:none} #player_img{display:none}</style>
-    <script>
     ';
 } // Photocall Blim
 elseif ($typeChannel == 7){
@@ -67,5 +66,61 @@ elseif ($typeChannel == 7){
     '<script>
     window.location.replace("'.$pcSrc.'");
     </script>';
-}
+} // Megatv
+//elseif ($_GET['get'] || $_GET['key'] || $GET['key2']){
+elseif ($typeChannel == 9){
+    $base = "https://megatelevisionhd.com/en-vivo/{$row['channelUrl']}/?ver";
+    $html = file_get_html($base);
+        $jwPlayer = $html ->find ('a.btn-md',0)->href;
+        $jwPlayer = str_replace("https://germanyip.work/jw.html", "", $jwPlayer);
+        $jwPlayer = $referer;
+        echo $jwPlayer;
+        if (!isset($GET['key'])){
+            //echo '<meta http-equiv="refresh" content="0; url='.$jwPlayer.'">';
+        } if (isset($GET['key'])){
+            $getURL = $_GET['get'];
+            $getKEY = $_GET['key'];
+            $getKEY2 = $_GET['key2'];
+            //echo '<meta http-equiv="refresh" content="0; url='.$jwPlayer.'">';
+            echo "
+            <script src='https://ssl.p.jwpcdn.com/player/v/8.24.0/jwplayer.js'></script>
+            <script> jwplayer.key='XSuP4qMl+9tK17QNb+4+th2Pm9AWgMO/cYH8CI0HGGr7bdjo';</script>
+            ";
+            echo '
+            <script>
+            let getURL = "'.$getURL.'";
+            let getKEY = "'.$getKEY.'";
+            let getKEY2 = "'.$getKEY2.'";
+            </script>
+            <div id="MGplayerJW"></div>
+            <script>
+            var mt = "//edge-live15-sl";
+            var playerInstance = jwplayer("MGplayerJW");
+            playerInstance.setup({
+                playlist: [
+                    {
+                        sources: [
+                            {
+                                default: false,
+                                file: mt + atob(getURL),
+                                drm: {
+                                    clearkey: { keyId: atob(getKEY), key: atob(getKEY2) },
+                                },
+                                label: "0",
+                            },
+                        ],
+                    },
+                ],
+                width: "100%",
+                height: "100%",
+                aspectratio: "16:9",
+                mute: false,
+                autostart: false,
+                cast: {},
+                sharing: {},
+            });
+            </script>
+            <style>#jwp{display:none!important} #iframe-element{display:none!important;} #vidarea{display:none} #player_img{display:none}</style>';
+        }
+    }
 ?>
