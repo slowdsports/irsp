@@ -8,6 +8,7 @@ if (isset($_GET['r'])){
     $decode = base64_decode($_GET['r']);
     // Sustituir URL: "//vercomofutbol.xyz/s/star_jwp.html"
     $decode = str_replace("//vercomofutbol.xyz/s/star_jwp.html", "", $decode);
+    $decode = "https://irpc.ga/mg/play/star.php" . $decode;
     header ("location: $decode");
 }
 if (isset($_GET['get']) || isset($_GET['key'])){
