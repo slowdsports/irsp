@@ -89,6 +89,11 @@ if (isset($_SESSION['message']) ){
                                 echo $canalop2;
                                 // Canal 3
                                 echo $canalop3;
+                                // Custom Channels
+                                include ('custom.php');
+                                echo $custom1;
+                                echo $custom2;
+                                echo $custom3;
                                 // Canal 4
                                 $canal4 = $result['canal4'];
                                 $c4=mysqli_query($conn,"select * from channels
