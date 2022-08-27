@@ -38,7 +38,7 @@ if (isset($_SESSION['message']) ){
     </div>
 </div>
 
-<!-- Alerta -->
+<!-- Alerta --
 <br>
 <div class="container">
     <div class="alert alert-info text-center" role="alert">
