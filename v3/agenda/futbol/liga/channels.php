@@ -246,7 +246,7 @@ if($canal === "DAZN LaLiga" || $canal === "DAZN LaLiga" || $canal === "daznlalig
         </a>
     </li>
     <li>
-        <a class="justify-content-center" href="h../../play?c=daznlaliga">
+        <a class="justify-content-center" href="../../play?c=daznlaliga">
         <i class="flag es"></i>
         DAZN LaLiga [BETA] | VIP HD
         </a>
@@ -260,7 +260,7 @@ if($canal === "DAZN LaLiga" || $canal === "DAZN LaLiga" || $canal === "daznlalig
         </a>
     </li>
     <li>
-        <a class="justify-content-center" href="h../../play?c=daznlaliga">
+        <a class="justify-content-center" href="../../play?c=daznlaliga">
         <i class="flag es"></i>
         DAZN LaLiga [BETA] | VIP HD
         </a>
