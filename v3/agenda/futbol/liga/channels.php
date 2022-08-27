@@ -242,6 +242,12 @@ if($canal === "DAZN LaLiga" || $canal === "DAZN LaLiga" || $canal === "daznlalig
     <li>
         <a class="justify-content-center" href="https://irpc.ga/mg/?url=daznlaliga&play">
         <i class="flag es"></i>
+        DAZN LaLiga [PRUEBA] | VIP HD
+        </a>
+    </li>
+    <li>
+        <a class="justify-content-center" href="h../../play?c=daznlaliga">
+        <i class="flag es"></i>
         DAZN LaLiga [BETA] | VIP HD
         </a>
     </li>';
@@ -249,6 +255,12 @@ if($canal === "DAZN LaLiga" || $canal === "DAZN LaLiga" || $canal === "daznlalig
     $canal2 = '
     <li>
         <a class="justify-content-center" href="https://irpc.ga/mg/?url=daznlaliga&play">
+        <i class="flag es"></i>
+        DAZN LaLiga [PRUEBA] | VIP HD
+        </a>
+    </li>
+    <li>
+        <a class="justify-content-center" href="h../../play?c=daznlaliga">
         <i class="flag es"></i>
         DAZN LaLiga [BETA] | VIP HD
         </a>
