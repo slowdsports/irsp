@@ -3,6 +3,61 @@
 if ($typeChannel == 2 || $typeChannel == 3 || $typeChannel == 8 | $_GET['url'] == "" ){
     $epgStatus = "hidden";
 }
+// Star+ MegaDep
+if (isset($_GET['r'])){
+    $decode = base64_decode($_GET['r']);
+    // Sustituir URL: "//vercomofutbol.xyz/s/star_jwp.html"
+    $decode = str_replace("//vercomofutbol.xyz/s/star_jwp.html", "", $decode);
+    header ("location: $decode");
+}
+if (isset($_GET['get']) || isset($_GET['key'])){
+    $getURL = $_GET['get'];
+    $getIMG = $_GET['img'];
+    $getKEY = $_GET['key'];
+    $getKEY2 = $_GET['key2'];
+    echo '
+    <script>
+    var getURL = "'.$getURL.'";
+    var getIMG = "'.$getIMG.'";
+    var getKEY  = "'.$getKEY.'";
+    var getKEY2  = "'.$getKEY2.'";
+    </script>
+    <script src="https://content.jwplatform.com/libraries/KB5zFt7A.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.0.0/crypto-js.min.js"></script>
+    <script> jwplayer.key="XSuP4qMl+9tK17QNb+4+th2Pm9AWgMO/cYH8CI0HGGr7bdjo";</script>
+
+    <div id="starPlayer"></div>
+
+    <script type="text/javascript">
+    var playerInstance=jwplayer("starPlayer");
+
+    playerInstance.setup({
+
+        playlist: [{
+        "image": getIMG,
+        "sources": [
+            {
+            "default": false,
+            "type": "dash",
+            "file": getURL,
+            "drm": {
+                "clearkey": {"keyId": getKEY, "key": getKEY2}
+            },
+            "label": "0"
+            }
+        ]
+        }],
+        width: "100%",
+        height: "100%",
+        aspectratio: "16:9",
+        autostart: false,
+        cast: {},
+        sharing: {}
+    });
+    </script>
+    <style>#jwp{display:none!important;} #iframe-element{display:none!important;} #player_img{display:none} #myTab{display:none}</style>
+    ';
+}
 // Para M3U
 if ($typeChannel == 1 || $typeChannel == 8){
     echo '
