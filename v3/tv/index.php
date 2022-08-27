@@ -48,6 +48,39 @@ if (isset($_SESSION['message']) ){
 <br>
 <!-- *Alerta -->
 
+<!-- Filter -->
+<style>
+    .mycard {
+        display: none;
+    }
+    .show {
+        display: block;
+    }
+</style>
+
+<div class="section full mb-3">
+    <div class="container text-center">
+        <div class="section-title">Filtar:</div>
+
+        <div class="carousel-small owl-carousel owl-theme">
+            <div class="item" onclick="filterSelection('all')">
+                <ion-icon size="large" name="apps-outline"></ion-icon>
+                <p class="text-center">Todo</p>
+            </div>
+            <?php
+            $categ = mysqli_query($conn, "select * from categories");
+            while($cat=mysqli_fetch_array($categ)){
+            ?>
+            <div class="item" onclick="filterSelection('<?=$cat['categoryName']?>')">
+                <ion-icon size="large" name="<?=$cat['categoryIcon']?>-outline"></ion-icon>
+                <p class="text-center"><?=$cat['categoryName']?></p>
+            </div>
+            <?php } ?>
+        </div>
+    </div>
+</div>
+<!-- *Filter -->
+
 <!-- Search Form -->
 <div class="extraHeader">
     <div class="container">
@@ -82,7 +115,7 @@ if (isset($_SESSION['message']) ){
                 } if ($find2 !== false){
                     echo "display: none";
                 };
-                ?>" class="col-6 col-sm-4 col-md-3 col-lg-2 col-xl-2 mycard">
+                ?>" class="col-6 col-sm-4 col-md-3 col-lg-2 col-xl-2 mycard <?=$result['categoryName']?>">
                     <a href="epg?url=<?=$result['epg']?>&c=<?=$result['channelId']?>">
                         <div class="card product-card liga-card">
                             <div class="card-body">
@@ -103,6 +136,52 @@ if (isset($_SESSION['message']) ){
         </div>
     </div>
 <!-- End Categorías -->
+<script>
+filterSelection("all");
+function filterSelection(c) {
+    var x, i;
+    x = document.getElementsByClassName("mycard");
+    if (c == "all") c = "";
+    for (i = 0; i < x.length; i++) {
+        irspRemoveClass(x[i], "show");
+        if (x[i].className.indexOf(c) > -1) irspAddClass(x[i], "show");
+    }
+}
+
+function irspAddClass(element, name) {
+    var i, arr1, arr2;
+    arr1 = element.className.split(" ");
+    arr2 = name.split(" ");
+    for (i = 0; i < arr2.length; i++) {
+        if (arr1.indexOf(arr2[i]) == -1) {
+            element.className += " " + arr2[i];
+        }
+    }
+}
+
+function irspRemoveClass(element, name) {
+    var i, arr1, arr2;
+    arr1 = element.className.split(" ");
+    arr2 = name.split(" ");
+    for (i = 0; i < arr2.length; i++) {
+        while (arr1.indexOf(arr2[i]) > -1) {
+            arr1.splice(arr1.indexOf(arr2[i]), 1);
+        }
+    }
+    element.className = arr1.join(" ");
+}
+
+// Add active class to the current button (highlight it)
+var btnContainer = document.getElementById("myBtnContainer");
+var btns = btnContainer.getElementsByClassName("item");
+for (var i = 0; i < btns.length; i++) {
+    btns[i].addEventListener("click", function () {
+        var current = document.getElementsByClassName("active");
+        current[0].className = current[0].className.replace(" active", "");
+        this.className += " active";
+    });
+}
+</script>
 <?php
 include('../inc/navbar.php');
 ?>
