@@ -48,7 +48,7 @@ echo '<meta http-equiv="refresh" content="3; url=home.php">';
     <!-- * App Header -->
 
     <!-- App Capsule -->
-    <div id="appCapsule">
+    <div id="appCapsule" class="container">
 
         <div class="error-page">
             <img src="assets/img/logo-white.png" alt="alt" class="imaged square w200">

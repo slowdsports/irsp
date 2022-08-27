@@ -19,7 +19,7 @@ $query=mysqli_query($conn,"select * from channels
 ?>
 
 <!-- App Capsule -->
-<div id="appCapsule">
+<div id="appCapsule" class="container">
 
 <?php
 if (isset($_SESSION['message']) ){

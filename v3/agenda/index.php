@@ -10,7 +10,7 @@ $row=mysqli_fetch_assoc($query);
 ?>
 
 <!-- App Capsule -->
-<div id="appCapsule">
+<div id="appCapsule" class="container">
 
 <?php
 if (isset($_SESSION['message']) ){

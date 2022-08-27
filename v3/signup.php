@@ -95,7 +95,7 @@ if (isset($_POST['signup'])){
     <!-- * App Header -->
 
     <!-- App Capsule -->
-    <div id="appCapsule">
+    <div id="appCapsule" class="container">
         <div class="login-form mt-1">
             <div class="section-reg">
                 <ion-icon name="person-circle-outline" size="large" style="zoom:4.0;"></ion-icon>

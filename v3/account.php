@@ -28,7 +28,7 @@ if(isset($_POST['contratar'])){
 }
 ?>
     <!-- App Capsule -->
-    <div id="appCapsule">
+    <div id="appCapsule" class="container">
 
         <div class="section mt-2">
             <div class="profile-head">

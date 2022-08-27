@@ -53,7 +53,7 @@ if (in_array($geoCountry_data, $countries)){
     <!-- * App Header -->
 
     <!-- App Capsule -->
-    <div id="appCapsule">
+    <div id="appCapsule" class="container">
 
         <div class="error-page centered">
             <img src="assets/img/logo-white.png" alt="alt" class="imaged square w200">

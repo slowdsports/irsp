@@ -24,7 +24,7 @@ if(isset($_GET['g'])){
 ?>
 
 <!-- App Capsule -->
-<div id="appCapsule">
+<div id="appCapsule" class="container">
 
 <?php
 if (isset($_SESSION['message']) ){

@@ -38,7 +38,7 @@
     <!-- * App Header -->
 
     <!-- App Capsule -->
-    <div id="appCapsule">
+    <div id="appCapsule" class="container">
 
         <div class="error-page">
             <div class="mb-2">

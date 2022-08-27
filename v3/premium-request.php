@@ -59,7 +59,7 @@ if(isset($_POST['contratar'])){
     </div>
     <!-- * App Header -->
     <!-- * App Capsule -->
-    <div id="appCapsule">
+    <div id="appCapsule" class="container">
     <div class="login-form">
         <div class="section mt-2">
             <h1>Contratar Premium</h1>
