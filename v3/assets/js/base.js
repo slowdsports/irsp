@@ -307,8 +307,8 @@ $(window).scroll(function () {
 // Offline Mode / Online Mode Detection
 
 // You can change the texts here
-var OnlineText = "Connected to Internet";
-var OfflineText = "No Internet Connection";
+var OnlineText = "Estás conectado a internet";
+var OfflineText = "No estás conectado a internet";
 
 // Online Mode Toast Append
 function onlineModeToast() {
