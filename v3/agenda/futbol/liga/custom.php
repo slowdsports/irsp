@@ -22,7 +22,7 @@ if ($result['visita'] == "villarreal"){
 if ($result['visita'] == "atalanta"){
     $custom1 = '
     <li>
-        <a class="justify-content-center" href="javascript:void(0)">
+        <a class="justify-content-center" href="../../../tv/epg?r=Ly92ZXJjb21vZnV0Ym9sLnh5ei9zL3N0YXJfandwLmh0bWw/Z2V0PWh0dHBzOi8vbGl2ZS1mdGMtbmEtc291dGgtMi5tZWRpYS5zdGFyb3R0LmNvbS9jbHQyL3ZhMDEvc3RhcnBsdXMvZXZlbnQvMjAyMi8wOC8yOC9IZWxsYXNfVmVyb25hX3ZzX0F0YWxhbnRhXzIwMjIwODI4XzE2NjE2OTg1MzQwMjkvY3RyLWFsbC1jb21wbGV0ZS5tM3U4JmltZz1odHRwczovL3Byb2QtcmlwY3V0LWRlbGl2ZXJ5LmRpc25leS1wbHVzLm5ldC92MS92YXJpYW50L3N0YXIvMEM2NEU1RTcwQ0E5NzAxOTZDQjRFRkQxQ0U4QUVFNUUzOTM5NzQ4QzJCNzEzMDhGQThBMTREMDgxMUZEMzFFRi9zY2FsZT93aWR0aD0xOTIwJmFzcGVjdFJhdGlvPTEuNzgmZm9ybWF0PWpwZWcma2V5PWM3MmI3ZjE5NjEyYjQ2YWM5N2Y2Y2FlZTFiOWViN2FhJmtleTI9NDM2ZjhiMTg4Y2ZiZDVmYjA4MTAyY2Q2ZGU1NWE5Zjk=">
         <i class="flag ar"></i>
         Star + | HD
         </a>
@@ -32,7 +32,7 @@ if ($result['visita'] == "atalanta"){
 if ($result['visita'] == "sampdoria"){
     $custom1 = '
     <li>
-        <a class="justify-content-center" href="javascript:void(0)">
+        <a class="justify-content-center" href="../../../tv/epg?">
         <i class="flag ar"></i>
         Star + | HD
         </a>
