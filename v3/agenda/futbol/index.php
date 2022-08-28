@@ -31,7 +31,7 @@ if (isset($_SESSION['message']) ){
 <!-- Categorías -->
     <div class="section mt-2">
         <div class="row">
-            <!-- Elemento --
+            <!-- Elemento -->
             <div class="col-12 mycard">
                 <a data-toggle="collapse" href="#chiringuito" role="button" aria-expanded="false" aria-controls="chiringuito">
                     <div class="card product-card">
