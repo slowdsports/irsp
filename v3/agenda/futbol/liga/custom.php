@@ -72,7 +72,7 @@ if ($result['visita'] == "empoli"){
 if ($result['local'] == "espanyol"){
     $custom1 = '
     <li>
-        <a class="justify-content-center" href="javascript:void(0)">
+        <a class="justify-content-center" href="../../../tv/epg?r=Ly92ZXJjb21vZnV0Ym9sLnh5ei9zL3N0YXJfandwLmh0bWw/Z2V0PWh0dHBzOi8vbGl2ZS1mdGMtbmEtc291dGgtMi5tZWRpYS5zdGFyb3R0LmNvbS9jbHQyL3ZhMDEvc3RhcnBsdXMvZXZlbnQvMjAyMi8wOC8yOC9Fc3BhbnlvbF92c19SZWFsX01hZHJpZF8yMDIyMDgyOF8xNjYxNzEwNTQ2MDI0L2N0ci1hbGwtY29tcGxldGUubTN1OCZpbWc9aHR0cHM6Ly9wcm9kLXJpcGN1dC1kZWxpdmVyeS5kaXNuZXktcGx1cy5uZXQvdjEvdmFyaWFudC9zdGFyLzY5OEFDOUIzQzAzMzFDNUEyNjk5OTdCN0IwNkEwQUExMDBERDIxNUUxRTQyNjFDNzVGNzg5NEI2NTY0NzI1OTMvc2NhbGU/d2lkdGg9MTkyMCZhc3BlY3RSYXRpbz0xLjc4JmZvcm1hdD1qcGVnJmtleT00YWVjMTM0MDc3NjA0NGE5YTY0NGZhNjQ2OTA3NWY5ZSZrZXkyPWJjYjBhNzY3OWZiZWIwOGIxYzI4MTM3YTQ4M2QxMzlm">
         <i class="flag ar"></i>
         Star + | HD
         </a>
