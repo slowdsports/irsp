@@ -8,6 +8,8 @@
 $server = "http://213.239.217.94:8080/live/";
 $concat = $server.$usuario."/".$password."/".$channel.".m3u8";
 switch ($channel){
+    case 'mega' : $channel=
+    $server.$usuario."/".$password."/"."6".".m3u8"; break;
     case 'rmtv' : $channel=
     $server.$usuario."/".$password."/"."7".".m3u8"; break;
     case 'smartbank' : $channel=
@@ -18,8 +20,6 @@ switch ($channel){
     $server.$usuario."/".$password."/"."11".".m3u8"; break;
     case 'mlaliga7' : $channel=
     $server.$usuario."/".$password."/"."12".".m3u8"; break;
-    case 'mega' : $channel=
-    $server.$usuario."/".$password."/"."13".".m3u8"; break;
     case 'bar' : $channel=
     $server.$usuario."/".$password."/"."14".".m3u8"; break;
     case 'mlaliga1' : $channel=
