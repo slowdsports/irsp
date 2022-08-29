@@ -43,7 +43,7 @@ if (isset($_SESSION['message']) ){
                     $visita = $result['visita'];
                     $index = $result['id'];
                     setlocale(LC_ALL, "es_ES", 'Spanish_Spain', 'Spanish');
-                    $dia = iconv('ISO-8859-2', 'UTF-8', strftime("%A", strtotime($result['fecha'])));
+                    $dia = iconv('ISO-8859-2', 'UTF-8', strftime("%A %d", strtotime($result['fecha'])));
 
                     include('teams.php');
                     include('../../../inc/channels.php');
