@@ -55,7 +55,7 @@ if (isset($_SESSION['message']) ){
                             <div class="main-event">
                                 <div class="league">
                                     <img src="<?=$app?>assets/img/ligas/<?=$result['ligaImg']?>.png" alt="League" />
-                                    <p class="<?=$result['id']?>"><?=$dia?></p>
+                                    <p class="<?=$result['id']?>"><?=ucfirst($dia)?></p>
                                 </div>
                                 <div class="match">
                                     <div class="team">
