@@ -4,23 +4,6 @@ $_SESSION['referer'] = "//" . $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URI'];
 include('../../inc/header.php'); include('../../conn.php'); include('../../inc/scraper.php');
 $query=mysqli_query($conn,"select * from user where userid='".$_SESSION['id']."'");
 $row=mysqli_fetch_assoc($query);
-
-$base ="http://givemenbastreams.com/mlb.php?g=";
-$g = $_GET['g'];
-$file = $base.$g;
-
-$site= file_get_contents($file);
-preg_match("(source\:\s'(.*?)')", $site, $stream);
-
-if(isset($_GET['g'])){
-    if ($stream[1] == null){
-        $_SESSION['nbaError'] = "No se ha podido cargar la retransmisión del juego.";
-    } else{
-        $m3u8 = base64_encode($stream[1]);
-        // header ("location: ../../play?nba&plyr=vid&c=$m3u8");
-        echo '<script>window.location.href = "../../play?nba&plyr=vid&c='.$m3u8.'";</script>';
-    }
-}
 ?>
 
 <!-- App Capsule -->
@@ -59,79 +42,62 @@ if (isset($_SESSION['nbaError'])){
 <?php unset($_SESSION['nbaError']); }?>
 <!-- *Alerta -->
 
-<!-- Categorías --
+<!-- Categorías -->
     <div class="section mt-2">
         <div class="container">
             <div class="row">
                 <?php
                 // get DOM from URL or file
-                $html = file_get_html('https://www.espn.com.mx/futbol-americano/nfl/calendario');
-                $fecha = $html -> find ('div.ResponsiveTable');
-                $juegos = $html ->find ('tbody tr');
-                foreach ($juegos as $juego):
-                    $local = $juego ->find ('td div.local span a',1)-> plaintext;
-                    $localFull = $juego ->find ('td div.local span a',0)-> href;
-                    $localFull = substr($localFull, 33, 100);
-                    $localLogo = $juego ->find ('td div span a img',0)-> src;
-                    $visita = $juego ->find ('td div.matchTeams span a',1)-> plaintext;
-                    $visitaFull = $juego ->find ('td div.matchTeams span a',0)-> href;
-                    $visitaFull = substr($visitaFull, 33, 100);
-                    $visitaLogo = $juego ->find ('td div.matchTeams span a img',0)-> src;
-                    //Resultado $time = $juego ->find ('td a',4)-> plaintext;
-                    $time = $juego ->find ('td',2)-> plaintext;
-                    if (!$time){
-                        $time = $juego ->find ('td.date__col a.AnchorLink',0)-> plaintext;
-                        $finalizado = "";
-                    }
-                    if ($time == "LIVE"){
-                        $time = '<i class="fas fa-circle faa-flash animated"></i> En Vivo';
-                        $finalizado = "";
-                    }
-                    // Teams
-                    include ('teams.php');
+                $peleas = mysqli_query($conn, "select * from ufc");
+                while($result=mysqli_fetch_array($peleas)){
+                    $index = $result['id'];
+                    $peleador1 = $result['peleador1'];
+                    $imagen1 = $result['imagen1'];
+                    $peleador2 = $result['peleador2'];
+                    $imagen2 = $result['imagen2'];
                 ?>
-                <!-- Elemento --
+                <!-- Elemento -->
                 <div class="col-12 mycard">
-                    <a data-toggle="collapse" href="#juego-<?=$local?>-<?=$visita?>" role="button" aria-expanded="false" aria-controls="juego-<?=$local?>-<?=$visita?>">
+                    <a data-toggle="collapse" href="#juego-<?=$index?>" role="button" aria-expanded="false" aria-controls="juego-<?=$local?>-<?=$visita?>">
                         <div class="card product-card">
-                            <div class="main-event">
+                            <div style="height:200px" class="main-event">
                                 <div class="league">
-                                    <img src="<?=$app?>assets/img/ligas/nfl.png" alt="League" />
+                                    <img src="<?=$app?>assets/img/canales/ufc.png" alt="League" />
                                 </div>
                                 <div class="match">
                                     <div class="team">
-                                        <img width="60px" src="<?=$app?>assets/img/equipos/nfl/<?=$local?>.png" alt="<?=$local?>" />
-                                        <h4><?=ucfirst($local)?></h4>
+                                        <img width="60px" src="<?=$imagen1?>" alt="<?=$local?>" />
+                                        <h4><?=ucfirst($peleador1)?></h4>
                                     </div>
                                     <div class="vs">
                                         <h6>vs</h6>
                                     </div>
                                     <div class="team">
-                                        <img width="60px" src="<?=$app?>assets/img/equipos/nfl/<?=$visita?>.png" alt="<?=$visita?>" />
-                                        <h4><?=ucfirst($visita)?></h4>
+                                        <img width="60px" src="<?=$imagen2?>" alt="<?=$visita?>" />
+                                        <h4><?=ucfirst($peleador2)?></h4>
                                     </div>
                                 </div>
                                 <div class="channel">
-                                    <img src="<?=$app?>assets/img/canales/nfl.png" alt="Channel" />
+                                    <img src="<?=$app?>assets/img/canales/dazn.png" alt="Channel" />
                                 </div>
                             </div>
                         </div>
                     </a>
-                    <div class="collapse" id="juego-<?=$local?>-<?=$visita?>">
+                    <div class="collapse" id="juego-<?=$index?>">
                         <div class="card card-body">
                             <ul class="listview link-listview">
                                 <li>
-                                    <a class="justify-content-center" href="?g=<?=$local?>">
-                                    <i class="flag us"></i>
-                                    NFL TV - <?=ucfirst($local)?> | HD
+                                    <a class="justify-content-center" href="../play/?c=dazn1">
+                                    <i class="flag es"></i>
+                                    DAZN | HD
                                     </a>
                                 </li>
                             </ul>
                         </div>
                     </div>
                 </div>
-                <!-- End Elemento --
-                <?php endforeach; ?>
+                <!-- End Elemento -->
+                <?php } ?>
 
             </div>
         </div>
