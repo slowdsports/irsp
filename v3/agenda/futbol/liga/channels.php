@@ -391,7 +391,7 @@ if($canal === "LaLiga SmartbankTV" || $canal === "LaLiga SmartbankTV" || $canal 
     <li>
         <a class="justify-content-center" href="https://irpc.ga/mg/play/sandbox.php?get=smartbank">
         <i class="flag es"></i>
-        LaLiga Smartbank | HD (VIP)
+        LaLiga Smartbank | HD
         </a>
     </li>
     <li>
@@ -406,7 +406,7 @@ if($canal === "LaLiga SmartbankTV" || $canal === "LaLiga SmartbankTV" || $canal 
     <li>
         <a class="justify-content-center" href="https://irpc.ga/mg/play/sandbox.php?get=smartbank">
         <i class="flag es"></i>
-        LaLiga Smartbank | HD (VIP)
+        LaLiga Smartbank | HD
         </a>
     </li>
     <li>
