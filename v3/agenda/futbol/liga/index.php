@@ -41,7 +41,10 @@ if (isset($_SESSION['message']) ){
                     // Teams
                     $local = $result['local'];
                     $visita = $result['visita'];
-                    $time = $result['fecha'];
+                    $index = $result['id'];
+                    setlocale(LC_ALL, "es_ES", 'Spanish_Spain', 'Spanish');
+                    $dia = iconv('ISO-8859-2', 'UTF-8', strftime("%A", strtotime($result['fecha'])));
+
                     include('teams.php');
                     include('../../../inc/channels.php');
                 ?>
@@ -52,7 +55,7 @@ if (isset($_SESSION['message']) ){
                             <div class="main-event">
                                 <div class="league">
                                     <img src="<?=$app?>assets/img/ligas/<?=$result['ligaImg']?>.png" alt="League" />
-                                    <p class="<?=$result['id']?>"></p>
+                                    <p class="<?=$result['id']?>"><?=$dia?></p>
                                 </div>
                                 <div class="match">
                                     <div class="team">
