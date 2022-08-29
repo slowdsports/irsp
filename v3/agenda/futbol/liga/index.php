@@ -43,6 +43,7 @@ if (isset($_SESSION['message']) ){
                     $visita = $result['visita'];
                     $time = $result['fecha'];
                     include('teams.php');
+                    include('../../../inc/channels.php');
                 ?>
                 <!-- Elemento -->
                 <div class="col-12 mycard">
@@ -78,7 +79,6 @@ if (isset($_SESSION['message']) ){
                                 <?php
                                 //include('timer.php');
                                 // Canales
-                                include('../../../inc/channels.php');
                                 $canal = $result['canal'];
                                 $canal2 = $result['canal2'];
                                 $canal3 = $result['canal3'];

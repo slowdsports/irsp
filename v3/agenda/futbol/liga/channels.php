@@ -1,5 +1,7 @@
 <?php
+// Logos
 if($canal === "M+ Liga de Campeones" || $canal === "M+ Liga de Campeones UHD (M441 O115)" || $canal === "mlcamp"){
+    $canalImg = "campeones";
     $canalop2 = '
     <li>
         <a class="justify-content-center" href="../../play?c=mlcamp">
@@ -14,6 +16,7 @@ if($canal === "M+ Liga de Campeones" || $canal === "M+ Liga de Campeones UHD (M4
         </a>
     </li>';
 } elseif($canal2 === "M+ Liga de Campeones" || $canal2 === "M+ Liga de Campeones UHD (M441 O115)" || $canal2 === "mlcamp"){
+    $canalImg = "campeones";
     $canalop4 = '
     <li>
         <a class="justify-content-center" href="../../play?c=mlcamp">
@@ -30,6 +33,7 @@ if($canal === "M+ Liga de Campeones" || $canal === "M+ Liga de Campeones UHD (M4
 }
 
 if($canal === "M+ LaLiga" || $canal === "bar"){
+    $canalImg = "mlaliga";
     $canalop2 = '
     <li>
         <a class="justify-content-center" href="https://irpc.ga/mg/?url=mlaliga&play">
@@ -50,6 +54,7 @@ if($canal === "M+ LaLiga" || $canal === "bar"){
         </a>
     </li>';
 } elseif($canal2 === "M+ LaLiga" || $canal2 === "bar"){
+    $canalImg = "mlaliga";
     $canalop4 = '
     <li>
         <a class="justify-content-center" href="https://irpc.ga/mg/?url=mlaliga&play">
@@ -72,6 +77,7 @@ if($canal === "M+ LaLiga" || $canal === "bar"){
 }
 
 if($canal === "M+ LaLiga 1" || $canal === "mlaliga1"){
+    $canalImg = "mlaliga";
     $canalop2 = '
     <li>
         <a class="justify-content-center" href="../../play?c=mlaliga1">
@@ -80,6 +86,7 @@ if($canal === "M+ LaLiga 1" || $canal === "mlaliga1"){
         </a>
     </li>';
 } elseif($canal2 === "M+ LaLiga 1" || $canal2 === "mlaliga1"){
+    $canalImg = "mlaliga";
     $canalop3 = '
     <li>
         <a class="justify-content-center" href="../../play?c=mlaliga1">
@@ -90,6 +97,7 @@ if($canal === "M+ LaLiga 1" || $canal === "mlaliga1"){
 }
 
 if($canal === "M+ LaLiga 2" || $canal === "mlaliga2"){
+    $canalImg = "mlaliga";
     $canalop2 = '
     <li>
         <a class="justify-content-center" href="../../play?c=mlaliga2">
@@ -98,6 +106,7 @@ if($canal === "M+ LaLiga 2" || $canal === "mlaliga2"){
         </a>
     </li>';
 } elseif($canal2 === "M+ LaLiga 2" || $canal2 === "mlaliga2"){
+    $canalImg = "mlaliga";
     $canalop3 = '
     <li>
         <a class="justify-content-center" href="../../play?c=mlaliga2">
@@ -108,6 +117,7 @@ if($canal === "M+ LaLiga 2" || $canal === "mlaliga2"){
 }
 
 if($canal === "M+ LaLiga 3" || $canal === "mlaliga3"){
+    $canalImg = "mlaliga";
     $canalop2 = '
     <li>
         <a class="justify-content-center" href="../../play?c=mlaliga3">
@@ -116,6 +126,7 @@ if($canal === "M+ LaLiga 3" || $canal === "mlaliga3"){
         </a>
     </li>';
 } elseif($canal2 === "M+ LaLiga 3" || $canal2 === "mlaliga3"){
+    $canalImg = "mlaliga";
     $canalop3 = '
     <li>
         <a class="justify-content-center" href="../../play?c=mlaliga3">
@@ -126,6 +137,7 @@ if($canal === "M+ LaLiga 3" || $canal === "mlaliga3"){
 }
 
 if($canal === "M+ LaLiga 7" || $canal === "mlaliga7"){
+    $canalImg = "mlaliga";
     $canalop2 = '
     <li>
         <a class="justify-content-center" href="../../play?c=mlaliga7">
@@ -134,6 +146,7 @@ if($canal === "M+ LaLiga 7" || $canal === "mlaliga7"){
         </a>
     </li>';
 } elseif($canal2 === "M+ LaLiga 7" || $canal2 === "mlaliga7"){
+    $canalImg = "mlaliga";
     $canalop3 = '
     <li>
         <a class="justify-content-center" href="../../play?c=mlaliga7">
@@ -144,6 +157,7 @@ if($canal === "M+ LaLiga 7" || $canal === "mlaliga7"){
 }
 
 if($canal === "M+ #Vamos" || $canal === "mvamos"){
+    $canalImg = "mvamos";
     $canalop2 = '
     <li>
         <a class="justify-content-center" href="../../play?c=mvamos">
@@ -152,6 +166,7 @@ if($canal === "M+ #Vamos" || $canal === "mvamos"){
         </a>
     </li>';
 } elseif($canal2 === "M+ #Vamos" || $canal2 === "mvamos"){
+    $canalImg = "mvamos";
     $canal2 = '
     <li>
         <a class="justify-content-center" href="../../play?c=mvamos">
@@ -162,6 +177,7 @@ if($canal === "M+ #Vamos" || $canal === "mvamos"){
 }
 
 if($canal === "GOL" || $canal === "GOL (Síguelo en directo)" || $canal === "goles"){
+    $canalImg = "goles";
     $canalop2 = '
     <li>
         <a class="justify-content-center" href="../../play?c=goles">
@@ -170,6 +186,7 @@ if($canal === "GOL" || $canal === "GOL (Síguelo en directo)" || $canal === "gol
         </a>
     </li>';
 } elseif($canal2 === "GOL" || $canal2 === "goles"){
+    $canalImg = "goles";
     $canal2 = '
     <li>
         <a class="justify-content-center" href="../../play?c=goles">
@@ -180,6 +197,7 @@ if($canal === "GOL" || $canal === "GOL (Síguelo en directo)" || $canal === "gol
 }
 
 // if($canal === "DAZN" || $canal === "DAZN" || $canal === "dazn1"){
+    $canalImg = "dazn";
 //     $canalImg = "dazn";
 //     $canalop2 = '
 //     <li>
@@ -189,6 +207,7 @@ if($canal === "GOL" || $canal === "GOL (Síguelo en directo)" || $canal === "gol
 //         </a>
 //     </li>';
 // } elseif($canal2 === "DAZN" || $canal2 === "DAZN" || $canal2 === "dazn1"){
+    $canalImg = "dazn";
 //     $canalImg = "dazn";
 //     $canal2 = '
 //     <li>
@@ -220,6 +239,7 @@ if($canal === "DAZN" || $canal === "DAZN" || $canal === "dazn1"){
 }
 
 // if($canal === "DAZN LaLiga" || $canal === "DAZN LaLiga" || $canal === "daznlaliga"){
+    $canalImg = "dazn";
 //     $canalop2 = '
 //     <li>
 //         <a class="justify-content-center" href="../../play?c=daznlaliga">
@@ -228,6 +248,7 @@ if($canal === "DAZN" || $canal === "DAZN" || $canal === "dazn1"){
 //         </a>
 //     </li>';
 // } elseif($canal2 === "DAZN LaLiga" || $canal2 === "DAZN LaLiga" || $canal2 === "daznlaliga"){
+    $canalImg = "dazn";
 //     $canal2 = '
 //     <li>
 //         <a class="justify-content-center" href="../../play?c=daznlaliga">
@@ -238,6 +259,7 @@ if($canal === "DAZN" || $canal === "DAZN" || $canal === "dazn1"){
 // }
 
 if($canal === "DAZN LaLiga" || $canal === "DAZN LaLiga" || $canal === "daznlaliga"){
+    $canalImg = "daznlaliga";
     $canalop2 = '
     <li>
         <a class="justify-content-center" href="https://irpc.ga/mg/?url=daznlaliga&play">
@@ -252,6 +274,7 @@ if($canal === "DAZN LaLiga" || $canal === "DAZN LaLiga" || $canal === "daznlalig
         </a>
     </li>';
 } elseif($canal2 === "DAZN LaLiga" || $canal2 === "DAZN LaLiga" || $canal2 === "daznlaliga"){
+    $canalImg = "daznlaliga";
     $canal2 = '
     <li>
         <a class="justify-content-center" href="https://irpc.ga/mg/?url=daznlaliga&play">
@@ -268,6 +291,7 @@ if($canal === "DAZN LaLiga" || $canal === "DAZN LaLiga" || $canal === "daznlalig
 }
 
 if($canal === "DAZN (Regístrate)" || $canal === "DAZN | (Movistar 59)"){
+    $canalImg = "dazn";
     $canalop2 = '
     <li>
         <a class="justify-content-center" href="../../play?c=dazn1">
@@ -276,6 +300,7 @@ if($canal === "DAZN (Regístrate)" || $canal === "DAZN | (Movistar 59)"){
         </a>
     </li>';
 } elseif($canal2 === "DAZN (Regístrate)" || $canal2 === "DAZN | (Movistar 59)"){
+    $canalImg = "dazn";
     $canal2 = '
     <li>
         <a class="justify-content-center" href="../../play?c=dazn1">
@@ -294,6 +319,7 @@ if($canal === "Canal por confirmar" || $canal === "Canal por confirmar"){
         </a>
     </li>';
 } elseif($canal2 === "DAZN (Regístrate)" || $canal2 === "DAZN | (Movistar 59)"){
+    $canalImg = "dazn";
     $canal2 = '
     <li>
         <a class="justify-content-center" href="javascript:void(0)">
@@ -304,6 +330,7 @@ if($canal === "Canal por confirmar" || $canal === "Canal por confirmar"){
 }
 
 if($canal === "LaLiga SmartbankTV" || $canal === "LaLiga SmartbankTV" || $canal === "smartbank"){
+    $canalImg = "smartbank";
     $canalop2 = '
     <li>
         <a class="justify-content-center" href="../../play?c=smartbank">
@@ -312,6 +339,7 @@ if($canal === "LaLiga SmartbankTV" || $canal === "LaLiga SmartbankTV" || $canal 
         </a>
     </li>';
 } elseif($canal2 === "LaLiga SmartbankTV" || $canal2 === "LaLiga SmartbankTV" || $canal2 === "smartbank"){
+    $canalImg = "smartbank";
     $canal2 = '
     <li>
         <a class="justify-content-center" href="../../play?c=smartbank">
@@ -322,6 +350,7 @@ if($canal === "LaLiga SmartbankTV" || $canal === "LaLiga SmartbankTV" || $canal 
 }
 
 if($canal === "LaLiga SmartbankTV 1" || $canal === "LaLiga SmartbankTV 1" || $canal === "smartbank1"){
+    $canalImg = "smartbank";
     $canalop2 = '
     <li>
         <a class="justify-content-center" href="../../play?c=smartbank1">
@@ -330,6 +359,7 @@ if($canal === "LaLiga SmartbankTV 1" || $canal === "LaLiga SmartbankTV 1" || $ca
         </a>
     </li>';
 } elseif($canal2 === "LaLiga SmartbankTV 1" || $canal2 === "LaLiga SmartbankTV 1" || $canal2 === "smartbank1"){
+    $canalImg = "smartbank";
     $canal2 = '
     <li>
         <a class="justify-content-center" href="../../play?c=smartbank1">
@@ -340,6 +370,7 @@ if($canal === "LaLiga SmartbankTV 1" || $canal === "LaLiga SmartbankTV 1" || $ca
 }
 
 if($canal === "directv1" || $canal === "directv1"){
+    $canalImg = "directv";
     $canalop2 = '
     <li>
         <a class="justify-content-center" href="https://irpc.ga/mg/?url=directv-sports-en-vivo&play">
@@ -348,6 +379,7 @@ if($canal === "directv1" || $canal === "directv1"){
         </a>
     </li>';
 } elseif($canal2 === "directv1" || $canal2 === "directv1"){
+    $canalImg = "directv";
     $canal2 = '
     <li>
         <a class="justify-content-center" href="https://irpc.ga/mg/?url=directv-sports-en-vivo&play">
@@ -358,6 +390,7 @@ if($canal === "directv1" || $canal === "directv1"){
 }
 
 if($canal === "directv2" || $canal === "directv2"){
+    $canalImg = "directv";
     $canalop2 = '
     <li>
         <a class="justify-content-center" href="https://irpc.ga/mg/?url=directv-sports-2&play">
@@ -366,6 +399,7 @@ if($canal === "directv2" || $canal === "directv2"){
         </a>
     </li>';
 } elseif($canal2 === "directv2" || $canal2 === "directv2"){
+    $canalImg = "directv";
     $canal2 = '
     <li>
         <a class="justify-content-center" href="https://irpc.ga/mg/?url=directv-sports-2&play">
@@ -376,6 +410,7 @@ if($canal === "directv2" || $canal === "directv2"){
 }
 
 if($canal === "espnsur" || $canal === "espnsur"){
+    $canalImg = "espn";
     $canalop2 = '
     <li>
         <a class="justify-content-center" href="https://irpc.ga/mg/?url=espn-en-vivo&play">
@@ -384,6 +419,7 @@ if($canal === "espnsur" || $canal === "espnsur"){
         </a>
     </li>';
 } elseif($canal2 === "espnsur" || $canal2 === "espnsur"){
+    $canalImg = "espn";
     $canal2 = '
     <li>
         <a class="justify-content-center" href="https://irpc.ga/mg/?url=espn-en-vivo&play">
@@ -394,6 +430,7 @@ if($canal === "espnsur" || $canal === "espnsur"){
 }
 
 if($canal === "espn2sur" || $canal === "espn2sur"){
+    $canalImg = "espn";
     $canalop2 = '
     <li>
         <a class="justify-content-center" href="https://irpc.ga/mg/?url=espn-2-en-vivo&play">
@@ -402,6 +439,7 @@ if($canal === "espn2sur" || $canal === "espn2sur"){
         </a>
     </li>';
 } elseif($canal2 === "espn2sur" || $canal2 === "espn2sur"){
+    $canalImg = "espn";
     $canal2 = '
     <li>
         <a class="justify-content-center" href="https://irpc.ga/mg/?url=espn-2-en-vivo&play">
@@ -412,6 +450,7 @@ if($canal === "espn2sur" || $canal === "espn2sur"){
 }
 
 if($canal === "espn3sur" || $canal === "espn3sur"){
+    $canalImg = "espn";
     $canalop2 = '
     <li>
         <a class="justify-content-center" href="https://irpc.ga/mg/?url=espn-3-en-vivo&play">
@@ -420,6 +459,7 @@ if($canal === "espn3sur" || $canal === "espn3sur"){
         </a>
     </li>';
 } elseif($canal2 === "espn3sur" || $canal2 === "espn3sur"){
+    $canalImg = "espn";
     $canal2 = '
     <li>
         <a class="justify-content-center" href="https://irpc.ga/mg/?url=espn-3-en-vivo&play">
@@ -430,6 +470,7 @@ if($canal === "espn3sur" || $canal === "espn3sur"){
 }
 
 if($canal === "espn4sur" || $canal === "espn4sur"){
+    $canalImg = "espn";
     $canalop2 = '
     <li>
         <a class="justify-content-center" href="https://irpc.ga/mg/?url=espn-4-en-vivo&play">
@@ -438,6 +479,7 @@ if($canal === "espn4sur" || $canal === "espn4sur"){
         </a>
     </li>';
 } elseif($canal2 === "espn4sur" || $canal2 === "espn4sur"){
+    $canalImg = "espn";
     $canal2 = '
     <li>
         <a class="justify-content-center" href="https://irpc.ga/mg/?url=espn-4-en-vivo&play">
@@ -448,6 +490,7 @@ if($canal === "espn4sur" || $canal === "espn4sur"){
 }
 
 if($canal === "espnextra" || $canal === "espnextra"){
+    $canalImg = "espn";
     $canalop2 = '
     <li>
         <a class="justify-content-center" href="https://irpc.ga/mg/?url=espn-extra-en-vivo&play">
@@ -456,6 +499,7 @@ if($canal === "espnextra" || $canal === "espnextra"){
         </a>
     </li>';
 } elseif($canal2 === "espnextra" || $canal2 === "espnextra"){
+    $canalImg = "espn";
     $canal2 = '
     <li>
         <a class="justify-content-center" href="https://irpc.ga/mg/?url=espn-extra-en-vivo&play">
@@ -466,6 +510,7 @@ if($canal === "espnextra" || $canal === "espnextra"){
 }
 
 if($canal === "foxsportssur" || $canal === "foxsportssur"){
+    $canalImg = "foxsports";
     $canalop2 = '
     <li>
         <a class="justify-content-center" href="https://irpc.ga/mg/?url=fox-sports-en-vivo&play">
@@ -474,6 +519,7 @@ if($canal === "foxsportssur" || $canal === "foxsportssur"){
         </a>
     </li>';
 } elseif($canal2 === "foxsportssur" || $canal2 === "foxsportssur"){
+    $canalImg = "foxsports";
     $canal2 = '
     <li>
         <a class="justify-content-center" href="https://irpc.ga/mg/?url=fox-sports-en-vivo&play">
@@ -484,6 +530,7 @@ if($canal === "foxsportssur" || $canal === "foxsportssur"){
 }
 
 if($canal === "foxsports2sur" || $canal === "foxsports2sur"){
+    $canalImg = "foxsports";
     $canalop2 = '
     <li>
         <a class="justify-content-center" href="https://irpc.ga/mg/?url=fox-sports-2-en-vivo&play">
@@ -492,6 +539,7 @@ if($canal === "foxsports2sur" || $canal === "foxsports2sur"){
         </a>
     </li>';
 } elseif($canal2 === "foxsports2sur" || $canal2 === "foxsports2sur"){
+    $canalImg = "foxsports";
     $canal2 = '
     <li>
         <a class="justify-content-center" href="https://irpc.ga/mg/?url=fox-sports-2-en-vivo&play">
@@ -502,6 +550,7 @@ if($canal === "foxsports2sur" || $canal === "foxsports2sur"){
 }
 
 if($canal === "foxsports3sur" || $canal === "foxsports3sur"){
+    $canalImg = "foxsports";
     $canalop2 = '
     <li>
         <a class="justify-content-center" href="https://irpc.ga/mg/?url=fox-sports-3-en-vivo&play">
@@ -510,6 +559,7 @@ if($canal === "foxsports3sur" || $canal === "foxsports3sur"){
         </a>
     </li>';
 } elseif($canal2 === "foxsports3sur" || $canal2 === "foxsports3sur"){
+    $canalImg = "foxsports";
     $canal2 = '
     <li>
         <a class="justify-content-center" href="https://irpc.ga/mg/?url=fox-sports-3-en-vivo&play">
