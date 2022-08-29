@@ -2,7 +2,7 @@
 // SET SITE URL
 $app = "//{$_SERVER['SERVER_NAME']}/v3/";
 // ADMIN DASH
-$base = "//".$_SERVER['SERVER_NAME']."/app/admin/";
+$base = "//".$_SERVER['SERVER_NAME']."/v3/admin/";
 // GET REFER
 // $refer = $_GET['refer'];
 $refer = $_SERVER['HTTP_REFERER'];
