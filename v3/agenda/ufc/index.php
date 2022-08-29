@@ -41,8 +41,8 @@ if (isset($_SESSION['message']) ){
 ?>
 
 <div class="header-large-title">
-    <h1 class="title"><?=ucfirst($row['fullname'])?>,</h1>
-    <h4 class="subtitle">¡Disfruta de tu evento!</h4>
+    <h1 class="title"><?=ucfirst($row['fullname'])?></h1>
+    <h4 class="subtitle">Está sección no está lista</h4>
 </div>
 
 <!-- Alerta -->
@@ -59,7 +59,7 @@ if (isset($_SESSION['nbaError'])){
 <?php unset($_SESSION['nbaError']); }?>
 <!-- *Alerta -->
 
-<!-- Categorías -->
+<!-- Categorías --
     <div class="section mt-2">
         <div class="container">
             <div class="row">
@@ -90,7 +90,7 @@ if (isset($_SESSION['nbaError'])){
                     // Teams
                     include ('teams.php');
                 ?>
-                <!-- Elemento -->
+                <!-- Elemento --
                 <div class="col-12 mycard">
                     <a data-toggle="collapse" href="#juego-<?=$local?>-<?=$visita?>" role="button" aria-expanded="false" aria-controls="juego-<?=$local?>-<?=$visita?>">
                         <div class="card product-card">
@@ -130,7 +130,7 @@ if (isset($_SESSION['nbaError'])){
                         </div>
                     </div>
                 </div>
-                <!-- End Elemento -->
+                <!-- End Elemento --
                 <?php endforeach; ?>
 
             </div>
