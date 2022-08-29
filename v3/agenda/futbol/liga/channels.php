@@ -567,6 +567,15 @@ if($canal === "foxsports3sur" || $canal === "foxsports3sur"){
         FOX Sports 3 | HD
         </a>
     </li>';
+} elseif($canal2 === "goltvec" || $canal2 === "goltvec"){
+    $canalImg = "goltv";
+    $canal2 = '
+    <li>
+        <a class="justify-content-center" href="https://irpc.ga/mg/play/mlaliga.php?get=aHR0cHM6Ly8xMTM0LXZvcy5kdHZvdHQuY29tL0RBU0gvbWFuaWZlc3QubXBk&key=MzMwM2I0YzY5ODJmMzgxZWE5ZTMwOTAwOWZiYjNmMjc=&key2=YTdmZDQ5ODA4Zjg5MGMyNTAwYmYyMTgwYWFmNDIzMDc=">
+        <i class="flag ec"></i>
+        Gol TV | HD
+        </a>
+    </li>';
 }
 
 if ($canalop2 == $canalop3){
