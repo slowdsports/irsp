@@ -389,6 +389,12 @@ if($canal === "LaLiga SmartbankTV" || $canal === "LaLiga SmartbankTV" || $canal 
     $canalImg = "smartbank";
     $canalop2 = '
     <li>
+        <a class="justify-content-center" href="https://irpc.ga/mg/play/sandbox.php?get=smartbank">
+        <i class="flag es"></i>
+        LaLiga Smartbank | HD (VIP)
+        </a>
+    </li>
+    <li>
         <a class="justify-content-center" href="../../play?c=smartbank">
         <i class="flag es"></i>
         LaLiga Smartbank | HD (VIP)
@@ -397,6 +403,12 @@ if($canal === "LaLiga SmartbankTV" || $canal === "LaLiga SmartbankTV" || $canal 
 } elseif($canal2 === "LaLiga SmartbankTV" || $canal2 === "LaLiga SmartbankTV" || $canal2 === "smartbank"){
     $canalImg = "smartbank";
     $canal2 = '
+    <li>
+        <a class="justify-content-center" href="https://irpc.ga/mg/play/sandbox.php?get=smartbank">
+        <i class="flag es"></i>
+        LaLiga Smartbank | HD (VIP)
+        </a>
+    </li>
     <li>
         <a class="justify-content-center" href="../../play?c=smartbank">
         <i class="flag es"></i>
