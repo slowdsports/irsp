@@ -41,7 +41,7 @@ if (isset($_SESSION['message']) ){
 ?>
 
 <div class="header-large-title">
-    <h1 class="title"><?=ucfirst($row['fullname'])?>,</h1>
+    <h1 class="title"><?=ucfirst($row['fullname'])?></h1>
     <h4 class="subtitle">¡Disfruta de tu evento!</h4>
 </div>
 
@@ -63,6 +63,34 @@ if (isset($_SESSION['nbaError'])){
     <div class="section mt-2">
         <div class="container">
             <div class="row">
+                <!-- NBA TV -->
+                <div style="" class="col-6">
+                    <a href="epg?url=epg&c=557">
+                        <div class="card product-card liga-card">
+                            <div class="card-body">
+                                <center>
+                                    <img width="48px" src="https://i.ibb.co/w0qg9JF/trans.png" style="background-image: url('http://rndserv.xyz/img/nba.png'); background-size: contain; background-repeat: no-repeat;" class="image" alt="product image" />
+                                    <h2 class="title text-center">NBA TV [1]</h2>
+                                </center>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div style="" class="col-6">
+                    <a href="epg?url=epg&c=225">
+                        <div class="card product-card liga-card">
+                            <div class="card-body">
+                                <center>
+                                    <img width="48px" src="https://i.ibb.co/w0qg9JF/trans.png" style="background-image: url('http://rndserv.xyz/img/nba.png'); background-size: contain; background-repeat: no-repeat;" class="image" alt="product image" />
+                                    <h2 class="title text-center">NBA TV [2]</h2>
+                                </center>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <hr>
+                <!-- NBA TV -->
                 <?php
                 // get DOM from URL or file
                 $html = file_get_html('https://www.espn.com.mx/basquetbol/nba/calendario');
@@ -110,7 +138,7 @@ if (isset($_SESSION['nbaError'])){
                                     </div>
                                 </div>
                                 <div class="channel">
-                                    <img src="http://iraffle.live/v3/assets/img/ligas/uel.png" alt="Channel" />
+                                    <img src="<?=$app?>assets/img/canales/nba.png" alt="Channel" />
                                 </div>
                             </div>
                         </div>
