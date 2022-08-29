@@ -112,7 +112,7 @@ if (isset($_SESSION['nbaError'])){
                                     </div>
                                 </div>
                                 <div class="channel">
-                                    <img src="http://iraffle.live/v3/assets/img/ligas/uel.png" alt="Channel" />
+                                    <img src="http://iraffle.live/v3/assets/img/ligas/mlb.png" alt="Channel" />
                                 </div>
                             </div>
                         </div>
