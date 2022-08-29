@@ -164,6 +164,12 @@ if($canal === "M+ #Vamos" || $canal === "mvamos"){
         <i class="flag es"></i>
         Movistar #Vamos | VIP HD
         </a>
+    </li>
+    <li>
+        <a class="justify-content-center" href="https://irpc.ga/mg/play/sandbox.php?get=vamos&play">
+        <i class="flag es"></i>
+        Movistar #Vamos | HD
+        </a>
     </li>';
 } elseif($canal2 === "M+ #Vamos" || $canal2 === "mvamos"){
     $canalImg = "mvamos";
@@ -172,6 +178,12 @@ if($canal === "M+ #Vamos" || $canal === "mvamos"){
         <a class="justify-content-center" href="../../play?c=mvamos">
         <i class="flag es"></i>
         Movistar #Vamos | VIP HD
+        </a>
+    </li>
+    <li>
+        <a class="justify-content-center" href="https://irpc.ga/mg/play/sandbox.php?get=vamos&play">
+        <i class="flag es"></i>
+        Movistar #Vamos | HD
         </a>
     </li>';
 }
