@@ -222,6 +222,12 @@ if($canal === "DAZN" || $canal === "DAZN" || $canal === "dazn1"){
     $canalImg = "dazn";
     $canalop2 = '
     <li>
+        <a class="justify-content-center" href="https://irpc.ga/mg/play/sandbox.php?get=dazn1es&play">
+        <i class="flag es"></i>
+        DAZN 1
+        </a>
+    </li>
+    <li>
         <a class="justify-content-center" href="https://irpc.ga/mg/?url=dazn-1&play">
         <i class="flag es"></i>
         DAZN 1 | VIP HD
@@ -231,9 +237,47 @@ if($canal === "DAZN" || $canal === "DAZN" || $canal === "dazn1"){
     $canalImg = "dazn";
     $canal2 = '
     <li>
+        <a class="justify-content-center" href="https://irpc.ga/mg/play/sandbox.php?get=dazn1es&play">
+        <i class="flag es"></i>
+        DAZN 1
+        </a>
+    </li>
+    <li>
         <a class="justify-content-center" href="https://irpc.ga/mg/?url=dazn-1&play">
         <i class="flag es"></i>
         DAZN 1 | VIP HD
+        </a>
+    </li>';
+}
+
+if($canal === "DAZN2" || $canal === "DAZN2" || $canal === "dazn2"){
+    $canalImg = "dazn";
+    $canalop2 = '
+    <li>
+        <a class="justify-content-center" href="https://irpc.ga/mg/play/sandbox.php?get=dazn2es&play">
+        <i class="flag es"></i>
+        DAZN 2
+        </a>
+    </li>
+    <li>
+        <a class="justify-content-center" href="https://irpc.ga/mg/?url=dazn-2&play">
+        <i class="flag es"></i>
+        DAZN 2 | VIP HD
+        </a>
+    </li>';
+} elseif($canal2 === "DAZN2" || $canal2 === "DAZN2" || $canal2 === "dazn2"){
+    $canalImg = "dazn";
+    $canal2 = '
+    <li>
+        <a class="justify-content-center" href="https://irpc.ga/mg/play/sandbox.php?get=dazn2es&play">
+        <i class="flag es"></i>
+        DAZN 2
+        </a>
+    </li>
+    <li>
+        <a class="justify-content-center" href="https://irpc.ga/mg/?url=dazn-2&play">
+        <i class="flag es"></i>
+        DAZN 2 | VIP HD
         </a>
     </li>';
 }
@@ -298,12 +342,24 @@ if($canal === "DAZN (Regístrate)" || $canal === "DAZN | (Movistar 59)"){
         <i class="flag es"></i>
         DAZN 1 | VIP HD
         </a>
+    </li>
+    <li>
+        <a class="justify-content-center" href="https://irpc.ga/mg/?url=dazn-1&play">
+        <i class="flag es"></i>
+        DAZN 1 | VIP HD
+        </a>
     </li>';
 } elseif($canal2 === "DAZN (Regístrate)" || $canal2 === "DAZN | (Movistar 59)"){
     $canalImg = "dazn";
     $canal2 = '
     <li>
         <a class="justify-content-center" href="../../play?c=dazn1">
+        <i class="flag es"></i>
+        DAZN 1 | VIP HD
+        </a>
+    </li>
+    <li>
+        <a class="justify-content-center" href="https://irpc.ga/mg/?url=dazn-1&play">
         <i class="flag es"></i>
         DAZN 1 | VIP HD
         </a>
@@ -601,6 +657,42 @@ if($canal === "foxsports3sur" || $canal === "foxsports3sur"){
         <a class="justify-content-center" href="https://irpc.ga/mg/play/mlaliga.php?get=aHR0cHM6Ly8xMTM0LXZvcy5kdHZvdHQuY29tL0RBU0gvbWFuaWZlc3QubXBk&key=MzMwM2I0YzY5ODJmMzgxZWE5ZTMwOTAwOWZiYjNmMjc=&key2=YTdmZDQ5ODA4Zjg5MGMyNTAwYmYyMTgwYWFmNDIzMDc=">
         <i class="flag ec"></i>
         Gol TV | HD
+        </a>
+    </li>';
+} if($canal === "tyc" || $canal === "tyc"){
+    $canalImg = "tycsports";
+    $canalop2 = '
+    <li>
+        <a class="justify-content-center" href="https://irpc.ga/mg/play/sandox.php?get=tyc">
+        <i class="flag ar"></i>
+        TyC Sports | HD
+        </a>
+    </li>';
+} elseif($canal2 === "tyc" || $canal2 === "tyc"){
+    $canalImg = "tycsports";
+    $canal2 = '
+    <li>
+        <a class="justify-content-center" href="https://irpc.ga/mg/play/sandox.php?get=tyc">
+        <i class="flag ar"></i>
+        TyC Sports | HD
+        </a>
+    </li>';
+} if($canal === "winplus" || $canal === "winplus"){
+    $canalImg = "winsports";
+    $canalop2 = '
+    <li>
+        <a class="justify-content-center" href="https://irpc.ga/mg/play/sandox.php?get=winplus">
+        <i class="flag co"></i>
+        Win Sports + | HD
+        </a>
+    </li>';
+} elseif($canal2 === "winplus" || $canal2 === "winplus"){
+    $canalImg = "winsports";
+    $canal2 = '
+    <li>
+        <a class="justify-content-center" href="https://irpc.ga/mg/play/sandox.php?get=winplus">
+        <i class="flag co"></i>
+        Win Sports + | HD
         </a>
     </li>';
 }
