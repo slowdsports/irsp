@@ -489,6 +489,26 @@ if($canal === "directv2" || $canal === "directv2"){
     </li>';
 }
 
+if($canal === "directvfight" || $canal === "directvfight"){
+    $canalImg = "directv";
+    $canalop2 = '
+    <li>
+        <a class="justify-content-center" href="https://irpc.ga/mg/play/mlaliga.php?get=aHR0cHM6Ly9kdHZvdHQtYWJjLmFrYW1haXplZC5uZXQvZGFzaF9saXZlXzEyNTkvbWFuaWZlc3QubXBk&key=MzZiMmM2Yjc3MzZhNTkwMWJmNDA4OTE2YTQ1NGFiZjk=&key2=ZjBkMjI1NGY4NWI3MzcxN2Y0YzJjZDgxYmRhNzE4ODk=">
+        <i class="flag ar"></i>
+        DirecTV Sports Fight | HD
+        </a>
+    </li>';
+} elseif($canal2 === "directvfight" || $canal2 === "directvfight"){
+    $canalImg = "directv";
+    $canal2 = '
+    <li>
+        <a class="justify-content-center" href="https://irpc.ga/mg/play/mlaliga.php?get=aHR0cHM6Ly9kdHZvdHQtYWJjLmFrYW1haXplZC5uZXQvZGFzaF9saXZlXzEyNTkvbWFuaWZlc3QubXBk&key=MzZiMmM2Yjc3MzZhNTkwMWJmNDA4OTE2YTQ1NGFiZjk=&key2=ZjBkMjI1NGY4NWI3MzcxN2Y0YzJjZDgxYmRhNzE4ODk=">
+        <i class="flag ar"></i>
+        DirecTV Sports Fight | HD
+        </a>
+    </li>';
+}
+
 if($canal === "espnsur" || $canal === "espnsur"){
     $canalImg = "espn";
     $canalop2 = '
