@@ -10,9 +10,9 @@ if($canal === "M+ Liga de Campeones" || $canal === "M+ Liga de Campeones UHD (M4
         </a>
     </li>
     <li>
-        <a class="justify-content-center" href="../../play?c=mlcampsd">
+        <a class="justify-content-center" href="https://irpc.ga/mg/play/sandbox.php?get=mlcamp">
         <i class="flag es"></i>
-        Movistar Liga de Campeones | VIP SD
+        Movistar Liga de Campeones | HD
         </a>
     </li>';
 } elseif($canal2 === "M+ Liga de Campeones" || $canal2 === "M+ Liga de Campeones UHD (M441 O115)" || $canal2 === "mlcamp"){
@@ -25,9 +25,9 @@ if($canal === "M+ Liga de Campeones" || $canal === "M+ Liga de Campeones UHD (M4
         </a>
     </li>
     <li>
-        <a class="justify-content-center" href="../../play?c=mlcampsd">
+        <a class="justify-content-center" href="https://irpc.ga/mg/play/sandbox.php?get=mlcamp">
         <i class="flag es"></i>
-        Movistar Liga de Campeones | VIP SD
+        Movistar Liga de Campeones | HD
         </a>
     </li>';
 }
