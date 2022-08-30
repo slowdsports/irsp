@@ -87,7 +87,7 @@ if (isset($_SESSION['message']) ){
                                 $canal3 = $result['canal3'];
                                 include ('channels.php');
                                 // Canal 1
-                                echo $canal1;
+                                echo $canal;
                                 // Canal 2
                                 echo $canal2;
                                 // Canal 2
