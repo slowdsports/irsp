@@ -56,6 +56,8 @@ switch ($channel){
     $server.$usuario."/".$password."/"."32".".m3u8"; break;
     case 'barsd' : $channel =
     $server.$usuario."/".$password."/"."33".".m3u8"; break;
+    case 'eurosport' : $channel =
+    $server.$usuario."/".$password."/"."34".".m3u8"; break;
     case 'daznlaliga' : $channel =
     $server.$usuario."/".$password."/"."36".".m3u8"; break;
     case 'daznlaliga2' : $channel =
