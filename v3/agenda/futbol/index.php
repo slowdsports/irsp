@@ -83,6 +83,18 @@ if (isset($_SESSION['message']) ){
                 </div>
             </div>
             <!-- End Elemento -->
+            <!-- TokTok --
+            <blockquote class="tiktok-embed" cite="https://www.tiktok.com/@bcmlcd_/video/7137453570059783430" data-video-id="7137453570059783430" style="max-width: 605px; min-width: 325px;">
+                <section>
+                    <a target="_blank" title="@bcmlcd_" href="https://www.tiktok.com/@bcmlcd_?refer=embed">@bcmlcd_</a> XD 😹<a title="fyp" target="_blank" href="https://www.tiktok.com/tag/fyp?refer=embed">#fyp</a>
+                    <a title="tomyjerry" target="_blank" href="https://www.tiktok.com/tag/tomyjerry?refer=embed">#tomyjerry</a> <a title="trend" target="_blank" href="https://www.tiktok.com/tag/trend?refer=embed">#trend</a>
+                    <a title="gta5" target="_blank" href="https://www.tiktok.com/tag/gta5?refer=embed">#gta5</a>
+                    <a target="_blank" title="♬ sonido original - &lt3 ☆" href="https://www.tiktok.com/music/sonido-original-7137453560823909126?refer=embed">♬ sonido original - &lt3 ☆</a>
+                </section>
+            </blockquote>
+            <script async src="https://www.tiktok.com/embed.js"></script>
+
+            <!-- *TokTok -->
             <?php
             $ligas = mysqli_query($conn, "select * from ligas ");
             while($result=mysqli_fetch_array($ligas)){
