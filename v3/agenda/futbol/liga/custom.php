@@ -47,6 +47,18 @@ if ($result['visita'] == "brighton"){
     ';
 }
 
+if ($result['visita'] == "everton"){
+    $canalImg = "starplus";
+    $custom1 = '
+    <li>
+        <a class="justify-content-center" href="../../../tv/epg?r=Ly92ZXJjb21vZnV0Ym9sLnh5ei9zL3N0YXJfandwLmh0bWw/Z2V0PWh0dHBzOi8vbGl2ZS1mdGMtbmEtc291dGgtMi5tZWRpYS5zdGFyb3R0LmNvbS9ncnUxL3FiMDIvc3RhcnBsdXMvZXZlbnQvMjAyMi8wOC8zMC9MZWVkc19Vbml0ZWRfdnNfRXZlcnRvbl8yMDIyMDgzMF8xNjYxODgwMDU3MDE0L2N0ci1hbGwtY29tcGxldGUubTN1OCZpbWc9aHR0cHM6Ly9wcm9kLXJpcGN1dC1kZWxpdmVyeS5kaXNuZXktcGx1cy5uZXQvdjEvdmFyaWFudC9zdGFyLzVCOUM5NzdEOUM2QUEzMTE2RUJBRTgwN0M0MkFEMzI0ODQ4Q0NDQjg2RjIxRkQ2RkJDQzNGQURCMTBFMzk0Q0Mvc2NhbGU/d2lkdGg9MTkyMCZhc3BlY3RSYXRpbz0xLjc4JmZvcm1hdD1qcGVnJmtleT1jNTJmZTM2ZDE2YWU0MDgzYjdkMzM3NWE0Y2IyOGE4ZCZrZXkyPWE5YzNkMjI0NWYzM2RkY2VjMWQwNzVlZjA4OTMzMjcx">
+        <i class="flag ar"></i>
+        Star + | HD
+        </a>
+    </li>
+    ';
+}
+
 if ($result['local'] == "inter"){
     $canalImg = "starplus";
     $custom1 = '
