@@ -86,14 +86,12 @@ if (isset($_SESSION['message']) ){
                                 $canal2 = $result['canal2'];
                                 $canal3 = $result['canal3'];
                                 include ('channels.php');
-                                // Canal 1
-                                echo $canal;
-                                // Canal 2
-                                echo $canal2;
                                 // Canal 2
                                 echo $canalop2;
                                 // Canal 3
                                 echo $canalop3;
+                                // Canal 4
+                                echo $canalop4;
                                 // Custom Channels
                                 include ('custom.php');
                                 echo $custom1;
