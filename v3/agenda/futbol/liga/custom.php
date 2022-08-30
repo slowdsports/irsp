@@ -10,3 +10,15 @@ if ($result['visita'] == "team"){
     </li>
     ';
 }
+
+if ($result['visita'] == "milan"){
+    $canalImg = "starplus";
+    $custom1 = '
+    <li>
+        <a class="justify-content-center" href="../../../tv/epg?r=Ly92ZXJjb21vZnV0Ym9sLnh5ei9zL3N0YXJfandwLmh0bWw/Z2V0PWh0dHBzOi8vbGl2ZS1mdGMtbmEtc291dGgtMi5tZWRpYS5zdGFyb3R0LmNvbS9ncnUxL3FiMDIvc3RhcnBsdXMvZXZlbnQvMjAyMi8wOC8zMC9TYXNzdW9sb192c19NaWxhbl8yMDIyMDgzMF8xNjYxODcxMDA5MDE4L2N0ci1hbGwtY29tcGxldGUubTN1OCZpbWc9aHR0cHM6Ly9wcm9kLXJpcGN1dC1kZWxpdmVyeS5kaXNuZXktcGx1cy5uZXQvdjEvdmFyaWFudC9zdGFyLzFEQzE2RUU2MDhGRjQ3MDRGQzQ5MEY2QzJGNDIxMjBGNTAwM0FCRTVGQzFBQzUzQzdDNkY2NzhCRjEyMkFGNUEvc2NhbGU/d2lkdGg9MTkyMCZhc3BlY3RSYXRpbz0xLjc4JmZvcm1hdD1qcGVnJmtleT0xMWE1ZjU2YmE1NDM0NTdlOTJjYzdmZmUxYjYyMWNiNyZrZXkyPTkyZDA0ZjNjNzQxMjg1Yzk3YmVlYTU2OWEyNjNiZWZj">
+        <i class="flag ar"></i>
+        Star + | HD
+        </a>
+    </li>
+    ';
+}
