@@ -5,11 +5,16 @@ if ($typeChannel == 2 || $typeChannel == 3 || $typeChannel == 8 | $_GET['url'] =
 }
 // Star+ MegaDep
 if (isset($_GET['r'])){
-    $decode = base64_decode($_GET['r']);
-    // Sustituir URL: "//vercomofutbol.xyz/s/star_jwp.html"
-    $decode = str_replace("//vercomofutbol.xyz/s/star_jwp.html", "", $decode);
-    $decode = "https://irpc.ga/mg/play/star.php" . $decode;
-    header ("location: $decode");
+    if ($_GET['r'] === "" || $_GET['r'] === null){
+        $_SESSION['message'] = "El evento no está listo.";
+        echo '<script>history.go(-1)</script>';
+    } else {
+        $decode = base64_decode($_GET['r']);
+        // Sustituir URL: "//vercomofutbol.xyz/s/star_jwp.html"
+        $decode = str_replace("//vercomofutbol.xyz/s/star_jwp.html", "", $decode);
+        $decode = "https://irpc.ga/mg/play/star.php" . $decode;
+        header ("location: $decode");
+    }
 }
 if (isset($_GET['get']) || isset($_GET['key'])){
     $getURL = $_GET['get'];
