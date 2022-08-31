@@ -14,7 +14,7 @@ if ($result['visita'] === "team"){
 if ($result['visita'] === "hellas"){
     $_SESSION['starplus'] = "Los eventos por Star+ estarán listos 5 o 10 minutos antes del comienzo.";
     $canalImg = "starplus";
-    $r= "";
+    $r= "Ly92ZXJjb21vZnV0Ym9sLnh5ei9zL3N0YXJfandwLmh0bWw/Z2V0PWh0dHBzOi8vbGl2ZS1mdGMtbmEtc291dGgtMi5tZWRpYS5zdGFyb3R0LmNvbS9jbHQyL3ZhMDEvc3RhcnBsdXMvZXZlbnQvMjAyMi8wOC8zMS9FbXBvbGlfdnNfSGVsbGFzX1Zlcm9uYV8yMDIyMDgzMV8xNjYxOTU3NzM0MDEyL2N0ci1hbGwtY29tcGxldGUubTN1OCZpbWc9aHR0cHM6Ly9wcm9kLXJpcGN1dC1kZWxpdmVyeS5kaXNuZXktcGx1cy5uZXQvdjEvdmFyaWFudC9zdGFyL0JBMEI4MjI2OTlENzU5OURDRUJBMTU4OTAzMDlBRUU2NzRERTk5NjIzREMyNTY3NERFMTM2MEZBOEIwQjJDNEQvc2NhbGU/d2lkdGg9MTkyMCZhc3BlY3RSYXRpbz0xLjc4JmZvcm1hdD1qcGVnJmtleT0wOTc1ZDkyYjQ1MjA0NjlhOWI0ODk5YTQwMmE0MjllNyZrZXkyPWM3YWY1Mzg3NWVjZDMxZjMwYjU4M2Y0N2ZhZTIwOTRm";
     $custom1 = '
     <li>
         <a class="justify-content-center" href="../../../tv/epg?r='.$r.'">
@@ -27,7 +27,7 @@ if ($result['visita'] === "hellas"){
 if ($result['visita'] === "lazio"){
     $_SESSION['starplus'] = "Los eventos por Star+ estarán listos 5 o 10 minutos antes del comienzo.";
     $canalImg = "starplus";
-    $r= "";
+    $r= "Ly92ZXJjb21vZnV0Ym9sLnh5ei9zL3N0YXJfandwLmh0bWw/Z2V0PWh0dHBzOi8vbGl2ZS1mdGMtbmEtc291dGgtMi5tZWRpYS5zdGFyb3R0LmNvbS9ncnUxL3FiMDIvc3RhcnBsdXMvZXZlbnQvMjAyMi8wOC8zMS9TYW1wZG9yaWFfdnNfTGF6aW9fMjAyMjA4MzFfMTY2MTk1NzQxNjAxMy9jdHItYWxsLWNvbXBsZXRlLm0zdTgmaW1nPWh0dHBzOi8vcHJvZC1yaXBjdXQtZGVsaXZlcnkuZGlzbmV5LXBsdXMubmV0L3YxL3ZhcmlhbnQvc3Rhci8xRUE4Qjk3QzhGQTlGMjRCOTJFQkNGMjJCMENBMDUxMDM4MzBBM0M0QjJBRDU4MDI1RkY0NzdCRjQzODcwRjE5L3NjYWxlP3dpZHRoPTE5MjAmYXNwZWN0UmF0aW89MS43OCZmb3JtYXQ9anBlZyZrZXk9N2E5MTRiMDBmNzkxNDI1YjhkMGZkZGYzOWM0ZGRhZGQma2V5Mj1jZTlmN2Q2MDRlY2E4OWFmZmJmYWRjMmRlNTMyYmQ2ZQ==";
     $custom1 = '
     <li>
         <a class="justify-content-center" href="../../../tv/epg?r='.$r.'">
@@ -40,7 +40,7 @@ if ($result['visita'] === "lazio"){
 if ($result['visita'] === "fiorentina"){
     $_SESSION['starplus'] = "Los eventos por Star+ estarán listos 5 o 10 minutos antes del comienzo.";
     $canalImg = "starplus";
-    $r= "";
+    $r= "Ly92ZXJjb21vZnV0Ym9sLnh5ei9zL3N0YXJfandwLmh0bWw/Z2V0PWh0dHBzOi8vbGl2ZS1mdGMtbmEtc291dGgtMi5tZWRpYS5zdGFyb3R0LmNvbS9jbHQyL3ZhMDEvc3RhcnBsdXMvZXZlbnQvMjAyMi8wOC8zMS9VZGluZXNlX3ZzX0Zpb3JlbnRpbmFfMjAyMjA4MzFfMTY2MTk1Nzc0MTAyMC9jdHItYWxsLWNvbXBsZXRlLm0zdTgmaW1nPWh0dHBzOi8vcHJvZC1yaXBjdXQtZGVsaXZlcnkuZGlzbmV5LXBsdXMubmV0L3YxL3ZhcmlhbnQvc3Rhci8wNTdEMzczRjhGMjgxRTJDMzRBRUQyNzEyNTdBMzYyMzc4QjVGOTExRDcxRDYzRjI2NTcyRjA3NkYyMzJGRTBBL3NjYWxlP3dpZHRoPTE5MjAmYXNwZWN0UmF0aW89MS43OCZmb3JtYXQ9anBlZyZrZXk9MDBmMGM1OTQwZjg5NGVkMWJlN2U0Yzk2NTVmMjY3ZDIma2V5Mj02Yjg1MzY3YTI5ZjU4YmU3NjllZmNkMDFlOGU4ODBmMA==";
     $custom1 = '
     <li>
         <a class="justify-content-center" href="../../../tv/epg?r='.$r.'">
