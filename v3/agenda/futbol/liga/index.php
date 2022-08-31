@@ -43,7 +43,16 @@ if (isset($_SESSION['message']) ){
                     $visita = $result['visita'];
                     $index = $result['id'];
                     setlocale(LC_ALL, "es_ES", 'Spanish_Spain', 'Spanish');
+                    date_default_timezone_set('America/Tegucigalpa');
                     $dia = iconv('ISO-8859-2', 'UTF-8', strftime("%A %d", strtotime($result['fecha'])));
+                    $dd = iconv('ISO-8859-2', 'UTF-8', strftime("%d", strtotime($result['fecha'])));
+                    $hoy = date("d");
+
+                    if ($dd == $hoy){
+                        $dia = "Hoy";
+                    } elseif ($dd == $hoy+1){
+                        $dia = "Mañana";
+                    }
 
                     include('teams.php');
                     include('../../../inc/channels.php');
