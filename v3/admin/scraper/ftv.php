@@ -65,7 +65,7 @@ mysqli_query($conn,$sql);
 }
 }
 // Obtenemos los campos agregados
-$ret=mysqli_query($conn,"select * from agenda");
+$ret=mysqli_query($conn,"select * from agenda where liga='$liga'");
 $cnt=1;
 while($row=mysqli_fetch_array($ret))
 {
