@@ -1,4 +1,8 @@
 <?php
+// DF Pokal == Bundesliga
+if ($result['ligaImg'] == 18){
+    $result['ligaImg'] = 6;
+}
 // Equipos
     // LaLiga
     $local = str_replace('athletic', 'Athletic Club', $local);
