@@ -59,6 +59,9 @@
     min-width: 5%;
     max-width: 60px;
 }
+.main-event .league .time {
+  position: absolute;
+}
 
 .main-event .channel img {
     min-width: 5%;

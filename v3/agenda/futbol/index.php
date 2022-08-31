@@ -38,6 +38,7 @@ if (isset($_SESSION['message']) ){
                         <div class="main-event">
                             <div class="league">
                                 <img src="<?=$app?>assets/img/chiringuito.png" alt="Chiringuito" />
+                                <p class="time chiriTime">time</p>
                             </div>
                             <div class="match">
                                 <div class="team">
@@ -132,14 +133,14 @@ if (isset($_SESSION['message']) ){
 <!-- End Categorías -->
 <!-- Timer -->
 <script>
-    var yyyy = 2022; var mm = 07; var dd = 22;
+    var yyyy = 2022; var mm = 08; var dd = 01;
 
     var myTime = yyyy+mm+dd;
     var textLive = "<p class='live-text'>En Vivo <ion-icon class='faa-flash animated' name='ellipse'></ion-icon></p>";
     var textEnd = "Finalizó";
 
 
-    function caseTime() {
+    function chiriTime() {
         // Set the date we're counting down to
         // Year, Month ( 0 for January ), Day, Hour, Minute, Second, , Milliseconds
         //:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
@@ -148,7 +149,7 @@ if (isset($_SESSION['message']) ){
         //::::::::::::                                       ::::::::::::
         //:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
         //                                   (AAAA, MM, DD, HH, MM, SS));
-        var countDownDate = new Date(Date.UTC(yyyy, mm, dd, 03, 00, 00));
+        var countDownDate = new Date(Date.UTC(yyyy, mm, dd, 16, 00, 00));
 
         // Update the count down every 1 second
         var x = setInterval(function () {
@@ -167,26 +168,26 @@ if (isset($_SESSION['message']) ){
         var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
         // Output the result in an element with id="demo"
-        for (const ele of document.getElementsByClassName("caseTime")){
-            ele.innerHTML = (hours + "<span>h</span> "
+        for (const ele of document.getElementsByClassName("chiriTime")){
+            ele.innerHTML = (days + "<span>d</span> " + hours + "<span>h</span> "
             + minutes + "<span>m</span> " + seconds + "<span>s</span><br />")
         }
         // If the count down is over, write some text
         if (distance < 0) {
-            for (const ele of document.getElementsByClassName("caseTime")) {
+            for (const ele of document.getElementsByClassName("chiriTime")) {
                 ele.innerHTML = textLive;
             }
             if (distance + 10800000 < 0) {
                 countDownDate = new Date(countDownDate.getTime() + 86400000)
             } else if (distance + 7200000 < 0) {
-                for (const allEllements of document.getElementsByClassName("caseTime")) {
+                for (const allEllements of document.getElementsByClassName("chiriTime")) {
                     allEllements.innerHTML = textEnd;
                 }
             }
         }
     }, 1000);
 }
-caseTime()
+chiriTime()
 </script>
 <!-- *Timer -->
 <?php
