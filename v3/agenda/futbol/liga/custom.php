@@ -118,7 +118,7 @@ if ($result['local'] === "bournemouth"){
 if ($result['local'] === "liverpool"){
     $_SESSION['starplus'] = "Los eventos por Star+ estarán listos 5 o 10 minutos antes del comienzo.";
     $canalImg = "starplus";
-    $r= "";
+    $r= "Ly92ZXJjb21vZnV0Ym9sLnh5ei9zL3N0YXJfandwLmh0bWw/Z2V0PWh0dHBzOi8vbGl2ZS1mdGMtbmEtc291dGgtMi5tZWRpYS5zdGFyb3R0LmNvbS9ncnUxL3FiMDEvc3RhcnBsdXMvZXZlbnQvMjAyMi8wOC8zMS9MaXZlcnBvb2xfdnNfTmV3Y2FzdGxlX1VuXzIwMjIwODMxXzE2NjE5NjY3MDAyODcvY3RyLWFsbC1jb21wbGV0ZS5tM3U4JmltZz1odHRwczovL3Byb2QtcmlwY3V0LWRlbGl2ZXJ5LmRpc25leS1wbHVzLm5ldC92MS92YXJpYW50L3N0YXIvM0IxNzM2MDRGRkE2MEZDMEY4QUNFOTRGQjFBMjQwQ0NDMTBDMENDQ0M3ODlCQUQ0NTFFOUI2OTIzQkIzNEY4Mi9zY2FsZT93aWR0aD0xOTIwJmFzcGVjdFJhdGlvPTEuNzgmZm9ybWF0PWpwZWcma2V5PTA1YzZmNzMxOWUyYTRhZGQ5NGM4NTJkNDU1NGNlZTZjJmtleTI9MTZhNzVlOTIyNmI4MTE0ZDZkMjhmMDdmMDQzMWQ1ZTk=";
     $custom1 = '
     <li>
         <a class="justify-content-center" href="../../../tv/epg?r='.$r.'">
