@@ -1,69 +1,70 @@
 <?php
 if ($result['visita'] == "team"){
     $canalImg = "starplus";
+    $r= "Ly92ZXJjb21vZnV0Ym9sLnh5ei9zL3N0YXJfandwLmh0bWw/Z2V0PWh0dHBzOi8vbGl2ZS1mdGMtbmEtc291dGgtMi5tZWRpYS5zdGFyb3R0LmNvbS9ncnUxL3FiMDIvc3RhcnBsdXMvZXZlbnQvMjAyMi8wOC8yOC9Ob3R0aW5naGFtX0ZvcmVzdF92c19Ub3R0XzIwMjIwODI4XzE2NjE2OTQ2MDcwMjAvY3RyLWFsbC1jb21wbGV0ZS5tM3U4JmltZz1odHRwczovL3Byb2QtcmlwY3V0LWRlbGl2ZXJ5LmRpc25leS1wbHVzLm5ldC92MS92YXJpYW50L3N0YXIvNTRBMEQ2RjAzNUE4REVCRUFDMjg0RTkwQjk0NkI2QzNBMTAyM0VEQjI4MkM1MzgzOTI2ODA1ODA1NUM3Q0ZGMC9zY2FsZT93aWR0aD0xOTIwJmFzcGVjdFJhdGlvPTEuNzgmZm9ybWF0PWpwZWcma2V5PTEyYzNkOTc1NjRiNDRlMWRiN2EwYTU2MjYzMGIwM2FjJmtleTI9M2Q1NDdmYjIwZDQ5OTNjODliNjVhOTMxNDZjOGE5NzU=";
     $custom1 = '
     <li>
-        <a class="justify-content-center" href="../../../tv/epg?r=Ly92ZXJjb21vZnV0Ym9sLnh5ei9zL3N0YXJfandwLmh0bWw/Z2V0PWh0dHBzOi8vbGl2ZS1mdGMtbmEtc291dGgtMi5tZWRpYS5zdGFyb3R0LmNvbS9ncnUxL3FiMDIvc3RhcnBsdXMvZXZlbnQvMjAyMi8wOC8yOC9Ob3R0aW5naGFtX0ZvcmVzdF92c19Ub3R0XzIwMjIwODI4XzE2NjE2OTQ2MDcwMjAvY3RyLWFsbC1jb21wbGV0ZS5tM3U4JmltZz1odHRwczovL3Byb2QtcmlwY3V0LWRlbGl2ZXJ5LmRpc25leS1wbHVzLm5ldC92MS92YXJpYW50L3N0YXIvNTRBMEQ2RjAzNUE4REVCRUFDMjg0RTkwQjk0NkI2QzNBMTAyM0VEQjI4MkM1MzgzOTI2ODA1ODA1NUM3Q0ZGMC9zY2FsZT93aWR0aD0xOTIwJmFzcGVjdFJhdGlvPTEuNzgmZm9ybWF0PWpwZWcma2V5PTEyYzNkOTc1NjRiNDRlMWRiN2EwYTU2MjYzMGIwM2FjJmtleTI9M2Q1NDdmYjIwZDQ5OTNjODliNjVhOTMxNDZjOGE5NzU=">
+        <a class="justify-content-center" href="../../../tv/epg?r='.$r.'">
         <i class="flag ar"></i>
         Star + | HD
         </a>
     </li>
     ';
 }
-
-if ($result['visita'] == "brentford"){
+if ($result['visita'] == "hellas"){
     $canalImg = "starplus";
+    $r= "Ly92ZXJjb21vZnV0Ym9sLnh5ei9zL3N0YXJfandwLmh0bWw/Z2V0PWh0dHBzOi8vbGl2ZS1mdGMtbmEtc291dGgtMi5tZWRpYS5zdGFyb3R0LmNvbS9ncnUxL3FiMDIvc3RhcnBsdXMvZXZlbnQvMjAyMi8wOC8yOC9Ob3R0aW5naGFtX0ZvcmVzdF92c19Ub3R0XzIwMjIwODI4XzE2NjE2OTQ2MDcwMjAvY3RyLWFsbC1jb21wbGV0ZS5tM3U4JmltZz1odHRwczovL3Byb2QtcmlwY3V0LWRlbGl2ZXJ5LmRpc25leS1wbHVzLm5ldC92MS92YXJpYW50L3N0YXIvNTRBMEQ2RjAzNUE4REVCRUFDMjg0RTkwQjk0NkI2QzNBMTAyM0VEQjI4MkM1MzgzOTI2ODA1ODA1NUM3Q0ZGMC9zY2FsZT93aWR0aD0xOTIwJmFzcGVjdFJhdGlvPTEuNzgmZm9ybWF0PWpwZWcma2V5PTEyYzNkOTc1NjRiNDRlMWRiN2EwYTU2MjYzMGIwM2FjJmtleTI9M2Q1NDdmYjIwZDQ5OTNjODliNjVhOTMxNDZjOGE5NzU=";
     $custom1 = '
     <li>
-        <a class="justify-content-center" href="../../../tv/epg?r=Ly92ZXJjb21vZnV0Ym9sLnh5ei9zL3N0YXJfandwLmh0bWw/Z2V0PWh0dHBzOi8vbGl2ZS1mdGMtbmEtc291dGgtMi5tZWRpYS5zdGFyb3R0LmNvbS9jbHQyL3ZhMDEvc3RhcnBsdXMvZXZlbnQvMjAyMi8wOC8zMC9DcnlzdGFsX1BhbGFjZV92c19CcmVudGZvXzIwMjIwODMwXzE2NjE4Nzg1NDYwMjIvY3RyLWFsbC1jb21wbGV0ZS5tM3U4JmltZz1odHRwczovL3Byb2QtcmlwY3V0LWRlbGl2ZXJ5LmRpc25leS1wbHVzLm5ldC92MS92YXJpYW50L3N0YXIvMDhBRkQ4MkUzNTU1NjREMzc1NDhCNzNDODNGQkUwMTdBNzIwRkNCMTYyMEQxMzdGREIyNzlBOTE1RDk3NDI3Ri9zY2FsZT93aWR0aD0xOTIwJmFzcGVjdFJhdGlvPTEuNzgmZm9ybWF0PWpwZWcma2V5PTg0MTA0YWQ2MGFmYjQwM2JiYjJiNDI1ZTkxN2IyOTYwJmtleTI9YTJhNjU1YTdhZjUwMGM5YzgyMDQ1ZjllMGQxYWM5ZDg=">
+        <a class="justify-content-center" href="../../../tv/epg?r='.$r.'">
         <i class="flag ar"></i>
         Star + | HD
         </a>
     </li>
     ';
 }
-
-if ($result['visita'] == "chelsea"){
+if ($result['visita'] == "lazio"){
     $canalImg = "starplus";
+    $r= "Ly92ZXJjb21vZnV0Ym9sLnh5ei9zL3N0YXJfandwLmh0bWw/Z2V0PWh0dHBzOi8vbGl2ZS1mdGMtbmEtc291dGgtMi5tZWRpYS5zdGFyb3R0LmNvbS9ncnUxL3FiMDIvc3RhcnBsdXMvZXZlbnQvMjAyMi8wOC8yOC9Ob3R0aW5naGFtX0ZvcmVzdF92c19Ub3R0XzIwMjIwODI4XzE2NjE2OTQ2MDcwMjAvY3RyLWFsbC1jb21wbGV0ZS5tM3U4JmltZz1odHRwczovL3Byb2QtcmlwY3V0LWRlbGl2ZXJ5LmRpc25leS1wbHVzLm5ldC92MS92YXJpYW50L3N0YXIvNTRBMEQ2RjAzNUE4REVCRUFDMjg0RTkwQjk0NkI2QzNBMTAyM0VEQjI4MkM1MzgzOTI2ODA1ODA1NUM3Q0ZGMC9zY2FsZT93aWR0aD0xOTIwJmFzcGVjdFJhdGlvPTEuNzgmZm9ybWF0PWpwZWcma2V5PTEyYzNkOTc1NjRiNDRlMWRiN2EwYTU2MjYzMGIwM2FjJmtleTI9M2Q1NDdmYjIwZDQ5OTNjODliNjVhOTMxNDZjOGE5NzU=";
     $custom1 = '
     <li>
-        <a class="justify-content-center" href="../../../tv/epg?r=Ly92ZXJjb21vZnV0Ym9sLnh5ei9zL3N0YXJfandwLmh0bWw/Z2V0PWh0dHBzOi8vbGl2ZS1mdGMtbmEtc291dGgtMi5tZWRpYS5zdGFyb3R0LmNvbS9ncnUxL3FiMDEvc3RhcnBsdXMvZXZlbnQvMjAyMi8wOC8zMC9Tb3V0aGFtcHRvbl92c19DaGVsc2VhXzIwMjIwODMwXzE2NjE4Nzg4MDgwMjcvY3RyLWFsbC1jb21wbGV0ZS5tM3U4JmltZz1odHRwczovL3Byb2QtcmlwY3V0LWRlbGl2ZXJ5LmRpc25leS1wbHVzLm5ldC92MS92YXJpYW50L3N0YXIvNjZENzUyNEM4NzkwOTU0MTY3NzVFMzM5MUMxRUVCRTk4OTlEMjQxQUUxMTYxMzVBRUFBREU4QUVFNkFEMzk1Ni9zY2FsZT93aWR0aD0xOTIwJmFzcGVjdFJhdGlvPTEuNzgmZm9ybWF0PWpwZWcma2V5PTBjOTY1M2MxNzhmOTRiNDI4NmY0NWUxNjhmMGIyMWU4JmtleTI9MTI3Y2I5Y2MyY2VmZjdlYjQ5NDVhNTAzYzU0YjFhMzE=">
+        <a class="justify-content-center" href="../../../tv/epg?r='.$r.'">
         <i class="flag ar"></i>
         Star + | HD
         </a>
     </li>
     ';
 }
-
-if ($result['visita'] == "brighton"){
+if ($result['visita'] == "fiorentina"){
     $canalImg = "starplus";
+    $r= "Ly92ZXJjb21vZnV0Ym9sLnh5ei9zL3N0YXJfandwLmh0bWw/Z2V0PWh0dHBzOi8vbGl2ZS1mdGMtbmEtc291dGgtMi5tZWRpYS5zdGFyb3R0LmNvbS9ncnUxL3FiMDIvc3RhcnBsdXMvZXZlbnQvMjAyMi8wOC8yOC9Ob3R0aW5naGFtX0ZvcmVzdF92c19Ub3R0XzIwMjIwODI4XzE2NjE2OTQ2MDcwMjAvY3RyLWFsbC1jb21wbGV0ZS5tM3U4JmltZz1odHRwczovL3Byb2QtcmlwY3V0LWRlbGl2ZXJ5LmRpc25leS1wbHVzLm5ldC92MS92YXJpYW50L3N0YXIvNTRBMEQ2RjAzNUE4REVCRUFDMjg0RTkwQjk0NkI2QzNBMTAyM0VEQjI4MkM1MzgzOTI2ODA1ODA1NUM3Q0ZGMC9zY2FsZT93aWR0aD0xOTIwJmFzcGVjdFJhdGlvPTEuNzgmZm9ybWF0PWpwZWcma2V5PTEyYzNkOTc1NjRiNDRlMWRiN2EwYTU2MjYzMGIwM2FjJmtleTI9M2Q1NDdmYjIwZDQ5OTNjODliNjVhOTMxNDZjOGE5NzU=";
     $custom1 = '
     <li>
-        <a class="justify-content-center" href="../../../tv/epg?r=Ly92ZXJjb21vZnV0Ym9sLnh5ei9zL3N0YXJfandwLmh0bWw/Z2V0PWh0dHBzOi8vbGl2ZS1mdGMtbmEtc291dGgtMi5tZWRpYS5zdGFyb3R0LmNvbS9ncnUxL3FiMDIvc3RhcnBsdXMvZXZlbnQvMjAyMi8wOC8zMC9GdWxoYW1fdnNfQnJpZ2h0b25fMjAyMjA4MzBfMTY2MTg3ODIzOTAxNS9jdHItYWxsLWNvbXBsZXRlLm0zdTgmaW1nPWh0dHBzOi8vcHJvZC1yaXBjdXQtZGVsaXZlcnkuZGlzbmV5LXBsdXMubmV0L3YxL3ZhcmlhbnQvc3Rhci81Mjk5QkFGNjU0M0M3RjgwN0U0MEEzQTA3QzBDRjM4OTc5QTgwQTE4MEY0MjRFRjk2OUMzMkVBRjgxNTU3MkE2L3NjYWxlP3dpZHRoPTE5MjAmYXNwZWN0UmF0aW89MS43OCZmb3JtYXQ9anBlZyZrZXk9N2Y2YWQyNDk1ZDBiNGFkZDljZjhjMDMxMGMzMmJkZjAma2V5Mj1kNGY4ODEzYjQ5NzQ3YzI1NDFkMmJjYzdhNjI0MWRkYQ==">
+        <a class="justify-content-center" href="../../../tv/epg?r='.$r.'">
         <i class="flag ar"></i>
         Star + | HD
         </a>
     </li>
     ';
 }
-
-if ($result['visita'] == "everton"){
+if ($result['visita'] == "spezia"){
     $canalImg = "starplus";
+    $r= "Ly92ZXJjb21vZnV0Ym9sLnh5ei9zL3N0YXJfandwLmh0bWw/Z2V0PWh0dHBzOi8vbGl2ZS1mdGMtbmEtc291dGgtMi5tZWRpYS5zdGFyb3R0LmNvbS9ncnUxL3FiMDIvc3RhcnBsdXMvZXZlbnQvMjAyMi8wOC8yOC9Ob3R0aW5naGFtX0ZvcmVzdF92c19Ub3R0XzIwMjIwODI4XzE2NjE2OTQ2MDcwMjAvY3RyLWFsbC1jb21wbGV0ZS5tM3U4JmltZz1odHRwczovL3Byb2QtcmlwY3V0LWRlbGl2ZXJ5LmRpc25leS1wbHVzLm5ldC92MS92YXJpYW50L3N0YXIvNTRBMEQ2RjAzNUE4REVCRUFDMjg0RTkwQjk0NkI2QzNBMTAyM0VEQjI4MkM1MzgzOTI2ODA1ODA1NUM3Q0ZGMC9zY2FsZT93aWR0aD0xOTIwJmFzcGVjdFJhdGlvPTEuNzgmZm9ybWF0PWpwZWcma2V5PTEyYzNkOTc1NjRiNDRlMWRiN2EwYTU2MjYzMGIwM2FjJmtleTI9M2Q1NDdmYjIwZDQ5OTNjODliNjVhOTMxNDZjOGE5NzU=";
     $custom1 = '
     <li>
-        <a class="justify-content-center" href="../../../tv/epg?r=Ly92ZXJjb21vZnV0Ym9sLnh5ei9zL3N0YXJfandwLmh0bWw/Z2V0PWh0dHBzOi8vbGl2ZS1mdGMtbmEtc291dGgtMi5tZWRpYS5zdGFyb3R0LmNvbS9ncnUxL3FiMDIvc3RhcnBsdXMvZXZlbnQvMjAyMi8wOC8zMC9MZWVkc19Vbml0ZWRfdnNfRXZlcnRvbl8yMDIyMDgzMF8xNjYxODgwMDU3MDE0L2N0ci1hbGwtY29tcGxldGUubTN1OCZpbWc9aHR0cHM6Ly9wcm9kLXJpcGN1dC1kZWxpdmVyeS5kaXNuZXktcGx1cy5uZXQvdjEvdmFyaWFudC9zdGFyLzVCOUM5NzdEOUM2QUEzMTE2RUJBRTgwN0M0MkFEMzI0ODQ4Q0NDQjg2RjIxRkQ2RkJDQzNGQURCMTBFMzk0Q0Mvc2NhbGU/d2lkdGg9MTkyMCZhc3BlY3RSYXRpbz0xLjc4JmZvcm1hdD1qcGVnJmtleT1jNTJmZTM2ZDE2YWU0MDgzYjdkMzM3NWE0Y2IyOGE4ZCZrZXkyPWE5YzNkMjI0NWYzM2RkY2VjMWQwNzVlZjA4OTMzMjcx">
+        <a class="justify-content-center" href="../../../tv/epg?r='.$r.'">
         <i class="flag ar"></i>
         Star + | HD
         </a>
     </li>
     ';
 }
-
-if ($result['local'] == "inter"){
+if ($result['visita'] == "lecce"){
     $canalImg = "starplus";
+    $r= "Ly92ZXJjb21vZnV0Ym9sLnh5ei9zL3N0YXJfandwLmh0bWw/Z2V0PWh0dHBzOi8vbGl2ZS1mdGMtbmEtc291dGgtMi5tZWRpYS5zdGFyb3R0LmNvbS9ncnUxL3FiMDIvc3RhcnBsdXMvZXZlbnQvMjAyMi8wOC8yOC9Ob3R0aW5naGFtX0ZvcmVzdF92c19Ub3R0XzIwMjIwODI4XzE2NjE2OTQ2MDcwMjAvY3RyLWFsbC1jb21wbGV0ZS5tM3U4JmltZz1odHRwczovL3Byb2QtcmlwY3V0LWRlbGl2ZXJ5LmRpc25leS1wbHVzLm5ldC92MS92YXJpYW50L3N0YXIvNTRBMEQ2RjAzNUE4REVCRUFDMjg0RTkwQjk0NkI2QzNBMTAyM0VEQjI4MkM1MzgzOTI2ODA1ODA1NUM3Q0ZGMC9zY2FsZT93aWR0aD0xOTIwJmFzcGVjdFJhdGlvPTEuNzgmZm9ybWF0PWpwZWcma2V5PTEyYzNkOTc1NjRiNDRlMWRiN2EwYTU2MjYzMGIwM2FjJmtleTI9M2Q1NDdmYjIwZDQ5OTNjODliNjVhOTMxNDZjOGE5NzU=";
     $custom1 = '
     <li>
-        <a class="justify-content-center" href="../../../tv/epg?r=Ly92ZXJjb21vZnV0Ym9sLnh5ei9zL3N0YXJfandwLmh0bWw/Z2V0PWh0dHBzOi8vbGl2ZS1mdGMtbmEtc291dGgtMi5tZWRpYS5zdGFyb3R0LmNvbS9ncnUxL3FiMDEvc3RhcnBsdXMvZXZlbnQvMjAyMi8wOC8zMC9JbnRlcl92c19DcmVtb25lc2VfMjAyMjA4MzBfMTY2MTg3ODgzMTAyNC9jdHItYWxsLWNvbXBsZXRlLm0zdTgmaW1nPWh0dHBzOi8vcHJvZC1yaXBjdXQtZGVsaXZlcnkuZGlzbmV5LXBsdXMubmV0L3YxL3ZhcmlhbnQvc3Rhci80NUE5QUE2QTg5NUMzRjY5RDkwRUI5NDAyMzI2Q0I4OTNDMDE2NURCMUNFNkI5NkQ5ODE4MTg4RjVFN0FENkNDL3NjYWxlP3dpZHRoPTE5MjAmYXNwZWN0UmF0aW89MS43OCZmb3JtYXQ9anBlZyZrZXk9ZjQwZTAyOWE0YzY2NDYzYThhODY2ODk2YTc1Mjc3YTcma2V5Mj1jYjNiMjAzNzRkOWQ4YjE1NWJmMGMwMzBmM2YxYzA2ZQ==">
+        <a class="justify-content-center" href="../../../tv/epg?r='.$r.'">
         <i class="flag ar"></i>
         Star + | HD
         </a>
