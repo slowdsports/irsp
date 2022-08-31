@@ -99,7 +99,7 @@ if ($result['ligaImg'] == 18){
     $local = str_replace("astonvilla", "Aston Villa", $local);
     $local = str_replace("crystalpalace", "Crystal Palace", $local);
     $local = str_replace("leedsutd", "Leeds United", $local);
-    $local = str_replace("laicestercity", "Leicester City", $local);
+    $local = str_replace("leicestercity", "Leicester City", $local);
     $local = str_replace("manchestercity", "Manchester City", $local);
     $local = str_replace("manchester city", "Manchester City", $local);
     $local = str_replace("manchester utd.", "Manchester United", $local);
@@ -116,7 +116,7 @@ if ($result['ligaImg'] == 18){
     $visita = str_replace("crystal palace", "Crystal Palace", $visita);
     $visita = str_replace("crystalpalace", "Crystal Palace", $visita);
     $visita = str_replace("leedsutd", "Leeds United", $visita);
-    $visita = str_replace("laicestercity", "Leicester City", $visita);
+    $visita = str_replace("leicestercity", "Leicester City", $visita);
     $visita = str_replace("manchestercity", "Manchester City", $visita);
     $visita = str_replace("manchester city", "Manchester City", $visita);
     $visita = str_replace("manchester utd.", "Manchester United", $visita);
