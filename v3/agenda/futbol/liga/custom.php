@@ -89,7 +89,7 @@ if ($result['local'] === "arsenal"){
     </li>
     ';
 }
-if ($result['local'] === "city"){
+if ($result['local'] === "manchestercity"){
     $_SESSION['starplus'] = "Los eventos por Star+ estarán listos 5 o 10 minutos antes del comienzo.";
     $canalImg = "starplus";
     $r= "Ly92ZXJjb21vZnV0Ym9sLnh5ei9zL3N0YXJfandwLmh0bWw/Z2V0PWh0dHBzOi8vbGl2ZS1mdGMtbmEtc291dGgtMi5tZWRpYS5zdGFyb3R0LmNvbS9ncnUxL3FiMDEvc3RhcnBsdXMvZXZlbnQvMjAyMi8wOC8zMS9NYW5jaGVzdGVyX0NpdHlfdnNfTm90dGluXzIwMjIwODMxXzE2NjE5NjQ2MDIwMjQvY3RyLWFsbC1jb21wbGV0ZS5tM3U4JmltZz1odHRwczovL3Byb2QtcmlwY3V0LWRlbGl2ZXJ5LmRpc25leS1wbHVzLm5ldC92MS92YXJpYW50L3N0YXIvNTc0OThDOTYwNTJBQTA5OTU1RjJEOUI1QzY5RkRDNDYxOTg3MjhBNjhEOTI3QzVFMDQ0NkI0MkNBRjI2MzYxMS9zY2FsZT93aWR0aD0xOTIwJmFzcGVjdFJhdGlvPTEuNzgmZm9ybWF0PWpwZWcma2V5PWNmMmYyNWYwOWFhNDRkZmViZmRmMzQ2MGQxYWRkOGVmJmtleTI9MjBkODQ0MzI0MjNhNzdjZDc4MjI1NDliYTdhOTRiZDk=";
