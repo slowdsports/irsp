@@ -173,4 +173,7 @@ if ($result['ligaImg'] == 18){
     $visita = str_replace("9deoctubre", "9 de Octubre", $visita);
     $visita = str_replace("cumbayfc", "Cumbayá FC", $visita);
     $visita = str_replace("cumbay fc", "Cumbayá FC", $visita);
+
+    // INTL
+    $local = str_replace('mxico', 'México', $local);
 ?>
