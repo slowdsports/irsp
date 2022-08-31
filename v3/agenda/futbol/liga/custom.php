@@ -79,7 +79,20 @@ if ($result['visita'] === "lecce"){
 if ($result['local'] === "arsenal"){
     $_SESSION['starplus'] = "Los eventos por Star+ estarán listos 5 o 10 minutos antes del comienzo.";
     $canalImg = "starplus";
-    $r= "";
+    $r= "Ly92ZXJjb21vZnV0Ym9sLnh5ei9zL3N0YXJfandwLmh0bWw/Z2V0PWh0dHBzOi8vbGl2ZS1mdGMtbmEtc291dGgtMi5tZWRpYS5zdGFyb3R0LmNvbS9ncnUxL3FiMDIvc3RhcnBsdXMvZXZlbnQvMjAyMi8wOC8zMS9BcnNlbmFsX3ZzX0FzdG9uX1ZpbGxhXzIwMjIwODMxXzE2NjE5NjQ2NDMwMjIvY3RyLWFsbC1jb21wbGV0ZS5tM3U4JmltZz1odHRwczovL3Byb2QtcmlwY3V0LWRlbGl2ZXJ5LmRpc25leS1wbHVzLm5ldC92MS92YXJpYW50L3N0YXIvRURDQjg4RTM4OUQxOEE3RDM1MEI1QjU0MzQ3OTlBRjBFRTVGOEJFMTZERDMzRkE3RDQ4REUyQjAyNEMzMzQ0OC9zY2FsZT93aWR0aD0xOTIwJmFzcGVjdFJhdGlvPTEuNzgmZm9ybWF0PWpwZWcma2V5PTliY2MzYWE2OGJhZTQ4NWQ5MWU3NmQwMjQ2ZDU0NjNiJmtleTI9NGFjZDVlN2I1ZDdmOTk3OWMxZTM4Y2FhYTAyZDUxYzA=";
+    $custom1 = '
+    <li>
+        <a class="justify-content-center" href="../../../tv/epg?r='.$r.'">
+        <i class="flag ar"></i>
+        Star + | HD
+        </a>
+    </li>
+    ';
+}
+if ($result['local'] === "city"){
+    $_SESSION['starplus'] = "Los eventos por Star+ estarán listos 5 o 10 minutos antes del comienzo.";
+    $canalImg = "starplus";
+    $r= "Ly92ZXJjb21vZnV0Ym9sLnh5ei9zL3N0YXJfandwLmh0bWw/Z2V0PWh0dHBzOi8vbGl2ZS1mdGMtbmEtc291dGgtMi5tZWRpYS5zdGFyb3R0LmNvbS9ncnUxL3FiMDEvc3RhcnBsdXMvZXZlbnQvMjAyMi8wOC8zMS9NYW5jaGVzdGVyX0NpdHlfdnNfTm90dGluXzIwMjIwODMxXzE2NjE5NjQ2MDIwMjQvY3RyLWFsbC1jb21wbGV0ZS5tM3U4JmltZz1odHRwczovL3Byb2QtcmlwY3V0LWRlbGl2ZXJ5LmRpc25leS1wbHVzLm5ldC92MS92YXJpYW50L3N0YXIvNTc0OThDOTYwNTJBQTA5OTU1RjJEOUI1QzY5RkRDNDYxOTg3MjhBNjhEOTI3QzVFMDQ0NkI0MkNBRjI2MzYxMS9zY2FsZT93aWR0aD0xOTIwJmFzcGVjdFJhdGlvPTEuNzgmZm9ybWF0PWpwZWcma2V5PWNmMmYyNWYwOWFhNDRkZmViZmRmMzQ2MGQxYWRkOGVmJmtleTI9MjBkODQ0MzI0MjNhNzdjZDc4MjI1NDliYTdhOTRiZDk=";
     $custom1 = '
     <li>
         <a class="justify-content-center" href="../../../tv/epg?r='.$r.'">
@@ -92,7 +105,7 @@ if ($result['local'] === "arsenal"){
 if ($result['local'] === "bournemouth"){
     $_SESSION['starplus'] = "Los eventos por Star+ estarán listos 5 o 10 minutos antes del comienzo.";
     $canalImg = "starplus";
-    $r= "";
+    $r= "Ly92ZXJjb21vZnV0Ym9sLnh5ei9zL3N0YXJfandwLmh0bWw/Z2V0PWh0dHBzOi8vbGl2ZS1mdGMtbmEtc291dGgtMi5tZWRpYS5zdGFyb3R0LmNvbS9jbHQyL3ZhMDEvc3RhcnBsdXMvZXZlbnQvMjAyMi8wOC8zMS9Cb3VybmVtb3V0aF92c19Xb2x2ZXJoYW1wXzIwMjIwODMxXzE2NjE5NjQ5NTMwMjEvY3RyLWFsbC1jb21wbGV0ZS5tM3U4JmltZz1odHRwczovL3Byb2QtcmlwY3V0LWRlbGl2ZXJ5LmRpc25leS1wbHVzLm5ldC92MS92YXJpYW50L3N0YXIvQTk5QjJEMzA2NTUzMzMyQTU4Mzk5QjVEQTg0NDRGRUU2NjBEMDUwNTBCQjM3OThGM0MzOUNBRUQ0NkFFNDMxRi9zY2FsZT93aWR0aD0xOTIwJmFzcGVjdFJhdGlvPTEuNzgmZm9ybWF0PWpwZWcma2V5PTA4YmI4ODlmNjFiZjQ0NjliZmY4YWVmYmIyMGY1ZmEyJmtleTI9OGM1ODMxNmUwMzhjNGQwMjNlMmRlNzJjMTNjZjhmYTM=";
     $custom1 = '
     <li>
         <a class="justify-content-center" href="../../../tv/epg?r='.$r.'">
