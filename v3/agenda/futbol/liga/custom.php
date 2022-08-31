@@ -1,5 +1,5 @@
 <?php
-if ($result['visita'] == "team"){
+if ($result['visita'] === "team"){
     $canalImg = "starplus";
     $r= "";
     $custom1 = '
@@ -11,7 +11,8 @@ if ($result['visita'] == "team"){
     </li>
     ';
 }
-if ($result['visita'] == "hellas"){
+if ($result['visita'] === "hellas"){
+    $_SESSION['starplus'] = "Los eventos por Star+ estarán listos 5 o 10 minutos antes del comienzo.";
     $canalImg = "starplus";
     $r= "";
     $custom1 = '
@@ -23,7 +24,8 @@ if ($result['visita'] == "hellas"){
     </li>
     ';
 }
-if ($result['visita'] == "lazio"){
+if ($result['visita'] === "lazio"){
+    $_SESSION['starplus'] = "Los eventos por Star+ estarán listos 5 o 10 minutos antes del comienzo.";
     $canalImg = "starplus";
     $r= "";
     $custom1 = '
@@ -35,7 +37,8 @@ if ($result['visita'] == "lazio"){
     </li>
     ';
 }
-if ($result['visita'] == "fiorentina"){
+if ($result['visita'] === "fiorentina"){
+    $_SESSION['starplus'] = "Los eventos por Star+ estarán listos 5 o 10 minutos antes del comienzo.";
     $canalImg = "starplus";
     $r= "";
     $custom1 = '
@@ -47,7 +50,8 @@ if ($result['visita'] == "fiorentina"){
     </li>
     ';
 }
-if ($result['visita'] == "spezia"){
+if ($result['visita'] === "spezia"){
+    $_SESSION['starplus'] = "Los eventos por Star+ estarán listos 5 o 10 minutos antes del comienzo.";
     $canalImg = "starplus";
     $r= "";
     $custom1 = '
@@ -59,7 +63,8 @@ if ($result['visita'] == "spezia"){
     </li>
     ';
 }
-if ($result['visita'] == "lecce"){
+if ($result['visita'] === "lecce"){
+    $_SESSION['starplus'] = "Los eventos por Star+ estarán listos 5 o 10 minutos antes del comienzo.";
     $canalImg = "starplus";
     $r= "";
     $custom1 = '
@@ -71,7 +76,8 @@ if ($result['visita'] == "lecce"){
     </li>
     ';
 }
-if ($result['local'] == "arsenal"){
+if ($result['local'] === "arsenal"){
+    $_SESSION['starplus'] = "Los eventos por Star+ estarán listos 5 o 10 minutos antes del comienzo.";
     $canalImg = "starplus";
     $r= "";
     $custom1 = '
@@ -83,7 +89,8 @@ if ($result['local'] == "arsenal"){
     </li>
     ';
 }
-if ($result['local'] == "bournemouth"){
+if ($result['local'] === "bournemouth"){
+    $_SESSION['starplus'] = "Los eventos por Star+ estarán listos 5 o 10 minutos antes del comienzo.";
     $canalImg = "starplus";
     $r= "";
     $custom1 = '
@@ -95,7 +102,8 @@ if ($result['local'] == "bournemouth"){
     </li>
     ';
 }
-if ($result['local'] == "liverpool"){
+if ($result['local'] === "liverpool"){
+    $_SESSION['starplus'] = "Los eventos por Star+ estarán listos 5 o 10 minutos antes del comienzo.";
     $canalImg = "starplus";
     $r= "";
     $custom1 = '
@@ -107,7 +115,8 @@ if ($result['local'] == "liverpool"){
     </li>
     ';
 }
-if ($result['visita'] == "tottenham"){
+if ($result['visita'] === "tottenham"){
+    $_SESSION['starplus'] = "Los eventos por Star+ estarán listos 5 o 10 minutos antes del comienzo.";
     $canalImg = "starplus";
     $r= "";
     $custom1 = '
@@ -119,7 +128,8 @@ if ($result['visita'] == "tottenham"){
     </li>
     ';
 }
-if ($result['visita'] == "bayern"){
+if ($result['visita'] === "bayern"){
+    $_SESSION['starplus'] = "Los eventos por Star+ estarán listos 5 o 10 minutos antes del comienzo.";
     $canalImg = "starplus";
     $r= "";
     $custom1 = '

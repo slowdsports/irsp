@@ -21,6 +21,18 @@ if (isset($_SESSION['message']) ){
     ';
     unset($_SESSION['message']);
 }
+
+if (isset($_SESSION['starplus']) ){
+    echo '
+    <div class="alert alert-info alert-dismissible fade show text-center" role="alert">
+        '.$_SESSION['starplus'].'
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+        </button>
+    </div>
+    ';
+    unset($_SESSION['starplus']);
+}
 ?>
 
 <div class="header-large-title">
