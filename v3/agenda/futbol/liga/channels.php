@@ -741,6 +741,17 @@ if($canal === "foxsports3sur" || $canal === "foxsports3sur"){
     </li>';
 }
 
+// Vacíos
+if ($canal == ""){
+    $canal = "";
+}
+if ($canal2 == ""){
+    $canal2 = "";
+}
+if ($canal3 == ""){
+    $canal3 = "";
+}
+// Repetidos
 if ($canalop2 == $canalop3){
 $canalop3 = "";
 }
