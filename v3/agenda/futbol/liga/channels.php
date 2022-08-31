@@ -1,6 +1,6 @@
 <?php
 // Logos
-if($canal === "M+ Liga de Campeones" || $canal === "M+ Liga de Campeones UHD (M441 O115)" || $canal === "mlcamp"){
+if($canal === "M+ Liga de Campeones" || $canal === "M+ Liga de Campeones UHD (M441 O115)" || $canal === "M+ Liga de Campeones (M56 O114)" || $canal === "mlcamp"){
     $canalImg = "campeones";
     $canalop2 = '
     <li>
@@ -15,7 +15,7 @@ if($canal === "M+ Liga de Campeones" || $canal === "M+ Liga de Campeones UHD (M4
         Movistar Liga de Campeones | HD
         </a>
     </li>';
-} elseif($canal2 === "M+ Liga de Campeones" || $canal2 === "M+ Liga de Campeones UHD (M441 O115)" || $canal2 === "mlcamp"){
+} elseif($canal2 === "M+ Liga de Campeones" || $canal2 === "M+ Liga de Campeones UHD (M441 O115)" || $canal2 = "M+ Liga de Campeones (M56 O114)" || $canal2 === "mlcamp"){
     $canalImg = "campeones";
     $canalop4 = '
     <li>
@@ -156,7 +156,7 @@ if($canal === "M+ LaLiga 7" || $canal === "mlaliga7"){
     </li>';
 }
 
-if($canal === "M+ #Vamos" || $canal === "mvamos"){
+if($canal === "M+ #Vamos" || $canal = "M+ #Vamos Bar 2 (305)" || $canal === "mvamos"){
     $canalImg = "mvamos";
     $canalop2 = '
     <li>
@@ -171,7 +171,7 @@ if($canal === "M+ #Vamos" || $canal === "mvamos"){
         Movistar #Vamos | HD
         </a>
     </li>';
-} elseif($canal2 === "M+ #Vamos" || $canal2 === "mvamos"){
+} elseif($canal2 === "M+ #Vamos" || $canal2 === "M+ #Vamos Bar 2 (305)" || $canal2 === "mvamos"){
     $canalImg = "mvamos";
     $canal2 = '
     <li>
