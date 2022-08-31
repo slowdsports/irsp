@@ -147,6 +147,19 @@ if (isset($_SESSION['message']) ){
             <!-- End Elemento -->
             <!-- Elemento -->
             <div class="col-6 col-sm-4 col-md-3 mycard">
+                <a href="<?=$app?>repeticion/">
+                    <div class="card product-card">
+                        <div class="card-body">
+                            <img width="48px" height="48px" src="<?=$app?>assets/img/futbol.svg" class="image" alt="product image">
+                            <h2 class="title text-center">Repeticiones</h2>
+                            <p class="text text-center">PREMIUM</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <!-- End Elemento -->
+            <!-- Elemento -->
+            <div class="col-6 col-sm-4 col-md-3 mycard">
                 <a href="<?=$app?>agenda/basket">
                     <div class="card product-card">
                         <div class="card-body">
