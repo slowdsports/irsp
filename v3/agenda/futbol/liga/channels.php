@@ -350,13 +350,13 @@ if($canal === "DAZN (Regístrate)" || $canal === "DAZN | (Movistar 59)"){
     $canalImg = "dazn";
     $canalop2 = '
     <li>
-        <a class="justify-content-center" href="../../play?c=dazn1">
+        <a class="justify-content-center" href="https://irpc.ga/mg/?url=dazn-1&play">
         <i class="flag es"></i>
-        DAZN 1 | VIP HD
+        DAZN 1 | HD
         </a>
     </li>
     <li>
-        <a class="justify-content-center" href="https://irpc.ga/mg/?url=dazn-1&play">
+        <a class="justify-content-center" href="../../play?c=dazn1">
         <i class="flag es"></i>
         DAZN 1 | VIP HD
         </a>
@@ -365,13 +365,13 @@ if($canal === "DAZN (Regístrate)" || $canal === "DAZN | (Movistar 59)"){
     $canalImg = "dazn";
     $canal2 = '
     <li>
-        <a class="justify-content-center" href="../../play?c=dazn1">
+        <a class="justify-content-center" href="https://irpc.ga/mg/?url=dazn-1&play">
         <i class="flag es"></i>
-        DAZN 1 | VIP HD
+        DAZN 1 | HD
         </a>
     </li>
     <li>
-        <a class="justify-content-center" href="https://irpc.ga/mg/?url=dazn-1&play">
+        <a class="justify-content-center" href="../../play?c=dazn1">
         <i class="flag es"></i>
         DAZN 1 | VIP HD
         </a>
