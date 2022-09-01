@@ -176,4 +176,19 @@ if ($result['ligaImg'] == 18){
 
     // INTL
     $local = str_replace('mxico', 'México', $local);
+
+    // Liga MX
+    $local = str_replace('america', 'América', $local);
+    $local = str_replace('cruzazul', 'Cruz Azul', $local);
+    $local = str_replace('juarez', 'Juárez', $local);
+    $local = str_replace('leon', 'León', $local);
+    $local = str_replace('mazatlan', 'Mazatlán', $local);
+    $local = str_replace('queretaro', 'Querétaro', $local);
+
+    $visita = str_replace('america', 'América', $visita);
+    $visita = str_replace('cruzazul', 'Cruz Azul', $visita);
+    $visita = str_replace('juarez', 'Juárez', $visita);
+    $visita = str_replace('leon', 'León', $visita);
+    $visita = str_replace('mazatlan', 'Mazatlán', $visita);
+    $visita = str_replace('queretaro', 'Querétaro', $visita);
 ?>
