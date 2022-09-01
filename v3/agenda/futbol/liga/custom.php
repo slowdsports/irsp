@@ -170,7 +170,7 @@ if ($result['visita'] === "bayern"){
 if ($result['visita'] === "paraguay"){
     $_SESSION['starplus'] = "Los eventos por Star+ estarán listos 5 o 10 minutos antes del comienzo.";
     $canalImg = "starplus";
-    $r= "";
+    $r= "Ly92ZXJjb21vZnV0Ym9sLnh5ei9zL3N0YXJfandwLmh0bWw/Z2V0PWh0dHBzOi8vbGl2ZS1mdGMtbmEtc291dGgtMi5tZWRpYS5zdGFyb3R0LmNvbS9ncnUxL3FiMDIvc3RhcnBsdXMvZXZlbnQvMjAyMi8wOS8wMS9NZXhpY29fdnNfUGFyYWd1YXlfMjAyMjA5MDFfMTY2MTk4ODAwMjAyNi9jdHItYWxsLWNvbXBsZXRlLm0zdTgmaW1nPWh0dHBzOi8vcHJvZC1yaXBjdXQtZGVsaXZlcnkuZGlzbmV5LXBsdXMubmV0L3YxL3ZhcmlhbnQvc3Rhci84MUVEMjdFNDFDMzc5QzI4MjFFMERCQzJCRERBQTFEMTcwQjI3M0RCQ0RCMDI3OUNCMThBODFEMEZFMkUyREJBL3NjYWxlP3dpZHRoPTE5MjAmYXNwZWN0UmF0aW89MS43OCZmb3JtYXQ9anBlZyZrZXk9NTYzOTljZmFkYjZjNDQ5Yzg3MzNmMTM4OWMzMjlmNmUma2V5Mj1lMzk3MGQ4NGExNjZlZGMyM2M5NThjZTEzY2ExNTJmNQ==";
     $custom1 = '
     <li>
         <a class="justify-content-center" href="../../../tv/epg?r='.$r.'">
