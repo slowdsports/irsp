@@ -687,7 +687,29 @@ if($canal === "foxsports3sur" || $canal === "foxsports3sur"){
         FOX Sports 3 | HD
         </a>
     </li>';
-} if($canal === "goltvec" || $canal === "goltvec"){
+}
+
+if($canal === "foxsportsmx" || $canal === "foxsportsmx"){
+    $canalImg = "espn";
+    $canalop2 = '
+    <li>
+        <a class="justify-content-center" href="../../../tv/epg/?c=565">
+        <i class="flag mx"></i>
+        ESPN | HD
+        </a>
+    </li>';
+} elseif($canal2 === "foxsportsmx" || $canal2 === "foxsportsmx"){
+    $canalImg = "espn";
+    $canal2 = '
+    <li>
+        <a class="justify-content-center" href="../../../tv/epg/?c=564">
+        <i class="flag mx"></i>
+        ESPN | HD
+        </a>
+    </li>';
+}
+
+if($canal === "goltvec" || $canal === "goltvec"){
     $canalImg = "goltv";
     $canalop2 = '
     <li>
