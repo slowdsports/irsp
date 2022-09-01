@@ -56,6 +56,9 @@ if (isset($_SESSION['message']) ){
         //echo $useragent;
     }
     ?>
+    <!-- Recargar página -->
+    <?=$reload?>
+    <!-- *Recargar página -->
     <center>
         <hr>
         <div class="tab-content" id="myTabContent">

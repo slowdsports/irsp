@@ -134,6 +134,11 @@ elseif ($typeChannel == 7){
 elseif ($typeChannel == 9){
     //if($_SERVER['SERVER_PORT'] != '443') { header('Location: https://'.$_SERVER['HTTP_HOST'].$_SERVER['REQUEST_URI']); exit(); }
     //if($_SERVER['SERVER_PORT'] != '443') { header('Location: https://irafflevip.tk'.$_SERVER['REQUEST_URI']); exit(); }
+    $requested = $_SERVER['HTTP_HOST'].$_SERVER['REQUEST_URI'];
+    $reload = '
+    <h3>¿Problemas con el canal?</h3>
+    <a href="https://'.$requested.'" class="btn btn-primary"><ion-icon name="refresh-outline"></ion-icon> Recargar</a>
+    ';
     $core = '<script src="mg-jwp.js"></script>';
     $getURL = base64_encode($row['channelUrl']);
     $getKEY = $row['key1'];
