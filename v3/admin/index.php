@@ -10,6 +10,12 @@ $totalJuegos=mysqli_num_rows($users);
 $users=mysqli_query($conn,"select * from channels");
 $totalCanales=mysqli_num_rows($users);
 
+$ligas=mysqli_query($conn,"select * from ligas");
+$totalLigas=mysqli_num_rows($ligas);
+
+$repeticiones=mysqli_query($conn,"select * from repeticion");
+$totalRepeticiones=mysqli_num_rows($repeticiones);
+
 $peticiones=mysqli_query($conn,"select * from peticiones
 INNER JOIN user ON peticiones.usuarioSolicitado = user.userid");
 $pet=mysqli_fetch_array($peticiones);
@@ -100,6 +106,48 @@ $pet=mysqli_fetch_array($peticiones);
                                 </div>
                                 <div class="col-4 col-sm-12 col-xl-4 text-center text-xl-right">
                                     <h3><?=$totalCanales?></h3>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="col-sm-4 grid-margin">
+                <div class="card">
+                    <a href="ligas.php">
+                        <div class="card-body">
+                            <i class="icon-md mdi mdi-television-guide text-light ms-auto"></i>
+                            <div class="row">
+                                <div class="col-8 col-sm-12 col-xl-8 my-auto">
+                                    <div class="d-flex d-sm-block d-md-flex align-items-center">
+                                        <h2 class="mb-0">Ligas</h2>
+                                        <!-- <p class="text-success ms-2 mb-0 font-weight-medium">+3.5%</p> -->
+                                    </div>
+                                    <h6 class="text-muted font-weight-normal">de Fútbol en BD</h6>
+                                </div>
+                                <div class="col-4 col-sm-12 col-xl-4 text-center text-xl-right">
+                                    <h3><?=$totalLigas?></h3>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="col-sm-4 grid-margin">
+                <div class="card">
+                    <a href="repeticion.php">
+                        <div class="card-body">
+                            <i class="icon-md mdi mdi-soccer text-light ms-auto"></i>
+                            <div class="row">
+                                <div class="col-8 col-sm-12 col-xl-8 my-auto">
+                                    <div class="d-flex d-sm-block d-md-flex align-items-center">
+                                        <h2 class="mb-0">Repeticiones</h2>
+                                        <!-- <p class="text-success ms-2 mb-0 font-weight-medium">+3.5%</p> -->
+                                    </div>
+                                    <h6 class="text-muted font-weight-normal">creadas</h6>
+                                </div>
+                                <div class="col-4 col-sm-12 col-xl-4 text-center text-xl-right">
+                                    <h3><?=$totalRepeticiones?></h3>
                                 </div>
                             </div>
                         </div>
