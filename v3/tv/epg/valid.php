@@ -132,8 +132,8 @@ elseif ($typeChannel == 7){
 } // Megatv
 //elseif ($_GET['get'] || $_GET['key'] || $GET['key2']){
 elseif ($typeChannel == 9){
-    //if($_SERVER['SERVER_PORT'] != '443') { header('Location: https://'.$_SERVER['HTTP_HOST'].$_SERVER['REQUEST_URI']); exit(); }
-    if($_SERVER['SERVER_PORT'] != '443') { header('Location: https://irafflevip.tk/'.$_SERVER['REQUEST_URI']); exit(); }
+    if($_SERVER['SERVER_PORT'] != '443') { header('Location: https://'.$_SERVER['HTTP_HOST'].$_SERVER['REQUEST_URI']); exit(); }
+    //if($_SERVER['SERVER_PORT'] != '443') { header('Location: https://irafflevip.tk'.$_SERVER['REQUEST_URI']); exit(); }
     $core = '<script src="mg-jwp.js"></script>';
     $getURL = base64_encode($row['channelUrl']);
     $getKEY = $row['key1'];
