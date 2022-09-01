@@ -52,6 +52,8 @@ if (isset($_SESSION['message']) ){
                         $dia = "Hoy";
                     } elseif ($dd == $hoy+1){
                         $dia = "Mañana";
+                    } elseif ($dd == $hoy-1){
+                        $dia = "Ayer";
                     }
 
                     include('../../agenda/futbol/liga/teams.php');
