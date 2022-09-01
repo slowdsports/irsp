@@ -1,4 +1,3 @@
-var mt = "//edge-live15-sl";
 var playerInstance = jwplayer("jwp");
 playerInstance.setup({
     playlist: [
@@ -6,7 +5,7 @@ playerInstance.setup({
             sources: [
                 {
                     default: false,
-                    file: mt + atob(getURL),
+                    file: atob(getURL),
                     drm: {
                         clearkey: { keyId: atob(getKEY), key: atob(getKEY2) },
                     },
@@ -15,11 +14,21 @@ playerInstance.setup({
             ],
         },
     ],
+    height: "50%",
     width: "100%",
-    height: "100%",
     aspectratio: "16:9",
+    stretching: "bestfit",
+    mediaid: "player",
     mute: false,
     autostart: false,
-    cast: {},
-    sharing: {},
+    language: "es",
+    cast: {
+        appid: "player",
+        logo: "https://eduveel1.github.io/baleada/img/iRTVW_PLAYER.png",
+    },
+    logo: {
+        file: "https://eduveel1.github.io/baleada/img/iRTVW_PLAYER.png",
+        hide: "false",
+        position: "top-left",
+    }
 });

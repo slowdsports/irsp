@@ -61,9 +61,11 @@ if (isset($_SESSION['message']) ){
         <div class="tab-content" id="myTabContent">
             <div class="tab-pane fade <?=$isJw?>" id="jw" role="tabpanel" aria-labelledby="jw-tab">
                 <!-- M3U8 -->
-                <script src="https://jwpsrv.com/library/FfMxTl3oEeSEiiIACxmInQ.js"></script>
+                <script src="https://ssl.p.jwpcdn.com/player/v/8.24.0/jwplayer.js"></script>
+                <script> jwplayer.key='XSuP4qMl+9tK17QNb+4+th2Pm9AWgMO/cYH8CI0HGGr7bdjo';</script>
                 <div id="jwp">Cargando Reproductor...</div>
-                <script src="jwp.js"></script>
+                <!-- <script src="jwp.js"></script> -->
+                <?=$core?>
                 </div>
             <div class="tab-pane fade <?=$isHls?>" id="hls" role="tabpanel" aria-labelledby="hls-tab">
                 <!-- Video TAG -->

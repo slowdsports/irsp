@@ -10,7 +10,7 @@ playerInstance.setup({
     image: "#",
     mediaid: "player",
     mute: false,
-    autostart: true,
+    autostart: false,
     language: "es",
     cast: {
         appid: "player",

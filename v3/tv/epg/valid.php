@@ -66,6 +66,7 @@ if (isset($_GET['get']) || isset($_GET['key'])){
 }
 // Para M3U
 if ($typeChannel == 1 || $typeChannel == 8){
+    $core = '<script src="jwp.js"></script>';
     echo '
     <ul class="nav nav-tabs" id="myTab" role="tablist">
         <li class="nav-item" role="presentation">
@@ -77,7 +78,8 @@ if ($typeChannel == 1 || $typeChannel == 8){
     </ul>
     ';
     echo '<style>#iframe-element{display:none;} #player_img{display:none}</style>';
-    echo '<script>
+    echo '
+    <script>
     var source = "'.$channel.'"
     </script>';
     // YouTube Poster
@@ -130,58 +132,16 @@ elseif ($typeChannel == 7){
 } // Megatv
 //elseif ($_GET['get'] || $_GET['key'] || $GET['key2']){
 elseif ($typeChannel == 9){
-    $base = "https://megatelevisionhd.com/en-vivo/{$row['channelUrl']}/?ver";
-    $html = file_get_html($base);
-        $jwPlayer = $html ->find ('a.btn-md',0)->href;
-        $jwPlayer = str_replace("https://germanyip.work/jw.html", "", $jwPlayer);
-        $jwPlayer = $referer;
-        echo $jwPlayer;
-        if (!isset($GET['key'])){
-            //echo '<meta http-equiv="refresh" content="0; url='.$jwPlayer.'">';
-        } if (isset($GET['key'])){
-            $getURL = $_GET['get'];
-            $getKEY = $_GET['key'];
-            $getKEY2 = $_GET['key2'];
-            //echo '<meta http-equiv="refresh" content="0; url='.$jwPlayer.'">';
-            echo "
-            <script src='https://ssl.p.jwpcdn.com/player/v/8.24.0/jwplayer.js'></script>
-            <script> jwplayer.key='XSuP4qMl+9tK17QNb+4+th2Pm9AWgMO/cYH8CI0HGGr7bdjo';</script>
-            ";
-            echo '
-            <script>
-            let getURL = "'.$getURL.'";
-            let getKEY = "'.$getKEY.'";
-            let getKEY2 = "'.$getKEY2.'";
-            </script>
-            <div id="MGplayerJW"></div>
-            <script>
-            var mt = "//edge-live15-sl";
-            var playerInstance = jwplayer("MGplayerJW");
-            playerInstance.setup({
-                playlist: [
-                    {
-                        sources: [
-                            {
-                                default: false,
-                                file: mt + atob(getURL),
-                                drm: {
-                                    clearkey: { keyId: atob(getKEY), key: atob(getKEY2) },
-                                },
-                                label: "0",
-                            },
-                        ],
-                    },
-                ],
-                width: "100%",
-                height: "100%",
-                aspectratio: "16:9",
-                mute: false,
-                autostart: false,
-                cast: {},
-                sharing: {},
-            });
-            </script>
-            <style>#jwp{display:none!important} #iframe-element{display:none!important;} #vidarea{display:none} #player_img{display:none}</style>';
-        }
+    $core = '<script src="mg-jwp.js"></script>';
+    $getURL = base64_encode($row['channelUrl']);
+    $getKEY = $row['key1'];
+    $getKEY2 = $row['key2'];
+    echo '
+    <script>
+    let getURL = "'.$getURL.'";
+    let getKEY = "'.$getKEY.'";
+    let getKEY2 = "'.$getKEY2.'";
+    </script>
+    <style>#jwp{display:block!important} #iframe-element{display:none!important;} #vidarea{display:none} #player_img{display:none}</style>';
     }
 ?>
