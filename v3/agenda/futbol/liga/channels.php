@@ -609,6 +609,26 @@ if($canal === "espnextra" || $canal === "espnextra"){
     </li>';
 }
 
+if($canal === "espnmx" || $canal === "espnmx"){
+    $canalImg = "espn";
+    $canalop2 = '
+    <li>
+        <a class="justify-content-center" href="../../../tv/epg/?c=564">
+        <i class="flag mx"></i>
+        ESPN | HD
+        </a>
+    </li>';
+} elseif($canal2 === "espnmx" || $canal2 === "espnmx"){
+    $canalImg = "espn";
+    $canal2 = '
+    <li>
+        <a class="justify-content-center" href="../../../tv/epg/?c=564">
+        <i class="flag mx"></i>
+        ESPN | HD
+        </a>
+    </li>';
+}
+
 if($canal === "foxsportssur" || $canal === "foxsportssur"){
     $canalImg = "foxsports";
     $canalop2 = '
