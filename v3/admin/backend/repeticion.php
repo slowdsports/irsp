@@ -10,7 +10,7 @@ if(isset($_POST['agregar'])) {
     $link=$_POST['link'];
     $fecha=$_POST['fecha'];
     $liga=$_POST['liga'];
-    $msg=mysqli_query($conn,"insert into repeticion(local,visita,logoL,logoV,link,fecha,liga) values('$local','$visita','$logoL','$logoV','$link','$fecha','$liga')");
+    $msg=mysqli_query($conn,"insert into repeticion(local,visita,logoL,logoV,link,fecha,liga,status) values('$local','$visita','$logoL','$logoV','$link','$fecha','$liga','1')");
 
 if($msg) {
     $_SESSION['message'] = "¡Se ha agregado la repetición!";
@@ -27,7 +27,8 @@ if(isset($_POST['guardar'])) {
     $link=$_POST['link'];
     $fecha=$_POST['fecha'];
     $liga=$_POST['liga'];
-    $msg=mysqli_query($conn,"update repeticion set local='$local', visita='$visita', logoL='$logoL', logoV='$logoV', link='$link', fecha='$fecha', liga='$liga' where id='$id'");
+    $status=$_POST['status'];
+    $msg=mysqli_query($conn,"update repeticion set local='$local', visita='$visita', logoL='$logoL', logoV='$logoV', link='$link', fecha='$fecha', liga='$liga', status='$status' where id='$id'");
 
 if($msg) {
     $_SESSION['message'] = "¡Se ha actualizado la repetición!";
