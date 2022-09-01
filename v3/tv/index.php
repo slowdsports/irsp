@@ -116,7 +116,11 @@ if (isset($_SESSION['message']) ){
                     echo "display: none";
                 };
                 ?>" class="col-6 col-sm-4 col-md-3 col-lg-2 col-xl-2 mycard <?=$result['categoryName']?>">
-                    <a href="epg?url=<?=$result['epg']?>&c=<?=$result['channelId']?>">
+                    <a href="<?php if ($result['type'] == 9){
+                        echo "https:";
+                        }else {
+                            "http:";
+                        } ?><?=$app?>epg?url=<?=$result['epg']?>&c=<?=$result['channelId']?>">
                         <div class="card product-card liga-card">
                             <div class="card-body">
                                 <center>
