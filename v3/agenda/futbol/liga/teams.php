@@ -184,6 +184,7 @@ if ($result['ligaImg'] == 18){
     $local = str_replace('leon', 'León', $local);
     $local = str_replace('mazatlan', 'Mazatlán', $local);
     $local = str_replace('queretaro', 'Querétaro', $local);
+    $local = str_replace('sanluis', 'San Luis', $local);
 
     $visita = str_replace('america', 'América', $visita);
     $visita = str_replace('cruzazul', 'Cruz Azul', $visita);
@@ -191,4 +192,5 @@ if ($result['ligaImg'] == 18){
     $visita = str_replace('leon', 'León', $visita);
     $visita = str_replace('mazatlan', 'Mazatlán', $visita);
     $visita = str_replace('queretaro', 'Querétaro', $visita);
+    $visita = str_replace('sanluis', 'San Luis', $visita);
 ?>
