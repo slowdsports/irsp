@@ -272,7 +272,7 @@ if($canal === "DAZN2" || $canal === "DAZN2" || $canal === "dazn2"){
         </a>
     </li>
     <li>
-        <a class="justify-content-center" href="https://irpc.ga/mg/?url=dazn-2&play">
+        <a class="justify-content-center" href="../../play?c=dazn2">
         <i class="flag es"></i>
         DAZN 2 | VIP HD
         </a>
