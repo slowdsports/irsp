@@ -11,7 +11,7 @@ if ($result['visita'] === "team"){
     </li>
     ';
 }
-if ($result['visita'] === "atletico"){
+if ($result['visita'] === "at.madrid"){
     $_SESSION['starplus'] = "Los eventos por Star+ estarán listos 5 o 10 minutos antes del comienzo.";
     $canalImg = "starplus";
     $r= "Ly92ZXJjb21vZnV0Ym9sLnh5ei9zL3N0YXJfandwLmh0bWw/Z2V0PWh0dHBzOi8vbGl2ZS1mdGMtbmEtc291dGgtMi5tZWRpYS5zdGFyb3R0LmNvbS9jbHQyL3ZhMDEvc3RhcnBsdXMvZXZlbnQvMjAyMi8wOS8wMy9SZWFsX1NvY2llZGFkX3ZzX0F0bHRpY29fXzIwMjIwOTAzXzE2NjIyMTYzMzIwMjcvY3RyLWFsbC1jb21wbGV0ZS5tM3U4JmltZz1odHRwczovL3Byb2QtcmlwY3V0LWRlbGl2ZXJ5LmRpc25leS1wbHVzLm5ldC92MS92YXJpYW50L3N0YXIvMzc1RjdGQjA3Qjc5RjZEMzZGRUQ4ODA1ODlFOTQwMUM1NDUwNUE3NzMwOTdEQzdEMkMyRThEQzQ3MjM2MzcyMC9zY2FsZT93aWR0aD0xOTIwJmFzcGVjdFJhdGlvPTEuNzgmZm9ybWF0PWpwZWcma2V5PTgxNzk2MGRiNDQ3NzQzMTA4MzFkMmRmMDc0NGVmOTRhJmtleTI9OGQ1OGE5ZTNlMWQ4Njg5ODY2NTkwOWE1NTI4OWU3MWY=";
@@ -50,7 +50,7 @@ if ($result['visita'] === "westham"){
     </li>
     ';
 }
-if ($result['visita'] === "city"){
+if ($result['visita'] === "manchester city"){
     $_SESSION['starplus'] = "Los eventos por Star+ estarán listos 5 o 10 minutos antes del comienzo.";
     $canalImg = "starplus";
     $r= "Ly92ZXJjb21vZnV0Ym9sLnh5ei9zL3N0YXJfandwLmh0bWw/Z2V0PWh0dHBzOi8vbGl2ZS1mdGMtbmEtc291dGgtMi5tZWRpYS5zdGFyb3R0LmNvbS9ncnUxL3FiMDEvc3RhcnBsdXMvZXZlbnQvMjAyMi8wOS8wMy9Bc3Rvbl9WaWxsYV92c19NYW5jaGVzdGVyXzIwMjIwOTAzXzE2NjIyMTY2NDgwMTUvY3RyLWFsbC1jb21wbGV0ZS5tM3U4JmltZz1odHRwczovL3Byb2QtcmlwY3V0LWRlbGl2ZXJ5LmRpc25leS1wbHVzLm5ldC92MS92YXJpYW50L3N0YXIvREJGQjgxN0JCQTEwOEI2MzM2MzZBQUE1ODlFQkU2RUVFNDMxM0NEMEM2QzUzNTc5MUIwRTU4RkQxMTZCRjYzNS9zY2FsZT93aWR0aD0xOTIwJmFzcGVjdFJhdGlvPTEuNzgmZm9ybWF0PWpwZWcma2V5PTdlZjZhMDlkN2ZmMjQ2Yzk5MjQzNmJiMDVhNGI4ZTlmJmtleTI9Y2VkYTJkYzE5OThmNjA4Y2I1NzRmMDMyOGZiM2I1M2M=";
