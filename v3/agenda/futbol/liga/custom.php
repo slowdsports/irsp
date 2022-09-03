@@ -27,7 +27,7 @@ if ($result['visita'] === "at.madrid"){
 if ($result['visita'] === "napoli"){
     $_SESSION['starplus'] = "Los eventos por Star+ estarán listos 5 o 10 minutos antes del comienzo.";
     $canalImg = "starplus";
-    $r= "https://megatelevisionhd.com/eventos/star/?r=Ly92ZXJjb21vZnV0Ym9sLnh5ei9zL3N0YXJfandwLmh0bWw/Z2V0PWh0dHBzOi8vbGl2ZS1mdGMtbmEtc291dGgtMi5tZWRpYS5zdGFyb3R0LmNvbS9jbHQyL3ZhMDEvc3RhcnBsdXMvZXZlbnQvMjAyMi8wOS8wMy9MYXppb192c19OYXBvbGlfMjAyMjA5MDNfMTY2MjIyNDQwMzAzNy9jdHItYWxsLWNvbXBsZXRlLm0zdTgmaW1nPWh0dHBzOi8vcHJvZC1yaXBjdXQtZGVsaXZlcnkuZGlzbmV5LXBsdXMubmV0L3YxL3ZhcmlhbnQvc3Rhci9DMDI3Mjg0RDE4NDc2ODFCNDNBNjJCMTg3QkZBRjlCMTlDQkFFMDIyM0E2MjhFRDk0QjVFNEE3ODk1RUYzQjc4L3NjYWxlP3dpZHRoPTE5MjAmYXNwZWN0UmF0aW89MS43OCZmb3JtYXQ9anBlZyZrZXk9ZGY0ZjRjZDQwNWY3NDhkYzhiOGUxMzJjMTM0NDlkNDEma2V5Mj1hM2M2YjYzMzAzOGM5NTU5MjQzZTg2YzRlNmRkYjU1Yw=="
+    $r= "Ly92ZXJjb21vZnV0Ym9sLnh5ei9zL3N0YXJfandwLmh0bWw/Z2V0PWh0dHBzOi8vbGl2ZS1mdGMtbmEtc291dGgtMi5tZWRpYS5zdGFyb3R0LmNvbS9jbHQyL3ZhMDEvc3RhcnBsdXMvZXZlbnQvMjAyMi8wOS8wMy9MYXppb192c19OYXBvbGlfMjAyMjA5MDNfMTY2MjIyNDQwMzAzNy9jdHItYWxsLWNvbXBsZXRlLm0zdTgmaW1nPWh0dHBzOi8vcHJvZC1yaXBjdXQtZGVsaXZlcnkuZGlzbmV5LXBsdXMubmV0L3YxL3ZhcmlhbnQvc3Rhci9DMDI3Mjg0RDE4NDc2ODFCNDNBNjJCMTg3QkZBRjlCMTlDQkFFMDIyM0E2MjhFRDk0QjVFNEE3ODk1RUYzQjc4L3NjYWxlP3dpZHRoPTE5MjAmYXNwZWN0UmF0aW89MS43OCZmb3JtYXQ9anBlZyZrZXk9ZGY0ZjRjZDQwNWY3NDhkYzhiOGUxMzJjMTM0NDlkNDEma2V5Mj1hM2M2YjYzMzAzOGM5NTU5MjQzZTg2YzRlNmRkYjU1Yw==";
     $custom1 = '
     <li>
         <a class="justify-content-center" href="../../../tv/epg?r='.$r.'">
