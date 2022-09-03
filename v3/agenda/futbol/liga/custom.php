@@ -11,7 +11,7 @@ if ($result['visita'] === "team"){
     </li>
     ';
 }
-if ($result['visita'] === "torino"){
+if ($result['visita'] === "juventus"){
     $_SESSION['starplus'] = "Los eventos por Star+ estarán listos 5 o 10 minutos antes del comienzo.";
     $canalImg = "starplus";
     $r= "Ly92ZXJjb21vZnV0Ym9sLnh5ei9zL3N0YXJfandwLmh0bWw/Z2V0PWh0dHBzOi8vbGl2ZS1mdGMtbmEtc291dGgtMi5tZWRpYS5zdGFyb3R0LmNvbS9ncnUxL3FiMDEvc3RhcnBsdXMvZXZlbnQvMjAyMi8wOS8wMS9BdGFsYW50YV92c19Ub3Jpbm9fMjAyMjA5MDFfMTY2MjA1MTYyNDAyMC9jdHItYWxsLWNvbXBsZXRlLm0zdTgmaW1nPWh0dHBzOi8vcHJvZC1yaXBjdXQtZGVsaXZlcnkuZGlzbmV5LXBsdXMubmV0L3YxL3ZhcmlhbnQvc3Rhci80NjFGMDMyRkQyODlBNTY5MUIzNzY0NkE0NkU1ODAxMEIxRUVCNTVDMzE1QUVCOTQ5QzJFRTlBNEMwMzEzMDBGL3NjYWxlP3dpZHRoPTE5MjAmYXNwZWN0UmF0aW89MS43OCZmb3JtYXQ9anBlZyZrZXk9YTM5YmNiNjliMzNlNDc5NDk4ZjkzMGY5YTk1MjVhNzIma2V5Mj0wZmVmNDZhNzE1MThmMjI2ZGVlNmNmZGJlNDcxZjQ2MA==";
