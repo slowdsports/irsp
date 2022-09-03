@@ -48,7 +48,7 @@ switch ($channel){
     $server.$usuario."/".$password."/"."25".".m3u8"; break;
     case 'telecinco' : $channel=
     $server.$usuario."/".$password."/"."26".".m3u8"; break;
-    case 'dazn2es' : $channel=
+    case 'dazn2' : $channel=
     $server.$usuario."/".$password."/"."27".".m3u8"; break;
     case 'daznf1' : $channel=
     $server.$usuario."/".$password."/"."28".".m3u8"; break;
