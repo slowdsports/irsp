@@ -690,21 +690,41 @@ if($canal === "foxsports3sur" || $canal === "foxsports3sur"){
 }
 
 if($canal === "foxsportsmx" || $canal === "foxsportsmx"){
-    $canalImg = "espn";
+    $canalImg = "foxsports";
     $canalop2 = '
     <li>
         <a class="justify-content-center" href="../../../tv/epg/?c=565">
         <i class="flag mx"></i>
-        ESPN | HD
+        Fox Sports | HD
         </a>
     </li>';
 } elseif($canal2 === "foxsportsmx" || $canal2 === "foxsportsmx"){
-    $canalImg = "espn";
+    $canalImg = "foxsports";
     $canal2 = '
     <li>
         <a class="justify-content-center" href="../../../tv/epg/?c=564">
         <i class="flag mx"></i>
-        ESPN | HD
+        Fox Sports | HD
+        </a>
+    </li>';
+}
+
+if($canal === "foxsport3smx" || $canal === "foxsports3mx"){
+    $canalImg = "foxsports";
+    $canalop2 = '
+    <li>
+        <a class="justify-content-center" href="../../../tv/epg/?c=566">
+        <i class="flag mx"></i>
+        Fox Sports 3 | HD
+        </a>
+    </li>';
+} elseif($canal2 === "foxsports3mx" || $canal2 === "foxsports3mx"){
+    $canalImg = "foxsports";
+    $canal2 = '
+    <li>
+        <a class="justify-content-center" href="../../../tv/epg/?c=566">
+        <i class="flag mx"></i>
+        Fox Sports 3 | HD
         </a>
     </li>';
 }
