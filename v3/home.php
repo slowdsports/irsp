@@ -152,7 +152,7 @@ if (isset($_SESSION['message']) ){
                         <div class="card-body">
                             <img width="48px" height="48px" src="<?=$app?>assets/img/futbol.svg" class="image" alt="product image">
                             <h2 class="title text-center">Repeticiones</h2>
-                            <p class="text text-center">PREMIUM</p>
+                            <p class="text text-center">GRATIS</p>
                         </div>
                     </div>
                 </a>
@@ -178,7 +178,7 @@ if (isset($_SESSION['message']) ){
                         <div class="card-body">
                             <img width="48px" height="48px" src="<?=$app?>assets/img/nfl.svg" class="image" alt="product image">
                             <h2 class="title text-center">NFL</h2>
-                            <p class="text text-center">PREMIUM</p>
+                            <p class="text text-center">GRATIS</p>
                         </div>
                     </div>
                 </a>
@@ -217,7 +217,7 @@ if (isset($_SESSION['message']) ){
                         <div class="card-body">
                             <img width="48px" height="48px" src="<?=$app?>assets/img/ufc.svg" class="image" alt="product image">
                             <h2 class="title text-center">UFC</h2>
-                            <p class="text text-center">PREMIUM</p>
+                            <p class="text text-center">GRATIS</p>
                         </div>
                     </div>
                 </a>
