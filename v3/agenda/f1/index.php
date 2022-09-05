@@ -96,7 +96,7 @@ if (isset($_SESSION['nbaError'])){
                         <div class="card product-card">
                             <div class="main-event">
                                 <div class="league">
-                                    <img src="<?=$app?>assets/img/ligas/f1.png" alt="League" />
+                                    <img src="<?=$app?>assets/img/ligas/f1.png" alt="" />
                                 </div>
                                 <div class="match">
                                     <div class="team">
@@ -105,7 +105,7 @@ if (isset($_SESSION['nbaError'])){
                                     </div>
                                 </div>
                                 <div class="channel">
-                                    <img src="http://iraffle.live/v3/assets/img/ligas/uel.png" alt="Channel" />
+                                    <img src="http://iraffle.live/v3/assets/img/canales/daznf1.png" alt="Channel" />
                                 </div>
                             </div>
                         </div>
