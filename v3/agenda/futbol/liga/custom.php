@@ -76,3 +76,29 @@ if ($result['local'] === "sevilla"){
     </li>
     ';
 }
+if ($result['visita'] === "milan"){
+    $_SESSION['starplus'] = "Los eventos por Star+ estarán listos 5 o 10 minutos antes del comienzo.";
+    $canalImg = "starplus";
+    $r= "Ly92ZXJjb21vZnV0Ym9sLnh5ei9zL3N0YXJfandwLmh0bWw/Z2V0PWh0dHBzOi8vbGl2ZS1mdGMtbmEtc291dGgtMi5tZWRpYS5zdGFyb3R0LmNvbS9ncnUxL3FiMDEvc3RhcnBsdXMvZXZlbnQvMjAyMi8wOS8wNi9GQ19TYWx6YnVyZ192c19BQ19NaWxhbl8yMDIyMDkwNl8xNjYyNDg0MjMxMDE2L2N0ci1hbGwtY29tcGxldGUubTN1OCZpbWc9aHR0cHM6Ly9wcm9kLXJpcGN1dC1kZWxpdmVyeS5kaXNuZXktcGx1cy5uZXQvdjEvdmFyaWFudC9zdGFyLzUzMkYwMTkyQTQ2OTJEQzhGMTYxRTNBM0UwNDQ2REE1OUZDOEUxMzRBMUI5RkQwMTE3NjI5QjFERkREQTIyMDcvc2NhbGU/d2lkdGg9MTkyMCZhc3BlY3RSYXRpbz0xLjc4JmZvcm1hdD1qcGVnJmtleT02YjEwNTdjNzFhOTU0MTc5ODBiZWUxOGQ2ZGNiMzdjYSZrZXkyPTUxZjdhMzM2NDZjNGFjZWMwZjQ3YjM1ZTYwMmE4N2M0";
+    $custom1 = '
+    <li>
+        <a class="justify-content-center" href="../../../tv/epg?r='.$r.'">
+        <i class="flag ar"></i>
+        Star + | HD
+        </a>
+    </li>
+    ';
+}
+if ($result['local'] === "benfica"){
+    $_SESSION['starplus'] = "Los eventos por Star+ estarán listos 5 o 10 minutos antes del comienzo.";
+    $canalImg = "starplus";
+    $r= "Ly92ZXJjb21vZnV0Ym9sLnh5ei9zL3N0YXJfandwLmh0bWw/Z2V0PWh0dHBzOi8vbGl2ZS1mdGMtbmEtc291dGgtMi5tZWRpYS5zdGFyb3R0LmNvbS9ncnUxL3FiMDIvc3RhcnBsdXMvZXZlbnQvMjAyMi8wOS8wNi9CZW5maWNhX3ZzX01hY2NhYmlfSGFpZmFfMjAyMjA5MDZfMTY2MjQ4NDIzNjAxNi9jdHItYWxsLWNvbXBsZXRlLm0zdTgmaW1nPWh0dHBzOi8vcHJvZC1yaXBjdXQtZGVsaXZlcnkuZGlzbmV5LXBsdXMubmV0L3YxL3ZhcmlhbnQvc3Rhci9GOEI0M0I0NkEwMjIxQzlBMTFGMkJEQThENkRBMzZDMjRGNTM4Mzk3MzlEM0UyMDVCQjY5NEZFMzZBOUNENDI4L3NjYWxlP3dpZHRoPTE5MjAmYXNwZWN0UmF0aW89MS43OCZmb3JtYXQ9anBlZyZrZXk9NDZlY2QzYWQ4NDdhNDlmZGE4OTJiNWZhNThjYTI5OTAma2V5Mj1jZGU5YjBhYjZmNmU5NWMwZTU1ZTc5ZmEzZjUyMGYzMg==";
+    $custom1 = '
+    <li>
+        <a class="justify-content-center" href="../../../tv/epg?r='.$r.'">
+        <i class="flag ar"></i>
+        Star + | HD
+        </a>
+    </li>
+    ';
+}
