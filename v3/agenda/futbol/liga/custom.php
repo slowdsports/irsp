@@ -102,3 +102,17 @@ if ($result['local'] === "benfica"){
     </li>
     ';
 }
+
+if ($result['local'] === "leipzig"){
+    $_SESSION['starplus'] = "Los eventos por Star+ estarán listos 5 o 10 minutos antes del comienzo.";
+    $canalImg = "starplus";
+    $r= "Ly92ZXJjb21vZnV0Ym9sLnh5ei9zL3N0YXJfandwLmh0bWw/Z2V0PWh0dHBzOi8vbGl2ZS1mdGMtbmEtc291dGgtMi5tZWRpYS5zdGFyb3R0LmNvbS9ncnUxL3FiMDIvc3RhcnBsdXMvZXZlbnQvMjAyMi8wOS8wNi9SQl9MZWlwemlnX3ZzX0ZDX1NoYWtodGFyXzIwMjIwOTA2XzE2NjI0ODUxNzc4MTAvY3RyLWFsbC1jb21wbGV0ZS5tM3U4JmltZz1odHRwczovL3Byb2QtcmlwY3V0LWRlbGl2ZXJ5LmRpc25leS1wbHVzLm5ldC92MS92YXJpYW50L3N0YXIvRUM5MDg1MTA5NTIxNzVFMzlCM0Q4OEVDMUVGODBENjAyN0E0QUQwODM5Qzg3NUM5NTFDNjcwMzQyRTg2NkFERC9zY2FsZT93aWR0aD0xOTIwJmFzcGVjdFJhdGlvPTEuNzgmZm9ybWF0PWpwZWcma2V5PTI4NzU3N2Q0MDYwMjRkZTg4NzgwMWZkMTcwZjkzNmNkJmtleTI9ZTRlZTU0OTg4M2U5MjAwMTBmNWZlZDkyZDU5YmE4MTA=";
+    $custom1 = '
+    <li>
+        <a class="justify-content-center" href="../../../tv/epg?r='.$r.'">
+        <i class="flag ar"></i>
+        Star + | HD
+        </a>
+    </li>
+    ';
+}
