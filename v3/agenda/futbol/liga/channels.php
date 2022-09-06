@@ -16,9 +16,9 @@ if($canal === "M+ Liga de Campeones" || $canal === "M+ Liga de Campeones UHD (M4
         </a>
     </li>';
     
-if($canal === "M+ Liga de Campeones 2" || $canal === "M+ Liga de Campeones 2 (M57 O128)" || $canal === "M+ Liga de Campeones 2 (M57 O128)" || $canal === "mlcamp2"){
+elseif($canal2 === "M+ Liga de Campeones 2" || $canal2 === "M+ Liga de Campeones 2 (M57 O128)" || $canal2 === "M+ Liga de Campeones 2 (M57 O128)" || $canal2 === "mlcamp2"){
     $canalImg = "campeones";
-    $canalop2 = '
+    $canalop4 = '
     <li>
         <a class="justify-content-center" href="../../play?c=mlcamp2">
         <i class="flag es"></i>
@@ -31,6 +31,7 @@ if($canal === "M+ Liga de Campeones 2" || $canal === "M+ Liga de Campeones 2 (M5
         Movistar Liga de Campeones | HD
         </a>
     </li>';
+}
 } elseif($canal2 === "M+ Liga de Campeones" || $canal2 === "M+ Liga de Campeones UHD (M441 O115)" || $canal2 === "M+ Liga de Campeones (M56 O114)" || $canal2 === "mlcamp"){
     $canalImg = "campeones";
     $canalop4 = '
