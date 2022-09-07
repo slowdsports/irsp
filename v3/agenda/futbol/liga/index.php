@@ -113,6 +113,11 @@ if (isset($_SESSION['starplus']) ){
                                 echo $canalop3;
                                 // Canal 4
                                 echo $canalop4;
+                                // Custom Channels
+                                include ('custom.php');
+                                echo $custom1;
+                                echo $custom2;
+                                echo $custom3;
                                 // Canal 4
                                 $canal4 = $result['canal4'];
                                 $c4=mysqli_query($conn,"select * from channels
