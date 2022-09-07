@@ -27,6 +27,17 @@ elseif($canal2 === "M+ Liga de Campeones 2" || $canal2 === "mlcamp2"){
         </a>
     </li>
     <li>';
+    
+}   elseif($canal2 === "M+ Liga de Campeones 5" || $canal2 === "mlcamp5"){
+    $canalImg = "campeones";
+    $canalop4 = '
+    <li>
+        <a class="justify-content-center" href="../../play?c=mlcamp5">
+        <i class="flag es"></i>
+        Movistar Liga de Campeones 5 | VIP HD
+        </a>
+    </li>
+    <li>';
    
 
 }  elseif($canal2 === "M+ Liga de Campeones 4" || $canal2 === "mlcamp4"){
