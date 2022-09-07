@@ -11,7 +11,7 @@ if ($result['visita'] === "team"){
     </li>
     ';
 }
-if ($result['local'] === "ajax"){
+if ($result['local'] === "barcelona"){
     $_SESSION['campeones'] = "Los eventos por Star+ estarán listos 5 o 10 minutos antes del comienzo.";
     $canalImg = "campeones";
     $r= "Ly92ZXJjb21vZnV0Ym9sLnh5ei9zL3N0YXJfandwLmh0bWw/Z2V0PWh0dHBzOi8vbGl2ZS1mdGMtbmEtc291dGgtMi5tZWRpYS5zdGFyb3R0LmNvbS9ncnUxL3FiMDEvc3RhcnBsdXMvZXZlbnQvMjAyMi8wOS8wNi9EaW5hbW9fWmFncmViX3ZzX0NoZWxzZWFfMjAyMjA5MDZfMTY2MjQ3NjQyMDA3NC9jdHItYWxsLWNvbXBsZXRlLm0zdTgmaW1nPWh0dHBzOi8vcHJvZC1yaXBjdXQtZGVsaXZlcnkuZGlzbmV5LXBsdXMubmV0L3YxL3ZhcmlhbnQvc3Rhci8yNEE3MzUyNzFGRjFFMjBBOUQ0MTM4QUQ5QTAyQUVEMDMyMUU5RjJEQjYwRDczOTg5MUJFMzZCRDQ4RTgxNEJFL3NjYWxlP3dpZHRoPTE5MjAmYXNwZWN0UmF0aW89MS43OCZmb3JtYXQ9anBlZyZrZXk9YTBlYTIyMDQ0MzczNGExMWIxZjNkNWQyNTc4MDM0OTMma2V5Mj0yYjBlZTIwNGFjMWEyZThiOWQxZjcyZTk3ZGY0OTY4Nw==";
