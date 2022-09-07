@@ -19,7 +19,7 @@ if ($result['local'] === "ajax"){
     <li>
         <a class="justify-content-center" href="../../../tv/epg?r='.$r.'">
         <i class="flag es"></i>
-        Liga campeones | HD
+        Star + | HD
         </a>
     </li>
     ';
