@@ -17,7 +17,7 @@ if($canal === "M+ Liga de Campeones" || $canal === "M+ Liga de Campeones UHD (M4
     </li>';
 }
     
-elseif($canal2 === "M+ Liga de Campeones 2" || $canal2 === "M+ Liga de Campeones 2 (M57 O128)" || $canal2 === "M+ Liga de Campeones 2 (M57 O128)" || $canal2 === "mlcamp2"){
+elseif($canal2 === "M+ Liga de Campeones 2" || $canal2 === "mlcamp2"){
     $canalImg = "campeones";
     $canalop4 = '
     <li>
