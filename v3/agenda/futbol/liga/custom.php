@@ -11,7 +11,7 @@ if ($result['visita'] === "team"){
     </li>
     ';
 }
-if ($result['local'] === "barcelona"){
+if ($result['visita'] === "betis"){
     $_SESSION['campeones'] = "Los eventos por Star+ estarán listos 5 o 10 minutos antes del comienzo.";
     $canalImg = "campeones";
     $r= "Ly92ZXJjb21vZnV0Ym9sLnh5ei9zL3N0YXJfandwLmh0bWw/Z2V0PWh0dHBzOi8vbGl2ZS1mdGMtbmEtc291dGgtMi5tZWRpYS5zdGFyb3R0LmNvbS9ncnUxL3FiMDEvc3RhcnBsdXMvZXZlbnQvMjAyMi8wOS8wNy9GQ19CYXJjZWxvbmFfdnNfRkNfVmlrdG9yXzIwMjIwOTA3XzE2NjI1NzA2NTIwMTcvY3RyLWFsbC1jb21wbGV0ZS5tM3U4JmltZz1odHRwczovL3Byb2QtcmlwY3V0LWRlbGl2ZXJ5LmRpc25leS1wbHVzLm5ldC92MS92YXJpYW50L3N0YXIvRUI2NjgxQUY4ODI3MjQzN0U1MTE5NDg2MEI3NTEzRjJFRTI1N0VEREU3QUQ5RTgwMDUwQjUwQzE4MjM3MUNGRC9zY2FsZT93aWR0aD0xOTIwJmFzcGVjdFJhdGlvPTEuNzgmZm9ybWF0PWpwZWcma2V5PTQwNTY1NDg3ZTExYzQ2OTY5NjM4NmRmNmFmYTc0NzUxJmtleTI9NWY0NTkwOGI0ZmU2NzgzYWU0NGVmYTFkN2Q4Zjg4MjI=";
@@ -24,10 +24,10 @@ if ($result['local'] === "barcelona"){
     </li>
     ';
 }
-if ($result['local'] === "at.madrid"){
+if ($result['local'] === "zurich"){
     $_SESSION['starplus'] = "Los eventos por Star+ estarán listos 5 o 10 minutos antes del comienzo.";
     $canalImg = "starplus";
-    $r= "Ly92ZXJjb21vZnV0Ym9sLnh5ei9zL3N0YXJfandwLmh0bWw/Z2V0PWh0dHBzOi8vbGl2ZS1mdGMtbmEtc291dGgtMi5tZWRpYS5zdGFyb3R0LmNvbS9ncnUxL3FiMDEvc3RhcnBsdXMvZXZlbnQvMjAyMi8wOS8wNy9BdGx0aWNvX01hZHJpZF92c19GQ19Qb3J0XzIwMjIwOTA3XzE2NjI1NzA2MjEwMTYvY3RyLWFsbC1jb21wbGV0ZS5tM3U4JmltZz1odHRwczovL3Byb2QtcmlwY3V0LWRlbGl2ZXJ5LmRpc25leS1wbHVzLm5ldC92MS92YXJpYW50L3N0YXIvN0U2M0UwMEY4MzNFOEQ0N0Y3MkJDRUY2QUQ5MUI2MTg1NDdBRTUyN0ZEMEJGMkFBQkFCNkM1RjgxNDZBNTQ5Qi9zY2FsZT93aWR0aD0xOTIwJmFzcGVjdFJhdGlvPTEuNzgmZm9ybWF0PWpwZWcma2V5PWVlMmE1MTQwMTRiMTRkYWJhYTM2ZTQyYjQzMjMzMDE5JmtleTI9ZDRiZTk2OTJiZjdmMWNlYWY3MTBmM2RjNzI5YzYwZWM=";
+    $r= "Ly92ZXJjb21vZnV0Ym9sLnh5ei9zL3N0YXJfandwLmh0bWw/Z2V0PWh0dHBzOi8vbGl2ZS1mdGMtbmEtc291dGgtMi5tZWRpYS5zdGFyb3R0LmNvbS9ncnUxL3FiMDEvc3RhcnBsdXMvZXZlbnQvMjAyMi8wOS8wNy9adXJpY2hfdnNfQXJzZW5hbF8yMDIyMDkwOF8xNjYyNjQ5MjIxMDYxL2N0ci1hbGwtY29tcGxldGUubTN1OCZpbWc9aHR0cHM6Ly9wcm9kLXJpcGN1dC1kZWxpdmVyeS5kaXNuZXktcGx1cy5uZXQvdjEvdmFyaWFudC9zdGFyLzg1MTgwNjlGNzFCNjFGODM3NDI2OEY5RUExMjIyNzY4OTBEOTNEREEwNkUzQTM0MDU4NzQ2QzM0MUQ0MTZCQUUvc2NhbGU/d2lkdGg9MTkyMCZhc3BlY3RSYXRpbz0xLjc4JmZvcm1hdD1qcGVnJmtleT0xOGFlNGM3OGI0NGI0YzE4ODQ3YjhiMTU0ZTQ1ZTJmNiZrZXkyPTc0YWYwNjFmZDRhZTdmYzljN2Q4YWE5ZTUxMzU0ZmZl";
     $custom1 = '
     <li>
         <a class="justify-content-center" href="../../../tv/epg?r='.$r.'">
@@ -37,10 +37,10 @@ if ($result['local'] === "at.madrid"){
     </li>
     ';
 }
-if ($result['local'] === "inter"){
+if ($result['visita'] === "roma"){
     $_SESSION['starplus'] = "Los eventos por Star+ estarán listos 5 o 10 minutos antes del comienzo.";
     $canalImg = "starplus";
-    $r= "Ly92ZXJjb21vZnV0Ym9sLnh5ei9zL3N0YXJfandwLmh0bWw/Z2V0PWh0dHBzOi8vbGl2ZS1mdGMtbmEtc291dGgtMi5tZWRpYS5zdGFyb3R0LmNvbS9ncnUxL3FiMDEvc3RhcnBsdXMvZXZlbnQvMjAyMi8wOS8wNy9JbnRlcl9NaWxhbl92c19CYXllcm5fTXVuXzIwMjIwOTA3XzE2NjI1NzA2MjIwMzYvY3RyLWFsbC1jb21wbGV0ZS5tM3U4JmltZz1odHRwczovL3Byb2QtcmlwY3V0LWRlbGl2ZXJ5LmRpc25leS1wbHVzLm5ldC92MS92YXJpYW50L3N0YXIvNjM1ODhFQ0QxNTE4NUI1ODc0NDk0NThEQjZGMTBGREM3MkQ3OUU4NzNFNzdGQTc0ODZDNEEzMDBENTc4MTBEQi9zY2FsZT93aWR0aD0xOTIwJmFzcGVjdFJhdGlvPTEuNzgmZm9ybWF0PWpwZWcma2V5PWQ5ZGNiZDdhOGVmNDRmOTdhY2FjYTg3ZTMxYjA4YWRhJmtleTI9NDk0YWJlMWQ0MzBjNzk3MmM5NzY3NzU2N2U4YWQ1ZmM=";
+    $r= "Ly92ZXJjb21vZnV0Ym9sLnh5ei9zL3N0YXJfandwLmh0bWw/Z2V0PWh0dHBzOi8vbGl2ZS1mdGMtbmEtc291dGgtMi5tZWRpYS5zdGFyb3R0LmNvbS9ncnUxL3FiMDEvc3RhcnBsdXMvZXZlbnQvMjAyMi8wOS8wOC9MdWRvZ29yZXRzX3ZzX0FTX1JvbWFfMjAyMjA5MDhfMTY2MjY0OTIxMjA2MS9jdHItYWxsLWNvbXBsZXRlLm0zdTgmaW1nPWh0dHBzOi8vcHJvZC1yaXBjdXQtZGVsaXZlcnkuZGlzbmV5LXBsdXMubmV0L3YxL3ZhcmlhbnQvc3Rhci84NTE4MDY5RjcxQjYxRjgzNzQyNjhGOUVBMTIyMjc2ODkwRDkzRERBMDZFM0EzNDA1ODc0NkMzNDFENDE2QkFFL3NjYWxlP3dpZHRoPTE5MjAmYXNwZWN0UmF0aW89MS43OCZmb3JtYXQ9anBlZyZrZXk9MDUxMzM0NjYwMmNiNDlhMmIyOWViOTFmYjc4ZDg3YTMma2V5Mj01ZTMzYjZhMzM1ZWU2ZWU4YzA3YjBiZjdmNWIzMmQ0ZA==";
     $custom1 = '
     <li>
         <a class="justify-content-center" href="../../../tv/epg?r='.$r.'">
