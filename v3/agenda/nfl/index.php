@@ -14,10 +14,10 @@ preg_match("(source\:\s'(.*?)')", $site, $stream);
 
 if(isset($_GET['g'])){
     if ($stream[1] == null){
-        $_SESSION['nbaError'] = "No se ha podido cargar la retransmisión del juego.";
+        $_SESSION['nflError'] = "No se ha podido cargar la retransmisión del juego.";
     } else{
         $m3u8 = base64_encode($stream[1]);
-        // header ("location: ../../play?nba&plyr=vid&c=$m3u8");
+        // header ("location: ../../play?nfl&plyr=vid&c=$m3u8");
         echo '<script>window.location.href = "../../play?nba&plyr=vid&c='.$m3u8.'";</script>';
     }
 }
@@ -52,11 +52,11 @@ if (isset($_SESSION['nbaError'])){
 <br>
 <div class="container">
     <div class="alert alert-danger text-center" role="alert">
-    <?=$_SESSION['nbaError'];?>
+    <?=$_SESSION['nflError'];?>
     </div>
 </div>
 <br>
-<?php unset($_SESSION['nbaError']); }?>
+<?php unset($_SESSION['nflError']); }?>
 <!-- *Alerta -->
 
 <!-- Categorías -->
