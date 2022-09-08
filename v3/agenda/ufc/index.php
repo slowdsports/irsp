@@ -78,7 +78,7 @@ if (isset($_SESSION['nbaError'])){
                                     </div>
                                 </div>
                                 <div class="channel">
-                                    <img src="<?=$app?>assets/img/canales/dazn.png" alt="Channel" />
+                                    <img src="<?=$app?>assets/img/canales/espn.png" alt="Channel" />
                                 </div>
                             </div>
                         </div>
@@ -87,9 +87,9 @@ if (isset($_SESSION['nbaError'])){
                         <div class="card card-body">
                             <ul class="listview link-listview">
                                 <li>
-                                    <a class="justify-content-center" href="../play/?c=dazn1">
+                                    <a class="justify-content-center" href="">
                                     <i class="flag es"></i>
-                                    DAZN | HD
+                                    UFC | ESPN HD
                                     </a>
                                 </li>
                             </ul>

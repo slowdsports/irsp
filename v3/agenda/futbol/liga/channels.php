@@ -15,6 +15,41 @@ if($canal === "M+ Liga de Campeones" || $canal === "M+ Liga de Campeones UHD (M4
         Movistar Liga de Campeones | HD
         </a>
     </li>';
+}
+    
+elseif($canal2 === "M+ Liga de Campeones 2" || $canal2 === "mlcamp2"){
+    $canalImg = "campeones";
+    $canalop4 = '
+    <li>
+        <a class="justify-content-center" href="../../play?c=mlcamp2">
+        <i class="flag es"></i>
+        Movistar Liga de Campeones 2 | VIP HD
+        </a>
+    </li>
+    <li>';
+    
+}   elseif($canal2 === "M+ Liga de Campeones 5" || $canal2 === "mlcamp5"){
+    $canalImg = "campeones";
+    $canalop4 = '
+    <li>
+        <a class="justify-content-center" href="../../play?c=mlcamp5">
+        <i class="flag es"></i>
+        Movistar Liga de Campeones 5 | VIP HD
+        </a>
+    </li>
+    <li>';
+   
+
+}  elseif($canal2 === "M+ Liga de Campeones 4" || $canal2 === "mlcamp4"){
+    $canalImg = "campeones";
+    $canalop4 = '
+    <li>
+        <a class="justify-content-center" href="../../play?c=mlcamp4">
+        <i class="flag es"></i>
+        Movistar Liga de Campeones 4 | VIP HD
+        </a>
+    </li>
+    <li>';
 } elseif($canal2 === "M+ Liga de Campeones" || $canal2 === "M+ Liga de Campeones UHD (M441 O115)" || $canal2 === "M+ Liga de Campeones (M56 O114)" || $canal2 === "mlcamp"){
     $canalImg = "campeones";
     $canalop4 = '
