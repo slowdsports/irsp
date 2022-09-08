@@ -5,7 +5,7 @@ include('../../inc/header.php'); include('../../conn.php'); include('../../inc/s
 $query=mysqli_query($conn,"select * from user where userid='".$_SESSION['id']."'");
 $row=mysqli_fetch_assoc($query);
 
-$base ="http://givemenbastreams.com/mlb.php?g=";
+$base ="http://givemenbastreams.com/nfl.php?g=";
 $g = $_GET['g'];
 $file = $base.$g;
 
