@@ -1,2 +1,2 @@
 <?php
-$base = "//".$_SERVER['SERVER_NAME']."/v3/admin/";
+$base = "//".$_SERVER['SERVER_NAME']."/app2/irsp/v3/admin/";
