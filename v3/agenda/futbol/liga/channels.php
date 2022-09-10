@@ -95,7 +95,7 @@ if($canal === "M+ Liga de Campeones 5" || $canal === "mlcamp5"){
     </li>';
 }
 
-if($canal === "M+ LaLiga" || $canal === "bar"){
+if($canal === "M+ LaLiga" || $canal === "M+ LaLigaTV" || $canal === "bar"){
     $canalImg = "mlaliga";
     $canalop2 = '
     <li>
@@ -116,7 +116,7 @@ if($canal === "M+ LaLiga" || $canal === "bar"){
         Movistar LaLiga | VIP SD
         </a>
     </li>';
-} elseif($canal2 === "M+ LaLiga" || $canal2 === "bar"){
+} elseif($canal2 === "M+ LaLiga" || $canal2 === "M+ LaLigaTV" || $canal2 === "bar"){
     $canalImg = "mlaliga";
     $canalop4 = '
     <li>
