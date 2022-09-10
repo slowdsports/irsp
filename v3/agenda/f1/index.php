@@ -117,9 +117,9 @@ if (isset($_SESSION['nbaError'])){
                                 if (!isset($_SESSION['id']) ||(trim ($_SESSION['id']) == '')){
                                     echo '
                                     <li>
-                                        <a class="justify-content-center" href="go:daznf1">
+                                        <a class="justify-content-center" href="https://irpc.ga/mg/play/sandbox.php?get=daznf1">
                                         <i class="flag es"></i>
-                                        DAZN F1 | HD (FREE)
+                                        DAZN F1 | HD
                                         </a>
                                     </li>
                                     ';
@@ -128,6 +128,12 @@ if (isset($_SESSION['nbaError'])){
                                     echo $canal3Free;
                                 } else{
                                     echo '
+                                    <li>
+                                        <a class="justify-content-center" href="https://irpc.ga/mg/play/sandbox.php?get=daznf1">
+                                        <i class="flag es"></i>
+                                        DAZN F1 | HD
+                                        </a>
+                                    </li>
                                     <li>
                                         <a class="justify-content-center" href="../play/?c=daznf1">
                                         <i class="flag es"></i>
