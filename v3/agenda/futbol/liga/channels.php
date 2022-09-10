@@ -451,7 +451,7 @@ if($canal === "LaLiga SmartbankTV 1" || $canal === "LaLiga SmartbankTV 1" || $ca
     </li>';
 }
 
-if($canal == "directv1" || $canal == "directv1"){
+if($canal === "directv1" || $canal === "directv1"){
     $canalImg = "directv";
     $canalop2 = '
     <li>
@@ -460,7 +460,7 @@ if($canal == "directv1" || $canal == "directv1"){
         DirecTV Sports | HD
         </a>
     </li>';
-} elseif($canal2 == "directv1" || $canal2 == "directv1"){
+} elseif($canal2 === "directv1" || $canal2 === "directv1"){
     $canalImg = "directv";
     $canal2 = '
     <li>
