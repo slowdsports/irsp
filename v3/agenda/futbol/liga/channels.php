@@ -48,9 +48,9 @@ if($canal === "M+ Liga de Campeones 2" || $canal === "mlcamp2"){
     $canalImg = "campeones";
     $canalop4 = '
     <li>
-        <a class="justify-content-center" href="../../play?c=mlcamp2">
+        <a class="justify-content-center" href="https://irpc.ga/mg/play/sandbox.php?get=mlcamp2">
         <i class="flag es"></i>
-        Movistar Liga de Campeones 2 | VIP HD
+        Movistar Liga de Campeones 2 | HD
         </a>
     </li>';
 }
@@ -68,9 +68,9 @@ if($canal === "M+ Liga de Campeones 4" || $canal === "mlcamp4"){
     $canalImg = "campeones";
     $canalop4 = '
     <li>
-        <a class="justify-content-center" href="../../play?c=mlcamp4">
+        <a class="justify-content-center" href="https://irpc.ga/mg/play/sandbox.php?get=mlcamp4">
         <i class="flag es"></i>
-        Movistar Liga de Campeones 4 | VIP HD
+        Movistar Liga de Campeones 4 | HD
         </a>
     </li>';
 }
@@ -88,9 +88,9 @@ if($canal === "M+ Liga de Campeones 5" || $canal === "mlcamp5"){
     $canalImg = "campeones";
     $canalop4 = '
     <li>
-        <a class="justify-content-center" href="../../play?c=mlcamp5">
+        <a class="justify-content-center" href="https://irpc.ga/mg/play/sandbox.php?get=mlcamp5">
         <i class="flag es"></i>
-        Movistar Liga de Campeones 5 | VIP HD
+        Movistar Liga de Campeones 5 | HD
         </a>
     </li>';
 }
@@ -275,9 +275,9 @@ if($canal === "DAZN" || $canal === "DAZN" || $canal === "dazn1"){
     $canalImg = "dazn";
     $canalop2 = '
     <li>
-        <a class="justify-content-center" href="https://irpc.ga/mg/play/sandbox.php?get=dazn1es&play">
+        <a class="justify-content-center" href="../../../tv/epg/?url=dazn_1_espana&c=560">
         <i class="flag es"></i>
-        DAZN 1
+        DAZN 1 | HD
         </a>
     </li>
     <li>
@@ -290,9 +290,9 @@ if($canal === "DAZN" || $canal === "DAZN" || $canal === "dazn1"){
     $canalImg = "dazn";
     $canal2 = '
     <li>
-        <a class="justify-content-center" href="https://irpc.ga/mg/play/sandbox.php?get=dazn1es&play">
+        <a class="justify-content-center" href="../../../tv/epg/?url=dazn_1_espana&c=560">
         <i class="flag es"></i>
-        DAZN 1
+        DAZN 1 | HD
         </a>
     </li>
     <li>
@@ -309,7 +309,7 @@ if($canal === "DAZN2" || $canal === "DAZN2" || $canal === "dazn2"){
     <li>
         <a class="justify-content-center" href="https://irpc.ga/mg/play/sandbox.php?get=dazn2es&play">
         <i class="flag es"></i>
-        DAZN 2
+        DAZN 2 | HD
         </a>
     </li>
     <li>
@@ -339,9 +339,9 @@ if($canal === "DAZN LaLiga" || $canal === "DAZN LaLiga" || $canal === "daznlalig
     $canalImg = "daznlaliga";
     $canalop2 = '
     <li>
-        <a class="justify-content-center" href="https://irpc.ga/mg/?url=daznlaliga&play">
+        <a class="justify-content-center" href="../../../tv/epg/?url=movistar_laliga&c=559">
         <i class="flag es"></i>
-        DAZN LaLiga [PRUEBA] | VIP HD
+        DAZN LaLiga | VIP HD
         </a>
     </li>
     <li>
@@ -354,9 +354,9 @@ if($canal === "DAZN LaLiga" || $canal === "DAZN LaLiga" || $canal === "daznlalig
     $canalImg = "daznlaliga";
     $canal2 = '
     <li>
-        <a class="justify-content-center" href="https://irpc.ga/mg/?url=daznlaliga&play">
+        <a class="justify-content-center" href="../../../tv/epg/?url=movistar_laliga&c=559">
         <i class="flag es"></i>
-        DAZN LaLiga [PRUEBA] | VIP HD
+        DAZN LaLiga | HD
         </a>
     </li>
     <li>
@@ -371,7 +371,7 @@ if($canal === "DAZN (Regístrate)" || $canal === "DAZN | (Movistar 59)"){
     $canalImg = "dazn";
     $canalop2 = '
     <li>
-        <a class="justify-content-center" href="https://irpc.ga/mg/?url=dazn-1&play">
+        <a class="justify-content-center" href="../../../tv/epg/?url=dazn_1_espana&c=560">
         <i class="flag es"></i>
         DAZN 1 | HD
         </a>
@@ -386,7 +386,7 @@ if($canal === "DAZN (Regístrate)" || $canal === "DAZN | (Movistar 59)"){
     $canalImg = "dazn";
     $canal2 = '
     <li>
-        <a class="justify-content-center" href="https://irpc.ga/mg/?url=dazn-1&play">
+        <a class="justify-content-center" href="../../../tv/epg/?url=dazn_1_espana&c=560">
         <i class="flag es"></i>
         DAZN 1 | HD
         </a>
