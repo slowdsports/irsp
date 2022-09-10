@@ -1,4 +1,7 @@
 <?php
+$canal = $result['canal'];
+$canal2 = $result['canal2'];
+$canal3 = $result['canal3'];
 // Logos
 if($canal === "M+ Liga de Campeones" || $canal === "M+ Liga de Campeones UHD (M441 O115)" || $canal === "M+ Liga de Campeones (M56 O114)" || $canal === "mlcamp"){
     $canalImg = "campeones";
@@ -15,41 +18,6 @@ if($canal === "M+ Liga de Campeones" || $canal === "M+ Liga de Campeones UHD (M4
         Movistar Liga de Campeones | HD
         </a>
     </li>';
-}
-    
-elseif($canal2 === "M+ Liga de Campeones 2" || $canal2 === "mlcamp2"){
-    $canalImg = "campeones";
-    $canalop4 = '
-    <li>
-        <a class="justify-content-center" href="../../play?c=mlcamp2">
-        <i class="flag es"></i>
-        Movistar Liga de Campeones 2 | VIP HD
-        </a>
-    </li>
-    <li>';
-    
-}   elseif($canal2 === "M+ Liga de Campeones 5" || $canal2 === "mlcamp5"){
-    $canalImg = "campeones";
-    $canalop4 = '
-    <li>
-        <a class="justify-content-center" href="../../play?c=mlcamp5">
-        <i class="flag es"></i>
-        Movistar Liga de Campeones 5 | VIP HD
-        </a>
-    </li>
-    <li>';
-   
-
-}  elseif($canal2 === "M+ Liga de Campeones 4" || $canal2 === "mlcamp4"){
-    $canalImg = "campeones";
-    $canalop4 = '
-    <li>
-        <a class="justify-content-center" href="../../play?c=mlcamp4">
-        <i class="flag es"></i>
-        Movistar Liga de Campeones 4 | VIP HD
-        </a>
-    </li>
-    <li>';
 } elseif($canal2 === "M+ Liga de Campeones" || $canal2 === "M+ Liga de Campeones UHD (M441 O115)" || $canal2 === "M+ Liga de Campeones (M56 O114)" || $canal2 === "mlcamp"){
     $canalImg = "campeones";
     $canalop4 = '
@@ -63,6 +31,66 @@ elseif($canal2 === "M+ Liga de Campeones 2" || $canal2 === "mlcamp2"){
         <a class="justify-content-center" href="https://irpc.ga/mg/play/sandbox.php?get=mlcamp">
         <i class="flag es"></i>
         Movistar Liga de Campeones | HD
+        </a>
+    </li>';
+}
+
+if($canal === "M+ Liga de Campeones 2" || $canal === "mlcamp2"){
+    $canalImg = "campeones";
+    $canalop2 = '
+    <li>
+        <a class="justify-content-center" href="../../play?c=mlcamp2">
+        <i class="flag es"></i>
+        Movistar Liga de Campeones 2 | VIP HD
+        </a>
+    </li>';
+} elseif($canal2 === "M+ Liga de Campeones 2" || $canal2 === "mlcamp2"){
+    $canalImg = "campeones";
+    $canalop4 = '
+    <li>
+        <a class="justify-content-center" href="../../play?c=mlcamp2">
+        <i class="flag es"></i>
+        Movistar Liga de Campeones 2 | VIP HD
+        </a>
+    </li>';
+}
+
+if($canal === "M+ Liga de Campeones 4" || $canal === "mlcamp4"){
+    $canalImg = "campeones";
+    $canalop2 = '
+    <li>
+        <a class="justify-content-center" href="../../play?c=mlcamp4">
+        <i class="flag es"></i>
+        Movistar Liga de Campeones 4 | VIP HD
+        </a>
+    </li>';
+} elseif($canal2 === "M+ Liga de Campeones 4" || $canal2 === "mlcamp4"){
+    $canalImg = "campeones";
+    $canalop4 = '
+    <li>
+        <a class="justify-content-center" href="../../play?c=mlcamp4">
+        <i class="flag es"></i>
+        Movistar Liga de Campeones 4 | VIP HD
+        </a>
+    </li>';
+}
+
+if($canal === "M+ Liga de Campeones 5" || $canal === "mlcamp5"){
+    $canalImg = "campeones";
+    $canalop2 = '
+    <li>
+        <a class="justify-content-center" href="../../play?c=mlcamp5">
+        <i class="flag es"></i>
+        Movistar Liga de Campeones 5 | VIP HD
+        </a>
+    </li>';
+} elseif($canal2 === "M+ Liga de Campeones 5" || $canal2 === "mlcamp5"){
+    $canalImg = "campeones";
+    $canalop4 = '
+    <li>
+        <a class="justify-content-center" href="../../play?c=mlcamp5">
+        <i class="flag es"></i>
+        Movistar Liga de Campeones 5 | VIP HD
         </a>
     </li>';
 }
@@ -243,28 +271,6 @@ if($canal === "GOL" || $canal === "GOL (Síguelo en directo)" || $canal === "gol
     </li>';
 }
 
-// if($canal === "DAZN" || $canal === "DAZN" || $canal === "dazn1"){
-    $canalImg = "dazn";
-//     $canalImg = "dazn";
-//     $canalop2 = '
-//     <li>
-//         <a class="justify-content-center" href="../../play?c=dazn1">
-//         <i class="flag es"></i>
-//         DAZN 1 | VIP HD
-//         </a>
-//     </li>';
-// } elseif($canal2 === "DAZN" || $canal2 === "DAZN" || $canal2 === "dazn1"){
-    $canalImg = "dazn";
-//     $canalImg = "dazn";
-//     $canal2 = '
-//     <li>
-//         <a class="justify-content-center" href="../../play?c=dazn1">
-//         <i class="flag es"></i>
-//         DAZN 1 | VIP HD
-//         </a>
-//     </li>';
-// }
-
 if($canal === "DAZN" || $canal === "DAZN" || $canal === "dazn1"){
     $canalImg = "dazn";
     $canalop2 = '
@@ -329,26 +335,6 @@ if($canal === "DAZN2" || $canal === "DAZN2" || $canal === "dazn2"){
     </li>';
 }
 
-// if($canal === "DAZN LaLiga" || $canal === "DAZN LaLiga" || $canal === "daznlaliga"){
-    $canalImg = "dazn";
-//     $canalop2 = '
-//     <li>
-//         <a class="justify-content-center" href="../../play?c=daznlaliga">
-//         <i class="flag es"></i>
-//         DAZN LaLiga [BETA] | VIP HD
-//         </a>
-//     </li>';
-// } elseif($canal2 === "DAZN LaLiga" || $canal2 === "DAZN LaLiga" || $canal2 === "daznlaliga"){
-    $canalImg = "dazn";
-//     $canal2 = '
-//     <li>
-//         <a class="justify-content-center" href="../../play?c=daznlaliga">
-//         <i class="flag es"></i>
-//         DAZN LaLiga [BETA] | VIP HD
-//         </a>
-//     </li>';
-// }
-
 if($canal === "DAZN LaLiga" || $canal === "DAZN LaLiga" || $canal === "daznlaliga"){
     $canalImg = "daznlaliga";
     $canalop2 = '
@@ -409,25 +395,6 @@ if($canal === "DAZN (Regístrate)" || $canal === "DAZN | (Movistar 59)"){
         <a class="justify-content-center" href="../../play?c=dazn1">
         <i class="flag es"></i>
         DAZN 1 | VIP HD
-        </a>
-    </li>';
-}
-
-if($canal === "Canal por confirmar" || $canal === "Canal por confirmar"){
-    $canalop2 = '
-    <li>
-        <a class="justify-content-center" href="javascript:void(0)">
-        <ion-icon name="alert-circle-outline"></ion-icon>
-        Sin información de TV
-        </a>
-    </li>';
-} elseif($canal2 === "DAZN (Regístrate)" || $canal2 === "DAZN | (Movistar 59)"){
-    $canalImg = "dazn";
-    $canal2 = '
-    <li>
-        <a class="justify-content-center" href="javascript:void(0)">
-        <ion-icon name="alert-circle-outline"></ion-icon>
-        Sin información de TV
         </a>
     </li>';
 }
@@ -838,15 +805,23 @@ if($canal === "goltvec" || $canal === "goltvec"){
     </li>';
 }
 
-// Vacíos
-if ($canal == ""){
-    $canal = "";
-}
-if ($canal2 == ""){
-    $canal2 = "";
-}
-if ($canal3 == ""){
-    $canal3 = "";
+if($canal === "Canal por confirmar" || $canal === "Canal por confirmar"){
+    $canalop2 = '
+    <li>
+        <a class="justify-content-center" href="javascript:void(0)">
+        <ion-icon name="alert-circle-outline"></ion-icon>
+        Sin información de TV
+        </a>
+    </li>';
+} elseif($canal2 === "DAZN (Regístrate)" || $canal2 === "DAZN | (Movistar 59)"){
+    $canalImg = "dazn";
+    $canal2 = '
+    <li>
+        <a class="justify-content-center" href="javascript:void(0)">
+        <ion-icon name="alert-circle-outline"></ion-icon>
+        Sin información de TV
+        </a>
+    </li>';
 }
 // Repetidos
 if ($canalop2 == $canalop3){
@@ -858,4 +833,14 @@ $canalop4 = "";
 if ($canalop3 == $canalop4){
 $canalop4 = "";
 }
-?>
+
+else{
+    if($canal === null || $canal === ""){
+        $canal = "";
+        $canalop2 = "";
+    }
+    if($canal2 === null || $canal2 === ""){
+        $canal2 = "";
+        $canalop4 = "";
+    }
+}

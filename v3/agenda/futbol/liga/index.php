@@ -21,18 +21,6 @@ if (isset($_SESSION['message']) ){
     ';
     unset($_SESSION['message']);
 }
-
-if (isset($_SESSION['starplus']) ){
-    echo '
-    <div class="alert alert-info alert-dismissible fade show text-center" role="alert">
-        '.$_SESSION['starplus'].'
-        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-        <span aria-hidden="true">&times;</span>
-        </button>
-    </div>
-    ';
-    unset($_SESSION['starplus']);
-}
 ?>
 
 <div class="header-large-title">
@@ -67,7 +55,6 @@ if (isset($_SESSION['starplus']) ){
                     }
 
                     include('teams.php');
-                    include('../../../inc/channels.php');
                 ?>
                 <!-- Elemento -->
                 <div class="col-12 mycard">
@@ -103,10 +90,8 @@ if (isset($_SESSION['starplus']) ){
                                 <?php
                                 //include('timer.php');
                                 // Canales
-                                $canal = $result['canal'];
-                                $canal2 = $result['canal2'];
-                                $canal3 = $result['canal3'];
-                                include ('channels.php');
+                                include ('custom.php');
+                                include('channels.php');
                                 // Canal 2
                                 echo $canalop2;
                                 // Canal 3
@@ -114,7 +99,6 @@ if (isset($_SESSION['starplus']) ){
                                 // Canal 4
                                 echo $canalop4;
                                 // Custom Channels
-                                include ('custom.php');
                                 echo $custom1;
                                 echo $custom2;
                                 echo $custom3;
@@ -124,7 +108,7 @@ if (isset($_SESSION['starplus']) ){
                                 INNER JOIN countries ON channels.country = countries.countryId
                                 where channelId = '$canal4'");
                                 $row=mysqli_fetch_array($c4);
-                                if ($canal4 == null || $canal4 = ""){
+                                if ($canal4 === null || $canal4 === ""){
                                     // No mostramos nada
                                 } else{
                                 ?>
@@ -143,7 +127,7 @@ if (isset($_SESSION['starplus']) ){
                                 INNER JOIN countries ON channels.country = countries.countryId
                                 where channelId = '$canal5'");
                                 $row=mysqli_fetch_array($c5);
-                                if ($canal5 == null || $canal5 = ""){
+                                if ($canal5 === null || $canal5 === ""){
                                     // No mostramos nada
                                 } else{
                                 ?>
@@ -162,7 +146,7 @@ if (isset($_SESSION['starplus']) ){
                                 INNER JOIN countries ON channels.country = countries.countryId
                                 where channelId = '$canal6'");
                                 $row=mysqli_fetch_array($c6);
-                                if ($canal6 == null || $canal6 = ""){
+                                if ($canal6 === null || $canal6 === ""){
                                     // No mostramos nada
                                 } else{
                                 ?>
