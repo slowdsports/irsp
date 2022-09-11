@@ -28,27 +28,14 @@ if (isset($_SESSION['message']) ){
     <h4 class="subtitle">¡Disfruta de tu evento!</h4>
 </div>
 
-<!-- Alerta -->
-<?php
-if (isset($_SESSION['nbaError'])){
-?>
-<br>
-<div class="container">
-    <div class="alert alert-danger text-center" role="alert">
-    <?=$_SESSION['nbaError'];?>
-    </div>
-</div>
-<br>
-<?php unset($_SESSION['nbaError']); }?>
-<!-- *Alerta -->
 <!-- Categorías -->
     <div class="section mt-2">
         <div class="container">
             <div class="row">
                 <?php
                 // get DOM from URL or file
-                $peleas = mysqli_query($conn, "select * from tenis");
-                while($result=mysqli_fetch_array($peleas)){
+                $juegos = mysqli_query($conn, "select * from tennis");
+                while($result=mysqli_fetch_array($juegos)){
                     $index = $result['id'];
                     $tenista1 = $result['tenista1'];
                     $imagen1 = $result['imagen1'];
@@ -86,11 +73,11 @@ if (isset($_SESSION['nbaError'])){
                         <div class="card card-body">
                             <ul class="listview link-listview">
                                 <li>
-                                 <a class="justify-content-center" href="../../tv/epg?r=">
-                                 <i class="flag ar"></i>
-                                  Eurosport | HD
-                                   </a>
-                                   </li>
+                                    <a class="justify-content-center" href="../../tv/epg?r=">
+                                        <i class="flag ar"></i>
+                                        Eurosport | HD
+                                    </a>
+                                </li>
                             </ul>
                         </div>
                     </div>
@@ -104,5 +91,4 @@ if (isset($_SESSION['nbaError'])){
 <!-- End Categorías -->
 <?php
 include('../../inc/navbar.php');
-include ('custom.php');
 ?>
