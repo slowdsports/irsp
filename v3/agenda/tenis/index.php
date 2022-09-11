@@ -34,7 +34,7 @@ if (isset($_SESSION['message']) ){
             <div class="row">
                 <?php
                 // get DOM from URL or file
-                $juegos = mysqli_query($conn, "select * from tennis");
+                $juegos = mysqli_query($conn, "select * from tenis");
                 while($result=mysqli_fetch_array($juegos)){
                     $index = $result['id'];
                     $tenista1 = $result['tenista1'];
