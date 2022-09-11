@@ -99,7 +99,7 @@ $pet=mysqli_fetch_array($peticiones);
             </div>
             <div class="col-sm-4 grid-margin">
                 <div class="card">
-                    <a href="futbol.php">
+                    <a href="tenis.php">
                         <div class="card-body">
                             <i class="icon-md mdi mdi-tennis text-light ms-auto"></i>
                             <div class="row">
@@ -120,7 +120,7 @@ $pet=mysqli_fetch_array($peticiones);
             </div>
             <div class="col-sm-4 grid-margin">
                 <div class="card">
-                    <a href="futbol.php">
+                    <a href="ufc.php">
                         <div class="card-body">
                             <i class="icon-md mdi mdi-mixed-martial-arts text-light ms-auto"></i>
                             <div class="row">

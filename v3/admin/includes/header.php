@@ -134,6 +134,14 @@ $row=mysqli_fetch_assoc($query);
             </div>
           </li>
           <li class="nav-item menu-items">
+            <a class="nav-link" href="<?=$base?>repeticion.php">
+              <span class="menu-icon">
+                <i class="mdi mdi-video-vintage"></i>
+              </span>
+              <span class="menu-title">Repeticiones</span>
+            </a>
+          </li>
+          <li class="nav-item menu-items">
             <a class="nav-link" href="<?=$base?>xtream.php">
               <span class="menu-icon">
                 <i class="mdi mdi-view-dashboard"></i>
