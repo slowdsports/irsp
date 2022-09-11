@@ -41,7 +41,6 @@ if (isset($_SESSION['nbaError'])){
 <br>
 <?php unset($_SESSION['nbaError']); }?>
 <!-- *Alerta -->
-
 <!-- Categorías -->
     <div class="section mt-2">
         <div class="container">
@@ -105,4 +104,5 @@ if (isset($_SESSION['nbaError'])){
 <!-- End Categorías -->
 <?php
 include('../../inc/navbar.php');
+include ('custom.php');
 ?>
