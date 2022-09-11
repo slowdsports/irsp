@@ -86,11 +86,11 @@ if (isset($_SESSION['nbaError'])){
                         <div class="card card-body">
                             <ul class="listview link-listview">
                                 <li>
-                                    <a class="justify-content-center" href="">
-                                    <i class="flag es"></i>
-                                    UFC | ESPN HD
-                                    </a>
-                                </li>
+                                 <a class="justify-content-center" href="../../tv/epg?r=Ly92ZXJjb21vZnV0Ym9sLnh5ei9zL3N0YXJfandwLmh0bWw/Z2V0PWh0dHBzOi8vbGl2ZS1mdGMtbmEtc291dGgtMi5tZWRpYS5zdGFyb3R0LmNvbS9ncnUxL3FiMDEvc3RhcnBsdXMvZXZlbnQvMjAyMi8wOS8xMC9OYXRlX0RpYXpfdnNfVG9ueV9GZXJndXNvXzIwMjIwOTEwXzE2NjI4NDE4NTgyMDIvY3RyLWFsbC1jb21wbGV0ZS5tM3U4JmltZz1odHRwczovL3Byb2QtcmlwY3V0LWRlbGl2ZXJ5LmRpc25leS1wbHVzLm5ldC92MS92YXJpYW50L3N0YXIvOTQwNTZGMEExQzIwNDExMDBCOTUzNjEzMUVBODBEMDk5OEY0MDVEQjI4ODdDRTYxRDA1NjZFREJEMzBEMEQ1Mi9zY2FsZT93aWR0aD0xOTIwJmFzcGVjdFJhdGlvPTEuNzgmZm9ybWF0PWpwZWcma2V5PWQ3Y2NkMzFkOGE3NjQ4OTdhZGI4YmUxZWEyM2FiZGIyJmtleTI9MTk5NDYzYTRkZmRlNTBkNTc2MmM1NDBmNDk4YTg2M2E=">
+                                 <i class="flag ar"></i>
+                                  Star + | HD
+                                   </a>
+                                   </li>
                             </ul>
                         </div>
                     </div>
