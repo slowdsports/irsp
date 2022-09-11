@@ -67,7 +67,6 @@ if (isset($_SESSION['nbaError'])){
                 // get DOM from URL or file
                 $html = file_get_html('https://www.espn.com.mx/futbol-americano/nfl/calendario');
                 $fecha = $html -> find ('div.Table__Title' ,0)-> plaintext;
-                echo $fecha;
                 $juegos = $html ->find ('tbody tr');
                 foreach ($juegos as $juego):
                     $local = $juego ->find ('td div.local span a',1)-> plaintext;

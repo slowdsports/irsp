@@ -1,16 +1,14 @@
 <?php
 include('scraper.php');
 // CALL URL CUSTOMIZED
-//$base = "https://www.futbolenlatv.es/competicion/premier-league";
+//$baseUrl = "https://www.espn.com.mx/futbol-americano/nfl/calendario";
 // get DOM from URL or file
 $html = file_get_html($baseUrl);
-// MAIN ELEMENT
-$juego = $html ->find ('tr');
-$fechas = $html ->find ('tr.cabeceraTabla');
 // INDEX
 $i = 1;
 $i2 = 1;
 
+$juegos = $html ->find ('tbody tr');
 foreach ($juegos as $juego){
     $local = $juego ->find ('td div.local span a',1)-> plaintext;
     $localFull = $juego ->find ('td div.local span a',0)-> href;
@@ -20,18 +18,6 @@ foreach ($juegos as $juego){
     $visitaFull = $juego ->find ('td div.matchTeams span a',0)-> href;
     $visitaFull = substr($visitaFull, 33, 100);
     $visitaLogo = $juego ->find ('td div.matchTeams span a img',0)-> src;
-    //Resultado $time = $juego ->find ('td a',4)-> plaintext;
-    $time = $juego ->find ('td',2)-> plaintext;
-    if (!$time){
-        $time = $juego ->find ('td.date__col a.AnchorLink',0)-> plaintext;
-        $finalizado = "";
-    }
-    if ($time == "LIVE"){
-        $time = '<i class="fas fa-circle faa-flash animated"></i> En Vivo';
-        $finalizado = "";
-    }
-    // Teams
-    include ('teams.php');
 
 // Agregamos los campos a la DB
 if (isset($_POST['create'])){
