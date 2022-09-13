@@ -126,6 +126,11 @@ if ($result['ligaImg'] == 18){
     $visita = str_replace("tottenham", "Tottenham Hotspur", $visita);
     $visita = str_replace("westham", "West Ham United", $visita);
     $visita = str_replace("wolves", "Wolverhampton", $visita);
+
+    //Bundesliga
+    $local = str_replace("eintrachtfrankfurt", "Eintracht", $local);
+    $visita = str_replace("eintrachtfrankfurt", "Eintracht", $visita);
+
     //Liga PRO Ecuador
     $local = str_replace("FC Barcelonasc", "Barcelona", $local);
     $local = str_replace("lduquito", "LDU Quito", $local);
