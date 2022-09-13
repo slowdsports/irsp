@@ -91,7 +91,7 @@ if ($result['local'] === "marseille"){
 
 if ($result['local'] === "porto"){
     $canalImg = "starplus";
-    $r= "";
+    $r= "Ly92ZXJjb21vZnV0Ym9sLnh5ei9zL3N0YXJfandwLmh0bWw/Z2V0PWh0dHBzOi8vbGl2ZS1mdGMtbmEtc291dGgtMi5tZWRpYS5zdGFyb3R0LmNvbS9ncnUxL3FiMDEvc3RhcnBsdXMvZXZlbnQvMjAyMi8wOS8xMy9GQ19Qb3J0b192c19DbHViX0JydWdnZV8yMDIyMDkxM18xNjYzMDg5MDU1MDM1L2N0ci1hbGwtY29tcGxldGUubTN1OCZpbWc9aHR0cHM6Ly9wcm9kLXJpcGN1dC1kZWxpdmVyeS5kaXNuZXktcGx1cy5uZXQvdjEvdmFyaWFudC9zdGFyL0Y2MjAxN0VBMzQ3MTQ2OTI0MUQzN0QyN0IyMjBDOEFGODE0MkVCOEMzRTA2N0NDNTA4REI0RTZDNUY5MTE1MTUvc2NhbGU/d2lkdGg9MTkyMCZhc3BlY3RSYXRpbz0xLjc4JmZvcm1hdD1qcGVnJmtleT00MDZlOWE0ZGQwZjM0NDhhYTcyMWRmYTliNmQ3ZjhlNyZrZXkyPTU5MmZlMzdlZGRiNTZkMWNhYzMxY2Y5OTkwMmVlOWIx";
     $custom1 = '
     <li>
         <a class="justify-content-center" href="../../../tv/epg?r='.$r.'">
