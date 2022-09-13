@@ -55,6 +55,27 @@ if($canal === "M+ Liga de Campeones 2" || $canal === "mlcamp2"){
     </li>';
 }
 
+if($canal === "M+ Liga de Campeones 3" || $canal === "mlcamp3"){
+    $canalImg = "campeones";
+    $canalop2 = '
+    <li>
+        <a class="justify-content-center" href="../../play?c=mlcamp3">
+        <i class="flag es"></i>
+        Movistar Liga de Campeones 3 | VIP HD
+        </a>
+    </li>';
+} elseif($canal2 === "M+ Liga de Campeones 3" || $canal2 === "mlcamp3"){
+    $canalImg = "campeones";
+    $canalop4 = '
+    <li>
+        <a class="justify-content-center" href="https://irpc.ga/mg/play/sandbox.php?get=mlcamp3">
+        <i class="flag es"></i>
+        Movistar Liga de Campeones 3 | HD
+        </a>
+    </li>';
+}
+
+
 if($canal === "M+ Liga de Campeones 4" || $canal === "mlcamp4"){
     $canalImg = "campeones";
     $canalop2 = '

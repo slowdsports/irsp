@@ -26,7 +26,7 @@ switch ($channel){
     $server.$usuario."/".$password."/"."15".".m3u8"; break;
     case 'mlaliga2' : $channel=
     $server.$usuario."/".$password."/"."16".".m3u8"; break;
-    case 'mlcamp' : $channel = 
+    case 'mlcamp' : $channel =
     $server.$usuario."/".$password."/"."17".".m3u8"; break;
     case 'mlcamp4' : $channel=
     $server.$usuario."/".$password."/"."38".".m3u8"; break;
@@ -52,6 +52,8 @@ switch ($channel){
     $server.$usuario."/".$password."/"."27".".m3u8"; break;
     case 'daznf1' : $channel=
     $server.$usuario."/".$password."/"."28".".m3u8"; break;
+    case 'mlcamp3' : $channel=
+    $server.$usuario."/".$password."/"."30".".m3u8"; break;
     case 'mlcampsd' : $channel =
     $server.$usuario."/".$password."/"."32".".m3u8"; break;
     case 'barsd' : $channel =
@@ -68,43 +70,43 @@ switch ($channel){
     // http://spliktv-edge2.wedrly.xyz/live/vod/ESPN2HD/SA_Live_WebVTT_FTA/ESPN2HD.m3u8;
     // https://edge10-hr.cvattv.com.ar/live/c3eds/ESPN3/SA_SAGEMCOM/ESPN3.m3u8
     // FOX SPORTS: https://edge1-hr.cvattv.com.ar/live/c3eds/FoxSports/SA_SAGEMCOM/FoxSports.m3u8
-    
-    
+
+
     // FutboLibre
     // DEPORTES
     case 'espnsur' : $channel =
     "http://arlocaltstvhls.lcdn.clarotv.com.ar/Content/HLS_HLS_FK/Live/channel(ESPN)/index.m3u8"; break;
-    
+
     case 'espn2sur' : $channel =
     "http://arlocaltstvhls.lcdn.clarotv.com.ar/Content/HLS_HLS_FK/Live/channel(ESPN2)/index.m3u8"; break;
-    
+
     case 'espn3sur' : $channel =
     "http://arlocaltstvhls.lcdn.clarotv.com.ar/Content/HLS_HLS_FK/Live/channel(ESPN3)/index.m3u8"; break;
-    
+
     case 'espnextra' : $channel =
     "http://arlocaltstvhls.lcdn.clarotv.com.ar/Content/HLS_HLS_FK/Live/channel(ESPN_EXTRA)/index.m3u8"; break;
-    
+
     case 'foxsports' : $channel =
     "http://arlocaltstvhls.lcdn.clarotv.com.ar/Content/HLS_HLS_FK/Live/channel(FOX_SPORTS)/index.m3u8"; break;
-    
+
     case 'foxsports2' : $channel =
     "http://arlocaltstvhls.lcdn.clarotv.com.ar/Content/HLS_HLS_FK/Live/channel(FOX_SPORTS_2)/index.m3u8"; break;
-    
+
     case 'foxsports3' : $channel =
     "http://arlocaltstvhls.lcdn.clarotv.com.ar/Content/HLS_HLS_FK/Live/channel(FOX_SPORTS_3)/index.m3u8"; break;
-    
+
     case 'foxsportspremium' : $channel =
     "http://arlocaltstvhls.lcdn.clarotv.com.ar/Content/HLS_HLS_FK/Live/channel(FOX_SPORTS_PREMIUM)/index.m3u8"; break;
-    
+
     case 'tntsports' : $channel =
     "http://arlocaltstvhls.lcdn.clarotv.com.ar/Content/HLS_HLS_FK/Live/channel(TNT_SPORTS)/index.m3u8"; break;
-    
+
     case 'tvmax' : $channel =
     "https://bcovlive-a.akamaihd.net/7482a528b34142c9a11b4285307632d0/us-west-2/6058004209001/playlist_dvr.m3u8"; break;
-    
+
     case 'deportv' : $channel =
     "http://arlocaltstvhls.lcdn.clarotv.com.ar/Content/HLS_HLS_FK/Live/channel(DEPORTV)/index.m3u8"; break;
-    
+
     case 'turbo' : $channel =
     "http://arlocaltstvhls.lcdn.clarotv.com.ar/Content/HLS_HLS_FK/Live/channel(DISCOVERY_TURBO)/index.m3u8"; break;
 }
