@@ -39,7 +39,7 @@ if ($result['visita'] === "tottenham"){
 
 if ($result['local'] === "bayern"){
     $canalImg = "starplus";
-    $r= "";
+    $r= "Ly92ZXJjb21vZnV0Ym9sLnh5ei9zL3N0YXJfandwLmh0bWw/Z2V0PWh0dHBzOi8vbGl2ZS1mdGMtbmEtc291dGgtMi5tZWRpYS5zdGFyb3R0LmNvbS9ncnUxL3FiMDEvc3RhcnBsdXMvZXZlbnQvMjAyMi8wOS8xMy9CYXllcm5fTXVuaWNoX3ZzX0ZDX0JhcmNlXzIwMjIwOTEzXzE2NjMwODkwNTcwMzAvY3RyLWFsbC1jb21wbGV0ZS5tM3U4JmltZz1odHRwczovL3Byb2QtcmlwY3V0LWRlbGl2ZXJ5LmRpc25leS1wbHVzLm5ldC92MS92YXJpYW50L3N0YXIvQUM0RTgwODlEMkU2NUI2N0E5OTA3ODdBMjI4NEZEMkE5QzY3RTQ0MTA3ODVDNTU5MTI0NUNFMDEyREIzMkQ1QS9zY2FsZT93aWR0aD0xOTIwJmFzcGVjdFJhdGlvPTEuNzgmZm9ybWF0PWpwZWcma2V5PWY0NTk1MWFkZWVlNTRkYmVhMGY1M2U2YzkxYTUxMTY0JmtleTI9MzhlM2VhMGRmNWVlOWQyZmFhOTllMjZkY2ZmZmI4YmE=";
     $custom1 = '
     <li>
         <a class="justify-content-center" href="../../../tv/epg?r='.$r.'">
@@ -52,7 +52,7 @@ if ($result['local'] === "bayern"){
 
 if ($result['local'] === "leverkusen"){
     $canalImg = "starplus";
-    $r= "";
+    $r= "Ly92ZXJjb21vZnV0Ym9sLnh5ei9zL3N0YXJfandwLmh0bWw/Z2V0PWh0dHBzOi8vbGl2ZS1mdGMtbmEtc291dGgtMi5tZWRpYS5zdGFyb3R0LmNvbS9ncnUxL3FiMDEvc3RhcnBsdXMvZXZlbnQvMjAyMi8wOS8xMy9CYXllcl9MZXZlcmt1c2VuX3ZzX0F0bHRpXzIwMjIwOTEzXzE2NjMwODkwMzAwNzMvY3RyLWFsbC1jb21wbGV0ZS5tM3U4JmltZz1odHRwczovL3Byb2QtcmlwY3V0LWRlbGl2ZXJ5LmRpc25leS1wbHVzLm5ldC92MS92YXJpYW50L3N0YXIvRDA5MEMyQ0VEQzVCNzQ4NDI2M0Y4N0NFRkEyQjNFMjUyMDhFRUJCOUE0OUYzQUFDRkIwRjFBOTU2NDMwNzNBMS9zY2FsZT93aWR0aD0xOTIwJmFzcGVjdFJhdGlvPTEuNzgmZm9ybWF0PWpwZWcma2V5PTAxNWZjNzc2YjFlMDQ4ZGNhYjEyYjgyZDBlNzUzMDRkJmtleTI9NmJhZDZkMmY0MWZjMmM2YmRhYjE5OWQ1NGYwZDliYTY=";
     $custom1 = '
     <li>
         <a class="justify-content-center" href="../../../tv/epg?r='.$r.'">
@@ -65,7 +65,7 @@ if ($result['local'] === "leverkusen"){
 
 if ($result['local'] === "liverpool"){
     $canalImg = "starplus";
-    $r= "";
+    $r= "Ly92ZXJjb21vZnV0Ym9sLnh5ei9zL3N0YXJfandwLmh0bWw/Z2V0PWh0dHBzOi8vbGl2ZS1mdGMtbmEtc291dGgtMi5tZWRpYS5zdGFyb3R0LmNvbS9ncnUxL3FiMDEvc3RhcnBsdXMvZXZlbnQvMjAyMi8wOS8xMy9MaXZlcnBvb2xfdnNfQWpheF8yMDIyMDkxM18xNjYzMDg5MDUwMDQ0L2N0ci1hbGwtY29tcGxldGUubTN1OCZpbWc9aHR0cHM6Ly9wcm9kLXJpcGN1dC1kZWxpdmVyeS5kaXNuZXktcGx1cy5uZXQvdjEvdmFyaWFudC9zdGFyLzdFNUM5OTcyQjA5M0ZCODEwOTg0ODkzQjk1OTZDQkNBNUVERkU5NTJEMjU4REM5MUUzRDA5MTU4RUY2NjlGQjEvc2NhbGU/d2lkdGg9MTkyMCZhc3BlY3RSYXRpbz0xLjc4JmZvcm1hdD1qcGVnJmtleT1kYzNmNDYwMDNjOWU0MmIxYTZiMmE4YTE4MjA4ODJmMyZrZXkyPTZkM2NkOGY2Y2JkNGRkOGRmZGU1N2E0YTE1ZWRhZWEw";
     $custom1 = '
     <li>
         <a class="justify-content-center" href="../../../tv/epg?r='.$r.'">
