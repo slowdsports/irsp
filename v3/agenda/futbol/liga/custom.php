@@ -101,3 +101,29 @@ if ($result['local'] === "porto"){
     </li>
     ';
 }
+
+if ($result['local'] === "milan"){
+    $canalImg = "starplus";
+    $r= "Ly92ZXJjb21vZnV0Ym9sLnh5ei9zL3N0YXJfandwLmh0bWw/Z2V0PWh0dHBzOi8vbGl2ZS1mdGMtbmEtc291dGgtMi5tZWRpYS5zdGFyb3R0LmNvbS9ncnUxL3FiMDEvc3RhcnBsdXMvZXZlbnQvMjAyMi8wOS8xNC9BQ19NaWxhbl92c19EaW5hbW9fWmFncmViXzIwMjIwOTE0XzE2NjMxNjc2MzQwMjgvY3RyLWFsbC1jb21wbGV0ZS5tM3U4JmltZz1odHRwczovL3Byb2QtcmlwY3V0LWRlbGl2ZXJ5LmRpc25leS1wbHVzLm5ldC92MS92YXJpYW50L3N0YXIvNEU3RkM1M0NBNDk0MDRFQzg3QkEzRUU0MTUwRjk5RTYxMTUxMDMyQTc4NjZEMzcwMjE4ODEwMTY0RDA1Mjk0OC9zY2FsZT93aWR0aD0xOTIwJmFzcGVjdFJhdGlvPTEuNzgmZm9ybWF0PWpwZWcma2V5PTViMmNjYzEwN2FkMDRmZGE4NDM4M2IyZjAyNWUyZTY3JmtleTI9ZjZjY2I4ZGUzZDllODQwNTI0NmI3MTdiYjhlODY4NjI=";
+    $custom1 = '
+    <li>
+        <a class="justify-content-center" href="../../../tv/epg?r='.$r.'">
+        <i class="flag ar"></i>
+        Star + | HD
+        </a>
+    </li>
+    ';
+}
+
+if ($result['local'] === "shaktar"){
+    $canalImg = "starplus";
+    $r= "Ly92ZXJjb21vZnV0Ym9sLnh5ei9zL3N0YXJfandwLmh0bWw/Z2V0PWh0dHBzOi8vbGl2ZS1mdGMtbmEtc291dGgtMi5tZWRpYS5zdGFyb3R0LmNvbS9ncnUxL3FiMDEvc3RhcnBsdXMvZXZlbnQvMjAyMi8wOS8xNC9GQ19TaGFraHRhcl9Eb25ldHNrX3ZzX0NlXzIwMjIwOTE0XzE2NjMxNjc2MDIwMzAvY3RyLWFsbC1jb21wbGV0ZS5tM3U4JmltZz1odHRwczovL3Byb2QtcmlwY3V0LWRlbGl2ZXJ5LmRpc25leS1wbHVzLm5ldC92MS92YXJpYW50L3N0YXIvQ0ZERjEwOTVEMjkyMTY0MEIxRUIwM0FFMzFBQTM4ODA4RTQwRjNBMzJFNUI4NkM0MTQ2NTkxRjFFODRGN0Y1OC9zY2FsZT93aWR0aD0xOTIwJmFzcGVjdFJhdGlvPTEuNzgmZm9ybWF0PWpwZWcma2V5PWYxYzI3Njk5Y2M4MzQ4NDBhMDlmNjg0YWMxZWVmOGRkJmtleTI9ODAzNzI3YTljY2VmM2YzNDdmYzVjZmQ5YTY3NTFjNGQ=";
+    $custom1 = '
+    <li>
+        <a class="justify-content-center" href="../../../tv/epg?r='.$r.'">
+        <i class="flag ar"></i>
+        Star + | HD
+        </a>
+    </li>
+    ';
+}
