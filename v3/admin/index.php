@@ -141,7 +141,7 @@ $pet=mysqli_fetch_array($peticiones);
             </div>
             <div class="col-sm-4 grid-margin">
                 <div class="card">
-                    <a href="ufc.php">
+                    <a href="balonmano.php">
                         <div class="card-body">
                             <i class="icon-md mdi mdi-mixed-martial-arts text-light ms-auto"></i>
                             <div class="row">
