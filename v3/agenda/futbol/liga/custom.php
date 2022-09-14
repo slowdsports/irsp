@@ -127,3 +127,95 @@ if ($result['local'] === "shaktar"){
     </li>
     ';
 }
+
+
+if ($result['local'] === "realmadrid"){
+    $canalImg = "starplus";
+    $r= "Ly92ZXJjb21vZnV0Ym9sLnh5ei9zL3N0YXJfandwLmh0bWw/Z2V0PWh0dHBzOi8vbGl2ZS1mdGMtbmEtc291dGgtMi5tZWRpYS5zdGFyb3R0LmNvbS9ncnUxL3FiMDEvc3RhcnBsdXMvZXZlbnQvMjAyMi8wOS8xNC9GQ19TaGFraHRhcl9Eb25ldHNrX3ZzX0NlXzIwMjIwOTE0XzE2NjMxNjc2MDIwMzAvY3RyLWFsbC1jb21wbGV0ZS5tM3U4JmltZz1odHRwczovL3Byb2QtcmlwY3V0LWRlbGl2ZXJ5LmRpc25leS1wbHVzLm5ldC92MS92YXJpYW50L3N0YXIvQ0ZERjEwOTVEMjkyMTY0MEIxRUIwM0FFMzFBQTM4ODA4RTQwRjNBMzJFNUI4NkM0MTQ2NTkxRjFFODRGN0Y1OC9zY2FsZT93aWR0aD0xOTIwJmFzcGVjdFJhdGlvPTEuNzgmZm9ybWF0PWpwZWcma2V5PWYxYzI3Njk5Y2M4MzQ4NDBhMDlmNjg0YWMxZWVmOGRkJmtleTI9ODAzNzI3YTljY2VmM2YzNDdmYzVjZmQ5YTY3NTFjNGQ=";
+    $custom1 = '
+    <li>
+        <a class="justify-content-center" href="../../../tv/epg?r='.$r.'">
+        <i class="flag ar"></i>
+        Star + | HD
+        </a>
+    </li>
+    ';
+}
+
+if ($result['local'] === "copenhague"){
+    $canalImg = "starplus";
+    $r= "Ly92ZXJjb21vZnV0Ym9sLnh5ei9zL3N0YXJfandwLmh0bWw/Z2V0PWh0dHBzOi8vbGl2ZS1mdGMtbmEtc291dGgtMi5tZWRpYS5zdGFyb3R0LmNvbS9ncnUxL3FiMDEvc3RhcnBsdXMvZXZlbnQvMjAyMi8wOS8xNC9GQ19TaGFraHRhcl9Eb25ldHNrX3ZzX0NlXzIwMjIwOTE0XzE2NjMxNjc2MDIwMzAvY3RyLWFsbC1jb21wbGV0ZS5tM3U4JmltZz1odHRwczovL3Byb2QtcmlwY3V0LWRlbGl2ZXJ5LmRpc25leS1wbHVzLm5ldC92MS92YXJpYW50L3N0YXIvQ0ZERjEwOTVEMjkyMTY0MEIxRUIwM0FFMzFBQTM4ODA4RTQwRjNBMzJFNUI4NkM0MTQ2NTkxRjFFODRGN0Y1OC9zY2FsZT93aWR0aD0xOTIwJmFzcGVjdFJhdGlvPTEuNzgmZm9ybWF0PWpwZWcma2V5PWYxYzI3Njk5Y2M4MzQ4NDBhMDlmNjg0YWMxZWVmOGRkJmtleTI9ODAzNzI3YTljY2VmM2YzNDdmYzVjZmQ5YTY3NTFjNGQ=";
+    $custom1 = '
+    <li>
+        <a class="justify-content-center" href="../../../tv/epg?r='.$r.'">
+        <i class="flag ar"></i>
+        Star + | HD
+        </a>
+    </li>
+    ';
+}
+
+if ($result['local'] === "manchester city"){
+    $canalImg = "starplus";
+    $r= "Ly92ZXJjb21vZnV0Ym9sLnh5ei9zL3N0YXJfandwLmh0bWw/Z2V0PWh0dHBzOi8vbGl2ZS1mdGMtbmEtc291dGgtMi5tZWRpYS5zdGFyb3R0LmNvbS9ncnUxL3FiMDEvc3RhcnBsdXMvZXZlbnQvMjAyMi8wOS8xNC9NYW5jaGVzdGVyX0NpdHlfdnNfQm9ydXNzXzIwMjIwOTE0XzE2NjMxNzU0NDIwMzIvY3RyLWFsbC1jb21wbGV0ZS5tM3U4JmltZz1odHRwczovL3Byb2QtcmlwY3V0LWRlbGl2ZXJ5LmRpc25leS1wbHVzLm5ldC92MS92YXJpYW50L3N0YXIvOThFMDlGMDJFNEZBRDM0ODlBRDcyMDk2QkZBODE1NzY3NTI4NUE2MDk1N0U5MDRBNUM5MkE2Q0VDM0M5NjkxOS9zY2FsZT93aWR0aD0xOTIwJmFzcGVjdFJhdGlvPTEuNzgmZm9ybWF0PWpwZWcma2V5PWI3NTEyMDRjYTJlODRhNjI4NzVhNTE1NjBiZmI0NDg5JmtleTI9YjgxYjZhYzBkYTcxOWU4OGYwNTk0ZDcwMWFhZWJhOWE=";
+    $custom1 = '
+    <li>
+        <a class="justify-content-center" href="../../../tv/epg?r='.$r.'">
+        <i class="flag ar"></i>
+        Star + | HD
+        </a>
+    </li>
+    ';
+}
+
+if ($result['local'] === "juventus"){
+    $canalImg = "starplus";
+    $r= "Ly92ZXJjb21vZnV0Ym9sLnh5ei9zL3N0YXJfandwLmh0bWw/Z2V0PWh0dHBzOi8vbGl2ZS1mdGMtbmEtc291dGgtMi5tZWRpYS5zdGFyb3R0LmNvbS9ncnUxL3FiMDEvc3RhcnBsdXMvZXZlbnQvMjAyMi8wOS8xNC9GQ19TaGFraHRhcl9Eb25ldHNrX3ZzX0NlXzIwMjIwOTE0XzE2NjMxNjc2MDIwMzAvY3RyLWFsbC1jb21wbGV0ZS5tM3U4JmltZz1odHRwczovL3Byb2QtcmlwY3V0LWRlbGl2ZXJ5LmRpc25leS1wbHVzLm5ldC92MS92YXJpYW50L3N0YXIvQ0ZERjEwOTVEMjkyMTY0MEIxRUIwM0FFMzFBQTM4ODA4RTQwRjNBMzJFNUI4NkM0MTQ2NTkxRjFFODRGN0Y1OC9zY2FsZT93aWR0aD0xOTIwJmFzcGVjdFJhdGlvPTEuNzgmZm9ybWF0PWpwZWcma2V5PWYxYzI3Njk5Y2M4MzQ4NDBhMDlmNjg0YWMxZWVmOGRkJmtleTI9ODAzNzI3YTljY2VmM2YzNDdmYzVjZmQ5YTY3NTFjNGQ=";
+    $custom1 = '
+    <li>
+        <a class="justify-content-center" href="../../../tv/epg?r='.$r.'">
+        <i class="flag ar"></i>
+        Star + | HD
+        </a>
+    </li>
+    ';
+}
+
+if ($result['local'] === "haifa"){
+    $canalImg = "starplus";
+    $r= "Ly92ZXJjb21vZnV0Ym9sLnh5ei9zL3N0YXJfandwLmh0bWw/Z2V0PWh0dHBzOi8vbGl2ZS1mdGMtbmEtc291dGgtMi5tZWRpYS5zdGFyb3R0LmNvbS9ncnUxL3FiMDEvc3RhcnBsdXMvZXZlbnQvMjAyMi8wOS8xNC9NYWNjYWJpX0hhaWZhX3ZzX1BTR19GQ19GXzIwMjIwOTE0XzE2NjMxNzU0MTMwMjQvY3RyLWFsbC1jb21wbGV0ZS5tM3U4JmltZz1odHRwczovL3Byb2QtcmlwY3V0LWRlbGl2ZXJ5LmRpc25leS1wbHVzLm5ldC92MS92YXJpYW50L3N0YXIvNUU0MEVBQUVGRDIzMEIxNUY1MENFRjEwQ0JFNUFCMDk2NjdCRTQyRjFBM0VDQ0U4OEY5OUEzMUNBNzY0NTI4Qy9zY2FsZT93aWR0aD0xOTIwJmFzcGVjdFJhdGlvPTEuNzgmZm9ybWF0PWpwZWcma2V5PTYzZmIyMTdkOTMzMjQwODNhMzg1NThmOTUwNmEyMTliJmtleTI9NDUwZjlmMzg4NmVjYTg2YmQ2ZGRmYzJlMGY1NDIzYmI=";
+    $custom1 = '
+    <li>
+        <a class="justify-content-center" href="../../../tv/epg?r='.$r.'">
+        <i class="flag ar"></i>
+        Star + | HD
+        </a>
+    </li>
+    ';
+}
+
+if ($result['local'] === "chelsea"){
+    $canalImg = "starplus";
+    $r= "Ly92ZXJjb21vZnV0Ym9sLnh5ei9zL3N0YXJfandwLmh0bWw/Z2V0PWh0dHBzOi8vbGl2ZS1mdGMtbmEtc291dGgtMi5tZWRpYS5zdGFyb3R0LmNvbS9ncnUxL3FiMDEvc3RhcnBsdXMvZXZlbnQvMjAyMi8wOS8xNC9GQ19TaGFraHRhcl9Eb25ldHNrX3ZzX0NlXzIwMjIwOTE0XzE2NjMxNjc2MDIwMzAvY3RyLWFsbC1jb21wbGV0ZS5tM3U4JmltZz1odHRwczovL3Byb2QtcmlwY3V0LWRlbGl2ZXJ5LmRpc25leS1wbHVzLm5ldC92MS92YXJpYW50L3N0YXIvQ0ZERjEwOTVEMjkyMTY0MEIxRUIwM0FFMzFBQTM4ODA4RTQwRjNBMzJFNUI4NkM0MTQ2NTkxRjFFODRGN0Y1OC9zY2FsZT93aWR0aD0xOTIwJmFzcGVjdFJhdGlvPTEuNzgmZm9ybWF0PWpwZWcma2V5PWYxYzI3Njk5Y2M4MzQ4NDBhMDlmNjg0YWMxZWVmOGRkJmtleTI9ODAzNzI3YTljY2VmM2YzNDdmYzVjZmQ5YTY3NTFjNGQ=";
+    $custom1 = '
+    <li>
+        <a class="justify-content-center" href="../../../tv/epg?r='.$r.'">
+        <i class="flag ar"></i>
+        Star + | HD
+        </a>
+    </li>
+    ';
+}
+
+if ($result['local'] === "rangers"){
+    $canalImg = "starplus";
+    $r= "Ly92ZXJjb21vZnV0Ym9sLnh5ei9zL3N0YXJfandwLmh0bWw/Z2V0PWh0dHBzOi8vbGl2ZS1mdGMtbmEtc291dGgtMi5tZWRpYS5zdGFyb3R0LmNvbS9ncnUxL3FiMDEvc3RhcnBsdXMvZXZlbnQvMjAyMi8wOS8xNC9GQ19TaGFraHRhcl9Eb25ldHNrX3ZzX0NlXzIwMjIwOTE0XzE2NjMxNjc2MDIwMzAvY3RyLWFsbC1jb21wbGV0ZS5tM3U4JmltZz1odHRwczovL3Byb2QtcmlwY3V0LWRlbGl2ZXJ5LmRpc25leS1wbHVzLm5ldC92MS92YXJpYW50L3N0YXIvQ0ZERjEwOTVEMjkyMTY0MEIxRUIwM0FFMzFBQTM4ODA4RTQwRjNBMzJFNUI4NkM0MTQ2NTkxRjFFODRGN0Y1OC9zY2FsZT93aWR0aD0xOTIwJmFzcGVjdFJhdGlvPTEuNzgmZm9ybWF0PWpwZWcma2V5PWYxYzI3Njk5Y2M4MzQ4NDBhMDlmNjg0YWMxZWVmOGRkJmtleTI9ODAzNzI3YTljY2VmM2YzNDdmYzVjZmQ5YTY3NTFjNGQ=";
+    $custom1 = '
+    <li>
+        <a class="justify-content-center" href="../../../tv/epg?r='.$r.'">
+        <i class="flag ar"></i>
+        Star + | HD
+        </a>
+    </li>
+    ';
+}
