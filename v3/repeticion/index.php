@@ -32,7 +32,8 @@ if (isset($_SESSION['message']) ){
     <div class="section mt-2">
         <div class="row">
             <?php
-            $ligas = mysqli_query($conn, "select * from ligas");
+            $ligas = mysqli_query($conn, "select * from ligas
+            ORDER BY rand()");
             while($result=mysqli_fetch_array($ligas)){
                 // Cantidad de Juegos
                 $index = $result['ligaId'];
