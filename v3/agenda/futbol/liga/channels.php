@@ -85,15 +85,6 @@ if($canal === "M+ Liga de Campeones 4" || $canal === "mlcamp4"){
         Movistar Liga de Campeones 4 | VIP HD
         </a>
     </li>';
-} elseif($canal2 === "M+ Liga de Campeones 4" || $canal2 === "mlcamp4"){
-    $canalImg = "campeones";
-    $canalop4 = '
-    <li>
-        <a class="justify-content-center" href="https://irpc.ga/mg/play/sandbox.php?get=mlcamp4">
-        <i class="flag es"></i>
-        Movistar Liga de Campeones 4 | HD
-        </a>
-    </li>';
 }
 
 if($canal === "M+ Liga de Campeones 5" || $canal === "mlcamp5"){
