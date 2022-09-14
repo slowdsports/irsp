@@ -130,6 +130,7 @@ $row=mysqli_fetch_assoc($query);
                 <li class="nav-item"> <a class="nav-link" href="<?=$base?>equipos.php">Equipos</a></li>
                 <li class="nav-item"> <a class="nav-link" href="<?=$base?>ufc.php">UFC</a></li>
                 <li class="nav-item"> <a class="nav-link" href="<?=$base?>tenis.php">Tenis</a></li>
+                <li class="nav-item"> <a class="nav-link" href="<?=$base?>balonmano.php">Tenis</a></li>
               </ul>
             </div>
           </li>

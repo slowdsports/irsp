@@ -141,6 +141,27 @@ $pet=mysqli_fetch_array($peticiones);
             </div>
             <div class="col-sm-4 grid-margin">
                 <div class="card">
+                    <a href="ufc.php">
+                        <div class="card-body">
+                            <i class="icon-md mdi mdi-mixed-martial-arts text-light ms-auto"></i>
+                            <div class="row">
+                                <div class="col-8 col-sm-12 col-xl-8 my-auto">
+                                    <div class="d-flex d-sm-block d-md-flex align-items-center">
+                                        <h2 class="mb-0">Juegos</h2>
+                                        <!-- <p class="text-success ms-2 mb-0 font-weight-medium">+3.5%</p> -->
+                                    </div>
+                                    <h6 class="text-muted font-weight-normal">de Balonmano programadas</h6>
+                                </div>
+                                <div class="col-4 col-sm-12 col-xl-4 text-center text-xl-right">
+                                    <h3><?=$totalBalonmano?></h3>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="col-sm-4 grid-margin">
+                <div class="card">
                     <a href="canales.php">
                         <div class="card-body">
                             <i class="icon-md mdi mdi-television-guide text-light ms-auto"></i>
