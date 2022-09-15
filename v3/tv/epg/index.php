@@ -93,6 +93,10 @@ if (isset($_SESSION['message']) ){
     </center>
 </div>
 
+<!-- Anuncio -->
+<div id="container-4da3cd607f700415595dd2eb6ec0456b"></div>
+<!-- *Anuncio -->
+
 <!-- Evento en directo -->
 <hr>
 <div class="container <?=$epgStatus?>">
