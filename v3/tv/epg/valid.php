@@ -121,5 +121,26 @@ elseif ($typeChannel == 9){
     let getKEY2 = "'.$getKEY2.'";
     </script>
     <style>#jwp{display:block!important} #iframe-element{display:none!important;} #vidarea{display:none} #player_img{display:none}</style>';
-    }
+} // Twitch
+elseif($typeChannel == 10){
+    $twitchEmbed = '<div id="twitch-embed"></div>
+    <script src="https://embed.twitch.tv/embed/v1.js"></script>
+    <script type="text/javascript">
+        var embed = new Twitch.Embed("twitch-embed", {
+            width: "100%",
+            height: "480",
+            channel: atob("'.$channel.'"),
+            layout: "video",
+            autoplay: false,
+            parent: ["iraffle.live", "irafflevip.tk", "localhost"]
+        });
+
+        embed.addEventListener(Twitch.Embed.VIDEO_READY, () => {
+            var player = embed.getPlayer();
+            player.play();
+        });
+    </script>
+    <style>#twitch-embed{display:block!important} #jwp{display:none!important;} #iframe-element{display:none!important;} #vidarea{display:none} #player_img{display:none}</style>
+    ';
+}
 ?>

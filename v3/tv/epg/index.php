@@ -80,6 +80,8 @@ if (isset($_SESSION['message']) ){
         </div>
         <!-- iFrame -->
         <iframe src="<?php echo $iframeSrc?>" width="100%" height="300px" frameborder="0" sandbox="allow-same-origin allow-scripts" allowfullscreen scrolling="no"  id="iframe-element"></iframe>
+        <!-- Twitch -->
+        <?=$twitchEmbed?>
         <!-- PC Player -->
         <a id="player_img" href="<?php echo $pcSrc."&m3u8"; ?>">
             <img class="img-fluid" src="../player_img.png" alt="">
