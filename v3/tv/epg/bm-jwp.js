@@ -2,19 +2,33 @@ var playerInstance = jwplayer("jwp");
 playerInstance.setup({
     playlist: [{
         "sources": [{
-            "file": "//channel-goldenmpx-cdn.blim.com/manifest.mpd",
+            "file": atob(source),
             "drm": {
                 "widevine": {
                     "headers": [{
                         "name": "authorization",
-                        "value": atob("T0F1dGggb2F1dGhfY29uc3VtZXJfa2V5PTMzZWVlZjMyOWZkMzEyNzQzN2Q0YWJjZmFkN2U5MjE0NGM3ODUyMTVmZDA3MmUyZGRkMzYwMjhlZDVmNGIwNjMsIG9hdXRoX25vbmNlPURHQk01Qiwgb2F1dGhfc2lnbmF0dXJlPWxwa3NFSUM0TkhkbnV1U3Q5czNnOUR1bzdRQSUzRCwgb2F1dGhfc2lnbmF0dXJlX21ldGhvZD1ITUFDLVNIQTEsIG9hdXRoX3RpbWVzdGFtcD0xNjUwOTk1ODI2LCBvYXV0aF92ZXJzaW9uPTEuMA==")
+                        "value": atob(getKEY)
                     }],
-                    "url": atob("Ly9hcGkuYmxpbS5jb20vbGljZW5zZS93aWRldmluZQ==")
+                    "url": atob(getKEY2)
                 }
             }
         }]
     }],
+    height: "50%",
     width: "100%",
-    height: "100%",
-    autostart: false
+    aspectratio: "16:9",
+    stretching: "bestfit",
+    mediaid: "player",
+    mute: false,
+    autostart: false,
+    language: "es",
+    cast: {
+        appid: "player",
+        logo: "https://eduveel1.github.io/baleada/img/iRTVW_PLAYER.png",
+    },
+    logo: {
+        file: "https://eduveel1.github.io/baleada/img/iRTVW_PLAYER.png",
+        hide: "false",
+        position: "top-left",
+    }
 });
