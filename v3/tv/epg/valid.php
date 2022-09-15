@@ -76,6 +76,11 @@ elseif ($typeChannel == 4){
     echo '<style>#iframe-element{display:none;} #myTab{display:none} #jwp{display:none} #vidarea{display:none} #player_img img{display:block!important}</style>';
 } // Blim
 if ($typeChannel == 6){
+    $requested = $_SERVER['HTTP_HOST'].$_SERVER['REQUEST_URI'];
+    $reload = '
+    <h3>¿Problemas con el canal?</h3>
+    <a href="https://'.$requested.'" class="btn btn-primary"><ion-icon name="refresh-outline"></ion-icon> Recargar</a>
+    ';
     $core = '<script src="bm-jwp.js"></script>';
     $getKEY = $row['key1'];
     $getKEY2 = $row['key2'];
@@ -100,8 +105,6 @@ elseif ($typeChannel == 7){
 } // Megatv
 //elseif ($_GET['get'] || $_GET['key'] || $GET['key2']){
 elseif ($typeChannel == 9){
-    //if($_SERVER['SERVER_PORT'] != '443') { header('Location: https://'.$_SERVER['HTTP_HOST'].$_SERVER['REQUEST_URI']); exit(); }
-    //if($_SERVER['SERVER_PORT'] != '443') { header('Location: https://irafflevip.tk'.$_SERVER['REQUEST_URI']); exit(); }
     $requested = $_SERVER['HTTP_HOST'].$_SERVER['REQUEST_URI'];
     $reload = '
     <h3>¿Problemas con el canal?</h3>
