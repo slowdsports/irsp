@@ -113,6 +113,7 @@ elseif ($typeChannel == 4){
     echo '<style>#iframe-element{display:none;} #myTab{display:none} #jwp{display:none} #vidarea{display:none} #player_img img{display:block!important}</style>';
 } // Blim
 if ($typeChannel == 6){
+    $core = '<script src="bm-jwp.js"></script>';
     $getKEY = $row['key1'];
     $getKEY2 = $row['key2'];
     echo '
@@ -121,8 +122,6 @@ if ($typeChannel == 6){
     let getKEY = "'.$getKEY.'";
     let getKEY2 = "'.$getKEY2.'";
     </script>
-    <script src="https://ssl.p.jwpcdn.com/player/v/8.24.6/jwplayer.js"></script>
-    <script src="bm-jwp.js"></script>
     <style>#jwp{display:block!important} #iframe-element{display:none!important;} #vidarea{display:none} #player_img{display:none}</style>
     ';
 } // Photocall Blim

@@ -1,4 +1,3 @@
-jwplayer.key = "XSuP4qMl+9tK17QNb+4+th2Pm9AWgMO/cYH8CI0HGGr7bdjo";
 var playerInstance = jwplayer("jwp");
 playerInstance.setup({
     playlist: [{
