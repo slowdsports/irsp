@@ -100,7 +100,7 @@ if (isset($_SESSION['message']) ){
         <div class="item">
             <div class="card">
                 <center>
-                    <img src="<?=$eventoImg?>" class="image" alt="image" />
+                    <img src="https://i.ibb.co/w0qg9JF/trans.png" style="background-image: url('<?=$eventoImg?>'); background-size: contain; background-repeat: no-repeat" class="image" alt="image" />
                     <div class="card-body">
                             <h6 class="text text-center">
                                 <?=$enVivo?>
