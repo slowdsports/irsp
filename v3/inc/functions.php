@@ -12,6 +12,8 @@ $refer = $_SERVER['HTTP_REFERER'];
 $useragent = $_SERVER['HTTP_USER_AGENT'];
 // TELEGRAM CONTACT
 $telegram = "https://t.me/slowdmelendez360";
+// USERTYPE
+$userType = $row['type'];
 // CALC SUBSCRIPTION
 $futuro = strtotime($row['fecha']);
 $presente = time();
