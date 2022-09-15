@@ -94,6 +94,13 @@ if (isset($_SESSION['message']) ){
 </div>
 
 <!-- Anuncio -->
+<?php
+if ($userType !== 0){
+    echo '
+    <script async="async" data-cfasync="false" src="//pl17709034.profitablegatetocontent.com/4da3cd607f700415595dd2eb6ec0456b/invoke.js"></script>
+    ';
+}
+?>
 <div id="container-4da3cd607f700415595dd2eb6ec0456b"></div>
 <!-- *Anuncio -->
 
