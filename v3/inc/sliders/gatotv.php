@@ -9,6 +9,9 @@ $evento = $html ->find ('tr.tbl_EPG_row_selected td div.div_program_title_on_cha
 $eventoImg = $html ->find ('tr.tbl_EPG_row_selected td a[title] img',0)->src;
 if ($eventoImg == null){
     $eventoImg = $imgCanal;
+    if ($imgCanal == null){
+        $epgStatus = "hidden";
+    }
 }
 $tipo = $html ->find ('tr.tbl_EPG_row_selected td div.div_episode_deporte_on_channel',0)->plaintext;
 if ($tipo == null){

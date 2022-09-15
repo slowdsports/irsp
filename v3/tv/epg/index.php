@@ -11,11 +11,14 @@ $channel = $_GET['c'];
 include ('../../agenda/play/channels.php');
 $query=mysqli_query($conn,"select * from channels
     INNER JOIN channeltype ON channels.type = channeltype.typeId
+    INNER JOIN categories ON channels.category = categories.categoryId
     where channelId='".$channel."'");
     $row=mysqli_fetch_assoc($query);
     $channel = $row['channelUrl'];
     $typeChannel = $row['typeId'];
     $channel = base64_encode($channel);
+    // Categoría del canal actual || Obtener recomendados
+    $categoriaActual = $row['categoryId'];
 ?>
 
 <!-- App Capsule -->
@@ -177,6 +180,37 @@ if (isset($_SESSION['message']) ){
     </div>
 </div>
 <!-- End Otros Eventos Slider -->
+
+<!-- Recomendados Slider -->
+<div class="section full mt-3 mb-3">
+    <h2> Relacionados </h2>
+    <div class="carousel-multiple owl-carousel owl-theme">
+        <?php
+        $query=mysqli_query($conn,"select * from channels where category='".$categoriaActual."' ORDER BY RAND() LIMIT 10");
+        while($row=mysqli_fetch_array($query)){
+            $channel = $row['channelName'];
+            $url = $row['channelId'];
+            $img = $row['channelImg'];
+            $epg = $row['epg'];
+        ?>
+        <a href="<?=$app?>/tv/epg?url=<?=$epg?>&c=<?=$url?>">
+            <div class="item">
+                <div class="card">
+                    <center>
+                        <img src="<?=$img?>" class="image" alt="image">
+                        <div class="card-body">
+                            <p class="text text-center">
+                                <?=$channel;?>
+                            </p>
+                        </div>
+                    </center>
+                </div>
+            </div>
+        </a>
+        <?php } ?>
+    </div>
+</div>
+<!-- End Recomendados Slider -->
 </div>
 <?php
 include('../../inc/navbar.php');
