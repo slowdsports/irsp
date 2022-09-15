@@ -110,12 +110,12 @@
                         </div>
                     </div>
 
-                    <!-- <center>
+                    <center>
                         <div class="form-check">
-                            <input type="checkbox" name="remember" id="remember" <?php if (isset($_COOKIE["user"]) && isset($_COOKIE["pass"])){ echo "checked";}?> class="form-check-input">
+                            <input type="checkbox" name="remember" id="remember" checked class="form-check-input">
                             <label for="remember-me">Recuérdame</label>
                         </div>
-                    </center> -->
+                    </center>
 
                     <div class="form-links mt-2">
                         <div>
