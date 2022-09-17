@@ -287,7 +287,7 @@ if($canal === "DAZN" || $canal === "DAZN" || $canal === "dazn1"){
     $canalImg = "dazn";
     $canalop2 = '
     <li>
-        <a class="justify-content-center" href="../../../tv/epg/?url=dazn_1_espana&c=560">
+        <a class="justify-content-center" href="http://iraffle.live/v3/agenda/play/?c=dazn1">
         <i class="flag es"></i>
         DAZN 1 | HD
         </a>
@@ -302,7 +302,7 @@ if($canal === "DAZN" || $canal === "DAZN" || $canal === "dazn1"){
     $canalImg = "dazn";
     $canal2 = '
     <li>
-        <a class="justify-content-center" href="../../../tv/epg/?url=dazn_1_espana&c=560">
+        <a class="justify-content-center" href="http://iraffle.live/v3/agenda/play/?c=dazn1">
         <i class="flag es"></i>
         DAZN 1 | HD
         </a>
