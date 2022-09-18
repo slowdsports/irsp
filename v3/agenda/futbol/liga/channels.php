@@ -11,12 +11,6 @@ if($canal === "M+ Liga de Campeones" || $canal === "M+ Liga de Campeones UHD (M4
         <i class="flag es"></i>
         Movistar Liga de Campeones | VIP HD
         </a>
-    </li>
-    <li>
-        <a class="justify-content-center" href="https://irpc.ga/mg/play/sandbox.php?get=mlcamp">
-        <i class="flag es"></i>
-        Movistar Liga de Campeones | HD
-        </a>
     </li>';
 } elseif($canal2 === "M+ Liga de Campeones" || $canal2 === "M+ Liga de Campeones UHD (M441 O115)" || $canal2 === "M+ Liga de Campeones (M56 O114)" || $canal2 === "mlcamp"){
     $canalImg = "campeones";
@@ -25,12 +19,6 @@ if($canal === "M+ Liga de Campeones" || $canal === "M+ Liga de Campeones UHD (M4
         <a class="justify-content-center" href="../../play?c=mlcamp">
         <i class="flag es"></i>
         Movistar Liga de Campeones | VIP HD
-        </a>
-    </li>
-    <li>
-        <a class="justify-content-center" href="https://irpc.ga/mg/play/sandbox.php?get=mlcamp">
-        <i class="flag es"></i>
-        Movistar Liga de Campeones | HD
         </a>
     </li>';
 }
@@ -48,7 +36,7 @@ if($canal === "M+ Liga de Campeones 2" || $canal === "mlcamp2"){
     $canalImg = "campeones";
     $canalop4 = '
     <li>
-        <a class="justify-content-center" href="https://irpc.ga/mg/play/sandbox.php?get=mlcamp2">
+        <a class="justify-content-center" href="../../play?c=mlcamp2">
         <i class="flag es"></i>
         Movistar Liga de Campeones 2 | HD
         </a>
@@ -68,7 +56,7 @@ if($canal === "M+ Liga de Campeones 3" || $canal === "mlcamp3"){
     $canalImg = "campeones";
     $canalop4 = '
     <li>
-        <a class="justify-content-center" href="https://irpc.ga/mg/play/sandbox.php?get=mlcamp3">
+        <a class="justify-content-center" href="../../play?c=mlcamp3">
         <i class="flag es"></i>
         Movistar Liga de Campeones 3 | HD
         </a>
@@ -83,6 +71,15 @@ if($canal === "M+ Liga de Campeones 4" || $canal === "mlcamp4"){
         <a class="justify-content-center" href="../../play?c=mlcamp4">
         <i class="flag es"></i>
         Movistar Liga de Campeones 4 | VIP HD
+        </a>
+    </li>';
+} elseif($canal2 === "M+ Liga de Campeones 4" || $canal2 === "mlcamp4"){
+    $canalImg = "campeones";
+    $canalop4 = '
+    <li>
+        <a class="justify-content-center" href="../../play?c=mlcamp4">
+        <i class="flag es"></i>
+        Movistar Liga de Campeones 4 | HD
         </a>
     </li>';
 }
@@ -100,7 +97,7 @@ if($canal === "M+ Liga de Campeones 5" || $canal === "mlcamp5"){
     $canalImg = "campeones";
     $canalop4 = '
     <li>
-        <a class="justify-content-center" href="https://irpc.ga/mg/play/sandbox.php?get=mlcamp5">
+        <a class="justify-content-center" href="../../play?c=mlcamp5">
         <i class="flag es"></i>
         Movistar Liga de Campeones 5 | HD
         </a>
@@ -110,12 +107,6 @@ if($canal === "M+ Liga de Campeones 5" || $canal === "mlcamp5"){
 if($canal === "M+ LaLiga" || $canal === "M+ LaLigaTV" || $canal === "bar"){
     $canalImg = "mlaliga";
     $canalop2 = '
-    <li>
-        <a class="justify-content-center" href="https://irpc.ga/mg/?url=mlaliga&play">
-        <i class="flag es"></i>
-        Movistar LaLiga | [PRUEBA]
-        </a>
-    </li>
     <li>
         <a class="justify-content-center" href="../../play?c=bar">
         <i class="flag es"></i>
@@ -131,12 +122,6 @@ if($canal === "M+ LaLiga" || $canal === "M+ LaLigaTV" || $canal === "bar"){
 } elseif($canal2 === "M+ LaLiga" || $canal2 === "M+ LaLigaTV" || $canal2 === "bar"){
     $canalImg = "mlaliga";
     $canalop4 = '
-    <li>
-        <a class="justify-content-center" href="https://irpc.ga/mg/?url=mlaliga&play">
-        <i class="flag es"></i>
-        Movistar LaLiga | [PRUEBA]
-        </a>
-    </li>
     <li>
         <a class="justify-content-center" href="../../play?c=bar">
         <i class="flag es"></i>
@@ -239,12 +224,6 @@ if($canal === "M+ #Vamos" || $canal === "M+ #Vamos Bar 2 (305)" || $canal === "m
         <i class="flag es"></i>
         Movistar #Vamos | VIP HD
         </a>
-    </li>
-    <li>
-        <a class="justify-content-center" href="https://irpc.ga/mg/play/sandbox.php?get=vamos&play">
-        <i class="flag es"></i>
-        Movistar #Vamos | HD
-        </a>
     </li>';
 } elseif($canal2 === "M+ #Vamos" || $canal2 === "M+ #Vamos Bar 2 (305)" || $canal2 === "mvamos"){
     $canalImg = "mvamos";
@@ -253,12 +232,6 @@ if($canal === "M+ #Vamos" || $canal === "M+ #Vamos Bar 2 (305)" || $canal === "m
         <a class="justify-content-center" href="../../play?c=mvamos">
         <i class="flag es"></i>
         Movistar #Vamos | VIP HD
-        </a>
-    </li>
-    <li>
-        <a class="justify-content-center" href="https://irpc.ga/mg/play/sandbox.php?get=vamos&play">
-        <i class="flag es"></i>
-        Movistar #Vamos | HD
         </a>
     </li>';
 }
@@ -287,13 +260,13 @@ if($canal === "DAZN" || $canal === "DAZN" || $canal === "dazn1"){
     $canalImg = "dazn";
     $canalop2 = '
     <li>
-        <a class="justify-content-center" href="http://iraffle.live/v3/agenda/play/?c=dazn1">
+        <a class="justify-content-center" href="../../play/?c=dazn1">
         <i class="flag es"></i>
         DAZN 1 | HD
         </a>
     </li>
     <li>
-        <a class="justify-content-center" href="https://irpc.ga/mg/?url=dazn-1&play">
+        <a class="justify-content-center" href="../../../tv/epg?c=560">
         <i class="flag es"></i>
         DAZN 1 | VIP HD
         </a>
@@ -302,13 +275,13 @@ if($canal === "DAZN" || $canal === "DAZN" || $canal === "dazn1"){
     $canalImg = "dazn";
     $canal2 = '
     <li>
-        <a class="justify-content-center" href="http://iraffle.live/v3/agenda/play/?c=dazn1">
+        <a class="justify-content-center" href="../../play/?c=dazn1">
         <i class="flag es"></i>
         DAZN 1 | HD
         </a>
     </li>
     <li>
-        <a class="justify-content-center" href="https://irpc.ga/mg/?url=dazn-1&play">
+        <a class="justify-content-center" href="../../../tv/epg?c=560">
         <i class="flag es"></i>
         DAZN 1 | VIP HD
         </a>
@@ -319,7 +292,7 @@ if($canal === "DAZN2" || $canal === "DAZN2" || $canal === "dazn2"){
     $canalImg = "dazn";
     $canalop2 = '
     <li>
-        <a class="justify-content-center" href="https://irpc.ga/mg/play/sandbox.php?get=dazn2es&play">
+        <a class="justify-content-center" href="../../../tv/epg?c=569">
         <i class="flag es"></i>
         DAZN 2 | HD
         </a>
@@ -334,13 +307,13 @@ if($canal === "DAZN2" || $canal === "DAZN2" || $canal === "dazn2"){
     $canalImg = "dazn";
     $canal2 = '
     <li>
-        <a class="justify-content-center" href="https://irpc.ga/mg/play/sandbox.php?get=dazn2es&play">
+        <a class="justify-content-center" href="../../../tv/epg?c=569">
         <i class="flag es"></i>
         DAZN 2
         </a>
     </li>
     <li>
-        <a class="justify-content-center" href="https://irpc.ga/mg/?url=dazn-2&play">
+        <a class="justify-content-center" href="../../play?c=dazn2">
         <i class="flag es"></i>
         DAZN 2 | VIP HD
         </a>
@@ -351,7 +324,7 @@ if($canal === "DAZN LaLiga" || $canal === "DAZN LaLiga" || $canal === "daznlalig
     $canalImg = "daznlaliga";
     $canalop2 = '
     <li>
-        <a class="justify-content-center" href="../../../tv/epg/?url=movistar_laliga&c=559">
+        <a class="justify-content-center" href="../../../tv/epg/?c=559">
         <i class="flag es"></i>
         DAZN LaLiga | VIP HD
         </a>
@@ -359,14 +332,14 @@ if($canal === "DAZN LaLiga" || $canal === "DAZN LaLiga" || $canal === "daznlalig
     <li>
         <a class="justify-content-center" href="../../play?c=daznlaliga">
         <i class="flag es"></i>
-        DAZN LaLiga [BETA] | VIP HD
+        DAZN LaLiga | VIP HD
         </a>
     </li>';
 } elseif($canal2 === "DAZN LaLiga" || $canal2 === "DAZN LaLiga" || $canal2 === "daznlaliga"){
     $canalImg = "daznlaliga";
     $canal2 = '
     <li>
-        <a class="justify-content-center" href="../../../tv/epg/?url=movistar_laliga&c=559">
+        <a class="justify-content-center" href="../../../tv/epg/?c=559">
         <i class="flag es"></i>
         DAZN LaLiga | HD
         </a>
@@ -374,7 +347,7 @@ if($canal === "DAZN LaLiga" || $canal === "DAZN LaLiga" || $canal === "daznlalig
     <li>
         <a class="justify-content-center" href="../../play?c=daznlaliga">
         <i class="flag es"></i>
-        DAZN LaLiga [BETA] | VIP HD
+        DAZN LaLiga | VIP HD
         </a>
     </li>';
 }
@@ -383,7 +356,7 @@ if($canal === "DAZN (Regístrate)" || $canal === "DAZN | (Movistar 59)"){
     $canalImg = "dazn";
     $canalop2 = '
     <li>
-        <a class="justify-content-center" href="../../../tv/epg/?url=dazn_1_espana&c=560">
+        <a class="justify-content-center" href="../../../tv/epg/?c=560">
         <i class="flag es"></i>
         DAZN 1 | HD
         </a>
@@ -398,7 +371,7 @@ if($canal === "DAZN (Regístrate)" || $canal === "DAZN | (Movistar 59)"){
     $canalImg = "dazn";
     $canal2 = '
     <li>
-        <a class="justify-content-center" href="../../../tv/epg/?url=dazn_1_espana&c=560">
+        <a class="justify-content-center" href="../../../tv/epg/?c=560">
         <i class="flag es"></i>
         DAZN 1 | HD
         </a>
@@ -429,12 +402,6 @@ if($canal === "LaLiga SmartbankTV" || $canal === "LaLiga SmartbankTV" || $canal 
 } elseif($canal2 === "LaLiga SmartbankTV" || $canal2 === "LaLiga SmartbankTV" || $canal2 === "smartbank"){
     $canalImg = "smartbank";
     $canal2 = '
-    <li>
-        <a class="justify-content-center" href="https://irpc.ga/mg/play/sandbox.php?get=smartbank">
-        <i class="flag es"></i>
-        LaLiga Smartbank | HD
-        </a>
-    </li>
     <li>
         <a class="justify-content-center" href="../../play?c=smartbank">
         <i class="flag es"></i>
@@ -467,7 +434,7 @@ if($canal === "directv1" || $canal === "directv1"){
     $canalImg = "directv";
     $canalop2 = '
     <li>
-        <a class="justify-content-center" href="https://irpc.ga/mg/?url=directv-sports-en-vivo&play">
+        <a class="justify-content-center" href="../../../tv/epg?c=561">
         <i class="flag ar"></i>
         DirecTV Sports | HD
         </a>
@@ -476,7 +443,7 @@ if($canal === "directv1" || $canal === "directv1"){
     $canalImg = "directv";
     $canal2 = '
     <li>
-        <a class="justify-content-center" href="https://irpc.ga/mg/?url=directv-sports-en-vivo&play">
+        <a class="justify-content-center" href="../../../tv/epg?c=561">
         <i class="flag ar"></i>
         DirecTV Sports | HD
         </a>
@@ -487,7 +454,7 @@ if($canal === "directv2" || $canal === "directv2"){
     $canalImg = "directv";
     $canalop2 = '
     <li>
-        <a class="justify-content-center" href="https://irpc.ga/mg/?url=directv-sports-2&play">
+        <a class="justify-content-center" href="../../../tv/epg?c=562">
         <i class="flag ar"></i>
         DirecTV Sports 2 | HD
         </a>
@@ -496,7 +463,7 @@ if($canal === "directv2" || $canal === "directv2"){
     $canalImg = "directv";
     $canal2 = '
     <li>
-        <a class="justify-content-center" href="https://irpc.ga/mg/?url=directv-sports-2&play">
+        <a class="justify-content-center" href="../../../tv/epg?c=562">
         <i class="flag ar"></i>
         DirecTV Sports 2 | HD
         </a>
@@ -527,7 +494,7 @@ if($canal === "espnsur" || $canal === "espnsur"){
     $canalImg = "espn";
     $canalop2 = '
     <li>
-        <a class="justify-content-center" href="https://irpc.ga/mg/?url=espn-en-vivo&play">
+        <a class="justify-content-center" href="../../../tv/epg?c=1">
         <i class="flag ar"></i>
         ESPN Sur | HD
         </a>
@@ -536,7 +503,7 @@ if($canal === "espnsur" || $canal === "espnsur"){
     $canalImg = "espn";
     $canal2 = '
     <li>
-        <a class="justify-content-center" href="https://irpc.ga/mg/?url=espn-en-vivo&play">
+        <a class="justify-content-center" href="../../../tv/epg?c=1">
         <i class="flag ar"></i>
         ESPN Sur | HD
         </a>
@@ -547,7 +514,7 @@ if($canal === "espn2sur" || $canal === "espn2sur"){
     $canalImg = "espn";
     $canalop2 = '
     <li>
-        <a class="justify-content-center" href="https://irpc.ga/mg/?url=espn-2-en-vivo&play">
+        <a class="justify-content-center" href="../../../tv/epg?c=2">
         <i class="flag ar"></i>
         ESPN 2 Sur | HD
         </a>
@@ -556,7 +523,7 @@ if($canal === "espn2sur" || $canal === "espn2sur"){
     $canalImg = "espn";
     $canal2 = '
     <li>
-        <a class="justify-content-center" href="https://irpc.ga/mg/?url=espn-2-en-vivo&play">
+        <a class="justify-content-center" href="../../../tv/epg?c=2">
         <i class="flag ar"></i>
         ESPN 2 Sur | HD
         </a>
@@ -567,7 +534,7 @@ if($canal === "espn3sur" || $canal === "espn3sur"){
     $canalImg = "espn";
     $canalop2 = '
     <li>
-        <a class="justify-content-center" href="https://irpc.ga/mg/?url=espn-3-en-vivo&play">
+        <a class="justify-content-center" href="../../../tv/epg?c=3">
         <i class="flag ar"></i>
         ESPN 3 Sur | HD
         </a>
@@ -576,7 +543,7 @@ if($canal === "espn3sur" || $canal === "espn3sur"){
     $canalImg = "espn";
     $canal2 = '
     <li>
-        <a class="justify-content-center" href="https://irpc.ga/mg/?url=espn-3-en-vivo&play">
+        <a class="justify-content-center" href="../../../tv/epg?c=3">
         <i class="flag ar"></i>
         ESPN 3 Sur | HD
         </a>
@@ -607,7 +574,7 @@ if($canal === "espnextra" || $canal === "espnextra"){
     $canalImg = "espn";
     $canalop2 = '
     <li>
-        <a class="justify-content-center" href="https://irpc.ga/mg/?url=espn-extra-en-vivo&play">
+        <a class="justify-content-center" href="../../../tv/epg?c=4">
         <i class="flag ar"></i>
         ESPN Extra | HD
         </a>
@@ -616,7 +583,7 @@ if($canal === "espnextra" || $canal === "espnextra"){
     $canalImg = "espn";
     $canal2 = '
     <li>
-        <a class="justify-content-center" href="https://irpc.ga/mg/?url=espn-extra-en-vivo&play">
+        <a class="justify-content-center" href="../../../tv/epg?c=4">
         <i class="flag ar"></i>
         ESPN Extra | HD
         </a>
@@ -647,7 +614,7 @@ if($canal === "foxsportssur" || $canal === "foxsportssur"){
     $canalImg = "foxsports";
     $canalop2 = '
     <li>
-        <a class="justify-content-center" href="https://irpc.ga/mg/?url=fox-sports-en-vivo&play">
+        <a class="justify-content-center" href="../../../tv/epg?c=5">
         <i class="flag ar"></i>
         FOX Sports | HD
         </a>
@@ -656,7 +623,7 @@ if($canal === "foxsportssur" || $canal === "foxsportssur"){
     $canalImg = "foxsports";
     $canal2 = '
     <li>
-        <a class="justify-content-center" href="https://irpc.ga/mg/?url=fox-sports-en-vivo&play">
+        <a class="justify-content-center" href="../../../tv/epg?c=5">
         <i class="flag ar"></i>
         FOX Sports | HD
         </a>
@@ -667,7 +634,7 @@ if($canal === "foxsports2sur" || $canal === "foxsports2sur"){
     $canalImg = "foxsports";
     $canalop2 = '
     <li>
-        <a class="justify-content-center" href="https://irpc.ga/mg/?url=fox-sports-2-en-vivo&play">
+        <a class="justify-content-center" href="../../../tv/epg?c=6">
         <i class="flag ar"></i>
         FOX Sports 2 | HD
         </a>
@@ -676,7 +643,7 @@ if($canal === "foxsports2sur" || $canal === "foxsports2sur"){
     $canalImg = "foxsports";
     $canal2 = '
     <li>
-        <a class="justify-content-center" href="https://irpc.ga/mg/?url=fox-sports-2-en-vivo&play">
+        <a class="justify-content-center" href="../../../tv/epg?c=6">
         <i class="flag ar"></i>
         FOX Sports 2 | HD
         </a>
@@ -687,7 +654,7 @@ if($canal === "foxsports3sur" || $canal === "foxsports3sur"){
     $canalImg = "foxsports";
     $canalop2 = '
     <li>
-        <a class="justify-content-center" href="https://irpc.ga/mg/?url=fox-sports-3-en-vivo&play">
+        <a class="justify-content-center" href="../../../tv/epg?c=7">
         <i class="flag ar"></i>
         FOX Sports 3 | HD
         </a>
@@ -696,7 +663,7 @@ if($canal === "foxsports3sur" || $canal === "foxsports3sur"){
     $canalImg = "foxsports";
     $canal2 = '
     <li>
-        <a class="justify-content-center" href="https://irpc.ga/mg/?url=fox-sports-3-en-vivo&play">
+        <a class="justify-content-center" href="../../../tv/epg?c=7">
         <i class="flag ar"></i>
         FOX Sports 3 | HD
         </a>
@@ -783,7 +750,7 @@ if($canal === "goltvec" || $canal === "goltvec"){
     $canalImg = "tycsports";
     $canalop2 = '
     <li>
-        <a class="justify-content-center" href="https://irpc.ga/mg/play/sandox.php?get=tyc">
+        <a class="justify-content-center" href="../../../tv/epg?c=257">
         <i class="flag ar"></i>
         TyC Sports | HD
         </a>
@@ -792,7 +759,7 @@ if($canal === "goltvec" || $canal === "goltvec"){
     $canalImg = "tycsports";
     $canal2 = '
     <li>
-        <a class="justify-content-center" href="https://irpc.ga/mg/play/sandox.php?get=tyc">
+        <a class="justify-content-center" href="../../../tv/epg?c=257">
         <i class="flag ar"></i>
         TyC Sports | HD
         </a>
