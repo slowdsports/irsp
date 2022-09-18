@@ -326,7 +326,7 @@ if($canal === "DAZN LaLiga" || $canal === "DAZN LaLiga" || $canal === "daznlalig
     <li>
         <a class="justify-content-center" href="../../../tv/epg/?c=559">
         <i class="flag es"></i>
-        DAZN LaLiga | VIP HD
+        DAZN LaLiga | HD
         </a>
     </li>
     <li>
