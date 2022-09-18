@@ -105,7 +105,14 @@ elseif ($typeChannel == 7){
 } // Megatv
 //elseif ($_GET['get'] || $_GET['key'] || $GET['key2']){
 elseif ($typeChannel == 9){
+    // Recargar página con SSL
+    echo '<script>
+    if (window.location.protocol != "https:") {
+        location.href =   location.href.replace("http://", "https://");
+    }
+    </script>';
     $requested = $_SERVER['HTTP_HOST'].$_SERVER['REQUEST_URI'];
+    echo $requested;
     $reload = '
     <h3>¿Problemas con el canal?</h3>
     <a href="https://'.$requested.'" class="btn btn-primary"><ion-icon name="refresh-outline"></ion-icon> Recargar</a>
