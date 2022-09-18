@@ -39,7 +39,7 @@ if ($result['visita'] === "arsenal"){
     </li>
     ';
 }
-if ($result['visita'] === "ravens"){
+if ($result['visita'] === "baltimore"){
     $canalImg = "nfl";
     $s= "";
     $custom1 = '
