@@ -3,6 +3,10 @@
 @import url("inc/owl-carousel/owl.carousel.min.css");
 @import url("inc/owl-carousel/owl.theme.default.css");
 @import url("https://fonts.googleapis.com/css?family=Inter:400,500,700&display=swap");
+/* JW Player Styles */
+.jw-svg-icon-play , .jw-svg-icon-buffer , .jw-svg-icon-replay , .jw-state-idle .jw-svg-icon-play , .jw-icon {
+  color: #007bff;
+}
 body {
   font-family: "Inter", sans-serif;
   font-size: 15px;

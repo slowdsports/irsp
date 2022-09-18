@@ -66,7 +66,9 @@ if (isset($_SESSION['message']) ){
                 <!-- M3U8 -->
                 <script src="https://ssl.p.jwpcdn.com/player/v/8.24.0/jwplayer.js"></script>
                 <script> jwplayer.key='XSuP4qMl+9tK17QNb+4+th2Pm9AWgMO/cYH8CI0HGGr7bdjo';</script>
-                <div id="jwp">Cargando Reproductor...</div>
+                <div onclick="goFullscreen('player');">
+                    <div id="jwp">Cargando Reproductor...</div>
+                </div>
                 <!-- <script src="jwp.js"></script> -->
                 <?=$core?>
                 </div>
