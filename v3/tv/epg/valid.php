@@ -112,11 +112,6 @@ elseif ($typeChannel == 9){
     }
     </script>';
     $requested = $_SERVER['HTTP_HOST'].$_SERVER['REQUEST_URI'];
-    echo $requested;
-    $reload = '
-    <h3>¿Problemas con el canal?</h3>
-    <a href="https://'.$requested.'" class="btn btn-primary"><ion-icon name="refresh-outline"></ion-icon> Recargar</a>
-    ';
     $core = '<script src="mg-jwp.js"></script>';
     $getURL = base64_encode($row['channelUrl']);
     $getKEY = $row['key1'];
