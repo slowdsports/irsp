@@ -4,6 +4,23 @@ $_SESSION['referer'] = "//" . $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URI'];
 include('../../inc/header.php'); include('../../conn.php');
 $query=mysqli_query($conn,"select * from user where userid='".$_SESSION['id']."'");
 $row=mysqli_fetch_assoc($query);
+
+$base ="http://givemenbastreams.com/nfl.php?g=";
+$g = $_GET['g'];
+$file = $base.$g;
+
+$site= file_get_contents($file);
+preg_match("(source\:\s'(.*?)')", $site, $stream);
+
+if(isset($_GET['g'])){
+    if ($stream[1] == null){
+        $_SESSION['message'] = "No se ha podido cargar la retransmisión del juego.";
+    } else{
+        $m3u8 = base64_encode($stream[1]);
+        // header ("location: ../../play?nfl&plyr=vid&c=$m3u8");
+        echo '<script>window.location.href = "../play?nba&plyr=vid&c='.$m3u8.'";</script>';
+    }
+}
 ?>
 
 <!-- App Capsule -->
@@ -88,6 +105,12 @@ if (isset($_SESSION['message']) ){
                     <div class="collapse" id="juego<?=$result['id']?>">
                         <div class="card card-body">
                             <ul class="listview link-listview">
+                                <li>
+                                    <a class="justify-content-center" href="?g=<?=$local?>">
+                                        <i class="flag us"></i>
+                                        NFL Network - <?=ucfirst($local)?>
+                                    </a>
+                                </li>
                                 <?php
                                 //include('timer.php');
                                 // Canales
