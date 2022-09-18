@@ -44,7 +44,7 @@ if ($result['visita'] === "ravens"){
     $s= "";
     $custom1 = '
     <li>
-        <a class="justify-content-center" href="../../../tv/epg?s='.$s.'">
+        <a class="justify-content-center" href="http://d2wd103krdtde9.cloudfront.net/hls/ravens/playlist.m3u8">
         <i class="flag us"></i>
         Ravens
         </a>
