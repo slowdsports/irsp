@@ -39,3 +39,15 @@ if ($result['visita'] === "arsenal"){
     </li>
     ';
 }
+if ($result['visita'] === "ravens"){
+    $canalImg = "nfl";
+    $s= "";
+    $custom1 = '
+    <li>
+        <a class="justify-content-center" href="../../../tv/epg?s='.$s.'">
+        <i class="flag us"></i>
+        Ravens
+        </a>
+    </li>
+    ';
+}
