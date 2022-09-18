@@ -450,7 +450,7 @@ if($canal === "directv1" || $canal === "directv1"){
     </li>';
 }
 
-if($canal === "ravens" || $canal === "ravens"){
+if($canal === "baltimore" || $canal === "baltimore"){
     $canalImg = "nfl";
     $canalop2 = '
     <li>
