@@ -55,7 +55,6 @@ if (isset($_SESSION['message']) ){
                     } elseif ($dd == $hoy-1){
                         $dia = "Ayer";
                     }
-
                     include('teams.php');
                 ?>
                 <!-- Elemento -->
