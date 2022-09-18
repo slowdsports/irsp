@@ -459,7 +459,7 @@ if($canal === "baltimore" || $canal === "baltimore"){
         Ravens
         </a>
     </li>';
-} elseif($canal2 === "ravens" || $canal2 === "ravens"){
+} elseif($canal2 === "baltimore" || $canal2 === "baltimore"){
     $canalImg = "nfl";
     $canal2 = '
     <li>
