@@ -107,7 +107,9 @@ if (isset($_SESSION['message']) ){
                 </div>
             <div class="tab-pane fade <?=$isHls?>" id="hls" role="tabpanel" aria-labelledby="hls-tab">
                 <!-- Video TAG -->
-                <video style="margin-top: 40px" id="vidarea" class="video-js vjs-default-skin" width="90%" height="55%" controls ></video>
+                <div onclick="goFullscreen('player');">
+                    <video style="margin-top: 40px" id="vidarea" class="video-js vjs-default-skin" width="90%" height="55%" controls ></video>
+                </div>
             </div>
         </div>
         <!-- iFrame -->
