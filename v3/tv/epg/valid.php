@@ -158,11 +158,13 @@ elseif ($typeChannel == 9){
     <style>#jwp{display:block!important} #iframe-element{display:none!important;} #vidarea{display:none} #player_img{display:none}</style>';
 } // Twitch
 elseif($typeChannel == 10){
+    // Recargar página con SSL
+    echo '<script>
+    if (window.location.protocol != "https:") {
+        location.href =   location.href.replace("http://", "https://");
+    }
+    </script>';
     $requested = $_SERVER['HTTP_HOST'].$_SERVER['REQUEST_URI'];
-    $reload = '
-    <h3>¿Problemas con el canal?</h3>
-    <a href="https://'.$requested.'" class="btn btn-primary"><ion-icon name="refresh-outline"></ion-icon> Recargar</a>
-    ';
     $twitchEmbed = '<div id="twitch-embed"></div>
     <script src="https://embed.twitch.tv/embed/v1.js"></script>
     <script type="text/javascript">
