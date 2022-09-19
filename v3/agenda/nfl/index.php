@@ -45,20 +45,8 @@ if (isset($_SESSION['message']) ){
                     $local = $result['local'];
                     $visita = $result['visita'];
                     $index = $result['id'];
-                    setlocale(LC_ALL, "es_ES", 'Spanish_Spain', 'Spanish');
-                    date_default_timezone_set('America/Tegucigalpa');
-                    $dia = iconv('ISO-8859-2', 'UTF-8', strftime("%A %d", strtotime($result['fecha'])));
-                    $dd = iconv('ISO-8859-2', 'UTF-8', strftime("%d", strtotime($result['fecha'])));
-                    $hoy = date("d");
-
-                    if ($dd == $hoy){
-                        $dia = "Hoy";
-                    } elseif ($dd == $hoy+1){
-                        $dia = "Mañana";
-                    } elseif ($dd == $hoy-1){
-                        $dia = "Ayer";
-                    }
                     include('teams.php');
+                    include('../../inc/cntdwn.php');
                 ?>
                 <!-- Elemento -->
                 <div class="col-12 mycard">
@@ -67,7 +55,7 @@ if (isset($_SESSION['message']) ){
                             <div class="main-event">
                                 <div class="league">
                                     <img src="<?=$app?>assets/img/ligas/<?=$result['ligaImg']?>.png" alt="League" />
-                                    <p class="<?=$result['id']?>"><?=ucfirst($dia)?></p>
+                                    <p class="cntdwn-<?=$index?>"></p>
                                 </div>
                                 <div class="match">
                                     <div class="team">

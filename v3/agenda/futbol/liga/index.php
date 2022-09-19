@@ -56,10 +56,6 @@ if (isset($_SESSION['message']) ){
                     //     $dia = "Ayer";
                     // }
 
-                    $fecha = $result['fecha'];
-                    $mm = substr($fecha, 5, 2);
-                    $dd = substr($fecha, 8, 2);
-                    $hh = substr($fecha, 11, 2);
                     include('../../../inc/cntdwn.php');
 
                     include('teams.php');
