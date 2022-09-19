@@ -35,6 +35,33 @@ if (isset($_SESSION['message']) ){
     <div class="section mt-2">
         <div class="container">
             <div class="row">
+                <!-- NBA TV -->
+                <div style="" class="col-6">
+                    <a href="epg?url=epg&c=226">
+                        <div class="card product-card liga-card">
+                            <div class="card-body">
+                                <center>
+                                    <img width="48px" src="https://i.ibb.co/w0qg9JF/trans.png" style="background-image: url('../../assets/img/ligas/nfl.png'); background-size: contain; background-repeat: no-repeat;" class="image" alt="product image" />
+                                    <h2 class="title text-center">NFL Network</h2>
+                                </center>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div style="" class="col-6">
+                    <a href="epg?url=epg&c=564">
+                        <div class="card product-card liga-card">
+                            <div class="card-body">
+                                <center>
+                                    <img width="48px" src="https://i.ibb.co/w0qg9JF/trans.png" style="background-image: url('../../assets/img/canales/espn.png'); background-size: contain; background-repeat: no-repeat;" class="image" alt="product image" />
+                                    <h2 class="title text-center">ESPN</h2>
+                                </center>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <hr>
+                <!-- NBA TV -->
                 <?php
                 $getLiga = $_GET['id'];
                 $ligas = mysqli_query($conn, "select * from agenda
