@@ -50,6 +50,14 @@ if (isset($_SESSION['message']) ){
     $row=mysqli_fetch_assoc($juego);
     $local = $row['local'];
     $visita = $row['visita'];
+    $liga = $row['ligaImg'];
+    if ($liga == "nba"){
+        include('../../agenda/basket/nba/teams.php');
+    } elseif ($liga == "mlb"){
+        include('../../agenda/mlb/teams.php');
+    } elseif ($liga == "nfl"){
+        include('../../agenda/nfl/teams.php');
+    }
     ?>
     <div class="card product-card">
         <div class="main-event">
@@ -59,14 +67,14 @@ if (isset($_SESSION['message']) ){
             </div>
             <div class="match">
                 <div class="team">
-                    <img width="60px" src="<?=$app?>assets/img/equipos/<?=strtolower($row['ligaImg'])?>/<?=str_replace(' ', '', strtolower($row['local'])); ?>.png" alt="" />
+                    <img width="60px" src="<?=$app?>assets/img/equipos/<?=strtolower($row['ligaImg'])?>/<?=str_replace(' ', '', strtolower($local)); ?>.png" alt="" />
                     <h4><?=ucfirst($local)?></h4>
                 </div>
                 <div class="vs">
                     <h6>vs</h6>
                 </div>
                 <div class="team">
-                    <img width="60px" src="<?=$app?>assets/img/equipos/<?=strtolower($row['ligaImg'])?>/<?=str_replace(' ', '', strtolower($row['visita'])); ?>.png" alt="" />
+                    <img width="60px" src="<?=$app?>assets/img/equipos/<?=strtolower($row['ligaImg'])?>/<?=str_replace(' ', '', strtolower($visita)); ?>.png" alt="" />
                     <h4><?=ucfirst($visita)?></h4>
                 </div>
             </div>
