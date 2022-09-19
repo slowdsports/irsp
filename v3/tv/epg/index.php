@@ -56,7 +56,7 @@ if (isset($_SESSION['message']) ){
     } elseif ($liga == "mlb"){
         include('../../agenda/mlb/teams.php');
     } elseif ($liga == "nfl"){
-        include('../../agenda/nfl/teams.php');
+        //include('../../agenda/nfl/teams.php');
     }
     include('../../inc/cntdwn.php');
     ?>
