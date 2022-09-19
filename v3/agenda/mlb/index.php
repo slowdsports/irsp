@@ -1,26 +1,12 @@
 <?php
 session_start();
 $_SESSION['referer'] = "//" . $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URI'];
-include('../../inc/header.php'); include('../../conn.php'); include('../../inc/scraper.php');
+include('../../inc/header.php'); include('../../conn.php');
 $query=mysqli_query($conn,"select * from user where userid='".$_SESSION['id']."'");
 $row=mysqli_fetch_assoc($query);
 
-$base ="http://givemenbastreams.com/mlb.php?g=";
-$g = $_GET['g'];
-$file = $base.$g;
 
-$site= file_get_contents($file);
-preg_match("(source\:\s'(.*?)')", $site, $stream);
-
-if(isset($_GET['g'])){
-    if ($stream[1] == null){
-        $_SESSION['nbaError'] = "No se ha podido cargar la retransmisión del juego.";
-    } else{
-        $m3u8 = base64_encode($stream[1]);
-        // header ("location: ../../play?nba&plyr=vid&c=$m3u8");
-        echo '<script>window.location.href = "../../play?nba&plyr=vid&c='.$m3u8.'";</script>';
-    }
-}
+include('stream.php');
 ?>
 
 <!-- App Capsule -->
@@ -41,97 +27,147 @@ if (isset($_SESSION['message']) ){
 ?>
 
 <div class="header-large-title">
-    <h1 class="title"><?=ucfirst($row['fullname'])?>,</h1>
+    <h1 class="title"><?=ucfirst($row['fullname'])?></h1>
     <h4 class="subtitle">¡Disfruta de tu evento!</h4>
 </div>
-
-<!-- Alerta -->
-<?php
-if (isset($_SESSION['nbaError'])){
-?>
-<br>
-<div class="container">
-    <div class="alert alert-danger text-center" role="alert">
-    <?=$_SESSION['nbaError'];?>
-    </div>
-</div>
-<br>
-<?php unset($_SESSION['nbaError']); }?>
-<!-- *Alerta -->
 
 <!-- Categorías -->
     <div class="section mt-2">
         <div class="container">
             <div class="row">
                 <?php
-                // get DOM from URL or file
-                $html = file_get_html('https://www.espn.com.mx/beisbol/mlb/calendario');
-                $fecha = $html -> find ('div.ResponsiveTable');
-                $juegos = $html ->find ('tbody tr');
-                foreach ($juegos as $juego):
-                    $local = $juego ->find ('td div.local span a',1)-> plaintext;
-                    $localFull = $juego ->find ('td div.local span a',0)-> href;
-                    $localFull = substr($localFull, 33, 100);
-                    $localLogo = $juego ->find ('td div.local span a img',0)-> src;
-                    $visita = $juego ->find ('td div.matchTeams span a',1)-> plaintext;
-                    $visitaFull = $juego ->find ('td div.matchTeams span a',0)-> href;
-                    $visitaFull = substr($visitaFull, 33, 100);
-                    $visitaLogo = $juego ->find ('td div.matchTeams span a img',0)-> src;
-                    //Resultado $time = $juego ->find ('td a',4)-> plaintext;
-                    $time = $juego ->find ('td',2)-> plaintext;
-                    if (!$time){
-                        $time = $juego ->find ('td.date__col a.AnchorLink',0)-> plaintext;
-                        $finalizado = "";
-                    }
-                    if ($time == "LIVE"){
-                        $time = '<i class="fas fa-circle faa-flash animated"></i> En Vivo';
-                        $finalizado = "";
-                    }
+                $getLiga = $_GET['id'];
+                $ligas = mysqli_query($conn, "select * from agenda
+                INNER JOIN ligas ON agenda.liga = ligas.ligaId
+                where liga = 22 and status=1");
+                while($result=mysqli_fetch_array($ligas)){
                     // Teams
-                    include ('teams.php');
+                    $local = $result['local'];
+                    $visita = $result['visita'];
+                    $index = $result['id'];
+                    include('teams.php');
+                    include('../../inc/cntdwn.php');
                 ?>
                 <!-- Elemento -->
                 <div class="col-12 mycard">
-                    <a data-toggle="collapse" href="#juego-<?=$local?>-<?=$visita?>" role="button" aria-expanded="false" aria-controls="juego-<?=$local?>-<?=$visita?>">
+                    <a data-toggle="collapse" href="#juego<?=$result['id']?>" role="button" aria-expanded="false" aria-controls="juego<?=$result['id']?>">
                         <div class="card product-card">
                             <div class="main-event">
                                 <div class="league">
-                                    <img src="<?=$app?>assets/img/ligas/mlb.png" alt="League" />
+                                    <img src="<?=$app?>assets/img/ligas/<?=$result['ligaImg']?>.png" alt="League" />
+                                    <p class="cntdwn-<?=$index?>"></p>
                                 </div>
                                 <div class="match">
                                     <div class="team">
-                                        <img width="60px" src="<?=$app?>assets/img/equipos/mlb/<?=$local?>.png" alt="<?=$local?>" />
+                                        <img width="60px" src="<?=$app?>assets/img/equipos/<?=strtolower($result['ligaImg'])?>/<?=str_replace(' ', '', strtolower($local)); ?>.png" alt="" />
                                         <h4><?=ucfirst($local)?></h4>
                                     </div>
                                     <div class="vs">
                                         <h6>vs</h6>
                                     </div>
                                     <div class="team">
-                                        <img width="60px" src="<?=$app?>assets/img/equipos/mlb/<?=$visita?>.png" alt="<?=$visita?>" />
+                                        <img width="60px" src="<?=$app?>assets/img/equipos/<?=strtolower($result['ligaImg'])?>/<?=str_replace(' ', '', strtolower($visita)); ?>.png" alt="" />
                                         <h4><?=ucfirst($visita)?></h4>
                                     </div>
                                 </div>
                                 <div class="channel">
-                                    <img src="http://iraffle.live/v3/assets/img/ligas/mlb.png" alt="Channel" />
+                                    <img src="<?=$app?>assets/img/canales/<?=($canalImg===null)?"cincoestrellas":$canalImg ?>.png" alt="" />
                                 </div>
                             </div>
                         </div>
                     </a>
-                    <div class="collapse" id="juego-<?=$local?>-<?=$visita?>">
+                    <div class="collapse" id="juego<?=$result['id']?>">
                         <div class="card card-body">
                             <ul class="listview link-listview">
                                 <li>
-                                    <a class="justify-content-center" href="?g=<?=$local?>">
-                                    <i class="flag us"></i>
-                                    MLB TV - <?=ucfirst($local)?> | HD
+                                    <a class="justify-content-center" href="?c=<?=$local?>&c2=<?=$visita?>&id=<?=$index?>">
+                                        <i class="flag us"></i>
+                                        MLB Network - [OP1] <?=ucfirst($local)?> | HD
                                     </a>
                                 </li>
+                                <li>
+                                    <a class="justify-content-center" href="?g=<?=$local?>&g2=<?=$visita?>&id=<?=$index?>">
+                                        <i class="flag us"></i>
+                                        MLB Network - [OP2] <?=ucfirst($local)?> | HD
+                                    </a>
+                                </li>
+                                <?php
+                                //include('timer.php');
+                                // Canales
+                                include ('custom.php');
+                                include('channels.php');
+                                // Canal 2
+                                echo $canalop2;
+                                echo $canal2;
+                                // Canal 3
+                                echo $canalop3;
+                                // Canal 4
+                                echo $canalop4;
+                                // Custom Channels
+                                echo $custom1;
+                                echo $custom2;
+                                echo $custom3;
+                                // Canal 4
+                                $canal4 = $result['canal4'];
+                                $c4=mysqli_query($conn,"select * from channels
+                                INNER JOIN countries ON channels.country = countries.countryId
+                                where channelId = '$canal4'");
+                                $row=mysqli_fetch_array($c4);
+                                if ($canal4 === null || $canal4 === ""){
+                                    // No mostramos nada
+                                } else{
+                                ?>
+                                <li>
+                                    <a class="justify-content-center" href="../../tv/epg/?c=<?=$row['channelId']?>">
+                                        <i class="flag <?=$row['countryImg']?>"></i>
+                                        <?=$row['channelName']?>
+                                    </a>
+                                </li>
+                                <?php }?>
+
+                                <?php
+                                // Canal 5
+                                $canal5 = $result['canal5'];
+                                $c5=mysqli_query($conn,"select * from channels
+                                INNER JOIN countries ON channels.country = countries.countryId
+                                where channelId = '$canal5'");
+                                $row=mysqli_fetch_array($c5);
+                                if ($canal5 === null || $canal5 === ""){
+                                    // No mostramos nada
+                                } else{
+                                ?>
+                                <li>
+                                    <a class="justify-content-center" href="../../tv/epg/?c=<?=$row['channelId']?>">
+                                        <i class="flag <?=$row['countryImg']?>"></i>
+                                        <?=$row['channelName']?>
+                                    </a>
+                                </li>
+                                <?php }?>
+
+                                <?php
+                                // Canal 6
+                                $canal6 = $result['canal6'];
+                                $c6=mysqli_query($conn,"select * from channels
+                                INNER JOIN countries ON channels.country = countries.countryId
+                                where channelId = '$canal6'");
+                                $row=mysqli_fetch_array($c6);
+                                if ($canal6 === null || $canal6 === ""){
+                                    // No mostramos nada
+                                } else{
+                                ?>
+                                <li>
+                                    <a class="justify-content-center" href="../../tv/epg/?c=<?=$row['channelId']?>">
+                                        <i class="flag <?=$row['countryImg']?>"></i>
+                                        <?=$row['channelName']?>
+                                    </a>
+                                </li>
+                                <?php }?>
                             </ul>
                         </div>
                     </div>
                 </div>
                 <!-- End Elemento -->
-                <?php endforeach; ?>
+                <?}?>
 
             </div>
         </div>
