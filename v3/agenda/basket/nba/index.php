@@ -41,8 +41,8 @@ if (isset($_SESSION['message']) ){
                         <div class="card product-card liga-card">
                             <div class="card-body">
                                 <center>
-                                    <img width="48px" src="https://i.ibb.co/w0qg9JF/trans.png" style="background-image: url('../../../assets/img/ligas/nfl.png'); background-size: contain; background-repeat: no-repeat;" class="image" alt="product image" />
-                                    <h2 class="title text-center">NBA Network</h2>
+                                    <img width="48px" src="https://i.ibb.co/w0qg9JF/trans.png" style="background-image: url('../../../assets/img/ligas/nba.png'); background-size: contain; background-repeat: no-repeat;" class="image" alt="product image" />
+                                    <h2 class="title text-center">NBA TV</h2>
                                 </center>
                             </div>
                         </div>
@@ -86,14 +86,14 @@ if (isset($_SESSION['message']) ){
                                 </div>
                                 <div class="match">
                                     <div class="team">
-                                        <img width="60px" src="<?=$app?>assets/img/equipos/<?=strtolower($result['ligaImg'])?>/<?=str_replace(' ', '', strtolower($result['local'])); ?>.png" alt="" />
+                                        <img width="60px" src="<?=$app?>assets/img/equipos/<?=strtolower($result['ligaImg'])?>/<?=str_replace(' ', '', strtolower($local)); ?>.png" alt="" />
                                         <h4><?=ucfirst($local)?></h4>
                                     </div>
                                     <div class="vs">
                                         <h6>vs</h6>
                                     </div>
                                     <div class="team">
-                                        <img width="60px" src="<?=$app?>assets/img/equipos/<?=strtolower($result['ligaImg'])?>/<?=str_replace(' ', '', strtolower($result['visita'])); ?>.png" alt="" />
+                                        <img width="60px" src="<?=$app?>assets/img/equipos/<?=strtolower($result['ligaImg'])?>/<?=str_replace(' ', '', strtolower($visita)); ?>.png" alt="" />
                                         <h4><?=ucfirst($visita)?></h4>
                                     </div>
                                 </div>
@@ -109,13 +109,13 @@ if (isset($_SESSION['message']) ){
                                 <li>
                                     <a class="justify-content-center" href="?c=<?=$local?>&c2=<?=$visita?>&id=<?=$index?>">
                                         <i class="flag us"></i>
-                                        NFL Network - [OP1] <?=ucfirst($local)?> | HD
+                                        MLB Network - [OP1] <?=ucfirst($local)?> | HD
                                     </a>
                                 </li>
                                 <li>
                                     <a class="justify-content-center" href="?g=<?=$local?>&g2=<?=$visita?>&id=<?=$index?>">
                                         <i class="flag us"></i>
-                                        NFL Network - [OP2] <?=ucfirst($local)?> | HD
+                                        MLB Network - [OP2] <?=ucfirst($local)?> | HD
                                     </a>
                                 </li>
                                 <?php
