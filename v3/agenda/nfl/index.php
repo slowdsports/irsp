@@ -5,16 +5,28 @@ include('../../inc/header.php'); include('../../conn.php');
 $query=mysqli_query($conn,"select * from user where userid='".$_SESSION['id']."'");
 $row=mysqli_fetch_assoc($query);
 
-$base ="http://givemenbastreams.com/nfl.php?g=";
-$g = $_GET['g'];
-$file = $base.$g;
 
-$site= file_get_contents($file);
-preg_match("(source\:\s'(.*?)')", $site, $stream);
+$g = $_GET['g'];
+$g2 = $_GET['g2'];
 
 if(isset($_GET['g'])){
+    $base ="http://givemenbastreams.com/nfl.php?g=";
+    $file = $base.$g;
+    $site= file_get_contents($file);
+    preg_match("(source\:\s'(.*?)')", $site, $stream);
+
     if ($stream[1] == null){
-        $_SESSION['message'] = "No se ha podido cargar la retransmisión del juego.";
+        $base ="http://givemenbastreams.com/nfl.php?g=";
+        $file = $base.$g2;
+        $site= file_get_contents($file);
+        preg_match("(source\:\s'(.*?)')", $site, $stream);
+            if ($stream[1] == null){
+                $_SESSION['message'] = "No se ha podido cargar la retransmisión del juego.";
+            } else{
+                $m3u8 = base64_encode($stream[1]);
+                echo '<script>window.location.href = "../../tv/epg?nba&plyr=vid&c='.$m3u8.'";</script>';
+            }
+
     } else{
         $m3u8 = base64_encode($stream[1]);
         // header ("location: ../../play?nfl&plyr=vid&c=$m3u8");
@@ -107,7 +119,7 @@ if (isset($_SESSION['message']) ){
                         <div class="card card-body">
                             <ul class="listview link-listview">
                                 <li>
-                                    <a class="justify-content-center" href="?g=<?=$local?>">
+                                    <a class="justify-content-center" href="?g=<?=$local?>&g2=<?=$visita?>">
                                         <i class="flag us"></i>
                                         NFL Network - <?=ucfirst($local)?>
                                     </a>
