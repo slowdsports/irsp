@@ -3,7 +3,7 @@ session_start();
 $_SESSION['referer'] = "//" . $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URI'];
 include('../../inc/header.php'); include('../../conn.php'); include('../../inc/scraper.php'); include('../../inc/sliders/gatotv.php');
 $query=mysqli_query($conn,"select * from user where userid='".$_SESSION['id']."'");
-$row=mysqli_fetch_assoc($query);
+$result=mysqli_fetch_assoc($query);
 
 // Canales
 $base = "https://www.gatotv.com/canal/{$GET['url']}";
@@ -13,12 +13,12 @@ $query=mysqli_query($conn,"select * from channels
     INNER JOIN channeltype ON channels.type = channeltype.typeId
     INNER JOIN categories ON channels.category = categories.categoryId
     where channelId='".$channel."'");
-    $row=mysqli_fetch_assoc($query);
-    $channel = $row['channelUrl'];
-    $typeChannel = $row['typeId'];
+    $result=mysqli_fetch_assoc($query);
+    $channel = $result['channelUrl'];
+    $typeChannel = $result['typeId'];
     $channel = base64_encode($channel);
     // Categoría del canal actual || Obtener recomendados
-    $categoriaActual = $row['categoryId'];
+    $categoriaActual = $result['categoryId'];
 ?>
 
 <!-- App Capsule -->
@@ -40,17 +40,17 @@ if (isset($_SESSION['message']) ){
 <hr>
 
 <div class="header-large-title">
-    <h1 class="title"><?=ucfirst($row['channelName'])?></h1>
+    <h1 class="title"><?=ucfirst($result['channelName'])?></h1>
     <?php
     if (isset($_GET['id'])){
     $id = $_GET['id'];
     $juego=mysqli_query($conn,"select * from agenda
     INNER JOIN ligas ON agenda.liga = ligas.ligaId
     where id='".$id."'");
-    $row=mysqli_fetch_assoc($juego);
-    $local = $row['local'];
-    $visita = $row['visita'];
-    $liga = $row['ligaImg'];
+    $result=mysqli_fetch_assoc($juego);
+    $local = $result['local'];
+    $visita = $result['visita'];
+    $liga = $result['ligaImg'];
     if ($liga == "nba"){
         include('../../agenda/basket/nba/teams.php');
     } elseif ($liga == "mlb"){
@@ -58,23 +58,24 @@ if (isset($_SESSION['message']) ){
     } elseif ($liga == "nfl"){
         include('../../agenda/nfl/teams.php');
     }
+    include('../../inc/cntdwn.php');
     ?>
     <div class="card product-card">
         <div class="main-event">
             <div class="league">
-                <img src="<?=$app?>assets/img/ligas/<?=$row['ligaImg']?>.png" alt="League" />
-                <p class="<?=$result['id']?>"><?=ucfirst($dia)?></p>
+                <img src="<?=$app?>assets/img/ligas/<?=$result['ligaImg']?>.png" alt="League" />
+                <p class="cntdwn-<?=$index?>"></p>
             </div>
             <div class="match">
                 <div class="team">
-                    <img width="60px" src="<?=$app?>assets/img/equipos/<?=strtolower($row['ligaImg'])?>/<?=str_replace(' ', '', strtolower($local)); ?>.png" alt="" />
+                    <img width="60px" src="<?=$app?>assets/img/equipos/<?=strtolower($result['ligaImg'])?>/<?=str_replace(' ', '', strtolower($local)); ?>.png" alt="" />
                     <h4><?=ucfirst($local)?></h4>
                 </div>
                 <div class="vs">
                     <h6>vs</h6>
                 </div>
                 <div class="team">
-                    <img width="60px" src="<?=$app?>assets/img/equipos/<?=strtolower($row['ligaImg'])?>/<?=str_replace(' ', '', strtolower($visita)); ?>.png" alt="" />
+                    <img width="60px" src="<?=$app?>assets/img/equipos/<?=strtolower($result['ligaImg'])?>/<?=str_replace(' ', '', strtolower($visita)); ?>.png" alt="" />
                     <h4><?=ucfirst($visita)?></h4>
                 </div>
             </div>
@@ -242,11 +243,11 @@ if ($userType !== 0){
     <div class="carousel-multiple owl-carousel owl-theme">
         <?php
         $query=mysqli_query($conn,"select * from channels where category='".$categoriaActual."' ORDER BY RAND() LIMIT 10");
-        while($row=mysqli_fetch_array($query)){
-            $channel = $row['channelName'];
-            $url = $row['channelId'];
-            $img = $row['channelImg'];
-            $epg = $row['epg'];
+        while($result=mysqli_fetch_array($query)){
+            $channel = $result['channelName'];
+            $url = $result['channelId'];
+            $img = $result['channelImg'];
+            $epg = $result['epg'];
         ?>
         <a href="<?=$app?>/tv/epg?url=<?=$epg?>&c=<?=$url?>">
             <div class="item">
