@@ -27,6 +27,26 @@ if (isset($_GET['r'])){
         header ("location: $decode");
     }
 }
+// NFL
+if (isset($_GET['nba'])){
+    $channel = $_GET['c'];
+    $core = '<script src="jwp.js"></script>';
+    echo '
+    <ul class="nav nav-tabs" id="myTab" role="tablist">
+        <li class="nav-item" role="presentation">
+            <button class="btn btn-primary active" id="jw-tab" data-toggle="tab" data-target="#jw" type="button" role="tab" aria-controls="home" aria-selected="true">JW Player</button>
+        </li>
+        <li class="nav-item" role="presentation">
+            <button class="btn btn-primary" id="hls-tab" data-toggle="tab" data-target="#hls" type="button" role="tab" aria-controls="hls" aria-selected="false">Hls Player</button>
+        </li>
+    </ul>
+    ';
+    echo '<style>#iframe-element{display:none;} #player_img{display:none}</style>';
+    echo '<script>
+    var source = "'.$channel.'"
+    </script>';
+}
+
 // Para M3U
 if ($typeChannel == 1 || $typeChannel == 8){
     $core = '<script src="jwp.js"></script>';

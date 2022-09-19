@@ -18,7 +18,8 @@ if(isset($_GET['g'])){
     } else{
         $m3u8 = base64_encode($stream[1]);
         // header ("location: ../../play?nfl&plyr=vid&c=$m3u8");
-        echo '<script>window.location.href = "../play?nba&plyr=vid&c='.$m3u8.'";</script>';
+        //echo '<script>window.location.href = "../play?nba&plyr=vid&c='.$m3u8.'";</script>';
+        echo '<script>window.location.href = "../../tv/epg?nba&plyr=vid&c='.$m3u8.'";</script>';
     }
 }
 ?>
