@@ -1,6 +1,7 @@
 <?php
 $c = ucfirst($_GET['c']); $g = $_GET['g'];
 $c2 = ucfirst($_GET['c2']); $g2 = $_GET['g2'];
+$index = $_GET['id'];
 
 if(isset($_GET['c'])){
     $base ="http://cackskyatc.azureedge.net/streams/";
@@ -13,7 +14,7 @@ if(isset($_GET['c'])){
     // 404 for error, 200 for no error
     if(strpos($string, "200")) {
         $m3u8 = base64_encode($file);
-        echo '<script>window.location.href = "../../tv/epg?nba&plyr=vid&c='.$m3u8.'";</script>';
+        echo '<script>window.location.href = "../../tv/epg?nba&plyr=vid&c='.$m3u8.'&id='.$index.'";</script>';
     }
     else {
         $base ="http://cackskyatc.azureedge.net/streams/";
@@ -26,7 +27,7 @@ if(isset($_GET['c'])){
         // 404 for error, 200 for no error
         if(strpos($string, "200")) {
             $m3u8 = base64_encode($file);
-            echo '<script>window.location.href = "../../tv/epg?nba&plyr=vid&c='.$m3u8.'";</script>';
+            echo '<script>window.location.href = "../../tv/epg?nba&plyr=vid&c='.$m3u8.'&id='.$index.'";</script>';
         } else{
             $_SESSION['message'] = "No se ha podido cargar la retransmisión del juego.";
             echo $m3u8;
@@ -49,13 +50,13 @@ if(isset($_GET['g'])){
                 $_SESSION['message'] = "No se ha podido cargar la retransmisión del juego.";
             } else{
                 $m3u8 = base64_encode($stream[1]);
-                echo '<script>window.location.href = "../../tv/epg?nba&plyr=vid&c='.$m3u8.'";</script>';
+                echo '<script>window.location.href = "../../tv/epg?nba&plyr=vid&c='.$m3u8.'&id='.$index.'";</script>';
             }
 
     } else{
         $m3u8 = base64_encode($stream[1]);
         // header ("location: ../../play?nfl&plyr=vid&c=$m3u8");
         //echo '<script>window.location.href = "../play?nba&plyr=vid&c='.$m3u8.'";</script>';
-        echo '<script>window.location.href = "../../tv/epg?nba&plyr=vid&c='.$m3u8.'";</script>';
+        echo '<script>window.location.href = "../../tv/epg?nba&plyr=vid&c='.$m3u8.'&id='.$index.'";</script>';
     }
 }

@@ -92,15 +92,15 @@ if (isset($_SESSION['message']) ){
                         <div class="card card-body">
                             <ul class="listview link-listview">
                                 <li>
-                                    <a class="justify-content-center" href="?c=<?=$local?>&c2=<?=$visita?>">
+                                    <a class="justify-content-center" href="?c=<?=$local?>&c2=<?=$visita?>&id=<?=$index?>">
                                         <i class="flag us"></i>
                                         NFL Network - [OP1] <?=ucfirst($local)?> | HD
                                     </a>
                                 </li>
                                 <li>
-                                    <a class="justify-content-center" href="?g=<?=$local?>&g2=<?=$visita?>">
+                                    <a class="justify-content-center" href="?g=<?=$local?>&g2=<?=$visita?>&id=<?=$index?>">
                                         <i class="flag us"></i>
-                                        NFL Network [OP2] - <?=ucfirst($local)?> | HD
+                                        NFL Network - [OP2] <?=ucfirst($local)?> | HD
                                     </a>
                                 </li>
                                 <?php
