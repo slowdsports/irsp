@@ -32,9 +32,10 @@ $local = str_replace('arizona', 'cardinals', $local);
 $local = str_replace('lasvegas', 'raiders', $local);
 $local = str_replace('chicago', 'bears', $local);
 $local = str_replace('greenbay', 'packers', $local);
-$local = str_replace('tenneesee', 'titans', $local);
+$local = str_replace('tennessee', 'titans', $local);
 $local = str_replace('minnesota', 'vikings', $local);
 $local = str_replace('philadelphia', 'eagles', $local);
+$local = str_replace('buffalo', 'bills', $local);
 
 
 //Visita
@@ -66,6 +67,7 @@ $visita = str_replace('arizona', 'cardinals', $visita);
 $visita = str_replace('lasvegas', 'raiders', $visita);
 $visita = str_replace('chicago', 'bears', $visita);
 $visita = str_replace('greenbay', 'packers', $visita);
-$visita = str_replace('tenneesee', 'titans', $visita);
+$visita = str_replace('tennessee', 'titans', $visita);
 $visita = str_replace('minnesota', 'vikings', $visita);
 $visita = str_replace('philadelphia', 'eagles', $visita);
+$visita = str_replace('buffalo', 'bills', $visita);
