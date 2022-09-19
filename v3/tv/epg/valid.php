@@ -79,8 +79,8 @@ if ($typeChannel == 1 || $typeChannel == 8){
     var source = "'.$channel.'"
     </script>';
     // YouTube Poster
-    if (strlen($row['channelUrl']) == 11){
-        $iframeSrc = "//www.youtube.com/embed/" . $row['channelUrl'];
+    if (strlen($result['channelUrl']) == 11){
+        $iframeSrc = "//www.youtube.com/embed/" . $result['channelUrl'];
         echo '
         <style>#iframe-element{display:block!important;} #player_img{display:none} #myTab{display:none}</style>
         ';
@@ -89,12 +89,12 @@ if ($typeChannel == 1 || $typeChannel == 8){
     }
 } //iFrame
 elseif ($typeChannel == 2){
-    $iframeSrc = $row['channelUrl'];
+    $iframeSrc = $result['channelUrl'];
     echo '<style>#iframe-element{display:block!important;} #myTab, .tab-content{display:none} #vidarea{display:none} #player_img{display:none}</style>';
 } // Redirect
 elseif ($typeChannel == 3){
     // Fuente Sin codificar
-    $channel = $row['channelUrl'];
+    $channel = $result['channelUrl'];
     echo '
     <script>
     window.location.href = "'.$channel.'";
@@ -105,7 +105,7 @@ elseif ($typeChannel == 4){
     $pKey=mysqli_query($conn,"select * from photocall");
     $ret=mysqli_fetch_assoc($pKey);
     $pKey = $ret['pKey'];
-    $pcSrc = "http://irsitpv.42web.io/pc/list.php?id=" . $ret['pKey'] . "/" . $row['channelUrl'];
+    $pcSrc = "http://irsitpv.42web.io/pc/list.php?id=" . $ret['pKey'] . "/" . $result['channelUrl'];
     echo '<style>#iframe-element{display:none;} #myTab{display:none} #jwp{display:none} #vidarea{display:none} #player_img img{display:block!important}</style>';
 } // Blim
 if ($typeChannel == 6){
@@ -115,11 +115,11 @@ if ($typeChannel == 6){
     <a href="https://'.$requested.'" class="btn btn-primary"><ion-icon name="refresh-outline"></ion-icon> Recargar</a>
     ';
     $core = '<script src="bm-jwp.js"></script>';
-    $getKEY = $row['key1'];
-    $getKEY2 = $row['key2'];
+    $getKEY = $result['key1'];
+    $getKEY2 = $result['key2'];
     echo '
     <script>
-    var source = "'. base64_encode("//channel-".$row['channelUrl']."-cdn.blim.com/manifest.mpd").'";
+    var source = "'. base64_encode("//channel-".$result['channelUrl']."-cdn.blim.com/manifest.mpd").'";
     let getKEY = "'.$getKEY.'";
     let getKEY2 = "'.$getKEY2.'";
     </script>
@@ -130,7 +130,7 @@ elseif ($typeChannel == 7){
     $pKey=mysqli_query($conn,"select * from photocall");
     $ret=mysqli_fetch_assoc($pKey);
     $pKey = $ret['pKey'];
-    $pcSrc = "https://irpc.ga/pc/bm.php?id=" . $ret['pKey'] . "/" . $row['channelUrl'];
+    $pcSrc = "https://irpc.ga/pc/bm.php?id=" . $ret['pKey'] . "/" . $result['channelUrl'];
     echo
     '<script>
     window.location.replace("'.$pcSrc.'");
@@ -146,9 +146,9 @@ elseif ($typeChannel == 9){
     </script>';
     $requested = $_SERVER['HTTP_HOST'].$_SERVER['REQUEST_URI'];
     $core = '<script src="mg-jwp.js"></script>';
-    $getURL = base64_encode($row['channelUrl']);
-    $getKEY = $row['key1'];
-    $getKEY2 = $row['key2'];
+    $getURL = base64_encode($result['channelUrl']);
+    $getKEY = $result['key1'];
+    $getKEY2 = $result['key2'];
     echo '
     <script>
     let getURL = "'.$getURL.'";
