@@ -93,7 +93,28 @@ $pet=mysqli_fetch_array($peticiones);
                                         <h2 class="mb-0">Juegos</h2>
                                         <!-- <p class="text-success ms-2 mb-0 font-weight-medium">+3.5%</p> -->
                                     </div>
-                                    <h6 class="text-muted font-weight-normal">de fútbol programados</h6>
+                                    <h6 class="text-muted font-weight-normal">de Fútbol programados</h6>
+                                </div>
+                                <div class="col-4 col-sm-12 col-xl-4 text-center text-xl-right">
+                                    <h3><?=$totalJuegos?></h3>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="col-sm-4 grid-margin">
+                <div class="card">
+                    <a href="futbol.php?liga=23&selectLiga=">
+                        <div class="card-body">
+                            <i class="icon-md mdi mdi-basketball text-light ms-auto"></i>
+                            <div class="row">
+                                <div class="col-8 col-sm-12 col-xl-8 my-auto">
+                                    <div class="d-flex d-sm-block d-md-flex align-items-center">
+                                        <h2 class="mb-0">Juegos</h2>
+                                        <!-- <p class="text-success ms-2 mb-0 font-weight-medium">+3.5%</p> -->
+                                    </div>
+                                    <h6 class="text-muted font-weight-normal">de NBA programados</h6>
                                 </div>
                                 <div class="col-4 col-sm-12 col-xl-4 text-center text-xl-right">
                                     <h3><?=$totalJuegos?></h3>
