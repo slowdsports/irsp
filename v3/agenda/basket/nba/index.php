@@ -37,7 +37,7 @@ if (isset($_SESSION['message']) ){
             <div class="row">
                 <!-- NBA TV -->
                 <div style="" class="col-6">
-                    <a href="epg?url=epg&c=225">
+                    <a href="../../../tv/epg?url=epg&c=225">
                         <div class="card product-card liga-card">
                             <div class="card-body">
                                 <center>
@@ -49,7 +49,7 @@ if (isset($_SESSION['message']) ){
                     </a>
                 </div>
                 <div style="" class="col-6">
-                    <a href="epg?url=epg&c=564">
+                    <a href="../../../tv/epg?url=epg&c=564">
                         <div class="card product-card liga-card">
                             <div class="card-body">
                                 <center>
