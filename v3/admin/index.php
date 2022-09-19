@@ -7,6 +7,12 @@ $totalUsuarios=mysqli_num_rows($users);
 $users=mysqli_query($conn,"select * from agenda");
 $totalJuegos=mysqli_num_rows($users);
 
+$users=mysqli_query($conn,"select * from agenda where liga=14");
+$totalNFL=mysqli_num_rows($users);
+
+$users=mysqli_query($conn,"select * from agenda where liga=22");
+$totalMLB=mysqli_num_rows($users);
+
 $users=mysqli_query($conn,"select * from tenis");
 $totalTenis=mysqli_num_rows($users);
 
@@ -99,6 +105,48 @@ $pet=mysqli_fetch_array($peticiones);
             </div>
             <div class="col-sm-4 grid-margin">
                 <div class="card">
+                    <a href="futbol.php?liga=14&selectLiga=">
+                        <div class="card-body">
+                            <i class="icon-md mdi mdi-football text-light ms-auto"></i>
+                            <div class="row">
+                                <div class="col-8 col-sm-12 col-xl-8 my-auto">
+                                    <div class="d-flex d-sm-block d-md-flex align-items-center">
+                                        <h2 class="mb-0">Juegos</h2>
+                                        <!-- <p class="text-success ms-2 mb-0 font-weight-medium">+3.5%</p> -->
+                                    </div>
+                                    <h6 class="text-muted font-weight-normal">de NFL programados</h6>
+                                </div>
+                                <div class="col-4 col-sm-12 col-xl-4 text-center text-xl-right">
+                                    <h3><?=$totalNFL?></h3>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="col-sm-4 grid-margin">
+                <div class="card">
+                    <a href="futbol.php?liga=22&selectLiga=">
+                        <div class="card-body">
+                            <i class="icon-md mdi mdi-baseball text-light ms-auto"></i>
+                            <div class="row">
+                                <div class="col-8 col-sm-12 col-xl-8 my-auto">
+                                    <div class="d-flex d-sm-block d-md-flex align-items-center">
+                                        <h2 class="mb-0">Juegos</h2>
+                                        <!-- <p class="text-success ms-2 mb-0 font-weight-medium">+3.5%</p> -->
+                                    </div>
+                                    <h6 class="text-muted font-weight-normal">de MLB programados</h6>
+                                </div>
+                                <div class="col-4 col-sm-12 col-xl-4 text-center text-xl-right">
+                                    <h3><?=$totalMLB?></h3>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="col-sm-4 grid-margin">
+                <div class="card">
                     <a href="tenis.php">
                         <div class="card-body">
                             <i class="icon-md mdi mdi-tennis text-light ms-auto"></i>
@@ -143,7 +191,7 @@ $pet=mysqli_fetch_array($peticiones);
                 <div class="card">
                     <a href="balonmano.php">
                         <div class="card-body">
-                            <i class="icon-md mdi mdi-mixed-martial-arts text-light ms-auto"></i>
+                            <i class="icon-md mdi mdi-handball text-light ms-auto"></i>
                             <div class="row">
                                 <div class="col-8 col-sm-12 col-xl-8 my-auto">
                                     <div class="d-flex d-sm-block d-md-flex align-items-center">
