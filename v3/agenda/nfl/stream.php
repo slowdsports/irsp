@@ -14,7 +14,7 @@ if(isset($_GET['c'])){
     // 404 for error, 200 for no error
     if(strpos($string, "200")) {
         $m3u8 = base64_encode($file);
-        echo '<script>window.location.href = "../../tv/epg?nba&plyr=vid&c='.$m3u8.'&id='.$index.'";</script>';
+        echo '<script>window.location.href = "../../tv/epg?nba&plyr=jw&c='.$m3u8.'&id='.$index.'";</script>';
     }
     else {
         $base ="http://cackskyatc.azureedge.net/streams/";
@@ -27,7 +27,7 @@ if(isset($_GET['c'])){
         // 404 for error, 200 for no error
         if(strpos($string, "200")) {
             $m3u8 = base64_encode($file);
-            echo '<script>window.location.href = "../../tv/epg?nba&plyr=vid&c='.$m3u8.'&id='.$index.'";</script>';
+            echo '<script>window.location.href = "../../tv/epg?nba&plyr=jw&c='.$m3u8.'&id='.$index.'";</script>';
         } else{
             $_SESSION['message'] = "No se ha podido cargar la retransmisión del juego.";
             echo $m3u8;

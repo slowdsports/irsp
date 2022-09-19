@@ -82,7 +82,7 @@ if (isset($_SESSION['message']) ){
     // // Validaciones de Canales
     include('valid.php');
     // Windows o Mobile Pluto
-    if ($typeChannel == 8 && strpos($useragent, "Android")){
+    if ($typeChannel == 8 && strpos($useragent, "Android") || $_GET['plyr'] === "vid"){
         $isJw = "";
         $isHls = "show active";
         //echo $useragent;
