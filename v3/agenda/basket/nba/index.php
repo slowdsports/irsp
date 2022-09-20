@@ -63,7 +63,6 @@ if (isset($_SESSION['message']) ){
                 <hr>
                 <!-- NBA TV -->
                 <?php
-                $getLiga = $_GET['id'];
                 $ligas = mysqli_query($conn, "select * from agenda
                 INNER JOIN ligas ON agenda.liga = ligas.ligaId
                 where liga = 23 and status=1");

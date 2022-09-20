@@ -2,6 +2,8 @@
 $c = ucfirst($_GET['c']); $g = $_GET['g'];
 $c2 = ucfirst($_GET['c2']); $g2 = $_GET['g2'];
 $index = $_GET['id'];
+$liga = $result['ligaImg'];
+echo $liga;
 
 if(isset($_GET['c'])){
     $base ="http://cackskyatc.azureedge.net/streams/";

@@ -4,6 +4,9 @@
 .live-text ion-icon{
     color: red;
 }
+.main-event p{
+  color: #fff!important;
+}
 /* FLASHING */
 
 @-webkit-keyframes flash {

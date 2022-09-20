@@ -98,7 +98,7 @@ if (isset($_SESSION['message']) ){
     </center>
 </div>
 
-<!-- Anuncio -->
+<!-- Anuncio --
 <?php
 if ($userType !== 0){
     echo '
