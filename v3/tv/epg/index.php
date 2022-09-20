@@ -39,7 +39,7 @@ if (isset($_SESSION['message']) ){
 ?>
 <hr>
 
-<div class="header-large-title">
+<div class="header-large-title container">
     <h1 class="title"><?=ucfirst($result['channelName'])?></h1>
     <?php
     // Evento | Juego

@@ -23,7 +23,7 @@ if (isset($_SESSION['message']) ){
 }
 ?>
 
-<div class="header-large-title">
+<div class="header-large-title container">
     <h1 class="title"><?=ucfirst($row['fullname'])?></h1>
     <h4 class="subtitle">¿Qué quieres ver hoy?</h4>
 </div>
@@ -108,7 +108,7 @@ if (isset($_SESSION['message']) ){
                 } elseif ($totalGames >= 1){
                     $ligaStatus = "show";
                 }
-                if ($index == 12 || $index == 13 || $index == 14){
+                if ($index == 12 || $index == 13 || $index == 14 || $index == 22 || $index == 23){
                     $ligaStatus = "hidden";
                 }
             ?>

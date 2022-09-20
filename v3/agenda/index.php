@@ -50,47 +50,10 @@ if (isset($_SESSION['message']) ){
     </div>
     <!-- * welcome notification -->
 
-<div class="header-large-title">
+<div class="header-large-title container">
     <h1 class="title"><?=ucfirst($row['fullname'])?>,</h1>
     <h4 class="subtitle">Elige lo que quieres ver</h4>
 </div>
-
-<!-- Carousel --
-<div class="section full mt-3 mb-3">
-    <div class="carousel-multiple owl-carousel owl-theme">
-        <a href="#first">
-            <div class="item">
-                <div class="card">
-                    <img src="<?=$app?>assets/img/sample/photo/d2.jpg" class="card-img-top" alt="image">
-                    <div class="card-body pt-2">
-                        <h4 class="mb-0">Fútbol</h4>
-                    </div>
-                </div>
-            </div>
-        </a>
-        <a href="#first">
-            <div class="item">
-                <div class="card">
-                    <img src="<?=$app?>assets/img/sample/photo/d2.jpg" class="card-img-top" alt="image">
-                    <div class="card-body pt-2">
-                        <h4 class="mb-0">Basket</h4>
-                    </div>
-                </div>
-            </div>
-        </a>
-
-        <div class="item">
-            <div class="card">
-                <img src="<?=$app?>assets/img/sample/photo/d4.jpg" class="card-img-top" alt="image">
-                <div class="card-body pt-2">
-                    <h4 class="mb-0">Promociones</h4>
-                </div>
-            </div>
-        </div>
-
-    </div>
-</div>
-<!-- End Carousel -->
 
 <div class="section mt-2">
     <div class="row">

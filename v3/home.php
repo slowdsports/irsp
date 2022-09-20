@@ -51,7 +51,7 @@ if (isset($_SESSION['message']) ){
     </div>
     <!-- * welcome notification -->
 
-    <div class="header-large-title">
+    <div class="header-large-title container">
         <h1 class="title">
             <?php
             if (!isset($_SESSION['id']) ||(trim ($_SESSION['id']) == '')) {

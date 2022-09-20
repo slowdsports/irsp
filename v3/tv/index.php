@@ -32,7 +32,7 @@ if (isset($_SESSION['message']) ){
 }
 ?>
 <div class="container">
-    <div class="header-large-title">
+    <div class="header-large-title container">
         <h1 class="title"><?=ucfirst($row['fullname'])?></h1>
         <h4 class="subtitle">¿Qué quieres ver hoy?</h4>
     </div>

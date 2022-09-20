@@ -131,7 +131,7 @@
                         <li>
                             <a href="<?=$app?>agenda/futbol" class="item">
                                 <div class="icon-box bg-primary">
-                                    <ion-icon name="basketball-outline"></ion-icon>
+                                    <ion-icon name="football-outline"></ion-icon>
                                 </div>
                                 <div class="in">
                                     <div>Fútbol</div>
@@ -139,13 +139,51 @@
                                 </div>
                             </a>
                         </li>
+                        <!-- Counter de los partidos -->
+                        <?php
+                        $agenda=mysqli_query($conn,"select * from agenda where liga=23");
+                        $totalBasket=mysqli_num_rows($agenda);
+                        ?>
                         <li>
                             <a href="<?=$app?>agenda/basket" class="item">
                                 <div class="icon-box bg-primary">
-                                    <ion-icon name="football-outline"></ion-icon>
+                                    <ion-icon name="basketball-outline"></ion-icon>
                                 </div>
                                 <div class="in">
-                                    Basketball
+                                    <div>Basketball</div>
+                                    <span class="badge badge-danger"><?=$totalBasket?></span>
+                                </div>
+                            </a>
+                        </li>
+                        <!-- Counter de los partidos -->
+                        <?php
+                        $agenda=mysqli_query($conn,"select * from agenda where liga=14");
+                        $totalNFL=mysqli_num_rows($agenda);
+                        ?>
+                        <li>
+                            <a href="<?=$app?>agenda/nfl" class="item">
+                                <div class="icon-box bg-primary">
+                                    <ion-icon name="american-football-outline"></ion-icon>
+                                </div>
+                                <div class="in">
+                                    <div>NFL</div>
+                                    <span class="badge badge-danger"><?=$totalNFL?></span>
+                                </div>
+                            </a>
+                        </li>
+                        <!-- Counter de los partidos -->
+                        <?php
+                        $agenda=mysqli_query($conn,"select * from agenda where liga=22");
+                        $totalMLB=mysqli_num_rows($agenda);
+                        ?>
+                        <li>
+                            <a href="<?=$app?>agenda/mlb" class="item">
+                                <div class="icon-box bg-primary">
+                                    <ion-icon name="baseball-outline"></ion-icon>
+                                </div>
+                                <div class="in">
+                                    <div>MLB</div>
+                                    <span class="badge badge-danger"><?=$totalMLB?></span>
                                 </div>
                             </a>
                         </li>

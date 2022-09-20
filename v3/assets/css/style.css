@@ -196,18 +196,18 @@ button:hover, button:active, button:focus {
   box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.1), 0 1px 3px 0 rgba(0, 0, 0, 0.08);
 }
 
-.header-large-title {
+.header-large-title container {
   padding: 0 16px;
 }
 
-.header-large-title .title {
+.header-large-title container .title {
   margin: 4px 0 0 0;
   font-size: 34px;
   letter-spacing: -0.02em;
   line-height: 1.3em;
 }
 
-.header-large-title .subtitle {
+.header-large-title container .subtitle {
   font-size: 17px;
   font-weight: 400;
   margin: 6px 0 0 0;
@@ -6967,11 +6967,11 @@ body.dark-mode-active .section.inset .wide-block {
   /* border-color: #0792B5; */
 }
 
-body.dark-mode-active .header-large-title .title {
+body.dark-mode-active .header-large-title container .title {
   color: #FFFFFF;
 }
 
-body.dark-mode-active .header-large-title .subtitle {
+body.dark-mode-active .header-large-title container .subtitle {
   color: #FFFFFF !important;
 }
 
