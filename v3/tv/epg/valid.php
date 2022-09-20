@@ -47,7 +47,6 @@ if (window.location.protocol != "https:") {
 $requested = $_SERVER['HTTP_HOST'].$_SERVER['REQUEST_URI'];
 $core = '<script src="mg-jwp.js"></script>';
 $getURL = base64_decode($_GET['c']);
-echo $getURL;
 $getKEY = $_GET['key'];
 $getKEY2 = $_GET['key2'];
 echo '
