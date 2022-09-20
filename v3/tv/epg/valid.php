@@ -23,10 +23,44 @@ if (isset($_GET['r'])){
         $decode = base64_decode($_GET['r']);
         // Sustituir URL: "//vercomofutbol.xyz/s/star_jwp.html"
         $decode = str_replace("//vercomofutbol.xyz/s/star_jwp.html", "", $decode);
-        $decode = "https://irpc.ga/mg/play/star.php" . $decode;
+        //$decode = "https://irpc.ga/mg/play/star.php" . $decode;
         header ("location: $decode");
     }
 }
+// Encriptamos
+if (isset($_GET['get']) && isset($_GET['img'])){
+    $channel = base64_encode($_GET['get']);
+    $img = base64_encode($_GET['img']);
+    $key = base64_encode($_GET['key']);
+    $key2 = base64_encode($_GET['key2']);
+    $decode = "?c=".$channel."&img=".$img."&key=".$key."&key2=".$key2;
+    header ("location: $decode");
+}
+// Cargamos
+if (isset($_GET['c']) && isset($_GET['img'])){
+// Recargar página con SSL
+// echo '<script>
+// if (window.location.protocol != "https:") {
+//     location.href =   location.href.replace("http://", "https://");
+// }
+// </script>';
+$requested = $_SERVER['HTTP_HOST'].$_SERVER['REQUEST_URI'];
+$core = '<script src="mg-jwp.js"></script>';
+$getURL = base64_decode($_GET['c']);
+echo $getURL;
+$getKEY = $_GET['key'];
+$getKEY2 = $_GET['key2'];
+echo '
+<script>
+let getURL = "'.$getURL.'";
+let getKEY = "'.$getKEY.'";
+let getKEY2 = "'.$getKEY2.'";
+</script>
+<style>#jwp{display:block!important} #iframe-element{display:none!important;} #{display:none} #player_img{display:none}</style>';
+}
+
+
+
 // NFL
 if (isset($_GET['nba'])){
     $channel = $_GET['c'];
