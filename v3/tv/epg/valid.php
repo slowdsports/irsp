@@ -39,19 +39,21 @@ if (isset($_GET['get']) && isset($_GET['img'])){
 // Cargamos
 if (isset($_GET['c']) && isset($_GET['img'])){
 //Recargar página con SSL
-echo '<script>
-if (window.location.protocol != "https:") {
-    location.href =   location.href.replace("http://", "https://");
-}
-</script>';
+// echo '<script>
+// if (window.location.protocol != "https:") {
+//     location.href =   location.href.replace("http://", "https://");
+// }
+// </script>';
 $requested = $_SERVER['HTTP_HOST'].$_SERVER['REQUEST_URI'];
-$core = '<script src="mg-jwp.js"></script>';
+$core = '<script src="star-jwp.js"></script>';
 $getURL = $_GET['c'];
+$getIMG = $_GET['img'];
 $getKEY = $_GET['key'];
 $getKEY2 = $_GET['key2'];
 echo '
 <script>
 let getURL = "'.$getURL.'";
+let getIMG = "'.$getIMG.'";
 let getKEY = "'.$getKEY.'";
 let getKEY2 = "'.$getKEY2.'";
 </script>
