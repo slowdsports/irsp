@@ -36,7 +36,9 @@ foreach ($juego as $nombre){
         if ($hora == null) {$hora = "00";}
         // Formato
         //2022-04-18 00:00:00
-        $fecha = date("Y") . "-04-01" . $dd. "". $mm . " " .$hora . ":00";
+        $mm = date('m');
+        $yy = "20".date('y');
+        $fecha = $yy . "-". $mm . "-". $dd. "" .$hora . ":00";
     $canal = $nombre ->find ('td.canales ul li',0)-> title;
     $canal2 = $nombre ->find ('td.canales ul li',1)-> title;
     $canal3 = $nombre ->find ('td.canales ul li',2)-> title;
