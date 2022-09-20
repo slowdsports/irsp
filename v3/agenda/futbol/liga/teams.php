@@ -181,7 +181,7 @@ if ($result['ligaImg'] == 18){
 
     // INTL
     $local = str_replace('mxico', 'México', $local);
-    $local = str_replace('kazajistn', 'Kazakistán', $local);
+    $local = str_replace('kazajistn', 'Kazajistán', $local);
     $local = str_replace('blgica', 'Bélgica', $local);
     $local = str_replace('azerbaiyn', 'Azerbaiyán', $local);
     $local = str_replace('turqua', 'Turquía', $local);
@@ -195,7 +195,7 @@ if ($result['ligaImg'] == 18){
     $local = str_replace('repblicairlanda', 'República de Irlanda', $local);
 
     $visita = str_replace('mxico', 'México', $visita);
-    $visita = str_replace('kazajistn', 'Kazakistán', $visita);
+    $visita = str_replace('kazajistn', 'Kazajistán', $visita);
     $visita = str_replace('blgica', 'Bélgica', $visita);
     $visita = str_replace('azerbaiyn', 'Azerbaiyán', $visita);
     $visita = str_replace('turqua', 'Turquía', $visita);
