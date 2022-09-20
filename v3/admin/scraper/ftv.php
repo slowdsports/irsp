@@ -18,7 +18,28 @@ $i2 = 1;
 
 foreach ($juego as $nombre){
     // CONDITIONS
-    $cabtabla = $nombre ->find('td',0) -> colspan;
+    $cabtabla = $nombre ->find('td[colspan]',0) -> plaintext;
+        $cabtabla = str_replace("Mañana", "", $cabtabla);
+        $cabtabla = str_replace("lunes", "", $cabtabla);
+        $cabtabla = str_replace("martes", "", $cabtabla);
+        $cabtabla = str_replace("miércoles", "", $cabtabla);
+        $cabtabla = str_replace("jueves", "", $cabtabla);
+        $cabtabla = str_replace("viernes", "", $cabtabla);
+        $cabtabla = str_replace("sábado", "", $cabtabla);
+        $cabtabla = str_replace("domingo", "", $cabtabla);
+        $cabtabla = str_replace("Lunes", "", $cabtabla);
+        $cabtabla = str_replace("Martes", "", $cabtabla);
+        $cabtabla = str_replace("Miércoles", "", $cabtabla);
+        $cabtabla = str_replace("Jueves", "", $cabtabla);
+        $cabtabla = str_replace("Viernes", "", $cabtabla);
+        $cabtabla = str_replace("Sábado", "", $cabtabla);
+        $cabtabla = str_replace("Domingo", "", $cabtabla);
+        $cabtabla = str_replace(",", "", $cabtabla);
+        $cabtabla = str_replace("/", "-", $cabtabla);
+        $cabtabla = str_replace(" ", "", $cabtabla);
+        $cabtabla = str_replace("2022", "2022 ", $cabtabla);
+            $dd = substr($cabtabla, "0", "2");
+            $dd = $dd.":00";
     $local = $nombre ->find ('td.local span',0)-> plaintext;
         $local = strtolower($local);
         $local = str_replace(' ', '', $local);
@@ -62,7 +83,8 @@ if($encoding2 !== 'ASCII') {
 
 // Agregamos los campos a la DB
 if (isset($_POST['create'])){
-    $sql = "INSERT INTO agenda(local,visita,logoL,logoV,canal,canal2,canal3,canal4,fecha,liga,status) VALUES('".$local."','".$visita."','".$local."','".$visita."','".$canal."','".$canal2."','".$canal3."','".$canal4."','2022-04-18 00:00:00','$liga','1')";
+    //$sql = "INSERT INTO agenda(local,visita,logoL,logoV,canal,canal2,canal3,canal4,fecha,liga,status) VALUES('".$local."','".$visita."','".$local."','".$visita."','".$canal."','".$canal2."','".$canal3."','".$canal4."','2022-04-18 00:00:00','$liga','1')";
+    $sql = "INSERT INTO agenda(local,visita,logoL,logoV,canal,canal2,canal3,canal4,fecha,liga,status) VALUES('".$local."','".$visita."','".$local."','".$visita."','".$canal."','".$canal2."','".$canal3."','".$canal4."','$fecha','$liga','1')";
 mysqli_query($conn,$sql);
 }
 }
