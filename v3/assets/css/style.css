@@ -3,9 +3,27 @@
 @import url("inc/owl-carousel/owl.carousel.min.css");
 @import url("inc/owl-carousel/owl.theme.default.css");
 @import url("https://fonts.googleapis.com/css?family=Inter:400,500,700&display=swap");
+/* Player Containers */
+#jw , #hls{
+  height: 70vh;
+}
+.onclick{
+  height: 100%;
+}
 /* JW Player Styles */
+#jwp{
+  width: 95%!important;
+  height: 100%!important;
+  margin-top: 1%;
+}
 .jw-svg-icon-play , .jw-svg-icon-buffer , .jw-svg-icon-replay , .jw-state-idle .jw-svg-icon-play , .jw-icon {
   color: #007bff;
+}
+/* HLS Video Tag Styles */
+.video-js{
+  width: 95%;
+  height: 100%;
+  margin-top: 1%;
 }
 body {
   font-family: "Inter", sans-serif;

@@ -41,13 +41,11 @@ if (isset($_SESSION['message']) ){
 
 <div class="header-large-title container">
     <h1 class="title"><?=ucfirst($result['channelName'])?></h1>
-    <?php
-    // Evento | Juego
-    include('../../inc/epgevent.php');
-    ?>
 
 <div class="container">
     <?php
+    // Evento | Juego
+    include('../../inc/epgevent.php');
     // // Validaciones de Canales
     include('valid.php');
     // Windows o Mobile Pluto
@@ -62,13 +60,12 @@ if (isset($_SESSION['message']) ){
     }
     ?>
     <center>
-        <hr>
         <div class="tab-content" id="myTabContent">
             <div class="tab-pane fade <?=$isJw?>" id="jw" role="tabpanel" aria-labelledby="jw-tab">
                 <!-- M3U8 -->
                 <script src="https://ssl.p.jwpcdn.com/player/v/8.24.0/jwplayer.js"></script>
                 <script> jwplayer.key='XSuP4qMl+9tK17QNb+4+th2Pm9AWgMO/cYH8CI0HGGr7bdjo';</script>
-                <div onclick="goFullscreen('player');">
+                <div class="onclick" onclick="goFullscreen('player');">
                     <div id="jwp">Cargando Reproductor...</div>
                 </div>
                 <!-- <script src="jwp.js"></script> -->
@@ -76,8 +73,8 @@ if (isset($_SESSION['message']) ){
                 </div>
             <div class="tab-pane fade <?=$isHls?>" id="hls" role="tabpanel" aria-labelledby="hls-tab">
                 <!-- Video TAG -->
-                <div onclick="goFullscreen('player');">
-                    <video style="margin-top: 40px" id="vidarea" class="video-js vjs-default-skin" width="90%" height="55%" controls ></video>
+                <div class="onclick" onclick="goFullscreen('player');">
+                    <video id="vidarea" class="video-js vjs-default-skin" controls ></video>
                 </div>
             </div>
         </div>
@@ -198,6 +195,9 @@ if ($userType !== 0){
 <!-- End Otros Eventos Slider -->
 
 <!-- Recomendados Slider -->
+<?php
+if (!isset($_GET['nba'])){
+?>
 <div class="section full mt-3 mb-3">
     <h2> Relacionados </h2>
     <div class="carousel-multiple owl-carousel owl-theme">
@@ -223,7 +223,8 @@ if ($userType !== 0){
                 </div>
             </div>
         </a>
-        <?php } ?>
+        <?php }
+    } ?>
     </div>
 </div>
 <!-- End Recomendados Slider -->
