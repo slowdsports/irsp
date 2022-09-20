@@ -1,4 +1,13 @@
 <?php
+// mlaliga iframe
+if ($_GET['c']==558){
+    // Recargar página con SSL
+    echo '<script>
+    if (window.location.protocol != "https:") {
+        location.href =   location.href.replace("http://", "https://");
+    }
+    </script>';
+}
 // EPG Oculto para Pluto
 if ($typeChannel == 2 || $typeChannel == 3 || $typeChannel == 8 | $_GET['url'] == "" ){
     $epgStatus = "hidden";
