@@ -181,6 +181,32 @@ if ($result['ligaImg'] == 18){
 
     // INTL
     $local = str_replace('mxico', 'México', $local);
+    $local = str_replace('kazajistn', 'Kazakistán', $local);
+    $local = str_replace('blgica', 'Bélgica', $local);
+    $local = str_replace('azerbaiyn', 'Azerbaiyán', $local);
+    $local = str_replace('turqua', 'Turquía', $local);
+    $local = str_replace('islasferoe', 'Islas Feroe', $local);
+    $local = str_replace('macedonianorte', 'Macedonia del Norte', $local);
+    $local = str_replace('rumana', 'Rumanía', $local);
+    $local = str_replace('hungra', 'Hungría', $local);
+    $local = str_replace('irlandadelnorte', 'Irlanda del Norte', $local);
+    $local = str_replace('espaa', 'España', $local);
+    $local = str_replace('repblicacheca', 'República Checa', $local);
+    $local = str_replace('repblicairlanda', 'República de Irlanda', $local);
+
+    $visita = str_replace('mxico', 'México', $visita);
+    $visita = str_replace('kazajistn', 'Kazakistán', $visita);
+    $visita = str_replace('blgica', 'Bélgica', $visita);
+    $visita = str_replace('azerbaiyn', 'Azerbaiyán', $visita);
+    $visita = str_replace('turqua', 'Turquía', $visita);
+    $visita = str_replace('islasferoe', 'Islas Feroe', $visita);
+    $visita = str_replace('macedonianorte', 'Macedonia del Norte', $visita);
+    $visita = str_replace('rumana', 'Rumanía', $visita);
+    $visita = str_replace('hungra', 'Hungría', $visita);
+    $visita = str_replace('irlandadelnorte', 'Irlanda del Norte', $visita);
+    $visita = str_replace('espaa', 'España', $visita);
+    $visita = str_replace('repblicacheca', 'República Checa', $visita);
+    $visita = str_replace('repblicairlanda', 'República de Irlanda', $visita);
 
     // Liga MX
     $local = str_replace('america', 'América', $local);
