@@ -119,7 +119,7 @@ if (isset($_SESSION['message']) ){
                                 } else{
                                 ?>
                                 <li>
-                                    <a class="justify-content-center" href="../../../tv/epg/?c=<?=$row['channelId']?>">
+                                    <a class="justify-content-center" href="../../../tv/epg/?futbol&id=<?=$index?>&c=<?=$row['channelId']?>">
                                         <i class="flag <?=$row['countryImg']?>"></i>
                                         <?=$row['channelName']?>
                                     </a>
@@ -138,7 +138,7 @@ if (isset($_SESSION['message']) ){
                                 } else{
                                 ?>
                                 <li>
-                                    <a class="justify-content-center" href="../../../tv/epg/?c=<?=$row['channelId']?>">
+                                    <a class="justify-content-center" href="../../../tv/epg/?futbol&id=<?=$index?>&c=<?=$row['channelId']?>">
                                         <i class="flag <?=$row['countryImg']?>"></i>
                                         <?=$row['channelName']?>
                                     </a>
@@ -157,7 +157,7 @@ if (isset($_SESSION['message']) ){
                                 } else{
                                 ?>
                                 <li>
-                                    <a class="justify-content-center" href="../../../tv/epg/?c=<?=$row['channelId']?>">
+                                    <a class="justify-content-center" href="../../../tv/epg/?futbol&id=<?=$index?>&c=<?=$row['channelId']?>">
                                         <i class="flag <?=$row['countryImg']?>"></i>
                                         <?=$row['channelName']?>
                                     </a>

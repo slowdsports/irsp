@@ -266,7 +266,7 @@ if($canal === "DAZN" || $canal === "DAZN" || $canal === "dazn1"){
         </a>
     </li>
     <li>
-        <a class="justify-content-center" href="../../../tv/epg?c=560">
+        <a class="justify-content-center" href="../../../tv/epg?futbol&id='.$index.'&c=560">
         <i class="flag es"></i>
         DAZN 1 | VIP HD
         </a>
@@ -281,7 +281,7 @@ if($canal === "DAZN" || $canal === "DAZN" || $canal === "dazn1"){
         </a>
     </li>
     <li>
-        <a class="justify-content-center" href="../../../tv/epg?c=560">
+        <a class="justify-content-center" href="../../../tv/epg?futbol&id='.$index.'&c=560">
         <i class="flag es"></i>
         DAZN 1 | VIP HD
         </a>
@@ -292,7 +292,7 @@ if($canal === "DAZN2" || $canal === "DAZN2" || $canal === "dazn2"){
     $canalImg = "dazn";
     $canalop2 = '
     <li>
-        <a class="justify-content-center" href="../../../tv/epg?c=569">
+        <a class="justify-content-center" href="../../../tv/epg?futbol&id='.$index.'&c=569">
         <i class="flag es"></i>
         DAZN 2 | HD
         </a>
@@ -307,7 +307,7 @@ if($canal === "DAZN2" || $canal === "DAZN2" || $canal === "dazn2"){
     $canalImg = "dazn";
     $canal2 = '
     <li>
-        <a class="justify-content-center" href="../../../tv/epg?c=569">
+        <a class="justify-content-center" href="../../../tv/epg?futbol&id='.$index.'&c=569">
         <i class="flag es"></i>
         DAZN 2
         </a>
@@ -434,7 +434,7 @@ if($canal === "directv1" || $canal === "directv1"){
     $canalImg = "directv";
     $canalop2 = '
     <li>
-        <a class="justify-content-center" href="../../../tv/epg?c=561">
+        <a class="justify-content-center" href="../../../tv/epg?futbol&id='.$index.'&c=561">
         <i class="flag ar"></i>
         DirecTV Sports | HD
         </a>
@@ -443,7 +443,7 @@ if($canal === "directv1" || $canal === "directv1"){
     $canalImg = "directv";
     $canal2 = '
     <li>
-        <a class="justify-content-center" href="../../../tv/epg?c=561">
+        <a class="justify-content-center" href="../../../tv/epg?futbol&id='.$index.'&c=561">
         <i class="flag ar"></i>
         DirecTV Sports | HD
         </a>
@@ -474,7 +474,7 @@ if($canal === "directv2" || $canal === "directv2"){
     $canalImg = "directv";
     $canalop2 = '
     <li>
-        <a class="justify-content-center" href="../../../tv/epg?c=562">
+        <a class="justify-content-center" href="../../../tv/epg?futbol&id='.$index.'&c=562">
         <i class="flag ar"></i>
         DirecTV Sports 2 | HD
         </a>
@@ -483,7 +483,7 @@ if($canal === "directv2" || $canal === "directv2"){
     $canalImg = "directv";
     $canal2 = '
     <li>
-        <a class="justify-content-center" href="../../../tv/epg?c=562">
+        <a class="justify-content-center" href="../../../tv/epg?futbol&id='.$index.'&c=562">
         <i class="flag ar"></i>
         DirecTV Sports 2 | HD
         </a>
@@ -514,7 +514,7 @@ if($canal === "espnsur" || $canal === "espnsur"){
     $canalImg = "espn";
     $canalop2 = '
     <li>
-        <a class="justify-content-center" href="../../../tv/epg?c=1">
+        <a class="justify-content-center" href="../../../tv/epg?futbol&id='.$index.'&c=1">
         <i class="flag ar"></i>
         ESPN Sur | HD
         </a>
@@ -523,7 +523,7 @@ if($canal === "espnsur" || $canal === "espnsur"){
     $canalImg = "espn";
     $canal2 = '
     <li>
-        <a class="justify-content-center" href="../../../tv/epg?c=1">
+        <a class="justify-content-center" href="../../../tv/epg?futbol&id='.$index.'&c=1">
         <i class="flag ar"></i>
         ESPN Sur | HD
         </a>
@@ -534,7 +534,7 @@ if($canal === "espn2sur" || $canal === "espn2sur"){
     $canalImg = "espn";
     $canalop2 = '
     <li>
-        <a class="justify-content-center" href="../../../tv/epg?c=2">
+        <a class="justify-content-center" href="../../../tv/epg?futbol&id='.$index.'&c=2">
         <i class="flag ar"></i>
         ESPN 2 Sur | HD
         </a>
@@ -543,7 +543,7 @@ if($canal === "espn2sur" || $canal === "espn2sur"){
     $canalImg = "espn";
     $canal2 = '
     <li>
-        <a class="justify-content-center" href="../../../tv/epg?c=2">
+        <a class="justify-content-center" href="../../../tv/epg?futbol&id='.$index.'&c=2">
         <i class="flag ar"></i>
         ESPN 2 Sur | HD
         </a>
@@ -554,7 +554,7 @@ if($canal === "espn3sur" || $canal === "espn3sur"){
     $canalImg = "espn";
     $canalop2 = '
     <li>
-        <a class="justify-content-center" href="../../../tv/epg?c=3">
+        <a class="justify-content-center" href="../../../tv/epg?futbol&id='.$index.'&c=3">
         <i class="flag ar"></i>
         ESPN 3 Sur | HD
         </a>
@@ -563,7 +563,7 @@ if($canal === "espn3sur" || $canal === "espn3sur"){
     $canalImg = "espn";
     $canal2 = '
     <li>
-        <a class="justify-content-center" href="../../../tv/epg?c=3">
+        <a class="justify-content-center" href="../../../tv/epg?futbol&id='.$index.'&c=3">
         <i class="flag ar"></i>
         ESPN 3 Sur | HD
         </a>
@@ -594,7 +594,7 @@ if($canal === "espnextra" || $canal === "espnextra"){
     $canalImg = "espn";
     $canalop2 = '
     <li>
-        <a class="justify-content-center" href="../../../tv/epg?c=4">
+        <a class="justify-content-center" href="../../../tv/epg?futbol&id='.$index.'&c=4">
         <i class="flag ar"></i>
         ESPN Extra | HD
         </a>
@@ -603,7 +603,7 @@ if($canal === "espnextra" || $canal === "espnextra"){
     $canalImg = "espn";
     $canal2 = '
     <li>
-        <a class="justify-content-center" href="../../../tv/epg?c=4">
+        <a class="justify-content-center" href="../../../tv/epg?futbol&id='.$index.'&c=4">
         <i class="flag ar"></i>
         ESPN Extra | HD
         </a>
@@ -634,7 +634,7 @@ if($canal === "foxsportssur" || $canal === "foxsportssur"){
     $canalImg = "foxsports";
     $canalop2 = '
     <li>
-        <a class="justify-content-center" href="../../../tv/epg?c=5">
+        <a class="justify-content-center" href="../../../tv/epg?futbol&id='.$index.'&c=5">
         <i class="flag ar"></i>
         FOX Sports | HD
         </a>
@@ -643,7 +643,7 @@ if($canal === "foxsportssur" || $canal === "foxsportssur"){
     $canalImg = "foxsports";
     $canal2 = '
     <li>
-        <a class="justify-content-center" href="../../../tv/epg?c=5">
+        <a class="justify-content-center" href="../../../tv/epg?futbol&id='.$index.'&c=5">
         <i class="flag ar"></i>
         FOX Sports | HD
         </a>
@@ -654,7 +654,7 @@ if($canal === "foxsports2sur" || $canal === "foxsports2sur"){
     $canalImg = "foxsports";
     $canalop2 = '
     <li>
-        <a class="justify-content-center" href="../../../tv/epg?c=6">
+        <a class="justify-content-center" href="../../../tv/epg?futbol&id='.$index.'&c=6">
         <i class="flag ar"></i>
         FOX Sports 2 | HD
         </a>
@@ -663,7 +663,7 @@ if($canal === "foxsports2sur" || $canal === "foxsports2sur"){
     $canalImg = "foxsports";
     $canal2 = '
     <li>
-        <a class="justify-content-center" href="../../../tv/epg?c=6">
+        <a class="justify-content-center" href="../../../tv/epg?futbol&id='.$index.'&c=6">
         <i class="flag ar"></i>
         FOX Sports 2 | HD
         </a>
@@ -674,7 +674,7 @@ if($canal === "foxsports3sur" || $canal === "foxsports3sur"){
     $canalImg = "foxsports";
     $canalop2 = '
     <li>
-        <a class="justify-content-center" href="../../../tv/epg?c=7">
+        <a class="justify-content-center" href="../../../tv/epg?futbol&id='.$index.'&c=7">
         <i class="flag ar"></i>
         FOX Sports 3 | HD
         </a>
@@ -683,7 +683,7 @@ if($canal === "foxsports3sur" || $canal === "foxsports3sur"){
     $canalImg = "foxsports";
     $canal2 = '
     <li>
-        <a class="justify-content-center" href="../../../tv/epg?c=7">
+        <a class="justify-content-center" href="../../../tv/epg?futbol&id='.$index.'&c=7">
         <i class="flag ar"></i>
         FOX Sports 3 | HD
         </a>
@@ -770,7 +770,7 @@ if($canal === "goltvec" || $canal === "goltvec"){
     $canalImg = "tycsports";
     $canalop2 = '
     <li>
-        <a class="justify-content-center" href="../../../tv/epg?c=257">
+        <a class="justify-content-center" href="../../../tv/epg?futbol&id='.$index.'&c=257">
         <i class="flag ar"></i>
         TyC Sports | HD
         </a>
@@ -779,7 +779,7 @@ if($canal === "goltvec" || $canal === "goltvec"){
     $canalImg = "tycsports";
     $canal2 = '
     <li>
-        <a class="justify-content-center" href="../../../tv/epg?c=257">
+        <a class="justify-content-center" href="../../../tv/epg?futbol&id='.$index.'&c=257">
         <i class="flag ar"></i>
         TyC Sports | HD
         </a>

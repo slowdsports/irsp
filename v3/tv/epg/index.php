@@ -196,7 +196,7 @@ if ($userType !== 0){
 
 <!-- Recomendados Slider -->
 <?php
-if (!isset($_GET['nba'])){
+if (!isset($_GET['id'])){
 ?>
 <div class="section full mt-3 mb-3">
     <h2> Relacionados </h2>

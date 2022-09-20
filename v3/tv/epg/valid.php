@@ -106,11 +106,11 @@ elseif ($typeChannel == 7){
 //elseif ($_GET['get'] || $_GET['key'] || $GET['key2']){
 elseif ($typeChannel == 9){
     // Recargar página con SSL
-    echo '<script>
-    if (window.location.protocol != "https:") {
-        location.href =   location.href.replace("http://", "https://");
-    }
-    </script>';
+    // echo '<script>
+    // if (window.location.protocol != "https:") {
+    //     location.href =   location.href.replace("http://", "https://");
+    // }
+    // </script>';
     $requested = $_SERVER['HTTP_HOST'].$_SERVER['REQUEST_URI'];
     $core = '<script src="mg-jwp.js"></script>';
     $getURL = base64_encode($result['channelUrl']);
