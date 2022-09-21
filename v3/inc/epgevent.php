@@ -12,11 +12,14 @@
         include('../../agenda/basket/nba/teams.php');
     } elseif ($liga == "mlb"){
         include('../../agenda/mlb/teams.php');
-    } elseif ($liga == "nfl" || $liga == "nations"){
+    } elseif ($liga == "nfl"){
         //include('../../agenda/nfl/teams.php');
     }
     if (isset($_GET['futbol'])){
-        include('../../agenda/futbol/liga/teams.php');
+        if ($liga == "nations"){
+        } else {
+            include('../../agenda/futbol/liga/teams.php');
+        }
     }
     include('../../inc/cntdwn.php');
     ?>
