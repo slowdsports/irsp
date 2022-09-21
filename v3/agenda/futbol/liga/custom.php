@@ -15,7 +15,7 @@ if ($result['visita'] === "team"){
 
 if ($result['local'] === "escocia"){
     $canalImg = "starplus";
-    $r= "";
+    $r= "Ly92ZXJjb21vZnV0Ym9sLnh5ei9zL3N0YXJfandwLmh0bWw/Z2V0PWh0dHBzOi8vbGl2ZS1mdGMtbmEtc291dGgtMi5tZWRpYS5zdGFyb3R0LmNvbS9ncnUxL3FiMDEvc3RhcnBsdXMvZXZlbnQvMjAyMi8wOS8yMS9Fc2NvY2lhX3ZzX1VrcmFpbmVfMjAyMjA5MjFfMTY2Mzc3OTY1ODAxNy9jdHItYWxsLWNvbXBsZXRlLm0zdTgmaW1nPWh0dHBzOi8vcHJvZC1yaXBjdXQtZGVsaXZlcnkuZGlzbmV5LXBsdXMubmV0L3YxL3ZhcmlhbnQvc3Rhci9BNzBFRkM0QTVDMkZDNTc1MjczRURCRTEzNThDQkZCRDYxQ0U1RkU2NzdENTc1MEE2RDBCQjIzNTFDRjQ4RDg1L3NjYWxlP3dpZHRoPTE5MjAmYXNwZWN0UmF0aW89MS43OCZmb3JtYXQ9anBlZyZrZXk9ZmQwYTJlZmFhMWJjNGE4NDgzYjA0ZjVjNThlYmUwZGUma2V5Mj1lMTUwODY1MDA3NjIzY2NmNWM4NDRlODEzNmU5NjVkNg==";
     $custom1 = '
     <li>
         <a class="justify-content-center" href="../../../tv/epg?r='.$r.'">
