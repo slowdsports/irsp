@@ -16,10 +16,7 @@
         //include('../../agenda/nfl/teams.php');
     }
     if (isset($_GET['futbol'])){
-        if ($liga == "nations"){
-        } else {
-            include('../../agenda/futbol/liga/teams.php');
-        }
+        include('../../agenda/futbol/liga/teams.php');
     }
     include('../../inc/cntdwn.php');
     ?>
