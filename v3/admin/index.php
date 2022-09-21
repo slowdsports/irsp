@@ -13,6 +13,9 @@ $totalNFL=mysqli_num_rows($users);
 $users=mysqli_query($conn,"select * from agenda where liga=22");
 $totalMLB=mysqli_num_rows($users);
 
+$users=mysqli_query($conn,"select * from agenda where liga=25");
+$totalBalonmano=mysqli_num_rows($users);
+
 $users=mysqli_query($conn,"select * from tenis");
 $totalTenis=mysqli_num_rows($users);
 
@@ -210,7 +213,7 @@ $pet=mysqli_fetch_array($peticiones);
             </div>
             <div class="col-sm-4 grid-margin">
                 <div class="card">
-                    <a href="balonmano.php">
+                    <a href="futbol.php?liga=25&selectLiga=">
                         <div class="card-body">
                             <i class="icon-md mdi mdi-handball text-light ms-auto"></i>
                             <div class="row">
