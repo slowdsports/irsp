@@ -178,6 +178,49 @@ include ('includes/header.php'); include('includes/functions.php'); include('bac
                     </nav>
                 </div>
             <hr />
+            <!-- Actualización Masiva -->
+            <h3 class="page-title">Actualización Masiva</h3>
+            <form method="get" class="forms-sample">
+                <div class="input-group form-group">
+                    <div style="color:#FFF" class="input-wrapper">
+                        <label class="form-label" for="set"></label>
+                        <select style="color:#FFF" class="form-control form-select" id="inputGroupSelect04" name="set" id="set">
+                            <option selected>Set</option>
+                            <option value="fecha">Fecha</option>
+                            <option value="liga">Liga</option>
+                            <option value="status">Status</option>
+                            <option value="canal">Canal</option>
+                            <option value="canal2">Canal2</option>
+                            <option value="canal3">Canal3</option>
+                            <option value="canal4">Canal4</option>
+                            <option value="canal5">Canal5</option>
+                            <option value="canal6">Canal6</option>
+                        </select>
+                    </div>
+                    <div class="input-wrapper">
+                        <label class="form-label" for="valor">Ej: 2022-09-27 12:45:00</label>
+                        <input style="color:#FFF" type="text" class="form-control" id="valor" name="valor" placeholder="Valor">
+                    </div>
+                    <div class="input-wrapper">
+                        <label class="form-label" for="param">Ej: 1,2,3,4</label>
+                        <input style="color:#FFF" type="text" class="form-control" id="param" name="param" placeholder="Parámetros [,]">
+                    </div>
+                    <div class="input-wrapper">
+                        <button type="submit" class="btn btn-md btn-outline-secondary" id="actuMasiva" name="actuMasiva" type="button">Actualizar</button>
+                    </div>
+            </form>
+            <?php
+            // Lógica
+            if(isset($_GET['actuMasiva'])){
+                $set = $_GET['set'];
+                $valor = $_GET['valor'];
+                $param = $_GET['param'];
+                $msg=mysqli_query($conn,"update agenda set $set='$valor' where id in('$param')");if($msg) {
+                    $_SESSION['message'] = "¡Se ha hecho una actualización masiva!";
+                }
+            }
+            ?>
+            <!-- *Actualización Masiva -->
             <table class="table table-dark" id="dTable">
                 <thead>
                     <tr>
