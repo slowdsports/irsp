@@ -81,11 +81,11 @@ if (isset($_SESSION['message']) ){
                 <!-- Video TAG -->
                 <div class="onclick" onclick="goFullscreen('player');">
                     <video id="vidarea" class="video-js vjs-default-skin" controls ></video>
+                    <!-- iFrame -->
+                    <iframe src="<?php echo $iframeSrc?>" width="100%" height="300px" frameborder="0" sandbox="allow-same-origin allow-scripts" allow="encrypted-media" allowfullscreen scrolling="no"  id="iframe-element"></iframe>
                 </div>
             </div>
         </div>
-        <!-- iFrame -->
-        <iframe src="<?php echo $iframeSrc?>" width="100%" height="300px" frameborder="0" sandbox="allow-same-origin allow-scripts" allow="encrypted-media" allowfullscreen scrolling="no"  id="iframe-element"></iframe>
         <!-- Twitch -->
         <?=$twitchEmbed?>
         <!-- PC Player -->

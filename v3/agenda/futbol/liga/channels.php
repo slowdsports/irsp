@@ -517,6 +517,32 @@ if($canal === "directvfight" || $canal === "directvfight"){
     </li>';
 }
 
+if($canal === "La 1 TVE" || $canal === "La 1 TVE"){
+    $canalImg = "la1";
+    $canalop2 = '
+    <li>
+        <a class="justify-content-center" href="../../../tv/epg?futbol&id='.$index.'&c=93">
+        <i class="flag es"></i>
+        La 1 | HD
+        </a>
+    </li>';
+} elseif($canal2 === "La 1 TVE" || $canal2 === "La 1 TVE"){
+    $canalImg = "la1";
+    $canal2 = '
+    <li>
+        <a class="justify-content-center" href="../../../tv/epg?futbol&id='.$index.'&c=310">
+        <i class="flag es"></i>
+        La 1 | HD
+        </a>
+    </li>
+    <li>
+        <a class="justify-content-center" href="../../../tv/epg?futbol&id='.$index.'&c=310">
+        <i class="flag es"></i>
+        La 1 | HD
+        </a>
+    </li>';
+}
+
 if($canal === "espnsur" || $canal === "espnsur"){
     $canalImg = "espn";
     $canalop2 = '
