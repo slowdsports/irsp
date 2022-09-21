@@ -2,7 +2,7 @@ var playerInstance = jwplayer("jwp");
 playerInstance.setup({
     playlist: [{
         "sources": [{
-            "file": atob(source),
+            "file": atob(getURL),
             "drm": {
                 "widevine": {
                     "url": getKEY
