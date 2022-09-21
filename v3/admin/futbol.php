@@ -215,7 +215,8 @@ include ('includes/header.php'); include('includes/functions.php'); include('bac
                 $set = $_POST['set'];
                 $valor = $_POST['valor'];
                 $param = $_POST['param'];
-                $msg=mysqli_query($conn,"update agenda set $set='$valor' where id in('$param')");if($msg) {
+                $msg=mysqli_query($conn,"update agenda set $set='$valor' where id in($param)");
+                if($msg) {
                     $_SESSION['message'] = "¡Se ha hecho una actualización masiva!";
                 }
             }
