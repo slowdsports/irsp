@@ -12,7 +12,7 @@
         include('../../agenda/basket/nba/teams.php');
     } elseif ($liga == "mlb"){
         include('../../agenda/mlb/teams.php');
-    } elseif ($liga == "nfl"){
+    } elseif ($liga == "nfl" || $liga == "nations"){
         //include('../../agenda/nfl/teams.php');
     }
     if (isset($_GET['futbol'])){
