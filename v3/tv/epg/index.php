@@ -67,6 +67,14 @@ if (isset($_SESSION['message']) ){
     ?>
     <center>
         <div class="tab-content" id="myTabContent">
+            <!-- iFrame -->
+            <iframe src="<?php echo $iframeSrc?>" width="100%" height="300px" frameborder="0" sandbox="allow-same-origin allow-scripts" allow="encrypted-media" allowfullscreen scrolling="no"  id="iframe-element"></iframe>
+            <!-- Twitch -->
+            <?=$twitchEmbed?>
+            <!-- PC Player -->
+            <a id="player_img" href="<?php echo $pcSrc."&m3u8"; ?>">
+                <img class="img-fluid" src="../player_img.png" alt="">
+            </a>
             <div class="tab-pane fade <?=$isJw?>" id="jw" role="tabpanel" aria-labelledby="jw-tab">
                 <!-- M3U8 -->
                 <script src="https://ssl.p.jwpcdn.com/player/v/8.24.0/jwplayer.js"></script>
@@ -81,17 +89,9 @@ if (isset($_SESSION['message']) ){
                 <!-- Video TAG -->
                 <div class="onclick" onclick="goFullscreen('player');">
                     <video id="vidarea" class="video-js vjs-default-skin" controls ></video>
-                    <!-- iFrame -->
-                    <iframe src="<?php echo $iframeSrc?>" width="100%" height="300px" frameborder="0" sandbox="allow-same-origin allow-scripts" allow="encrypted-media" allowfullscreen scrolling="no"  id="iframe-element"></iframe>
                 </div>
             </div>
         </div>
-        <!-- Twitch -->
-        <?=$twitchEmbed?>
-        <!-- PC Player -->
-        <a id="player_img" href="<?php echo $pcSrc."&m3u8"; ?>">
-            <img class="img-fluid" src="../player_img.png" alt="">
-        </a>
         <!-- Source -->
         <script>
             var url = atob(source);
