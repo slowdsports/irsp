@@ -264,6 +264,20 @@ if (isset($_SESSION['message']) ){
             </div>
             <!-- End Elemento -->
 
+            <!-- Elemento -->
+            <div class="col-6 col-sm-4 col-md-3 mycard">
+                <a href="<?=$app?>agenda/balonmano">
+                    <div class="card product-card">
+                        <div class="card-body">
+                            <img width="48px" height="48px" src="<?=$app?>assets/img/balonmano.svg" class="image" alt="product image">
+                            <h2 class="title text-center">Balonmano</h2>
+                            <p class="text text-center">GRATIS</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <!-- End Elemento -->
+
         </div>
     </div>
 <!-- End Categorías -->
