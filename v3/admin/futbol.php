@@ -180,7 +180,7 @@ include ('includes/header.php'); include('includes/functions.php'); include('bac
             <hr />
             <!-- Actualización Masiva -->
             <h3 class="page-title">Actualización Masiva</h3>
-            <form method="get" class="forms-sample">
+            <form method="post" class="forms-sample">
                 <div class="input-group form-group">
                     <div style="color:#FFF" class="input-wrapper">
                         <label class="form-label" for="set"></label>
@@ -211,10 +211,10 @@ include ('includes/header.php'); include('includes/functions.php'); include('bac
             </form>
             <?php
             // Lógica
-            if(isset($_GET['actuMasiva'])){
-                $set = $_GET['set'];
-                $valor = $_GET['valor'];
-                $param = $_GET['param'];
+            if(isset($_POST['actuMasiva'])){
+                $set = $_POST['set'];
+                $valor = $_POST['valor'];
+                $param = $_POST['param'];
                 $msg=mysqli_query($conn,"update agenda set $set='$valor' where id in('$param')");if($msg) {
                     $_SESSION['message'] = "¡Se ha hecho una actualización masiva!";
                 }
