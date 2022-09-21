@@ -127,8 +127,11 @@
                         <?php
                         $agenda=mysqli_query($conn,"select * from agenda where status=1");
                         $totalPartidos=mysqli_num_rows($agenda);
+                        if ($totalPartidos == 0){
+                            $display = 'style="display:none"';
+                        }
                         ?>
-                        <li>
+                        <li <?=$display?>>
                             <a href="<?=$app?>agenda/futbol" class="item">
                                 <div class="icon-box bg-primary">
                                     <ion-icon name="football-outline"></ion-icon>
@@ -143,8 +146,11 @@
                         <?php
                         $agenda=mysqli_query($conn,"select * from agenda where liga=23");
                         $totalBasket=mysqli_num_rows($agenda);
+                        if ($totalBasket == 0){
+                            $display = 'style="display:none"';
+                        }
                         ?>
-                        <li>
+                        <li <?=$display?>>
                             <a href="<?=$app?>agenda/basket" class="item">
                                 <div class="icon-box bg-primary">
                                     <ion-icon name="basketball-outline"></ion-icon>
@@ -159,8 +165,11 @@
                         <?php
                         $agenda=mysqli_query($conn,"select * from agenda where liga=14");
                         $totalNFL=mysqli_num_rows($agenda);
+                        if ($totalNFL == 0){
+                            $display = 'style="display:none"';
+                        }
                         ?>
-                        <li>
+                        <li <?=$display?>>
                             <a href="<?=$app?>agenda/nfl" class="item">
                                 <div class="icon-box bg-primary">
                                     <ion-icon name="american-football-outline"></ion-icon>
@@ -175,8 +184,11 @@
                         <?php
                         $agenda=mysqli_query($conn,"select * from agenda where liga=22");
                         $totalMLB=mysqli_num_rows($agenda);
+                        if ($totalMLB == 0){
+                            $display = 'style="display:none"';
+                        }
                         ?>
-                        <li>
+                        <li <?=$display?>>
                             <a href="<?=$app?>agenda/mlb" class="item">
                                 <div class="icon-box bg-primary">
                                     <ion-icon name="baseball-outline"></ion-icon>
@@ -187,12 +199,34 @@
                                 </div>
                             </a>
                         </li>
+                        <!-- Counter de los partidos -->
+                        <?php
+                        $agenda=mysqli_query($conn,"select * from agenda where liga=25");
+                        $totalBalonmano=mysqli_num_rows($agenda);
+                        if ($totalBalonmano == 0){
+                            $display = 'style="display:none"';
+                        }
+                        ?>
+                        <li <?=$display?>>
+                            <a href="<?=$app?>agenda/balonmano" class="item">
+                                <div class="icon-box bg-primary">
+                                    <i class="mdi mdi-handball" aria-hidden="true"></i>
+                                </div>
+                                <div class="in">
+                                    <div>Balonmano</div>
+                                    <span class="badge badge-danger"><?=$totalBalonmano?></span>
+                                </div>
+                            </a>
+                        </li>
                         <!-- Counter de los canales -->
                         <?php
                         $agenda=mysqli_query($conn,"select * from channels");
-                        $totalPartidos=mysqli_num_rows($agenda);
+                        $totalChannels=mysqli_num_rows($agenda);
+                        if ($totalChannels == 0){
+                            $display = 'style="display:none"';
+                        }
                         ?>
-                        <li>
+                        <li <?=$display?>>
                             <a href="<?=$app?>tv" class="item">
                                 <div class="icon-box bg-primary disabled">
                                     <ion-icon name="tv-outline"></ion-icon>

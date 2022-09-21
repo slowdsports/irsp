@@ -38,6 +38,7 @@ if (detectPC()){
     <link rel="stylesheet" href="<?=$app?>assets/css/inc/flags.css">
     <link rel="stylesheet" href="<?=$app?>assets/css/inc/font-awesome.css">
     <link rel="stylesheet" href="<?=$app?>assets/css/inc/font-awesome-animation.css">
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/@mdi/font@6.9.96/css/materialdesignicons.min.css"></link>
     <!-- Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-Z7958KV9CY"></script>
     <script>
