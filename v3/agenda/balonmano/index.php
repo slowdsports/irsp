@@ -76,7 +76,7 @@ if (isset($_SESSION['message']) ){
                     include('../../inc/cntdwn.php');
                 ?>
                 <!-- Elemento -->
-                <div class="col-12 mycard">
+                <div <?=$display?> class="col-12 mycard">
                     <a data-toggle="collapse" href="#juego<?=$result['id']?>" role="button" aria-expanded="false" aria-controls="juego<?=$result['id']?>">
                         <div class="card product-card">
                             <div class="main-event">
