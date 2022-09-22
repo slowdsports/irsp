@@ -117,7 +117,7 @@ elseif ($typeChannel == 4){
     $ret=mysqli_fetch_assoc($pKey);
     $pKey = $ret['pKey'];
     //$pcSrc = "http://irsitpv.42web.io/pc/list.php?id=" . $ret['pKey'] . "/" . $result['channelUrl'];
-    $pcSrc = "https://irpc.ga/pc/list-test.php?id=" . $ret['pKey'] . "/" . $result['channelUrl'];
+    $pcSrc = "https://irpc.ga/epg/?id=" . $ret['pKey'] . "/" . $result['channelUrl'];
     echo '<style>#iframe-element{display:none;} #myTab{display:none} #jwp{display:none} #vidarea{display:none} #player_img img{display:block!important}</style>';
 } // Blim
 if ($typeChannel == 6){
