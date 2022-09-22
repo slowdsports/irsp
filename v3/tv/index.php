@@ -48,7 +48,7 @@ if (isset($_SESSION['message']) ){
 <br>
 <!-- *Alerta -->
 
-<!-- Filter -->
+<!-- Filter --
 <style>
     .mycard {
         display: none;
@@ -99,10 +99,37 @@ if (isset($_SESSION['message']) ){
         <div class="container">
             <div id="channelsList" class="row">
                 <?php
+                ?>
+                <!-- Pluto TV -->
+                <div class="col-6 col-sm-4 col-md-3 col-lg-2 col-xl-2 mycard Entretenimiento show">
+                    <a href="<?=$referer?>?pluto">
+                        <form method="get">
+                            <div class="card product-card liga-card">
+                                <div class="card-body">
+                                    <center>
+                                    <img width="48px" src="https://i.ibb.co/w0qg9JF/trans.png" style="background-image: url('<?=$app?>/assets/img/canales/plutotvw.png');
+                                    background-size: contain;
+                                    background-repeat: no-repeat" class="image" alt="product image">
+                                    <h2 class="title text-center">Pluto TV</h2>
+                                    </center>
+                                </div>
+                            </div>
+                        </form>
+                    </a>
+                </div>
+                <!-- *Pluto TV -->
+                <?php
+                if(isset($_GET['pluto'])){
+                    $channels = mysqli_query($conn, "select * from channels
+                    INNER JOIN categories ON channels.category = categories.categoryId
+                    INNER JOIN countries ON channels.country = countries.countryId
+                    where type IN ('8') ORDER BY category DESC");
+                } else {
                 $channels = mysqli_query($conn, "select * from channels
                 INNER JOIN categories ON channels.category = categories.categoryId
                     INNER JOIN countries ON channels.country = countries.countryId
-                    where type IN ('1','2','3','4','6','7','8','9','10') ORDER BY category DESC");
+                    where type IN ('1','2','3','4','6','7','9','10') ORDER BY category DESC");
+                }
                 while($result=mysqli_fetch_array($channels)){
                 ?>
                 <!-- Elemento -->
