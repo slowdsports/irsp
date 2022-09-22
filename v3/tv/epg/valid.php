@@ -120,7 +120,7 @@ elseif ($typeChannel == 4){
     $pcSrc = "https://irpc.ga/epg/?id=" . $ret['pKey'] . "/" . $result['channelUrl'];
     echo '<style>#iframe-element{display:none;} #myTab{display:none} #jwp{display:none} #vidarea{display:none} #player_img img{display:none!important}</style>';
     echo '<script>
-    location.href = '.$pcSrc.';
+    window.location.href = '.$pcSrc.';
     </script>';
 } // Blim
 if ($typeChannel == 6){
