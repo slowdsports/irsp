@@ -1,13 +1,15 @@
 <?php
 // SET SITE URL
-//$app = "//{$_SERVER['SERVER_NAME']}/v3/";
-$app = "https://irafflevip.tk/v3/";
+$app = "//{$_SERVER['SERVER_NAME']}/v3/";
+//$app = "https://irafflevip.tk/v3/";
 // ADMIN DASH
-//$base = "https://".$_SERVER['SERVER_NAME']."/v3/admin/";
-$base = "https://irafflevip.tk/v3/admin/";
+$base = "//".$_SERVER['SERVER_NAME']."/v3/admin/";
+//$base = "https://irafflevip.tk/v3/admin/";
 // GET REFER
 // $refer = $_GET['refer'];
 $refer = $_SERVER['HTTP_REFERER'];
+// Actual Link
+$actual_link = "http://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";
 // GET USER AGENT
 $useragent = $_SERVER['HTTP_USER_AGENT'];
 // TELEGRAM CONTACT
