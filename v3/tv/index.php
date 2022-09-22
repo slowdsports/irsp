@@ -120,7 +120,7 @@ if (isset($_SESSION['message']) ){
                         <div class="card product-card liga-card">
                             <div class="card-body">
                                 <center>
-                                <img width="48px" src="https://i.ibb.co/w0qg9JF/trans.png" style="background-image: url('<?=$result['channelImg']?>');
+                                <img width="48px" src="https://i.ibb.co/w0qg9JF/trans.png" style="background-image: url('<?=$app?>/assets/img/canales/<?=$result['channelImg']?>');
                                 background-size: contain;
                                 background-repeat: no-repeat" class="image" alt="product image">
                                 <h2 class="title text-center"><?=strtoupper($result['channelName'])?></h2>
