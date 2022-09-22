@@ -65,18 +65,190 @@
     </div>
     <!-- * App Bottom Menu -->
 
+    <!-- TV SideFilter -->
+    <div class="modal fade panelbox panelbox-left" id="sidebarFilter" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-body p-0">
+                    <?php
+                    session_start();
+                    $query=mysqli_query($conn,"select * from user where userid='".$_SESSION['id']."'");
+                    $row=mysqli_fetch_assoc($query);
+                    ?>
+                    <!-- profile box -->
+                    <div class="profileBox">
+                        <div class="image-wrapper">
+                        <ion-icon name="person-circle-outline" size="large"></ion-icon>
+                        </div>
+                        <div class="in">
+                            <strong>¡Hola <?=$row['fullname']?>!</strong>
+                            <div class="text-muted">
+                                <?php
+                                include('functions.php');
+                                if ($daysleft > 15){
+                                    $vigencia = $row['username'];
+                                    $icon = "person-outline";
+                                } elseif ($daysleft < 15 && $daysleft >= 0){
+                                    $vigencia = - $daysleft . " Días Restantes";
+                                    $icon = "time";
+                                } elseif ($daysleft <= 0){
+                                    $vigencia = "Venció Hace " . - $daysleft . " Días";
+                                    $icon = "time";
+                                }
+                                if ($daysleft < 360){
+                                    $icon = "star-outline";
+                                    $vigencia = "Contáctanos para convertirte en premium";
+                                }
+                                ?>
+                                <ion-icon name="<?=$icon?>"></ion-icon>
+                                <?=$vigencia?>
+                            </div>
+                        </div>
+                        <a href="javascript:;" class="close-sidebar-button" data-dismiss="modal">
+                            <ion-icon name="close"></ion-icon>
+                        </a>
+                    </div>
+                    <!-- * profile box -->
+
+                    <!-- tv filter -->
+                        <!-- Tabs -->
+                        <div class="section full mt-1">
+                            <div class="wide-block pt-2 pb-2">
+                                <ul class="nav nav-tabs style1" role="tablist">
+                                    <li class="nav-item">
+                                        <a class="nav-link active" data-toggle="tab" href="#categorias" role="tab">
+                                            Categorías
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" data-toggle="tab" href="#paises" role="tab">
+                                            Países
+                                        </a>
+                                    </li>
+                                </ul>
+                                <div class="tab-content mt-2">
+                                    <div class="tab-pane fade show active" id="categorias" role="tabpanel">
+                                        <ul class="listview flush transparent no-line image-listview mt-2">
+                                            <li>
+                                                <a href="<?=$app?>/tv?categ=all" class="item">
+                                                    <div class="icon-box bg-primary">
+                                                        <ion-icon name="apps-outline"></ion-icon>
+                                                    </div>
+                                                    <div class="in">Todo</div>
+                                                </a>
+                                            </li>
+                                            <?php
+                                            $categorias=mysqli_query($conn,"select * from categories");
+                                            while($result=mysqli_fetch_array($categorias)){
+                                                $index= $result['categoryId'];
+                                                $categnum=mysqli_query($conn,"select * from channels where category='$index'");
+                                                $totalCanalCateg=mysqli_num_rows($categnum);
+                                                if ($totalCanalCateg === 0){
+                                                    $display = 'style= "display:none;"';
+                                                } else {
+                                                    $display = 'style= "display:block;"';
+                                                }
+                                            ?>
+                                            <li <?=$display?>>
+                                                <a href="<?=$app?>/tv?categ=<?=$result['categoryId']?>" class="item">
+                                                    <div class="icon-box bg-primary">
+                                                        <ion-icon name="<?=$result['categoryIcon']?>-outline"></ion-icon>
+                                                    </div>
+                                                    <div class="in">
+                                                        <div><?=$result['categoryName']?></div>
+                                                        <span class="badge badge-danger"><?=$totalCanalCateg?></span>
+                                                    </div>
+                                                </a>
+                                            </li>
+                                            <?php }?>
+                                        </ul>
+                                    </div>
+
+                                    <div class="tab-pane fade" id="paises" role="tabpanel">
+                                        <ul class="listview flush transparent no-line image-listview mt-2">
+                                            <li>
+                                                <a href="<?=$app?>/tv?cntry=all" class="item">
+                                                    <div class="icon-box bg-primary">
+                                                        <ion-icon name="apps-outline"></ion-icon>
+                                                    </div>
+                                                    <div class="in">Todo</div>
+                                                </a>
+                                            </li>
+                                            <?php
+                                            $paises=mysqli_query($conn,"select * from countries");
+                                            while($result=mysqli_fetch_array($paises)){
+                                                $index= $result['countryId'];
+                                                $cntrynum=mysqli_query($conn,"select * from channels where country='$index'");
+                                                $totalCanalCntry=mysqli_num_rows($cntrynum);
+                                                if ($totalCanalCntry === 0){
+                                                    $display = 'style= "display:none;"';
+                                                } else {
+                                                    $display = 'style= "display:block;"';
+                                                }
+                                            ?>
+                                            <li <?=$display?>>
+                                                <a href="<?=$app?>/tv?cntry=<?=$result['countryId']?>" class="item">
+                                                    <div class="icon-box bg-primary">
+                                                        <i style="margin-left: 11px; margin-bottom: 4px;" class="flag <?=$result['countryImg']?>"></i>
+                                                    </div>
+                                                    <div class="in">
+                                                        <div><?=$result['countryName']?></div>
+                                                        <span class="badge badge-danger"><?=$totalCanalCntry?></span>
+                                                    </div>
+                                                </a>
+                                            </li>
+                                            <?php }?>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- *tabs -->
+                    <!-- * tv filter -->
+
+                    <!-- sidebar buttons -->
+                    <div class="sidebar-buttons">
+                        <a href="<?=$app."account.php"?>" class="button">
+                            <ion-icon name="person-outline"></ion-icon>
+                        </a>
+                        <!-- <a href="javascript:;" class="button">
+                            <ion-icon name="archive-outline"></ion-icon>
+                        </a> -->
+                        <!-- <a href="javascript:;" class="button">
+                            <ion-icon name="settings-outline"></ion-icon>
+                        </a> -->
+                        <?php
+                        if (!isset($_SESSION['id']) ||(trim ($_SESSION['id']) == '')){
+                            $linkType = $app . "login.php";
+                            $iconType = "log-in-outline";
+                        } else {
+                            $linkType = $app . "logout.php";
+                            $iconType = "log-out-outline";
+                        }
+                        ?>
+                        <a href="<?=$linkType?>" class="button">
+                            <ion-icon name="<?=$iconType?>"></ion-icon>
+                        </a>
+                    </div>
+                    <!-- * sidebar buttons -->
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- * TV SideFilter -->
+
     <!-- App Sidebar -->
     <div class="modal fade panelbox panelbox-left" id="sidebarPanel" tabindex="-1" role="dialog">
         <div class="modal-dialog" role="document">
             <div class="modal-content">
                 <div class="modal-body p-0">
-
-                <?php
-                session_start();
-                $query=mysqli_query($conn,"select * from user where userid='".$_SESSION['id']."'");
-                $row=mysqli_fetch_assoc($query);
-                ?>
-
+                    <?php
+                    session_start();
+                    $query=mysqli_query($conn,"select * from user where userid='".$_SESSION['id']."'");
+                    $row=mysqli_fetch_assoc($query);
+                    ?>
                     <!-- profile box -->
                     <div class="profileBox">
                         <div class="image-wrapper">

@@ -119,7 +119,20 @@ if (isset($_SESSION['message']) ){
                 </div>
                 <!-- *Pluto TV -->
                 <?php
-                if(isset($_GET['pluto'])){
+                $categ = $_GET['categ'];
+                $cntry = $_GET['cntry'];
+                if(isset($categ)){
+                    $channels = mysqli_query($conn, "select * from channels
+                    INNER JOIN categories ON channels.category = categories.categoryId
+                    INNER JOIN countries ON channels.country = countries.countryId
+                    where category IN ('$categ') ORDER BY category DESC");
+                } elseif(isset($cntry)){
+                    $channels = mysqli_query($conn, "select * from channels
+                    INNER JOIN categories ON channels.category = categories.categoryId
+                    INNER JOIN countries ON channels.country = countries.countryId
+                    where country IN ('$cntry') ORDER BY category DESC");
+                }
+                elseif(isset($_GET['pluto'])){
                     $channels = mysqli_query($conn, "select * from channels
                     INNER JOIN categories ON channels.category = categories.categoryId
                     INNER JOIN countries ON channels.country = countries.countryId

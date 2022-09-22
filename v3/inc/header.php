@@ -71,9 +71,15 @@ if (detectPC()){
     <!-- App Header -->
     <div class="appHeader bg-primary scrolled">
         <div class="left">
+            <?php if (strpos($actual_link, "tv")){ ?>
+            <a href="#" class="headerButton" data-toggle="modal" data-target="#sidebarFilter">
+                <i style="font-size: 25px;" class="mdi mdi-filter-outline md" aria-hidden="true"></i>
+            </a>
+            <?php } else { ?>
             <a href="#" class="headerButton" data-toggle="modal" data-target="#sidebarPanel">
                 <ion-icon name="menu-outline"></ion-icon>
             </a>
+            <?php }?>
         </div>
         <div class="pageTitle">
             iRaffle TV
@@ -86,7 +92,7 @@ if (detectPC()){
     </div>
     <!-- * App Header -->
 
-    <!-- Search Component -->
+    <!-- Search Component --
     <div id="search" class="appHeader">
         <form action="<?=$app?>search.php" class="search-form">
             <div class="form-group searchbox">

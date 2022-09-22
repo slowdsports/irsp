@@ -783,6 +783,23 @@ button:hover, button:active, button:focus {
   padding-top: env(safe-area-inset-top);
 }
 
+#sidebarFilter .modal-dialog {
+  position: fixed;
+  left: 0;
+  top: 0;
+  bottom: 0;
+}
+
+#sidebarFilter .modal-body {
+  margin-top: 76px;
+  margin-bottom: 80px;
+}
+
+#sidebarFilter .modal-content {
+  width: 300px;
+  padding-top: env(safe-area-inset-top);
+}
+
 .panelbox-left .listview > li,
 .panelbox-right .listview > li {
   padding: 10px 16px;
