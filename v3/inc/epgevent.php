@@ -4,10 +4,10 @@
     $juego=mysqli_query($conn,"select * from agenda
     INNER JOIN ligas ON agenda.liga = ligas.ligaId
     where id='".$id."'");
-    $ress=mysqli_fetch_assoc($juego);
-    $local = $ress['local'];
-    $visita = $ress['visita'];
-    $liga = $ress['ligaImg'];
+    $result=mysqli_fetch_assoc($juego);
+    $local = $result['local'];
+    $visita = $result['visita'];
+    $liga = $result['ligaImg'];
     if ($liga == "nba"){
         include('../../agenda/basket/nba/teams.php');
     } elseif ($liga == "mlb"){
@@ -23,19 +23,19 @@
     <div class="card product-card">
         <div class="main-event">
             <div class="league">
-                <img src="<?=$app?>assets/img/ligas/<?=$ress['ligaImg']?>.png" alt="League" />
+                <img src="<?=$app?>assets/img/ligas/<?=$result['ligaImg']?>.png" alt="League" />
                 <p class="cntdwn-<?=$index?>"></p>
             </div>
             <div class="match">
                 <div class="team">
-                    <img width="60px" src="<?=$app?>assets/img/equipos/<?=strtolower($ress['ligaImg'])?>/<?=str_replace(' ', '', strtolower($local)); ?>.png" alt="" />
+                    <img width="60px" src="<?=$app?>assets/img/equipos/<?=strtolower($result['ligaImg'])?>/<?=str_replace(' ', '', strtolower($local)); ?>.png" alt="" />
                     <h4><?=ucfirst($local)?></h4>
                 </div>
                 <div class="vs">
                     <h6>vs</h6>
                 </div>
                 <div class="team">
-                    <img width="60px" src="<?=$app?>assets/img/equipos/<?=strtolower($ress['ligaImg'])?>/<?=str_replace(' ', '', strtolower($visita)); ?>.png" alt="" />
+                    <img width="60px" src="<?=$app?>assets/img/equipos/<?=strtolower($result['ligaImg'])?>/<?=str_replace(' ', '', strtolower($visita)); ?>.png" alt="" />
                     <h4><?=ucfirst($visita)?></h4>
                 </div>
             </div>
