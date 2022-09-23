@@ -7201,6 +7201,8 @@ body.dark-mode-active .btn-outline-dark:hover, body.dark-mode-active .btn-outlin
 
 body.dark-mode-active .card {
   background: #3F3F3F;
+  max-height: 180px!important;
+  min-height: 180px!important;
 }
 
 body.dark-mode-active .card .card-title {
