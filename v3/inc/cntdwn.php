@@ -9,6 +9,7 @@ if ($result['scraper'] == 1){
     $mm = substr($fecha, 5, 2);
     $dd = substr($fecha, 8, 2);
     $hh = substr($fecha, 11, 2);
+    $m = substr($fecha, 14, 2);
 }
 ?>
 <script>
@@ -16,6 +17,7 @@ var yyyy = 2022;
 var mm = '<?=$mm-1?>';
 var dd = '<?=$dd?>';
 var hh = '<?=$hh?>';
+var m = '<?=$m?>';
 
 var textLive = "<p style='position: absolute;' class='live-text'>En Vivo <ion-icon class='faa-flash animated' name='ellipse'></ion-icon></p>";
 var textEnd = "Finalizó";
@@ -29,8 +31,8 @@ var textEnd = "Finalizó";
     //::::::::::::              12:00 AM                  ::::::::::::
     //::::::::::::                                       ::::::::::::
     //:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
-    //                                   (AAAA, MM, DD, HH, MM, SS));
-    var countDownDate<?=$index?> = new Date(Date.UTC(yyyy, mm, dd, hh, 00, 00));
+    //                                              (AAAA, MM, DD, HH, MM, SS));
+    var countDownDate<?=$index?> = new Date(Date.UTC(yyyy, mm, dd, hh, m, 00));
 
     // Update the count down every 1 second
     var x<?=$index?> = setInterval(function () {
