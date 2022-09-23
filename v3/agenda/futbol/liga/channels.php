@@ -890,7 +890,7 @@ if($canal === "goltvec" || $canal === "goltvec"){
         </a>
     </li>';
 } if($canal === "CMMPlay (Castilla-LM)" || $canal === "CMMPlay (Castilla-LM)"){
-    $canalImg = "aragontv";
+    $canalImg = "cmm";
     $canalop2 = '
     <li>
         <a class="justify-content-center" href="'.$app.'/tv/epg?futbol&id='.$index.'&c=119">
@@ -899,12 +899,30 @@ if($canal === "goltvec" || $canal === "goltvec"){
         </a>
     </li>';
 } elseif($canal2 === "CMMPlay (Castilla-LM)" || $canal2 === "CMMPlay (Castilla-LM)"){
-    $canalImg = "aragontv";
+    $canalImg = "cmm";
     $canal2 = '
     <li>
-        <a class="justify-content-center" href="'.$app.'/tv/epg?futbol&id='.$index.'&c=118">
+        <a class="justify-content-center" href="'.$app.'/tv/epg?futbol&id='.$index.'&c=119">
         <i class="flag es"></i>
-        Aragón Deporte | HD
+        CMM Play (Castilla - LM) | HD
+        </a>
+    </li>';
+} if($canal === "ZDF (M+ Astra)" || $canal === "ZDF (M+ Astra)"){
+    $canalImg = "zdf";
+    $canalop2 = '
+    <li>
+        <a class="justify-content-center" href="'.$app.'/tv/epg?futbol&id='.$index.'&c=232">
+        <i class="flag de"></i>
+        ZDF | HD
+        </a>
+    </li>';
+} elseif($canal2 === "ZDF (M+ Astra)" || $canal2 === "ZDF (M+ Astra)"){
+    $canalImg = "zdf";
+    $canal2 = '
+    <li>
+        <a class="justify-content-center" href="'.$app.'/tv/epg?futbol&id='.$index.'&c=232">
+        <i class="flag de"></i>
+        ZDF | HD
         </a>
     </li>';
 }
