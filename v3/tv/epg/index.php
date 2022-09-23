@@ -219,7 +219,7 @@ if (!isset($_GET['id'])){
             <div class="item">
                 <div class="card">
                     <center>
-                        <img src="<?=$img?>" class="image" alt="image">
+                        <img src="<?=$app?>/assets/img/canales/<?=$img?>.png" class="image" alt="image">
                         <div class="card-body">
                             <p class="text text-center">
                                 <?=$channel;?>
