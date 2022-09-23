@@ -532,13 +532,13 @@ if($canal === "La 1 TVE" || $canal === "La 1 TVE"){
     <li>
         <a class="justify-content-center" href="'.$app.'/tv/epg?futbol&id='.$index.'&c=93">
         <i class="flag es"></i>
-        La 1 | HD
+        La 1 [OP1] | HD
         </a>
     </li>
     <li>
         <a class="justify-content-center" href="'.$app.'/tv/epg?futbol&id='.$index.'&c=310">
         <i class="flag es"></i>
-        La 1 | HD
+        La 1 [OP2] | HD
         </a>
     </li>';
 }
