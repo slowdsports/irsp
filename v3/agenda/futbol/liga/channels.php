@@ -395,7 +395,7 @@ if($canal === "LaLiga SmartbankTV" || $canal === "LaLiga SmartbankTV" || $canal 
     $canalImg = "smartbank";
     $canalop2 = '
     <li>
-        <a class="justify-content-center" href="https://irpc.ga/mg/play/sandbox.php?get=smartbank">
+        <a class="justify-content-center" href="https://irpc.ga/mg/play/sandbox.php?get=https://megatelevisionhd.com/embed/repro/?r=aHR0cHM6Ly9ncmVnb3JzYW1zYS5saWZlL2VtYmVkLy9lcy9sYWxpZ2FzbWFydGJhbmt0di5waHA=">
         <i class="flag es"></i>
         LaLiga Smartbank | HD
         </a>
