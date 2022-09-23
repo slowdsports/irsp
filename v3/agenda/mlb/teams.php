@@ -1,7 +1,7 @@
 <?php
 // NOMBRES
-$local = str_replace("San Giants","giants", $local);
-$visita = str_replace("San Giants","giants", $visita);
+$local = str_replace("San Francisco","giants", $local);
+$visita = str_replace("San Francisco","giants", $visita);
 $local = str_replace("Los Angeles","dodgers", $local);
 $visita = str_replace("Los Angeles","dodgers", $visita);
 $local = str_replace("Tampa Bay","bayrays", $local);
