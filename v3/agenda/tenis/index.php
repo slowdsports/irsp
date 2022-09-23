@@ -73,7 +73,7 @@ if (isset($_SESSION['message']) ){
                         <div class="card card-body">
                             <ul class="listview link-listview">
                                 <li>
-                                    <a class="justify-content-center" href="http://iraffle.live/v3/agenda/play/?c=vamos">
+                                    <a class="justify-content-center" href="http://iraffle.live/v3/agenda/play/?c=eurosport">
                                         <i class="flag es"></i>
                                         #Vamos
                                     </a>
