@@ -109,7 +109,7 @@
                     if ($mm_0 === $mm_1){
                         if ($dd_0 === $dd_1){
                             if ($liga == "23"){
-                                $link = "basket/nba";
+                                $link = "basket/nba?ir";
                                 include('agenda/basket/nba/teams.php');
                                 $localImg = $local;
                                 $visitaImg = $visita;
