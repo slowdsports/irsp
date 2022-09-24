@@ -123,7 +123,10 @@
                                 $localImg = strtolower($local);
                                 $visitaImg = strtolower($visita);
                             } elseif ($liga == "25"){
-                                $link = "balonmano";
+                                $link = "balonmano?ir";
+                                include('agenda/balonmano/teams.php');
+                                $localImg = str_replace(" ", "",$result['local']);
+                                $visitaImg = str_replace(" ", "",$result['visita']);
                             } else{
                                 $link = "futbol/liga?id=" . $liga;
                                 include('agenda/futbol/liga/teams.php');
