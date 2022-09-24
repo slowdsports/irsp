@@ -24,7 +24,7 @@ if (isset($_SESSION['message']) ){
 ?>
 
 <div class="header-large-title container">
-    <h1 class="title"><?=ucfirst($row['fullname'])?>,</h1>
+    <h1 class="title"><?=ucfirst($row['fullname'])?></h1>
     <h4 class="subtitle">¡Disfruta de tu evento!</h4>
 </div>
 
@@ -41,6 +41,11 @@ if (isset($_SESSION['message']) ){
                     // Teams
                     $local = $result['local'];
                     $visita = $result['visita'];
+                    $index = $result['id'];
+
+                    include('../../../inc/cntdwn.php');
+
+                    include('teams.php');
                 ?>
                 <!-- Elemento -->
                 <div class="col-12 mycard">
@@ -49,22 +54,24 @@ if (isset($_SESSION['message']) ){
                             <div class="main-event">
                                 <div class="league">
                                     <img src="<?=$app?>assets/img/ligas/<?=$result['ligaImg']?>.png" alt="League" />
+                                    <!-- <p class="<?=$result['id']?>"><?=ucfirst($dia)?></p> -->
+                                    <p class="cntdwn-<?=$index?>"></p>
                                 </div>
                                 <div class="match">
                                     <div class="team">
-                                        <img src="<?=$result['logoL']?>" alt="" />
+                                        <img width="60px" src="<?=$app?>assets/img/equipos/<?=strtolower($result['ligaImg'])?>/<?=str_replace(' ', '', strtolower($result['local'])); ?>.png" alt="" />
                                         <h4><?=ucfirst($local)?></h4>
                                     </div>
                                     <div class="vs">
                                         <h6>vs</h6>
                                     </div>
                                     <div class="team">
-                                        <img src="<?=$result['logoV']?>" alt="" />
+                                        <img width="60px" src="<?=$app?>assets/img/equipos/<?=strtolower($result['ligaImg'])?>/<?=str_replace(' ', '', strtolower($result['visita'])); ?>.png" alt="" />
                                         <h4><?=ucfirst($visita)?></h4>
                                     </div>
                                 </div>
                                 <div class="channel">
-                                    <img src="http://iraffle.live/v3/assets/img/ligas/uel.png" alt="Channel" />
+                                    <img src="<?=$app?>assets/img/canales/<?=($canalImg===null)?"152x152":$canalImg ?>.png" alt="" />
                                 </div>
                             </div>
                         </div>
@@ -73,27 +80,33 @@ if (isset($_SESSION['message']) ){
                         <div class="card card-body">
                             <ul class="listview link-listview">
                                 <?php
+                                //include('timer.php');
                                 // Canales
-                                $canal = $result['canal'];
-                                $canal2 = $result['canal2'];
-                                $canal3 = $result['canal3'];
-                                include ('../../futbol/liga/channels.php');
+                                //include ('custom.php');
+                                include('../../futbol/liga/channels.php');
                                 // Canal 2
                                 echo $canalop2;
+                                echo $canal2;
                                 // Canal 3
                                 echo $canalop3;
+                                // Canal 4
+                                echo $canalop4;
+                                // Custom Channels
+                                echo $custom1;
+                                echo $custom2;
+                                echo $custom3;
                                 // Canal 4
                                 $canal4 = $result['canal4'];
                                 $c4=mysqli_query($conn,"select * from channels
                                 INNER JOIN countries ON channels.country = countries.countryId
                                 where channelId = '$canal4'");
                                 $row=mysqli_fetch_array($c4);
-                                if ($canal4 == null || $canal4 = ""){
+                                if ($canal4 === null || $canal4 === ""){
                                     // No mostramos nada
                                 } else{
                                 ?>
                                 <li>
-                                    <a class="justify-content-center" href="../../play/?c=<?=$row['channelId']?>">
+                                    <a class="justify-content-center" href="../../../tv/epg/?futbol&id=<?=$index?>&c=<?=$row['channelId']?>">
                                         <i class="flag <?=$row['countryImg']?>"></i>
                                         <?=$row['channelName']?>
                                     </a>
@@ -107,12 +120,12 @@ if (isset($_SESSION['message']) ){
                                 INNER JOIN countries ON channels.country = countries.countryId
                                 where channelId = '$canal5'");
                                 $row=mysqli_fetch_array($c5);
-                                if ($canal5 == null || $canal5 = ""){
+                                if ($canal5 === null || $canal5 === ""){
                                     // No mostramos nada
                                 } else{
                                 ?>
                                 <li>
-                                    <a class="justify-content-center" href="#">
+                                    <a class="justify-content-center" href="../../../tv/epg/?futbol&id=<?=$index?>&c=<?=$row['channelId']?>">
                                         <i class="flag <?=$row['countryImg']?>"></i>
                                         <?=$row['channelName']?>
                                     </a>
@@ -126,12 +139,12 @@ if (isset($_SESSION['message']) ){
                                 INNER JOIN countries ON channels.country = countries.countryId
                                 where channelId = '$canal6'");
                                 $row=mysqli_fetch_array($c6);
-                                if ($canal6 == null || $canal6 = ""){
+                                if ($canal6 === null || $canal6 === ""){
                                     // No mostramos nada
                                 } else{
                                 ?>
                                 <li>
-                                    <a class="justify-content-center" href="#">
+                                    <a class="justify-content-center" href="../../../tv/epg/?futbol&id=<?=$index?>&c=<?=$row['channelId']?>">
                                         <i class="flag <?=$row['countryImg']?>"></i>
                                         <?=$row['channelName']?>
                                     </a>
