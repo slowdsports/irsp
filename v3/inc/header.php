@@ -1,7 +1,7 @@
 <?php
 include('functions.php'); include('conn.php'); ?>
 <!doctype html>
-<html lang="en">
+<html lang="es">
 
 <!-- device detection -->
 
