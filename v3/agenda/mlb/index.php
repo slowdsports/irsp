@@ -69,8 +69,8 @@ if (isset($_SESSION['message']) ){
                 where liga = 22 and status=1");
                 while($result=mysqli_fetch_array($ligas)){
                     // Teams
-                    $local = strtolower($result['local']);
-                    $visita = strtolower($result['visita']);
+                    $local = $result['local'];
+                    $visita = $result['visita'];
                     $index = $result['id'];
                     include('teams.php');
                     include('../../inc/cntdwn.php');
@@ -107,13 +107,13 @@ if (isset($_SESSION['message']) ){
                         <div class="card card-body">
                             <ul class="listview link-listview">
                                 <li>
-                                    <a class="justify-content-center" href="?c=<?=$local?>&c2=<?=$visita?>&id=<?=$index?>">
+                                    <a class="justify-content-center" href="?c=<?=$local?>&c2=<?=strtolower($visita)?>&id=<?=$index?>">
                                         <i class="flag us"></i>
                                         MLB Network - [OP1] <?=ucfirst($local)?> | HD
                                     </a>
                                 </li>
                                 <li>
-                                    <a class="justify-content-center" href="?g=<?=$local?>&g2=<?=$visita?>&id=<?=$index?>">
+                                    <a class="justify-content-center" href="?g=<?=$local?>&g2=<?=strtolower($visita)?>&id=<?=$index?>">
                                         <i class="flag us"></i>
                                         MLB Network - [OP2] <?=ucfirst($local)?> | HD
                                     </a>
