@@ -66,7 +66,7 @@ if (isset($_SESSION['message']) ){
                 $getLiga = $_GET['id'];
                 $ligas = mysqli_query($conn, "select * from agenda
                 INNER JOIN ligas ON agenda.liga = ligas.ligaId
-                where liga = 25 and status=1");
+                where liga = 14 and status=1");
                 while($result=mysqli_fetch_array($ligas)){
                     // Teams
                     $local = $result['local'];
