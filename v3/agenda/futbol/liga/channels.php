@@ -853,7 +853,7 @@ if($canal === "goltvec" || $canal === "goltvec"){
         Teledeporte | HD
         </a>
     </li>';
-} if($canal === "Esport3" || $canal === "Esport3"){
+} if($canal === "Esport3" || $canal === "Esport3 (Cataluña)"){
     $canalImg = "e3";
     $canalop2 = '
     <li>
@@ -862,7 +862,7 @@ if($canal === "goltvec" || $canal === "goltvec"){
         Esport3 | HD
         </a>
     </li>';
-} elseif($canal2 === "Esport3" || $canal2 === "Esport3"){
+} elseif($canal2 === "Esport3" || $canal2 === "Esport3 (Cataluña)"){
     $canalImg = "e3";
     $canal2 = '
     <li>
