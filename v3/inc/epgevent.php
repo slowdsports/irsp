@@ -10,12 +10,23 @@
     $liga = $ress['ligaImg'];
     if ($liga == "nba"){
         include('../../agenda/basket/nba/teams.php');
+        $localImg = $local;
+        $visitaImg = $visita;
     } elseif ($liga == "mlb"){
         include('../../agenda/mlb/teams.php');
+        $localImg = $local;
+        $visitaImg = $visita;
     } elseif ($liga == "nfl"){
-        //include('../../agenda/nfl/teams.php');
-    }
-    if (isset($_GET['futbol'])){
+        $localImg = $ress['local'];
+        $visitaImg = $ress['visita'];
+        include('../../agenda/nfl/teams.php');
+    } elseif ($liga == "balonmano"){
+        $localImg = $ress['local'];
+        $visitaImg = $ress['visita'];
+        include('../../agenda/balonmano/teams.php');
+    } else {
+        $localImg = $ress['local'];
+        $visitaImg = $ress['visita'];
         include('../../agenda/futbol/liga/teams.php');
     }
     include('../../inc/cntdwn.php');
@@ -28,14 +39,14 @@
             </div>
             <div class="match">
                 <div class="team">
-                    <img width="60px" src="<?=$app?>assets/img/equipos/<?=strtolower($ress['ligaImg'])?>/<?=str_replace(' ', '', strtolower($local)); ?>.png" alt="" />
+                    <img width="60px" src="<?=$app?>assets/img/equipos/<?=strtolower($ress['ligaImg'])?>/<?=str_replace(' ', '', strtolower($localImg)); ?>.png" alt="" />
                     <h4><?=ucfirst($local)?></h4>
                 </div>
                 <div class="vs">
                     <h6>vs</h6>
                 </div>
                 <div class="team">
-                    <img width="60px" src="<?=$app?>assets/img/equipos/<?=strtolower($ress['ligaImg'])?>/<?=str_replace(' ', '', strtolower($visita)); ?>.png" alt="" />
+                    <img width="60px" src="<?=$app?>assets/img/equipos/<?=strtolower($ress['ligaImg'])?>/<?=str_replace(' ', '', strtolower($visitaImg)); ?>.png" alt="" />
                     <h4><?=ucfirst($visita)?></h4>
                 </div>
             </div>
