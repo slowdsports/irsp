@@ -69,8 +69,8 @@ if (isset($_SESSION['message']) ){
                 where liga = 22 and status=1");
                 while($result=mysqli_fetch_array($ligas)){
                     // Teams
-                    $local = $result['local'];
-                    $visita = $result['visita'];
+                    $local = strtolower($result['local']);
+                    $visita = strtolower($result['visita']);
                     $index = $result['id'];
                     include('teams.php');
                     include('../../inc/cntdwn.php');
