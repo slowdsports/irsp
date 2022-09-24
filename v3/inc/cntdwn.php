@@ -10,7 +10,12 @@ if ($getJuego == $index){
     $aria = "false";
 }
 
-$fecha = $result['fecha'];
+if (!isset($result['fecha'])){
+    $fecha = $ress['fecha'];
+} else {
+    $fecha = $result['fecha'];
+}
+
 if ($result['scraper'] == 1){
     $mm = substr($fecha, 5, 2);
     $dd = substr($fecha, 8, 2);
