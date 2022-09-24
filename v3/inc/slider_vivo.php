@@ -66,6 +66,9 @@
                 justify-content: center;
                 margin-top: 20px;
             }
+            .live-text .animated {
+                color: red;
+            }
         </style>
         <!-- Recomendados Slider -->
         <div class="section full mt-3 mb-3">
