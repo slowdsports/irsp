@@ -34,7 +34,11 @@ if (detectPC()){
     <link rel="icon" type="image/png" href="<?=$app?>assets/img/favicon.ico" sizes="32x32">
     <link rel="apple-touch-icon" sizes="180x180" href="<?=$app?>assets/img/icon/192x192.png">
     <link rel="stylesheet" href="<?=$app?>assets/css/style.css">
+    <?php
+    if (!strpos($actual_link, "home")){
+    ?>
     <link rel="stylesheet" href="<?=$app?>assets/css/events.css">
+    <?php } else {}?>
     <link rel="stylesheet" href="<?=$app?>assets/css/inc/flags.css">
     <link rel="stylesheet" href="<?=$app?>assets/css/inc/font-awesome.css">
     <link rel="stylesheet" href="<?=$app?>assets/css/inc/font-awesome-animation.css">

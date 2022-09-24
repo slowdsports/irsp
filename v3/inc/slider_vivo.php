@@ -118,12 +118,10 @@
                                 $localImg = str_replace(" ", "", $local);
                                 $visitaImg = str_replace(" ", "", $visita);
                             } elseif ($liga == "22"){
-                                $link = "mlb";
+                                $link = "mlb?ir";
                                 include('agenda/mlb/teams.php');
-                                $localImg = $local;
-                                $visitaImg = $visita;
-                            } elseif ($liga == "22"){
-                                $link = "mlb";
+                                $localImg = strtolower($local);
+                                $visitaImg = strtolower($visita);
                             } elseif ($liga == "25"){
                                 $link = "balonmano";
                             } else{

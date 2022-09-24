@@ -57,7 +57,7 @@ if (isset($_SESSION['nbaError'])){
                 ?>
                 <!-- Elemento -->
                 <div class="col-12 mycard">
-                    <a data-toggle="collapse" href="#juego-<?=$index?>" role="button" aria-expanded="false" aria-controls="juego-<?=$local?>-<?=$visita?>">
+                    <a data-toggle="collapse" href="#juego-<?=$index?>" role="button" aria-expanded="<?=$aria?>" aria-controls="juego-<?=$local?>-<?=$visita?>">
                         <div class="card product-card">
                             <div style="height:200px" class="main-event">
                                 <div class="league">
@@ -82,7 +82,7 @@ if (isset($_SESSION['nbaError'])){
                             </div>
                         </div>
                     </a>
-                    <div class="collapse" id="juego-<?=$index?>">
+                    <div class="collapse <?=$collapse?>" id="juego-<?=$index?>">
                         <div class="card card-body">
                             <ul class="listview link-listview">
                                 <li>

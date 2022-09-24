@@ -44,12 +44,11 @@ if (isset($_SESSION['message']) ){
                     $index = $result['id'];
 
                     include('../../../inc/cntdwn.php');
-
                     include('teams.php');
                 ?>
                 <!-- Elemento -->
                 <div class="col-12 mycard">
-                    <a data-toggle="collapse" href="#juego<?=$result['id']?>" role="button" aria-expanded="false" aria-controls="juego<?=$result['id']?>">
+                    <a data-toggle="collapse" href="#juego<?=$result['id']?>" role="button" aria-expanded="<?=$aria?>" aria-controls="juego<?=$result['id']?>">
                         <div class="card product-card">
                             <div class="main-event">
                                 <div class="league">
@@ -76,7 +75,7 @@ if (isset($_SESSION['message']) ){
                             </div>
                         </div>
                     </a>
-                    <div class="collapse" id="juego<?=$result['id']?>">
+                    <div class="collapse <?=$collapse?>" id="juego<?=$result['id']?>">
                         <div class="card card-body">
                             <ul class="listview link-listview">
                                 <?php

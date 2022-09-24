@@ -1,4 +1,15 @@
 <?php
+// Collapse Events
+// Juego
+$getJuego = $_GET['juego'];
+if ($getJuego == $index){
+    $collapse = "show";
+    $aria = "true";
+} else {
+    $collapse = "";
+    $aria = "false";
+}
+
 $fecha = $result['fecha'];
 if ($result['scraper'] == 1){
     $mm = substr($fecha, 5, 2);
