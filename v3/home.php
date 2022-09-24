@@ -73,6 +73,10 @@ if (isset($_SESSION['message']) ){
     ?>
     <!-- *Mandar a pagar a los recién registrados -->
 
+    <!-- *Slider Live -->
+    <?php include('inc/slider_vivo.php'); ?>
+    <!-- *Slider Live -->
+
 <!-- Slider Presentando --
 <div class="section full mt-3 mb-3">
     <div class="carousel-multiple owl-carousel owl-theme">
