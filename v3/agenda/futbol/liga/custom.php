@@ -79,7 +79,7 @@ if ($result['local'] === "serbia"){
 
 if ($result['local'] === "suecia"){
     $canalImg = "starplus";
-    $r= "";
+    $r= "Ly92ZXJjb21vZnV0Ym9sLnh5ei9zL3N0YXJfandwLmh0bWw/Z2V0PWh0dHBzOi8vbGl2ZS1mdGMtbmEtc291dGgtMi5tZWRpYS5zdGFyb3R0LmNvbS9jbHQyL3ZhMDEvc3RhcnBsdXMvZXZlbnQvMjAyMi8wOS8yNC9TZXJiaWFfdnNfU3VlY2lhXzIwMjIwOTI0XzE2NjQwMzg4MTUwNDUvY3RyLWFsbC1jb21wbGV0ZS5tM3U4JmltZz1odHRwczovL3Byb2QtcmlwY3V0LWRlbGl2ZXJ5LmRpc25leS1wbHVzLm5ldC92MS92YXJpYW50L3N0YXIvMDNGRDIxQkNEMkM3NkRDRTlBQTFBNjI1OUI4RTYyMDhCMUFERTUwOEZCNDVGMEJDM0Y1Q0IyMTRDRDdGRTk3Ri9zY2FsZT93aWR0aD0xOTIwJmFzcGVjdFJhdGlvPTEuNzgmZm9ybWF0PWpwZWcma2V5PTNiYmNjMzQ3YmRiNDQ5YmE4ZGVkZTE0ZWVhNDYzMjhjJmtleTI9OWUzN2QxMTc3MzYwMjBlNTg2MWNjMzRiNTBhZjcyNTI=";
     $custom1 = '
     <li>
         <a class="justify-content-center" href="../../../tv/epg?r='.$r.'">
