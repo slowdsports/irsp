@@ -6,7 +6,7 @@ $index = $_GET['id'];
 if(isset($_GET['c'])){
     $base ="http://cacksyy12.azureedge.net/streams/";
     $file = $base.$c."/playlist.m3u8";
-    echo $file;
+    //echo $file;
     $url = $file;
 
 	$curl = curl_init($url);
