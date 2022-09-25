@@ -24,7 +24,7 @@ if (isset($_SESSION['message']) ){
 ?>
 
 <div class="header-large-title container">
-    <h1 class="title"><?=ucfirst($fullname)?></h1>
+    <h1 class="title"><?php if(!isset($_SESSION['id']) ||(trim ($_SESSION['id']) == '')){ $fullname = "Invitado"; } else{ $fullname = ucfirst($row['fullname']); } echo $fullname; ?></h1>
     <h4 class="subtitle">¡Disfruta de tu evento!</h4>
 </div>
 

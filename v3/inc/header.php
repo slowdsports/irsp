@@ -1,5 +1,11 @@
 <?php
-include('functions.php'); include('conn.php'); ?>
+include('functions.php'); include('conn.php');
+if (!isset($_SESSION['id']) ||(trim ($_SESSION['id']) == '')) {
+    $fullname = "Invitado";
+} else{
+    $fullname = ucfirst($row['fullname']);
+}
+?>
 <!doctype html>
 <html lang="es">
 
