@@ -85,9 +85,6 @@ if (detectPC()){
             <a href="#" class="headerButton" data-toggle="modal" data-target="#sidebarFilter">
                 <i style="font-size: 25px;" class="mdi mdi-filter-outline md" aria-hidden="true"></i>
             </a>
-            <a href="#" class="headerButton" onclick="window.location.reload();">
-                <ion-icon name="reload-outline"></ion-icon>
-            </a>
             <?php } else { ?>
             <a href="#" class="headerButton" data-toggle="modal" data-target="#sidebarPanel">
                 <ion-icon name="menu-outline"></ion-icon>
@@ -98,6 +95,11 @@ if (detectPC()){
             iRaffle TV
         </div>
         <div class="right">
+            <?php if (strpos($actual_link, "tv")){ ?>
+                <a href="#" class="headerButton" onclick="window.location.reload();">
+                    <ion-icon name="reload-outline"></ion-icon>
+                </a>
+            <?php } else { }?>
             <!-- <a href="#" class="headerButton toggle-searchbox">
                 <ion-icon name="search-outline" role="img" class="md hydrated" aria-label="search outline"></ion-icon>
             </a> -->
