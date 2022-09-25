@@ -13,19 +13,19 @@ $row=mysqli_fetch_assoc($query);
 <!-- App Capsule -->
 <div id="appCapsule" class="container">
 
-<?php
-if (isset($_SESSION['message']) ){
-    echo '
-    <div class="alert alert-danger alert-dismissible fade show text-center" role="alert">
-        '.$_SESSION['message'].'
-        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-        <span aria-hidden="true">&times;</span>
-        </button>
-    </div>
-    ';
-    unset($_SESSION['message']);
-}
-?>
+    <?php
+    if (isset($_SESSION['message']) ){
+        echo '
+        <div class="alert alert-danger alert-dismissible fade show text-center" role="alert">
+            '.$_SESSION['message'].'
+            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+            </button>
+        </div>
+        ';
+        unset($_SESSION['message']);
+    }
+    ?>
 
     <!-- welcome notification  -->
     <div id="notification-welcome" class="notification-box">
@@ -53,13 +53,7 @@ if (isset($_SESSION['message']) ){
 
     <div class="header-large-title container">
         <h1 class="title">
-            <?php
-            if (!isset($_SESSION['id']) ||(trim ($_SESSION['id']) == '')) {
-                $fullname = "Invitado";
-            } else{
-                $fullname = ucfirst($row['fullname']);
-            }
-            echo $fullname;?></h1>
+            <?=$fullname?></h1>
         <h4 class="subtitle">¡Te damos la bienvenida!</h4>
     </div>
 
@@ -77,63 +71,7 @@ if (isset($_SESSION['message']) ){
     <?php include('inc/slider_vivo.php'); ?>
     <!-- *Slider Live -->
 
-<!-- Slider Presentando --
-<div class="section full mt-3 mb-3">
-    <div class="carousel-multiple owl-carousel owl-theme">
-        <?php
-        $ligas = mysqli_query($conn, "select * from ligas");
-        while($result=mysqli_fetch_array($ligas)){
-        // Cantidad de Juegos
-        $index = $i++;
-        $queryQty=mysqli_query($conn,"select * from agenda where liga = $index");
-        $totalGames=mysqli_num_rows($queryQty);
-        if ($totalGames == 0){
-            $ligaStatus = "hidden";
-        } elseif ($totalGames >= 1){
-            $ligaStatus = "show";
-        }
-        ?>
-        <a href="<?=$app?>agenda/futbol/liga?id=<?=$result['ligaId']?>">
-            <div class="item">
-                <div class="card">
-                    <center>
-                        <img src="assets/img/ligas/<?=$result['ligaImg']?>.png" class="image" alt="image">
-                        <div class="card-body">
-                            <p class="text text-center">
-                                <?= $totalGames;
-                                if ($totalGames == null || $totalGames == ""){
-                                    echo "0 juegos";
-                                } elseif ($totalGames == 0){
-                                    echo " juegos";
-                                } elseif ($totalGames == 1) {
-                                    echo " juego";
-                                } else {
-                                    echo " juegos";
-                                }
-                                ?>
-                            </p>
-                        </div>
-                    </center>
-                </div>
-            </div>
-        </a>
-        <?php }?>
-
-        <div class="item">
-            <div class="card">
-                <img src="assets/img/sample/photo/d4.jpg" class="card-img-top" alt="image">
-                <div class="card-body pt-2">
-                    <h4 class="mb-0">Promociones</h4>
-                </div>
-            </div>
-        </div>
-
-    </div>
-
-</div>
-<!-- End Slider Presentando -->
-
-<!-- Categorías -->
+    <!-- Categorías -->
     <div class="section mt-2">
         <div class="row">
             <!-- Elemento -->
@@ -284,7 +222,7 @@ if (isset($_SESSION['message']) ){
 
         </div>
     </div>
-<!-- End Categorías -->
-<?php
-include('inc/navbar.php');
-?>
+    <!-- End Categorías -->
+    <?php
+    include('inc/navbar.php');
+    ?>
