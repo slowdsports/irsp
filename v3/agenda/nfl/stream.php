@@ -36,26 +36,29 @@ if(isset($_GET['c'])){
     // 404 for error, 200 for no error
     // if(strpos($string, "200")) {
         if(!strpos($string, "404")) {
-        $m3u8 = base64_encode($file);
-        echo '<script>window.location.href = "../../tv/epg?nba&plyr=jw&c='.$m3u8.'&id='.$index.'";</script>';
-    }
-    else {
-        $base ="http://cacksyy12.azureedge.net/streams/";
-        $file = $base.$c2."/chunks.m3u8";
-        // Getting page header data
-        $array = @get_headers($file);
-        // Storing value at 1st position because
-        // that is only what we need to check
-        $string = $array[0];
-        // 404 for error, 200 for no error
-        if(strpos($string, "200")) {
+            //echo $string;
             $m3u8 = base64_encode($file);
             echo '<script>window.location.href = "../../tv/epg?nba&plyr=jw&c='.$m3u8.'&id='.$index.'";</script>';
-        } else{
-            $_SESSION['message'] = "No se ha podido cargar la retransmisión del juego.";
-            echo $m3u8;
         }
-    }
+        else {
+            $base ="http://cacksyy12.azureedge.net/streams/";
+            $file = $base.$c2."/chunks.m3u8";
+            // Getting page header data
+            $array = @get_headers($file);
+            // Storing value at 1st position because
+            // that is only what we need to check
+            $string = $array[0];
+            // 404 for error, 200 for no error
+            // if(strpos($string, "200")) {
+                if(!strpos($string, "404")) {
+                $m3u8 = base64_encode($file);
+                echo '<script>window.location.href = "../../tv/epg?nba&plyr=jw&c='.$m3u8.'&id='.$index.'";</script>';
+            } else{
+                //echo $string;
+                $_SESSION['message'] = "No se ha podido cargar la retransmisión del juego.";
+                echo $m3u8;
+            }
+        }
 }
 
 if(isset($_GET['g'])){
