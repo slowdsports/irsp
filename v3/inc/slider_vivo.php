@@ -108,6 +108,11 @@
                     $hh_1 = substr($fecha, 11, 2);
                     $m_1 = substr($fecha, 14, 2);
                     //echo "mm: " . $mm_1 . " dd: " . $dd_1 . " hh: " . $hh_1 . " m: " . $m_1 . "<br>";
+                    // Movistar Scrap
+                    if ($result['scraper'] == 1){
+                        // Restamos 8hrs para obtener h local
+                        $hh_1 = $hh_1 -8;
+                    }
                     // Validación:
                     if ($mm_0 === $mm_1){
                         if ($dd_0 === $dd_1){
