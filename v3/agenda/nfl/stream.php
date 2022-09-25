@@ -73,13 +73,13 @@ if(isset($_GET['g'])){
                 $_SESSION['message'] = "No se ha podido cargar la retransmisión del juego.";
             } else{
                 $m3u8 = base64_encode($stream[1]);
-                echo '<script>window.location.href = "../../tv/epg?nba&plyr=vid&c='.$m3u8.'&id='.$index.'";</script>';
+                echo '<script>window.location.href = "../../tv/epg?nba&plyr=jw&c='.$m3u8.'&id='.$index.'";</script>';
             }
 
     } else{
         $m3u8 = base64_encode($stream[1]);
         // header ("location: ../../play?nfl&plyr=vid&c=$m3u8");
         //echo '<script>window.location.href = "../play?nba&plyr=vid&c='.$m3u8.'";</script>';
-        echo '<script>window.location.href = "../../tv/epg?nba&plyr=vid&c='.$m3u8.'&id='.$index.'";</script>';
+        echo '<script>window.location.href = "../../tv/epg?nba&plyr=jw&c='.$m3u8.'&id='.$index.'";</script>';
     }
 }
