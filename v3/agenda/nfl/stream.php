@@ -4,7 +4,7 @@ $c2 = ucfirst($_GET['c2']); $g2 = $_GET['g2'];
 $index = $_GET['id'];
 
 if(isset($_GET['c'])){
-    $base ="http://cackskyatc.azureedge.net/streams/";
+    $base ="http://cacksyy12.azureedge.net/streams/";
     $file = $base.$c."/chunks.m3u8";
     // Getting page header data
     $array = @get_headers($file);
