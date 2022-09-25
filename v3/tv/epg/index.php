@@ -88,7 +88,7 @@ if (isset($_SESSION['message']) ){
             <div class="tab-pane fade <?=$isHls?>" id="hls" role="tabpanel" aria-labelledby="hls-tab">
                 <!-- Video TAG -->
                 <div class="onclick" onclick="noFullScreen('player');">
-                    <video autoplay controls id="vidarea" class="video-js vjs-default-skin" controls ></video>
+                    <video controls id="vidarea" class="video-js vjs-default-skin" controls ></video>
                 </div>
             </div>
         </div>
