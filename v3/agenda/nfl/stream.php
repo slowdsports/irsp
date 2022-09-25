@@ -87,6 +87,10 @@ if(isset($_GET['g'])){
     }
 }
 
+
+$canal = $result['canal'];
+$canal2 = $result['canal2'];
+$canal3 = $result['canal3'];
 if($canal === "M+ #Vamos" || $canal === "M+ #Vamos Bar 2 (305)" || $canal === "mvamos"){
     $canalImg = "mvamos";
     $canalop2 = '
