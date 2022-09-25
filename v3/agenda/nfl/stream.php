@@ -34,7 +34,8 @@ if(isset($_GET['c'])){
     // that is only what we need to check
     $string = $array[0];
     // 404 for error, 200 for no error
-    if(strpos($string, "200")) {
+    // if(strpos($string, "200")) {
+        if(!strpos($string, "404")) {
         $m3u8 = base64_encode($file);
         echo '<script>window.location.href = "../../tv/epg?nba&plyr=jw&c='.$m3u8.'&id='.$index.'";</script>';
     }
