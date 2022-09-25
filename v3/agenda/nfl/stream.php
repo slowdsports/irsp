@@ -7,6 +7,27 @@ if(isset($_GET['c'])){
     $base ="http://cacksyy12.azureedge.net/streams/";
     $file = $base.$c."/playlist.m3u8";
     echo $file;
+    $url = $file;
+
+	$curl = curl_init($url);
+	curl_setopt($curl, CURLOPT_URL, $url);
+	curl_setopt($curl, CURLOPT_RETURNTRANSFER, true);
+
+	$headers = array(
+        "Host: cacksyy12.azureedge.net",
+        "Origin: http://crackstreams.biz",
+        "Referer: http://crackstreams.biz/",
+        "Sec-GPC: 1",
+        "User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36",
+        "Cookie: __cf_bm=0EbroPsk5WgtIPHHk09VpXHUpvbyWKFERcBED6AVzd4-1647564571-0-AaTu0qYjuVT4KzoaiTdY27hRz1ExlkrEcjXLtp/3lcZ21/dYItDSarAhGoMleNTm27nC/9xky8PqKOQmULL15+8K1BZisnmnyuSxTRALVnAb6jmbwke+0RVUBHqQ0r5Htg==",
+    );
+	curl_setopt($curl, CURLOPT_HTTPHEADER, $headers);
+	//for debug only!
+	curl_setopt($curl, CURLOPT_SSL_VERIFYHOST, false);
+	curl_setopt($curl, CURLOPT_SSL_VERIFYPEER, false);
+
+	$resp = curl_exec($curl);
+	curl_close($curl);
     // Getting page header data
     $array = @get_headers($file);
     // Storing value at 1st position because
