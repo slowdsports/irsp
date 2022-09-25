@@ -15,6 +15,11 @@ $useragent = $_SERVER['HTTP_USER_AGENT'];
 // TELEGRAM CONTACT
 $telegram = "https://t.me/slowdmelendez360";
 // USERTYPE
+if (!isset($_SESSION['id']) ||(trim ($_SESSION['id']) == '')) {
+    $fullname = "Invitado";
+} else{
+    $fullname = ucfirst($row['fullname']);
+}
 $userType = $row['type'];
 // CALC SUBSCRIPTION
 $futuro = strtotime($row['fecha']);
