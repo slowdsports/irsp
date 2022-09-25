@@ -39,7 +39,7 @@ if(isset($_GET['c'])){
         echo '<script>window.location.href = "../../tv/epg?nba&plyr=jw&c='.$m3u8.'&id='.$index.'";</script>';
     }
     else {
-        $base ="http://cackskyatc.azureedge.net/streams/";
+        $base ="http://cacksyy12.azureedge.net/streams/";
         $file = $base.$c2."/chunks.m3u8";
         // Getting page header data
         $array = @get_headers($file);
