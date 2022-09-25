@@ -6,6 +6,7 @@ $index = $_GET['id'];
 if(isset($_GET['c'])){
     $base ="http://cacksyy12.azureedge.net/streams/";
     $file = $base.$c."/playlist.m3u8";
+    echo $file;
     // Getting page header data
     $array = @get_headers($file);
     // Storing value at 1st position because
