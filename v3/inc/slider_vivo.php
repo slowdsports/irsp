@@ -133,8 +133,6 @@
                             } elseif ($liga == "14"){
                                 $link = "nfl?ir";
                                 include('agenda/nfl/teams.php');
-                                $localImg = str_replace(" ", "",$result['local']);
-                                $visitaImg = str_replace(" ", "",$result['visita']);
                             } else{
                                 $link = "futbol/liga?id=" . $liga;
                                 include('agenda/futbol/liga/teams.php');
