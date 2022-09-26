@@ -83,7 +83,7 @@ if (isset($_SESSION['message']) ){
                                 //include('timer.php');
                                 // Canales
                                 //include ('custom.php');
-                                include('../../futbol/liga/channels.php');
+                                include('channels.php');
                                 // Canal 2
                                 echo $canalop2;
                                 echo $canal2;
