@@ -2104,6 +2104,10 @@ a.badge-dark {
   background: #fff;
 }
 
+.card.product-card:hover, .item .card:hover {
+  box-shadow: 3px 5px #3F3F3F;
+}
+
 .card.product-card .card-body {
   padding: 8px;
 }
