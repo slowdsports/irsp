@@ -52,8 +52,7 @@ $row=mysqli_fetch_assoc($query);
     <!-- * welcome notification -->
 
     <div class="header-large-title container">
-        <h1 class="title">
-            <?=$fullname?></h1>
+        <h1 class="title"><?php if(!isset($_SESSION['id']) ||(trim ($_SESSION['id']) == '')){ $fullname = "Invitado"; } else{ $fullname = ucfirst($row['fullname']); } echo $fullname; ?></h1>
         <h4 class="subtitle">¡Te damos la bienvenida!</h4>
     </div>
 
