@@ -193,6 +193,7 @@ if ($result['ligaImg'] == 18){
     $local = str_replace('espaa', 'España', $local);
     $local = str_replace('repblicacheca', 'República Checa', $local);
     $local = str_replace('repblicairlanda', 'República de Irlanda', $local);
+    $local = str_replace('sanmarino', 'San Marino', $local);
 
     $visita = str_replace('mxico', 'México', $visita);
     $visita = str_replace('kazajistn', 'Kazajistán', $visita);
@@ -207,6 +208,7 @@ if ($result['ligaImg'] == 18){
     $visita = str_replace('espaa', 'España', $visita);
     $visita = str_replace('repblicacheca', 'República Checa', $visita);
     $visita = str_replace('repblicairlanda', 'República de Irlanda', $visita);
+    $visita = str_replace('sanmarino', 'San Marino', $visita);
 
     // Liga MX
     $local = str_replace('america', 'América', $local);
