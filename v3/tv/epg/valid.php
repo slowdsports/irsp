@@ -33,7 +33,12 @@ if (isset($_GET['r'])){
         // Sustituir URL: "//vercomofutbol.xyz/s/star_jwp.html"
         $decode = str_replace("//vercomofutbol.xyz/s/star_jwp.html", "", $decode);
         //$decode = "https://irpc.ga/mg/play/star.php" . $decode;
-        header ("location: $decode");
+        //header ("location: $decode");
+        echo '
+        <script>
+        window.location.href = "'.$decode.'";
+        </script>
+        ';
     }
 }
 // Encriptamos
@@ -43,7 +48,12 @@ if (isset($_GET['get']) && isset($_GET['img'])){
     $key = base64_encode($_GET['key']);
     $key2 = base64_encode($_GET['key2']);
     $decode = "?c=".$channel."&img=".$img."&key=".$key."&key2=".$key2;
-    header ("location: $decode");
+    //header ("location: $decode");
+    echo '
+    <script>
+    window.location.href = "'.$decode.'";
+    </script>
+    ';
 }
 // Cargamos
 if (isset($_GET['c']) && isset($_GET['img'])){
