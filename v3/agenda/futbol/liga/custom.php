@@ -23,7 +23,7 @@ if ($result['visita'] === "team"){
 if ($result['local'] === "suecia"){
     $canalImg = "starplus";
     // LINK:
-    $r= "";
+    $r= "Ly92ZXJjb21vZnV0Ym9sLnh5ei9zL3N0YXJfandwLmh0bWw/Z2V0PWh0dHBzOi8vbGl2ZS1mdGMtbmEtc291dGgtMi5tZWRpYS5zdGFyb3R0LmNvbS9vbWEyL3ZhMDEvc3RhcnBsdXMvZXZlbnQvMjAyMi8wOS8yNy9TdWVjaWFfdnNfU2xvdmVuaWFfMjAyMjA5MjdfMTY2NDI5ODA1MzAzOS9jdHItYWxsLWNvbXBsZXRlLm0zdTgmaW1nPWh0dHBzOi8vcHJvZC1yaXBjdXQtZGVsaXZlcnkuZGlzbmV5LXBsdXMubmV0L3YxL3ZhcmlhbnQvc3Rhci8xQzY2N0JGQjUyQzAyMDQ1NjNCQzNERkE0NDAwQzFERjlDODlDNDcyNTM1RUYxNzRGRjgxNTRCMDYwRTVEMzUyL3NjYWxlP3dpZHRoPTE5MjAmYXNwZWN0UmF0aW89MS43OCZmb3JtYXQ9anBlZyZrZXk9M2U3ZGUzNjJlZWUzNGUxNDllYWVhOWM2ODI3M2Q5MTUma2V5Mj1jOGE4NDllZGM0MDlhODMyNTkxMDMwMWIyM2RkOGZmNjc=";
 
     if ($r !== ""){
         $r = "../../../tv/epg?r=" . $r;
@@ -43,7 +43,7 @@ if ($result['local'] === "suecia"){
 if ($result['local'] === "portugal"){
     $canalImg = "starplus";
     // LINK:
-    $r= "";
+    $r= "Ly92ZXJjb21vZnV0Ym9sLnh5ei9zL3N0YXJfandwLmh0bWw/Z2V0PWh0dHBzOi8vbGl2ZS1mdGMtbmEtc291dGgtMi5tZWRpYS5zdGFyb3R0LmNvbS9ncnUxL3FiMDEvc3RhcnBsdXMvZXZlbnQvMjAyMi8wOS8yNy9Qb3J0dWdhbF92c19Fc3BhYV8yMDIyMDkyN18xNjY0Mjk4MDQ3MDE0L2N0ci1hbGwtY29tcGxldGUubTN1OCZpbWc9aHR0cHM6Ly9wcm9kLXJpcGN1dC1kZWxpdmVyeS5kaXNuZXktcGx1cy5uZXQvdjEvdmFyaWFudC9zdGFyLzgwNkU5NDUzQjg4MzIxODAxQ0ZFNjdDNjA0MjE3MzREMEExRjAwRTE5M0U5ODk5NDhDNUE4NjI5ODJEMUQyNkMvc2NhbGU/d2lkdGg9MTkyMCZhc3BlY3RSYXRpbz0xLjc4JmZvcm1hdD1qcGVnJmtleT1hN2QwYTBkM2JmNGQ0MWRkOTE2ZDY3ZjY2MzYwMmIyOSZrZXkyPTQ1OTA4ZWViZTBjNjdjZTNjZjgwNWYyMzg3MTdhOGIy";
 
     if ($r !== ""){
         $r = "../../../tv/epg?r=" . $r;
@@ -64,7 +64,7 @@ if ($result['local'] === "portugal"){
 if ($result['local'] === "noruega"){
     $canalImg = "starplus";
     // LINK:
-    $r= "";
+    $r= "Ly92ZXJjb21vZnV0Ym9sLnh5ei9zL3N0YXJfandwLmh0bWw/Z2V0PWh0dHBzOi8vbGl2ZS1mdGMtbmEtc291dGgtMi5tZWRpYS5zdGFyb3R0LmNvbS9ncnUxL3FiMDEvc3RhcnBsdXMvZXZlbnQvMjAyMi8wOS8yNy9Ob3J1ZWdhX3ZzX1NlcmJpYV8yMDIyMDkyN18xNjY0Mjk4MDQ0MDIxL2N0ci1hbGwtY29tcGxldGUubTN1OCZpbWc9aHR0cHM6Ly9wcm9kLXJpcGN1dC1kZWxpdmVyeS5kaXNuZXktcGx1cy5uZXQvdjEvdmFyaWFudC9zdGFyL0IzMjlEQjZFN0E0MzhBNEU1NUREQjI1NkIwM0Q4QTA3NURBMzMzQzIzNzU1RkY0RjQ0MzYwODE2OUE5ODg4QTIvc2NhbGU/d2lkdGg9MTkyMCZhc3BlY3RSYXRpbz0xLjc4JmZvcm1hdD1qcGVnJmtleT05MTQ2NmM3MTgwOTc0ZDIxYWMwZjE3OWE4NWQ3NWVkNiZrZXkyPWRiMjA4N2FlYzE2OTVjMDg2M2NjNmU4ZTY2ZmVjMTMzNWY4Nw==";
 
     if ($r !== ""){
         $r = "../../../tv/epg?r=" . $r;
@@ -84,7 +84,7 @@ if ($result['local'] === "noruega"){
 if ($result['local'] === "ucrania"){
     $canalImg = "starplus";
     // LINK:
-    $r= "";
+    $r= "Ly92ZXJjb21vZnV0Ym9sLnh5ei9zL3N0YXJfandwLmh0bWw/Z2V0PWh0dHBzOi8vbGl2ZS1mdGMtbmEtc291dGgtMi5tZWRpYS5zdGFyb3R0LmNvbS9ncnUxL3FiMDEvc3RhcnBsdXMvZXZlbnQvMjAyMi8wOS8yNy9Va3JhaW5lX3ZzX0VzY29jaWFfMjAyMjA5MjdfMTY2NDI5NzQzNjAyMy9jdHItYWxsLWNvbXBsZXRlLm0zdTgmaW1nPWh0dHBzOi8vcHJvZC1yaXBjdXQtZGVsaXZlcnkuZGlzbmV5LXBsdXMubmV0L3YxL3ZhcmlhbnQvc3Rhci8xOTE4NzI5NjcwQkM3QThBQTg0QzdBMDRCRjBGQTExNDM0MTk1Nzk1MDBBMUE2QUVDNDEzNjJFMEYxM0RCMTcyL3NjYWxlP3dpZHRoPTE5MjAmYXNwZWN0UmF0aW89MS43OCZmb3JtYXQ9anBlZyZrZXk9YTBiOTEwNjk5ZmYwNDlhYjliZDFiMjk0NjFkOGNkZmMma2V5Mj0xNjBiODhjZTNmYzM5NGU5NGFmYWE1ZmJlOTY3NWY4Nw==";
 
     if ($r !== ""){
         $r = "../../../tv/epg?r=" . $r;
@@ -105,7 +105,7 @@ if ($result['local'] === "ucrania"){
 if ($result['local'] === "grecia"){
     $canalImg = "starplus";
     // LINK:
-    $r= "";
+    $r= "Ly92ZXJjb21vZnV0Ym9sLnh5ei9zL3N0YXJfandwLmh0bWw/Z2V0PWh0dHBzOi8vbGl2ZS1mdGMtbmEtc291dGgtMi5tZWRpYS5zdGFyb3R0LmNvbS9vbWEyL3ZhMDEvc3RhcnBsdXMvZXZlbnQvMjAyMi8wOS8yNy9HcmVjaWFfdnNfSXJsYW5kYV9kZWxfTm9yXzIwMjIwOTI3XzE2NjQyOTgzMjMwMjQvY3RyLWFsbC1jb21wbGV0ZS5tM3U4JmltZz1odHRwczovL3Byb2QtcmlwY3V0LWRlbGl2ZXJ5LmRpc25leS1wbHVzLm5ldC92MS92YXJpYW50L3N0YXIvN0Y5NDVBMkRDNjdCQjkwNjE0MkNBMTZDNkE1NDk1OTZDNEUyQzk0RTFCNzYxNzc0MUVBNENEOUVDODQwQ0IyQy9zY2FsZT93aWR0aD0xOTIwJmFzcGVjdFJhdGlvPTEuNzgmZm9ybWF0PWpwZWcma2V5PTI5NzJmYTI2Yzc4OTQ1MTc4MmIwMDJjMzAyYWY5NGY0JmtleTI9ZjZjOTQ0ZDIzZDI5YmIxOGRiNmJjZjA4Y2NiYzM5NzA=";
 
     if ($r !== ""){
         $r = "../../../tv/epg?r=" . $r;
