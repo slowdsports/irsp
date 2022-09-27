@@ -457,26 +457,6 @@ if($canal === "directv1" || $canal === "directv1"){
     </li>';
 }
 
-if($canal === "baltimore" || $canal === "baltimore"){
-    $canalImg = "nfl";
-    $canalop2 = '
-    <li>
-        <a class="justify-content-center" href="http://d2wd103krdtde9.cloudfront.net/hls/ravens/playlist.m3u8">
-        <i class="flag us"></i>
-        Ravens
-        </a>
-    </li>';
-} elseif($canal2 === "baltimore" || $canal2 === "baltimore"){
-    $canalImg = "nfl";
-    $canal2 = '
-    <li>
-        <a class="justify-content-center" href="http://d2wd103krdtde9.cloudfront.net/hls/ravens/playlist.m3u8">
-        <i class="flag us"></i>
-        Ravens
-        </a>
-    </li>';
-}
-
 if($canal === "directv2" || $canal === "directv2"){
     $canalImg = "directv";
     $canalop2 = '
