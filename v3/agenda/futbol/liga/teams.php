@@ -199,6 +199,7 @@ if ($result['ligaImg'] == 18){
     $local = str_replace('japn', 'Japón', $local);
     $local = str_replace('canad', 'Canadá', $local);
     $local = str_replace('tnez', 'Túnez', $local);
+    $local = str_replace('per', 'Perú', $local);
     $local = str_replace('elsalvador', 'El Salvador', $local);
 
     $visita = str_replace('mxico', 'México', $visita);
@@ -220,6 +221,7 @@ if ($result['ligaImg'] == 18){
     $visita = str_replace('japn', 'Japón', $visita);
     $visita = str_replace('canad', 'Canadá', $visita);
     $visita = str_replace('tnez', 'Túnez', $visita);
+    $visita = str_replace('per', 'Perú', $visita);
     $visita = str_replace('elsalvador', 'El Salvador', $visita);
 
     // Liga MX
