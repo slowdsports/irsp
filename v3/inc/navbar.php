@@ -12,7 +12,7 @@
 
     <!-- App Bottom Menu -->
     <div class="appBottomMenu">
-        <a href="<?=$app?>" class="item">
+        <a href="<?=$app?>/home.php" class="item">
             <div class="col">
                 <ion-icon name="home-outline"></ion-icon>
                 <strong>Inicio</strong>
@@ -286,7 +286,7 @@
 
                     <ul class="listview flush transparent no-line image-listview mt-2">
                         <li>
-                            <a href="<?=$app?>" class="item">
+                            <a href="<?=$app?>/home.php" class="item">
                                 <div class="icon-box bg-primary">
                                     <ion-icon name="home-outline"></ion-icon>
                                 </div>
