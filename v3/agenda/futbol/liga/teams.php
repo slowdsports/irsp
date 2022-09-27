@@ -194,8 +194,8 @@ if ($result['ligaImg'] == 18){
     $local = str_replace('repblicacheca', 'República Checa', $local);
     $local = str_replace('repblicairlanda', 'República de Irlanda', $local);
     $local = str_replace('sanmarino', 'San Marino', $local);
-    // $local = str_replace('coreadelsur', 'Corea del Sur', $local);
-    // $local = str_replace('camern', 'Camerún', $local);
+    $local = str_replace('coreadelsur', 'Corea del Sur', $local);
+    $local = str_replace('camern', 'Camerún', $local);
     // $local = str_replace('japn', 'Japón', $local);
     // $local = str_replace('canad', 'Canadá', $local);
     // $local = str_replace('tnez', 'Túnez', $local);
@@ -215,8 +215,8 @@ if ($result['ligaImg'] == 18){
     $visita = str_replace('repblicacheca', 'República Checa', $visita);
     $visita = str_replace('repblicairlanda', 'República de Irlanda', $visita);
     $visita = str_replace('sanmarino', 'San Marino', $visita);
-    // $visita = str_replace('coreadelsur', 'Corea del Sur', $local);
-    // $visita = str_replace('camern', 'Camerún', $visita);
+    $visita = str_replace('coreadelsur', 'Corea del Sur', $local);
+    $visita = str_replace('camern', 'Camerún', $visita);
     // $visita = str_replace('japn', 'Japón', $visita);
     // $visita = str_replace('canad', 'Canadá', $visita);
     // $visita = str_replace('tnez', 'Túnez', $visita);
