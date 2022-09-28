@@ -24,7 +24,7 @@ foreach ($juego as $nombre){
     $fecha = $nombre ->find('div.row div span',1) -> content;
         $fecha = str_replace("T", " ", $fecha);
         $fecha = str_replace("-06:00", "", $fecha);
-        $canal = $canal2 = $canal3 = $canal4 = null;
+        $canal = $canal2 = $canal3 = $canal4 = "";
         $canal5 = 279;
 
 // Agregamos los campos a la DB
