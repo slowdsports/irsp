@@ -53,8 +53,8 @@
                             } elseif ($liga == "12"){
                                 $link = "basket/liga?id=" . $liga;
                                 include('agenda/basket/liga/teams.php');
-                                $localImg = str_replace(" ", "", $row['local']);
-                                $visitaImg = str_replace(" ", "", $row['visita']);
+                                $localImg = str_replace(" ", "", $result['local']);
+                                $visitaImg = str_replace(" ", "", $result['visita']);
                             } elseif ($liga == "22"){
                                 $link = "mlb?ir";
                                 include('agenda/mlb/teams.php');
