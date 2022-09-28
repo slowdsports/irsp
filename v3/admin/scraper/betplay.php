@@ -1,12 +1,11 @@
 <?php
 include('scraper.php');
 // CALL URL CUSTOMIZED
-//$base = "https://www.futbolenlatv.es/competicion/premier-league";
+//$baseUrl = "https://aquehorajuega.co/competiciones/colombia/";
 // get DOM from URL or file
 $html = file_get_html($baseUrl);
 // MAIN ELEMENT
-$juego = $html ->find ('tr');
-$fechas = $html ->find ('tr.cabeceraTabla');
+$juego = $html ->find ('div.panel-body');
 // INDEX
 $i = 1;
 $i2 = 1;
@@ -26,6 +25,7 @@ foreach ($juego as $nombre){
         $fecha = str_replace("-06:00", "", $fecha);
         //$canal = $canal2 = $canal3 = $canal4 = "";
         $canal5 = 279;
+        echo $local;
 
 // Agregamos los campos a la DB
 if (isset($_POST['create'])){
