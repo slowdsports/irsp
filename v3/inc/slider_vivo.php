@@ -53,13 +53,13 @@
                             } elseif ($liga == "12"){
                                 $link = "basket/liga?id=" . $liga;
                                 include('agenda/basket/liga/teams.php');
-                                $localImg = str_replace(" ", "", $local);
-                                $visitaImg = str_replace(" ", "", $visita);
+                                $localImg = str_replace(" ", "", $row['local']);
+                                $visitaImg = str_replace(" ", "", $row['visita']);
                             } elseif ($liga == "22"){
                                 $link = "mlb?ir";
                                 include('agenda/mlb/teams.php');
-                                $localImg = strtolower($row['local']);
-                                $visitaImg = strtolower($row['visita']);
+                                $localImg = strtolower($local);
+                                $visitaImg = strtolower($visita);
                             } elseif ($liga == "25"){
                                 $link = "balonmano?ir";
                                 include('agenda/balonmano/teams.php');
