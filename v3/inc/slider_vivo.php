@@ -1,75 +1,4 @@
 
-        <style>
-            .main-event {
-            display: flex;
-            margin: 0 auto;
-            align-items: center;
-            justify-content: space-between;
-            width: 100%;
-            }
-
-            .item:hover , .card:hover , .main-event:hover , .match:hover , .vs:hover , .counter:hover{
-                color: #ffffff;
-            }
-
-            .main-event .league img {
-            min-width: 3%;
-            max-width: 48px;
-            }
-
-            .league {
-                display: flex;
-                margin-left: 2%;
-                justify-content: center;
-                margin-top: 10px;
-                margin-bottom: 15px;
-            }
-
-            .match {
-            display: flex;
-            align-items: center;
-            justify-content: space-around;
-            margin: 0 auto;
-            }
-
-            .team img {
-            min-width: 3%;
-            max-width: 48px;
-            }
-
-            .team {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            align-content: center;
-            justify-content: space-around;
-            text-align: center;
-            width: 80px;
-            margin: 0 auto;
-            height: 80px;
-            font-size: 0.8rem;
-            }
-
-            .vs {
-            margin: 0 auto;
-            }
-
-            .match h4 {
-            margin-top: 2%;
-            }
-
-            .match h6 {
-            font-size: 1rem;
-            }
-            .counter {
-                display: flex;
-                justify-content: center;
-                margin-top: 20px;
-            }
-            .live-text .animated {
-                color: red;
-            }
-        </style>
         <!-- Recomendados Slider -->
         <div class="section full mt-3 mb-3">
             <div class="carousel-multiple owl-carousel owl-theme">
@@ -123,6 +52,7 @@
                                 $visitaImg = $visita;
                             } elseif ($liga == "12"){
                                 $link = "basket/liga?id=" . $liga;
+                                include('agenda/basket/liga/teams.php');
                                 $localImg = str_replace(" ", "", $local);
                                 $visitaImg = str_replace(" ", "", $visita);
                             } elseif ($liga == "22"){
@@ -146,7 +76,7 @@
                 <a href="<?=$app?>/agenda/<?=$link?>&juego=<?=$index?>">
                     <div class="item">
                         <div class="card">
-                            <div class="league">
+                            <div class="mini-league">
                                 <img width="25px" src="<?=$app?>/assets/img/ligas/<?=$ligaImg?>.png" alt="">
                                 <h5><?=$ligaName?></h5>
                             </div>
