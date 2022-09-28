@@ -94,7 +94,7 @@
                     </div>
                     <div class="form-group boxed">
                         <div class="input-wrapper">
-                            <input required id="username" name="username" type="text" class="form-control" placeholder="Usuario" value="<?php if (isset($_COOKIE["username"])){echo $_COOKIE["username"];}?>">
+                            <input required id="username" name="username" type="text" class="form-control" placeholder="Usuario" value="<?php if (isset($_COOKIE["user"])){echo $_COOKIE["user"];}?>">
                             <i class="clear-input">
                                 <ion-icon name="close-circle"></ion-icon>
                             </i>

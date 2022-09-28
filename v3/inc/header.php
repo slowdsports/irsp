@@ -44,7 +44,11 @@ if (detectPC()){
     if (!strpos($actual_link, "home")){
     ?>
     <link rel="stylesheet" href="<?=$app?>assets/css/events.css">
-    <?php } else {}?>
+    <?php } elseif(strpos($actual_link, "home")) {
+    ?>
+    <link rel="stylesheet" href="<?=$app?>assets/css/slider.css">
+    <?php
+    } else {}?>
     <link rel="stylesheet" href="<?=$app?>assets/css/inc/flags.css">
     <link rel="stylesheet" href="<?=$app?>assets/css/inc/font-awesome.css">
     <link rel="stylesheet" href="<?=$app?>assets/css/inc/font-awesome-animation.css">

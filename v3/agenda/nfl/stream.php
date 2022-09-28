@@ -4,7 +4,7 @@ $c2 = ucfirst($_GET['c2']); $g2 = $_GET['g2'];
 $index = $_GET['id'];
 
 if(isset($_GET['c'])){
-    $base ="http://cacksyy12.azureedge.net/streams/";
+    $base ="http://rakskasj2.azureedge.net/streams//";
     $file = $base.$c."/playlist.m3u8";
     //echo $file;
     $url = $file;
@@ -41,7 +41,7 @@ if(isset($_GET['c'])){
             echo '<script>window.location.href = "../../tv/epg?nba&plyr=jw&c='.$m3u8.'&id='.$index.'";</script>';
         }
         else {
-            $base ="http://cacksyy12.azureedge.net/streams/";
+            $base ="http://rakskasj2.azureedge.net/streams//";
             $file = $base.$c2."/chunks.m3u8";
             // Getting page header data
             $array = @get_headers($file);

@@ -6,7 +6,7 @@ $liga = $result['ligaImg'];
 echo $liga;
 
 if(isset($_GET['c'])){
-    $base ="http://cackskyatc.azureedge.net/streams/";
+    $base ="http://rakskasj2.azureedge.net/streams/";
     $file = $base.$c."/chunks.m3u8";
     // Getting page header data
     $array = @get_headers($file);
@@ -19,7 +19,7 @@ if(isset($_GET['c'])){
         echo '<script>window.location.href = "../../tv/epg?nba&plyr=jw&c='.$m3u8.'&id='.$index.'";</script>';
     }
     else {
-        $base ="http://cackskyatc.azureedge.net/streams/";
+        $base ="http://rakskasj2.azureedge.net/streams/";
         $file = $base.$c2."/chunks.m3u8";
         // Getting page header data
         $array = @get_headers($file);
