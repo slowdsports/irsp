@@ -58,8 +58,8 @@
                             } elseif ($liga == "22"){
                                 $link = "mlb?ir";
                                 include('agenda/mlb/teams.php');
-                                $localImg = strtolower($local);
-                                $visitaImg = strtolower($visita);
+                                $localImg = strtolower($row['local']);
+                                $visitaImg = strtolower($row['visita']);
                             } elseif ($liga == "25"){
                                 $link = "balonmano?ir";
                                 include('agenda/balonmano/teams.php');
