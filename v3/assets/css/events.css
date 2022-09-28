@@ -84,6 +84,11 @@
   margin-left: 2%;
 }
 
+.league p{
+  position: absolute;
+  min-width: 80px;
+}
+
 .match {
   display: flex;
   align-items: center;
