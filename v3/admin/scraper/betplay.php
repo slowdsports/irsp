@@ -28,7 +28,9 @@ foreach ($juego as $nombre){
         $fecha = str_replace("-06:00", "", $fecha);
         //$canal = $canal2 = $canal3 = $canal4 = "";
         $canal5 = 279;
-        echo $local . "vs" . $visita . "<br> a las: " . $fecha ;
+        echo $local . "vs" . $visita . "<br> a las: " . $fecha . "<br>";
+        echo 'Time zone is: '.date('e');
+        echo 'Time zone is: '.date_default_timezone_get();
 
 // Agregamos los campos a la DB
 if (isset($_POST['create'])){
