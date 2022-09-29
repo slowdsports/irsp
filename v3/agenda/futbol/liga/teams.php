@@ -240,4 +240,7 @@ if ($result['ligaImg'] == 18){
     $visita = str_replace('mazatlan', 'Mazatlán', $visita);
     $visita = str_replace('queretaro', 'Querétaro', $visita);
     $visita = str_replace('sanluis', 'San Luis', $visita);
+
+    // Betplay CO
+    $local = str_replace('santafe', 'Santa Fé', $local);
 ?>

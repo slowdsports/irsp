@@ -1,7 +1,7 @@
 <?php
-include('scraper.php');
+include('scraper.php'); include('tildes.php');
 // CALL URL CUSTOMIZED
-//$baseUrl = "https://aquehorajuega.co/competiciones/colombia/";
+$baseUrl = "https://aquehorajuega.co/competiciones/colombia/";
 // get DOM from URL or file
 $html = file_get_html($baseUrl);
 // MAIN ELEMENT
@@ -17,9 +17,11 @@ $i2 = 1;
 
 foreach ($juego as $nombre){
     $local = $nombre ->find('div.row div a',0) -> title;
-        $local = strtolower($local);
+        $local = eliminar_tildes(strtolower($local));
+        $local = str_replace(" ", "", $local);
     $visita = $nombre ->find('div.row div a',1) -> title;
-        $visita = strtolower($visita);
+        $visita = eliminar_tildes(strtolower($visita));
+        $visita = str_replace(" ", "", $visita);
     $fecha = $nombre ->find('div.row div span',1) -> content;
         $fecha = str_replace("T", " ", $fecha);
         $fecha = str_replace("-06:00", "", $fecha);
