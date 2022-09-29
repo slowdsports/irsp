@@ -275,7 +275,7 @@ if ($result['ligaImg'] == 18){
     $local = str_replace('colon', 'Colón', $local);
     $local = str_replace('union', 'Unión', $local);
     $local = str_replace('Newell`s', 'NOB', $local);
-    $local = str_replace('rosariocentral', 'Rosario', $local);
+    $local = str_replace('rosariocentral', 'Rosario Central', $local);
     $local = str_replace('centralcordoba(se)', 'Central Córdoba', $local);
     $local = str_replace('defensayjusticia', 'Defensa y Justicia', $local);
     $local = str_replace('sanlorenzo', 'San Lorenzo', $local);
@@ -297,7 +297,7 @@ if ($result['ligaImg'] == 18){
     $visita = str_replace('colon', 'Colón', $visita);
     $visita = str_replace('union', 'Unión', $visita);
     $visita = str_replace('Newell`s', 'NOB', $visita);
-    $visita = str_replace('rosariocentral', 'Rosario', $visita);
+    $visita = str_replace('rosariocentral', 'Rosario Central', $visita);
     $visita = str_replace('centralcordoba(se)', 'Central Córdoba', $visita);
     $visita = str_replace('defensayjusticia', 'Defensa y Justicia', $visita);
     $visita = str_replace('sanlorenzo', 'San Lorenzo', $visita);
