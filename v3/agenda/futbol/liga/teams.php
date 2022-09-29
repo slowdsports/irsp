@@ -63,7 +63,10 @@ if ($result['ligaImg'] == 18){
     $local = str_replace('granada', 'Granada CF', $local);
     $local = str_replace('levante', 'Levante UD', $local);
     $local = str_replace('mlaga', 'Málaga CF', $local);
-    $local = str_replace('racing', 'R. Racing Club', $local);
+    if ($result['liga'] == 2){
+        $local = str_replace('racing', 'R. Racing Club', $local);
+        $visita = str_replace('racing', 'R. Racing Club', $visita);
+    }
     $local = str_replace('realoviedo', 'Real Oviedo', $local);
     $local = str_replace('sporting', 'Real Sporting', $local);
     $local = str_replace('realzaragoza', 'Real Zaragoza', $local);
@@ -85,7 +88,6 @@ if ($result['ligaImg'] == 18){
     $visita = str_replace('granada', 'Granada CF', $visita);
     $visita = str_replace('levante', 'Levante UD', $visita);
     $visita = str_replace('mlaga', 'Málaga CF', $visita);
-    $visita = str_replace('racing', 'R. Racing Club', $visita);
     $visita = str_replace('realoviedo', 'Real Oviedo', $visita);
     $visita = str_replace('sporting', 'Real Sporting', $visita);
     $visita = str_replace('realzaragoza', 'Real Zaragoza', $visita);
@@ -268,6 +270,46 @@ if ($result['ligaImg'] == 18){
     $visita = str_replace('patriotasfc', 'Patriotas FC', $visita);
     $visita = str_replace('u.magdalena', 'U Magdalena', $visita);
 
+    // LFP AR
+    $local = str_replace('barracascentral', 'Barracas Central', $local);
+    $local = str_replace('colon', 'Colón', $local);
+    $local = str_replace('union', 'Unión', $local);
+    $local = str_replace('Newell`s', 'NOB', $local);
+    $local = str_replace('rosariocentral', 'Rosario', $local);
+    $local = str_replace('centralcordoba(se)', 'Central Córdoba', $local);
+    $local = str_replace('defensayjusticia', 'Defensa y Justicia', $local);
+    $local = str_replace('sanlorenzo', 'San Lorenzo', $local);
+    $local = str_replace('huracan', 'Huracán', $local);
+    $local = str_replace('godoycruz', 'Godoy Cruz', $local);
+    $local = str_replace('lanus', 'Lanús', $local);
+    $local = str_replace('atleticotucuman', 'Atlético Tucumán', $local);
+    $local = str_replace('bocajuniors', 'Boca JRS', $local);
+    $local = str_replace('riverplate', 'River Plate', $local);
+    $local = str_replace('rosariocentral', 'Rosario Central', $local);
+    $local = str_replace('argentinosjuniors', 'Argentinos JRS', $local);
+    $local = str_replace('velez', 'Velez Sarsfield', $local);
+    if ($result['liga'] == 27){
+        $local = str_replace('racing', 'Racing Club', $local);
+        $visita = str_replace('racing', 'Racing Club', $visita);
+    }
+
+    $visita = str_replace('barracascentral', 'Barracas Central', $visita);
+    $visita = str_replace('colon', 'Colón', $visita);
+    $visita = str_replace('union', 'Unión', $visita);
+    $visita = str_replace('Newell`s', 'NOB', $visita);
+    $visita = str_replace('rosariocentral', 'Rosario', $visita);
+    $visita = str_replace('centralcordoba(se)', 'Central Córdoba', $visita);
+    $visita = str_replace('defensayjusticia', 'Defensa y Justicia', $visita);
+    $visita = str_replace('sanlorenzo', 'San Lorenzo', $visita);
+    $visita = str_replace('huracan', 'Huracán', $visita);
+    $visita = str_replace('godoycruz', 'Godoy Cruz', $visita);
+    $visita = str_replace('lanus', 'Lanús', $visita);
+    $visita = str_replace('atleticotucuman', 'Atlético Tucumán', $visita);
+    $visita = str_replace('bocajuniors', 'Boca JRS', $visita);
+    $visita = str_replace('riverplate', 'River Plate', $visita);
+    $visita = str_replace('rosariocentral', 'Rosario Central', $visita);
+    $visita = str_replace('argentinosjuniors', 'Argentinos JRS', $visita);
+    $visita = str_replace('velez', 'Velez Sarsfield', $visita);
 
 
 ?>
