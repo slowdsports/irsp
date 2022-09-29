@@ -243,4 +243,31 @@ if ($result['ligaImg'] == 18){
 
     // Betplay CO
     $local = str_replace('santafe', 'Santa Fé', $local);
+    $local = str_replace('at.nacional', 'Atlético Nacional', $local);
+    $local = str_replace('independientemedellin', 'Independiente', $local);
+    $local = str_replace('alianzapetrolera', 'Alianza', $local);
+    $local = str_replace('oncecaldas', 'Once Caldas', $local);
+    $local = str_replace('laequidad', 'La Equidad', $local);
+    $local = str_replace('Aguilasdoradasrionegro', 'A.G. Río Negro', $local);
+    $local = str_replace('Americadecali', 'América de Cali', $local);
+    $local = str_replace('Américadecali', 'América de Cali', $local);
+    $local = str_replace('deportivocali', 'Deportivo Cali', $local);
+    $local = str_replace('patriotasfc', 'Patriotas FC', $local);
+    $local = str_replace('u.magdalena', 'U Magdalena', $local);
+
+    $visita = str_replace('santafe', 'Santa Fé', $visita);
+    $visita = str_replace('at.nacional', 'Atlético Nacional', $visita);
+    $visita = str_replace('independientemedellin', 'Independiente', $visita);
+    $visita = str_replace('alianzapetrolera', 'Alianza', $visita);
+    $visita = str_replace('oncecaldas', 'Once Caldas', $visita);
+    $visita = str_replace('laequidad', 'La Equidad', $visita);
+    $visita = str_replace('aguilasdoradasrionegro', 'A.G. Río Negro', $visita);
+    $visita = str_replace('Americadecali', 'América de Cali', $visita);
+    $visita = str_replace('Américadecali', 'América de Cali', $visita);
+    $visita = str_replace('deportivocali', 'Deportivo Cali', $visita);
+    $visita = str_replace('patriotasfc', 'Patriotas FC', $visita);
+    $visita = str_replace('u.magdalena', 'U Magdalena', $visita);
+
+
+
 ?>

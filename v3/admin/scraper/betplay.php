@@ -27,7 +27,7 @@ foreach ($juego as $nombre){
         $fecha = str_replace("-06:00", "", $fecha);
         //$canal = $canal2 = $canal3 = $canal4 = "";
         $canal5 = 279;
-        echo $local;
+        //echo $local;
 
 // Agregamos los campos a la DB
 if (isset($_POST['create'])){
