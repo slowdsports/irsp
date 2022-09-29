@@ -10,7 +10,10 @@ if ($result['ligaImg'] == 18){
     $local = str_replace('osasuna', 'CA Osasuna', $local);
     $local = str_replace('cdiz', 'Cádiz CF', $local);
     $local = str_replace('elche', 'Elche CF', $local);
-    $local = str_replace('barcelona', 'FC Barcelona', $local);
+    if ($result['liga'] == 1){
+        $local = str_replace('barcelona', 'FC Barcelona', $local);
+        $visita = str_replace('barcelona', 'FC Barcelona', $visita);
+    }
     $local = str_replace('getafe', 'Getafe CF', $local);
     $local = str_replace('girona', 'Girona FC', $local);
     $local = str_replace('rayovallecano', 'Rayo Vallecano', $local);
@@ -33,7 +36,6 @@ if ($result['ligaImg'] == 18){
     $visita = str_replace('osasuna', 'CA Osasuna', $visita);
     $visita = str_replace('cdiz', 'Cádiz CF', $visita);
     $visita = str_replace('elche', 'Elche CF', $visita);
-    $visita = str_replace('barcelona', 'FC Barcelona', $visita);
     $visita = str_replace('getafe', 'Getafe CF', $visita);
     $visita = str_replace('girona', 'Girona FC', $visita);
     $visita = str_replace('rayovallecano', 'Rayo Vallecano', $visita);
@@ -137,15 +139,20 @@ if ($result['ligaImg'] == 18){
     $local = str_replace("FC Barcelonasc", "Barcelona", $local);
     $local = str_replace("lduquito", "LDU Quito", $local);
     $local = str_replace("ldu quito", "LDU Quito", $local);
+    $local = str_replace("ligadequito", "LDU Quito", $local);
     $local = str_replace("tcnicouniversitario", "Universitario", $local);
+    $local = str_replace("tecnicouniversitario", "Universitario", $local);
     $local = str_replace("tcnico universitario", "Universitario", $local);
     $local = str_replace("u.catlica", "U. Católica", $local);
     $local = str_replace("u. catlica", "U. Católica", $local);
+    $local = str_replace("u.catolica(e)", "U. Católica", $local);
     $local = str_replace("deportivocuenca", "Cuenca", $local);
     $local = str_replace("delfnsc", "Delfín SC", $local);
+    $local = str_replace("delfin", "Delfín SC", $local);
     $local = str_replace("delfn sc", "Delfín SC", $local);
     $local = str_replace("guayaquilcity", "Guayaquil", $local);
     $local = str_replace("guayaquil city", "Guayaquil", $local);
+    $local = str_replace("macara", "Macará", $local);
     $local = str_replace("macar", "Macará", $local);
     $local = str_replace("independientedelvalle", "Independiente", $local);
     $local = str_replace("independiente del valle", "Independiente", $local);
@@ -156,20 +163,26 @@ if ($result['ligaImg'] == 18){
     $local = str_replace("9deoctubre", "9 de Octubre", $local);
     $local = str_replace("cumbayfc", "Cumbayá FC", $local);
     $local = str_replace("cumbay fc", "Cumbayá FC", $local);
+    $local = str_replace("cumbayafc", "Cumbayá FC", $local);
 
     $visita = str_replace("FC Barcelonasc", "Barcelona", $visita);
     $visita = str_replace("FC Barcelona sc", "Barcelona", $visita);
     $visita = str_replace("lduquito", "LDU Quito", $visita);
     $visita = str_replace("ldu quito", "LDU Quito", $visita);
+    $visita = str_replace("ligadequito", "LDU Quito", $visita);
     $visita = str_replace("tcnicouniversitario", "Universitario", $visita);
+    $visita = str_replace("tecnicouniversitario", "Universitario", $visita);
     $visita = str_replace("tcnico universitario", "Universitario", $visita);
     $visita = str_replace("u.catlica", "U. Católica", $visita);
     $visita = str_replace("u. catlica", "U. Católica", $visita);
+    $visita = str_replace("u.catolica(e)", "U. Católica", $visita);
     $visita = str_replace("deportivocuenca", "Cuenca", $visita);
     $visita = str_replace("delfnsc", "Delfín SC", $visita);
+    $visita = str_replace("delfin", "Delfín SC", $visita);
     $visita = str_replace("delfn sc", "Delfín SC", $visita);
     $visita = str_replace("guayaquilcity", "Guayaquil", $visita);
     $visita = str_replace("guayaquil city", "Guayaquil", $visita);
+    $visita = str_replace("macara", "Macará", $visita);
     $visita = str_replace("macar", "Macará", $visita);
     $visita = str_replace("independientedelvalle", "Independiente", $visita);
     $visita = str_replace("independiente del valle", "Independiente", $visita);
@@ -180,6 +193,7 @@ if ($result['ligaImg'] == 18){
     $visita = str_replace("9deoctubre", "9 de Octubre", $visita);
     $visita = str_replace("cumbayfc", "Cumbayá FC", $visita);
     $visita = str_replace("cumbay fc", "Cumbayá FC", $visita);
+    $visita = str_replace("cumbayafc", "Cumbayá FC", $visita);
 
     // INTL
     $local = str_replace('mxico', 'México', $local);
