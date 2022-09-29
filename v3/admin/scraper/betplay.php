@@ -1,5 +1,6 @@
 <?php
 include('scraper.php'); include('tildes.php');
+date_default_timezone_set('America/Tegucigalpa');
 // CALL URL CUSTOMIZED
 //$baseUrl = "https://aquehorajuega.co/competiciones/argentina-primera-a-2/";
 // get DOM from URL or file
