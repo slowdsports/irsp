@@ -146,16 +146,7 @@ if (isset($_SESSION['message']) ){
                 while($result=mysqli_fetch_array($channels)){
                 ?>
                 <!-- Elemento -->
-                <div style="<?php
-                $channelUrl = $result['channelUrl'];
-                $find = strpos($channelUrl, "arlocaltstvhls");
-                $find2 = strpos($channelUrl, "cvattv");
-                if ($find !== false){
-                    echo "display: none";
-                } if ($find2 !== false){
-                    echo "display: none";
-                };
-                ?>" class="col-6 col-sm-4 col-md-3 col-lg-2 col-xl-2 mycard <?=$result['categoryName']?>">
+                <div class="col-6 col-sm-4 col-md-3 col-lg-2 col-xl-2 mycard <?=$result['categoryName']?>">
                     <a href="<?=$app?>/tv/epg?url=<?=$result['epg']?>&c=<?=$result['channelId']?>">
                         <div class="card product-card liga-card">
                             <div class="card-body">
