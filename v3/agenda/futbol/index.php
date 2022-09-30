@@ -108,7 +108,7 @@ if (isset($_SESSION['message']) ){
                 } elseif ($totalGames >= 1){
                     $ligaStatus = "show";
                 }
-                if ($index == 12 || $index == 13 || $index == 14 || $index == 22 || $index == 23 || $index == 25){
+                if ($index == 12 || $index == 13 || $index == 14 || $index == 22 || $index == 23 || $index == 25 || $index == 28 || $index == 29){
                     $ligaStatus = "hidden";
                 }
             ?>
