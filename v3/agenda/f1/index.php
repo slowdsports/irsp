@@ -91,6 +91,9 @@ if (isset($_SESSION['message']) ){
                                             <h4><?=ucfirst($local)?></h4>
                                         </div>
                                     </div>
+                                    <div class="channel">
+                                        <img src="<?=$app?>assets/img/canales/dazn.png" alt="" />
+                                    </div>
                                 </div>
                             </div>
                         </a>
