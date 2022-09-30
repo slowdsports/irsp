@@ -68,6 +68,12 @@
                             } elseif ($liga == "14"){
                                 $link = "nfl?ir";
                                 include('agenda/nfl/teams.php');
+                            } elseif ($liga == "28"){
+                                $link = "f1?ir";
+                                //include('agenda/nfl/teams.php');
+                            } elseif ($liga == "29"){
+                                $link = "motogp?ir";
+                                //include('agenda/nfl/teams.php');
                             } else{
                                 $link = "futbol/liga?id=" . $liga;
                                 include('agenda/futbol/liga/teams.php');
