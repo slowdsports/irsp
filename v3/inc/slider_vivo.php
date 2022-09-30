@@ -90,13 +90,13 @@
                                 <div class="match">
                                     <div class="team">
                                         <img src="<?=$app?>/assets/img/equipos/<?=$ligaImg?>/<?=$localImg?>.png" class="image" alt="image">
-                                        <h4><?=ucfirst($local)?></h4>
+                                        <!-- <h4><?=ucfirst($local)?></h4> -->
                                     </div>
                                 </div>
                                 <div class="vs">vs</div>
                                 <div class="team">
                                     <img src="<?=$app?>/assets/img/equipos/<?=$ligaImg?>/<?=$visitaImg?>.png" class="image" alt="image">
-                                    <h4><?=ucfirst($visita)?></h4>
+                                    <!-- <h4><?=ucfirst($visita)?></h4> -->
                                 </div>
                             </div>
                             <p class="counter cntdwn-<?=$index?>"></p>
