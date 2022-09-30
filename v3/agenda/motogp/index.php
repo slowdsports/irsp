@@ -37,12 +37,12 @@ if (isset($_SESSION['message']) ){
             <div class="row">
                 <!-- NBA TV -->
                 <div style="" class="col-6">
-                    <a href="../../tv/epg?url=epg&c=567">
+                    <a href="../../tv/epg?url=epg&c=560">
                         <div class="card product-card liga-card">
                             <div class="card-body">
                                 <center>
                                     <img width="48px" src="https://i.ibb.co/w0qg9JF/trans.png" style="background-image: url('../../assets/img/canales/dazn.png'); background-size: contain; background-repeat: no-repeat;" class="image" alt="product image" />
-                                    <h2 class="title text-center">DAZN F1</h2>
+                                    <h2 class="title text-center">DAZN 1</h2>
                                 </center>
                             </div>
                         </div>
@@ -101,9 +101,9 @@ if (isset($_SESSION['message']) ){
                         <div class="card card-body">
                             <ul class="listview link-listview">
                                 <li>
-                                    <a class="justify-content-center" href="../../tv/epg/?c=567">
+                                    <a class="justify-content-center" href="../../tv/epg/?c=560">
                                         <i class="flag es"></i>
-                                        DAZN F1 | HD
+                                        DAZN | HD
                                     </a>
                                 </li>
                                 <li>
@@ -113,9 +113,9 @@ if (isset($_SESSION['message']) ){
                                     </a>
                                 </li>
                                 <li>
-                                    <a class="justify-content-center" href="../play/?c=daznf1">
+                                    <a class="justify-content-center" href="../play/?c=dazn1">
                                         <i class="flag es"></i>
-                                        DAZN F1 | HD (VIP)
+                                        DAZN | HD (VIP)
                                     </a>
                                 </li>
                                 <?php
