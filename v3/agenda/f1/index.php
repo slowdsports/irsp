@@ -78,23 +78,22 @@ if (isset($_SESSION['message']) ){
                 <!-- Elemento -->
                 <div class="col-12 mycard">
                     <a data-toggle="collapse" href="#juego<?=$result['id']?>" role="button" aria-expanded="<?=$aria?>" aria-controls="juego<?=$result['id']?>">
-                        <div class="card product-card">
-                            <div class="main-event">
-                                <div class="league">
-                                    <img src="<?=$app?>assets/img/ligas/<?=$result['ligaImg']?>.png" alt="League" />
-                                    <p class="cntdwn-<?=$index?>"></p>
-                                </div>
-                                <div class="match">
-                                    <div class="team">
-                                        <img width="60px" src="<?=$app?>assets/img/equipos/amistoso/<?=str_replace(' ', '', strtolower($pais)); ?>.png" alt="" />
-                                        <h4><?=ucfirst($local)?></h4>
+                            <div class="card product-card">
+                                <div class="main-event">
+                                    <div class="league">
+                                        <img src="<?=$app?>assets/img/ligas/<?=$result['ligaImg']?>.png" alt="League" />
+                                        <!-- <p class="<?=$result['id']?>"><?=ucfirst($dia)?></p> -->
+                                        <p class="cntdwn-<?=$index?>"></p>
                                     </div>
-                                <div class="channel">
-                                    <img src="<?=$app?>assets/img/canales/<?=($canalImg===null)?"cincoestrellas":$canalImg ?>.png" alt="" />
+                                    <div class="match">
+                                        <div class="team">
+                                            <img width="60px" src="<?=$app?>assets/img/equipos/amistoso/<?=str_replace(' ', '', strtolower($pais)); ?>.png" alt="" />
+                                            <h4><?=ucfirst($local)?></h4>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                    </a>
+                        </a>
                     <div class="collapse <?=$collapse?>" id="juego<?=$result['id']?>">
                         <div class="card card-body">
                             <ul class="listview link-listview">
