@@ -154,7 +154,7 @@ if($canal === "M+ LaLiga 1" || $canal === "mlaliga1"){
     </li>';
 } elseif($canal2 === "M+ LaLiga 1" || $canal2 === "mlaliga1"){
     $canalImg = "mlaliga";
-    $canalop3 = '
+    $canalop4 = '
     <li>
         <a class="justify-content-center" href="'.$app.'/agenda/play?c=mlaliga1">
         <i class="flag es"></i>
@@ -344,7 +344,7 @@ if($canal === "DAZN LaLiga" || $canal === "DAZN LaLiga" || $canal === "daznlalig
     </li>';
 } elseif($canal2 === "DAZN LaLiga" || $canal2 === "DAZN LaLiga" || $canal2 === "daznlaliga"){
     $canalImg = "daznlaliga";
-    $canalop2 = '
+    $canalop4 = '
     <li>
         <a class="justify-content-center" href="'.$app.'/tv/epg/?c=559">
         <i class="flag es"></i>
@@ -376,7 +376,7 @@ if($canal === "DAZN (Regístrate)" || $canal === "DAZN | (Movistar 59)"){
     </li>';
 } elseif($canal2 === "DAZN (Regístrate)" || $canal2 === "DAZN | (Movistar 59)"){
     $canalImg = "dazn";
-    $canalop2 = '
+    $canalop4 = '
     <li>
         <a class="justify-content-center" href="'.$app.'/tv/epg/?c=560">
         <i class="flag es"></i>
