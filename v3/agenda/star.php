@@ -44,8 +44,8 @@ $row=mysqli_fetch_assoc($query);
                     <div class="card">
                         <img src="<?=$logo?>" class="card-img-top" alt="image" />
                         <div class="card-body">
-                            <p class="card-text"><?=$liga?></p>
-                            <h5 class="card-subtitle"><?=$evento?></h5>
+                            <p class="card-text"><?=$evento?></p>
+                            <h5 class="card-subtitle"><?=$liga?></h5>
                         </div>
                     </div>
                 </a>
