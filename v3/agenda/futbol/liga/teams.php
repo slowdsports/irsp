@@ -325,5 +325,12 @@ if ($result['ligaImg'] == 18){
     $visita = str_replace('argentinosjuniors', 'Argentinos JRS', $visita);
     $visita = str_replace('velez', 'Velez Sarsfield', $visita);
 
+    // Sudamericana
+    $local = str_replace('saopaulo', 'Sao Paulo', $local);
+    $local = str_replace('independientedelvalle', 'Independiente', $local);
+
+    $visita = str_replace('saopaulo', 'Sao Paulo', $visita);
+    $visita = str_replace('independientedelvalle', 'Independiente', $visita);
+
 
 ?>
