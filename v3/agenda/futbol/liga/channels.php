@@ -926,23 +926,23 @@ if($canal === "Canal por confirmar" || $canal === "Canal por confirmar"){
     </li>';
 }
 // Repetidos
-// if ($canalop2 == $canalop3){
-// $canalop3 = "";
-// }
-// if ($canalop2 == $canalop4){
-// $canalop4 = "";
-// }
-// if ($canalop3 == $canalop4){
-// $canalop4 = "";
-// }
+if ($canalop2 == $canalop3){
+$canalop3 = "";
+}
+if ($canalop2 == $canalop4){
+$canalop4 = "";
+}
+if ($canalop3 == $canalop4){
+$canalop4 = "";
+}
 
-// else{
-//     if($canal === null || $canal === ""){
-//         $canal = "";
-//         $canalop2 = "";
-//     }
-//     if($canal2 === null || $canal2 === ""){
-//         $canal2 = "";
-//         $canalop4 = "";
-//     }
-// }
+else{
+    if($canal === null || $canal === ""){
+        $canal = "";
+        $canalop2 = "";
+    }
+    if($canal2 === null || $canal2 === ""){
+        $canal2 = "";
+        $canalop4 = "";
+    }
+}
