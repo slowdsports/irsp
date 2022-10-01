@@ -35,7 +35,7 @@ $row=mysqli_fetch_assoc($query);
                 $link = "javascript:void(0)";
             } else {
                 $link = str_replace("https://megatelevisionhd.com/eventos/star/?r=", "", $link);
-                $link = "tv/epg/?r=".$link;
+                $link = "../tv/epg/?r=".$link;
             }
         ?>
         <div class="col-6 col-lg-4 mycard">
