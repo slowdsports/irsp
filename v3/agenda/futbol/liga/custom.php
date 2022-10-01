@@ -6,7 +6,7 @@ if ($result['local'] === "team"){
     $r= "../../star.php";
 
     if ($r !== ""){
-        $r = "../../../tv/epg?r=" . $r;
+        $r = $r;
     } else {
         $r = "javascript:void(0)";
     }
@@ -26,7 +26,7 @@ if ($result['visita'] === "chelsea"){
     $r= "../../star.php";
 
     if ($r !== ""){
-        $r = "../../../tv/epg?r=" . $r;
+        $r = $r;
     } else {
         $r = "javascript:void(0)";
     }
@@ -46,7 +46,7 @@ if ($result['visita'] === "everton"){
     $r= "../../star.php";
 
     if ($r !== ""){
-        $r = "../../../tv/epg?r=" . $r;
+        $r = $r;
     } else {
         $r = "javascript:void(0)";
     }
@@ -66,7 +66,7 @@ if ($result['local'] === "fulham"){
     $r= "../../star.php";
 
     if ($r !== ""){
-        $r = "../../../tv/epg?r=" . $r;
+        $r = $r;
     } else {
         $r = "javascript:void(0)";
     }
@@ -86,7 +86,7 @@ if ($result['visita'] === "brentford"){
     $r= "../../star.php";
 
     if ($r !== ""){
-        $r = "../../../tv/epg?r=" . $r;
+        $r = $r;
     } else {
         $r = "javascript:void(0)";
     }
@@ -106,7 +106,7 @@ if ($result['local'] === "inter"){
     $r= "../../star.php";
 
     if ($r !== ""){
-        $r = "../../../tv/epg?r=" . $r;
+        $r = $r;
     } else {
         $r = "javascript:void(0)";
     }
@@ -146,7 +146,7 @@ if ($result['visita'] === "wolves"){
     $r= "../../star.php";
 
     if ($r !== ""){
-        $r = "../../../tv/epg?r=" . $r;
+        $r = $r;
     } else {
         $r = "javascript:void(0)";
     }
@@ -166,7 +166,7 @@ if ($result['local'] === "mallorca"){
     $r= "../../star.php";
 
     if ($r !== ""){
-        $r = "../../../tv/epg?r=" . $r;
+        $r = $r;
     } else {
         $r = "javascript:void(0)";
     }
@@ -186,7 +186,7 @@ if ($result['local'] === "PSG"){
     $r= "../../star.php";
 
     if ($r !== ""){
-        $r = "../../../tv/epg?r=" . $r;
+        $r = $r;
     } else {
         $r = "javascript:void(0)";
     }
