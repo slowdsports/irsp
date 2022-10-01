@@ -70,13 +70,18 @@
                                 include('agenda/nfl/teams.php');
                             } elseif ($liga == "28"){
                                 $link = "f1?ir";
+                                $isMotor = 'style="display: none;"';
+                                $localImg = $result['logoL'];
                                 //include('agenda/nfl/teams.php');
                             } elseif ($liga == "29"){
                                 $link = "motogp?ir";
+                                $isMotor = 'style="display: none;"';
+                                $localImg = $result['logoL'];
                                 //include('agenda/nfl/teams.php');
                             } else{
                                 $link = "futbol/liga?id=" . $liga;
                                 include('agenda/futbol/liga/teams.php');
+                                $isMotor = "";
                             }
                     ?>
                 <a href="<?=$app?>/agenda/<?=$link?>&juego=<?=$index?>">
@@ -93,8 +98,8 @@
                                         <!-- <h4><?=ucfirst($local)?></h4> -->
                                     </div>
                                 </div>
-                                <div class="vs">vs</div>
-                                <div class="team">
+                                <div <?=$isMotor?> class="vs">vs</div>
+                                <div <?=$isMotor?> class="team">
                                     <img src="<?=$app?>/assets/img/equipos/<?=$ligaImg?>/<?=$visitaImg?>.png" class="image" alt="image">
                                     <!-- <h4><?=ucfirst($visita)?></h4> -->
                                 </div>
