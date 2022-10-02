@@ -2,7 +2,7 @@
 include('scraper.php'); include('tildes.php');
 date_default_timezone_set('America/Tegucigalpa');
 // CALL URL CUSTOMIZED
-$baseUrl = "https://aquehorajuega.co/competiciones/ecuador-2/";
+//$baseUrl = "https://aquehorajuega.co/competiciones/ecuador-2/";
 // get DOM from URL or file
 $html = file_get_html($baseUrl);
 // MAIN ELEMENT
