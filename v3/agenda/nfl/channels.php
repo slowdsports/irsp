@@ -32,12 +32,32 @@ if($canal === "M+ Deportes" || $canal === "mdep"){
         </a>
     </li>';
 } elseif($canal2 === "M+ Deportes" || $canal2 === "mdep"){
-    $canalImg = "mvamos";
+    $canalImg = "movistar";
     $canal2 = '
     <li>
         <a class="justify-content-center" href="'.$app.'/agenda/play?c=mdep">
         <i class="flag es"></i>
         Movistar Deportes | VIP HD
+        </a>
+    </li>';
+}
+
+if($canal === "M+ Deportes 2" || $canal === "mdep2"){
+    $canalImg = "movistar";
+    $canalop2 = '
+    <li>
+        <a class="justify-content-center" href="'.$app.'/agenda/play?c=mdep2">
+        <i class="flag es"></i>
+        Movistar Deportes 2 | VIP HD
+        </a>
+    </li>';
+} elseif($canal2 === "M+ Deportes 2" || $canal2 === "mdep2"){
+    $canalImg = "movistar";
+    $canal2 = '
+    <li>
+        <a class="justify-content-center" href="'.$app.'/agenda/play?c=mdep2">
+        <i class="flag es"></i>
+        Movistar Deportes 2 | VIP HD
         </a>
     </li>';
 }
