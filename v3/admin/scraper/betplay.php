@@ -27,7 +27,7 @@ foreach ($juego as $nombre){
         $fecha = str_replace("T", " ", $fecha);
         $fecha = str_replace("-06:00", "", $fecha);
         $fecha = str_replace("+02:00", "", $fecha);
-        echo $fecha . "<br>";
+        //echo $fecha . "<br>";
         $yyyy = substr($fecha, 0, 4);
         $mm = substr($fecha, 5, 2);
         $dd = substr($fecha, 8, 2);
@@ -35,7 +35,7 @@ foreach ($juego as $nombre){
         $hh = $hh-8;
         $m = substr($fecha, 14, 2);
         $fecha = $yyyy . "-" . $mm . "-" . $dd . " " . $hh . ":" . $m . ":00";
-        echo $fecha . "<br>";
+        //echo $fecha . "<br>";
         //$canal = $canal2 = $canal3 = $canal4 = "";
         $canal5 = 279;
         //echo $local . "vs" . $visita . "<br> a las: " . $fecha . "<br>";
