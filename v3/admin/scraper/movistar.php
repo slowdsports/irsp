@@ -1,5 +1,5 @@
 <?php
-//$base = "https://www.movistarplus.es/liga-santander/calendario-liga-santander";
+//$baseUrl = "https://www.movistarplus.es/liga-santander/calendario-liga-santander";
 $file = $baseUrl;
 $file = file_get_contents($baseUrl);
 // REGEX
@@ -14,6 +14,7 @@ foreach ($datos as $dato) {
     $dd = substr($fecha, 3, 2);
     $mm = substr($fecha, 0, 2);
     $hora = str_replace("h", "", $dato[3]);
+    $hora = $hora - 8;
     // Formato
     //2022-04-18 00:00:00
     $fecha = date("Y") . "-" . $dd . "-" . $mm . " " . $hora . ":00";
@@ -43,6 +44,7 @@ foreach ($datos as $dato) {
         $enc2 = mb_detect_encoding($visita);
         $visita = iconv('UTF-8', 'ASCII//IGNORE', $visita);
     }
+    //echo $local . " vs " . $visita . " -- " . $fecha . "<br>";
 
     // Equipos & Canales Custom
     // include('teams.php');
