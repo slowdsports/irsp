@@ -26,9 +26,18 @@ foreach ($juego as $nombre){
     $fecha = $nombre ->find('div.row div span',1) -> content;
         $fecha = str_replace("T", " ", $fecha);
         $fecha = str_replace("-06:00", "", $fecha);
+        $fecha = str_replace("+02:00", "", $fecha);
+        echo $fecha . "<br>";
+        $yyyy = substr($fecha, 0, 4);
+        $mm = substr($fecha, 5, 2);
+        $dd = substr($fecha, 8, 2);
+        $hh = substr($fecha, 11, 2);
+        $hh = $hh-8;
+        $m = substr($fecha, 14, 2);
+        echo $m . "<br>";
         //$canal = $canal2 = $canal3 = $canal4 = "";
         $canal5 = 279;
-        echo $local . "vs" . $visita . "<br> a las: " . $fecha . "<br>";
+        //echo $local . "vs" . $visita . "<br> a las: " . $fecha . "<br>";
 
 // Agregamos los campos a la DB
 if (isset($_POST['create'])){
