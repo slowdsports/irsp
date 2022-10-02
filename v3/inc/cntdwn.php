@@ -16,17 +16,10 @@ if (!isset($result['fecha'])){
     $fecha = $result['fecha'];
 }
 
-if ($result['scraper'] == 1){
-    $mm = substr($fecha, 5, 2);
-    $dd = substr($fecha, 8, 2);
-    // Restamos 8hrs para obtener h local
-    $hh = substr($fecha, 11, 2)-8;
-} else{
-    $mm = substr($fecha, 5, 2);
-    $dd = substr($fecha, 8, 2);
-    $hh = substr($fecha, 11, 2);
-    $m = substr($fecha, 14, 2);
-}
+$mm = substr($fecha, 5, 2);
+$dd = substr($fecha, 8, 2);
+$hh = substr($fecha, 11, 2);
+$m = substr($fecha, 14, 2);
 ?>
 <script>
 var yyyy = 2022;
