@@ -34,7 +34,7 @@ foreach ($juego as $nombre){
         $hh = substr($fecha, 11, 2);
         $hh = $hh-8;
         $m = substr($fecha, 14, 2);
-        echo $m . "<br>";
+        echo "C: " . $yyyy . $mm . $dd . $hh . $m . "<br>";
         //$canal = $canal2 = $canal3 = $canal4 = "";
         $canal5 = 279;
         //echo $local . "vs" . $visita . "<br> a las: " . $fecha . "<br>";
