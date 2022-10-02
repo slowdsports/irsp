@@ -108,6 +108,12 @@ if($canal === "M+ LaLiga" || $canal === "M+ LaLigaTV" || $canal === "bar"){
     $canalImg = "mlaliga";
     $canalop2 = '
     <li>
+        <a class="justify-content-center" href="https://irpc.ga/mg/play/sandbox.php?get=https://megatelevisionhd.com/embed/repro/?r=Ly9ncmVnb3JzYW1zYS5saWZlL2VtYmVkL2VzL21sYWxpZ2EucGhw">
+        <i class="flag es"></i>
+        Movistar LaLiga | HD
+        </a>
+    </li>
+    <li>
         <a class="justify-content-center" href="'.$app.'/tv/epg?futbol&id='.$index.'&c=558">
         <i class="flag es"></i>
         Movistar LaLiga | HD
@@ -129,6 +135,12 @@ if($canal === "M+ LaLiga" || $canal === "M+ LaLigaTV" || $canal === "bar"){
 } elseif($canal2 === "M+ LaLiga" || $canal2 === "M+ LaLigaTV" || $canal2 === "bar"){
     $canalImg = "mlaliga";
     $canalop4 = '
+    <li>
+        <a class="justify-content-center" href="https://irpc.ga/mg/play/sandbox.php?get=https://megatelevisionhd.com/embed/repro/?r=Ly9ncmVnb3JzYW1zYS5saWZlL2VtYmVkL2VzL21sYWxpZ2EucGhw">
+        <i class="flag es"></i>
+        Movistar LaLiga | HD
+        </a>
+    </li>
     <li>
         <a class="justify-content-center" href="'.$app.'/agenda/play?c=bar">
         <i class="flag es"></i>
