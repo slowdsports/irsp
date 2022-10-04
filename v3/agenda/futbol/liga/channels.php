@@ -23,7 +23,7 @@ if($canal === "M+ Liga de Campeones" || $canal === "M+ Liga de Campeones UHD (M4
     </li>';
 }
 
-if($canal === "M+ Liga de Campeones" || $canal === "mlcamp"){
+if($canal === "M+ Liga de Campeones" || $canal === "mlcampsd"){
     $canalImg = "campeones";
     $canalop2 = '
     <li>
@@ -32,7 +32,7 @@ if($canal === "M+ Liga de Campeones" || $canal === "mlcamp"){
         Movistar Liga de Campeones | VIP SD
         </a>
     </li>';
-} elseif($canal2 === "M+ Liga de Campeones" || $canal2 === "mlcamp"){
+} elseif($canal2 === "M+ Liga de Campeones" || $canal2 === "mlcampsd"){
     $canalImg = "campeones";
     $canalop4 = '
     <li>
