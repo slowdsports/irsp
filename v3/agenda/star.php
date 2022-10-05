@@ -18,7 +18,7 @@ $row=mysqli_fetch_assoc($query);
     </div>
     <div class="row">
     <?php
-    $baseUrl = "https://megadeportes.online/star-plus/";
+    $baseUrl = "https://megadeportes.live/star-plus/";
     $html = file_get_html($baseUrl);
     // MAIN ELEMENT
     $juego = $html ->find ('div.w3-quarter');
