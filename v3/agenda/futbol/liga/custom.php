@@ -43,7 +43,7 @@ if ($result['local'] === "salzburgo"){
     ';
 
     if ($s !== ""){
-        $s = "../../../tv/epg?r=" . $s;
+        $s = "../../../tv/epg?s=" . $s;
     } else {
         $s = "javascript:void(0)";
     }
@@ -80,7 +80,7 @@ if ($result['local'] === "realmadrid"){
     ';
 
     if ($s !== ""){
-        $s = "../../../tv/epg?r=" . $s;
+        $s = "../../../tv/epg?s=" . $s;
     } else {
         $s = "javascript:void(0)";
     }
@@ -117,7 +117,7 @@ if ($result['local'] === "sevilla"){
     ';
 
     if ($s !== ""){
-        $s = "../../../tv/epg?r=" . $s;
+        $s = "../../../tv/epg?s=" . $s;
     } else {
         $s = "javascript:void(0)";
     }
@@ -154,7 +154,7 @@ if ($result['local'] === "benfica"){
     ';
 
     if ($s !== ""){
-        $s = "../../../tv/epg?r=" . $s;
+        $s = "../../../tv/epg?s=" . $s;
     } else {
         $s = "javascript:void(0)";
     }
@@ -191,7 +191,7 @@ if ($result['local'] === "chelsea"){
     ';
 
     if ($s !== ""){
-        $s = "../../../tv/epg?r=" . $s;
+        $s = "../../../tv/epg?s=" . $s;
     } else {
         $s = "javascript:void(0)";
     }
@@ -228,7 +228,7 @@ if ($result['local'] === "man.city"){
     ';
 
     if ($s !== ""){
-        $s = "../../../tv/epg?r=" . $s;
+        $s = "../../../tv/epg?s=" . $s;
     } else {
         $s = "javascript:void(0)";
     }
@@ -265,7 +265,7 @@ if ($result['local'] === "juventus"){
     ';
 
     if ($s !== ""){
-        $s = "../../../tv/epg?r=" . $s;
+        $s = "../../../tv/epg?s=" . $s;
     } else {
         $s = "javascript:void(0)";
     }
