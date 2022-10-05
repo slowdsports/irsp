@@ -42,6 +42,16 @@ if (isset($_GET['r'])){
         </script>
         ';
     }
+} elseif (isset($_GET['s'])){
+    $decode = base64_decode($_GET['s']);
+    $decode = str_replace("//vercomofutbol.xyz/hbo/jwp.php", "", $decode);
+    $decode = "https://irpc.ga/mg/play/star.php" . $decode;
+    //header ("location: $decode");
+    echo '
+    <script>
+    window.location.href = "'.$decode.'";
+    </script>
+    ';
 }
 // Encriptamos
 if (isset($_GET['get']) && isset($_GET['img'])){
