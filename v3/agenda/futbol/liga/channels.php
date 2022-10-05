@@ -7,6 +7,12 @@ if($canal === "M+ Liga de Campeones" || $canal === "M+ Liga de Campeones UHD (M4
     $canalImg = "campeones";
     $canalop2 = '
     <li>
+        <a class="justify-content-center" href="https://irpc.ga/mg/play/sandbox.php?get=https://megadeportes.live/eventos/?r=Ly9ncmVnb3JzYW1zYS5saWZlL2VtYmVkL2VzL21saWdhZGVjYW1wZW9uZXMucGhw">
+        <i class="flag es"></i>
+        Movistar Liga de Campeones | HD
+        </a>
+    </li>
+    <li>
         <a class="justify-content-center" href="'.$app.'/agenda/play?c=mlcamp">
         <i class="flag es"></i>
         Movistar Liga de Campeones | VIP HD
@@ -15,6 +21,12 @@ if($canal === "M+ Liga de Campeones" || $canal === "M+ Liga de Campeones UHD (M4
 } elseif($canal2 === "M+ Liga de Campeones" || $canal2 === "M+ Liga de Campeones UHD (M441 O115)" || $canal2 === "M+ Liga de Campeones (M56 O114)" || $canal2 === "mlcampsd"){
     $canalImg = "campeones";
     $canalop4 = '
+    <li>
+        <a class="justify-content-center" href="https://irpc.ga/mg/play/sandbox.php?get=https://megadeportes.live/eventos/?r=Ly9ncmVnb3JzYW1zYS5saWZlL2VtYmVkL2VzL21saWdhZGVjYW1wZW9uZXMucGhw">
+        <i class="flag es"></i>
+        Movistar Liga de Campeones | HD
+        </a>
+    </li>
     <li>
         <a class="justify-content-center" href="'.$app.'/agenda/play?c=mlcampsd">
         <i class="flag es"></i>
@@ -47,6 +59,12 @@ if($canal === "M+ Liga de Campeones 2" || $canal === "mlcamp2"){
     $canalImg = "campeones";
     $canalop2 = '
     <li>
+        <a class="justify-content-center" href="https://megadeportes.live/eventos/?r=Ly9ncmVnb3JzYW1zYS5saWZlL2VtYmVkL2VzL21saWdhZGVjYW1wZW9uZXMyLnBocA==">
+        <i class="flag es"></i>
+        Movistar Liga de Campeones 2 | HD
+        </a>
+    </li>
+    <li>
         <a class="justify-content-center" href="'.$app.'/agenda/play?c=mlcamp2">
         <i class="flag es"></i>
         Movistar Liga de Campeones 2 | VIP HD
@@ -55,6 +73,12 @@ if($canal === "M+ Liga de Campeones 2" || $canal === "mlcamp2"){
 } elseif($canal2 === "M+ Liga de Campeones 2" || $canal2 === "mlcamp2"){
     $canalImg = "campeones";
     $canalop4 = '
+    <li>
+        <a class="justify-content-center" href="https://megadeportes.live/eventos/?r=Ly9ncmVnb3JzYW1zYS5saWZlL2VtYmVkL2VzL21saWdhZGVjYW1wZW9uZXMyLnBocA==">
+        <i class="flag es"></i>
+        Movistar Liga de Campeones 2 | HD
+        </a>
+    </li>
     <li>
         <a class="justify-content-center" href="'.$app.'/agenda/play?c=mlcamp2">
         <i class="flag es"></i>
@@ -67,6 +91,12 @@ if($canal === "M+ Liga de Campeones 3" || $canal === "mlcamp3"){
     $canalImg = "campeones";
     $canalop2 = '
     <li>
+        <a class="justify-content-center" href="https://megadeportes.live/eventos/?r=Ly9ncmVnb3JzYW1zYS5saWZlL2VtYmVkL2VzL21saWdhZGVjYW1wZW9uZXMzLnBocA==">
+        <i class="flag es"></i>
+        Movistar Liga de Campeones 3 | HD
+        </a>
+    </li>
+    <li>
         <a class="justify-content-center" href="'.$app.'/agenda/play?c=mlcamp3">
         <i class="flag es"></i>
         Movistar Liga de Campeones 3 | VIP HD
@@ -75,6 +105,12 @@ if($canal === "M+ Liga de Campeones 3" || $canal === "mlcamp3"){
 } elseif($canal2 === "M+ Liga de Campeones 3" || $canal2 === "mlcamp3"){
     $canalImg = "campeones";
     $canalop4 = '
+    <li>
+        <a class="justify-content-center" href="https://megadeportes.live/eventos/?r=Ly9ncmVnb3JzYW1zYS5saWZlL2VtYmVkL2VzL21saWdhZGVjYW1wZW9uZXMzLnBocA==">
+        <i class="flag es"></i>
+        Movistar Liga de Campeones 3 | HD
+        </a>
+    </li>
     <li>
         <a class="justify-content-center" href="'.$app.'/agenda/play?c=mlcamp3">
         <i class="flag es"></i>
@@ -88,6 +124,12 @@ if($canal === "M+ Liga de Campeones 4" || $canal === "mlcamp4"){
     $canalImg = "campeones";
     $canalop2 = '
     <li>
+        <a class="justify-content-center" href="https://megadeportes.live/eventos/?r=Ly9ncmVnb3JzYW1zYS5saWZlL2VtYmVkL2VzL21saWdhZGVjYW1wZW9uZXM0LnBocA==">
+        <i class="flag es"></i>
+        Movistar Liga de Campeones 4 | HD
+        </a>
+    </li>
+    <li>
         <a class="justify-content-center" href="'.$app.'/agenda/play?c=mlcamp4">
         <i class="flag es"></i>
         Movistar Liga de Campeones 4 | VIP HD
@@ -96,6 +138,12 @@ if($canal === "M+ Liga de Campeones 4" || $canal === "mlcamp4"){
 } elseif($canal2 === "M+ Liga de Campeones 4" || $canal2 === "mlcamp4"){
     $canalImg = "campeones";
     $canalop4 = '
+    <li>
+        <a class="justify-content-center" href="https://megadeportes.live/eventos/?r=Ly9ncmVnb3JzYW1zYS5saWZlL2VtYmVkL2VzL21saWdhZGVjYW1wZW9uZXM0LnBocA==">
+        <i class="flag es"></i>
+        Movistar Liga de Campeones 4 | HD
+        </a>
+    </li>
     <li>
         <a class="justify-content-center" href="'.$app.'/agenda/play?c=mlcamp4">
         <i class="flag es"></i>
@@ -108,6 +156,12 @@ if($canal === "M+ Liga de Campeones 5" || $canal === "mlcamp5"){
     $canalImg = "campeones";
     $canalop2 = '
     <li>
+        <a class="justify-content-center" href="https://megadeportes.live/eventos/?r=Ly9ncmVnb3JzYW1zYS5saWZlL2VtYmVkL2VzL21saWdhZGVjYW1wZW9uZXM1LnBocA==">
+        <i class="flag es"></i>
+        Movistar Liga de Campeones 5 | HD
+        </a>
+    </li>
+    <li>
         <a class="justify-content-center" href="'.$app.'/agenda/play?c=mlcamp5">
         <i class="flag es"></i>
         Movistar Liga de Campeones 5 | VIP HD
@@ -117,9 +171,55 @@ if($canal === "M+ Liga de Campeones 5" || $canal === "mlcamp5"){
     $canalImg = "campeones";
     $canalop4 = '
     <li>
+        <a class="justify-content-center" href="https://megadeportes.live/eventos/?r=Ly9ncmVnb3JzYW1zYS5saWZlL2VtYmVkL2VzL21saWdhZGVjYW1wZW9uZXM1LnBocA==">
+        <i class="flag es"></i>
+        Movistar Liga de Campeones 5 | HD
+        </a>
+    </li>
+    <li>
         <a class="justify-content-center" href="'.$app.'/agenda/play?c=mlcamp5">
         <i class="flag es"></i>
         Movistar Liga de Campeones 5 | HD
+        </a>
+    </li>';
+}
+
+if($canal === "M+ Liga de Campeones 6" || $canal === "mlcamp6"){
+    $canalImg = "campeones";
+    $canalop2 = '
+    <li>
+        <a class="justify-content-center" href="https://megadeportes.live/eventos/?r=Ly9ncmVnb3JzYW1zYS5saWZlL2VtYmVkL2VzL21saWdhZGVjYW1wZW9uZXMucGhw">
+        <i class="flag es"></i>
+        Movistar Liga de Campeones 6 | HD
+        </a>
+    </li>';
+} elseif($canal2 === "M+ Liga de Campeones 6" || $canal2 === "mlcamp6"){
+    $canalImg = "campeones";
+    $canalop4 = '
+    <li>
+        <a class="justify-content-center" href="https://megadeportes.live/eventos/?r=Ly9ncmVnb3JzYW1zYS5saWZlL2VtYmVkL2VzL21saWdhZGVjYW1wZW9uZXMucGhw">
+        <i class="flag es"></i>
+        Movistar Liga de Campeones 6 | HD
+        </a>
+    </li>';
+}
+
+if($canal === "M+ Liga de Campeones 7" || $canal === "mlcamp7"){
+    $canalImg = "campeones";
+    $canalop2 = '
+    <li>
+        <a class="justify-content-center" href="https://megadeportes.live/eventos/?r=Ly9ncmVnb3JzYW1zYS5saWZlL2VtYmVkL2VzL21saWdhZGVjYW1wZW9uZXM3LnBocA==">
+        <i class="flag es"></i>
+        Movistar Liga de Campeones 7 | HD
+        </a>
+    </li>';
+} elseif($canal2 === "M+ Liga de Campeones 7" || $canal2 === "mlcamp7"){
+    $canalImg = "campeones";
+    $canalop4 = '
+    <li>
+        <a class="justify-content-center" href="https://megadeportes.live/eventos/?r=Ly9ncmVnb3JzYW1zYS5saWZlL2VtYmVkL2VzL21saWdhZGVjYW1wZW9uZXM3LnBocA==">
+        <i class="flag es"></i>
+        Movistar Liga de Campeones 7 | HD
         </a>
     </li>';
 }
