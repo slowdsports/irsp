@@ -104,6 +104,7 @@ if ($result['ligaImg'] == 18){
     $local = str_replace("crystalpalace", "Crystal Palace", $local);
     $local = str_replace("leedsutd", "Leeds United", $local);
     $local = str_replace("leicestercity", "Leicester City", $local);
+    $local = str_replace("man.city", "Manchester City", $local);
     $local = str_replace("manchestercity", "Manchester City", $local);
     $local = str_replace("manchester city", "Manchester City", $local);
     $local = str_replace("manchester utd.", "Manchester United", $local);
@@ -121,6 +122,7 @@ if ($result['ligaImg'] == 18){
     $visita = str_replace("crystalpalace", "Crystal Palace", $visita);
     $visita = str_replace("leedsutd", "Leeds United", $visita);
     $visita = str_replace("leicestercity", "Leicester City", $visita);
+    $visita = str_replace("man.city", "Manchester City", $visita);
     $visita = str_replace("manchestercity", "Manchester City", $visita);
     $visita = str_replace("manchester city", "Manchester City", $visita);
     $visita = str_replace("manchester utd.", "Manchester United", $visita);
@@ -133,7 +135,9 @@ if ($result['ligaImg'] == 18){
 
     //Bundesliga
     $local = str_replace("eintrachtfrankfurt", "Eintracht", $local);
+    $local = str_replace("dinamozagreb", "Diamo Zagreb", $local);
     $visita = str_replace("eintrachtfrankfurt", "Eintracht", $visita);
+    $visita = str_replace("dinamozagreb", "Diamo Zagreb", $visita);
 
     //Liga PRO Ecuador
     $local = str_replace("FC Barcelonasc", "Barcelona", $local);
@@ -331,6 +335,10 @@ if ($result['ligaImg'] == 18){
 
     $visita = str_replace('saopaulo', 'Sao Paulo', $visita);
     $visita = str_replace('independientedelvalle', 'Independiente', $visita);
+
+    // Otros
+    $local = str_replace('maccabihaifa', 'Maccabi Haifa', $local);
+    $visita = str_replace('maccabihaifa', 'Maccabi Haifa', $visita);
 
 
 ?>
