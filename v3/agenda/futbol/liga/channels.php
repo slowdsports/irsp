@@ -7,7 +7,7 @@ if($canal === "M+ Liga de Campeones" || $canal === "M+ Liga de Campeones UHD (M4
     $canalImg = "campeones";
     $canalop2 = '
     <li>
-        <a class="justify-content-center" href="https://irpc.ga/mg/play/sandbox.php?get=https://megadeportes.live/eventos/?r=Ly9ncmVnb3JzYW1zYS5saWZlL2VtYmVkL2VzL21saWdhZGVjYW1wZW9uZXMucGhw">
+        <a class="justify-content-center" href="https://irpc.ga/mg/play/sandbox.php?get=https://megatelevisionhd.com/embed/repro/?r=Ly9ncmVnb3JzYW1zYS5saWZlL2VtYmVkL2VzL21saWdhZGVjYW1wZW9uZXMucGhw">
         <i class="flag es"></i>
         Movistar Liga de Campeones | HD
         </a>
@@ -22,7 +22,7 @@ if($canal === "M+ Liga de Campeones" || $canal === "M+ Liga de Campeones UHD (M4
     $canalImg = "campeones";
     $canalop4 = '
     <li>
-        <a class="justify-content-center" href="https://irpc.ga/mg/play/sandbox.php?get=https://megadeportes.live/eventos/?r=Ly9ncmVnb3JzYW1zYS5saWZlL2VtYmVkL2VzL21saWdhZGVjYW1wZW9uZXMucGhw">
+        <a class="justify-content-center" href="https://irpc.ga/mg/play/sandbox.php?get=https://megatelevisionhd.com/embed/repro/?r=Ly9ncmVnb3JzYW1zYS5saWZlL2VtYmVkL2VzL21saWdhZGVjYW1wZW9uZXMucGhw">
         <i class="flag es"></i>
         Movistar Liga de Campeones | HD
         </a>
@@ -59,7 +59,7 @@ if($canal === "M+ Liga de Campeones 2" || $canal === "mlcamp2"){
     $canalImg = "campeones";
     $canalop2 = '
     <li>
-        <a class="justify-content-center" href="https://irpc.ga/mg/play/sandbox.php?get=https://megadeportes.live/eventos/?r=Ly9ncmVnb3JzYW1zYS5saWZlL2VtYmVkL2VzL21saWdhZGVjYW1wZW9uZXMyLnBocA==">
+        <a class="justify-content-center" href="https://irpc.ga/mg/play/sandbox.php?get=https://megatelevisionhd.com/embed/repro/?r=Ly9ncmVnb3JzYW1zYS5saWZlL2VtYmVkL2VzL21saWdhZGVjYW1wZW9uZXMyLnBocA==">
         <i class="flag es"></i>
         Movistar Liga de Campeones 2 | HD
         </a>
@@ -74,7 +74,7 @@ if($canal === "M+ Liga de Campeones 2" || $canal === "mlcamp2"){
     $canalImg = "campeones";
     $canalop4 = '
     <li>
-        <a class="justify-content-center" href="https://irpc.ga/mg/play/sandbox.php?get=https://megadeportes.live/eventos/?r=Ly9ncmVnb3JzYW1zYS5saWZlL2VtYmVkL2VzL21saWdhZGVjYW1wZW9uZXMyLnBocA==">
+        <a class="justify-content-center" href="https://irpc.ga/mg/play/sandbox.php?get=https://megatelevisionhd.com/embed/repro/?r=Ly9ncmVnb3JzYW1zYS5saWZlL2VtYmVkL2VzL21saWdhZGVjYW1wZW9uZXMyLnBocA==">
         <i class="flag es"></i>
         Movistar Liga de Campeones 2 | HD
         </a>
@@ -91,7 +91,7 @@ if($canal === "M+ Liga de Campeones 3" || $canal === "mlcamp3"){
     $canalImg = "campeones";
     $canalop2 = '
     <li>
-        <a class="justify-content-center" href="https://irpc.ga/mg/play/sandbox.php?get=https://megadeportes.live/eventos/?r=Ly9ncmVnb3JzYW1zYS5saWZlL2VtYmVkL2VzL21saWdhZGVjYW1wZW9uZXMzLnBocA==">
+        <a class="justify-content-center" href="https://irpc.ga/mg/play/sandbox.php?get=https://megatelevisionhd.com/embed/repro/?r=Ly9ncmVnb3JzYW1zYS5saWZlL2VtYmVkL2VzL21saWdhZGVjYW1wZW9uZXMzLnBocA==">
         <i class="flag es"></i>
         Movistar Liga de Campeones 3 | HD
         </a>
@@ -106,7 +106,7 @@ if($canal === "M+ Liga de Campeones 3" || $canal === "mlcamp3"){
     $canalImg = "campeones";
     $canalop4 = '
     <li>
-        <a class="justify-content-center" href="https://irpc.ga/mg/play/sandbox.php?get=https://megadeportes.live/eventos/?r=Ly9ncmVnb3JzYW1zYS5saWZlL2VtYmVkL2VzL21saWdhZGVjYW1wZW9uZXMzLnBocA==">
+        <a class="justify-content-center" href="https://irpc.ga/mg/play/sandbox.php?get=https://megatelevisionhd.com/embed/repro/?r=Ly9ncmVnb3JzYW1zYS5saWZlL2VtYmVkL2VzL21saWdhZGVjYW1wZW9uZXMzLnBocA==">
         <i class="flag es"></i>
         Movistar Liga de Campeones 3 | HD
         </a>
@@ -124,7 +124,7 @@ if($canal === "M+ Liga de Campeones 4" || $canal === "mlcamp4"){
     $canalImg = "campeones";
     $canalop2 = '
     <li>
-        <a class="justify-content-center" href="https://irpc.ga/mg/play/sandbox.php?get=https://megadeportes.live/eventos/?r=Ly9ncmVnb3JzYW1zYS5saWZlL2VtYmVkL2VzL21saWdhZGVjYW1wZW9uZXM0LnBocA==">
+        <a class="justify-content-center" href="https://irpc.ga/mg/play/sandbox.php?get=https://megatelevisionhd.com/embed/repro/?r=Ly9ncmVnb3JzYW1zYS5saWZlL2VtYmVkL2VzL21saWdhZGVjYW1wZW9uZXM0LnBocA==">
         <i class="flag es"></i>
         Movistar Liga de Campeones 4 | HD
         </a>
@@ -139,7 +139,7 @@ if($canal === "M+ Liga de Campeones 4" || $canal === "mlcamp4"){
     $canalImg = "campeones";
     $canalop4 = '
     <li>
-        <a class="justify-content-center" href="https://irpc.ga/mg/play/sandbox.php?get=https://megadeportes.live/eventos/?r=Ly9ncmVnb3JzYW1zYS5saWZlL2VtYmVkL2VzL21saWdhZGVjYW1wZW9uZXM0LnBocA==">
+        <a class="justify-content-center" href="https://irpc.ga/mg/play/sandbox.php?get=https://megatelevisionhd.com/embed/repro/?r=Ly9ncmVnb3JzYW1zYS5saWZlL2VtYmVkL2VzL21saWdhZGVjYW1wZW9uZXM0LnBocA==">
         <i class="flag es"></i>
         Movistar Liga de Campeones 4 | HD
         </a>
@@ -156,7 +156,7 @@ if($canal === "M+ Liga de Campeones 5" || $canal === "mlcamp5"){
     $canalImg = "campeones";
     $canalop2 = '
     <li>
-        <a class="justify-content-center" href="https://irpc.ga/mg/play/sandbox.php?get=https://megadeportes.live/eventos/?r=Ly9ncmVnb3JzYW1zYS5saWZlL2VtYmVkL2VzL21saWdhZGVjYW1wZW9uZXM1LnBocA==">
+        <a class="justify-content-center" href="https://irpc.ga/mg/play/sandbox.php?get=https://megatelevisionhd.com/embed/repro/?r=Ly9ncmVnb3JzYW1zYS5saWZlL2VtYmVkL2VzL21saWdhZGVjYW1wZW9uZXM1LnBocA==">
         <i class="flag es"></i>
         Movistar Liga de Campeones 5 | HD
         </a>
@@ -171,7 +171,7 @@ if($canal === "M+ Liga de Campeones 5" || $canal === "mlcamp5"){
     $canalImg = "campeones";
     $canalop4 = '
     <li>
-        <a class="justify-content-center" href="https://irpc.ga/mg/play/sandbox.php?get=https://megadeportes.live/eventos/?r=Ly9ncmVnb3JzYW1zYS5saWZlL2VtYmVkL2VzL21saWdhZGVjYW1wZW9uZXM1LnBocA==">
+        <a class="justify-content-center" href="https://irpc.ga/mg/play/sandbox.php?get=https://megatelevisionhd.com/embed/repro/?r=Ly9ncmVnb3JzYW1zYS5saWZlL2VtYmVkL2VzL21saWdhZGVjYW1wZW9uZXM1LnBocA==">
         <i class="flag es"></i>
         Movistar Liga de Campeones 5 | HD
         </a>
@@ -188,7 +188,7 @@ if($canal === "M+ Liga de Campeones 6" || $canal === "mlcamp6"){
     $canalImg = "campeones";
     $canalop2 = '
     <li>
-        <a class="justify-content-center" href="https://irpc.ga/mg/play/sandbox.php?get=https://megadeportes.live/eventos/?r=Ly9ncmVnb3JzYW1zYS5saWZlL2VtYmVkL2VzL21saWdhZGVjYW1wZW9uZXMucGhw">
+        <a class="justify-content-center" href="https://irpc.ga/mg/play/sandbox.php?get=https://megatelevisionhd.com/embed/repro/?r=Ly9ncmVnb3JzYW1zYS5saWZlL2VtYmVkL2VzL21saWdhZGVjYW1wZW9uZXMucGhw">
         <i class="flag es"></i>
         Movistar Liga de Campeones 6 | HD
         </a>
@@ -197,7 +197,7 @@ if($canal === "M+ Liga de Campeones 6" || $canal === "mlcamp6"){
     $canalImg = "campeones";
     $canalop4 = '
     <li>
-        <a class="justify-content-center" href="https://irpc.ga/mg/play/sandbox.php?get=https://megadeportes.live/eventos/?r=Ly9ncmVnb3JzYW1zYS5saWZlL2VtYmVkL2VzL21saWdhZGVjYW1wZW9uZXMucGhw">
+        <a class="justify-content-center" href="https://irpc.ga/mg/play/sandbox.php?get=https://megatelevisionhd.com/embed/repro/?r=Ly9ncmVnb3JzYW1zYS5saWZlL2VtYmVkL2VzL21saWdhZGVjYW1wZW9uZXMucGhw">
         <i class="flag es"></i>
         Movistar Liga de Campeones 6 | HD
         </a>
@@ -208,7 +208,7 @@ if($canal === "M+ Liga de Campeones 7" || $canal === "mlcamp7"){
     $canalImg = "campeones";
     $canalop2 = '
     <li>
-        <a class="justify-content-center" href="https://irpc.ga/mg/play/sandbox.php?get=https://megadeportes.live/eventos/?r=Ly9ncmVnb3JzYW1zYS5saWZlL2VtYmVkL2VzL21saWdhZGVjYW1wZW9uZXM3LnBocA==">
+        <a class="justify-content-center" href="https://irpc.ga/mg/play/sandbox.php?get=https://megatelevisionhd.com/embed/repro/?r=Ly9ncmVnb3JzYW1zYS5saWZlL2VtYmVkL2VzL21saWdhZGVjYW1wZW9uZXM3LnBocA==">
         <i class="flag es"></i>
         Movistar Liga de Campeones 7 | HD
         </a>
@@ -217,7 +217,7 @@ if($canal === "M+ Liga de Campeones 7" || $canal === "mlcamp7"){
     $canalImg = "campeones";
     $canalop4 = '
     <li>
-        <a class="justify-content-center" href="https://irpc.ga/mg/play/sandbox.php?get=https://megadeportes.live/eventos/?r=Ly9ncmVnb3JzYW1zYS5saWZlL2VtYmVkL2VzL21saWdhZGVjYW1wZW9uZXM3LnBocA==">
+        <a class="justify-content-center" href="https://irpc.ga/mg/play/sandbox.php?get=https://megatelevisionhd.com/embed/repro/?r=Ly9ncmVnb3JzYW1zYS5saWZlL2VtYmVkL2VzL21saWdhZGVjYW1wZW9uZXM3LnBocA==">
         <i class="flag es"></i>
         Movistar Liga de Campeones 7 | HD
         </a>
