@@ -167,7 +167,7 @@ if ($result['local'] === "juventus"){
     }
     $custom2 = '
     <li>
-        <a class="justify-content-center" href="'.$s.'">
+        <a class="justify-content-center" href="../../tv/epg?r='.$s.'">
         <i class="flag ar"></i>
         HBO MAX | HD
         </a>
