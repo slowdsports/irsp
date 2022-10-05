@@ -32,8 +32,9 @@ if (isset($_GET['r'])){
         $decode = base64_decode($_GET['r']);
         // Sustituir URL: "//vercomofutbol.xyz/s/star_jwp.html"
         $decode = str_replace("//vercomofutbol.xyz/s/star_jwp.html", "", $decode);
-        $decode = str_replace("https://vercomofutbol.xyz/hbo/jwp.php", "", $decode);
+        $decodeHBO = str_replace("https://vercomofutbol.xyz/hbo/jwp.php", "", $decodeHBO);
         $decode = "https://irpc.ga/mg/play/star.php" . $decode;
+        $decodeHBO = "https://irpc.ga/mg/play/mlaliga.php" . $decodeHBO;
         //header ("location: $decode");
         echo '
         <script>
