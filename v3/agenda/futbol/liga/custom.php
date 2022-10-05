@@ -20,7 +20,7 @@ if ($result['local'] === "team"){
     ';
 }
 
-if ($result['local'] === "bayern"){
+if ($result['local'] === "salzburgo"){
     $canalImg = "starplus";
     // LINK:
     $r= "../../star.php";
@@ -40,7 +40,7 @@ if ($result['local'] === "bayern"){
     ';
 }
 
-if ($result['local'] === "marsella"){
+if ($result['local'] === "realmadrid"){
     $canalImg = "starplus";
     // LINK:
     $r= "../../star.php";
@@ -60,7 +60,7 @@ if ($result['local'] === "marsella"){
     ';
 }
 
-if ($result['local'] === "inter"){
+if ($result['local'] === "sevilla"){
     $canalImg = "starplus";
     // LINK:
     $r= "../../star.php";
@@ -80,7 +80,7 @@ if ($result['local'] === "inter"){
     ';
 }
 
-if ($result['local'] === "ajax"){
+if ($result['local'] === "benfica"){
     $canalImg = "starplus";
     // LINK:
     $r= "../../star.php";
@@ -100,7 +100,7 @@ if ($result['local'] === "ajax"){
     ';
 }
 
-if ($result['local'] === "porto"){
+if ($result['local'] === "chelsea"){
     $canalImg = "starplus";
     // LINK:
     $r= "../../star.php";
@@ -120,7 +120,7 @@ if ($result['local'] === "porto"){
     ';
 }
 
-if ($result['local'] === "brujas"){
+if ($result['local'] === "man.city"){
     $canalImg = "starplus";
     // LINK:
     $r= "../../star.php";
@@ -140,27 +140,7 @@ if ($result['local'] === "brujas"){
     ';
 }
 
-if ($result['local'] === "napoli"){
-    $canalImg = "starplus";
-    // LINK:
-    $r= "../../star.php";
-
-    if ($r !== ""){
-        $r = $r;
-    } else {
-        $r = "javascript:void(0)";
-    }
-    $custom1 = '
-    <li>
-        <a class="justify-content-center" href="'.$r.'">
-        <i class="flag ar"></i>
-        Star + | HD
-        </a>
-    </li>
-    ';
-}
-
-if ($result['local'] === "eintracht"){
+if ($result['local'] === "juventus"){
     $canalImg = "starplus";
     // LINK:
     $r= "../../star.php";
