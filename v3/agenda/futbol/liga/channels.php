@@ -224,6 +224,126 @@ if($canal === "M+ Liga de Campeones 7" || $canal === "mlcamp7"){
     </li>';
 }
 
+if($canal === "M+ Liga de Campeones 8" || $canal === "mlcamp8"){
+    $canalImg = "campeones";
+    $canalop2 = '
+    <li>
+        <a class="justify-content-center" href="https://irpc.ga/mg/play/sandbox.php?get=https://megadeportes.live/eventos/?r=Ly9ncmVnb3JzYW1zYS5saWZlL2VtYmVkL2VzL21saWdhZGVjYW1wZW9uZXM4LnBocA==">
+        <i class="flag es"></i>
+        Movistar Liga de Campeones 8 | HD
+        </a>
+    </li>';
+} elseif($canal2 === "M+ Liga de Campeones 8" || $canal2 === "mlcamp8"){
+    $canalImg = "campeones";
+    $canalop4 = '
+    <li>
+        <a class="justify-content-center" href="https://irpc.ga/mg/play/sandbox.php?get=https://megadeportes.live/eventos/?r=Ly9ncmVnb3JzYW1zYS5saWZlL2VtYmVkL2VzL21saWdhZGVjYW1wZW9uZXM4LnBocA==">
+        <i class="flag es"></i>
+        Movistar Liga de Campeones 8 | HD
+        </a>
+    </li>';
+}
+
+if($canal === "M+ Liga de Campeones 9" || $canal === "mlcamp9"){
+    $canalImg = "campeones";
+    $canalop2 = '
+    <li>
+        <a class="justify-content-center" href="https://irpc.ga/mg/play/sandbox.php?get=https://megadeportes.live/eventos/?r=Ly9ncmVnb3JzYW1zYS5saWZlL2VtYmVkL2VzL21saWdhZGVjYW1wZW9uZXM5LnBocA==">
+        <i class="flag es"></i>
+        Movistar Liga de Campeones 9 | HD
+        </a>
+    </li>';
+} elseif($canal2 === "M+ Liga de Campeones 9" || $canal2 === "mlcamp9"){
+    $canalImg = "campeones";
+    $canalop4 = '
+    <li>
+        <a class="justify-content-center" href="https://irpc.ga/mg/play/sandbox.php?get=https://megadeportes.live/eventos/?r=Ly9ncmVnb3JzYW1zYS5saWZlL2VtYmVkL2VzL21saWdhZGVjYW1wZW9uZXM5LnBocA==">
+        <i class="flag es"></i>
+        Movistar Liga de Campeones 9 | HD
+        </a>
+    </li>';
+}
+
+if($canal === "M+ Liga de Campeones 10" || $canal === "mlcamp10"){
+    $canalImg = "campeones";
+    $canalop2 = '
+    <li>
+        <a class="justify-content-center" href="https://irpc.ga/mg/play/sandbox.php?get=https://megadeportes.live/eventos/?r=Ly9ncmVnb3JzYW1zYS5saWZlL2VtYmVkL2VzL21saWdhZGVjYW1wZW9uZXMxMC5waHA=">
+        <i class="flag es"></i>
+        Movistar Liga de Campeones 10 | HD
+        </a>
+    </li>';
+} elseif($canal2 === "M+ Liga de Campeones 10" || $canal2 === "mlcamp10"){
+    $canalImg = "campeones";
+    $canalop4 = '
+    <li>
+        <a class="justify-content-center" href="https://irpc.ga/mg/play/sandbox.php?get=https://megadeportes.live/eventos/?r=Ly9ncmVnb3JzYW1zYS5saWZlL2VtYmVkL2VzL21saWdhZGVjYW1wZW9uZXMxMC5waHA=">
+        <i class="flag es"></i>
+        Movistar Liga de Campeones 10 | HD
+        </a>
+    </li>';
+}
+
+if($canal === "M+ Liga de Campeones 11" || $canal === "mlcamp11"){
+    $canalImg = "campeones";
+    $canalop2 = '
+    <li>
+        <a class="justify-content-center" href="https://irpc.ga/mg/play/sandbox.php?get=https://megadeportes.live/eventos/?r=Ly9ncmVnb3JzYW1zYS5saWZlL2VtYmVkL2VzL21saWdhZGVjYW1wZW9uZXMxMS5waHA=">
+        <i class="flag es"></i>
+        Movistar Liga de Campeones 11 | HD
+        </a>
+    </li>';
+} elseif($canal2 === "M+ Liga de Campeones 11" || $canal2 === "mlcamp11"){
+    $canalImg = "campeones";
+    $canalop4 = '
+    <li>
+        <a class="justify-content-center" href="https://irpc.ga/mg/play/sandbox.php?get=https://megadeportes.live/eventos/?r=Ly9ncmVnb3JzYW1zYS5saWZlL2VtYmVkL2VzL21saWdhZGVjYW1wZW9uZXMxMS5waHA=">
+        <i class="flag es"></i>
+        Movistar Liga de Campeones 11 | HD
+        </a>
+    </li>';
+}
+
+if($canal === "M+ Liga de Campeones 12" || $canal === "mlcamp12"){
+    $canalImg = "campeones";
+    $canalop2 = '
+    <li>
+        <a class="justify-content-center" href="https://irpc.ga/mg/play/sandbox.php?get=https://megadeportes.live/eventos/?r=Ly9ncmVnb3JzYW1zYS5saWZlL2VtYmVkL2VzL21saWdhZGVjYW1wZW9uZXMxMi5waHA=">
+        <i class="flag es"></i>
+        Movistar Liga de Campeones 12 | HD
+        </a>
+    </li>';
+} elseif($canal2 === "M+ Liga de Campeones 12" || $canal2 === "mlcamp12"){
+    $canalImg = "campeones";
+    $canalop4 = '
+    <li>
+        <a class="justify-content-center" href="https://irpc.ga/mg/play/sandbox.php?get=https://megadeportes.live/eventos/?r=Ly9ncmVnb3JzYW1zYS5saWZlL2VtYmVkL2VzL21saWdhZGVjYW1wZW9uZXMxMi5waHA=">
+        <i class="flag es"></i>
+        Movistar Liga de Campeones 12 | HD
+        </a>
+    </li>';
+}
+
+if($canal === "M+ Liga de Campeones 13" || $canal === "mlcamp13"){
+    $canalImg = "campeones";
+    $canalop2 = '
+    <li>
+        <a class="justify-content-center" href="https://irpc.ga/mg/play/sandbox.php?get=https://megadeportes.live/eventos/?r=Ly9ncmVnb3JzYW1zYS5saWZlL2VtYmVkL2VzL21saWdhZGVjYW1wZW9uZXMxMy5waHA=">
+        <i class="flag es"></i>
+        Movistar Liga de Campeones 13 | HD
+        </a>
+    </li>';
+} elseif($canal2 === "M+ Liga de Campeones 13" || $canal2 === "mlcamp13"){
+    $canalImg = "campeones";
+    $canalop4 = '
+    <li>
+        <a class="justify-content-center" href="https://irpc.ga/mg/play/sandbox.php?get=https://megadeportes.live/eventos/?r=Ly9ncmVnb3JzYW1zYS5saWZlL2VtYmVkL2VzL21saWdhZGVjYW1wZW9uZXMxMy5waHA=">
+        <i class="flag es"></i>
+        Movistar Liga de Campeones 13 | HD
+        </a>
+    </li>';
+}
+
 if($canal === "M+ LaLiga" || $canal === "M+ LaLigaTV" || $canal === "bar"){
     $canalImg = "mlaliga";
     $canalop2 = '
