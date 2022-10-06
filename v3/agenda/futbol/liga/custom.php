@@ -41,13 +41,10 @@ if ($result['local'] === "team"){
 
 // CUSTOMS
 
-if ($result['local'] === "salzburgo"){
+if ($result['local'] === "manchesterutd."){
     $canalImg = "starplus";
     // STAR+:
     $r= "../../star.php";
-
-    // HBO MAX:
-    $s= "";
 
     if ($r !== ""){
         $r = $r;
@@ -61,17 +58,105 @@ if ($result['local'] === "salzburgo"){
         Star + | HD
         </a>
     </li>
+    ';
+}
+
+if ($result['local'] === "sheriff"){
+    $canalImg = "starplus";
+    // STAR+:
+    $r= "../../star.php";
+
+    if ($r !== ""){
+        $r = $r;
+    } else {
+        $r = "javascript:void(0)";
+    }
+    $custom1 = '
     <li>
-        <a class="justify-content-center" href="'.$s.'">
+        <a class="justify-content-center" href="'.$r.'">
         <i class="flag ar"></i>
-        HBO MAX | HD
+        Star + | HD
         </a>
     </li>
     ';
+}
 
-    if ($s !== ""){
-        $s = "../../../tv/epg?s=" . $s;
+if ($result['visita'] === "lazio"){
+    $canalImg = "starplus";
+    // STAR+:
+    $r= "../../star.php";
+
+    if ($r !== ""){
+        $r = $r;
     } else {
-        $s = "javascript:void(0)";
+        $r = "javascript:void(0)";
     }
+    $custom1 = '
+    <li>
+        <a class="justify-content-center" href="'.$r.'">
+        <i class="flag ar"></i>
+        Star + | HD
+        </a>
+    </li>
+    ';
+}
+
+if ($result['local'] === "asroma"){
+    $canalImg = "starplus";
+    // STAR+:
+    $r= "../../star.php";
+
+    if ($r !== ""){
+        $r = $r;
+    } else {
+        $r = "javascript:void(0)";
+    }
+    $custom1 = '
+    <li>
+        <a class="justify-content-center" href="'.$r.'">
+        <i class="flag ar"></i>
+        Star + | HD
+        </a>
+    </li>
+    ';
+}
+
+if ($result['local'] === "arsenal"){
+    $canalImg = "starplus";
+    // STAR+:
+    $r= "../../star.php";
+
+    if ($r !== ""){
+        $r = $r;
+    } else {
+        $r = "javascript:void(0)";
+    }
+    $custom1 = '
+    <li>
+        <a class="justify-content-center" href="'.$r.'">
+        <i class="flag ar"></i>
+        Star + | HD
+        </a>
+    </li>
+    ';
+}
+
+if ($result['visita'] === "feyenoord"){
+    $canalImg = "starplus";
+    // STAR+:
+    $r= "../../star.php";
+
+    if ($r !== ""){
+        $r = $r;
+    } else {
+        $r = "javascript:void(0)";
+    }
+    $custom1 = '
+    <li>
+        <a class="justify-content-center" href="'.$r.'">
+        <i class="flag ar"></i>
+        Star + | HD
+        </a>
+    </li>
+    ';
 }
