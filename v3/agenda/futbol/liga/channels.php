@@ -717,7 +717,7 @@ if($canal === "LaLiga SmartbankTV 2" || $canal === "LaLiga SmartbankTV 2" || $ca
     $canalImg = "smartbank";
     $canalop2 = '
     <li>
-        <a class="justify-content-center" href="https://irpc.ga/mg/play/sandbox.php?get=https://megadeportes.live/eventos/?r=Ly9ncmVnb3JzYW1zYS5saWZlL2VtYmVkL2VzL2xhbGlnYXNtYXJ0YmFua3R2Mi5waHA=">
+        <a class="justify-content-center" href="https://irpc.ga/mg/play/sandbox.php?get=https://megadeportes.live/embed/repro/?r=Ly9ncmVnb3JzYW1zYS5saWZlL2VtYmVkL2VzL2xhbGlnYXNtYXJ0YmFua3R2Mi5waHA=">
         <i class="flag es"></i>
         LaLiga Smartbank 2 | HD (VIP)
         </a>
@@ -726,7 +726,7 @@ if($canal === "LaLiga SmartbankTV 2" || $canal === "LaLiga SmartbankTV 2" || $ca
     $canalImg = "smartbank";
     $canalop4 = '
     <li>
-        <a class="justify-content-center" href="https://irpc.ga/mg/play/sandbox.php?get=https://megadeportes.live/eventos/?r=Ly9ncmVnb3JzYW1zYS5saWZlL2VtYmVkL2VzL2xhbGlnYXNtYXJ0YmFua3R2Mi5waHA=">
+        <a class="justify-content-center" href="https://irpc.ga/mg/play/sandbox.php?get=https://megadeportes.live/embed/repro/?r=Ly9ncmVnb3JzYW1zYS5saWZlL2VtYmVkL2VzL2xhbGlnYXNtYXJ0YmFua3R2Mi5waHA=">
         <i class="flag es"></i>
         LaLiga Smartbank 2 | HD (VIP)
         </a>
