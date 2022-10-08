@@ -479,6 +479,12 @@ if($canal === "M+ #Vamos" || $canal === "M+ #Vamos Bar 2 (305)" || $canal === "m
     $canalImg = "mvamos";
     $canalop2 = '
     <li>
+        <a class="justify-content-center" href="https://megadeportes.live/embed/repro/?r=Ly9ncmVnb3JzYW1zYS5saWZlL2VtYmVkL2VzL3ZhbW9zLnBocA==">
+        <i class="flag es"></i>
+        Movistar #Vamos | HD
+        </a>
+    </li>
+    <li>
         <a class="justify-content-center" href="'.$app.'/agenda/play?c=mvamos">
         <i class="flag es"></i>
         Movistar #Vamos | VIP HD
@@ -487,6 +493,12 @@ if($canal === "M+ #Vamos" || $canal === "M+ #Vamos Bar 2 (305)" || $canal === "m
 } elseif($canal2 === "M+ #Vamos" || $canal2 === "M+ #Vamos Bar 2 (305)" || $canal2 === "mvamos"){
     $canalImg = "mvamos";
     $canalop4 = '
+    <li>
+        <a class="justify-content-center" href="https://megadeportes.live/embed/repro/?r=Ly9ncmVnb3JzYW1zYS5saWZlL2VtYmVkL2VzL3ZhbW9zLnBocA==">
+        <i class="flag es"></i>
+        Movistar #Vamos | HD
+        </a>
+    </li>
     <li>
         <a class="justify-content-center" href="'.$app.'/agenda/play?c=mvamos">
         <i class="flag es"></i>
