@@ -684,7 +684,7 @@ if($canal === "LaLiga SmartbankTV" || $canal === "LaLiga SmartbankTV" || $canal 
     </li>';
 } elseif($canal2 === "LaLiga SmartbankTV" || $canal2 === "LaLiga SmartbankTV" || $canal2 === "smartbank"){
     $canalImg = "smartbank";
-    $canalop2 = '
+    $canalop4 = '
     <li>
         <a class="justify-content-center" href="'.$app.'/agenda/play?c=smartbank">
         <i class="flag es"></i>
@@ -704,11 +704,31 @@ if($canal === "LaLiga SmartbankTV 1" || $canal === "LaLiga SmartbankTV 1" || $ca
     </li>';
 } elseif($canal2 === "LaLiga SmartbankTV 1" || $canal2 === "LaLiga SmartbankTV 1" || $canal2 === "smartbank1"){
     $canalImg = "smartbank";
-    $canalop2 = '
+    $canalop4 = '
     <li>
         <a class="justify-content-center" href="'.$app.'/agenda/play?c=smartbank1">
         <i class="flag es"></i>
         LaLiga Smartbank 1 | HD (VIP)
+        </a>
+    </li>';
+}
+
+if($canal === "LaLiga SmartbankTV 2" || $canal === "LaLiga SmartbankTV 2" || $canal === "smartbank2"){
+    $canalImg = "smartbank";
+    $canalop2 = '
+    <li>
+        <a class="justify-content-center" href="https://irpc.ga/mg/play/sandbox.php?get=https://megadeportes.live/eventos/?r=Ly9ncmVnb3JzYW1zYS5saWZlL2VtYmVkL2VzL2xhbGlnYXNtYXJ0YmFua3R2Mi5waHA=">
+        <i class="flag es"></i>
+        LaLiga Smartbank 2 | HD (VIP)
+        </a>
+    </li>';
+} elseif($canal2 === "LaLiga SmartbankTV 2" || $canal2 === "LaLiga SmartbankTV 2" || $canal2 === "smartbank2"){
+    $canalImg = "smartbank";
+    $canalop4 = '
+    <li>
+        <a class="justify-content-center" href="https://irpc.ga/mg/play/sandbox.php?get=https://megadeportes.live/eventos/?r=Ly9ncmVnb3JzYW1zYS5saWZlL2VtYmVkL2VzL2xhbGlnYXNtYXJ0YmFua3R2Mi5waHA=">
+        <i class="flag es"></i>
+        LaLiga Smartbank 2 | HD (VIP)
         </a>
     </li>';
 }
