@@ -479,7 +479,7 @@ if($canal === "M+ #Vamos" || $canal === "M+ #Vamos Bar 2 (305)" || $canal === "m
     $canalImg = "mvamos";
     $canalop2 = '
     <li>
-        <a class="justify-content-center" href="https://megadeportes.live/embed/repro/?r=Ly9ncmVnb3JzYW1zYS5saWZlL2VtYmVkL2VzL3ZhbW9zLnBocA==">
+        <a class="justify-content-center" href="https://irpc.ga/mg/play/sandbox.php?get=https://megadeportes.live/embed/repro/?r=Ly9ncmVnb3JzYW1zYS5saWZlL2VtYmVkL2VzL3ZhbW9zLnBocA==">
         <i class="flag es"></i>
         Movistar #Vamos | HD
         </a>
@@ -494,7 +494,7 @@ if($canal === "M+ #Vamos" || $canal === "M+ #Vamos Bar 2 (305)" || $canal === "m
     $canalImg = "mvamos";
     $canalop4 = '
     <li>
-        <a class="justify-content-center" href="https://megadeportes.live/embed/repro/?r=Ly9ncmVnb3JzYW1zYS5saWZlL2VtYmVkL2VzL3ZhbW9zLnBocA==">
+        <a class="justify-content-center" href="https://irpc.ga/mg/play/sandbox.php?get=https://megadeportes.live/embed/repro/?r=Ly9ncmVnb3JzYW1zYS5saWZlL2VtYmVkL2VzL3ZhbW9zLnBocA==">
         <i class="flag es"></i>
         Movistar #Vamos | HD
         </a>
