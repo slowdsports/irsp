@@ -4,7 +4,7 @@ $c2 = ucfirst($_GET['c2']); $g2 = $_GET['g2'];
 $index = $_GET['id'];
 
 if(isset($_GET['c'])){
-    $base ="http://acsuajjska.azureedge.net/streams//";
+    $base ="http://cacssaj2.azureedge.net/streams//";
     $file = $base.$c."/playlist.m3u8";
     //echo $file;
     $url = $file;
@@ -14,7 +14,7 @@ if(isset($_GET['c'])){
 	curl_setopt($curl, CURLOPT_RETURNTRANSFER, true);
 
 	$headers = array(
-        "Host: cacksyy12.azureedge.net",
+        "Host: cacssaj2.azureedge.net",
         "Origin: http://crackstreams.biz",
         "Referer: http://crackstreams.biz/",
         "Sec-GPC: 1",
