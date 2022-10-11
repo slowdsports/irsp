@@ -96,6 +96,19 @@ if (isset($_SESSION['message']) ){
             <script async src="https://www.tiktok.com/embed.js"></script>
 
             <!-- *TokTok -->
+            <!-- Star+ -->
+            <div class="col-6 col-sm-4 col-md-3 mycard show">
+                <a href="../star.php">
+                    <div class="card product-card liga-card">
+                        <div class="card-body">
+                            <center>
+                                <img width="48px" src="<?=$app?>assets/img/canales/starplus.png" class="image" alt="product image">
+                                <h2 class="title text-center">Star +</h2>
+                            </center>
+                        </div>
+                    </div>
+                </a>
+            </div>
             <?php
             $ligas = mysqli_query($conn, "select * from ligas ");
             while($result=mysqli_fetch_array($ligas)){
@@ -133,7 +146,7 @@ if (isset($_SESSION['message']) ){
 <!-- End Categorías -->
 <!-- Timer -->
 <script>
-    var yyyy = 2022; var mm = 09; var dd = 06;
+    var yyyy = 2022; var mm = 10; var dd = 11;
 
     var myTime = yyyy+mm+dd;
     var textLive = "<p class='live-text'>En Vivo <ion-icon class='faa-flash animated' name='ellipse'></ion-icon></p>";
