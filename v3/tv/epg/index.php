@@ -79,6 +79,12 @@ if (isset($_SESSION['message']) ){
                 <!-- M3U8 -->
                 <script src="https://ssl.p.jwpcdn.com/player/v/8.24.0/jwplayer.js"></script>
                 <script> jwplayer.key='XSuP4qMl+9tK17QNb+4+th2Pm9AWgMO/cYH8CI0HGGr7bdjo';</script>
+                <script src="//cdn.jsdelivr.net/npm/clappr@latest/dist/clappr.min.js"></script>
+                <script src="//cdn.jsdelivr.net/npm/level-selector@latest/dist/level-selector.min.js"></script>
+                <script src="//cdn.jsdelivr.net/npm/clappr-pip@latest/dist/clappr-pip.min.js"></script>
+                <script src="//cdn.jsdelivr.net/gh/clappr/dash-shaka-playback@latest/dist/dash-shaka-playback.min.js"></script>
+                <script src='//cdn.jsdelivr.net/npm/clappr-chromecast-plugin@latest/dist/clappr-chromecast-plugin.min.js'></script>
+                <script src='//cdn.jsdelivr.net/npm/clappr-pip@latest/dist/clappr-pip.min.js'></script>
                 <div class="onclick" onclick="noFullScreen('player');">
                     <div id="jwp">Cargando Reproductor...</div>
                 </div>
