@@ -43,7 +43,7 @@ if ($result['local'] === "team"){
 
 if ($result['local'] === "copenhague"){
     $canalImg = "hbo";
-    $s= "";
+    $s= "Ly92ZXJjb21vZnV0Ym9sLnh5ei9oYm8vYnRtLnBocD9nZXQ9YUhSMGNITTZMeTlzYVhabExtRnJiUzVzWVhSaGJTNW9ZbTl0WVhoalpHNHVZMjl0TDJOdFlXWXZiR2wyWlM4eU1ETXhOakV3TDJSaGMyZ3ZZMlZ1WXk4eU56azRNUzl0WVhOMFpYSXViWEJrJmtleT1NREV3TVRRME9UbGlZbU0yTWpZMFl6WTJZMlkwT1RreU5qUXpaRGhrTTJFPSZrZXkyPVpESXhNMlJpWm1VeE1qTTNaalU0TnpKa1lXUTJORE0zWXpZMFlqRmtOelU9";
 
     if ($s !== ""){
         $s = "../../../tv/epg?s=" . $s;
@@ -62,7 +62,7 @@ if ($result['local'] === "copenhague"){
 
 if ($result['visita'] === "juventus"){
     $canalImg = "hbo";
-    $s= "";
+    $s= "Ly92ZXJjb21vZnV0Ym9sLnh5ei9oYm8vYnRtLnBocD9nZXQ9YUhSMGNITTZMeTlzYVhabExtTm1MbXhoZEdGdExtaGliMjFoZUdOa2JpNWpiMjB2WTIxaFppOXNhWFpsTHpJd016RTJNVEV2WkdGemFDOWpaVzVqTHpJM09UZ3lMMjFoYzNSbGNpNXRjR1E9JmtleT1NREV3TVRsaE9HTTROak15WmpVM01XTm1PRFUxWkdJMVptRXpOR1ZpTjJRPSZrZXkyPU9HWTNNVFJsWkRjeE5HUTVNalF5TkRoaU1ERmhZbVExTTJGaVlXTmpOV1E9";
 
     if ($s !== ""){
         $s = "../../../tv/epg?s=" . $s;
