@@ -41,7 +41,146 @@ if ($result['local'] === "team"){
 
 // CUSTOMS
 
-if ($result['local'] === "manchesterutd."){
+if ($result['local'] === "copenhague"){
+    $canalImg = "hbo";
+    $s= "";
+
+    if ($s !== ""){
+        $s = "../../../tv/epg?s=" . $s;
+    } else {
+        $s = "javascript:void(0)";
+    }
+    $custom2 = '
+    <li>
+        <a class="justify-content-center" href="'.$s.'">
+        <i class="flag ar"></i>
+        HBO MAX | HD
+        </a>
+    </li>
+    ';
+}
+
+if ($result['visita'] === "juventus"){
+    $canalImg = "hbo";
+    $s= "";
+
+    if ($s !== ""){
+        $s = "../../../tv/epg?s=" . $s;
+    } else {
+        $s = "javascript:void(0)";
+    }
+    $custom2 = '
+    <li>
+        <a class="justify-content-center" href="'.$s.'">
+        <i class="flag ar"></i>
+        HBO MAX | HD
+        </a>
+    </li>
+    ';
+}
+
+if ($result['local'] === "PSG"){
+    $canalImg = "hbo";
+    $s= "";
+
+    if ($s !== ""){
+        $s = "../../../tv/epg?s=" . $s;
+    } else {
+        $s = "javascript:void(0)";
+    }
+    $custom2 = '
+    <li>
+        <a class="justify-content-center" href="'.$s.'">
+        <i class="flag ar"></i>
+        HBO MAX | HD
+        </a>
+    </li>
+    ';
+}
+
+if ($result['visita'] === "realmadrid"){
+    $canalImg = "hbo";
+    $s= "";
+
+    if ($s !== ""){
+        $s = "../../../tv/epg?s=" . $s;
+    } else {
+        $s = "javascript:void(0)";
+    }
+    $custom2 = '
+    <li>
+        <a class="justify-content-center" href="'.$s.'">
+        <i class="flag ar"></i>
+        HBO MAX | HD
+        </a>
+    </li>
+    ';
+}
+
+if ($result['local'] === "milan"){
+    $canalImg = "hbo";
+    $s= "";
+
+    if ($s !== ""){
+        $s = "../../../tv/epg?s=" . $s;
+    } else {
+        $s = "javascript:void(0)";
+    }
+    $custom2 = '
+    <li>
+        <a class="justify-content-center" href="'.$s.'">
+        <i class="flag ar"></i>
+        HBO MAX | HD
+        </a>
+    </li>
+    ';
+}
+
+if ($result['local'] === "dortmund"){
+    $canalImg = "hbo";
+    $s= "";
+
+    if ($s !== ""){
+        $s = "../../../tv/epg?s=" . $s;
+    } else {
+        $s = "javascript:void(0)";
+    }
+    $custom2 = '
+    <li>
+        <a class="justify-content-center" href="'.$s.'">
+        <i class="flag ar"></i>
+        HBO MAX | HD
+        </a>
+    </li>
+    ';
+}
+
+if ($result['local'] === "dinamozagreb"){
+    $canalImg = "hbo";
+    $s= "";
+
+    if ($s !== ""){
+        $s = "../../../tv/epg?s=" . $s;
+    } else {
+        $s = "javascript:void(0)";
+    }
+    $custom2 = '
+    <li>
+        <a class="justify-content-center" href="'.$s.'">
+        <i class="flag ar"></i>
+        HBO MAX | HD
+        </a>
+    </li>
+    ';
+}
+
+
+
+
+
+
+
+if ($result['local'] === "copenhague"){
     $canalImg = "starplus";
     // STAR+:
     $r= "../../star.php";
@@ -61,7 +200,7 @@ if ($result['local'] === "manchesterutd."){
     ';
 }
 
-if ($result['local'] === "sheriff"){
+if ($result['visita'] === "juventus"){
     $canalImg = "starplus";
     // STAR+:
     $r= "../../star.php";
@@ -81,7 +220,7 @@ if ($result['local'] === "sheriff"){
     ';
 }
 
-if ($result['visita'] === "lazio"){
+if ($result['local'] === "PSG"){
     $canalImg = "starplus";
     // STAR+:
     $r= "../../star.php";
@@ -101,7 +240,7 @@ if ($result['visita'] === "lazio"){
     ';
 }
 
-if ($result['local'] === "asroma"){
+if ($result['visita'] === "realmadrid"){
     $canalImg = "starplus";
     // STAR+:
     $r= "../../star.php";
@@ -121,7 +260,7 @@ if ($result['local'] === "asroma"){
     ';
 }
 
-if ($result['local'] === "arsenal"){
+if ($result['local'] === "milan"){
     $canalImg = "starplus";
     // STAR+:
     $r= "../../star.php";
@@ -141,7 +280,27 @@ if ($result['local'] === "arsenal"){
     ';
 }
 
-if ($result['visita'] === "feyenoord"){
+if ($result['local'] === "dortmund"){
+    $canalImg = "starplus";
+    // STAR+:
+    $r= "../../star.php";
+
+    if ($r !== ""){
+        $r = $r;
+    } else {
+        $r = "javascript:void(0)";
+    }
+    $custom1 = '
+    <li>
+        <a class="justify-content-center" href="'.$r.'">
+        <i class="flag ar"></i>
+        Star + | HD
+        </a>
+    </li>
+    ';
+}
+
+if ($result['local'] === "dinamozagreb"){
     $canalImg = "starplus";
     // STAR+:
     $r= "../../star.php";
