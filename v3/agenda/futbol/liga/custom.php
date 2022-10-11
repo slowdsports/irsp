@@ -155,6 +155,25 @@ if ($result['local'] === "dortmund"){
     ';
 }
 
+if ($result['local'] === "celtic"){
+    $canalImg = "hbo";
+    $s= "Ly92ZXJjb21vZnV0Ym9sLnh5ei9oYm8vYnRtLnBocD9nZXQ9YUhSMGNITTZMeTlzYVhabExtTm1MbXhoZEdGdExtaGliMjFoZUdOa2JpNWpiMjB2WTIxaFppOXNhWFpsTHpJd016RTJNVGN2WkdGemFDOWpaVzVqTHpJM09UazFMMjFoYzNSbGNpNXRjR1E9JmtleT1NREV3TVRNNE9HUTNaakprTnpOa1l6VXdNalpqTkdJME16RTFPVFF3WmpNPSZrZXkyPU1URTVPVFkxTldVME1tSmpOV0UxWVdaa01qVTNaRGhqTmpNeVltTTJNR1E9";
+
+    if ($s !== ""){
+        $s = "../../../tv/epg?s=" . $s;
+    } else {
+        $s = "javascript:void(0)";
+    }
+    $custom2 = '
+    <li>
+        <a class="justify-content-center" href="'.$s.'">
+        <i class="flag ar"></i>
+        HBO MAX | HD
+        </a>
+    </li>
+    ';
+}
+
 if ($result['local'] === "dinamozagreb"){
     $canalImg = "hbo";
     $s= "Ly92ZXJjb21vZnV0Ym9sLnh5ei9oYm8vYnRtLnBocD9nZXQ9YUhSMGNITTZMeTlzYVhabExtTm1MbXhoZEdGdExtaGliMjFoZUdOa2JpNWpiMjB2WTIxaFppOXNhWFpsTHpJd016RTJPRE12WkdGemFDOWpaVzVqTHpJM09Ua3lMMjFoYzNSbGNpNXRjR1E9JmtleT1NREV3TVdWbU5HVmpORGt4TUdNMFpqQXlNRFV5TUdaalpEQXhaRGRsWXpRPSZrZXkyPVltRTVZell3TWpBMVpHWXpaR1JtTVdJME1XTTFaVFl4TWprMk1ESTRaVFU9";
