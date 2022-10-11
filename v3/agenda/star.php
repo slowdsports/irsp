@@ -34,7 +34,7 @@ $row=mysqli_fetch_assoc($query);
             if ($link === "#"){
                 $link = "javascript:void(0)";
             } else {
-                $link = str_replace("https://megadeportes.live/eventos/star/?r=", "", $link);
+                $link = str_replace("/eventos/star/?r=", "", $link);
                 $link = "../tv/epg/?r=".$link;
             }
         ?>
