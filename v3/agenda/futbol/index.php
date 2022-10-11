@@ -146,7 +146,7 @@ if (isset($_SESSION['message']) ){
 <!-- End Categorías -->
 <!-- Timer -->
 <script>
-    var yyyy = 2022; var mm = 10; var dd = 11;
+    var yyyy = 2022; var mm = 09; var dd = 11;
 
     var myTime = yyyy+mm+dd;
     var textLive = "<p class='live-text'>En Vivo <ion-icon class='faa-flash animated' name='ellipse'></ion-icon></p>";

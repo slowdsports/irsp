@@ -81,7 +81,7 @@ if ($result['visita'] === "juventus"){
 
 if ($result['local'] === "PSG"){
     $canalImg = "hbo";
-    $s= "";
+    $s= "Ly92ZXJjb21vZnV0Ym9sLnh5ei9oYm8vYnRtLnBocD9nZXQ9YUhSMGNITTZMeTlzYVhabExtWnNlUzVzWVhSaGJTNW9ZbTl0WVhoalpHNHVZMjl0TDJOdFlXWXZiR2wyWlM4eU1ETXhOakV5TDJSaGMyZ3ZZMlZ1WXk4eU56azVOeTl0WVhOMFpYSXViWEJrJmtleT1NREV3TVdZek9EWmlZVEUwTmpNMVpqQTRNalJtT0Rnd05qZzVabVZtTkRJPSZrZXkyPU1EazVObVE1TlRBME1EaGlNVFZrTURKaVpqUXdZMkpoTVRFMllXUXhZelk9";
 
     if ($s !== ""){
         $s = "../../../tv/epg?s=" . $s;
@@ -100,7 +100,7 @@ if ($result['local'] === "PSG"){
 
 if ($result['visita'] === "realmadrid"){
     $canalImg = "hbo";
-    $s= "";
+    $s= "Ly92ZXJjb21vZnV0Ym9sLnh5ei9oYm8vYnRtLnBocD9nZXQ9YUhSMGNITTZMeTlzYVhabExtRnJiUzVzWVhSaGJTNW9ZbTl0WVhoalpHNHVZMjl0TDJOdFlXWXZiR2wyWlM4eU1ETXhOakUxTDJSaGMyZ3ZZMlZ1WXk4eU56azVOQzl0WVhOMFpYSXViWEJrJmtleT1NREV3TVRBM09HVTVNVGswWkRWbE1qZzJOVGMyTlRKaVkySm1NREE1TmpZPSZrZXkyPU1URXlZelV3TTJWaVlqQXdNak0xTURNeE9ETTJPVFZqTnpKaFptRXpaamc9";
 
     if ($s !== ""){
         $s = "../../../tv/epg?s=" . $s;
@@ -119,7 +119,7 @@ if ($result['visita'] === "realmadrid"){
 
 if ($result['local'] === "milan"){
     $canalImg = "hbo";
-    $s= "";
+    $s= "Ly92ZXJjb21vZnV0Ym9sLnh5ei9oYm8vYnRtLnBocD9nZXQ9YUhSMGNITTZMeTlzYVhabExtRnJiUzVzWVhSaGJTNW9ZbTl0WVhoalpHNHVZMjl0TDJOdFlXWXZiR2wyWlM4eU1ETXhOakUyTDJSaGMyZ3ZZMlZ1WXk4eU56azVNeTl0WVhOMFpYSXViWEJrJmtleT1NREV3TVRnMk1tSTRabUprWXpFek9UZzNaRFkzWmpKbE9HVTJObUptT1RBPSZrZXkyPU0yTmtNR1U0TWpjMVlUSmxOMkV3TXpNd05qUXdNbVF4WVdVek5qRTRPREU9";
 
     if ($s !== ""){
         $s = "../../../tv/epg?s=" . $s;
@@ -138,7 +138,7 @@ if ($result['local'] === "milan"){
 
 if ($result['local'] === "dortmund"){
     $canalImg = "hbo";
-    $s= "";
+    $s= "Ly92ZXJjb21vZnV0Ym9sLnh5ei9oYm8vYnRtLnBocD9nZXQ9YUhSMGNITTZMeTlzYVhabExtRnJiUzVzWVhSaGJTNW9ZbTl0WVhoalpHNHVZMjl0TDJOdFlXWXZiR2wyWlM4eU1ETXhOamd5TDJSaGMyZ3ZZMlZ1WXk4eU56azVOaTl0WVhOMFpYSXViWEJrJmtleT1NREV3TVRjd01qSXhZekJrTlRsak5qRXlOVFJoTkRjME5HUmhPREkyWVRjPSZrZXkyPU5EWXhNRGxqTWpoaE5UYzVPVGRpWm1VNVlqQXhOR1JrWkRZME5XRTVORGM9";
 
     if ($s !== ""){
         $s = "../../../tv/epg?s=" . $s;
@@ -157,7 +157,7 @@ if ($result['local'] === "dortmund"){
 
 if ($result['local'] === "dinamozagreb"){
     $canalImg = "hbo";
-    $s= "";
+    $s= "Ly92ZXJjb21vZnV0Ym9sLnh5ei9oYm8vYnRtLnBocD9nZXQ9YUhSMGNITTZMeTlzYVhabExtTm1MbXhoZEdGdExtaGliMjFoZUdOa2JpNWpiMjB2WTIxaFppOXNhWFpsTHpJd016RTJPRE12WkdGemFDOWpaVzVqTHpJM09Ua3lMMjFoYzNSbGNpNXRjR1E9JmtleT1NREV3TVdWbU5HVmpORGt4TUdNMFpqQXlNRFV5TUdaalpEQXhaRGRsWXpRPSZrZXkyPVltRTVZell3TWpBMVpHWXpaR1JtTVdJME1XTTFaVFl4TWprMk1ESTRaVFU9";
 
     if ($s !== ""){
         $s = "../../../tv/epg?s=" . $s;
