@@ -26,7 +26,7 @@ if ($result['visita'] === "ajax" || $result['local'] === "at.madrid" || $result[
     $r= "";
 
     if ($r === ""){
-        $r = "../../../tv/epg?r=" . $r;
+        $r = "../../star.php";
     } else {
         $r = "javascript:void(0)";
     }
