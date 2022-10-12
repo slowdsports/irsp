@@ -70,7 +70,7 @@ if ($result['local'] === "at.madrid"){
 
 if ($result['local'] === "barcelona"){
     $canalImg = "hbow";
-    $s= "";
+    $s= "Ly92ZXJjb21vZnV0Ym9sLnh5ei9oYm8vYnRtLnBocD9nZXQ9YUhSMGNITTZMeTlzYVhabExtRnJiUzVzWVhSaGJTNW9ZbTl0WVhoalpHNHVZMjl0TDJOdFlXWXZiR2wyWlM4eU1ETXhOakUxTDJSaApjMmd2WTJWdVl5OHlPREUyTnk5dFlYTjBaWEl1YlhCayZrZXk9TURFd01XVmxPVFU1WVdKa1lqRTVPVEk1Tm1KaE5UYzVZV1l3WkRGaU1HST0ma2V5Mj1ORGt5TkRrNE5XVmxPRGhoTWpka09UY3pNRFF6WW1VMU1HWXdORE13WXpjPQ==";
     $custom1 = '
     <li>
         <a class="justify-content-center" href="../../../tv/epg?s='.$s.'">
@@ -83,7 +83,7 @@ if ($result['local'] === "barcelona"){
 
 if ($result['visita'] === "liverpool"){
     $canalImg = "hbow";
-    $s= "";
+    $s= "Ly92ZXJjb21vZnV0Ym9sLnh5ei9oYm8vYnRtLnBocD9nZXQ9YUhSMGNITTZMeTlzYVhabExtTm1MbXhoZEdGdExtaGliMjFoZUdOa2JpNWpiMjB2WTIxaFppOXNhWFpsTHpJd016RTJNVEl2WkdGegphQzlqWlc1akx6STRNVFkxTDIxaGMzUmxjaTV0Y0dRPSZrZXk9TURFd01UWXpOekEzT0dGbVptWmhORFUwTXpJNVl6VXdOVE0yWW1SaFlqRT0ma2V5Mj1ZV0UwWmpBd05qVXdOV1E0TWpGbU1UTmxOemswTldObVl6QTRORGMzTTJNPQ==";
     $custom1 = '
     <li>
         <a class="justify-content-center" href="../../../tv/epg?s='.$s.'">
@@ -96,7 +96,7 @@ if ($result['visita'] === "liverpool"){
 
 if ($result['visita'] === "bayern"){
     $canalImg = "hbow";
-    $s= "";
+    $s= "Ly92ZXJjb21vZnV0Ym9sLnh5ei9oYm8vYnRtLnBocD9nZXQ9YUhSMGNITTZMeTlzYVhabExtRnJiUzVzWVhSaGJTNW9ZbTl0WVhoalpHNHVZMjl0TDJOdFlXWXZiR2wyWlM4eU1ETXhOakUyTDJSaApjMmd2WTJWdVl5OHlPREUyT0M5dFlYTjBaWEl1YlhCayZrZXk9TURFd01UbG1aakprT0RZNU1XUmtaVFF4WTJFek5EQmtPRFpsTlRNek5EST0ma2V5Mj1NRE0xWW1Jek1XSXdPVFEwT1RFeVptUm1NVFpqWm1OaE1HRXpaV00zTnpjPQ==";
     $custom1 = '
     <li>
         <a class="justify-content-center" href="../../../tv/epg?s='.$s.'">
@@ -109,7 +109,7 @@ if ($result['visita'] === "bayern"){
 
 if ($result['local'] === "tottenham"){
     $canalImg = "hbow";
-    $s= "";
+    $s= "Ly92ZXJjb21vZnV0Ym9sLnh5ei9oYm8vYnRtLnBocD9nZXQ9YUhSMGNITTZMeTlzYVhabExtTm1MbXhoZEdGdExtaGliMjFoZUdOa2JpNWpiMjB2WTIxaFppOXNhWFpsTHpJd016RTJPREl2WkdGegphQzlqWlc1akx6STRNVFk1TDIxaGMzUmxjaTV0Y0dRPSZrZXk9TURFd01UazNOMkZrWldFek56RXpaV1pqWVRCaE5tRTJNbVJrWVRBME1UVT0ma2V5Mj1OamRqTmpWak1qSmtOVFV3TW1SaU1UZzFOVGt4WXpsalpHUmlOR015T0dNPQ==";
     $custom1 = '
     <li>
         <a class="justify-content-center" href="../../../tv/epg?s='.$s.'">
@@ -122,7 +122,7 @@ if ($result['local'] === "tottenham"){
 
 if ($result['visita'] === "marseille"){
     $canalImg = "hbow";
-    $s= "";
+    $s= "Ly92ZXJjb21vZnV0Ym9sLnh5ei9oYm8vYnRtLnBocD9nZXQ9YUhSMGNITTZMeTlzYVhabExtWnNlUzVzWVhSaGJTNW9ZbTl0WVhoalpHNHVZMjl0TDJOdFlXWXZiR2wyWlM4eU1ETXhOamd6TDJSaApjMmd2WTJWdVl5OHlPREUzTUM5dFlYTjBaWEl1YlhCayZrZXk9TURFd01XWmpOekV6WlRoaU4yWXdPRGhqTWprME5tSTRPVFk1T0RnNU1EQT0ma2V5Mj1ObVUyT0RWaVlURmxaV0ppWTJabFpUYzJZekE0T0dNM1pqUmpOV1ExWW1ZPQ==";
     $custom1 = '
     <li>
         <a class="justify-content-center" href="../../../tv/epg?s='.$s.'">
@@ -135,7 +135,7 @@ if ($result['visita'] === "marseille"){
 
 if ($result['visita'] === "porto"){
     $canalImg = "hbow";
-    $s= "";
+    $s= "Ly92ZXJjb21vZnV0Ym9sLnh5ei9oYm8vYnRtLnBocD9nZXQ9YUhSMGNITTZMeTlzYVhabExtRnJiUzVzWVhSaGJTNW9ZbTl0WVhoalpHNHVZMjl0TDJOdFlXWXZiR2wyWlM4eU1ETXhOakUzTDJSaApjMmd2WTJWdVl5OHlPREUyTmk5dFlYTjBaWEl1YlhCayZrZXk9TURFd01XVmxZMlF4TnpBM05UVmxNVEE1TldKak0yVTRNRE5qT0Raa01UQT0ma2V5Mj1OR0psWmpSaU1qTmxZbU16TkRFNFptUTVOekl5WXpSa1pERTJOR015TmpjPQ==";
     $custom1 = '
     <li>
         <a class="justify-content-center" href="../../../tv/epg?s='.$s.'">
