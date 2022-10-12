@@ -1,16 +1,17 @@
 <?php
 session_start();
 $_SESSION['referer'] = "//" . $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URI'];
-if (!isset($_SESSION['id']) ||(trim ($_SESSION['id']) == '')) {
+if (!isset($_SESSION['id']) || (trim($_SESSION['id']) == '')) {
     header("location: ../login.php");
 } else
-include('../inc/header.php'); include('../conn.php');
-$query=mysqli_query($conn,"select * from user where userid='".$_SESSION['id']."'");
-$row=mysqli_fetch_assoc($query);
+    include('../inc/header.php');
+include('../conn.php');
+$query = mysqli_query($conn, "select * from user where userid='" . $_SESSION['id'] . "'");
+$row = mysqli_fetch_assoc($query);
 // Si el usuario es free
-if ($row['type'] == 2 && $row['fecha'] == null){
+if ($row['type'] == 2 && $row['fecha'] == null) {
     $_SESSION['userType'] = "free";
-    header ("location: ../premium-upgrade.php");
+    header("location: ../premium-upgrade.php");
 }
 ?>
 
@@ -18,27 +19,32 @@ if ($row['type'] == 2 && $row['fecha'] == null){
 <!-- App Capsule -->
 <div id="appCapsule" class="extra-header-active">
 
-<?php
-if (isset($_SESSION['message']) ){
-    echo '
+    <?php
+    if (isset($_SESSION['message'])) {
+        echo '
     <div class="alert alert-danger alert-dismissible fade show text-center" role="alert">
-        '.$_SESSION['message'].'
+        ' . $_SESSION['message'] . '
         <button type="button" class="close" data-dismiss="alert" aria-label="Close">
         <span aria-hidden="true">&times;</span>
         </button>
     </div>
     ';
-    unset($_SESSION['message']);
-}
-?>
-<div class="container">
-    <div class="header-large-title container">
-        <h1 class="title"><?php if(!isset($_SESSION['id']) ||(trim ($_SESSION['id']) == '')){ $fullname = "Invitado"; } else{ $fullname = ucfirst($row['fullname']); } echo $fullname; ?></h1>
-        <h4 class="subtitle">¿Qué quieres ver hoy?</h4>
+        unset($_SESSION['message']);
+    }
+    ?>
+    <div class="container">
+        <div class="header-large-title container">
+            <h1 class="title"><?php if (!isset($_SESSION['id']) || (trim($_SESSION['id']) == '')) {
+                                    $fullname = "Invitado";
+                                } else {
+                                    $fullname = ucfirst($row['fullname']);
+                                }
+                                echo $fullname; ?></h1>
+            <h4 class="subtitle">¿Qué quieres ver hoy?</h4>
+        </div>
     </div>
-</div>
 
-<!-- Alerta --
+    <!-- Alerta --
 <br>
 <div class="container">
     <div class="alert alert-info text-center" role="alert">
@@ -48,7 +54,7 @@ if (isset($_SESSION['message']) ){
 <br>
 <!-- *Alerta -->
 
-<!-- Filter --
+    <!-- Filter --
 <style>
     .mycard {
         display: none;
@@ -69,11 +75,11 @@ if (isset($_SESSION['message']) ){
             </div>
             <?php
             $categ = mysqli_query($conn, "select * from categories");
-            while($cat=mysqli_fetch_array($categ)){
+            while ($cat = mysqli_fetch_array($categ)) {
             ?>
-            <div class="item" onclick="filterSelection('<?=$cat['categoryName']?>')">
-                <ion-icon size="large" name="<?=$cat['categoryIcon']?>-outline"></ion-icon>
-                <p class="text-center"><?=$cat['categoryName']?></p>
+            <div class="item" onclick="filterSelection('<?= $cat['categoryName'] ?>')">
+                <ion-icon size="large" name="<?= $cat['categoryIcon'] ?>-outline"></ion-icon>
+                <p class="text-center"><?= $cat['categoryName'] ?></p>
             </div>
             <?php } ?>
         </div>
@@ -81,20 +87,22 @@ if (isset($_SESSION['message']) ){
 </div>
 <!-- *Filter -->
 
-<!-- Search Form -->
-<div class="extraHeader">
-    <div class="container">
-        <form class="search-form">
-            <div class="form-group searchbox">
-                <input id="channelSearch" onkeyup="myFunction()" type="text" class="form-control" placeholder="Buscar..." />
-                <i class="input-icon"> <ion-icon name="search-outline" role="img" class="md hydrated" aria-label="search outline"></ion-icon> </i>
-            </div>
-        </form>
+    <!-- Search Form -->
+    <div class="extraHeader">
+        <div class="container">
+            <form class="search-form">
+                <div class="form-group searchbox">
+                    <input id="channelSearch" onkeyup="myFunction()" type="text" class="form-control" placeholder="Buscar..." />
+                    <i class="input-icon">
+                        <ion-icon name="search-outline" role="img" class="md hydrated" aria-label="search outline"></ion-icon>
+                    </i>
+                </div>
+            </form>
+        </div>
     </div>
-</div>
-<!-- * Search Form -->
+    <!-- * Search Form -->
 
-<!-- Categorías -->
+    <!-- Categorías -->
     <div class="section mt-2">
         <div class="container">
             <div id="channelsList" class="row">
@@ -102,15 +110,15 @@ if (isset($_SESSION['message']) ){
                 ?>
                 <!-- Pluto TV -->
                 <div class="col-6 col-sm-4 col-md-3 col-lg-2 col-xl-2 mycard Entretenimiento show">
-                    <a href="<?=$referer?>?pluto">
+                    <a href="<?= $referer ?>?pluto">
                         <form method="get">
                             <div class="card product-card liga-card">
                                 <div class="card-body">
                                     <center>
-                                    <img width="48px" src="https://i.ibb.co/w0qg9JF/trans.png" style="background-image: url('<?=$app?>/assets/img/canales/plutotvw.png');
+                                        <img width="48px" src="https://i.ibb.co/w0qg9JF/trans.png" style="background-image: url('<?= $app ?>/assets/img/canales/plutotvw.png');
                                     background-size: contain;
                                     background-repeat: no-repeat" class="image" alt="product image">
-                                    <h2 class="title text-center">Pluto TV</h2>
+                                        <h2 class="title text-center">Pluto TV</h2>
                                     </center>
                                 </div>
                             </div>
@@ -121,98 +129,140 @@ if (isset($_SESSION['message']) ){
                 <?php
                 $categ = $_GET['categ'];
                 $cntry = $_GET['cntry'];
-                if(isset($categ)){
+                if (isset($categ)) {
                     $channels = mysqli_query($conn, "select * from channels
                     INNER JOIN categories ON channels.category = categories.categoryId
                     INNER JOIN countries ON channels.country = countries.countryId
                     where category IN ('$categ') ORDER BY category DESC");
-                } elseif(isset($cntry)){
+                } elseif (isset($cntry)) {
                     $channels = mysqli_query($conn, "select * from channels
                     INNER JOIN categories ON channels.category = categories.categoryId
                     INNER JOIN countries ON channels.country = countries.countryId
                     where country IN ('$cntry') ORDER BY category DESC");
-                }
-                elseif(isset($_GET['pluto'])){
+                } elseif (isset($_GET['pluto'])) {
                     $channels = mysqli_query($conn, "select * from channels
                     INNER JOIN categories ON channels.category = categories.categoryId
                     INNER JOIN countries ON channels.country = countries.countryId
                     where type IN ('8') ORDER BY category DESC");
                 } else {
-                $channels = mysqli_query($conn, "select * from channels
-                INNER JOIN categories ON channels.category = categories.categoryId
-                    INNER JOIN countries ON channels.country = countries.countryId
-                    where type IN ('1','2','3','4','6','7','9','10') ORDER BY category DESC");
+                    // $channels = mysqli_query($conn, "select * from channels
+                    // INNER JOIN categories ON channels.category = categories.categoryId
+                    //     INNER JOIN countries ON channels.country = countries.countryId
+                    //     where type IN ('1','2','3','4','6','7','9','10') ORDER BY category DESC LIMIT 5");
+
+
+                    $count_query = "SELECT count(*) as allcount FROM channels";
+                    $count_result = mysqli_query($conn, $count_query);
+                    $count_fetch = mysqli_fetch_array($count_result);
+                    $postCount = $count_fetch['allcount'];
+                    $limit = 30;
+                    $query = "SELECT * FROM channels ORDER BY channelId desc LIMIT 0," . $limit;
+                    $channels = mysqli_query($conn, $query);
                 }
-                while($result=mysqli_fetch_array($channels)){
+                //while($result=mysqli_fetch_array($channels)){
+                while ($result = mysqli_fetch_assoc($channels)) {
                 ?>
-                <!-- Elemento -->
-                <div class="col-6 col-sm-4 col-md-3 col-lg-2 col-xl-2 mycard <?=$result['categoryName']?>">
-                    <a href="<?=$app?>/tv/epg?url=<?=$result['epg']?>&c=<?=$result['channelId']?>">
-                        <div class="card product-card liga-card">
-                            <div class="card-body">
-                                <center>
-                                <img width="48px" src="https://i.ibb.co/w0qg9JF/trans.png" style="background-image: url('<?=$app?>/assets/img/canales/<?=$result['channelImg']?>.png');
+                    <!-- Elemento -->
+                    <div class="col-6 col-sm-4 col-md-3 col-lg-2 col-xl-2 mycard <?= $result['categoryName'] ?>">
+                        <a href="<?= $app ?>/tv/epg?url=<?= $result['epg'] ?>&c=<?= $result['channelId'] ?>">
+                            <div class="card product-card liga-card">
+                                <div class="card-body">
+                                    <center>
+                                        <img width="48px" src="https://i.ibb.co/w0qg9JF/trans.png" style="background-image: url('<?= $app ?>/assets/img/canales/<?= $result['channelImg'] ?>.png');
                                 background-size: contain;
                                 background-repeat: no-repeat" class="image" alt="product image">
-                                <h2 class="title text-center"><?=strtoupper($result['channelName'])?></h2>
-                                </center>
+                                        <h2 class="title text-center"><?= strtoupper($result['channelName']) ?></h2>
+                                    </center>
+                                </div>
                             </div>
-                        </div>
-                    </a>
-                </div>
-                <!-- End Elemento -->
-                <?}?>
+                        </a>
+                    </div>
+                    <!-- End Elemento -->
+                <? } ?>
 
+            </div>
+            <div class="loadmore">
+                <input class="btn btn-primary btn-lg btn-block" type="button" id="loadBtn" value="Cargar más">
+                <input type="hidden" id="row" value="0">
+                <input type="hidden" id="postCount" value="<?php echo $postCount; ?>">
             </div>
         </div>
     </div>
-<!-- End Categorías -->
-<script>
-filterSelection("all");
-function filterSelection(c) {
-    var x, i;
-    x = document.getElementsByClassName("mycard");
-    if (c == "all") c = "";
-    for (i = 0; i < x.length; i++) {
-        irspRemoveClass(x[i], "show");
-        if (x[i].className.indexOf(c) > -1) irspAddClass(x[i], "show");
-    }
-}
+    <!-- End Categorías -->
+    <script>
+        filterSelection("all");
 
-function irspAddClass(element, name) {
-    var i, arr1, arr2;
-    arr1 = element.className.split(" ");
-    arr2 = name.split(" ");
-    for (i = 0; i < arr2.length; i++) {
-        if (arr1.indexOf(arr2[i]) == -1) {
-            element.className += " " + arr2[i];
+        function filterSelection(c) {
+            var x, i;
+            x = document.getElementsByClassName("mycard");
+            if (c == "all") c = "";
+            for (i = 0; i < x.length; i++) {
+                irspRemoveClass(x[i], "show");
+                if (x[i].className.indexOf(c) > -1) irspAddClass(x[i], "show");
+            }
         }
-    }
-}
 
-function irspRemoveClass(element, name) {
-    var i, arr1, arr2;
-    arr1 = element.className.split(" ");
-    arr2 = name.split(" ");
-    for (i = 0; i < arr2.length; i++) {
-        while (arr1.indexOf(arr2[i]) > -1) {
-            arr1.splice(arr1.indexOf(arr2[i]), 1);
+        function irspAddClass(element, name) {
+            var i, arr1, arr2;
+            arr1 = element.className.split(" ");
+            arr2 = name.split(" ");
+            for (i = 0; i < arr2.length; i++) {
+                if (arr1.indexOf(arr2[i]) == -1) {
+                    element.className += " " + arr2[i];
+                }
+            }
         }
-    }
-    element.className = arr1.join(" ");
-}
 
-// Add active class to the current button (highlight it)
-var btnContainer = document.getElementById("myBtnContainer");
-var btns = btnContainer.getElementsByClassName("item");
-for (var i = 0; i < btns.length; i++) {
-    btns[i].addEventListener("click", function () {
-        var current = document.getElementsByClassName("active");
-        current[0].className = current[0].className.replace(" active", "");
-        this.className += " active";
-    });
-}
-</script>
-<?php
-include('../inc/navbar.php');
-?>
+        function irspRemoveClass(element, name) {
+            var i, arr1, arr2;
+            arr1 = element.className.split(" ");
+            arr2 = name.split(" ");
+            for (i = 0; i < arr2.length; i++) {
+                while (arr1.indexOf(arr2[i]) > -1) {
+                    arr1.splice(arr1.indexOf(arr2[i]), 1);
+                }
+            }
+            element.className = arr1.join(" ");
+        }
+
+        // Add active class to the current button (highlight it)
+        var btnContainer = document.getElementById("myBtnContainer");
+        var btns = btnContainer.getElementsByClassName("item");
+        for (var i = 0; i < btns.length; i++) {
+            btns[i].addEventListener("click", function() {
+                var current = document.getElementsByClassName("active");
+                current[0].className = current[0].className.replace(" active", "");
+                this.className += " active";
+            });
+        }
+    </script>
+    <?php
+    include('../inc/navbar.php');
+    ?>
+    <script>
+        $(document).ready(function() {
+            $(document).on('click', '#loadBtn', function() {
+                var row = Number($('#row').val());
+                var count = Number($('#postCount').val());
+                var limit = 3;
+                row = row + limit;
+                $('#row').val(row);
+                $("#loadBtn").val('Cargando...');
+
+                $.ajax({
+                    type: 'POST',
+                    url: 'loadmore-data.php',
+                    data: 'row=' + row,
+                    success: function(data) {
+                        var rowCount = row + limit;
+                        $('#channelsList').append(data);
+                        if (rowCount >= count) {
+                            $('#loadBtn').css("display", "none");
+                        } else {
+                            $("#loadBtn").val('Cargar más...');
+                        }
+                    }
+                });
+            });
+        });
+    </script>
