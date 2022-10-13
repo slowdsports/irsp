@@ -137,8 +137,8 @@ if ($result['ligaImg'] == 18){
     $local = str_replace("eintrachtfrankfurt", "Eintracht", $local);
     $visita = str_replace("eintrachtfrankfurt", "Eintracht", $visita);
 
-    //Europa
-    if ($result['liga'] == 4){
+    //Europa & Conference
+    if ($result['liga'] == 4 || $result['liga'] == 16){
         $local = str_replace('bodoglimt', 'Bodo Glimt', $local);
         $local = str_replace('dynamokiev', 'Dynamo Kiev', $local);
         $local = str_replace('aek larnaca', 'AEK Larnaca', $local);
@@ -150,6 +150,12 @@ if ($result['ligaImg'] == 18){
         $local = str_replace('unionberlin', 'Unión Berlín', $local);
         $local = str_replace('malm', 'Malmö', $local);
         $local = str_replace('estrellaroja', 'Estrella Roja', $local);
+        $local = str_replace('slovanbratislava', 'Bratislava', $local);
+        $local = str_replace('slaviapraga', 'Slavia Praga', $local);
+        $local = str_replace('hapoelbeersheva', 'Hapoel Beer', $local);
+        $local = str_replace('lechpoznan', 'Lech Poznan', $local);
+        $local = str_replace('shamrockrovers', 'Shamrock Rovers', $local);
+        $local = str_replace('fcsb', 'FCSB', $local);
 
         $visita = str_replace('bodoglimt', 'Bodo Glimt', $visita);
         $visita = str_replace('dynamokiev', 'Dynamo Kiev', $visita);
@@ -162,6 +168,12 @@ if ($result['ligaImg'] == 18){
         $visita = str_replace('uniónberlin', 'Unión Berlín', $visita);
         $visita = str_replace('malm', 'Malmö', $visita);
         $visita = str_replace('estrellaroja', 'Estrella Roja', $visita);
+        $visita = str_replace('slovanbratislava', 'Bratislava', $visita);
+        $visita = str_replace('slaviapraga', 'Slavia Praga', $visita);
+        $visita = str_replace('hapoelbeersheva', 'Hapoel Beer', $visita);
+        $visita = str_replace('lechpoznan', 'Lech Poznan', $visita);
+        $visita = str_replace('shamrockrovers', 'Shamrock Rovers', $visita);
+        $visita = str_replace('fcsb', 'FCSB', $visita);
     }
 
     //Liga PRO Ecuador
