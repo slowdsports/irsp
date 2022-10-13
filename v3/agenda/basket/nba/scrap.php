@@ -1,10 +1,9 @@
 <?php
 session_start();
 $_SESSION['referer'] = "//" . $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URI'];
-include('../../inc/header.php'); include('../../conn.php');
+include('../../../inc/header.php'); include('../../../conn.php');
 $query=mysqli_query($conn,"select * from user where userid='".$_SESSION['id']."'");
 $row=mysqli_fetch_assoc($query);
-
 
 include('stream.php');
 ?>
@@ -37,23 +36,23 @@ if (isset($_SESSION['message']) ){
             <div class="row">
                 <!-- NBA TV -->
                 <div style="" class="col-6">
-                    <a href="../../tv/epg?url=epg&c=588">
+                    <a href="../../../tv/epg?url=epg&c=225">
                         <div class="card product-card liga-card">
                             <div class="card-body">
                                 <center>
-                                    <img width="48px" src="https://i.ibb.co/w0qg9JF/trans.png" style="background-image: url('../../assets/img/ligas/nfl.png'); background-size: contain; background-repeat: no-repeat;" class="image" alt="product image" />
-                                    <h2 class="title text-center">MLB Network</h2>
+                                    <img width="48px" src="https://i.ibb.co/w0qg9JF/trans.png" style="background-image: url('../../../assets/img/ligas/nba.png'); background-size: contain; background-repeat: no-repeat;" class="image" alt="product image" />
+                                    <h2 class="title text-center">NBA TV</h2>
                                 </center>
                             </div>
                         </div>
                     </a>
                 </div>
                 <div style="" class="col-6">
-                    <a href="../../tv/epg?url=epg&c=564">
+                    <a href="../../../tv/epg?url=epg&c=564">
                         <div class="card product-card liga-card">
                             <div class="card-body">
                                 <center>
-                                    <img width="48px" src="https://i.ibb.co/w0qg9JF/trans.png" style="background-image: url('../../assets/img/canales/espn.png'); background-size: contain; background-repeat: no-repeat;" class="image" alt="product image" />
+                                    <img width="48px" src="https://i.ibb.co/w0qg9JF/trans.png" style="background-image: url('../../../assets/img/canales/espn.png'); background-size: contain; background-repeat: no-repeat;" class="image" alt="product image" />
                                     <h2 class="title text-center">ESPN</h2>
                                 </center>
                             </div>
@@ -63,17 +62,21 @@ if (isset($_SESSION['message']) ){
                 <hr>
                 <!-- NBA TV -->
                 <?php
-                $getLiga = $_GET['id'];
-                $ligas = mysqli_query($conn, "select * from agenda
-                INNER JOIN ligas ON agenda.liga = ligas.ligaId
-                where liga = 22 and status=1");
-                while($result=mysqli_fetch_array($ligas)){
-                    // Teams
-                    $local = $result['local'];
-                    $visita = $result['visita'];
-                    $index = $result['id'];
+                include('../../../inc/scraper.php');
+                // CALL URL CUSTOMIZED
+                $baseUrl = "http://crackstreams.biz/nbastreams/";
+                // get DOM from URL or file
+                $html = file_get_html($baseUrl);
+                // MAIN ELEMENT
+                $juego = $html ->find ('div.ctpage');
+                foreach ($juego as $nombre){
+                    // CONDITIONS
+                    $evento = $nombre ->find('a div.media div.media-body h4',0) -> plaintext;
+                    $link = $nombre ->find('a',0) -> href;
+                    $fecha = $nombre ->find('a div.media div.media-body p',0) -> plaintext;
+
                     include('teams.php');
-                    include('../../inc/cntdwn.php');
+                    include('../../../inc/cntdwn.php');
                 ?>
                 <!-- Elemento -->
                 <div class="col-12 mycard">
@@ -86,15 +89,7 @@ if (isset($_SESSION['message']) ){
                                 </div>
                                 <div class="match">
                                     <div class="team">
-                                        <img width="60px" src="<?=$app?>assets/img/equipos/<?=strtolower($result['ligaImg'])?>/<?=str_replace(' ', '', strtolower($local)); ?>.png" alt="" />
-                                        <h4><?=ucfirst($local)?></h4>
-                                    </div>
-                                    <div class="vs">
-                                        <h6>vs</h6>
-                                    </div>
-                                    <div class="team">
-                                        <img width="60px" src="<?=$app?>assets/img/equipos/<?=strtolower($result['ligaImg'])?>/<?=str_replace(' ', '', strtolower($visita)); ?>.png" alt="" />
-                                        <h4><?=ucfirst($visita)?></h4>
+                                        <h4><?=ucfirst($evento)?></h4>
                                     </div>
                                 </div>
                                 <div class="channel">
@@ -107,13 +102,13 @@ if (isset($_SESSION['message']) ){
                         <div class="card card-body">
                             <ul class="listview link-listview">
                                 <li>
-                                    <a class="justify-content-center" href="?c=<?=$local?>&c2=<?=strtolower($visita)?>&id=<?=$index?>">
+                                    <a class="justify-content-center" href="?c=<?=$local?>&c2=<?=$visita?>&id=<?=$index?>">
                                         <i class="flag us"></i>
                                         MLB Network - [OP1] <?=ucfirst($local)?> | HD
                                     </a>
                                 </li>
                                 <li>
-                                    <a class="justify-content-center" href="?g=<?=$local?>&g2=<?=strtolower($visita)?>&id=<?=$index?>">
+                                    <a class="justify-content-center" href="?g=<?=$local?>&g2=<?=$visita?>&id=<?=$index?>">
                                         <i class="flag us"></i>
                                         MLB Network - [OP2] <?=ucfirst($local)?> | HD
                                     </a>
@@ -123,16 +118,6 @@ if (isset($_SESSION['message']) ){
                                 // Canales
                                 include ('custom.php');
                                 include('channels.php');
-                                if ($result['canal'] !== null){
-                                    $canal1 = $result['canal'];
-                                    $custom1 = '
-                                    <li>
-                                    <a class="justify-content-center" href="'.$canal1.'">
-                                        <i class="flag us"></i>
-                                        CKST - OP Adicional
-                                    </a>
-                                </li>';
-                                }
                                 // Canal 2
                                 echo $canalop2;
                                 echo $canal2;
@@ -155,7 +140,7 @@ if (isset($_SESSION['message']) ){
                                 } else{
                                 ?>
                                 <li>
-                                    <a class="justify-content-center" href="../../tv/epg/?c=<?=$row['channelId']?>">
+                                    <a class="justify-content-center" href="../../../tv/epg/?c=<?=$row['channelId']?>">
                                         <i class="flag <?=$row['countryImg']?>"></i>
                                         <?=$row['channelName']?>
                                     </a>
@@ -174,7 +159,7 @@ if (isset($_SESSION['message']) ){
                                 } else{
                                 ?>
                                 <li>
-                                    <a class="justify-content-center" href="../../tv/epg/?c=<?=$row['channelId']?>">
+                                    <a class="justify-content-center" href="../../../tv/epg/?c=<?=$row['channelId']?>">
                                         <i class="flag <?=$row['countryImg']?>"></i>
                                         <?=$row['channelName']?>
                                     </a>
@@ -193,7 +178,7 @@ if (isset($_SESSION['message']) ){
                                 } else{
                                 ?>
                                 <li>
-                                    <a class="justify-content-center" href="../../tv/epg/?c=<?=$row['channelId']?>">
+                                    <a class="justify-content-center" href="../../../tv/epg/?c=<?=$row['channelId']?>">
                                         <i class="flag <?=$row['countryImg']?>"></i>
                                         <?=$row['channelName']?>
                                     </a>
@@ -211,5 +196,5 @@ if (isset($_SESSION['message']) ){
     </div>
 <!-- End Categorías -->
 <?php
-include('../../inc/navbar.php');
+include('../../../inc/navbar.php');
 ?>
