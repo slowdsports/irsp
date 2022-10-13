@@ -123,11 +123,11 @@ if (isset($_SESSION['message']) ){
                                 // Canales
                                 include ('custom.php');
                                 include('channels.php');
-                                if ($result['canal'] !== null){
-                                    $canal1 = $result['canal'];
+                                if ($result['canal'] !== ""){
+                                    $canal1 = base64_encode($result['canal']);
                                     $custom1 = '
                                     <li>
-                                    <a class="justify-content-center" href="'.$canal1.'">
+                                    <a class="justify-content-center" href="../../tv/epg?c='.$canal1.'">
                                         <i class="flag us"></i>
                                         CKST - OP Adicional
                                     </a>
