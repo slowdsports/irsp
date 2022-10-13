@@ -107,13 +107,13 @@ if (isset($_SESSION['message']) ){
                         <div class="card card-body">
                             <ul class="listview link-listview">
                                 <li>
-                                    <a class="justify-content-center" href="?c=<?=$local?>&c2=<?=strtolower($visita)?>&id=<?=$index?>">
+                                    <a style="display:none" class="justify-content-center" href="?c=<?=$local?>&c2=<?=strtolower($visita)?>&id=<?=$index?>">
                                         <i class="flag us"></i>
                                         MLB Network - [OP1] <?=ucfirst($local)?> | HD
                                     </a>
                                 </li>
                                 <li>
-                                    <a class="justify-content-center" href="?g=<?=$local?>&g2=<?=strtolower($visita)?>&id=<?=$index?>">
+                                    <a style="display:none" class="justify-content-center" href="?g=<?=$local?>&g2=<?=strtolower($visita)?>&id=<?=$index?>">
                                         <i class="flag us"></i>
                                         MLB Network - [OP2] <?=ucfirst($local)?> | HD
                                     </a>
@@ -127,7 +127,7 @@ if (isset($_SESSION['message']) ){
                                     $canal1 = base64_encode($result['canal']);
                                     $custom1 = '
                                     <li>
-                                    <a class="justify-content-center" href="../../tv/epg?c='.$canal1.'">
+                                    <a class="justify-content-center" href="../../tv/epg?nba&c='.$canal1.'&plyr=vid">
                                         <i class="flag us"></i>
                                         CKST - OP Adicional
                                     </a>
