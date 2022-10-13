@@ -137,6 +137,33 @@ if ($result['ligaImg'] == 18){
     $local = str_replace("eintrachtfrankfurt", "Eintracht", $local);
     $visita = str_replace("eintrachtfrankfurt", "Eintracht", $visita);
 
+    //Europa
+    if ($result['liga'] == 4){
+        $local = str_replace('bodoglimt', 'Bodo Glimt', $local);
+        $local = str_replace('dynamokiev', 'Dynamo Kiev', $local);
+        $local = str_replace('aek larnaca', 'AEK Larnaca', $local);
+        $local = str_replace('saintgilloise', 'Saint Gilloise', $local);
+        $local = str_replace('man.united', 'Manchester United', $local);
+        $local = str_replace('sturmgraz', 'Sturm Graz', $local);
+        $local = str_replace('zrich', 'Zürich', $local);
+        $local = str_replace('mnaco', 'Mónaco', $local);
+        $local = str_replace('unionberlin', 'Unión Berlín', $local);
+        $local = str_replace('malm', 'Malmö', $local);
+        $local = str_replace('estrellaroja', 'Estrella Roja', $local);
+
+        $visita = str_replace('bodoglimt', 'Bodo Glimt', $visita);
+        $visita = str_replace('dynamokiev', 'Dynamo Kiev', $visita);
+        $visita = str_replace('aek larnaca', 'AEK Larnaca', $visita);
+        $visita = str_replace('saintgilloise', 'Saint Gilloise', $visita);
+        $visita = str_replace('man.united', 'Manchester United', $visita);
+        $visita = str_replace('sturmgraz', 'Sturm Graz', $visita);
+        $visita = str_replace('zrich', 'Zürich', $visita);
+        $visita = str_replace('mnaco', 'Mónaco', $visita);
+        $visita = str_replace('uniónberlin', 'Unión Berlín', $visita);
+        $visita = str_replace('malm', 'Malmö', $visita);
+        $visita = str_replace('estrellaroja', 'Estrella Roja', $visita);
+    }
+
     //Liga PRO Ecuador
     $local = str_replace("FC Barcelonasc", "Barcelona", $local);
     $local = str_replace("lduquito", "LDU Quito", $local);
