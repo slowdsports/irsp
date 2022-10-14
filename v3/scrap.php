@@ -1,13 +1,16 @@
 <?php
-//include('inc/scraper.php');
-//$base = "https://megatelevisionhd.com/en-vivo/{$_GET['url']}/?ver";
-//$html = file_get_html($base);
-$getURL = $_GET['url'];
-if (strpos($getURL,"espn")){
-    echo "espn";
+include('inc/scraper.php');
+// CALL URL CUSTOMIZED
+$baseUrl = "http://crackstreams.biz/mlbstreams/";
+// get DOM from URL or file
+$html = file_get_html($baseUrl);
+// MAIN ELEMENT
+$juego = $html ->find ('div.ctpage');
+
+foreach ($juego as $nombre){
+    // CONDITIONS
+    $evento = $nombre ->find('a div.media div.media-body h4',0) -> plaintext;
+    $link = $nombre ->find('a',0) -> href;
+    $fecha = $nombre ->find('a div.media div.media-body p',0) -> plaintext;
+    echo $fecha . "<br>";
 }
-//$jwPlayer = $html ->find ('a.btn-md',0)->href;
-    //$jwPlayer = str_replace("https://germanyip.work/jw.html", "mg.php/", $jwPlayer);
-    //echo $jwPlayer;
-//echo '<meta http-equiv="refresh" content="0; url='.$jwPlayer.'">';
-?>
