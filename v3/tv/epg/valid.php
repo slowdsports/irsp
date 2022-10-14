@@ -254,7 +254,7 @@ elseif($typeChannel == 10){
     var player = new Clappr.Player({
         source: atob(getURL),
         parentId: "#jwp",
-        watermark: "http://url/img.png",
+        watermark: "https://eduveel1.github.io/baleada/img/iRTVW_PLAYER.png",
         position: "top-left",
         plugins: [LevelSelector, ClapprPip.PipButton, ClapprPip.PipPlugin, DashShakaPlayback, ChromecastPlugin, ClapprPip.PipButton, ClapprPip.PipPlugin],
         events: {
@@ -271,8 +271,8 @@ elseif($typeChannel == 10){
         gaTrackerName: "MyPlayerInstance",
         height: "100%",
         width: "100%",
-        autoplay: true,
-        muted: true,
+        autoPlay: true,
+        muted: false,
         shakaConfiguration: {
             preferredAudioLanguage: "es-MX",
             drm: {
