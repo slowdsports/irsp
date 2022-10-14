@@ -49,7 +49,7 @@ if (isset($_SESSION['message']) ){
 
             <!-- Elemento -->
             <div class="col-6 col-sm-4 col-md-3 mycard <?=$ligaStatus?>">
-                <a href="liga?id=14">
+                <a href="liga?id=13">
                     <div class="card product-card liga-card">
                         <div class="card-body">
                             <center>
