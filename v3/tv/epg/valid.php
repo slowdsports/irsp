@@ -121,7 +121,7 @@ if ($typeChannel == 1 || $typeChannel == 8){
 } //iFrame
 elseif ($typeChannel == 2){
     $iframeSrc = $result['channelUrl'];
-    echo '<style>#iframe-element{display:block!important;} #jwp{display:none!important;} #vidarea{display:none} #player_img{display:none}</style>';
+    echo '<style>#iframe-element{display:block!important;} .tab-content .tab-pane{display:none!important;} #vidarea{display:none} #player_img{display:none}</style>';
 } // Redirect
 elseif ($typeChannel == 3){
     // Fuente Sin codificar
