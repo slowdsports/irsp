@@ -370,6 +370,12 @@ if ($result['ligaImg'] == 18){
     $local = str_replace('saopaulo', 'Sao Paulo', $local);
     $local = str_replace('independientedelvalle', 'Independiente', $local);
 
+    // Betcris Honduras
+    if ($result['liga'] == 21){
+        $local = str_replace('hondurasprogreso', 'CD Honduras', $local);
+        $visita = str_replace('hondurasprogreso', 'CD Honduras', $visita);
+    }
+
     $visita = str_replace('saopaulo', 'Sao Paulo', $visita);
     $visita = str_replace('independientedelvalle', 'Independiente', $visita);
 
