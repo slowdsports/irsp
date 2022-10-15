@@ -2104,8 +2104,12 @@ a.badge-dark {
   background: #fff;
 }
 
-.card.product-card:hover, .item .card:hover {
-  box-shadow: 3px 5px #3F3F3F;
+.card.product-card:hover, .card:hover , .item .card:hover , .card:active {
+  box-shadow: 3px 5px #72b6ff;
+  color: #FFF!important;
+}
+.card-text:hover{
+  color: #FFF!important;
 }
 
 .card.product-card .card-body {
@@ -2139,6 +2143,7 @@ a.badge-dark {
   font-weight: 500;
   color: #2C2C2C;
 }
+
 
 .btn {
   height: 40px;
