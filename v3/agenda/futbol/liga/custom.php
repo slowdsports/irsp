@@ -1,4 +1,17 @@
 <?php
+// Betcris Honduras - Tigo Sports
+if ($result['liga'] == 21 && $result['canal3'] !== ""){
+    $r = base64_encode($result['canal3']);
+    $custom1 = '
+    <li>
+        <a class="justify-content-center" href="../../../tv/epg/?nba&c='.$r.'&plyr=jw">
+        <i class="flag hn"></i>
+        Tigo Sports | HD
+        </a>
+    </li>
+    ';
+}
+
 // Star
 if ($result['local'] === "team"){
     $canalImg = "starplus";
