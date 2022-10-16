@@ -33,7 +33,7 @@ if ($result['local'] === "team"){
     ';
 }
 
-if ($result['visita'] === "ajax" || $result['local'] === "at.madrid" || $result['local'] === "barcelona" || $result['visita'] === "liverpool" || $result['visita'] === "bayern" || $result['local'] === "tottenham" || $result['visita'] === "marseille" || $result['visita'] === "porto"){
+if ($result['local'] === "liverpool" || $result['local'] === "napoli" || $result['local'] === "bayern" || $result['local'] === "newell's" || $result['local'] === "PSG" || $result['local'] === "hellas" || $result['visita'] === "banfield" || $result['visita'] === "porto"){
     $canalImg = "starplus";
     // LINK:
     $r= "";
