@@ -45,21 +45,25 @@
                                 include('agenda/basket/nba/teams.php');
                                 $localImg = $local;
                                 $visitaImg = $visita;
+                                $isMotor = "";
                             } elseif ($liga == "12"){
                                 $link = "basket/liga?id=" . $liga;
                                 include('agenda/basket/liga/teams.php');
                                 $localImg = str_replace(" ", "", $result['local']);
                                 $visitaImg = str_replace(" ", "", $result['visita']);
+                                $isMotor = "";
                             } elseif ($liga == "22"){
                                 $link = "mlb?ir";
                                 include('agenda/mlb/teams.php');
                                 $localImg = strtolower($local);
                                 $visitaImg = strtolower($visita);
+                                $isMotor = "";
                             } elseif ($liga == "25"){
                                 $link = "balonmano?ir";
                                 include('agenda/balonmano/teams.php');
                                 $localImg = str_replace(" ", "",$result['local']);
                                 $visitaImg = str_replace(" ", "",$result['visita']);
+                                $isMotor = "";
                             } elseif ($liga == "14"){
                                 $link = "nfl?ir";
                                 include('agenda/nfl/teams.php');
