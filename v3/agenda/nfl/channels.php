@@ -2,6 +2,21 @@
 $canal = $result['canal'];
 $canal2 = $result['canal2'];
 $canal3 = $result['canal3'];
+
+// Opciones Adicionales NFL
+if ($result['liga'] == 14 && $result['canal3'] !== ""){
+    $r = base64_encode($result['canal3']);
+    $custom1 = '
+    <li>
+        <a class="justify-content-center" href="../../../tv/epg/?nba&c='.$r.'&plyr=jw">
+        <i class="flag us"></i>
+        Nueva Opción | HD
+        </a>
+    </li>
+    ';
+}
+
+
 if($canal === "M+ #Vamos" || $canal === "M+ #Vamos Bar 2 (305)" || $canal === "mvamos"){
     $canalImg = "mvamos";
     $canalop2 = '
