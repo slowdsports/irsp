@@ -13,7 +13,7 @@ if($canal === "M+ #Vamos" || $canal === "M+ #Vamos Bar 2 (305)" || $canal === "m
     </li>';
 } elseif($canal2 === "M+ #Vamos" || $canal2 === "M+ #Vamos Bar 2 (305)" || $canal2 === "mvamos"){
     $canalImg = "mvamos";
-    $canal2 = '
+    $canalop4 = '
     <li>
         <a class="justify-content-center" href="'.$app.'/agenda/play?c=mvamos">
         <i class="flag es"></i>
@@ -33,7 +33,7 @@ if($canal === "M+ Deportes" || $canal === "mdep"){
     </li>';
 } elseif($canal2 === "M+ Deportes" || $canal2 === "mdep"){
     $canalImg = "movistar";
-    $canal2 = '
+    $canalop4 = '
     <li>
         <a class="justify-content-center" href="'.$app.'/agenda/play?c=mdep">
         <i class="flag es"></i>
@@ -53,7 +53,7 @@ if($canal === "M+ Deportes 2" || $canal === "mdep2"){
     </li>';
 } elseif($canal2 === "M+ Deportes 2" || $canal2 === "mdep2"){
     $canalImg = "movistar";
-    $canal2 = '
+    $canalop4 = '
     <li>
         <a class="justify-content-center" href="'.$app.'/agenda/play?c=mdep2">
         <i class="flag es"></i>
