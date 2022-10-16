@@ -125,7 +125,6 @@ if (isset($_SESSION['message']) ){
                                 include('channels.php');
                                 // Canal 2
                                 echo $canalop2;
-                                echo $canal2;
                                 // Canal 3
                                 echo $canalop3;
                                 // Canal 4
