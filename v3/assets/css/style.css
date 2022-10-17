@@ -175,9 +175,17 @@ button:hover, button:active, button:focus {
   top: 0;
 }
 
+.appHeader .left .headerButton i:hover, ion-icon:hover {
+  color: #72b6ff!important;
+}
+
 .appHeader .right {
   right: 8px;
   top: 0;
+}
+
+.appHeader .headerButton i:hover, ion-icon:hover {
+  color: #72b6ff!important;
 }
 
 .appHeader .pageTitle {
@@ -7105,6 +7113,10 @@ body.dark-mode-active .listview.transparent {
   background: transparent !important;
 }
 
+body.dark-mode-active .listview.transparent a:hover {
+  background: rgba(27, 40, 59, 0.2)!important;
+}
+
 body.dark-mode-active .listview-title {
   color: #fff;
 }
@@ -7157,7 +7169,7 @@ body.dark-mode-active .image-listview > li a.item {
 }
 
 body.dark-mode-active .image-listview > li a.item:active {
-  background: rgba(27, 40, 59, 0.3);
+  background: rgba(27, 40, 59, 0.2)!important;
 }
 
 body.dark-mode-active .image-listview > li a.item:after {
