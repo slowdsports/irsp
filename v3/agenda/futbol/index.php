@@ -121,7 +121,7 @@ if (isset($_SESSION['message']) ){
                 } elseif ($totalGames >= 1){
                     $ligaStatus = "show";
                 }
-                if ($index == 12 || $index == 13 || $index == 14 || $index == 22 || $index == 23 || $index == 25 || $index == 28 || $index == 29){
+                if ($index == 12 || $index == 13 || $index == 14 || $index == 22 || $index == 23 || $index == 25 || $index == 28 || $index == 29 || $index == 32){
                     $ligaStatus = "hidden";
                 }
             ?>
@@ -146,7 +146,7 @@ if (isset($_SESSION['message']) ){
 <!-- End Categorías -->
 <!-- Timer -->
 <script>
-    var yyyy = 2022; var mm = 09; var dd = 11;
+    var yyyy = 2022; var mm = 09; var dd = 17;
 
     var myTime = yyyy+mm+dd;
     var textLive = "<p class='live-text'>En Vivo <ion-icon class='faa-flash animated' name='ellipse'></ion-icon></p>";
