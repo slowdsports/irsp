@@ -7035,10 +7035,12 @@ body.dark-mode-active .appBottomMenu .item strong {
   color: #FFFFFF;
 }
 
-body.dark-mode-active .appBottomMenu .item:hover i.icon,
-body.dark-mode-active .appBottomMenu .item:hover ion-icon,
-body.dark-mode-active .appBottomMenu .item:hover strong {
-  color: #FFFFFF;
+body.dark-mode-active .appBottomMenu .item .col ion-icon:hover, ion-icon:focus, strong:hover {
+  color: #000!important;
+}
+body.dark-mode-active .appBottomMenu .item .col:focus {
+  box-shadow: 3px 5px #72b6ff;
+  color: #FFF!important;
 }
 
 body.dark-mode-active .appBottomMenu.bg-light .item i.icon,
