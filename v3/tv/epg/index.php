@@ -40,13 +40,13 @@ if (isset($_SESSION['message']) ){
 <hr>
 
 <div class="header-large-title container">
-    <h1 class="title">
+    <h2 class="title">
         <?php
         if (!isset($_GET['id'])){
-            ucfirst($result['channelName']);
+            echo ucfirst($result['channelName']);
         }
     ?>
-    </h1>
+    </h2>
 
 <div class="container">
     <?php
@@ -211,7 +211,7 @@ if ($userType !== 0){
 <?php
 if (!isset($_GET['id'])){
 ?>
-<div class="section full mt-3 mb-3">
+<div class="section full mt-3 mb-3 container">
     <h2> Relacionados </h2>
     <div class="carousel-multiple owl-carousel owl-theme">
         <?php
