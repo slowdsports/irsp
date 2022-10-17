@@ -87,7 +87,7 @@ if (isset($_SESSION['message']) ){
                 <script src='//cdn.jsdelivr.net/npm/clappr-pip@latest/dist/clappr-pip.min.js'></script>
                 <script src="//ewwink.github.io/clappr-youtube-plugin/clappr-youtube-plugin.js"></script>
                 <div class="onclick" onclick="noFullScreen('player');">
-                    <div id="jwp">Cargando Reproductor...</div>
+                    <div id="jwp"></div>
                 </div>
                 <!-- <script src="jwp.js"></script> -->
                 <?=$core?>
