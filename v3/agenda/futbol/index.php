@@ -56,7 +56,7 @@ if (isset($_SESSION['message']) ){
                     <div class="card card-body">
                         <ul class="listview link-listview">
                             <li>
-                                <a class="justify-content-center" href="../play/?c=mega">
+                                <a class="justify-content-center" href="../../tv/epg?futbol&nid=<?=$index?>&c=mega">
                                     <i class="flag es"></i>
                                     MEGA | HD (VIP)
                                 </a>
