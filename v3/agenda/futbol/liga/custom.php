@@ -33,7 +33,7 @@ if ($result['local'] === "team"){
     ';
 }
 
-if ($result['local'] === "Balon De Oro"){
+if ($result['local'] === "Balon De Oro" || $result['local'] === "lecce"){
     $canalImg = "starplus";
     // LINK:
     $r= "";
