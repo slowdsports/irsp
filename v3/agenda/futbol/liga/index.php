@@ -61,10 +61,10 @@ if (isset($_SESSION['message']) ){
                                         <img width="60px" src="<?=$app?>assets/img/equipos/<?=strtolower($result['ligaImg'])?>/<?=str_replace(' ', '', strtolower($result['local'])); ?>.png" alt="" />
                                         <h4><?=ucfirst($local)?></h4>
                                     </div>
-                                    <div class="vs">
+                                    <div <?=$isEventoHidden?> class="vs">
                                         <h6>vs</h6>
                                     </div>
-                                    <div class="team">
+                                    <div <?=$isEventoHidden?> class="team">
                                         <img width="60px" src="<?=$app?>assets/img/equipos/<?=strtolower($result['ligaImg'])?>/<?=str_replace(' ', '', strtolower($result['visita'])); ?>.png" alt="" />
                                         <h4><?=ucfirst($visita)?></h4>
                                     </div>
@@ -158,7 +158,7 @@ if (isset($_SESSION['message']) ){
 
             </div>
             <br>
-            <a href="<?=$app?>/repeticion/liga/?id=<?=$getLiga?>" class="btn btn-primary btn-lg btn-block">Repeticiones</a>
+            <a <?=$isEventoHidden?> href="<?=$app?>/repeticion/liga/?id=<?=$getLiga?>" class="btn btn-primary btn-lg btn-block">Repeticiones</a>
         </div>
     </div>
 <!-- End Categorías -->

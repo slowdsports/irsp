@@ -3,6 +3,13 @@
 if ($result['ligaImg'] == 18){
     $result['ligaImg'] = 6;
 }
+// Para Eventos
+if ($result['liga'] == 32){
+    $isEventoHidden = 'style="display: none;"';
+} else {
+    $isEventoHidden = "";
+}
+
 // Equipos
     // LaLiga
     $local = str_replace('athletic', 'Athletic Club', $local);
