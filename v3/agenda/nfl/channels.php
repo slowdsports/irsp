@@ -8,7 +8,7 @@ if ($result['liga'] == 14 && $result['canal3'] !== ""){
     $r = base64_encode($result['canal3']);
     $custom1 = '
     <li>
-        <a class="justify-content-center" href="../../../tv/epg/?nba&c='.$r.'&plyr=jw">
+        <a class="justify-content-center" href="../../../tv/epg/?nba&c='.$r.'&futbol&id='.$index.'&plyr=jw">
         <i class="flag us"></i>
         Nueva Opción | HD
         </a>
