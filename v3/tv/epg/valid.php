@@ -57,4 +57,7 @@ include('valid/twitch.php');
 
 // DRM CKM
 include('valid/ckm.php');
+
+// VIP
+include('valid/vip.php');
 ?>
