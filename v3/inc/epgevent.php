@@ -25,6 +25,7 @@
         $visitaImg = $ress['visita'];
         include('../../agenda/balonmano/teams.php');
     } elseif ($liga == "eventos"){
+        $localImg = $ress['local'];
         $isEventoHidden = 'style="display:none"';
     } else {
         $localImg = $ress['local'];
