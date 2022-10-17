@@ -68,7 +68,9 @@ if (isset($_SESSION['message']) ){
     <center>
         <div class="tab-content" id="myTabContent">
             <!-- iFrame -->
-            <iframe src="<?php echo $iframeSrc?>" width="100%" height="450px" frameborder="0" sandbox="allow-same-origin allow-scripts" allow="encrypted-media" allowfullscreen scrolling="no"  id="iframe-element"></iframe>
+            <div class="container">
+                <iframe src="<?php echo $iframeSrc?>" width="100%" height="450px" frameborder="0" sandbox="allow-same-origin allow-scripts" allow="encrypted-media" allowfullscreen scrolling="no"  id="iframe-element"></iframe>
+            </div>
             <!-- Twitch -->
             <?=$twitchEmbed?>
             <!-- PC Player -->
