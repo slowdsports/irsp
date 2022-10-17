@@ -35,6 +35,8 @@ $row=mysqli_fetch_assoc($query);
                 $link = "javascript:void(0)";
             } else {
                 $link = str_replace("/eventos/star/?r=", "", $link);
+                $link = base64_decode($link);
+                $link = str_replace("//vercomofutbol.xyz/s/star_jwp.html?get=", "", $link);
                 $link = "../tv/epg/?r=".$link;
             }
         ?>

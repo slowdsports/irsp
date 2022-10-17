@@ -68,7 +68,7 @@ if (isset($_SESSION['message']) ){
     <center>
         <div class="tab-content" id="myTabContent">
             <!-- iFrame -->
-            <iframe src="<?php echo $iframeSrc?>" width="100%" height="300px" frameborder="0" sandbox="allow-same-origin allow-scripts" allow="encrypted-media" allowfullscreen scrolling="no"  id="iframe-element"></iframe>
+            <iframe src="<?php echo $iframeSrc?>" width="100%" height="450px" frameborder="0" sandbox="allow-same-origin allow-scripts" allow="encrypted-media" allowfullscreen scrolling="no"  id="iframe-element"></iframe>
             <!-- Twitch -->
             <?=$twitchEmbed?>
             <!-- PC Player -->
@@ -85,6 +85,7 @@ if (isset($_SESSION['message']) ){
                 <script src="//cdn.jsdelivr.net/gh/clappr/dash-shaka-playback@latest/dist/dash-shaka-playback.min.js"></script>
                 <script src='//cdn.jsdelivr.net/npm/clappr-chromecast-plugin@latest/dist/clappr-chromecast-plugin.min.js'></script>
                 <script src='//cdn.jsdelivr.net/npm/clappr-pip@latest/dist/clappr-pip.min.js'></script>
+                <script src="//ewwink.github.io/clappr-youtube-plugin/clappr-youtube-plugin.js"></script>
                 <div class="onclick" onclick="noFullScreen('player');">
                     <div id="jwp">Cargando Reproductor...</div>
                 </div>

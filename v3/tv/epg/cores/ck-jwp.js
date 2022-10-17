@@ -3,7 +3,7 @@ var playerInstance = jwplayer("jwp");
 playerInstance.setup({
     playlist: [
         {
-            image: atob(getIMG),
+            //image: atob(getIMG),
             sources: [
                 {
                     default: false,
