@@ -157,6 +157,8 @@ if (isset($_SESSION['message']) ){
                 <?}?>
 
             </div>
+            <br>
+            <a href="<?=$app?>/repeticion/liga/?id=<?=$getLiga?>" class="btn btn-primary btn-lg btn-block">Repeticiones</a>
         </div>
     </div>
 <!-- End Categorías -->

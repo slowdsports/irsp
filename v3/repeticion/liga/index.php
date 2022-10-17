@@ -42,6 +42,9 @@ if (isset($_SESSION['message']) ){
                     $local = $result['local'];
                     $visita = $result['visita'];
                     $index = $result['id'];
+                    $link = $result['link'];
+                        $link = base64_decode($link);
+                        $link = str_replace("//vercomofutbol.xyz/s/star_jwp.html?get=", "", $link);
                     setlocale(LC_ALL, "es_ES", 'Spanish_Spain', 'Spanish');
                     date_default_timezone_set('America/Tegucigalpa');
                     $dia = iconv('ISO-8859-2', 'UTF-8', strftime("%A %d", strtotime($result['fecha'])));
@@ -60,7 +63,7 @@ if (isset($_SESSION['message']) ){
                 ?>
                 <!-- Elemento -->
                 <div class="col-12 mycard">
-                    <a href="../../tv/epg/?r=<?=$result['link']?>">
+                    <a href="../../tv/epg/?r=<?=$link?>">
                         <div class="card product-card">
                             <div class="main-event">
                                 <div class="league">
