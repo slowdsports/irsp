@@ -80,6 +80,7 @@
                                 $localImg = $result['logoL'];
                                 //include('agenda/nfl/teams.php');
                             } elseif ($liga == "32"){
+                                $link = "futbol/liga?id=" . $liga;
                                 $isMotor = 'style="display: none;"';
                                 $motorText = '<h4 style="position: absolute; margin-top: 94px;">'.$local.'</h4>';
                             } else{
