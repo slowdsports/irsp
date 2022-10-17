@@ -6,7 +6,7 @@ if($canal === "M+ #Vamos" || $canal === "M+ #Vamos Bar 2 (305)" || $canal === "m
     $canalImg = "mvamos";
     $canalop2 = '
     <li>
-        <a class="justify-content-center" href="'.$app.'/agenda/play?c=mvamos">
+        <a class="justify-content-center" href="'.$app.'/tv/epg?futbol&id='.$index.'&c=mvamos">
         <i class="flag es"></i>
         Movistar #Vamos | VIP HD
         </a>
@@ -15,7 +15,7 @@ if($canal === "M+ #Vamos" || $canal === "M+ #Vamos Bar 2 (305)" || $canal === "m
     $canalImg = "mvamos";
     $canal2 = '
     <li>
-        <a class="justify-content-center" href="'.$app.'/agenda/play?c=mvamos">
+        <a class="justify-content-center" href="'.$app.'/tv/epg?futbol&id='.$index.'&c=mvamos">
         <i class="flag es"></i>
         Movistar #Vamos | VIP HD
         </a>
@@ -26,7 +26,7 @@ if($canal === "M+ Deportes" || $canal === "mdep"){
     $canalImg = "mdep";
     $canalop2 = '
     <li>
-        <a class="justify-content-center" href="'.$app.'/agenda/play?c=mdep">
+        <a class="justify-content-center" href="'.$app.'/tv/epg?futbol&id='.$index.'&c=mdep">
         <i class="flag es"></i>
         Movistar Deportes | VIP HD
         </a>
@@ -35,7 +35,7 @@ if($canal === "M+ Deportes" || $canal === "mdep"){
     $canalImg = "mdep";
     $canal2 = '
     <li>
-        <a class="justify-content-center" href="'.$app.'/agenda/play?c=mdep">
+        <a class="justify-content-center" href="'.$app.'/tv/epg?futbol&id='.$index.'&c=mdep">
         <i class="flag es"></i>
         Movistar Deportes | VIP HD
         </a>
@@ -46,7 +46,7 @@ if($canal === "M+ Deportes 2" || $canal === "mdep2"){
     $canalImg = "mdep";
     $canalop2 = '
     <li>
-        <a class="justify-content-center" href="'.$app.'/agenda/play?c=mdep2">
+        <a class="justify-content-center" href="'.$app.'/tv/epg?futbol&id='.$index.'&c=mdep2">
         <i class="flag es"></i>
         Movistar Deportes 2 | VIP HD
         </a>
@@ -55,7 +55,7 @@ if($canal === "M+ Deportes 2" || $canal === "mdep2"){
     $canalImg = "mdep";
     $canal2 = '
     <li>
-        <a class="justify-content-center" href="'.$app.'/agenda/play?c=mdep2">
+        <a class="justify-content-center" href="'.$app.'/tv/epg?futbol&id='.$index.'&c=mdep2">
         <i class="flag es"></i>
         Movistar Deportes 2 | VIP HD
         </a>

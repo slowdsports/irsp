@@ -12,6 +12,10 @@
         include('../../agenda/basket/nba/teams.php');
         $localImg = $local;
         $visitaImg = $visita;
+    } elseif ($liga == "acb" || $liga == "euroliga"){
+        include('../../agenda/basket/liga/teams.php');
+        $localImg = $local;
+        $visitaImg = $visita;
     } elseif ($liga == "mlb"){
         include('../../agenda/mlb/teams.php');
         $localImg = $local;
