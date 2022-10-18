@@ -59,5 +59,9 @@ include('valid/twitch.php');
 include('valid/ckm.php');
 
 // VIP
-include('valid/vip.php');
+$chnType = gettype($_GET['c']);
+if (!isset($typeChannel)){
+    include('valid/vip.php');
+}
+
 ?>
