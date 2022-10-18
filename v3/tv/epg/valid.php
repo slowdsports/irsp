@@ -60,7 +60,7 @@ include('valid/ckm.php');
 
 // VIP
 $chnType = gettype($_GET['c']);
-if (!isset($typeChannel)){
+if (!isset($typeChannel) && !isset($_GET['key'])){
     include('valid/vip.php');
 }
 
