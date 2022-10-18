@@ -3,7 +3,12 @@ include('../conn.php');include('../inc/functions.php');
 if (isset($_POST['row'])) {
   $start = $_POST['row'];
   $limit = 30;
-  $query = "SELECT * FROM channels ORDER BY channelId desc LIMIT " . $start . "," . $limit;
+  $query = "SELECT * FROM channels
+  INNER JOIN categories ON channels.category = categories.categoryId
+  INNER JOIN countries ON channels.country = countries.countryId
+  where type IN ('1','2','3','4','6','7','9','10')
+  ORDER BY category DESC
+  LIMIT " . $start . "," . $limit;
   $channels = mysqli_query($conn, $query);
   if ($channels->num_rows > 0) {
     while ($result = mysqli_fetch_assoc($channels)) {

@@ -156,7 +156,12 @@ if ($row['type'] == 2 && $row['fecha'] == null) {
                     $count_fetch = mysqli_fetch_array($count_result);
                     $postCount = $count_fetch['allcount'];
                     $limit = 30;
-                    $query = "SELECT * FROM channels ORDER BY channelId desc LIMIT 0," . $limit;
+                    $query = "SELECT * FROM channels
+                    INNER JOIN categories ON channels.category = categories.categoryId
+                    INNER JOIN countries ON channels.country = countries.countryId
+                    where type IN ('1','2','3','4','6','7','9','10')
+                    ORDER BY category DESC
+                    LIMIT 0," . $limit;
                     $channels = mysqli_query($conn, $query);
                 }
                 //while($result=mysqli_fetch_array($channels)){
@@ -244,7 +249,7 @@ if ($row['type'] == 2 && $row['fecha'] == null) {
             $(document).on('click', '#loadBtn', function() {
                 var row = Number($('#row').val());
                 var count = Number($('#postCount').val());
-                var limit = 3;
+                var limit = 30;
                 row = row + limit;
                 $('#row').val(row);
                 $("#loadBtn").val('Cargando...');
