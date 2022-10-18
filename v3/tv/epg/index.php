@@ -12,6 +12,7 @@ include ('../../agenda/play/channels.php');
 $query=mysqli_query($conn,"select * from channels
     INNER JOIN channeltype ON channels.type = channeltype.typeId
     INNER JOIN categories ON channels.category = categories.categoryId
+    INNER JOIN countries ON channels.country = countries.countryId
     where channelId='".$channel."'");
     $result=mysqli_fetch_assoc($query);
     $channel = $result['channelUrl'];
@@ -39,13 +40,21 @@ if (isset($_SESSION['message']) ){
 ?>
 <hr>
 
+<?php
+if (!isset($_GET['id'])){
+    $channelName = ucfirst($result['channelName']);
+    $channelFlag = '<i class="'.$result['countryImg'].' flag"></i>';
+} else {
+    $channelName = "";
+    $channelFlag = "";
+}
+
+?>
+
 <div class="header-large-title container">
     <h2 class="title">
-        <?php
-        if (!isset($_GET['id'])){
-            echo ucfirst($result['channelName']);
-        }
-    ?>
+        <?=$channelFlag?>
+        <?=$channelName?>
     </h2>
 
 <div class="container">
