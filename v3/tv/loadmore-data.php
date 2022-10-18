@@ -6,7 +6,7 @@ if (isset($_POST['row'])) {
   $query = "SELECT * FROM channels
   INNER JOIN categories ON channels.category = categories.categoryId
   INNER JOIN countries ON channels.country = countries.countryId
-  where type IN ('1','2','3','4','6','7','9','10')
+  where type IN ('1','2','3','4','6','7','9','10', '11')
   ORDER BY category DESC
   LIMIT " . $start . "," . $limit;
   $channels = mysqli_query($conn, $query);
