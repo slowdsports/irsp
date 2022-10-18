@@ -46,7 +46,7 @@
                                 $localImg = $local;
                                 $visitaImg = $visita;
                                 $isMotor = "";
-                            } elseif ($liga == "12"){
+                            } elseif ($liga == "12" || $liga == 13){
                                 $link = "basket/liga?id=" . $liga;
                                 include('agenda/basket/liga/teams.php');
                                 $localImg = str_replace(" ", "", $result['local']);
