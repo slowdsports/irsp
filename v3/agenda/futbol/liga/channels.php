@@ -426,7 +426,7 @@ if($canal === "M+ LaLiga 2" || $canal === "mlaliga2"){
     </li>';
 } elseif($canal2 === "M+ LaLiga 2" || $canal2 === "mlaliga2"){
     $canalImg = "mlaliga";
-    $canalop3 = '
+    $canalop4 = '
     <li>
         <a class="justify-content-center" href="'.$app.'/tv/epg?futbol&id='.$index.'&c=mlaliga2">
         <i class="flag es"></i>
@@ -446,7 +446,7 @@ if($canal === "M+ LaLiga 3" || $canal === "mlaliga3"){
     </li>';
 } elseif($canal2 === "M+ LaLiga 3" || $canal2 === "mlaliga3"){
     $canalImg = "mlaliga";
-    $canalop3 = '
+    $canalop4 = '
     <li>
         <a class="justify-content-center" href="'.$app.'/tv/epg?futbol&id='.$index.'&c=mlaliga3">
         <i class="flag es"></i>
@@ -466,7 +466,7 @@ if($canal === "M+ LaLiga 7" || $canal === "mlaliga7"){
     </li>';
 } elseif($canal2 === "M+ LaLiga 7" || $canal2 === "mlaliga7"){
     $canalImg = "mlaliga";
-    $canalop3 = '
+    $canalop4 = '
     <li>
         <a class="justify-content-center" href="'.$app.'/tv/epg?futbol&id='.$index.'&c=mlaliga7">
         <i class="flag es"></i>
@@ -556,7 +556,7 @@ if($canal === "DAZN" || $canal === "DAZN" || $canal === "dazn1" || $canal === "D
     </li>';
 } elseif($canal2 === "DAZN" || $canal2 === "DAZN" || $canal2 === "dazn1" || $canal2 === "DAZN 1 (Movistar 64)"){
     $canalImg = "dazn";
-    $canalop2 = '
+    $canalop4 = '
     <li>
         <a class="justify-content-center" href="'.$app.'/agenda/play/?c=dazn1">
         <i class="flag es"></i>
@@ -588,7 +588,7 @@ if($canal === "DAZN2" || $canal === "DAZN2" || $canal === "dazn2"){
     </li>';
 } elseif($canal2 === "DAZN2" || $canal2 === "DAZN2" || $canal2 === "dazn2"){
     $canalImg = "dazn";
-    $canalop2 = '
+    $canalop4 = '
     <li>
         <a class="justify-content-center" href="'.$app.'/tv/epg?futbol&id='.$index.'&c=569">
         <i class="flag es"></i>
@@ -763,7 +763,7 @@ if($canal === "directv1" || $canal === "directv1"){
     </li>';
 } elseif($canal2 === "directv1" || $canal2 === "directv1"){
     $canalImg = "directv";
-    $canalop2 = '
+    $canalop4 = '
     <li>
         <a class="justify-content-center" href="'.$app.'/tv/epg?futbol&id='.$index.'&c=561">
         <i class="flag ar"></i>
@@ -783,7 +783,7 @@ if($canal === "directv2" || $canal === "directv2"){
     </li>';
 } elseif($canal2 === "directv2" || $canal2 === "directv2"){
     $canalImg = "directv";
-    $canalop2 = '
+    $canalop4 = '
     <li>
         <a class="justify-content-center" href="'.$app.'/tv/epg?futbol&id='.$index.'&c=562">
         <i class="flag ar"></i>
@@ -803,7 +803,7 @@ if($canal === "directvfight" || $canal === "directvfight"){
     </li>';
 } elseif($canal2 === "directvfight" || $canal2 === "directvfight"){
     $canalImg = "directv";
-    $canalop2 = '
+    $canalop4 = '
     <li>
         <a class="justify-content-center" href="https://irpc.ga/mg/play/mlaliga.php?get=aHR0cHM6Ly9kdHZvdHQtYWJjLmFrYW1haXplZC5uZXQvZGFzaF9saXZlXzEyNTkvbWFuaWZlc3QubXBk&key=MzZiMmM2Yjc3MzZhNTkwMWJmNDA4OTE2YTQ1NGFiZjk=&key2=ZjBkMjI1NGY4NWI3MzcxN2Y0YzJjZDgxYmRhNzE4ODk=">
         <i class="flag ar"></i>
@@ -823,7 +823,7 @@ if($canal === "La 1 TVE" || $canal === "La 1 TVE"){
     </li>';
 } elseif($canal2 === "La 1 TVE" || $canal2 === "La 1 TVE"){
     $canalImg = "la1";
-    $canalop2 = '
+    $canalop4 = '
     <li>
         <a class="justify-content-center" href="'.$app.'/tv/epg?futbol&id='.$index.'&c=93">
         <i class="flag es"></i>
@@ -849,7 +849,7 @@ if($canal === "espnsur" || $canal === "espnsur"){
     </li>';
 } elseif($canal2 === "espnsur" || $canal2 === "espnsur"){
     $canalImg = "espn";
-    $canalop2 = '
+    $canalop4 = '
     <li>
         <a class="justify-content-center" href="'.$app.'/tv/epg?futbol&id='.$index.'&c=1">
         <i class="flag ar"></i>
@@ -869,7 +869,7 @@ if($canal === "espn2sur" || $canal === "espn2sur"){
     </li>';
 } elseif($canal2 === "espn2sur" || $canal2 === "espn2sur"){
     $canalImg = "espn";
-    $canalop2 = '
+    $canalop4 = '
     <li>
         <a class="justify-content-center" href="'.$app.'/tv/epg?futbol&id='.$index.'&c=2">
         <i class="flag ar"></i>
@@ -889,7 +889,7 @@ if($canal === "espn3sur" || $canal === "espn3sur"){
     </li>';
 } elseif($canal2 === "espn3sur" || $canal2 === "espn3sur"){
     $canalImg = "espn";
-    $canalop2 = '
+    $canalop4 = '
     <li>
         <a class="justify-content-center" href="'.$app.'/tv/epg?futbol&id='.$index.'&c=3">
         <i class="flag ar"></i>
@@ -909,7 +909,7 @@ if($canal === "espn4sur" || $canal === "espn4sur"){
     </li>';
 } elseif($canal2 === "espn4sur" || $canal2 === "espn4sur"){
     $canalImg = "espn";
-    $canalop2 = '
+    $canalop4 = '
     <li>
         <a class="justify-content-center" href="https://irpc.ga/mg/?url=espn-4-en-vivo&play">
         <i class="flag ar"></i>
@@ -929,7 +929,7 @@ if($canal === "espnextra" || $canal === "espnextra"){
     </li>';
 } elseif($canal2 === "espnextra" || $canal2 === "espnextra"){
     $canalImg = "espn";
-    $canalop2 = '
+    $canalop4 = '
     <li>
         <a class="justify-content-center" href="'.$app.'/tv/epg?futbol&id='.$index.'&c=4">
         <i class="flag ar"></i>
@@ -949,7 +949,7 @@ if($canal === "espnmx" || $canal === "espnmx"){
     </li>';
 } elseif($canal2 === "espnmx" || $canal2 === "espnmx"){
     $canalImg = "espn";
-    $canalop2 = '
+    $canalop4 = '
     <li>
         <a class="justify-content-center" href="'.$app.'/tv/epg/?futbol&id='.$index.'&c=564">
         <i class="flag mx"></i>
@@ -1009,7 +1009,7 @@ if($canal === "foxsports2sur" || $canal === "foxsports2sur"){
     </li>';
 } elseif($canal2 === "foxsports2sur" || $canal2 === "foxsports2sur"){
     $canalImg = "foxsports";
-    $canalop2 = '
+    $canalop4 = '
     <li>
         <a class="justify-content-center" href="'.$app.'/tv/epg?futbol&id='.$index.'&c=6">
         <i class="flag ar"></i>
@@ -1029,7 +1029,7 @@ if($canal === "foxsports3sur" || $canal === "foxsports3sur"){
     </li>';
 } elseif($canal2 === "foxsports3sur" || $canal2 === "foxsports3sur"){
     $canalImg = "foxsports";
-    $canalop2 = '
+    $canalop4 = '
     <li>
         <a class="justify-content-center" href="'.$app.'/tv/epg?futbol&id='.$index.'&c=7">
         <i class="flag ar"></i>
@@ -1049,7 +1049,7 @@ if($canal === "foxsportsmx" || $canal === "foxsportsmx"){
     </li>';
 } elseif($canal2 === "foxsportsmx" || $canal2 === "foxsportsmx"){
     $canalImg = "foxsports";
-    $canalop2 = '
+    $canalop4 = '
     <li>
         <a class="justify-content-center" href="'.$app.'/tv/epg/?futbol&id='.$index.'&c=564">
         <i class="flag mx"></i>
@@ -1069,7 +1069,7 @@ if($canal === "foxsport3smx" || $canal === "foxsports3mx"){
     </li>';
 } elseif($canal2 === "foxsports3mx" || $canal2 === "foxsports3mx"){
     $canalImg = "foxsports";
-    $canalop2 = '
+    $canalop4 = '
     <li>
         <a class="justify-content-center" href="'.$app.'/tv/epg/?futbol&id='.$index.'&c=566">
         <i class="flag mx"></i>
@@ -1089,7 +1089,7 @@ if($canal === "goltvec" || $canal === "goltvec"){
     </li>';
 } elseif($canal2 === "goltvec" || $canal2 === "goltvec"){
     $canalImg = "goltv";
-    $canalop2 = '
+    $canalop4 = '
     <li>
         <a class="justify-content-center" href="https://irpc.ga/mg/play/mlaliga.php?get=aHR0cHM6Ly8xMTM0LXZvcy5kdHZvdHQuY29tL0RBU0gvbWFuaWZlc3QubXBk&key=MzMwM2I0YzY5ODJmMzgxZWE5ZTMwOTAwOWZiYjNmMjc=&key2=YTdmZDQ5ODA4Zjg5MGMyNTAwYmYyMTgwYWFmNDIzMDc=">
         <i class="flag ec"></i>
@@ -1107,7 +1107,7 @@ if($canal === "goltvec" || $canal === "goltvec"){
     </li>';
 } elseif($canal2 === "GolTV Play" || $canal2 === "GolTV Play"){
     $canalImg = "goltv";
-    $canalop2 = '
+    $canalop4 = '
     <li>
         <a class="justify-content-center" href="https://irpc.ga/mg/play/mlaliga.php?get=aHR0cHM6Ly8xMTM0LXZvcy5kdHZvdHQuY29tL0RBU0gvbWFuaWZlc3QubXBk&key=MzMwM2I0YzY5ODJmMzgxZWE5ZTMwOTAwOWZiYjNmMjc=&key2=YTdmZDQ5ODA4Zjg5MGMyNTAwYmYyMTgwYWFmNDIzMDc=">
         <i class="flag ec"></i>
@@ -1125,7 +1125,7 @@ if($canal === "goltvec" || $canal === "goltvec"){
     </li>';
 } elseif($canal2 === "tyc" || $canal2 === "tyc"){
     $canalImg = "tycsports";
-    $canalop2 = '
+    $canalop4 = '
     <li>
         <a class="justify-content-center" href="'.$app.'/tv/epg?futbol&id='.$index.'&c=257">
         <i class="flag ar"></i>
@@ -1143,7 +1143,7 @@ if($canal === "goltvec" || $canal === "goltvec"){
     </li>';
 } elseif($canal2 === "winplus" || $canal2 === "winplus"){
     $canalImg = "winsports";
-    $canalop2 = '
+    $canalop4 = '
     <li>
         <a class="justify-content-center" href="'.$app.'/tv/epg?futbol&id='.$index.'&c=279">
         <i class="flag co"></i>
@@ -1161,7 +1161,7 @@ if($canal === "goltvec" || $canal === "goltvec"){
     </li>';
 } elseif($canal2 === "Teledeporte" || $canal2 === "Teledeporte"){
     $canalImg = "tdp";
-    $canalop2 = '
+    $canalop4 = '
     <li>
         <a class="justify-content-center" href="'.$app.'/tv/epg?futbol&id='.$index.'&c=279">
         <i class="flag es"></i>
@@ -1170,7 +1170,7 @@ if($canal === "goltvec" || $canal === "goltvec"){
     </li>';
 } if($canal === "Esport3" || $canal === "Esport3 (Cataluña)"){
     $canalImg = "e3";
-    $canalop2 = '
+    $canalop4 = '
     <li>
         <a class="justify-content-center" href="'.$app.'/tv/epg?futbol&id='.$index.'&c=253">
         <i class="flag es"></i>
@@ -1197,7 +1197,7 @@ if($canal === "goltvec" || $canal === "goltvec"){
     </li>';
 } elseif($canal2 === "Aragón Deporte" || $canal2 === "AragÃ³n Deporte"){
     $canalImg = "aragontv";
-    $canalop2 = '
+    $canalop4 = '
     <li>
         <a class="justify-content-center" href="'.$app.'/tv/epg?futbol&id='.$index.'&c=119">
         <i class="flag es"></i>
@@ -1215,7 +1215,7 @@ if($canal === "goltvec" || $canal === "goltvec"){
     </li>';
 } elseif($canal2 === "CMMPlay (Castilla-LM)" || $canal2 === "CMMPlay (Castilla-LM)"){
     $canalImg = "cmm";
-    $canalop2 = '
+    $canalop4 = '
     <li>
         <a class="justify-content-center" href="'.$app.'/tv/epg?futbol&id='.$index.'&c=119">
         <i class="flag es"></i>
@@ -1233,7 +1233,7 @@ if($canal === "goltvec" || $canal === "goltvec"){
     </li>';
 } elseif($canal2 === "ZDF (M+ Astra)" || $canal2 === "ZDF (M+ Astra)"){
     $canalImg = "zdf";
-    $canalop2 = '
+    $canalop4 = '
     <li>
         <a class="justify-content-center" href="'.$app.'/tv/epg?futbol&id='.$index.'&c=232">
         <i class="flag de"></i>
@@ -1252,7 +1252,7 @@ if($canal === "Canal por confirmar" || $canal === "Canal por confirmar"){
     </li>';
 } elseif($canal2 === "DAZN (Regístrate)" || $canal2 === "DAZN | (Movistar 59)"){
     $canalImg = "dazn";
-    $canalop2 = '
+    $canalop4 = '
     <li>
         <a class="justify-content-center" href="javascript:void(0)">
         <ion-icon name="alert-circle-outline"></ion-icon>
