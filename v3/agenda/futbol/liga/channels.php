@@ -939,6 +939,26 @@ if($canal === "espnmx" || $canal === "espnmx"){
     </li>';
 }
 
+if($canal === "espndep" || $canal === "espndep"){
+    $canalImg = "espn";
+    $canalop2 = '
+    <li>
+        <a class="justify-content-center" href="'.$app.'/tv/epg/?futbol&id='.$index.'&c=609">
+        <i class="flag mx"></i>
+        ESPN Deportes | HD
+        </a>
+    </li>';
+} elseif($canal2 === "espnmx" || $canal2 === "espnmx"){
+    $canalImg = "espn";
+    $canalop4 = '
+    <li>
+        <a class="justify-content-center" href="'.$app.'/tv/epg/?futbol&id='.$index.'&c=609">
+        <i class="flag mx"></i>
+        ESPN Deportes | HD
+        </a>
+    </li>';
+}
+
 if($canal === "foxsportssur" || $canal === "foxsportssur"){
     $canalImg = "foxsports";
     $canalop2 = '
@@ -950,7 +970,7 @@ if($canal === "foxsportssur" || $canal === "foxsportssur"){
     </li>';
 } elseif($canal2 === "foxsportssur" || $canal2 === "foxsportssur"){
     $canalImg = "foxsports";
-    $canalop2 = '
+    $canalop4 = '
     <li>
         <a class="justify-content-center" href="'.$app.'/tv/epg?futbol&id='.$index.'&c=5">
         <i class="flag ar"></i>
