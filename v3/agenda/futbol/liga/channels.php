@@ -638,9 +638,18 @@ if($canal === "DAZN LaLiga 2" || $canal === "DAZN LaLiga 2" || $canal === "daznl
     $canalImg = "daznlaliga";
     $canalop2 = '
     <li>
-        <a class="justify-content-center" href="'.$app.'/play/?c=daznlaliga2'.$index.'&c=daznlaliga2">
+        <a class="justify-content-center" href=href="'.$app.'/tv/epg/?futbol&id='.$index.'&c=daznlaliga2">
         <i class="flag es"></i>
-        DAZN LaLiga | HD
+        DAZN LaLiga 2 | HD
+        </a>
+    </li>';
+} elseif($canal2 === "DAZN LaLiga 2" || $canal2 === "DAZN LaLiga 2" || $canal2 === "daznlaliga2"){
+    $canalImg = "daznlaliga";
+    $canalop4 = '
+    <li>
+        <a class="justify-content-center" href="'.$app.'/tv/epg/?futbol&id='.$index.'&c=daznlaliga2">
+        <i class="flag es"></i>
+        DAZN LaLiga 2 | HD
         </a>
     </li>';
 }
