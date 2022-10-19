@@ -628,7 +628,7 @@ if($canal === "DAZN LaLiga" || $canal === "DAZN LaLiga" || $canal === "daznlalig
         </a>
     </li>
     <li>
-        <a class="justify-content-center" href="'.$app.'/tv/epg?futbol&id='.$index.'&c=daznlaliga">
+        <a class="justify-content-center" href="'.$app.'/tv/epg?futbol&id='.$index.'&c=daznlaliga2">
         <i class="flag es"></i>
         DAZN LaLiga | VIP HD
         </a>
@@ -638,7 +638,7 @@ if($canal === "DAZN LaLiga 2" || $canal === "DAZN LaLiga 2" || $canal === "daznl
     $canalImg = "daznlaliga";
     $canalop2 = '
     <li>
-        <a class="justify-content-center" href=href="'.$app.'/tv/epg/?futbol&id='.$index.'&c=daznlaliga2">
+        <a class="justify-content-center" href="'.$app.'/tv/epg?futbol&id='.$index.'&c=daznlaliga2">
         <i class="flag es"></i>
         DAZN LaLiga 2 | HD
         </a>
