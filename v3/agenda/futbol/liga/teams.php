@@ -373,6 +373,63 @@ if ($result['liga'] == 32){
     $visita = str_replace('argentinosjuniors', 'Argentinos JRS', $visita);
     $visita = str_replace('velez', 'Velez Sarsfield', $visita);
 
+    // MLS
+    $local = str_replace('philadelphiaunion', 'Philadelphia', $local);
+    $local = str_replace('cfmontreal', 'Montreal', $local);
+    $local = str_replace('newyorkcityfc', 'NYCFC', $local);
+    $local = str_replace('newyorkrredbulls', 'NYRB', $local);
+    $local = str_replace('fccincinnati', 'FC Cincinnati', $local);
+    $local = str_replace('orlandocitysc', 'Orlando', $local);
+    $local = str_replace('intermiami', 'Inter Miami', $local);
+    $local = str_replace('columbuscrewsc', 'Columbus', $local);
+    $local = str_replace('charlottefc', 'Charlotte FC', $local);
+    $local = str_replace('newenglandrevolution', 'NE Revolution', $local);
+    $local = str_replace('atlantaunited', 'Atlanta Utd', $local);
+    $local = str_replace('chicagofire', 'Chicago Fire', $local);
+    $local = str_replace('torontofc', 'Toronto FC', $local);
+    $local = str_replace('dcunited', 'DC United', $local);
+    $local = str_replace('losangelesfc', 'LAFC', $local);
+    $local = str_replace('austinfc', 'Austin FC', $local);
+    $local = str_replace('fcdallas', 'FC Dallas', $local);
+    $local = str_replace('lagalaxy', 'LA Galaxy', $local);
+    $local = str_replace('nashvillesc', 'Nashville', $local);
+    $local = str_replace('minnesotaunited', 'Minnesota Utd', $local);
+    $local = str_replace('realsaltlake', 'Salt Lake', $local);
+    $local = str_replace('coloradorapids', 'Colorado Rapids', $local);
+    $local = str_replace('vancouverwhitecapsfc', 'Whitecaps', $local);
+    $local = str_replace('seattlesounders', 'Sounders', $local);
+    $local = str_replace('sportingkansascity', 'Sporting KC', $local);
+    $local = str_replace('dynamo', 'Houston Dynamo', $local);
+    $local = str_replace('sanjoseearthquakes', 'SJ Earthquakes', $local);
+
+    $visita = str_replace('philadelphiaunion', 'Philadelphia', $visita);
+    $visita = str_replace('cfmontreal', 'Montreal', $visita);
+    $visita = str_replace('newyorkcityfc', 'NYCFC', $visita);
+    $visita = str_replace('newyorkrredbulls', 'NYRB', $visita);
+    $visita = str_replace('fccincinnati', 'FC Cincinnati', $visita);
+    $visita = str_replace('orlandocitysc', 'Orlando', $visita);
+    $visita = str_replace('intermiami', 'Inter Miami', $visita);
+    $visita = str_replace('columbuscrewsc', 'Columbus', $visita);
+    $visita = str_replace('charlottefc', 'Charlotte FC', $visita);
+    $visita = str_replace('newenglandrevolution', 'NE Revolution', $visita);
+    $visita = str_replace('atlantaunited', 'Atlanta Utd', $visita);
+    $visita = str_replace('chicagofire', 'Chicago Fire', $visita);
+    $visita = str_replace('torontofc', 'Toronto FC', $visita);
+    $visita = str_replace('dcunited', 'DC United', $visita);
+    $visita = str_replace('losangelesfc', 'LAFC', $visita);
+    $visita = str_replace('austinfc', 'Austin FC', $visita);
+    $visita = str_replace('fcdallas', 'FC Dallas', $visita);
+    $visita = str_replace('lagalaxy', 'LA Galaxy', $visita);
+    $visita = str_replace('nashvillesc', 'Nashville', $visita);
+    $visita = str_replace('minnesotaunited', 'Minnesota Utd', $visita);
+    $visita = str_replace('realsaltlake', 'Salt Lake', $visita);
+    $visita = str_replace('coloradorapids', 'Colorado Rapids', $visita);
+    $visita = str_replace('vancouverwhitecapsfc', 'Whitecaps', $visita);
+    $visita = str_replace('seattlesounders', 'Sounders', $visita);
+    $visita = str_replace('sportingkansascity', 'Sporting KC', $visita);
+    $visita = str_replace('dynamo', 'Houston Dynamo', $visita);
+    $visita = str_replace('sanjoseearthquakes', 'SJ Earthquakes', $visita);
+
     // Sudamericana
     $local = str_replace('saopaulo', 'Sao Paulo', $local);
     $local = str_replace('independientedelvalle', 'Independiente', $local);
