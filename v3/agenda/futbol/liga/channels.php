@@ -354,24 +354,17 @@ if($canal === "M+ LaLiga" || $canal === "M+ LaLigaTV" || $canal === "bar"){
         </a>
     </li>
     <li>
-        <a class="justify-content-center" href="'.$app.'/tv/epg?futbol&id='.$index.'&c=558">
-        <i class="flag es"></i>
-        Movistar LaLiga | HD
-        </a>
-    </li>
-    <li>
         <a class="justify-content-center" href="'.$app.'/tv/epg?futbol&id='.$index.'&c=bar">
         <i class="flag es"></i>
         Movistar LaLiga | VIP HD
         </a>
     </li>
-    <!--
-    <li class="hidden">
+    <li>
         <a class="justify-content-center" href="'.$app.'/tv/epg?futbol&id='.$index.'&c=barsd">
         <i class="flag es"></i>
         Movistar LaLiga | VIP SD
         </a>
-    </li>-->';
+    </li>';
 } elseif($canal2 === "M+ LaLiga" || $canal2 === "M+ LaLigaTV" || $canal2 === "bar"){
     $canalImg = "mlaliga";
     $canalop4 = '
