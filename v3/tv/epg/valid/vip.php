@@ -76,6 +76,8 @@ switch ($channel){
     $server.$usuario."/".$password."/"."36".".m3u8"; break;
     case 'daznlaliga2' : $channel =
     $server.$usuario."/".$password."/"."37".".m3u8"; break;
+    case 'dazn3' : $channel =
+    $server.$usuario."/".$password."/"."40".".m3u8"; break;
 }
 if ($channel){
     $channel = base64_encode($channel);

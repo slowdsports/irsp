@@ -603,6 +603,26 @@ if($canal === "DAZN2" || $canal === "DAZN2" || $canal === "dazn2"){
     </li>';
 }
 
+if($canal === "DAZN3" || $canal === "DAZN3" || $canal === "dazn3"){
+    $canalImg = "dazn";
+    $canalop2 = '
+    <li>
+        <a class="justify-content-center" href="'.$app.'/tv/epg?futbol&id='.$index.'&c=dazn3">
+        <i class="flag es"></i>
+        DAZN 3 | VIP HD
+        </a>
+    </li>';
+} elseif($canal2 === "DAZN3" || $canal2 === "DAZN3" || $canal2 === "dazn3"){
+    $canalImg = "dazn";
+    $canalop4 = '
+    <li>
+        <a class="justify-content-center" href="'.$app.'/tv/epg?futbol&id='.$index.'&c=dazn3">
+        <i class="flag es"></i>
+        DAZN 3 | VIP HD
+        </a>
+    </li>';
+}
+
 if($canal === "DAZN LaLiga" || $canal === "DAZN LaLiga" || $canal === "daznlaliga"){
     $canalImg = "daznlaliga";
     $canalop2 = '
