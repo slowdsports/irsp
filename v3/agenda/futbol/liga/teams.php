@@ -374,7 +374,10 @@ if ($result['liga'] == 32){
     $visita = str_replace('velez', 'Velez Sarsfield', $visita);
 
     // MLS
-    $local = str_replace('philadelphiaunion', 'Philadelphia', $local);
+    if ($result['liga'] == 27){
+        $local = str_replace('philadelphiaunion', 'Philadelphia', $local);
+        $visita = str_replace('philadelphiaunion', 'Philadelphia', $visita);
+    }
     $local = str_replace('cfmontreal', 'Montreal', $local);
     $local = str_replace('newyorkcityfc', 'NYCFC', $local);
     $local = str_replace('newyorkrredbulls', 'NYRB', $local);
@@ -402,7 +405,6 @@ if ($result['liga'] == 32){
     $local = str_replace('dynamo', 'Houston Dynamo', $local);
     $local = str_replace('sanjoseearthquakes', 'SJ Earthquakes', $local);
 
-    $visita = str_replace('philadelphiaunion', 'Philadelphia', $visita);
     $visita = str_replace('cfmontreal', 'Montreal', $visita);
     $visita = str_replace('newyorkcityfc', 'NYCFC', $visita);
     $visita = str_replace('newyorkrredbulls', 'NYRB', $visita);
