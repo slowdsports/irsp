@@ -108,7 +108,7 @@ if (isset($_SESSION['message']) ){
                                 <?php
                                 //include('timer.php');
                                 // Canales
-                                include ('custom.php');
+                                include ('stream.php');
                                 include('channels.php');
                                 if ($result['canal2'] !== ""){
                                     $canal = base64_encode($result['canal2']);
