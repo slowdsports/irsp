@@ -33,7 +33,7 @@ if (isset($_SESSION['message']) ){
         <div class="row">
             <!-- Elemento -->
             <div class="col-12 mycard">
-                <a data-toggle="collapse" href="#chiringuito" role="button" aria-expanded="false" aria-controls="chiringuito">
+                <a class="chiringuito" data-toggle="collapse" href="#chiringuito" role="button" aria-expanded="false" aria-controls="chiringuito">
                     <div class="card product-card">
                         <div class="main-event">
                             <div class="league">
@@ -121,7 +121,7 @@ if (isset($_SESSION['message']) ){
                 } elseif ($totalGames >= 1){
                     $ligaStatus = "show";
                 }
-                if ($index == 12 || $index == 13 || $index == 14 || $index == 22 || $index == 23 || $index == 25 || $index == 28 || $index == 29 || $index == 32){
+                if ($index == 12 || $index == 13 || $index == 14 || $index == 22 || $index == 23 || $index == 25 || $index == 28 || $index == 29 || $index == 32 || $index == 35 ){
                     $ligaStatus = "hidden";
                 }
             ?>
@@ -146,7 +146,7 @@ if (isset($_SESSION['message']) ){
 <!-- End Categorías -->
 <!-- Timer -->
 <script>
-    var yyyy = 2022; var mm = 09; var dd = 18;
+    var yyyy = 2022; var mm = 09; var dd = 23;
 
     var myTime = yyyy+mm+dd;
     var textLive = "<p class='live-text'>En Vivo <ion-icon class='faa-flash animated' name='ellipse'></ion-icon></p>";
