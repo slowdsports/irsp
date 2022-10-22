@@ -86,7 +86,7 @@
                             } elseif ($liga == "35"){
                                 $link = "ufc/?ir";
                                 $isMotor = 'style="display: none;"';
-                                $motorText = '<h4 style="position: absolute; margin-top: 94px;">'.$local.'</h4>';
+                                $motorText = '';
                             } else{
                                 $link = "futbol/liga?id=" . $liga;
                                 include('agenda/futbol/liga/teams.php');
