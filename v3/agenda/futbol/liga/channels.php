@@ -412,6 +412,12 @@ if($canal === "M+ LaLiga 2" || $canal === "mlaliga2"){
     $canalImg = "mlaliga";
     $canalop2 = '
     <li>
+        <a class="justify-content-center" href="https://irpc.ga/mg/play/sandbox.php?get=https://megatelevisionhd.com/embed/repro/?r=Ly9ncmVnb3JzYW1zYS5saWZlL2VtYmVkL2VzL21sYWxpZ2EyLnBocA==">
+        <i class="flag es"></i>
+        Movistar LaLiga 2 | HD
+        </a>
+    </li>
+    <li>
         <a class="justify-content-center" href="'.$app.'/tv/epg?futbol&id='.$index.'&c=mlaliga2">
         <i class="flag es"></i>
         Movistar LaLiga 2 | VIP HD
@@ -420,6 +426,12 @@ if($canal === "M+ LaLiga 2" || $canal === "mlaliga2"){
 } elseif($canal2 === "M+ LaLiga 2" || $canal2 === "mlaliga2"){
     $canalImg = "mlaliga";
     $canalop4 = '
+    <li>
+        <a class="justify-content-center" href="https://irpc.ga/mg/play/sandbox.php?get=https://megatelevisionhd.com/embed/repro/?r=Ly9ncmVnb3JzYW1zYS5saWZlL2VtYmVkL2VzL21sYWxpZ2EyLnBocA==">
+        <i class="flag es"></i>
+        Movistar LaLiga 2 | HD
+        </a>
+    </li>
     <li>
         <a class="justify-content-center" href="'.$app.'/tv/epg?futbol&id='.$index.'&c=mlaliga2">
         <i class="flag es"></i>
@@ -564,7 +576,7 @@ if($canal === "DAZN" || $canal === "DAZN" || $canal === "dazn1" || $canal === "D
     </li>';
 }
 
-if($canal === "DAZN2" || $canal === "DAZN2" || $canal === "dazn2"){
+if($canal === "DAZN2" || $canal === "DAZN 2 (Movistar 65)" || $canal === "dazn2"){
     $canalImg = "dazn";
     $canalop2 = '
     <li>
@@ -579,7 +591,7 @@ if($canal === "DAZN2" || $canal === "DAZN2" || $canal === "dazn2"){
         DAZN 2 | VIP HD
         </a>
     </li>';
-} elseif($canal2 === "DAZN2" || $canal2 === "DAZN2" || $canal2 === "dazn2"){
+} elseif($canal2 === "DAZN2" || $canal2 === "DAZN 2 (Movistar 65)" || $canal2 === "dazn2"){
     $canalImg = "dazn";
     $canalop4 = '
     <li>
