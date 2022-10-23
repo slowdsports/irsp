@@ -14,7 +14,8 @@ if (!isset($_SESSION['id']) ||(trim ($_SESSION['id']) == '')) {
     $channel = $_GET['c'];
     $server = "http://213.239.217.94:8080/live/";
 }
-$core = '<script cus="vip" src="cores/jwp.js"></script>';
+//$core = '<script cus="vip" src="cores/jwp.js"></script>';
+$core = '<script cus="vip" src="cores/clappr.js"></script>';
 echo '<style>#jwp{display:block!important} #iframe-element{display:none!important;} #vidarea{display:none} #player_img{display:none}</style>';
 
 switch ($channel){
