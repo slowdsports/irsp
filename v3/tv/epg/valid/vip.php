@@ -14,6 +14,12 @@ if (!isset($_SESSION['id']) ||(trim ($_SESSION['id']) == '')) {
     $channel = $_GET['c'];
     $server = "http://213.239.217.94:8080/live/";
 }
+// Recargar página sin SSL
+echo '<script>
+if (window.location.protocol != "http:") {
+    //location.href =   location.href.replace("https://", "http://");
+}
+</script>';
 //$core = '<script cus="vip" src="cores/jwp.js"></script>';
 $core = '<script cus="vip" src="cores/clappr2.js"></script>';
 echo '<style>#jwp{display:block!important} #iframe-element{display:none!important;} #vidarea{display:none} #player_img{display:none}</style>';
