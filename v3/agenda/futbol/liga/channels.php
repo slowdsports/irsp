@@ -983,6 +983,26 @@ if($canal === "espnmx" || $canal === "espnmx"){
     </li>';
 }
 
+if($canal === "espn2mx" || $canal === "espn2mx"){
+    $canalImg = "espn";
+    $canalop2 = '
+    <li>
+        <a class="justify-content-center" href="'.$app.'/tv/epg/?futbol&id='.$index.'&c=583">
+        <i class="flag mx"></i>
+        ESPN 2 | HD
+        </a>
+    </li>';
+} elseif($canal2 === "espn2mx" || $canal2 === "espn2mx"){
+    $canalImg = "espn";
+    $canalop4 = '
+    <li>
+        <a class="justify-content-center" href="'.$app.'/tv/epg/?futbol&id='.$index.'&c=583">
+        <i class="flag mx"></i>
+        ESPN 2 | HD
+        </a>
+    </li>';
+}
+
 if($canal === "espndep" || $canal === "espndep"){
     $canalImg = "espn";
     $canalop2 = '
