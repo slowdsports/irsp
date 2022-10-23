@@ -17,7 +17,7 @@ if (!isset($_SESSION['id']) ||(trim ($_SESSION['id']) == '')) {
 // Recargar página sin SSL
 echo '<script>
 if (window.location.protocol != "http:") {
-    //location.href =   location.href.replace("https://", "http://");
+    location.href =   location.href.replace("https://", "http://");
 }
 </script>';
 //$core = '<script cus="vip" src="cores/jwp.js"></script>';
