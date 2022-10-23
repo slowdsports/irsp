@@ -104,7 +104,6 @@
                                     <div class="team">
                                         <img src="<?=$app?>/assets/img/equipos/<?=$ligaImg?>/<?=$localImg?>.png" class="image" alt="image">
                                         <!-- <h4><?=ucfirst($local)?></h4> -->
-                                        <?=$motorText?>
                                     </div>
                                 </div>
                                 <div <?=$isMotor?> class="vs">vs</div>
