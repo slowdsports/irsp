@@ -3,7 +3,7 @@ var player = new Clappr.Player({
     parentId: "#jwp",
     watermark: "https://eduveel1.github.io/baleada/img/iRTVW_PLAYER.png",
     position: "top-left",
-    plugins: [LevelSelector, ClapprPip.PipButton, ClapprPip.PipPlugin, DashShakaPlayback, ChromecastPlugin, ClapprPip.PipButton, ClapprPip.PipPlugin, YoutubePlugin, YoutubePlugin],
+    //plugins: [LevelSelector, ClapprPip.PipButton, ClapprPip.PipPlugin, DashShakaPlayback, ChromecastPlugin, ClapprPip.PipButton, ClapprPip.PipPlugin, YoutubePlugin, YoutubePlugin],
     events: {
         onReady: function () {
             var plugin = this.getPlugin("click_to_pause");
