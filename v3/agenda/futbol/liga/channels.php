@@ -1012,7 +1012,7 @@ if($canal === "espndep" || $canal === "espndep"){
         ESPN Deportes | HD
         </a>
     </li>';
-} elseif($canal2 === "espnmx" || $canal2 === "espnmx"){
+} elseif($canal2 === "espndep" || $canal2 === "espndep"){
     $canalImg = "espn";
     $canalop4 = '
     <li>
