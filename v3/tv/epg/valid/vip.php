@@ -1,19 +1,24 @@
 <?php
 $_SESSION['referer'] = "//" . $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URI'];
 session_start();
-if (!isset($_SESSION['id']) ||(trim ($_SESSION['id']) == '')) {
-    $_SESSION['message'] = "¡Debes iniciar sesión para acceder a esta sección!";
-    echo '<script>window.location.href = "../../login.php";</script>
-    ';
+if (!isset($_GET['nba'])){
+    if (!isset($_SESSION['id']) ||(trim ($_SESSION['id']) == '')) {
+        $_SESSION['message'] = "¡Debes iniciar sesión para acceder a esta sección!";
+        echo '<script>window.location.href = "../../login.php";</script>
+        ';
+    } else {
+        include('../../conn.php');
+        $query=mysqli_query($conn,"select * from user where userid='".$_SESSION['id']."'");
+        $vip=mysqli_fetch_assoc($query);
+        $usuario = $vip['username'];
+        $password = $vip['password'];
+        $channel = $_GET['c'];
+        $server = "http://213.239.217.94:8080/live/";
+    }
 } else {
-    include('../../conn.php');
-    $query=mysqli_query($conn,"select * from user where userid='".$_SESSION['id']."'");
-    $vip=mysqli_fetch_assoc($query);
-    $usuario = $vip['username'];
-    $password = $vip['password'];
-    $channel = $_GET['c'];
-    $server = "http://213.239.217.94:8080/live/";
+    // NADA
 }
+
 // Recargar página sin SSL
 echo '<script>
 if (window.location.protocol != "http:") {
