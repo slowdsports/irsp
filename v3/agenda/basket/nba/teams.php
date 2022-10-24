@@ -1,6 +1,6 @@
 <?php
 // ESTE
-$visita = str_replace("Philadelphia","seven", $visita);
+$visita = str_replace("Philadelphia","76ers", $visita);
 $visita = str_replace("Miami","heat", $visita);
 $visita = str_replace("Chicago","bulls", $visita);
 $visita = str_replace("Brooklyn","nets", $visita);
@@ -16,7 +16,7 @@ $visita = str_replace("Indiana","pacers", $visita);
 $visita = str_replace("Orlando","magic", $visita);
 $visita = str_replace("Detroit","pistons", $visita);
 
-$local = str_replace("Philadelphia","seven", $local);
+$local = str_replace("Philadelphia","76ers", $local);
 $local = str_replace("Miami","heat", $local);
 $local = str_replace("Chicago","bulls", $local);
 $local = str_replace("Brooklyn","nets", $local);
