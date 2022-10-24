@@ -106,13 +106,13 @@ if (isset($_SESSION['message']) ){
                     <div class="collapse <?=$collapse?>" id="juego<?=$result['id']?>">
                         <div class="card card-body">
                             <ul class="listview link-listview">
-                                <li>
+                                <li class="hidden">
                                     <a class="justify-content-center" href="?c=<?=$local?>&c2=<?=$visita?>&id=<?=$index?>">
                                         <i class="flag us"></i>
                                         NFL Network - [OP1] <?=ucfirst($local)?> | HD
                                     </a>
                                 </li>
-                                <li>
+                                <li class="hidden">
                                     <a class="justify-content-center" href="?g=<?=$local?>&g2=<?=$visita?>&id=<?=$index?>">
                                         <i class="flag us"></i>
                                         NFL Network - [OP2] <?=ucfirst($local)?> | HD

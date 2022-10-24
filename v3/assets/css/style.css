@@ -54,7 +54,7 @@ body {
 
 /* Custom Styles */
 .hidden {
-  display: none;
+  display: none!important;
 }
 .mycard {
   margin-top: 1%;
