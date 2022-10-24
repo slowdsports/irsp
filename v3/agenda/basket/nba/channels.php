@@ -21,7 +21,7 @@ if ($result['canal3'] === "star+"){
     $r = base64_encode($result['canal3']);
     $custom2 = '
     <li>
-        <a class="justify-content-center" href="'.$app.'/tv/epg?futbol&id='.$index.'&c='.$r.'">
+        <a class="justify-content-center" href="'.$app.'/tv/epg?futbol&id='.$index.'&c='.$r.'&nba">
         <i class="flag us"></i>
         League Pass | HD
         </a>
