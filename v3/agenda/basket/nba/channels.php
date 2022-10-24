@@ -15,6 +15,18 @@ if ($result['canal3'] === "star+"){
         </a>
     </li>
     ';
+} elseif ($result['canal3'] === "" || $result['canal3'] === null) {
+    // NADA
+} else {
+    $r = base64_encode($result['canal3']);
+    $custom2 = '
+    <li>
+        <a class="justify-content-center" href="'.$app.'/tv/epg?futbol&id='.$index.'&c='.$r.'">
+        <i class="flag us"></i>
+        League Pass | HD
+        </a>
+    </li>
+    ';
 }
 
 
