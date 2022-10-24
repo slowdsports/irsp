@@ -28,9 +28,6 @@ include('valid/hmax.php');
 // Star
 include('valid/star.php');
 
-// NBA & NFL
-include('valid/nba.php');
-
 // M3U
 include('valid/m3u.php');
 
@@ -62,6 +59,12 @@ include('valid/ckm.php');
 $chnType = gettype($_GET['c']);
 if (!isset($typeChannel) && !isset($_GET['key'])){
     include('valid/vip.php');
+}
+
+// NBA
+if (isset($_GET['nba']) || isset($_GET['nfl']) || isset($_GET['mlb'])){
+    // NBA & NFL
+    include('valid/nba.php');
 }
 
 ?>
