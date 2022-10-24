@@ -1,13 +1,25 @@
 <?php
-
+// Opciones Adicionales NFL
 if ($result['canal3'] === "star+"){
     $canalImg = "starplus";
-    $r = "../../star.php";
+    $r = "../star.php";
     $custom2 = '
     <li>
         <a class="justify-content-center" href="'.$r.'">
         <i class="flag ar"></i>
         Star + | HD
+        </a>
+    </li>
+    ';
+} elseif ($result['canal3'] === "" || $result['canal3'] === null) {
+    // NADA
+} else {
+    $r = base64_encode($result['canal3']);
+    $custom2 = '
+    <li>
+        <a class="justify-content-center" href="'.$app.'/tv/epg?mlb&id='.$index.'&m='.$r.'">
+        <i class="flag us"></i>
+        Network | HD
         </a>
     </li>
     ';

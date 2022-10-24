@@ -4,13 +4,26 @@ $canal2 = $result['canal2'];
 $canal3 = $result['canal3'];
 
 // Opciones Adicionales NFL
-if ($result['liga'] == 14 && $result['canal3'] !== ""){
-    $r = base64_encode($result['canal3']);
-    $custom1 = '
+if ($result['canal3'] === "star+"){
+    $canalImg = "starplus";
+    $r = "../star.php";
+    $custom2 = '
     <li>
-        <a class="justify-content-center" href="../../../tv/epg/?nba&c='.$r.'&futbol&id='.$index.'&plyr=jw">
+        <a class="justify-content-center" href="'.$r.'">
+        <i class="flag ar"></i>
+        Star + | HD
+        </a>
+    </li>
+    ';
+} elseif ($result['canal3'] === "" || $result['canal3'] === null) {
+    // NADA
+} else {
+    $r = base64_encode($result['canal3']);
+    $custom2 = '
+    <li>
+        <a class="justify-content-center" href="'.$app.'/tv/epg?nfl&id='.$index.'&m='.$r.'">
         <i class="flag us"></i>
-        Nueva Opción | HD
+        Game Pass | HD
         </a>
     </li>
     ';
