@@ -37,28 +37,40 @@ if(isset($_GET['c'])){
     }
 }
 
-if(isset($_GET['g'])){
-    $base ="http://givemenbastreams.com/nba.php?g=";
-    $file = $base.$g;
-    $site= file_get_contents($file);
-    preg_match("(source\:\s'(.*?)')", $site, $stream);
-
-    if ($stream[1] == null){
-        $base ="http://givemenbastreams.com/nba.php?g=";
-        $file = $base.$g2;
-        $site= file_get_contents($file);
-        preg_match("(source\:\s'(.*?)')", $site, $stream);
-            if ($stream[1] == null){
-                $_SESSION['message'] = "No se ha podido cargar la retransmisión del juego.";
-            } else{
-                $m3u8 = base64_encode($stream[1]);
-                echo '<script>window.location.href = "../../tv/epg?nba&plyr=vid&c='.$m3u8.'&id='.$index.'";</script>';
-            }
-
-    } else{
-        $m3u8 = base64_encode($stream[1]);
-        // header ("location: ../../play?nfl&plyr=vid&c=$m3u8");
-        //echo '<script>window.location.href = "../play?nba&plyr=vid&c='.$m3u8.'";</script>';
-        echo '<script>window.location.href = "../../tv/epg?nba&plyr=vid&c='.$m3u8.'&id='.$index.'";</script>';
-    }
+if (isset($_GET['g'])){
+    $base = "http://givemenbastreams.com/nba.php?g=";
+    $m3u8 = $base.$g;
+    $m3u8 = base64_encode($m3u8);
+    echo '<script>window.location.href = "../../../tv/epg?nba&plyr=ifr&i='.$m3u8.'&id='.$index.'";</script>';
+} elseif (isset($_GET['g2'])){
+    $base = "http://givemenbastreams.com/nba.php?g=";
+    $m3u8 = $base.$g2;
+    $m3u8 = base64_encode($m3u8);
+    echo '<script>window.location.href = "../../../tv/epg?nba&plyr=ifr&i='.$m3u8.'&id='.$index.'";</script>';
 }
+
+// if(isset($_GET['g'])){
+//     $base ="http://givemenbastreams.com/nba.php?g=";
+//     $file = $base.$g;
+//     $site= file_get_contents($file);
+//     preg_match("(source\:\s'(.*?)')", $site, $stream);
+
+//     if ($stream[1] == null){
+//         $base ="http://givemenbastreams.com/nba.php?g=";
+//         $file = $base.$g2;
+//         $site= file_get_contents($file);
+//         preg_match("(source\:\s'(.*?)')", $site, $stream);
+//             if ($stream[1] == null){
+//                 $_SESSION['message'] = "No se ha podido cargar la retransmisión del juego.";
+//             } else{
+//                 $m3u8 = base64_encode($stream[1]);
+//                 echo '<script>window.location.href = "../../tv/epg?nba&plyr=vid&c='.$m3u8.'&id='.$index.'";</script>';
+//             }
+
+//     } else{
+//         $m3u8 = base64_encode($stream[1]);
+//         // header ("location: ../../play?nfl&plyr=vid&c=$m3u8");
+//         //echo '<script>window.location.href = "../play?nba&plyr=vid&c='.$m3u8.'";</script>';
+//         echo '<script>window.location.href = "../../tv/epg?nba&plyr=vid&c='.$m3u8.'&id='.$index.'";</script>';
+//     }
+// }
