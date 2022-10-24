@@ -128,12 +128,12 @@ $categoriaActual = $result['categoryId'];
         <!-- Includes -->
         <?php
         // Evento en directo
-        include('directo.php');
+        //include('directo.php');
         // Otros eventos
-        include('otros.php');
+        //include('otros.php');
         // Canales relacionados
         if (!isset($_GET['id'])) {
-            include('relacionados.php');
+            //include('relacionados.php');
         }
         ?>
         <!-- *Includes -->

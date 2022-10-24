@@ -21,7 +21,7 @@ if (window.location.protocol != "http:") {
 }
 </script>';
 //$core = '<script cus="vip" src="cores/jwp.js"></script>';
-$core = '<script cus="vip" src="cores/clappr2.js"></script>';
+$core = '<script cus="vip" src="cores/clappr.js"></script>';
 echo '<style>#jwp{display:block!important} #iframe-element{display:none!important;} #vidarea{display:none} #player_img{display:none}</style>';
 
 switch ($channel){
