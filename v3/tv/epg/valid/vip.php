@@ -1,7 +1,7 @@
 <?php
 $_SESSION['referer'] = "//" . $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URI'];
 session_start();
-if (!isset($_GET['nba'])){
+if (!isset($_GET['nba']) || !isset($_GET['mlb']) || !isset($_GET['nfl'])){
     if (!isset($_SESSION['id']) ||(trim ($_SESSION['id']) == '')) {
         $_SESSION['message'] = "¡Debes iniciar sesión para acceder a esta sección!";
         echo '<script>window.location.href = "../../login.php";</script>
