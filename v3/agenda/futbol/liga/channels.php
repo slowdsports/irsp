@@ -7,13 +7,13 @@ if($canal === "M+ Liga de Campeones" || $canal === "M+ Liga de Campeones UHD (M4
     $canalImg = "campeones";
     $canalop2 = '
     <li>
-        <a class="justify-content-center" href="'.$app.'/tv/epg?futbol&id='.$index.'&c=mlcamp">
+        <a class="justify-content-center" href="'.$app.'/agenda/play?futbol&id='.$index.'&c=mlcamp">
         <i class="flag es"></i>
         Movistar Liga de Campeones | VIP HD
         </a>
     </li>
     <li>
-        <a class="justify-content-center" href="'.$app.'/tv/epg?futbol&id='.$index.'&c=mlcampsd">
+        <a class="justify-content-center" href="'.$app.'/agenda/play?futbol&id='.$index.'&c=mlcampsd">
         <i class="flag es"></i>
         Movistar Liga de Campeones | VIP SD
         </a>
@@ -28,13 +28,13 @@ if($canal === "M+ Liga de Campeones" || $canal === "M+ Liga de Campeones UHD (M4
     $canalImg = "campeones";
     $canalop4 = '
     <li>
-        <a class="justify-content-center" href="'.$app.'/tv/epg?futbol&id='.$index.'&c=mlcamp">
+        <a class="justify-content-center" href="'.$app.'/agenda/play?futbol&id='.$index.'&c=mlcamp">
         <i class="flag es"></i>
         Movistar Liga de Campeones | VIP HD
         </a>
     </li>
     <li>
-        <a class="justify-content-center" href="'.$app.'/tv/epg?futbol&id='.$index.'&c=mlcampsd">
+        <a class="justify-content-center" href="'.$app.'/agenda/play?futbol&id='.$index.'&c=mlcampsd">
         <i class="flag es"></i>
         Movistar Liga de Campeones | VIP SD
         </a>
