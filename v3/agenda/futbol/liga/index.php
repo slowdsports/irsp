@@ -158,7 +158,7 @@ if (isset($_SESSION['message']) ){
 
             </div>
             <br>
-            <a <?=$isEventoHidden?> href="<?=$app?>/repeticion/liga/?id=<?=$getLiga?>" class="btn btn-primary btn-lg btn-block">Repeticiones</a>
+            <a class="hidden" <?=$isEventoHidden?> href="<?=$app?>/repeticion/liga/?id=<?=$getLiga?>" class="btn btn-primary btn-lg btn-block">Repeticiones</a>
         </div>
     </div>
 <!-- End Categorías -->
