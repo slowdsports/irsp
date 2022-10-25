@@ -33,6 +33,26 @@ if ($result['local'] === "team"){
     ';
 }
 
+if ($result['visita'] === "chelsea" || $result['local'] === "sevilla" || $result['visita'] === "realmadrid" || $result['local'] === "dortmund" || $result['visita'] === "juventus" || $result['visita'] === "milan" || $result['visita'] === "PSG" || $result['local'] === "celtic"){
+    $canalImg = "starplus";
+    // LINK:
+    $r= "";
+
+    if ($r === ""){
+        $r = "../../../tv/epg?r=" . $r;
+    } else {
+        $r = "javascript:void(0)";
+    }
+    $custom1 = '
+    <li>
+        <a class="justify-content-center" href="'.$r.'">
+        <i class="flag ar"></i>
+        Star + | HD
+        </a>
+    </li>
+    ';
+}
+
 //HBO
 if ($result['visita'] === "team"){
     $canalImg = "hbow";
