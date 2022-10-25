@@ -49,7 +49,7 @@ if ($result['visita'] === "team"){
 
 if ($result['visita'] === "chelsea"){
     $canalImg = "hbow";
-    $s= "";
+    $s= "Ly92ZXJjb21vZnV0Ym9sLnh5ei9oYm8vYnRtLnBocD9nZXQ9YUhSMGNITTZMeTlzYVhabExtTm1MbXhoZEdGdExtaGliMjFoZUdOa2JpNWpiMjB2WTIxaFppOXNhWFpsTHpJd016RTJNVEF2WkdGemFDOWpaVzVqTHpJNE1qRXlMMjFoYzNSbGNpNXRjR1E9JmtleT1NREV3TVRrNFptUTBaR1ZtTkdJMVkyRTJNMk5oT0dKbFlqRmhNbVZqTlRnPSZrZXkyPU5EQTNNR0V3WlRSaFlqaGtPVGcwWlRsallUTTVZVGN5TnpCa1pEa3hZak09";
     $custom1 = '
     <li>
         <a class="justify-content-center" href="../../../tv/epg?s='.$s.'">
@@ -62,7 +62,7 @@ if ($result['visita'] === "chelsea"){
 
 if ($result['local'] === "sevilla"){
     $canalImg = "hbow";
-    $s= "";
+    $s= "Ly92ZXJjb21vZnV0Ym9sLnh5ei9oYm8vYnRtLnBocD9nZXQ9YUhSMGNITTZMeTlzYVhabExtRnJiUzVzWVhSaGJTNW9ZbTl0WVhoalpHNHVZMjl0TDJOdFlXWXZiR2wyWlM4eU1ETXhOakV4TDJSaGMyZ3ZZMlZ1WXk4eU9ESXhOUzl0WVhOMFpYSXViWEJrJmtleT1NREV3TVRkaFpESTBZVFptWTJNM01tWmpNR1F3WTJaa05XTTRaRFZqWm1FPSZrZXkyPVkySmxNR1F6TldWa09HWmhPV0k0TURabFlUTTROMlZpT1RGallqQmhZbVE9";
     $custom1 = '
     <li>
         <a class="justify-content-center" href="../../../tv/epg?s='.$s.'">
