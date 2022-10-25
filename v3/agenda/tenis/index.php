@@ -73,15 +73,45 @@ if (isset($_SESSION['message']) ){
                         <div class="card card-body">
                             <ul class="listview link-listview">
                                 <li>
-                                    <a class="justify-content-center" href="<?=$app?>/agenda/play/?c=mvamos">
+                                    <a class="justify-content-center" href="<?=$app?>/agenda/play/?c=mdep">
                                         <i class="flag es"></i>
-                                        #Vamos
+                                        M+ Deportes | VIP HD
                                     </a>
                                 </li>
                                 <li>
-                                    <a class="justify-content-center" href="<?=$app?>/agenda/play/?c=mdep">
+                                    <a class="justify-content-center" href="<?=$app?>/tv/epg/?c=260">
                                         <i class="flag es"></i>
-                                        M+ Deportes
+                                        Eurosport 1 | HD
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="justify-content-center" href="<?=$app?>/tv/epg/?c=587">
+                                        <i class="flag es"></i>
+                                        Eurosport 2 | HD
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="justify-content-center" href="<?=$app?>/tv/epg/?c=626">
+                                        <i class="flag de"></i>
+                                        Eurosport 1 | HD
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="justify-content-center" href="<?=$app?>/tv/epg/?c=627">
+                                        <i class="flag de"></i>
+                                        Eurosport 2 | HD
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="justify-content-center" href="<?=$app?>/tv/epg/?c=628">
+                                        <i class="flag it"></i>
+                                        Eurosport 1 | HD
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="justify-content-center" href="<?=$app?>/tv/epg/?c=629">
+                                        <i class="flag it"></i>
+                                        Eurosport 2 | HD
                                     </a>
                                 </li>
                             </ul>
