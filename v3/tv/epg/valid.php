@@ -3,9 +3,16 @@
 if (isset($_GET['s']) || isset($_GET['r'])){
     echo '<script>
     if (window.location.protocol != "https:") {
-        location.href =   location.href.replace("http://", "https://");
+        //location.href =   location.href.replace("http://", "https://");
     }
     </script>';
+    if (isset($_GET['s'])){
+        // HBO
+        include('valid/hmax.php');
+    } elseif (isset($_GET['r'])){
+        // Star
+        include('valid/star.php');
+    }
 }
 
 // mlaliga iframe
@@ -13,7 +20,7 @@ if ($_GET['c']==558 || $_GET['c']==93){
     // Recargar página con SSL
     echo '<script>
     if (window.location.protocol != "https:") {
-        location.href =   location.href.replace("http://", "https://");
+        //location.href =   location.href.replace("http://", "https://");
     }
     </script>';
 }
@@ -26,12 +33,6 @@ if ($typeChannel == 2 || $typeChannel == 3 || $typeChannel == 8 || $_GET['url'] 
 if (isset($_GET['nba']) || isset($_GET['nfl']) || isset($_GET['mlb']) || isset($_GET['s']) || isset($_GET['r'])){
     // NBA & NFL
     include('valid/nba.php');
-} elseif (isset($_GET['s'])){
-    // HBO
-    include('valid/hmax.php');
-} elseif (isset($_GET['r'])){
-    // Star
-    include('valid/star.php');
 } else {
     // VIP
     if (!isset($typeChannel) && !isset($_GET['key'])){
