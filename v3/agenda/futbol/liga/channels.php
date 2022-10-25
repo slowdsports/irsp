@@ -14,6 +14,8 @@ if ($result['canal3'] === "star+"){
         </a>
     </li>
     ';
+} else {
+    $custom2 = "";
 }
 
 // Logos
