@@ -3,7 +3,7 @@
 if (isset($_GET['s']) || isset($_GET['r'])){
     echo '<script>
     if (window.location.protocol != "https:") {
-        //location.href =   location.href.replace("http://", "https://");
+        location.href =   location.href.replace("http://", "https://");
     }
     </script>';
     if (isset($_GET['s'])){
@@ -36,7 +36,7 @@ if (isset($_GET['nba']) || isset($_GET['nfl']) || isset($_GET['mlb']) || isset($
 } else {
     // VIP
     if (!isset($typeChannel) && !isset($_GET['key'])){
-        include('valid/vip.php');
+        //include('valid/vip.php');
     }
 
     // M3U

@@ -56,7 +56,7 @@ if ($result['visita'] === "chelsea" || $result['local'] === "sevilla" || $result
 //HBO
 if ($result['visita'] === "team"){
     $canalImg = "hbow";
-    $s= "Ly92ZXJjb21vZnV0Ym9sLnh5ei9oYm8vYnRtLnBocD9nZXQ9YUhSMGNITTZMeTlzYVhabExtWnNlUzVzWVhSaGJTNW9ZbTl0WVhoalpHNHVZMjl0TDJOdFlXWXZiR2wyWlM4eU1ETXhOakV3TDJSaGMyZ3ZZMlZ1WXk4eU9ERTJOQzl0WVhOMFpYSXViWEJrJmtleT1NREV3TVRZNU1qSTBaR1ZsTjJaaVpqRmpaams1TURrd05tVmxNamxsWmpFPSZrZXkyPU16TmlNVEkwTVRVeVpXTTJZV1E1TmpKaFptUmtZVE5pWXpoak9ERTJObU09";
+    $s= "aHR0cHM6Ly9saXZlLmFrbS5sYXRhbS5oYm9tYXhjZG4uY29tL2NtYWYvbGl2ZS8yMDMxNjExL2Rhc2gvY2VuYy8yODIxNS9tYXN0ZXIubXBk&key=MDEwMTdhZDI0YTZmY2M3MmZjMGQwY2ZkNWM4ZDVjZmE=&key2=Y2JlMGQzNWVkOGZhOWI4MDZlYTM4N2ViOTFjYjBhYmQ=";
     $custom1 = '
     <li>
         <a class="justify-content-center" href="../../../tv/epg?s='.$s.'">
@@ -69,7 +69,7 @@ if ($result['visita'] === "team"){
 
 if ($result['visita'] === "chelsea"){
     $canalImg = "hbow";
-    $s= "Ly92ZXJjb21vZnV0Ym9sLnh5ei9oYm8vYnRtLnBocD9nZXQ9YUhSMGNITTZMeTlzYVhabExtTm1MbXhoZEdGdExtaGliMjFoZUdOa2JpNWpiMjB2WTIxaFppOXNhWFpsTHpJd016RTJNVEF2WkdGemFDOWpaVzVqTHpJNE1qRXlMMjFoYzNSbGNpNXRjR1E9JmtleT1NREV3TVRrNFptUTBaR1ZtTkdJMVkyRTJNMk5oT0dKbFlqRmhNbVZqTlRnPSZrZXkyPU5EQTNNR0V3WlRSaFlqaGtPVGcwWlRsallUTTVZVGN5TnpCa1pEa3hZak09";
+    $s= "aHR0cHM6Ly9saXZlLmNmLmxhdGFtLmhib21heGNkbi5jb20vY21hZi9saXZlLzIwMzE2MTAvZGFzaC9jZW5jLzI4MjEyL21hc3Rlci5tcGQ=&key=MDEwMTk4ZmQ0ZGVmNGI1Y2E2M2NhOGJlYjFhMmVjNTg=&key2=NDA3MGEwZTRhYjhkOTg0ZTljYTM5YTcyNzBkZDkxYjM=";
     $custom1 = '
     <li>
         <a class="justify-content-center" href="../../../tv/epg?s='.$s.'">
