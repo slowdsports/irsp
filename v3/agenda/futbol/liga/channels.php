@@ -2,6 +2,20 @@
 $canal = $result['canal'];
 $canal2 = $result['canal2'];
 $canal3 = $result['canal3'];
+
+if ($result['canal3'] === "star+"){
+    $canalImg = "starplus";
+    $r = $app."/agenda/star.php";
+    $custom2 = '
+    <li>
+        <a class="justify-content-center" href="'.$r.'">
+        <i class="flag ar"></i>
+        Star + | HD
+        </a>
+    </li>
+    ';
+}
+
 // Logos
 if($canal === "M+ Liga de Campeones" || $canal === "M+ Liga de Campeones UHD (M441 O115)" || $canal === "M+ Liga de Campeones (M56 O114)" || $canal === "mlcamp"){
     $canalImg = "campeones";
