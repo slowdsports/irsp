@@ -91,6 +91,12 @@ if (isset($_SESSION['message']) ){
                                     </a>
                                 </li>
                                 <li>
+                                    <a class="justify-content-center" href="<?=$app?>/tv/epg/?c=97">
+                                        <i class="flag es"></i>
+                                        TDP | HD
+                                    </a>
+                                </li>
+                                <li>
                                     <a class="justify-content-center" href="<?=$app?>/tv/epg/?c=626">
                                         <i class="flag de"></i>
                                         Eurosport 1 | HD
