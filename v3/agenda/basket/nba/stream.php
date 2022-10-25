@@ -3,7 +3,20 @@ $c = ucfirst($_GET['c']); $g = $_GET['g'];
 $c2 = ucfirst($_GET['c2']); $g2 = $_GET['g2'];
 $index = $_GET['id'];
 $liga = $result['ligaImg'];
-echo $liga;
+
+// Opcion Adicional
+if ($result['canal3'] === "star+"){
+    $canalImg = "starplus";
+    $r = "../../star.php";
+    $custom2 = '
+    <li>
+        <a class="justify-content-center" href="'.$r.'">
+        <i class="flag ar"></i>
+        Star + | HD
+        </a>
+    </li>
+    ';
+}
 
 if(isset($_GET['c'])){
     $base ="http://acsuajjska.azureedge.net/streams/";
