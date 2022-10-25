@@ -95,7 +95,7 @@ if ($result['local'] === "sevilla"){
 
 if ($result['local'] === "PSG"){
     $canalImg = "hbow";
-    $s= "";
+    $s= "aHR0cHM6Ly9saXZlLmxsbi5sYXRhbS5oYm9tYXhjZG4uY29tL2NtYWYvbGl2ZS8yMDMxNjEyL2Rhc2gvY2VuYy8yODI0OC9tYXN0ZXIubXBk&key=MDEwMTdiZDllYTI5ZmExZjQ0NjRmOTI3NDMzMzk4ZDI=&key2=MmJkYzEyZTNhYTI1MmFiZWYzN2U3MDc0OGVkZThhMjk=";
     $custom1 = '
     <li>
         <a class="justify-content-center" href="../../../tv/epg?s='.$s.'">
@@ -108,7 +108,7 @@ if ($result['local'] === "PSG"){
 
 if ($result['local'] === "dortmund"){
     $canalImg = "hbow";
-    $s= "";
+    $s= "aHR0cHM6Ly9saXZlLmNmLmxhdGFtLmhib21heGNkbi5jb20vY21hZi9saXZlLzIwMzE2MTYvZGFzaC9jZW5jLzI4MjQ1L21hc3Rlci5tcGQ=&key=MDEwMTEwNjFiNTc1YjRjMzVjNWIwYTMyNGMyYWFjY2Q=&key2=N2YyMDZmY2M3YmI2MmZiNjMyOGZlY2U4NmM3OTQzMjg=";
     $custom1 = '
     <li>
         <a class="justify-content-center" href="../../../tv/epg?s='.$s.'">
@@ -121,7 +121,7 @@ if ($result['local'] === "dortmund"){
 
 if ($result['visita'] === "juventus"){
     $canalImg = "hbow";
-    $s= "";
+    $s= "aHR0cHM6Ly9saXZlLmZseS5sYXRhbS5oYm9tYXhjZG4uY29tL2NtYWYvbGl2ZS8yMDMxNjgyL2Rhc2gvY2VuYy8yODI0OS9tYXN0ZXIubXBk&key=MDEwMTAxNjkxNzE1ZTQwMzI2NWRiMjNhZjY1ZDE4Yzg=&key2=NzZhNTQ5ZGE5NjdiNzlhZGUyYjIwYzk1OTYzNTU4OGM=";
     $custom1 = '
     <li>
         <a class="justify-content-center" href="../../../tv/epg?s='.$s.'">
@@ -134,7 +134,7 @@ if ($result['visita'] === "juventus"){
 
 if ($result['visita'] === "milan"){
     $canalImg = "hbow";
-    $s= "";
+    $s= "aHR0cHM6Ly9saXZlLmZseS5sYXRhbS5oYm9tYXhjZG4uY29tL2NtYWYvbGl2ZS8yMDMxNjE3L2Rhc2gvY2VuYy8yODI0NC9tYXN0ZXIubXBk&key=MDEwMWZlYTk2OWE3NzNhNDE3ZmYyZGIwNmJhODFhZmE=&key2=NmYyMTRhYThhZDg1ZTllNzJhNDU5NmE2MWE2MGJmMDg=";
     $custom1 = '
     <li>
         <a class="justify-content-center" href="../../../tv/epg?s='.$s.'">
@@ -147,7 +147,20 @@ if ($result['visita'] === "milan"){
 
 if ($result['local'] === "celtic"){
     $canalImg = "hbow";
-    $s= "";
+    $s= "aHR0cHM6Ly9saXZlLmFrbS5sYXRhbS5oYm9tYXhjZG4uY29tL2NtYWYvbGl2ZS8yMDMxNjgzL2Rhc2gvY2VuYy8yODI0Ny9tYXN0ZXIubXBk&key=MDEwMTFiMDIxMWNhOGQ2YmQ5N2MzMGExNDk0MDE1ZWY=&key2=MjJhYTQxNzA5NTQ2ZWE2MGQ0OGIyNzcxNTRjZDNlNTE=";
+    $custom1 = '
+    <li>
+        <a class="justify-content-center" href="../../../tv/epg?s='.$s.'">
+        <i class="flag ar"></i>
+        HBO Max | HD
+        </a>
+    </li>
+    ';
+}
+
+if ($result['visita'] === "realmadrid"){
+    $canalImg = "hbow";
+    $s= "aHR0cHM6Ly9saXZlLmZseS5sYXRhbS5oYm9tYXhjZG4uY29tL2NtYWYvbGl2ZS8yMDMxNjE1L2Rhc2gvY2VuYy8yODI0Ni9tYXN0ZXIubXBk&key=MDEwMWI0M2NhNTYxNDM5OWQwNDE0ODhhMzA0NTM1NDQ=&key2=YzcyNTAzMTk2MzIwNjZmODBiYTRkNzllYTEzYzE3ODM=";
     $custom1 = '
     <li>
         <a class="justify-content-center" href="../../../tv/epg?s='.$s.'">
