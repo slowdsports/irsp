@@ -82,7 +82,7 @@ if ($result['visita'] === "chelsea"){
 
 if ($result['local'] === "sevilla"){
     $canalImg = "hbow";
-    $s= "Ly92ZXJjb21vZnV0Ym9sLnh5ei9oYm8vYnRtLnBocD9nZXQ9YUhSMGNITTZMeTlzYVhabExtRnJiUzVzWVhSaGJTNW9ZbTl0WVhoalpHNHVZMjl0TDJOdFlXWXZiR2wyWlM4eU1ETXhOakV4TDJSaGMyZ3ZZMlZ1WXk4eU9ESXhOUzl0WVhOMFpYSXViWEJrJmtleT1NREV3TVRkaFpESTBZVFptWTJNM01tWmpNR1F3WTJaa05XTTRaRFZqWm1FPSZrZXkyPVkySmxNR1F6TldWa09HWmhPV0k0TURabFlUTTROMlZpT1RGallqQmhZbVE9";
+    $s= "aHR0cHM6Ly9saXZlLmFrbS5sYXRhbS5oYm9tYXhjZG4uY29tL2NtYWYvbGl2ZS8yMDMxNjExL2Rhc2gvY2VuYy8yODIxNS9tYXN0ZXIubXBk&key=MDEwMTdhZDI0YTZmY2M3MmZjMGQwY2ZkNWM4ZDVjZmE=&key2=Y2JlMGQzNWVkOGZhOWI4MDZlYTM4N2ViOTFjYjBhYmQ=";
     $custom1 = '
     <li>
         <a class="justify-content-center" href="../../../tv/epg?s='.$s.'">
