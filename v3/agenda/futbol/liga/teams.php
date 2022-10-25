@@ -144,8 +144,8 @@ if ($result['liga'] == 32){
     $local = str_replace("eintrachtfrankfurt", "Eintracht", $local);
     $visita = str_replace("eintrachtfrankfurt", "Eintracht", $visita);
 
-    //Europa & Conference
-    if ($result['liga'] == 4 || $result['liga'] == 16){
+    //Europa
+    if ($result['liga'] == 3 || $result['liga'] == 4 || $result['liga'] == 16){
         $local = str_replace('bodoglimt', 'Bodo Glimt', $local);
         $local = str_replace('dynamokiev', 'Dynamo Kiev', $local);
         $local = str_replace('aek larnaca', 'AEK Larnaca', $local);
@@ -163,6 +163,18 @@ if ($result['liga'] == 32){
         $local = str_replace('lechpoznan', 'Lech Poznan', $local);
         $local = str_replace('shamrockrovers', 'Shamrock Rovers', $local);
         $local = str_replace('fcsb', 'FCSB', $local);
+        $local = str_replace('copenhague', 'FC Copenhague', $local);
+        $local = str_replace('salzburgo', 'RB Salzburgo', $local);
+        $local = str_replace('chelsea', 'Chelsea FC', $local);
+        $local = str_replace('leipzig', 'RB Leipzig', $local);
+        $local = str_replace('milan', 'AC Milan', $local);
+        $local = str_replace('fcsb', 'FCSB', $local);
+        $local = str_replace('celtic', 'Celtic FC', $local);
+        $local = str_replace('shaktar', 'Shaktar Donetsk', $local);
+        $local = str_replace('plzen', 'Viktoria Plzen', $local);
+        $local = str_replace('brujas', 'Club Brujas', $local);
+        $local = str_replace('porto', 'FC Porto', $local);
+        $local = str_replace('rangers', 'Rangers FC', $local);
 
         $visita = str_replace('bodoglimt', 'Bodo Glimt', $visita);
         $visita = str_replace('dynamokiev', 'Dynamo Kiev', $visita);
@@ -181,6 +193,18 @@ if ($result['liga'] == 32){
         $visita = str_replace('lechpoznan', 'Lech Poznan', $visita);
         $visita = str_replace('shamrockrovers', 'Shamrock Rovers', $visita);
         $visita = str_replace('fcsb', 'FCSB', $visita);
+        $visita= str_replace('copenhague', 'FC Copenhague', $local);
+        $visita= str_replace('salzburgo', 'RB Salzburgo', $local);
+        $visita= str_replace('chelsea', 'Chelsea FC', $local);
+        $visita= str_replace('leipzig', 'RB Leipzig', $local);
+        $visita= str_replace('milan', 'AC Milan', $local);
+        $visita= str_replace('fcsb', 'FCSB', $local);
+        $visita= str_replace('celtic', 'Celtic FC', $local);
+        $visita= str_replace('shaktar', 'Shaktar Donetsk', $local);
+        $visita= str_replace('plzen', 'Viktoria Plzen', $local);
+        $visita= str_replace('brujas', 'Club Brujas', $local);
+        $visita= str_replace('porto', 'FC Porto', $local);
+        $visita= str_replace('rangers', 'Rangers FC', $local);
     }
 
     //Liga PRO Ecuador
