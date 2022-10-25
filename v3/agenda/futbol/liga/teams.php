@@ -193,18 +193,18 @@ if ($result['liga'] == 32){
         $visita = str_replace('lechpoznan', 'Lech Poznan', $visita);
         $visita = str_replace('shamrockrovers', 'Shamrock Rovers', $visita);
         $visita = str_replace('fcsb', 'FCSB', $visita);
-        $visita= str_replace('copenhague', 'FC Copenhague', $local);
-        $visita= str_replace('salzburgo', 'RB Salzburgo', $local);
-        $visita= str_replace('chelsea', 'Chelsea FC', $local);
-        $visita= str_replace('leipzig', 'RB Leipzig', $local);
-        $visita= str_replace('milan', 'AC Milan', $local);
-        $visita= str_replace('fcsb', 'FCSB', $local);
-        $visita= str_replace('celtic', 'Celtic FC', $local);
-        $visita= str_replace('shaktar', 'Shaktar Donetsk', $local);
-        $visita= str_replace('plzen', 'Viktoria Plzen', $local);
-        $visita= str_replace('brujas', 'Club Brujas', $local);
-        $visita= str_replace('porto', 'FC Porto', $local);
-        $visita= str_replace('rangers', 'Rangers FC', $local);
+        $visita= str_replace('copenhague', 'FC Copenhague', $visita);
+        $visita= str_replace('salzburgo', 'RB Salzburgo', $visita);
+        $visita= str_replace('chelsea', 'Chelsea FC', $visita);
+        $visita= str_replace('leipzig', 'RB Leipzig', $visita);
+        $visita= str_replace('milan', 'AC Milan', $visita);
+        $visita= str_replace('fcsb', 'FCSB', $visita);
+        $visita= str_replace('celtic', 'Celtic FC', $visita);
+        $visita= str_replace('shaktar', 'Shaktar Donetsk', $visita);
+        $visita= str_replace('plzen', 'Viktoria Plzen', $visita);
+        $visita= str_replace('brujas', 'Club Brujas', $visita);
+        $visita= str_replace('porto', 'FC Porto', $visita);
+        $visita= str_replace('rangers', 'Rangers FC', $visita);
     }
 
     //Liga PRO Ecuador
