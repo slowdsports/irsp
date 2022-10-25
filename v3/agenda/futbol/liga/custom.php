@@ -33,44 +33,101 @@ if ($result['local'] === "team"){
     ';
 }
 
-if ($result['canal3'] === "star+"){
-    $canalImg = "starplus";
-    $r = "../../star.php";
-    $custom2 = '
-    <li>
-        <a class="justify-content-center" href="'.$r.'">
-        <i class="flag ar"></i>
-        Star + | HD
-        </a>
-    </li>
-    ';
-}
-
-if ($result['local'] === "Balon De Oro" || $result['local'] === "lecce"){
-    $canalImg = "starplus";
-    // LINK:
-    $r= "";
-
-    if ($r === ""){
-        $r = "../../star.php";
-    } else {
-        $r = "javascript:void(0)";
-    }
-    $custom2 = '
-    <li>
-        <a class="justify-content-center" href="'.$r.'">
-        <i class="flag ar"></i>
-        Star + | HD
-        </a>
-    </li>
-    ';
-}
-
-
 //HBO
 if ($result['visita'] === "team"){
     $canalImg = "hbow";
     $s= "Ly92ZXJjb21vZnV0Ym9sLnh5ei9oYm8vYnRtLnBocD9nZXQ9YUhSMGNITTZMeTlzYVhabExtWnNlUzVzWVhSaGJTNW9ZbTl0WVhoalpHNHVZMjl0TDJOdFlXWXZiR2wyWlM4eU1ETXhOakV3TDJSaGMyZ3ZZMlZ1WXk4eU9ERTJOQzl0WVhOMFpYSXViWEJrJmtleT1NREV3TVRZNU1qSTBaR1ZsTjJaaVpqRmpaams1TURrd05tVmxNamxsWmpFPSZrZXkyPU16TmlNVEkwTVRVeVpXTTJZV1E1TmpKaFptUmtZVE5pWXpoak9ERTJObU09";
+    $custom1 = '
+    <li>
+        <a class="justify-content-center" href="../../../tv/epg?s='.$s.'">
+        <i class="flag ar"></i>
+        HBO Max | HD
+        </a>
+    </li>
+    ';
+}
+
+if ($result['visita'] === "chelsea"){
+    $canalImg = "hbow";
+    $s= "";
+    $custom1 = '
+    <li>
+        <a class="justify-content-center" href="../../../tv/epg?s='.$s.'">
+        <i class="flag ar"></i>
+        HBO Max | HD
+        </a>
+    </li>
+    ';
+}
+
+if ($result['local'] === "sevilla"){
+    $canalImg = "hbow";
+    $s= "";
+    $custom1 = '
+    <li>
+        <a class="justify-content-center" href="../../../tv/epg?s='.$s.'">
+        <i class="flag ar"></i>
+        HBO Max | HD
+        </a>
+    </li>
+    ';
+}
+
+if ($result['local'] === "PSG"){
+    $canalImg = "hbow";
+    $s= "";
+    $custom1 = '
+    <li>
+        <a class="justify-content-center" href="../../../tv/epg?s='.$s.'">
+        <i class="flag ar"></i>
+        HBO Max | HD
+        </a>
+    </li>
+    ';
+}
+
+if ($result['local'] === "dortmund"){
+    $canalImg = "hbow";
+    $s= "";
+    $custom1 = '
+    <li>
+        <a class="justify-content-center" href="../../../tv/epg?s='.$s.'">
+        <i class="flag ar"></i>
+        HBO Max | HD
+        </a>
+    </li>
+    ';
+}
+
+if ($result['visita'] === "juventus"){
+    $canalImg = "hbow";
+    $s= "";
+    $custom1 = '
+    <li>
+        <a class="justify-content-center" href="../../../tv/epg?s='.$s.'">
+        <i class="flag ar"></i>
+        HBO Max | HD
+        </a>
+    </li>
+    ';
+}
+
+if ($result['visita'] === "milan"){
+    $canalImg = "hbow";
+    $s= "";
+    $custom1 = '
+    <li>
+        <a class="justify-content-center" href="../../../tv/epg?s='.$s.'">
+        <i class="flag ar"></i>
+        HBO Max | HD
+        </a>
+    </li>
+    ';
+}
+
+if ($result['local'] === "celtic"){
+    $canalImg = "hbow";
+    $s= "";
     $custom1 = '
     <li>
         <a class="justify-content-center" href="../../../tv/epg?s='.$s.'">
