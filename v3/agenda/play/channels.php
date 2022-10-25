@@ -30,6 +30,8 @@ switch ($channel){
     $server.$usuario."/".$password."/"."16".".m3u8"; break;
     case 'mlcamp' : $channel =
     $server.$usuario."/".$password."/"."17".".m3u8"; break;
+    case 'mlcamp2' : $channel =
+    $server.$usuario."/".$password."/"."18".".m3u8"; break;
     case 'mlcamp4' : $channel=
     $server.$usuario."/".$password."/"."38".".m3u8"; break;
     case 'mdep' : $channel=
@@ -44,7 +46,7 @@ switch ($channel){
     $server.$usuario."/".$password."/"."22".".m3u8"; break;
     case 'goles' : $channel=
     $server.$usuario."/".$password."/"."23".".m3u8"; break;
-    case 'mlcamp2' : $channel=
+    case 'mlcamp3' : $channel=
     $server.$usuario."/".$password."/"."24".".m3u8"; break;
     case 'esport3' : $channel=
     $server.$usuario."/".$password."/"."25".".m3u8"; break;
@@ -54,7 +56,7 @@ switch ($channel){
     $server.$usuario."/".$password."/"."27".".m3u8"; break;
     case 'daznf1' : $channel=
     $server.$usuario."/".$password."/"."28".".m3u8"; break;
-    case 'mlcamp3' : $channel=
+    case 'mlcamp4' : $channel=
     $server.$usuario."/".$password."/"."30".".m3u8"; break;
     case 'mlcampsd' : $channel =
     $server.$usuario."/".$password."/"."32".".m3u8"; break;
@@ -66,6 +68,8 @@ switch ($channel){
     $server.$usuario."/".$password."/"."36".".m3u8"; break;
     case 'daznlaliga2' : $channel =
     $server.$usuario."/".$password."/"."37".".m3u8"; break;
+    case 'mlcamp5' : $channel =
+    $server.$usuario."/".$password."/"."41".".m3u8"; break;
 
     //BACKUP
     // ESPN SUR: https://edge3.prepro.cvattv.com.ar/live/vod/ESPN2HD/SA_Live_WebVTT_FTA/ESPN2HD.m3u8;

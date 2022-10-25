@@ -146,7 +146,7 @@ if (isset($_SESSION['message']) ){
 <!-- End Categorías -->
 <!-- Timer -->
 <script>
-    var yyyy = 2022; var mm = 09; var dd = 23;
+    var yyyy = 2022; var mm = 09; var dd = 25;
 
     var myTime = yyyy+mm+dd;
     var textLive = "<p class='live-text'>En Vivo <ion-icon class='faa-flash animated' name='ellipse'></ion-icon></p>";
@@ -185,6 +185,7 @@ if (isset($_SESSION['message']) ){
             ele.innerHTML = (days + "<span>d</span> " + hours + "<span>h</span> "
             + minutes + "<span>m</span> " + seconds + "<span>s</span><br />")
         }
+        //console.log(distance);
         // If the count down is over, write some text
         if (distance < 0) {
             for (const ele of document.getElementsByClassName("chiriTime")) {
