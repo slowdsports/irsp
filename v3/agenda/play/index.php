@@ -17,6 +17,12 @@ $row=mysqli_fetch_assoc($query);
 $usuario = $row['username'];
 $password = $row['password'];
 $channel = $_GET['c'];
+// Recargar página sin SSL
+echo '<script>
+if (window.location.protocol != "http:") {
+    location.href =   location.href.replace("https://", "http://");
+}
+</script>';
 
 // Si el usuario es free
 if ($row['type'] == 2 && $row['fecha'] == null){
