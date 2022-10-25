@@ -69,7 +69,7 @@ var textEnd = "Finalizó";
         for (const ele of document.getElementsByClassName("cntdwn-<?=$index?>")){
             ele.innerHTML = (minutes<?=$index?> + "m " + seconds<?=$index?> + "s")
         }
-    } else if (minutes<?=$index?> == 0){
+    } else if (hours<?=$index?> == 0 && minutes<?=$index?> == 0){
         for (const ele of document.getElementsByClassName("cntdwn-<?=$index?>")){
             ele.innerHTML = (seconds<?=$index?> + "s")
         }
