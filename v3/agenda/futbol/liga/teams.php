@@ -17,7 +17,7 @@ if ($result['liga'] == 32){
     $local = str_replace('osasuna', 'CA Osasuna', $local);
     $local = str_replace('cdiz', 'Cádiz CF', $local);
     $local = str_replace('elche', 'Elche CF', $local);
-    if ($result['liga'] == 1){
+    if ($result['liga'] == 1 || $result['liga'] == 3){
         $local = str_replace('barcelona', 'FC Barcelona', $local);
         $visita = str_replace('barcelona', 'FC Barcelona', $visita);
     }
@@ -142,7 +142,9 @@ if ($result['liga'] == 32){
 
     //Bundesliga
     $local = str_replace("eintrachtfrankfurt", "Eintracht", $local);
+    $local = str_replace("bayern", "FC Bayern", $local);
     $visita = str_replace("eintrachtfrankfurt", "Eintracht", $visita);
+    $visita = str_replace("bayern", "FC Bayern", $visita);
 
     //Europa
     if ($result['liga'] == 3 || $result['liga'] == 4 || $result['liga'] == 16){
