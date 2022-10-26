@@ -99,7 +99,7 @@ if (isset($_SESSION['message']) ){
                                     </div>
                                 </div>
                                 <div class="channel">
-                                    <img src="<?=$app?>assets/img/canales/<?=($canalImg===null)?"cincoestrellas":$canalImg ?>.png" alt="" />
+                                    <img src="<?=$app?>assets/img/canales/<?=($canalImg===null)?"152x152":$canalImg ?>.png" alt="" />
                                 </div>
                             </div>
                         </div>
