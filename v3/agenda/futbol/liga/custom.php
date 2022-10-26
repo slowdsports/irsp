@@ -77,7 +77,7 @@ if ($result['local'] === "brujas"){
 
 if ($result['local'] === "barcelona"){
     $canalImg = "hbow";
-    $s= "";
+    $s= "aHR0cHM6Ly9saXZlLmFrbS5sYXRhbS5oYm9tYXhjZG4uY29tL2NtYWYvbGl2ZS8yMDMxNjE1L2Rhc2gvY2VuYy8yODI1MC9tYXN0ZXIubXBk&key=MDEwMWU2NmE0MDM4NzNlMDgyYjg2MzFmMjc4ZjBiYTg=&key2=ZTljMWQ2ZGRjM2U5NGNjMjQ2YzkwY2ExYTBkZjRiYjI=";
     if ($s === ""){ $s= "javascript:void(0)"; } else {$s = "../../../tv/epg?s='.$s.'";}
     $custom1 = '
     <li>
@@ -91,7 +91,7 @@ if ($result['local'] === "barcelona"){
 
 if ($result['local'] === "at.madrid"){
     $canalImg = "hbow";
-    $s= "";
+    $s= "aHR0cHM6Ly9saXZlLmFrbS5sYXRhbS5oYm9tYXhjZG4uY29tL2NtYWYvbGl2ZS8yMDMxNjgyL2Rhc2gvY2VuYy8yODI1OS9tYXN0ZXIubXBk&key=MDEwMWFkMmE2N2ZiNmJhN2VhYjRhMWZkMGE2YzRjYzU=&key2=ODM5NGEzYjk2NjRhZWNjM2NmMmE0OGRmNDE3N2IxMmI=";
     if ($s === ""){ $s= "javascript:void(0)"; } else {$s = "../../../tv/epg?s='.$s.'";}
     $custom1 = '
     <li>
@@ -105,7 +105,7 @@ if ($result['local'] === "at.madrid"){
 
 if ($result['local'] === "ajax"){
     $canalImg = "hbow";
-    $s= "";
+    $s= "aHR0cHM6Ly9saXZlLmFrbS5sYXRhbS5oYm9tYXhjZG4uY29tL2NtYWYvbGl2ZS8yMDMxNjEyL2Rhc2gvY2VuYy8yODI2MC9tYXN0ZXIubXBk&key=MDEwMTM0NDkzMzE1ZTVhYTY4Zjc1MmI4OWZjOWIyNzM=&key2=NDdlYzVkYWQxMDQyNTczYTVjY2IzMmQxZGRhMDlhOTY=";
     if ($s === ""){ $s= "javascript:void(0)"; } else {$s = "../../../tv/epg?s='.$s.'";}
     $custom1 = '
     <li>
