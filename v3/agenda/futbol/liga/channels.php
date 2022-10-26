@@ -1356,7 +1356,7 @@ if($canal === "tudnusa" || $canal === "tudnusa"){
     $canalop2 = '
     <li>
         <a class="justify-content-center" href="'.$app.'/agenda/play?futbol&id='.$index.'&c=tudnusa">
-        <i class="flag de"></i>
+        <i class="flag mx"></i>
         TUDN | VIP HD
         </a>
     </li>';
@@ -1365,7 +1365,7 @@ if($canal === "tudnusa" || $canal === "tudnusa"){
     $canalop4 = '
     <li>
         <a class="justify-content-center" href="'.$app.'/agenda/play?futbol&id='.$index.'&c=tudnusa">
-        <i class="flag de"></i>
+        <i class="flag mx"></i>
         TUDN | VIP HD
         </a>
     </li>';

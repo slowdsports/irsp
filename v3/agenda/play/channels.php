@@ -68,6 +68,8 @@ switch ($channel){
     $server.$usuario."/".$password."/"."36".".m3u8"; break;
     case 'daznlaliga2' : $channel =
     $server.$usuario."/".$password."/"."37".".m3u8"; break;
+    case 'tudnusa' : $channel =
+    $server.$usuario."/".$password."/"."38".".m3u8"; break;
     case 'mlcamp5' : $channel =
     $server.$usuario."/".$password."/"."41".".m3u8"; break;
 
