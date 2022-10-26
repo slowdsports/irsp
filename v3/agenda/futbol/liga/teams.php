@@ -369,12 +369,14 @@ if ($result['liga'] == 32){
     $local = str_replace('godoycruz', 'Godoy Cruz', $local);
     $local = str_replace('lanus', 'Lanús', $local);
     $local = str_replace('atleticotucuman', 'Atlético Tucumán', $local);
+    $local = str_replace('boca juniors', 'Boca JRS', $local);
     $local = str_replace('bocajuniors', 'Boca JRS', $local);
     $local = str_replace('riverplate', 'River Plate', $local);
     $local = str_replace('rosariocentral', 'Rosario Central', $local);
     $local = str_replace('argentinosjuniors', 'Argentinos JRS', $local);
     $local = str_replace('velez', 'Velez Sarsfield', $local);
-    if ($result['liga'] == 27){
+    $local = str_replace('tallerescrdoba', 'Talleres', $local);
+    if ($result['liga'] == 27 || $result['liga'] == 36){
         $local = str_replace('racing', 'Racing Club', $local);
         $visita = str_replace('racing', 'Racing Club', $visita);
     }
@@ -391,11 +393,13 @@ if ($result['liga'] == 32){
     $visita = str_replace('godoycruz', 'Godoy Cruz', $visita);
     $visita = str_replace('lanus', 'Lanús', $visita);
     $visita = str_replace('atleticotucuman', 'Atlético Tucumán', $visita);
+    $visita = str_replace('boca juniors', 'Boca JRS', $visita);
     $visita = str_replace('bocajuniors', 'Boca JRS', $visita);
     $visita = str_replace('riverplate', 'River Plate', $visita);
     $visita = str_replace('rosariocentral', 'Rosario Central', $visita);
     $visita = str_replace('argentinosjuniors', 'Argentinos JRS', $visita);
     $visita = str_replace('velez', 'Velez Sarsfield', $visita);
+    $visita = str_replace('tallerescrdoba', 'Talleres', $visita);
 
     // MLS
     if ($result['liga'] == 27){
