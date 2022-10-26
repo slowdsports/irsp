@@ -1189,7 +1189,9 @@ if($canal === "goltvec" || $canal === "goltvec"){
         Gol TV | HD
         </a>
     </li>';
-} if($canal === "GolTV Play" || $canal === "GolTV Play"){
+}
+
+if($canal === "GolTV Play" || $canal === "GolTV Play"){
     $canalImg = "goltv";
     $canalop2 = '
     <li>
@@ -1207,7 +1209,9 @@ if($canal === "goltvec" || $canal === "goltvec"){
         Gol TV | HD
         </a>
     </li>';
-} if($canal === "tyc" || $canal === "tyc"){
+}
+
+if($canal === "tyc" || $canal === "tyc"){
     $canalImg = "tycsports";
     $canalop2 = '
     <li>
@@ -1225,7 +1229,9 @@ if($canal === "goltvec" || $canal === "goltvec"){
         TyC Sports | HD
         </a>
     </li>';
-} if($canal === "winplus" || $canal === "winplus"){
+}
+
+if($canal === "winplus" || $canal === "winplus"){
     $canalImg = "winsports";
     $canalop2 = '
     <li>
@@ -1243,7 +1249,9 @@ if($canal === "goltvec" || $canal === "goltvec"){
         Win Sports + | HD
         </a>
     </li>';
-} if($canal === "Teledeporte" || $canal === "Teledeporte"){
+}
+
+if($canal === "Teledeporte" || $canal === "Teledeporte"){
     $canalImg = "tdp";
     $canalop2 = '
     <li>
@@ -1261,7 +1269,9 @@ if($canal === "goltvec" || $canal === "goltvec"){
         Teledeporte | HD
         </a>
     </li>';
-} if($canal === "Esport3" || $canal === "Esport3 (Cataluña)"){
+}
+
+if($canal === "Esport3" || $canal === "Esport3 (Cataluña)"){
     $canalImg = "e3";
     $canalop4 = '
     <li>
@@ -1279,7 +1289,9 @@ if($canal === "goltvec" || $canal === "goltvec"){
         Esport3 | HD
         </a>
     </li>';
-} if($canal === "Aragón Deporte" || $canal === "AragÃ³n Deporte"){
+}
+
+if($canal === "Aragón Deporte" || $canal === "AragÃ³n Deporte"){
     $canalImg = "aragontv";
     $canalop2 = '
     <li>
@@ -1297,7 +1309,9 @@ if($canal === "goltvec" || $canal === "goltvec"){
         CMM Play (Castilla - LM) | HD
         </a>
     </li>';
-} if($canal === "CMMPlay (Castilla-LM)" || $canal === "CMMPlay (Castilla-LM)"){
+}
+
+if($canal === "CMMPlay (Castilla-LM)" || $canal === "CMMPlay (Castilla-LM)"){
     $canalImg = "cmm";
     $canalop2 = '
     <li>
@@ -1315,7 +1329,9 @@ if($canal === "goltvec" || $canal === "goltvec"){
         CMM Play (Castilla - LM) | HD
         </a>
     </li>';
-} if($canal === "ZDF (M+ Astra)" || $canal === "ZDF (M+ Astra)"){
+}
+
+if($canal === "ZDF (M+ Astra)" || $canal === "ZDF (M+ Astra)"){
     $canalImg = "zdf";
     $canalop2 = '
     <li>
@@ -1331,6 +1347,26 @@ if($canal === "goltvec" || $canal === "goltvec"){
         <a class="justify-content-center" href="'.$app.'/tv/epg?futbol&id='.$index.'&c=232">
         <i class="flag de"></i>
         ZDF | HD
+        </a>
+    </li>';
+}
+
+if($canal === "tudnusa" || $canal === "tudnusa"){
+    $canalImg = "tudn";
+    $canalop2 = '
+    <li>
+        <a class="justify-content-center" href="'.$app.'/agenda/play?futbol&id='.$index.'&c=tudnusa">
+        <i class="flag de"></i>
+        TUDN | VIP HD
+        </a>
+    </li>';
+} elseif($canal2 === "tudnusa" || $canal2 === "tudnusa"){
+    $canalImg = "tudn";
+    $canalop4 = '
+    <li>
+        <a class="justify-content-center" href="'.$app.'/agenda/play?futbol&id='.$index.'&c=tudnusa">
+        <i class="flag de"></i>
+        TUDN | VIP HD
         </a>
     </li>';
 }
