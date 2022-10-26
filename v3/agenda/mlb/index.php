@@ -73,6 +73,9 @@ if (isset($_SESSION['message']) ){
                     $visita = $result['visita'];
                     $index = $result['id'];
                     include('teams.php');
+                    // Channels
+                    include ('custom.php');
+                    include('channels.php');
                     include('../../inc/cntdwn.php');
                 ?>
                 <!-- Elemento -->
@@ -120,9 +123,6 @@ if (isset($_SESSION['message']) ){
                                 </li>
                                 <?php
                                 //include('timer.php');
-                                // Canales
-                                include ('custom.php');
-                                include('channels.php');
                                 if ($result['canal2'] !== ""){
                                     $canal = base64_encode($result['canal2']);
                                     $canal2 = '

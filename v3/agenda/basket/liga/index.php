@@ -42,6 +42,8 @@ if (isset($_SESSION['message']) ){
                     $local = $result['local'];
                     $visita = $result['visita'];
                     $index = $result['id'];
+                    // Channels
+                    include('../../futbol/liga/channels.php');
 
                     include('../../../inc/cntdwn.php');
 
@@ -83,7 +85,6 @@ if (isset($_SESSION['message']) ){
                                 //include('timer.php');
                                 // Canales
                                 //include ('custom.php');
-                                include('channels.php');
                                 // Canal 2
                                 echo $canalop2;
                                 // Canal 3

@@ -42,6 +42,9 @@ if (isset($_SESSION['message']) ){
                     $local = $result['local'];
                     $visita = $result['visita'];
                     $index = $result['id'];
+                    // Channels
+                    include ('custom.php');
+                    include('channels.php');
 
                     include('../../../inc/cntdwn.php');
                     include('teams.php');
@@ -80,9 +83,6 @@ if (isset($_SESSION['message']) ){
                             <ul class="listview link-listview">
                                 <?php
                                 //include('timer.php');
-                                // Canales
-                                include ('custom.php');
-                                include('channels.php');
                                 // Canal 2
                                 echo $canalop2;
                                 //echo $canal2;

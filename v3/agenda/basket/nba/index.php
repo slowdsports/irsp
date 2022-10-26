@@ -73,6 +73,8 @@ if (isset($_SESSION['message']) ){
                     $index = $result['id'];
                     include('teams.php');
                     include('../../../inc/cntdwn.php');
+                    // Channels
+                    include('../../futbol/liga/channels.php');
                 ?>
                 <!-- Elemento -->
                 <div class="col-12 mycard">
@@ -134,7 +136,6 @@ if (isset($_SESSION['message']) ){
                                 //include('timer.php');
                                 // Canales
                                 //include ('custom.php');
-                                include('../../futbol/liga/channels.php');
                                 // Canal 2
                                 echo $canalop2;
                                 // Canal 3
