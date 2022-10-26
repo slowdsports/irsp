@@ -133,7 +133,7 @@ if ($result['local'] === "tottenham"){
 
 if ($result['local'] === "eintracht"){
     $canalImg = "hbow";
-    $s= "";
+    $s= "aHR0cHM6Ly9saXZlLmxsbi5sYXRhbS5oYm9tYXhjZG4uY29tL2NtYWYvbGl2ZS8yMDMxNjgzL2Rhc2gvY2VuYy8yODI0Mi9tYXN0ZXIubXBk&key=MDEwMTg1YTJkZGI2MzIxNmI3YjJiMjZiZjE4YTBmNTQ=&key2=YzZmMDlmZDBkMGI3MDBkMDNiM2ViNzEyYjA3MjIwYTY=";
     //if ($s === ""){ $s= "javascript:void(0)"; } else {$s = "../../../tv/epg?s='.$s.'";}
     $custom1 = '
     <li>
@@ -147,7 +147,7 @@ if ($result['local'] === "eintracht"){
 
 if ($result['local'] === "napoli"){
     $canalImg = "hbow";
-    $s= "";
+    $s= "aHR0cHM6Ly9saXZlLmZseS5sYXRhbS5oYm9tYXhjZG4uY29tL2NtYWYvbGl2ZS8yMDMxNjE2L2Rhc2gvY2VuYy8yODI0MS9tYXN0ZXIubXBk&key=MDEwMWIzNzE1NTllNjEwZTUzOGQzZjM3YzY3MDQ4Zjk=&key2=MDdiOWI1ZmY0YjI5MjhlMzZiNTllOGMzYjJiZWZiMjQ=";
     //if ($s === ""){ $s= "javascript:void(0)"; } else {$s = "../../../tv/epg?s='.$s.'";}
     $custom1 = '
     <li>
