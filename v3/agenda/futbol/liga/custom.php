@@ -49,7 +49,7 @@ if ($result['visita'] === "team"){
 
 if ($result['local'] === "inter"){
     $canalImg = "hbow";
-    $s= "";
+    $s= "aHR0cHM6Ly9saXZlLmNmLmxhdGFtLmhib21heGNkbi5jb20vY21hZi9saXZlLzIwMzE2MTAvZGFzaC9jZW5jLzI4MjIzL21hc3Rlci5tcGQ=&key=MDEwMTZjNTIzZGQwYmU1NTQyZTU1MjBlNTc3YTRmODU=&key2=ZjE0ZWE1Mjg2OTQwYWJmYTlmMTI5ZmY2MTNmODVkOTk=";
     if ($s === ""){ $s= "javascript:void(0)"; } else {$s = "../../../tv/epg?s='.$s.'";}
     $custom1 = '
     <li>
@@ -63,7 +63,7 @@ if ($result['local'] === "inter"){
 
 if ($result['local'] === "brujas"){
     $canalImg = "hbow";
-    $s= "";
+    $s= "aHR0cHM6Ly9saXZlLmZseS5sYXRhbS5oYm9tYXhjZG4uY29tL2NtYWYvbGl2ZS8yMDMxNjExL2Rhc2gvY2VuYy8yODIzOS9tYXN0ZXIubXBk&key=MDEwMTUyMzczNmY1NGM3NjJiMDkzMzYzZGFlZjU3Y2Y=&key2=YzE3MTZjMTg1NTQzNmM4YjBlMmI5MWY3MDg1ZGQ3N2M=";
     if ($s === ""){ $s= "javascript:void(0)"; } else {$s = "../../../tv/epg?s='.$s.'";}
     $custom1 = '
     <li>
@@ -147,7 +147,7 @@ if ($result['local'] === "eintracht"){
 
 if ($result['local'] === "napoli"){
     $canalImg = "hbow";
-    $s= "aHR0cHM6Ly9saXZlLmFrbS5sYXRhbS5oYm9tYXhjZG4uY29tL2NtYWYvbGl2ZS8yMDMxNjExL2Rhc2gvY2VuYy8yODIxNS9tYXN0ZXIubXBk&key=MDEwMTdhZDI0YTZmY2M3MmZjMGQwY2ZkNWM4ZDVjZmE=&key2=Y2JlMGQzNWVkOGZhOWI4MDZlYTM4N2ViOTFjYjBhYmQ=";
+    $s= "";
     if ($s === ""){ $s= "javascript:void(0)"; } else {$s = "../../../tv/epg?s='.$s.'";}
     $custom1 = '
     <li>
