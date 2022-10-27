@@ -180,6 +180,8 @@ if ($result['liga'] == 32){
         $local = str_replace('basaksehir', 'Başakşehir', $local);
         $local = str_replace('azalkmaar', 'AZ Alkmaar', $local);
         $local = str_replace('zalgiris', 'FK Žalgiris', $local);
+        $local = str_replace('psv', 'PSV', $local);
+        $local = str_replace('aeklarnaca', 'AEK Larnaca', $local);
 
         $visita = str_replace('bodoglimt', 'Bodo Glimt', $visita);
         $visita = str_replace('dynamokiev', 'Dynamo Kiev', $visita);
@@ -213,6 +215,8 @@ if ($result['liga'] == 32){
         $visita = str_replace('basaksehir', 'Başakşehir', $visita);
         $visita = str_replace('azalkmaar', 'AZ Alkmaar', $visita);
         $visita = str_replace('zalgiris', 'FK Žalgiris', $visita);
+        $visita = str_replace('psv', 'PSV', $visita);
+        $visita = str_replace('aeklarnaca', 'AEK Larnaca', $visita);
     }
 
     //Liga PRO Ecuador
