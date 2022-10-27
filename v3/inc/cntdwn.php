@@ -122,7 +122,7 @@ var textEnd = "Finalizó";
             }
         }
         // 6 meses
-        if (distance<?=$index?> < 15778800000) {
+        if (distance<?=$index?> > 15778800000) {
             for (const allEllements of document.getElementsByClassName("cntdwn-<?=$index?>")) {
                 allEllements.innerHTML = "Por definir";
             }
