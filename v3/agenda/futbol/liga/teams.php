@@ -301,6 +301,11 @@ if ($result['liga'] == 32){
     $local = str_replace('tnez', 'Túnez', $local);
     $local = str_replace('per', 'Perú', $local);
     $local = str_replace('elsalvador', 'El Salvador', $local);
+    $local = str_replace('irn', 'Irán', $local);
+    $local = str_replace('estadosunidos', 'USA', $local);
+    $local = str_replace('arabiasaud', 'Arabia Saudí', $local);
+    $local = str_replace('costarica', 'Costa Rica', $local);
+    $local = str_replace('coreadelsur', 'Corea del Sur', $local);
 
     $visita = str_replace('mxico', 'México', $visita);
     $visita = str_replace('kazajistn', 'Kazajistán', $visita);
@@ -323,6 +328,11 @@ if ($result['liga'] == 32){
     $visita = str_replace('tnez', 'Túnez', $visita);
     $visita = str_replace('per', 'Perú', $visita);
     $visita = str_replace('elsalvador', 'El Salvador', $visita);
+    $visita= str_replace('irn', 'Irán', $visita);
+    $visita= str_replace('estadosunidos', 'USA', $visita);
+    $visita= str_replace('arabiasaud', 'Arabia Saudí', $visita);
+    $visita= str_replace('costarica', 'Costa Rica', $visita);
+    $visita= str_replace('coreadelsur', 'Corea del Sur', $visita);
 
     // Liga MX
     $local = str_replace('america', 'América', $local);
@@ -488,9 +498,10 @@ if ($result['liga'] == 32){
     // Otros
     $local = str_replace('maccabihaifa', 'Maccabi Haifa', $local);
     $local = str_replace("dinamozagreb", "Dinamo Zagreb", $local);
-
+    $local = str_replace("tbd", "Clasificado 1", $local);
     $visita = str_replace('maccabihaifa', 'Maccabi Haifa', $visita);
     $visita = str_replace("dinamozagreb", "Dinamo Zagreb", $visita);
+    $visita = str_replace("tbd", "Clasificado 2", $visita);
 
 
 ?>
