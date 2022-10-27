@@ -122,6 +122,24 @@ if ($result['liga'] == 32){
     $local = str_replace("tottenham", "Tottenham Hotspur", $local);
     $local = str_replace("westham", "West Ham United", $local);
     $local = str_replace("wolves", "Wolverhampton", $local);
+    $local = str_replace("queensparkrangers", "QPR", $local);
+    $local = str_replace("blackburnrovers", "Blackburn Rovers", $local);
+    $local = str_replace("swanseacity", "Sweansea City", $local);
+    $local = str_replace("sheffieldunited", "Sheff United", $local);
+    $local = str_replace("norwichcity", "Norwich City", $local);
+    $local = str_replace("lutontown", "Luton Town", $local);
+    $local = str_replace("rotherhamunited", "Rotherham United", $local);
+    $local = str_replace("prestonnorthend", "Preston North End", $local);
+    $local = str_replace("bristolcity", "Bristol City", $local);
+    $local = str_replace("birminghamcity", "Birmingham City", $local);
+    $local = str_replace("hullcity", "Hull City", $local);
+    $local = str_replace("stokecity", "Stoke City", $local);
+    $local = str_replace("wiganathletic", "Wigan Athletic", $local);
+    $local = str_replace("cardiffcity", "Cardiff City", $local);
+    $local = str_replace("coventrycity", "Coventry City", $local);
+    $local = str_replace("westbromwichalbion", "West Brom Albion", $local);
+    $local = str_replace("huddersfieldtown", "Huddersfield Town", $local);
+    $local = str_replace("westbromwich", "West Brom", $local);
 
     $visita = str_replace("bournemouth", "AFC Bournemouth", $visita);
     $visita = str_replace("astonvilla", "Aston Villa", $visita);
@@ -139,6 +157,24 @@ if ($result['liga'] == 32){
     $visita = str_replace("tottenham", "Tottenham Hotspur", $visita);
     $visita = str_replace("westham", "West Ham United", $visita);
     $visita = str_replace("wolves", "Wolverhampton", $visita);
+    $visita = str_replace("queensparkrangers", "QPR", $visita);
+    $visita = str_replace("blackburnrovers", "Blackburn Rovers", $visita);
+    $visita = str_replace("swanseacity", "Sweansea City", $visita);
+    $visita = str_replace("sheffieldunited", "Sheff United", $visita);
+    $visita = str_replace("norwichcity", "Norwich City", $visita);
+    $visita = str_replace("lutontown", "Luton Town", $visita);
+    $visita = str_replace("rotherhamunited", "Rotherham United", $visita);
+    $visita = str_replace("prestonnorthend", "Preston North End", $visita);
+    $visita = str_replace("bristolcity", "Bristol City", $visita);
+    $visita = str_replace("birminghamcity", "Birmingham City", $visita);
+    $visita = str_replace("hullcity", "Hull City", $visita);
+    $visita = str_replace("stokecity", "Stoke City", $visita);
+    $visita = str_replace("wiganathletic", "Wigan Athletic", $visita);
+    $visita = str_replace("cardiffcity", "Cardiff City", $visita);
+    $visita = str_replace("coventrycity", "Coventry City", $visita);
+    $visita = str_replace("westbromwichalbion", "West Brom Albion", $visita);
+    $visita = str_replace("huddersfieldtown", "Huddersfield Town", $visita);
+    $visita = str_replace("westbromwich", "West Brom", $visita);
 
     //Bundesliga
     $local = str_replace("eintrachtfrankfurt", "Eintracht", $local);
