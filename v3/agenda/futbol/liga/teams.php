@@ -125,6 +125,7 @@ if ($result['liga'] == 32){
     $local = str_replace("queensparkrangers", "QPR", $local);
     $local = str_replace("blackburnrovers", "Blackburn Rovers", $local);
     $local = str_replace("swanseacity", "Sweansea City", $local);
+    $local = str_replace("sheffield united", "Sheff United", $local);
     $local = str_replace("sheffieldunited", "Sheff United", $local);
     $local = str_replace("norwichcity", "Norwich City", $local);
     $local = str_replace("lutontown", "Luton Town", $local);
@@ -160,6 +161,7 @@ if ($result['liga'] == 32){
     $visita = str_replace("queensparkrangers", "QPR", $visita);
     $visita = str_replace("blackburnrovers", "Blackburn Rovers", $visita);
     $visita = str_replace("swanseacity", "Sweansea City", $visita);
+    $visita = str_replace("sheffield united", "Sheff United", $visita);
     $visita = str_replace("sheffieldunited", "Sheff United", $visita);
     $visita = str_replace("norwichcity", "Norwich City", $visita);
     $visita = str_replace("lutontown", "Luton Town", $visita);
