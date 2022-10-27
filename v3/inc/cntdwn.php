@@ -60,12 +60,43 @@ var textEnd = "Finalizó";
     var seconds<?=$index?> = Math.floor((distance<?=$index?> % (1000 * 60)) / 1000);
 
     // Output the result in an element with id="demo"
-    if (days<?=$index?> > 0){
+    if (days<?=$index?> == 1){
         for (const ele of document.getElementsByClassName("cntdwn-<?=$index?>")){
-            ele.innerHTML = (days<?=$index?> + "d " + hours<?=$index?> + "h "
-            + minutes<?=$index?> + "m " + seconds<?=$index?> + "s")
+            ele.innerHTML = ("Mañana")
         }
-    } else if (hours<?=$index?> == 0){
+    } else if (days<?=$index?> > 0 && days<?=$index?> < 7){
+        for (const ele of document.getElementsByClassName("cntdwn-<?=$index?>")){
+            ele.innerHTML = (days<?=$index?> + "d " + hours<?=$index?> + "h ")
+        }
+    } else if (days<?=$index?> > 6 && days<?=$index?> < 14){
+        for (const ele of document.getElementsByClassName("cntdwn-<?=$index?>")){
+            ele.innerHTML = ("Próx. Semana")
+        }
+    } else if (days<?=$index?> > 13 && days<?=$index?> < 21){
+        for (const ele of document.getElementsByClassName("cntdwn-<?=$index?>")){
+            ele.innerHTML = ("2 Semanas")
+        }
+    } else if (days<?=$index?> > 20 && days<?=$index?> < 28){
+        for (const ele of document.getElementsByClassName("cntdwn-<?=$index?>")){
+            ele.innerHTML = ("3 Semanas")
+        }
+    } else if (days<?=$index?> > 27 && days<?=$index?> < 60){
+        for (const ele of document.getElementsByClassName("cntdwn-<?=$index?>")){
+            ele.innerHTML = ("Próx. Mes")
+        }
+    } else if (days<?=$index?> > 59 && days<?=$index?> < 90){
+        for (const ele of document.getElementsByClassName("cntdwn-<?=$index?>")){
+            ele.innerHTML = ("2 Meses")
+        }
+    } else if (days<?=$index?> > 89 && days<?=$index?> < 120){
+        for (const ele of document.getElementsByClassName("cntdwn-<?=$index?>")){
+            ele.innerHTML = ("3 Meses")
+        }
+    } else if (days<?=$index?> == 0){
+        for (const ele of document.getElementsByClassName("cntdwn-<?=$index?>")){
+            ele.innerHTML = (hours<?=$index?> + "h " + minutes<?=$index?> + "m " + seconds<?=$index?> + "s")
+        }
+    } else if (hours<?=$index?> == 0 && days<?=$index?> == 0){
         for (const ele of document.getElementsByClassName("cntdwn-<?=$index?>")){
             ele.innerHTML = (minutes<?=$index?> + "m " + seconds<?=$index?> + "s")
         }
@@ -75,7 +106,7 @@ var textEnd = "Finalizó";
         }
     } else {
         for (const ele of document.getElementsByClassName("cntdwn-<?=$index?>")){
-            ele.innerHTML = (hours<?=$index?> + "h "
+            ele.innerHTML = (days<?=$index?> + "d " + hours<?=$index?> + "h "
             + minutes<?=$index?> + "m " + seconds<?=$index?> + "s")
         }
     }
@@ -84,9 +115,16 @@ var textEnd = "Finalizó";
         for (const ele of document.getElementsByClassName("cntdwn-<?=$index?>")) {
             ele.innerHTML = textLive;
         }
+        // 3 hs
         if (distance<?=$index?> + 10800000 < 0) {
             for (const allEllements of document.getElementsByClassName("cntdwn-<?=$index?>")) {
                 allEllements.innerHTML = textEnd;
+            }
+        }
+        // 6 meses
+        if (distance<?=$index?> < 15778800000) {
+            for (const allEllements of document.getElementsByClassName("cntdwn-<?=$index?>")) {
+                allEllements.innerHTML = "Por definir";
             }
         }
     }
