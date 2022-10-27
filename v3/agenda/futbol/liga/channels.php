@@ -19,6 +19,38 @@ if ($result['canal3'] === "star+"){
 }
 
 // Logos
+if($canal === "Gol Mundial" || $canal === "Gol Mundial" || $canal === "Gol Mundial" || $canal === "golm"){
+    $canalImg = "movistar";
+    $canalop2 = '
+    <li>
+        <a class="justify-content-center" href="'.$app.'/agenda/play?futbol&id='.$index.'&c=golm">
+        <i class="flag es"></i>
+        Gol Mundial | VIP HD
+        </a>
+    </li>
+    <li>
+        <a class="justify-content-center" href="'.$app.'/agenda/play?futbol&id='.$index.'&c=golmsd">
+        <i class="flag es"></i>
+        Gol Mundial | VIP SD
+        </a>
+    </li>';
+} elseif($canal2 === "Gol Mundial" || $canal2 === "Gol Mundial" || $canal2 === "Gol Mundial" || $canal2 === "golm"){
+    $canalImg = "movistar";
+    $canalop4 = '
+    <li>
+        <a class="justify-content-center" href="'.$app.'/agenda/play?futbol&id='.$index.'&c=golm">
+        <i class="flag es"></i>
+        Gol Mundial | VIP HD
+        </a>
+    </li>
+    <li>
+        <a class="justify-content-center" href="'.$app.'/agenda/play?futbol&id='.$index.'&c=golmsd">
+        <i class="flag es"></i>
+        Gol Mundial | VIP SD
+        </a>
+    </li>';
+}
+
 if($canal === "M+ Liga de Campeones" || $canal === "M+ Liga de Campeones UHD (M441 O115)" || $canal === "M+ Liga de Campeones (M56 O114)" || $canal === "mlcamp"){
     $canalImg = "campeones";
     $canalop2 = '
