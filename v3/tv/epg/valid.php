@@ -33,11 +33,13 @@ if ($typeChannel == 2 || $typeChannel == 3 || $typeChannel == 8 || $_GET['url'] 
 if (isset($_GET['nba']) || isset($_GET['nfl']) || isset($_GET['mlb']) || isset($_GET['s']) || isset($_GET['r'])){
     // NBA & NFL
     include('valid/nba.php');
-} else {
-    // VIP
-    if (!isset($typeChannel) && !isset($_GET['key'])){
-        //include('valid/vip.php');
-    }
+}
+
+    // HBO
+    include('valid/hmax.php');
+
+    // Star
+    include('valid/star.php');
 
     // M3U
     include('valid/m3u.php');
@@ -65,6 +67,3 @@ if (isset($_GET['nba']) || isset($_GET['nfl']) || isset($_GET['mlb']) || isset($
 
     // DRM CKM
     include('valid/ckm.php');
-}
-
-?>
