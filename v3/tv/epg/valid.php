@@ -6,6 +6,13 @@ if (isset($_GET['s']) || isset($_GET['r'])){
         location.href =   location.href.replace("http://", "https://");
     }
     </script>';
+    if (isset($_GET['s'])){
+        // HBO
+        include('valid/hmax.php');
+    } elseif (isset($_GET['r'])){
+        // Star
+        include('valid/star.php');
+    }
 }
 
 // mlaliga iframe
@@ -26,42 +33,38 @@ if ($typeChannel == 2 || $typeChannel == 3 || $typeChannel == 8 || $_GET['url'] 
 if (isset($_GET['nba']) || isset($_GET['nfl']) || isset($_GET['mlb']) || isset($_GET['s']) || isset($_GET['r'])){
     // NBA & NFL
     include('valid/nba.php');
-}
-
-if (isset($_GET['s'])){
-    // HBO
-    include('valid/hmax.php');
-}
-if (isset($_GET['r']) && isset($_GET['img'])){
-    // Star
-    include('valid/star.php');
-}
-
-    // // M3U
-    // include('valid/m3u.php');
-
-    // // iFrame
-    // include('valid/iframe.php');
-
-    // // Redir
-    // include('valid/redir.php');
-
-    // // PC XYZ
-    // include('valid/pcxyz.php');
-
-    // //Blim
-    // include('valid/blim.php');
-
-    // // DRM WV
-    // include('valid/wv.php');
-
-    if ($typeChannel == 9) {
-        // DRM CK
-        include('valid/ck.php');
+} else {
+    // VIP
+    if (!isset($typeChannel) && !isset($_GET['key'])){
+        //include('valid/vip.php');
     }
 
-    // // Twitch
-    // include('valid/twitch.php');
+    // M3U
+    include('valid/m3u.php');
 
-    // // DRM CKM
-    // include('valid/ckm.php');
+    // iFrame
+    include('valid/iframe.php');
+
+    // Redir
+    include('valid/redir.php');
+
+    // PC XYZ
+    include('valid/pcxyz.php');
+
+    //Blim
+    include('valid/blim.php');
+
+    // DRM WV
+    include('valid/wv.php');
+
+    // DRM CK
+    include('valid/ck.php');
+
+    // Twitch
+    include('valid/twitch.php');
+
+    // DRM CKM
+    include('valid/ckm.php');
+}
+
+?>
