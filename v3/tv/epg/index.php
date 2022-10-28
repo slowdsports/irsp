@@ -103,7 +103,7 @@ $categoriaActual = $result['categoryId'];
                     <script src='//cdn.jsdelivr.net/npm/clappr-chromecast-plugin@latest/dist/clappr-chromecast-plugin.min.js'></script>
                     <script src='//cdn.jsdelivr.net/npm/clappr-pip@latest/dist/clappr-pip.min.js'></script>
                     <script src="//ewwink.github.io/clappr-youtube-plugin/clappr-youtube-plugin.js"></script>
-                    <div class="onclick" onclick="noFullScreen('player');">
+                    <div class="onclick"">
                         <div id="jwp"></div>
                     </div>
                     <!-- <script src="jwp.js"></script> -->
