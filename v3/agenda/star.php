@@ -21,15 +21,15 @@ $row=mysqli_fetch_assoc($query);
     $baseUrl = "https://megadeportes.live/star-plus/";
     $html = file_get_html($baseUrl);
     // MAIN ELEMENT
-    $juego = $html ->find ('div.w3-quarter');
+    $juego = $html ->find ('div.section');
     // INDEX
     $i = 1;
     $i2 = 1;
 
     foreach ($juego as $nombre){
         $logo = $nombre ->find('a img',0) -> src;
-        $evento = $nombre ->find('div p',1) -> plaintext;
-        $liga = $nombre ->find('div.w3-card-4 p b',0) -> plaintext;
+        $evento = $nombre ->find('a div h3',0) -> plaintext;
+        $liga = $nombre ->find('a div h5',0) -> plaintext;
         $link = $nombre ->find('a',0) -> href;
             if ($link === "#"){
                 $link = "javascript:void(0)";
