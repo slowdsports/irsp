@@ -11,7 +11,6 @@ $result = mysqli_fetch_assoc($query);
 // Canales
 $base = "https://www.gatotv.com/canal/{$GET['url']}";
 $channel = $_GET['c'];
-include('../../agenda/play/channels.php');
 $query = mysqli_query($conn, "select * from channels
     INNER JOIN channeltype ON channels.type = channeltype.typeId
     INNER JOIN categories ON channels.category = categories.categoryId
