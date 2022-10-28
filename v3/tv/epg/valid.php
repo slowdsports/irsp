@@ -23,10 +23,10 @@ if ($typeChannel == 2 || $typeChannel == 3 || $typeChannel == 8 || $_GET['url'] 
 }
 
 // NBA
-if (isset($_GET['nba']) || isset($_GET['nfl']) || isset($_GET['mlb']) || isset($_GET['s']) || isset($_GET['r'])){
-    // NBA & NFL
-    include('valid/nba.php');
-}
+// if (isset($_GET['nba']) || isset($_GET['nfl']) || isset($_GET['mlb']) || isset($_GET['s']) || isset($_GET['r'])){
+//     // NBA & NFL
+//     include('valid/nba.php');
+// }
 
     // HBO
     include('valid/hmax.php');
