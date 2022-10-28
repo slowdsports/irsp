@@ -6,13 +6,6 @@ if (isset($_GET['s']) || isset($_GET['r'])){
         location.href =   location.href.replace("http://", "https://");
     }
     </script>';
-    if (isset($_GET['s'])){
-        // HBO
-        include('valid/hmax.php');
-    } elseif (isset($_GET['r'])){
-        // Star
-        include('valid/star.php');
-    }
 }
 
 // mlaliga iframe
@@ -20,7 +13,7 @@ if ($_GET['c']==558 || $_GET['c']==93){
     // Recargar página con SSL
     echo '<script>
     if (window.location.protocol != "https:") {
-        //location.href =   location.href.replace("http://", "https://");
+        location.href =   location.href.replace("http://", "https://");
     }
     </script>';
 }
