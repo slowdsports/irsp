@@ -135,7 +135,6 @@ $categoriaActual = $result['categoryId'];
 ?>
 <!-- *Includes -->
 <?php
-include('../../inc/navbar.php');
 ?>
 <script>
     // $( document ).ready(function() {
