@@ -29,34 +29,34 @@ if ($typeChannel == 2 || $typeChannel == 3 || $typeChannel == 8 || $_GET['url'] 
 // }
 
     // HBO
-    include('valid/hmax.php');
+    //include('valid/hmax.php');
 
     // Star
-    include('valid/star.php');
+    //include('valid/star.php');
 
     // M3U
-    include('valid/m3u.php');
+    //include('valid/m3u.php');
 
     // iFrame
-    include('valid/iframe.php');
+    //include('valid/iframe.php');
 
     // Redir
-    include('valid/redir.php');
+    //include('valid/redir.php');
 
     // PC XYZ
-    include('valid/pcxyz.php');
+    //include('valid/pcxyz.php');
 
     //Blim
-    include('valid/blim.php');
+    //include('valid/blim.php');
 
     // DRM WV
-    include('valid/wv.php');
+    //include('valid/wv.php');
 
     // DRM CK
     include('valid/ck.php');
 
     // Twitch
-    include('valid/twitch.php');
+    //include('valid/twitch.php');
 
     // DRM CKM
-    include('valid/ckm.php');
+    //include('valid/ckm.php');
