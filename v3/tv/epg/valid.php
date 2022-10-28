@@ -28,35 +28,40 @@ if (isset($_GET['nba']) || isset($_GET['nfl']) || isset($_GET['mlb']) || isset($
     include('valid/nba.php');
 }
 
+if (isset($_GET['s'])){
     // HBO
     include('valid/hmax.php');
-
+}
+if (isset($_GET['r']) && isset($_GET['img'])){
     // Star
     include('valid/star.php');
+}
 
-    // M3U
-    include('valid/m3u.php');
+    // // M3U
+    // include('valid/m3u.php');
 
-    // iFrame
-    include('valid/iframe.php');
+    // // iFrame
+    // include('valid/iframe.php');
 
-    // Redir
-    include('valid/redir.php');
+    // // Redir
+    // include('valid/redir.php');
 
-    // PC XYZ
-    include('valid/pcxyz.php');
+    // // PC XYZ
+    // include('valid/pcxyz.php');
 
-    //Blim
-    include('valid/blim.php');
+    // //Blim
+    // include('valid/blim.php');
 
-    // DRM WV
-    include('valid/wv.php');
+    // // DRM WV
+    // include('valid/wv.php');
 
-    // DRM CK
-    include('valid/ck.php');
+    if ($typeChannel == 9) {
+        // DRM CK
+        include('valid/ck.php');
+    }
 
-    // Twitch
-    include('valid/twitch.php');
+    // // Twitch
+    // include('valid/twitch.php');
 
-    // DRM CKM
-    include('valid/ckm.php');
+    // // DRM CKM
+    // include('valid/ckm.php');
