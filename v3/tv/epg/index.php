@@ -17,48 +17,54 @@ $typeChannel = $result['typeId'];
 $channel = base64_encode($channel);
 echo $channel;
 ?>
+<script>
+    if (window.location.protocol != "https:") {
+        location.href =   location.href.replace("http://", "https://");
+    }
+</script>
 <script src="https://ssl.p.jwpcdn.com/player/v/8.24.0/jwplayer.js"></script>
-<script>jwplayer.key = 'XSuP4qMl+9tK17QNb+4+th2Pm9AWgMO/cYH8CI0HGGr7bdjo';</script>
+<script>
+    jwplayer.key = 'XSuP4qMl+9tK17QNb+4+th2Pm9AWgMO/cYH8CI0HGGr7bdjo';
+</script>
 <div id="jwp"></div>
 <script>
-var getURL = "<?=$channel?>";
-var getKEY = "<?=$key1?>";
-var getKEY2 = "<?=$key2?>";
-var playerInstance = jwplayer("jwp");
+    var getURL = "<?= $channel ?>";
+    var getKEY = "<?= $key1 ?>";
+    var getKEY2 = "<?= $key2 ?>";
+    var playerInstance = jwplayer("jwp");
 
-playerInstance.setup({
-    playlist: [
-        {
+    playerInstance.setup({
+        playlist: [{
             //image: atob(getIMG),
-            sources: [
-                {
-                    default: false,
-                    type: "dash",
-                    file: atob(getURL),
-                    drm: {
-                        clearkey: { keyId: atob(getKEY), key: atob(getKEY2) },
+            sources: [{
+                default: false,
+                type: "dash",
+                file: atob(getURL),
+                drm: {
+                    clearkey: {
+                        keyId: atob(getKEY),
+                        key: atob(getKEY2)
                     },
-                    label: "0",
                 },
-            ],
+                label: "0",
+            }, ],
+        }, ],
+        //height: "50%",
+        //width: "100%",
+        aspectratio: "16:9",
+        stretching: "bestfit",
+        mediaid: "player",
+        mute: false,
+        autostart: true,
+        language: "es",
+        cast: {
+            appid: "player",
+            logo: "https://eduveel1.github.io/baleada/img/iRTVW_PLAYER.png",
         },
-    ],
-    //height: "50%",
-    //width: "100%",
-    aspectratio: "16:9",
-    stretching: "bestfit",
-    mediaid: "player",
-    mute: false,
-    autostart: true,
-    language: "es",
-    cast: {
-        appid: "player",
-        logo: "https://eduveel1.github.io/baleada/img/iRTVW_PLAYER.png",
-    },
-    logo: {
-        file: "https://eduveel1.github.io/baleada/img/iRTVW_PLAYER.png",
-        hide: "false",
-        position: "top-left",
-    }
-});
+        logo: {
+            file: "https://eduveel1.github.io/baleada/img/iRTVW_PLAYER.png",
+            hide: "false",
+            position: "top-left",
+        }
+    });
 </script>
