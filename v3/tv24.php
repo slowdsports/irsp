@@ -7,7 +7,7 @@
         $row = mysqli_fetch_assoc($query);
         $url = $row['channelUrl'];
     } else {
-        //echo "Selecciona un canal";
+        //echo "Selecciona un canal"; 
     }
     $query = mysqli_query($conn, "select * from channels where type=1");
     while($row = mysqli_fetch_assoc($query)){
