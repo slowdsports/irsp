@@ -1,4 +1,3 @@
-<meta http-equiv="refresh" content="3; url=server-error.html">
 <?php
 include('inc/functions.php');
 // Redirección inmediata si ya existe la sesión

@@ -1,10 +1,10 @@
-
-v3/auth.php
-v3/conn.php
-v3/inc/functions.php
-v3/auth.php
-v3/conn.php
-v3/inc/functions.php
-v3/admin/includes/functions.php
-v3/admin/backend/bd.php
-v3/admin/auth.php
+# Ignore the app develp directory
+auth.php
+conn.php
+inc/functions.php
+auth.php
+conn.php
+inc/functions.php
+admin/includes/functions.php
+admin/backend/bd.php
+admin/auth.php
