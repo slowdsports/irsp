@@ -4,7 +4,7 @@ include('inc/functions.php');
 // Redirección inmediata si ya existe la sesión
 session_start();
 if (isset($_SESSION['id'])) {
-    //header("location: $app/home.php");
+    header("location: $app/home.php");
 }
 // Validación del Geo
 // include('inc/geo.php');
@@ -17,7 +17,7 @@ if (isset($_SESSION['id'])) {
 //     <meta http-equiv="refresh" content="3; url=home.php">
 //     ';
 // }
-//echo '<meta http-equiv="refresh" content="3; url=home.php">';
+echo '<meta http-equiv="refresh" content="3; url=home.php">';
 ?>
 <!doctype html>
 <html lang="en">

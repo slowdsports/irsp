@@ -1,3 +1,4 @@
+<img width="100%" src="../img/canales/dazn.png" alt="">
 <?php
 include('con.php');
 if (!empty($_SERVER['HTTP_CLIENT_IP'])) {
