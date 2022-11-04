@@ -41,7 +41,7 @@ if (isset($_SESSION['message']) ){
                         <div class="card product-card liga-card">
                             <div class="card-body">
                                 <center>
-                                    <img width="48px" src="https://i.ibb.co/w0qg9JF/trans.png" style="background-image: url('../../assets/img/canales/dazn.png'); background-size: contain; background-repeat: no-repeat;" class="image" alt="product image" />
+                                    <img width="48px" src="https://i.ibb.co/w0qg9JF/trans.png" style="background-image: url('../../../img/canales/dazn.png'); background-size: contain; background-repeat: no-repeat;" class="image" alt="product image" />
                                     <h2 class="title text-center">DAZN 1</h2>
                                 </center>
                             </div>
@@ -53,7 +53,7 @@ if (isset($_SESSION['message']) ){
                         <div class="card product-card liga-card">
                             <div class="card-body">
                                 <center>
-                                    <img width="48px" src="https://i.ibb.co/w0qg9JF/trans.png" style="background-image: url('../../assets/img/canales/foxsports.png'); background-size: contain; background-repeat: no-repeat;" class="image" alt="product image" />
+                                    <img width="48px" src="https://i.ibb.co/w0qg9JF/trans.png" style="background-image: url('../../../img/canales/foxsports.png'); background-size: contain; background-repeat: no-repeat;" class="image" alt="product image" />
                                     <h2 class="title text-center">Fox Sports +</h2>
                                 </center>
                             </div>
@@ -81,18 +81,18 @@ if (isset($_SESSION['message']) ){
                             <div class="card product-card">
                                 <div class="main-event">
                                     <div class="league">
-                                        <img src="<?=$app?>assets/img/ligas/<?=$result['ligaImg']?>.png" alt="League" />
+                                        <img src="../../../img/ligas/<?=$result['ligaImg']?>.png" alt="League" />
                                         <!-- <p class="<?=$result['id']?>"><?=ucfirst($dia)?></p> -->
                                         <p class="cntdwn-<?=$index?>"></p>
                                     </div>
                                     <div class="match">
                                         <div class="team">
-                                            <img width="60px" src="<?=$app?>assets/img/equipos/amistoso/<?=str_replace(' ', '', strtolower($pais)); ?>.png" alt="" />
+                                            <img width="60px" src="../../../img/equipos/amistoso/<?=str_replace(' ', '', strtolower($pais)); ?>.png" alt="" />
                                             <h4><?=ucfirst($local)?></h4>
                                         </div>
                                     </div>
                                     <div class="channel">
-                                        <img src="<?=$app?>assets/img/canales/dazn.png" alt="" />
+                                        <img src="../../../img/canales/dazn.png" alt="" />
                                     </div>
                                 </div>
                             </div>

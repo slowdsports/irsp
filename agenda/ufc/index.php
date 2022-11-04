@@ -80,7 +80,7 @@ if (isset($_SESSION['message']) ){
                         <div class="card product-card">
                             <div class="main-event">
                                 <div class="league">
-                                    <img src="<?=$app?>assets/img/ligas/<?=$result['ligaImg']?>.png" alt="League" />
+                                    <img src="../../../img/ligas/<?=$result['ligaImg']?>.png" alt="League" />
                                     <p class="cntdwn-<?=$index?>"></p>
                                 </div>
                                 <div class="match">
@@ -97,7 +97,7 @@ if (isset($_SESSION['message']) ){
                                     </div>
                                 </div>
                                 <div class="channel">
-                                    <img src="<?=$app?>assets/img/canales/<?=($canalImg===null)?"cincoestrellas":$canalImg ?>.png" alt="" />
+                                    <img src="../../../img/canales/<?=($canalImg===null)?"cincoestrellas":$canalImg ?>.png" alt="" />
                                 </div>
                             </div>
                         </div>

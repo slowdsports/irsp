@@ -48,7 +48,7 @@ if (isset($_SESSION['message']) ){
                         <div class="card product-card">
                             <div style="height:200px" class="main-event">
                                 <div class="league">
-                                    <img src="<?=$app?>assets/img/canales/tenis.png" alt="League" />
+                                    <img src="../../../img/canales/tenis.png" alt="League" />
                                 </div>
                                 <div class="match">
                                     <div class="team">
@@ -64,7 +64,7 @@ if (isset($_SESSION['message']) ){
                                     </div>
                                 </div>
                                 <div class="channel">
-                                    <img src="<?=$app?>assets/img/canales/eurosport.png" alt="Channel" />
+                                    <img src="../../../img/canales/eurosport.png" alt="Channel" />
                                 </div>
                             </div>
                         </div>
@@ -73,49 +73,49 @@ if (isset($_SESSION['message']) ){
                         <div class="card card-body">
                             <ul class="listview link-listview">
                                 <li>
-                                    <a class="justify-content-center" href="<?=$app?>/agenda/play/?c=mdep">
+                                    <a class="justify-content-center" href="<?=$app?>agenda/play/?c=mdep">
                                         <i class="flag es"></i>
                                         M+ Deportes | VIP HD
                                     </a>
                                 </li>
                                 <li>
-                                    <a class="justify-content-center" href="<?=$app?>/tv/epg/?c=260">
+                                    <a class="justify-content-center" href="<?=$app?>tv/epg/?c=260">
                                         <i class="flag es"></i>
                                         Eurosport 1 | HD
                                     </a>
                                 </li>
                                 <li>
-                                    <a class="justify-content-center" href="<?=$app?>/tv/epg/?c=587">
+                                    <a class="justify-content-center" href="<?=$app?>tv/epg/?c=587">
                                         <i class="flag es"></i>
                                         Eurosport 2 | HD
                                     </a>
                                 </li>
                                 <li>
-                                    <a class="justify-content-center" href="<?=$app?>/tv/epg/?c=97">
+                                    <a class="justify-content-center" href="<?=$app?>tv/epg/?c=97">
                                         <i class="flag es"></i>
                                         TDP | HD
                                     </a>
                                 </li>
                                 <li>
-                                    <a class="justify-content-center" href="<?=$app?>/tv/epg/?c=626">
+                                    <a class="justify-content-center" href="<?=$app?>tv/epg/?c=626">
                                         <i class="flag de"></i>
                                         Eurosport 1 | HD
                                     </a>
                                 </li>
                                 <li>
-                                    <a class="justify-content-center" href="<?=$app?>/tv/epg/?c=627">
+                                    <a class="justify-content-center" href="<?=$app?>tv/epg/?c=627">
                                         <i class="flag de"></i>
                                         Eurosport 2 | HD
                                     </a>
                                 </li>
                                 <li>
-                                    <a class="justify-content-center" href="<?=$app?>/tv/epg/?c=628">
+                                    <a class="justify-content-center" href="<?=$app?>tv/epg/?c=628">
                                         <i class="flag it"></i>
                                         Eurosport 1 | HD
                                     </a>
                                 </li>
                                 <li>
-                                    <a class="justify-content-center" href="<?=$app?>/tv/epg/?c=629">
+                                    <a class="justify-content-center" href="<?=$app?>tv/epg/?c=629">
                                         <i class="flag it"></i>
                                         Eurosport 2 | HD
                                     </a>

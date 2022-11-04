@@ -107,7 +107,7 @@ if (isset($_SESSION['message']) ){
                             <div class="card product-card liga-card">
                                 <div class="card-body">
                                     <center>
-                                    <img width="48px" src="https://i.ibb.co/w0qg9JF/trans.png" style="background-image: url('<?=$app?>/assets/img/canales/plutotvw.png');
+                                    <img width="48px" src="https://i.ibb.co/w0qg9JF/trans.png" style="background-image: url('<?=$app?>assets/img/canales/plutotvw.png');
                                     background-size: contain;
                                     background-repeat: no-repeat" class="image" alt="product image">
                                     <h2 class="title text-center">Pluto TV</h2>
@@ -147,11 +147,11 @@ if (isset($_SESSION['message']) ){
                 ?>
                 <!-- Elemento -->
                 <div class="col-6 col-sm-4 col-md-3 col-lg-2 col-xl-2 mycard <?=$result['categoryName']?>">
-                    <a href="<?=$app?>/tv/epg?url=<?=$result['epg']?>&c=<?=$result['channelId']?>">
+                    <a href="<?=$app?>tv/epg?url=<?=$result['epg']?>&c=<?=$result['channelId']?>">
                         <div class="card product-card liga-card">
                             <div class="card-body">
                                 <center>
-                                <img width="48px" src="https://i.ibb.co/w0qg9JF/trans.png" style="background-image: url('<?=$app?>/assets/img/canales/<?=$result['channelImg']?>.png');
+                                <img width="48px" src="https://i.ibb.co/w0qg9JF/trans.png" style="background-image: url('<?=$app?>assets/img/canales/<?=$result['channelImg']?>.png');
                                 background-size: contain;
                                 background-repeat: no-repeat" class="image" alt="product image">
                                 <h2 class="title text-center"><?=strtoupper($result['channelName'])?></h2>

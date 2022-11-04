@@ -92,23 +92,23 @@
                                 $motorText = "";
                             }
                     ?>
-                <a href="<?=$app?>/agenda/<?=$link?>&juego=<?=$index?>">
+                <a href="agenda/<?=$link?>&juego=<?=$index?>">
                     <div class="item">
                         <div class="card">
                             <div class="mini-league">
-                                <img width="25px" src="<?=$app?>/assets/img/ligas/<?=$ligaImg?>.png" alt="">
+                                <img width="25px" src="../img/ligas/<?=$ligaImg?>.png" alt="">
                                 <h5><?=$ligaName?></h5>
                             </div>
                             <div class="main-event">
                                 <div class="match">
                                     <div class="team">
-                                        <img src="<?=$app?>/assets/img/equipos/<?=$ligaImg?>/<?=$localImg?>.png" class="image" alt="image">
+                                        <img src="../img/equipos/<?=$ligaImg?>/<?=$localImg?>.png" class="image" alt="image">
                                         <!-- <h4><?=ucfirst($local)?></h4> -->
                                     </div>
                                 </div>
                                 <div <?=$isMotor?> class="vs">vs</div>
                                 <div <?=$isMotor?> class="team">
-                                    <img src="<?=$app?>/assets/img/equipos/<?=$ligaImg?>/<?=$visitaImg?>.png" class="image" alt="image">
+                                    <img src="../img/equipos/<?=$ligaImg?>/<?=$visitaImg?>.png" class="image" alt="image">
                                     <!-- <h4><?=ucfirst($visita)?></h4> -->
                                 </div>
                             </div>

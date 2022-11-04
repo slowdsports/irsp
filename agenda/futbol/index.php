@@ -37,17 +37,17 @@ if (isset($_SESSION['message']) ){
                     <div class="card product-card">
                         <div class="main-event">
                             <div class="league">
-                                <img src="<?=$app?>assets/img/chiringuito.png" alt="Chiringuito" />
+                                <img src="../../../img/chiringuito.png" alt="Chiringuito" />
                                 <p class="time chiriTime">time</p>
                             </div>
                             <div class="match">
                                 <div class="team">
-                                    <img src="<?=$app?>assets/img/chiringuito.png" alt="" />
+                                    <img src="../../../img/chiringuito.png" alt="" />
                                     <h4>Chiringuito de Jugones</h4>
                                 </div>
                             </div>
                             <div class="channel">
-                                <img src="<?=$app?>assets/img/canales/MEGA.png" alt="" />
+                                <img src="../../../img/canales/MEGA.png" alt="" />
                             </div>
                         </div>
                     </div>
@@ -102,7 +102,7 @@ if (isset($_SESSION['message']) ){
                     <div class="card product-card liga-card">
                         <div class="card-body">
                             <center>
-                                <img width="48px" src="<?=$app?>assets/img/canales/starplus.png" class="image" alt="product image">
+                                <img width="48px" src="../../../img/canales/starplus.png" class="image" alt="product image">
                                 <h2 class="title text-center">Star +</h2>
                             </center>
                         </div>
@@ -131,7 +131,7 @@ if (isset($_SESSION['message']) ){
                     <div class="card product-card liga-card">
                         <div class="card-body">
                             <center>
-                            <img width="48px" src="<?=$app?>assets/img/ligas/<?=$result['ligaImg']?>.png" class="image" alt="product image">
+                            <img width="48px" src="../../../img/ligas/<?=$result['ligaImg']?>.png" class="image" alt="product image">
                             <h2 class="title text-center"><?=$result['ligaName']?></h2>
                             </center>
                         </div>

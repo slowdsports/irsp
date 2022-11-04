@@ -41,7 +41,7 @@ if (isset($_SESSION['message']) ){
                         <div class="card product-card liga-card">
                             <div class="card-body">
                                 <center>
-                                    <img width="48px" src="https://i.ibb.co/w0qg9JF/trans.png" style="background-image: url('../../assets/img/ligas/nfl.png'); background-size: contain; background-repeat: no-repeat;" class="image" alt="product image" />
+                                    <img width="48px" src="https://i.ibb.co/w0qg9JF/trans.png" style="background-image: url('../../../img/ligas/nfl.png'); background-size: contain; background-repeat: no-repeat;" class="image" alt="product image" />
                                     <h2 class="title text-center">NFL Network</h2>
                                 </center>
                             </div>
@@ -53,7 +53,7 @@ if (isset($_SESSION['message']) ){
                         <div class="card product-card liga-card">
                             <div class="card-body">
                                 <center>
-                                    <img width="48px" src="https://i.ibb.co/w0qg9JF/trans.png" style="background-image: url('../../assets/img/canales/espn.png'); background-size: contain; background-repeat: no-repeat;" class="image" alt="product image" />
+                                    <img width="48px" src="https://i.ibb.co/w0qg9JF/trans.png" style="background-image: url('../../../img/canales/espn.png'); background-size: contain; background-repeat: no-repeat;" class="image" alt="product image" />
                                     <h2 class="title text-center">ESPN</h2>
                                 </center>
                             </div>
@@ -84,24 +84,24 @@ if (isset($_SESSION['message']) ){
                         <div class="card product-card">
                             <div class="main-event">
                                 <div class="league">
-                                    <img src="<?=$app?>assets/img/ligas/<?=$result['ligaImg']?>.png" alt="League" />
+                                    <img src="../../../img/ligas/<?=$result['ligaImg']?>.png" alt="League" />
                                     <p class="cntdwn-<?=$index?>"></p>
                                 </div>
                                 <div class="match">
                                     <div class="team">
-                                        <img width="60px" src="<?=$app?>assets/img/equipos/<?=strtolower($result['ligaImg'])?>/<?=str_replace(' ', '', strtolower($result['local'])); ?>.png" alt="" />
+                                        <img width="60px" src="../../../img/equipos/<?=strtolower($result['ligaImg'])?>/<?=str_replace(' ', '', strtolower($result['local'])); ?>.png" alt="" />
                                         <h4><?=ucfirst($local)?></h4>
                                     </div>
                                     <div class="vs">
                                         <h6>vs</h6>
                                     </div>
                                     <div class="team">
-                                        <img width="60px" src="<?=$app?>assets/img/equipos/<?=strtolower($result['ligaImg'])?>/<?=str_replace(' ', '', strtolower($result['visita'])); ?>.png" alt="" />
+                                        <img width="60px" src="../../../img/equipos/<?=strtolower($result['ligaImg'])?>/<?=str_replace(' ', '', strtolower($result['visita'])); ?>.png" alt="" />
                                         <h4><?=ucfirst($visita)?></h4>
                                     </div>
                                 </div>
                                 <div class="channel">
-                                    <img src="<?=$app?>assets/img/canales/<?=($canalImg===null)?"cincoestrellas":$canalImg ?>.png" alt="" />
+                                    <img src="../../../img/canales/<?=($canalImg===null)?"cincoestrellas":$canalImg ?>.png" alt="" />
                                 </div>
                             </div>
                         </div>

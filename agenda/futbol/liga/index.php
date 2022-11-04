@@ -55,25 +55,25 @@ if (isset($_SESSION['message']) ){
                         <div class="card product-card">
                             <div class="main-event">
                                 <div class="league">
-                                    <img src="<?=$app?>assets/img/ligas/<?=$result['ligaImg']?>.png" alt="League" />
+                                    <img src="../../../../img/ligas/<?=$result['ligaImg']?>.png" alt="League" />
                                     <!-- <p class="<?=$result['id']?>"><?=ucfirst($dia)?></p> -->
                                     <p class="cntdwn-<?=$index?>"></p>
                                 </div>
                                 <div class="match">
                                     <div class="team">
-                                        <img width="60px" src="<?=$app?>assets/img/equipos/<?=strtolower($result['ligaImg'])?>/<?=str_replace(' ', '', strtolower($result['local'])); ?>.png" alt="" />
+                                        <img width="60px" src="../../../../img/equipos/<?=strtolower($result['ligaImg'])?>/<?=str_replace(' ', '', strtolower($result['local'])); ?>.png" alt="" />
                                         <h4><?=ucfirst($local)?></h4>
                                     </div>
                                     <div <?=$isEventoHidden?> class="vs">
                                         <h6>vs</h6>
                                     </div>
                                     <div <?=$isEventoHidden?> class="team">
-                                        <img width="60px" src="<?=$app?>assets/img/equipos/<?=strtolower($result['ligaImg'])?>/<?=str_replace(' ', '', strtolower($result['visita'])); ?>.png" alt="" />
+                                        <img width="60px" src="../../../../img/equipos/<?=strtolower($result['ligaImg'])?>/<?=str_replace(' ', '', strtolower($result['visita'])); ?>.png" alt="" />
                                         <h4><?=ucfirst($visita)?></h4>
                                     </div>
                                 </div>
                                 <div class="channel">
-                                    <img src="<?=$app?>assets/img/canales/<?=($canalImg===null)?"152x152":$canalImg ?>.png" alt="" />
+                                    <img src="../../../../img/canales/<?=($canalImg===null)?"152x152":$canalImg ?>.png" alt="" />
                                 </div>
                             </div>
                         </div>
@@ -158,7 +158,7 @@ if (isset($_SESSION['message']) ){
 
             </div>
             <br>
-            <a class="hidden" <?=$isEventoHidden?> href="<?=$app?>/repeticion/liga/?id=<?=$getLiga?>" class="btn btn-primary btn-lg btn-block">Repeticiones</a>
+            <a class="hidden" <?=$isEventoHidden?> href="<?=$app?>repeticion/liga/?id=<?=$getLiga?>" class="btn btn-primary btn-lg btn-block">Repeticiones</a>
         </div>
     </div>
 <!-- End Categorías -->

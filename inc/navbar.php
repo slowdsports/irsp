@@ -12,7 +12,7 @@
 
     <!-- App Bottom Menu -->
     <div class="appBottomMenu">
-        <a href="<?=$app?>/home.php" class="item">
+        <a href="<?=$app?>home.php" class="item">
             <div class="col">
                 <ion-icon name="home-outline"></ion-icon>
                 <strong>Inicio</strong>
@@ -130,7 +130,7 @@
                                     <div class="tab-pane fade show active" id="categorias" role="tabpanel">
                                         <ul class="listview flush transparent no-line image-listview mt-2">
                                             <li>
-                                                <a href="<?=$app?>/tv?categ=all" class="item">
+                                                <a href="<?=$app?>tv?categ=all" class="item">
                                                     <div class="icon-box bg-primary">
                                                         <ion-icon name="apps-outline"></ion-icon>
                                                     </div>
@@ -150,7 +150,7 @@
                                                 }
                                             ?>
                                             <li <?=$display?>>
-                                                <a href="<?=$app?>/tv?categ=<?=$result['categoryId']?>" class="item">
+                                                <a href="<?=$app?>tv?categ=<?=$result['categoryId']?>" class="item">
                                                     <div class="icon-box bg-primary">
                                                         <ion-icon name="<?=$result['categoryIcon']?>-outline"></ion-icon>
                                                     </div>
@@ -167,7 +167,7 @@
                                     <div class="tab-pane fade" id="paises" role="tabpanel">
                                         <ul class="listview flush transparent no-line image-listview mt-2">
                                             <li>
-                                                <a href="<?=$app?>/tv?cntry=all" class="item">
+                                                <a href="<?=$app?>tv?cntry=all" class="item">
                                                     <div class="icon-box bg-primary">
                                                         <ion-icon name="apps-outline"></ion-icon>
                                                     </div>
@@ -187,7 +187,7 @@
                                                 }
                                             ?>
                                             <li <?=$display?>>
-                                                <a href="<?=$app?>/tv?cntry=<?=$result['countryId']?>" class="item">
+                                                <a href="<?=$app?>tv?cntry=<?=$result['countryId']?>" class="item">
                                                     <div class="icon-box bg-primary">
                                                         <i style="margin-left: 11px; margin-bottom: 4px;" class="flag <?=$result['countryImg']?>"></i>
                                                     </div>
@@ -286,7 +286,7 @@
 
                     <ul class="listview flush transparent no-line image-listview mt-2">
                         <li>
-                            <a href="<?=$app?>/home.php" class="item">
+                            <a href="<?=$app?>home.php" class="item">
                                 <div class="icon-box bg-primary">
                                     <ion-icon name="home-outline"></ion-icon>
                                 </div>

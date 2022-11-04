@@ -145,7 +145,7 @@ if (isset($_SESSION['nbaError'])){
                                     </div>
                                 </div>
                                 <div class="channel">
-                                    <img src="<?=$app?>/assets/img/canales/dazn.png" alt="Channel" />
+                                    <img src="<?=$app?>assets/img/canales/dazn.png" alt="Channel" />
                                 </div>
                             </div>
                         </div>

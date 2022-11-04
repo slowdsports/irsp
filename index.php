@@ -3,7 +3,7 @@ include('inc/functions.php');
 // Redirección inmediata si ya existe la sesión
 session_start();
 if (isset($_SESSION['id'])) {
-    header("location: $app/home.php");
+    header("location: home.php");
 }
 // Validación del Geo
 // include('inc/geo.php');
@@ -51,7 +51,7 @@ echo '<meta http-equiv="refresh" content="3; url=home.php">';
     <div id="appCapsule" class="container">
 
         <div class="error-page">
-            <img src="assets/img/logo-white.png" alt="alt" class="imaged square w200">
+            <img src="../img/logo-white.png" alt="alt" class="imaged square w200">
 
             <button class="btn btn-light" type="button" disabled="">
                 <span class="spinner-border spinner-border-sm mr-05" role="status" aria-hidden="true"></span>
