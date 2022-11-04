@@ -8,3 +8,6 @@ inc/functions.php
 admin/includes/functions.php
 admin/backend/bd.php
 admin/auth.php
+inc/functions.php
+conn.php
+admin/backend/bd.php
