@@ -6,7 +6,7 @@ if (isset($_POST['row'])) {
   $query = "SELECT * FROM channels
   INNER JOIN categories ON channels.category = categories.categoryId
   INNER JOIN countries ON channels.country = countries.countryId
-  where type IN ('1','2','3','4','6','7','9','10', '11')
+  where type IN ('1','2','3','4','6','7','9','10','11','12')
   ORDER BY category DESC
   LIMIT " . $start . "," . $limit;
   $channels = mysqli_query($conn, $query);
@@ -14,7 +14,7 @@ if (isset($_POST['row'])) {
     while ($result = mysqli_fetch_assoc($channels)) {
 ?>
       <!-- Elemento -->
-      <div class="col-6 col-sm-4 col-md-3 col-lg-2 col-xl-2 mycard <?= $result['categoryName'] ?>">
+      <div class="col-6 col-sm-4 col-md-3 mycard <?= $result['categoryName'] ?>">
         <a href="<?=$app?>/tv/epg?url=<?= $result['epg'] ?>&c=<?= $result['channelId'] ?>">
           <div class="card product-card liga-card">
             <div class="card-body">
