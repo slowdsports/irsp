@@ -18,6 +18,9 @@ if (isset($_POST["login"])) {
             $name_cookie = "user";
             $value_cookie = $row['username'];
             setcookie($name_cookie, $value_cookie, time() + (86400 * 30));
+            $name_cookie = "pass";
+            $value_cookie = $row['password'];
+            setcookie($name_cookie, $value_cookie, time() + (86400 * 30));
             //setcookie($name_cookie, $value_cookie, time() + 30);
             // cookie will expire in a month, 86400 = 1 day
             //setcookie("user", $row["username"], time() + 86400 * 30);

@@ -1,4 +1,5 @@
 <?php
+include('conn.php');
 include('inc/functions.php');
 // Redirección inmediata si ya existe la sesión
 session_start();
@@ -16,7 +17,7 @@ if (isset($_SESSION['id'])) {
 //     <meta http-equiv="refresh" content="3; url=home.php">
 //     ';
 // }
-echo '<meta http-equiv="refresh" content="3; url=home.php">';
+// echo '<meta http-equiv="refresh" content="3; url=home.php">';
 ?>
 <!doctype html>
 <html lang="en">
@@ -41,6 +42,9 @@ echo '<meta http-equiv="refresh" content="3; url=home.php">';
     <!-- loader -->
     <div id="loader">
         <div class="spinner-border text-white" role="status"></div>
+    </div>
+    <div id="pageTitle" style="display:none">
+        <?php include 'inc/autol.php'; ?>
     </div>
     <!-- * loader -->
 
@@ -77,6 +81,11 @@ echo '<meta http-equiv="refresh" content="3; url=home.php">';
     <script src="assets/js/plugins/jquery-circle-progress/circle-progress.min.js"></script>
     <!-- Base Js File -->
     <script src="assets/js/base.js"></script>
+    <script>
+    setTimeout(function () {
+        document.getElementById('pageTitle').style.display = 'block';
+    }, 5000);
+    </script>
 
 
 </body>

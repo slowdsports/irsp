@@ -2124,6 +2124,10 @@ a.badge-dark {
   padding: 8px;
 }
 
+.card-canal {
+  min-height: 100px;
+}
+
 .card.product-card .image {
   width: 100%;
   border-radius: 6px;
