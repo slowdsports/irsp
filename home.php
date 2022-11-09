@@ -32,7 +32,7 @@ $row=mysqli_fetch_assoc($query);
         <div class="notification-dialog android-style">
             <div class="notification-header">
                 <div class="in">
-                    <img src="assets/img/icon/72x72.png" alt="image" class="imaged w24">
+                    <img src="../img/icon/72x72.png" alt="image" class="imaged w24">
                     <strong>BETA</strong>
                 </div>
                 <a href="#" class="close-button">
@@ -212,3 +212,6 @@ $row=mysqli_fetch_assoc($query);
     <?php
     include('inc/navbar.php');
     ?>
+    <script>
+    setTimeout(function(){ location.reload(); }, 180000);
+    </script>
