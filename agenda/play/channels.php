@@ -76,6 +76,8 @@ switch ($channel){
     $server.$usuario."/".$password."/"."38".".m3u8"; break;
     case 'mlcamp5' : $channel =
     $server.$usuario."/".$password."/"."41".".m3u8"; break;
+    case 'daznlaligasd' : $channel =
+    $server.$usuario."/".$password."/"."42".".m3u8"; break;
 
     //BACKUP
     // ESPN SUR: https://edge3.prepro.cvattv.com.ar/live/vod/ESPN2HD/SA_Live_WebVTT_FTA/ESPN2HD.m3u8;

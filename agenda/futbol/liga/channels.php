@@ -712,30 +712,42 @@ if($canal === "DAZN LaLiga" || $canal === "DAZN LaLiga" || $canal === "daznlalig
     $canalImg = "daznlaliga";
     $canalop2 = '
     <li>
-        <a class="justify-content-center" href="'.$app.'/tv/epg/?futbol&id='.$index.'&c=559">
-        <i class="flag es"></i>
-        DAZN LaLiga | HD
-        </a>
-    </li>
-    <li>
         <a class="justify-content-center" href="'.$app.'/agenda/play?futbol&id='.$index.'&c=daznlaliga">
         <i class="flag es"></i>
         DAZN LaLiga | VIP HD
+        </a>
+    </li>
+    <li>
+        <a class="justify-content-center" href="'.$app.'/agenda/play?futbol&id='.$index.'&c=daznlaligasd">
+        <i class="flag es"></i>
+        DAZN LaLiga | VIP HD
+        </a>
+    </li>
+    <li>
+        <a class="justify-content-center" href="'.$app.'/tv/epg/?futbol&id='.$index.'&c=559">
+        <i class="flag es"></i>
+        DAZN LaLiga | HD
         </a>
     </li>';
 } elseif($canal2 === "DAZN LaLiga" || $canal2 === "DAZN LaLiga" || $canal2 === "daznlaliga"){
     $canalImg = "daznlaliga";
     $canalop4 = '
     <li>
-        <a class="justify-content-center" href="'.$app.'/tv/epg/?futbol&id='.$index.'&c=559">
+        <a class="justify-content-center" href="'.$app.'/agenda/play?futbol&id='.$index.'&c=daznlaliga">
         <i class="flag es"></i>
-        DAZN LaLiga | HD
+        DAZN LaLiga | VIP HD
         </a>
     </li>
     <li>
-        <a class="justify-content-center" href="'.$app.'/agenda/play?futbol&id='.$index.'&c=daznlaliga2">
+        <a class="justify-content-center" href="'.$app.'/agenda/play?futbol&id='.$index.'&c=daznlaligasd">
         <i class="flag es"></i>
-        DAZN LaLiga | VIP HD
+        DAZN LaLiga | VIP SD
+        </a>
+    </li>
+    <li>
+        <a class="justify-content-center" href="'.$app.'/tv/epg/?futbol&id='.$index.'&c=559">
+        <i class="flag es"></i>
+        DAZN LaLiga | HD
         </a>
     </li>';
 }
@@ -752,7 +764,7 @@ if($canal === "DAZN LaLiga 2" || $canal === "DAZN LaLiga 2" || $canal === "daznl
     $canalImg = "daznlaliga";
     $canalop4 = '
     <li>
-        <a class="justify-content-center" href="'.$app.'/tv/epg/?futbol&id='.$index.'&c=daznlaliga2">
+        <a class="justify-content-center" href="'.$app.'/agenda/play?futbol&id='.$index.'&c=daznlaliga2">
         <i class="flag es"></i>
         DAZN LaLiga 2 | HD
         </a>
