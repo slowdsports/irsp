@@ -720,7 +720,7 @@ if($canal === "DAZN LaLiga" || $canal === "DAZN LaLiga" || $canal === "daznlalig
     <li>
         <a class="justify-content-center" href="'.$app.'/agenda/play?futbol&id='.$index.'&c=daznlaligasd">
         <i class="flag es"></i>
-        DAZN LaLiga | VIP HD
+        DAZN LaLiga | VIP SD
         </a>
     </li>
     <li>
