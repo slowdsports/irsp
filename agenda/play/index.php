@@ -1,4 +1,5 @@
 <?php
+include('../../conn.php');
 $_SESSION['referer'] = "//" . $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URI'];
 // IGNORAMOS SESIÓN PARA SECCIONES NBA Y MLB
 if (isset($_GET['nba']) || isset($_GET['mlb'])){
@@ -6,12 +7,20 @@ if (isset($_GET['nba']) || isset($_GET['mlb'])){
 } else {
     session_start();
     if (!isset($_SESSION['id']) ||(trim ($_SESSION['id']) == '')) {
-        $_SESSION['message'] = "¡Debes iniciar sesión para acceder a esta sección!";
-        header("location: ../../login.php");
-        exit();
+        if (isset($_COOKIE['user']) && isset($_COOKIE['pass'])){
+            $user = $_COOKIE['user'];
+            $pass = $_COOKIE['pass'];
+            $query = mysqli_query($conn, "select * from `user` where username='$user' && password='$pass'");
+            $row = mysqli_fetch_array($query);
+            $_SESSION["id"] = $row["userid"];
+            header($_SESSION['referer']);
+        } else {
+            $_SESSION['message'] = "¡Debes iniciar sesión para acceder a esta sección!";
+            header("location: ../../login.php");
+            exit();
+        }
     }
 }
-include('../../conn.php');
 $query=mysqli_query($conn,"select * from user where userid='".$_SESSION['id']."'");
 $row=mysqli_fetch_assoc($query);
 $usuario = $row['username'];
