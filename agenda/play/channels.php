@@ -8,6 +8,8 @@
 $server = "http://213.239.217.94:8080/live/";
 $concat = $server.$usuario."/".$password."/".$channel.".m3u8";
 switch ($channel){
+    case 'golm' : $channel=
+    $server.$usuario."/".$password."/"."3".".m3u8"; break;
     case 'golmsd' : $channel=
     $server.$usuario."/".$password."/"."4".".m3u8"; break;
     case 'mdep2' : $channel=
@@ -20,7 +22,7 @@ switch ($channel){
     $server.$usuario."/".$password."/"."8".".m3u8"; break;
     case 'smartbank1' : $channel=
     $server.$usuario."/".$password."/"."9".".m3u8"; break;
-    case 'golm' : $channel=
+    case 'canal10' : $channel=
     $server.$usuario."/".$password."/"."10".".m3u8"; break;
     case 'mlaliga3' : $channel=
     $server.$usuario."/".$password."/"."11".".m3u8"; break;
@@ -78,6 +80,10 @@ switch ($channel){
     $server.$usuario."/".$password."/"."41".".m3u8"; break;
     case 'daznlaligasd' : $channel =
     $server.$usuario."/".$password."/"."42".".m3u8"; break;
+    case 'golm2' : $channel =
+    $server.$usuario."/".$password."/"."43".".m3u8"; break;
+    case 'golm2sd' : $channel =
+    $server.$usuario."/".$password."/"."44".".m3u8"; break;
 
     //BACKUP
     // ESPN SUR: https://edge3.prepro.cvattv.com.ar/live/vod/ESPN2HD/SA_Live_WebVTT_FTA/ESPN2HD.m3u8;
