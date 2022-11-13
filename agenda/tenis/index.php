@@ -73,9 +73,9 @@ if (isset($_SESSION['message']) ){
                         <div class="card card-body">
                             <ul class="listview link-listview">
                                 <li>
-                                    <a class="justify-content-center" href="<?=$app?>agenda/play/?c=vamos">
+                                    <a class="justify-content-center" href="<?=$app?>agenda/play/?c=mdep">
                                         <i class="flag es"></i>
-                                        M+ Vamos | VIP HD
+                                        M+ Deportes | VIP HD
                                     </a>
                                 </li>
                                 <li>
