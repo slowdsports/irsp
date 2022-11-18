@@ -41,11 +41,11 @@
     <div class="appHeader no-border transparent position-absolute">
 
 <div class="pageTitle"></div>
-<div class="left">
+<!-- <div class="left">
     <a href="<?=$app?>reset-password.php" class="headerButton">
         Olvidé mi contraseña
     </a>
-</div>
+</div> -->
 </div>
 
     <!-- App Capsule -->
@@ -119,7 +119,7 @@
 
                     <div class="form-links mt-2">
                         <div>
-                            <a class="signup" href="signup.php">Quiero registrarme</a>
+                            <!-- <a class="signup" href="signup.php">Quiero registrarme</a> -->
 
                     <div class="form-button-group">
                         <button name="login" type="submit" class="btn btn-auth btn-block btn-lg">ENTRAR</button>
