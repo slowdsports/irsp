@@ -82,6 +82,39 @@ if($canal === "Gol Mundial 2" || $canal === "Gol Mundial 2" || $canal === "Gol M
     </li>';
 }
 
+
+if($canal2 === "Telemundo" || $canal2 === "Telemundo" || $canal2 === "Telemundo" || $canal2 === "telemundo"){
+ $canalImg = "telemundo";
+    $canalop2 = '
+    <li>
+        <a class="justify-content-center" href="'.$app.'/agenda/play?futbol&id='.$index.'&c=telemundo">
+        <i class="flag us"></i>
+        Telemundo | VIP HD
+        </a>
+    </li>
+    <li>
+        <a class="justify-content-center" href="'.$app.'/agenda/play?futbol&id='.$index.'&c=telemundo">
+        <i class="flag es"></i>
+        Telemundo | VIP SD
+        </a>
+    </li>';
+} elseif($canal2 === "Telemundo" || $canal2 === "Telemundo" || $canal2 === "Telemundo" || $canal2 === "telemundo"){
+    $canalImg = "telemundo";
+    $canalop4 = '
+    <li>
+        <a class="justify-content-center" href="'.$app.'/agenda/play?futbol&id='.$index.'&c=telemundo">
+        <i class="flag es"></i>
+        Telemundo | VIP HD
+        </a>
+    </li>
+    <li>
+        <a class="justify-content-center" href="'.$app.'/agenda/play?futbol&id='.$index.'&c=telemundo">
+        <i class="flag es"></i>
+        Telemundo | VIP SD
+        </a>
+    </li>';
+}
+
 if($canal === "M+ Liga de Campeones" || $canal === "M+ Liga de Campeones UHD (M441 O115)" || $canal === "M+ Liga de Campeones (M56 O114)" || $canal === "mlcamp"){
     $canalImg = "campeones";
     $canalop2 = '
