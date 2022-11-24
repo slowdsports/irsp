@@ -83,7 +83,7 @@ if($canal === "Gol Mundial 2" || $canal === "Gol Mundial 2" || $canal === "Gol M
 }
 
 
-if($canal2 === "Telemundo" || $canal2 === "Telemundo" || $canal2 === "Telemundo" || $canal2 === "telemundo"){
+if($canal === "Telemundo" || $canal === "Telemundo" || $canal === "Telemundo" || $canal === "telemundo"){
  $canalImg = "telemundo";
     $canalop2 = '
     <li>
