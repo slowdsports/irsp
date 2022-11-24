@@ -88,14 +88,8 @@ if($canal === "Telemundo" || $canal === "Telemundo" || $canal === "Telemundo" ||
     $canalop2 = '
     <li>
         <a class="justify-content-center" href="'.$app.'/agenda/play?futbol&id='.$index.'&c=telemundo">
-        <i class="flag us"></i>
+        <i class="flag mx"></i>
         Telemundo | VIP HD
-        </a>
-    </li>
-    <li>
-        <a class="justify-content-center" href="'.$app.'/agenda/play?futbol&id='.$index.'&c=telemundo">
-        <i class="flag es"></i>
-        Telemundo | VIP SD
         </a>
     </li>';
 } elseif($canal2 === "Telemundo" || $canal2 === "Telemundo" || $canal2 === "Telemundo" || $canal2 === "telemundo"){
@@ -103,14 +97,8 @@ if($canal === "Telemundo" || $canal === "Telemundo" || $canal === "Telemundo" ||
     $canalop4 = '
     <li>
         <a class="justify-content-center" href="'.$app.'/agenda/play?futbol&id='.$index.'&c=telemundo">
-        <i class="flag es"></i>
+        <i class="flag mx"></i>
         Telemundo | VIP HD
-        </a>
-    </li>
-    <li>
-        <a class="justify-content-center" href="'.$app.'/agenda/play?futbol&id='.$index.'&c=telemundo">
-        <i class="flag es"></i>
-        Telemundo | VIP SD
         </a>
     </li>';
 }
