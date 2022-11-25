@@ -12,8 +12,8 @@ if (isset($_GET['nba']) || isset($_GET['mlb'])){
             $pass = $_COOKIE['pass'];
             $query = mysqli_query($conn, "select * from `user` where username='$user' && password='$pass'");
             $row = mysqli_fetch_array($query);
-            $_SESSION["id"] = $row["userid"];
-            header($_SESSION['referer']);
+            $_SESSION['id'] = $row["userid"];
+            //header($_SESSION['referer']);
         } else {
             $_SESSION['message'] = "¡Debes iniciar sesión para acceder a esta sección!";
             header("location: ../../login.php");
