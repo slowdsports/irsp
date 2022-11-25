@@ -37,7 +37,7 @@ if($canal === "Gol Mundial" || $canal === "Gol Mundial" || $canal === "Gol Mundi
     <li>
         <a class="justify-content-center" href="'.$app.'/tv/epg?futbol&id='.$index.'&c=792">
         <i class="flag es"></i>
-        Gol Mundial | VIP SD
+        Gol Mundial | HD
         </a>
     </li>';
 } elseif($canal2 === "Gol Mundial" || $canal2 === "Gol Mundial" || $canal2 === "Gol Mundial" || $canal2 === "golm"){
@@ -58,7 +58,7 @@ if($canal === "Gol Mundial" || $canal === "Gol Mundial" || $canal === "Gol Mundi
     <li>
         <a class="justify-content-center" href="'.$app.'/tv/epg?futbol&id='.$index.'&c=792">
         <i class="flag es"></i>
-        Gol Mundial | VIP SD
+        Gol Mundial | HD
         </a>
     </li>';
 }
