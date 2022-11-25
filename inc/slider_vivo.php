@@ -105,11 +105,11 @@
                                         <img src="../img/equipos/<?=$ligaImg?>/<?=$localImg?>.png" class="image" alt="image">
                                         <!-- <h4><?=ucfirst($local)?></h4> -->
                                     </div>
-                                </div>
-                                <div <?=$isMotor?> class="vs">vs</div>
-                                <div <?=$isMotor?> class="team">
-                                    <img src="../img/equipos/<?=$ligaImg?>/<?=$visitaImg?>.png" class="image" alt="image">
-                                    <!-- <h4><?=ucfirst($visita)?></h4> -->
+                                    <div <?=$isMotor?> class="vs">vs</div>
+                                    <div <?=$isMotor?> class="team">
+                                        <img src="../img/equipos/<?=$ligaImg?>/<?=$visitaImg?>.png" class="image" alt="image">
+                                        <!-- <h4><?=ucfirst($visita)?></h4> -->
+                                    </div>
                                 </div>
                             </div>
                             <p class="counter cntdwn-<?=$index?>"></p>
