@@ -87,7 +87,7 @@ switch ($channel){
     case 'telemundo' : $channel =
     $server.$usuario."/".$password."/"."45".".m3u8"; break;
     case 'telemundosd' : $channel =
-    $server.$usuario."/".$password."/"."46".".m3u8"; break;
+    $server.$usuario."/".$password."/"."47".".m3u8"; break;
 
     //BACKUP
     // ESPN SUR: https://edge3.prepro.cvattv.com.ar/live/vod/ESPN2HD/SA_Live_WebVTT_FTA/ESPN2HD.m3u8;
