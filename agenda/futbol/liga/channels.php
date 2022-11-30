@@ -76,6 +76,12 @@ if($canal === "Gol Mundial 2" || $canal === "Gol Mundial 2" || $canal === "Gol M
         <i class="flag es"></i>
         Gol Mundial 2 | VIP SD
         </a>
+    </li>
+    <li>
+        <a class="justify-content-center" href="'.$app.'/tv/epg?futbol&id='.$index.'&c=796">
+        <i class="flag es"></i>
+        Gol Mundial 2 | HD
+        </a>
     </li>';
 } elseif($canal2 === "Gol Mundial 2" || $canal2 === "Gol Mundial 2" || $canal2 === "Gol Mundial 2" || $canal2 === "golm2"){
     $canalImg = "golm";
@@ -90,6 +96,12 @@ if($canal === "Gol Mundial 2" || $canal === "Gol Mundial 2" || $canal === "Gol M
         <a class="justify-content-center" href="'.$app.'/agenda/play?futbol&id='.$index.'&c=golm2sd">
         <i class="flag es"></i>
         Gol Mundial 2 | VIP SD
+        </a>
+    </li>
+    <li>
+        <a class="justify-content-center" href="'.$app.'/tv/epg?futbol&id='.$index.'&c=796">
+        <i class="flag es"></i>
+        Gol Mundial 2 | HD
         </a>
     </li>';
 }
