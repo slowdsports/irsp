@@ -1,6 +1,6 @@
 <?php
 if ($typeChannel == 1 || $typeChannel == 8){
-    $core = '<script src="cores/jwp.js"></script>';
+    $core = '<script src="cores/clappr.js"></script>';
     echo '<style>#iframe-element{display:none;} #player_img{display:none}</style>';
     echo '
     <script>
