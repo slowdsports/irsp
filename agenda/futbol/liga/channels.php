@@ -480,7 +480,7 @@ if($canal === "M+ Supercopa" || $canal === "M+ Supercopa" || $canal === "superco
         M+ Supercopa
         </a>
     </li>';
-
+}
 if($canal === "M+ LaLiga" || $canal === "M+ LaLigaTV" || $canal === "bar"){
     $canalImg = "mlaliga";
     $canalop2 = '
