@@ -75,29 +75,29 @@ if ($result['local'] === "brujas"){
     ';
 }
 
-if ($result['local'] === "barcelona"){
-    $canalImg = "hbow";
-    $s= "aHR0cHM6Ly9saXZlLmFrbS5sYXRhbS5oYm9tYXhjZG4uY29tL2NtYWYvbGl2ZS8yMDMxNjE1L2Rhc2gvY2VuYy8yODI1MC9tYXN0ZXIubXBk&key=MDEwMWU2NmE0MDM4NzNlMDgyYjg2MzFmMjc4ZjBiYTg=&key2=ZTljMWQ2ZGRjM2U5NGNjMjQ2YzkwY2ExYTBkZjRiYjI=";
+if ($result['local'] === "realmadrid"){
+    $canalImg = "movistar";
+    $s= "";
     //if ($s === ""){ $s= "javascript:void(0)"; } else {$s = "../../../tv/epg?s='.$s.'";}
     $custom1 = '
     <li>
         <a class="justify-content-center" href="../../../tv/epg?s='.$s.'">
-        <i class="flag ar"></i>
-        HBO Max | HD
+        <i class="flag es"></i>
+        M+ Supercopa
         </a>
     </li>
     ';
 }
 
-if ($result['local'] === "at.madrid"){
-    $canalImg = "hbow";
-    $s= "aHR0cHM6Ly9saXZlLmFrbS5sYXRhbS5oYm9tYXhjZG4uY29tL2NtYWYvbGl2ZS8yMDMxNjgyL2Rhc2gvY2VuYy8yODI1OS9tYXN0ZXIubXBk&key=MDEwMWFkMmE2N2ZiNmJhN2VhYjRhMWZkMGE2YzRjYzU=&key2=ODM5NGEzYjk2NjRhZWNjM2NmMmE0OGRmNDE3N2IxMmI=";
+if ($result['local'] === "betis"){
+    $canalImg = "movistar";
+    $s= "";
     //if ($s === ""){ $s= "javascript:void(0)"; } else {$s = "../../../tv/epg?s='.$s.'";}
     $custom1 = '
     <li>
         <a class="justify-content-center" href="../../../tv/epg?s='.$s.'">
-        <i class="flag ar"></i>
-        HBO Max | HD
+        <i class="flag es"></i>
+        M+ Supercopa
         </a>
     </li>
     ';
