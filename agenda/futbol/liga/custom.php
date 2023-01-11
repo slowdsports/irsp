@@ -81,7 +81,7 @@ if ($result['local'] === "realmadrid"){
     //if ($s === ""){ $s= "javascript:void(0)"; } else {$s = "../../../tv/epg?s='.$s.'";}
     $custom1 = '
     <li>
-        <a class="justify-content-center" href="../../../tv/epg?s='.$s.'">
+        <a class="justify-content-center" href="../../../agenda/play/?c=bar">
         <i class="flag es"></i>
         M+ Supercopa
         </a>
