@@ -86,7 +86,7 @@ switch ($channel){
     $server.$usuario."/".$password."/"."44".".m3u8"; break;
     case 'telemundo' : $channel =
     $server.$usuario."/".$password."/"."45".".m3u8"; break;
-    case 'telemundosd' : $channel =
+    case 'supercopa' : $channel =
     $server.$usuario."/".$password."/"."47".".m3u8"; break;
 
     //BACKUP
