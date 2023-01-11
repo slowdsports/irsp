@@ -471,6 +471,15 @@ if($canal === "M+ Liga de Campeones 13" || $canal === "mlcamp13"){
         </a>
     </li>';
 }
+if($canal === "M+ Supercopa" || $canal === "M+ Supercopa" || $canal === "supercopa"){
+    $canalImg = "movistar";
+    $canalop2 = '
+    <li>
+        <a class="justify-content-center" href="'.$app.'/agenda/play?futbol&id='.$index.'&c=supercopa">
+        <i class="flag es"></i>
+        M+ Supercopa
+        </a>
+    </li>';
 
 if($canal === "M+ LaLiga" || $canal === "M+ LaLigaTV" || $canal === "bar"){
     $canalImg = "mlaliga";
