@@ -475,7 +475,7 @@ if($canal === "M+ Supercopa" || $canal === "M+ Supercopa" || $canal === "superco
     $canalImg = "movistar";
     $canalop2 = '
     <li>
-        <a class="justify-content-center" href="'.$app.'/agenda/play?futbol&id='.$index.'&c=supercopa">
+        <a class="justify-content-center" href="'.$app.'/agenda/play?supercopa">
         <i class="flag es"></i>
         M+ Supercopa
         </a>
